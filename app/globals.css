@@ -468,6 +468,15 @@ a {
   outline-offset: 2px;
 }
 
+.verified-date {
+  display: block;
+  margin-top: 5px;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
 .matches-title {
   display: flex;
   justify-content: space-between;

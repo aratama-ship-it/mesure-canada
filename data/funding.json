@@ -8,16 +8,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "En tout temps, au moins 4 semaines avant le départ",
-      "en": "Rolling, at least 4 weeks before departure"
+      "en": "Rolling, at least 4 weeks before departure",
+      "ja": "随時受付。出発の少なくとも4週間前まで"
     },
     "amount": {
       "fr": "Sans montant maximal fixe; calculé selon les coûts admissibles",
-      "en": "No fixed maximum; calculated from eligible costs"
+      "en": "No fixed maximum; calculated from eligible costs",
+      "ja": "一律の上限額なし。対象経費をもとに算定"
     },
     "coverage": ["travel", "stay", "visa"],
     "cashflow": {
       "fr": "Réponse généralement en environ 8 semaines",
-      "en": "Decision usually takes about 8 weeks"
+      "en": "Decision usually takes about 8 weeks",
+      "ja": "通常、審査結果まで約8週間"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aides/deplacement",
     "verifiedAt": "2026-07-20"
@@ -31,16 +34,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "En tout temps, au moins 4 semaines avant le projet",
-      "en": "Rolling, at least 4 weeks before the project"
+      "en": "Rolling, at least 4 weeks before the project",
+      "ja": "随時受付。プロジェクト開始の少なくとも4週間前まで"
     },
     "amount": {
       "fr": "Jusqu’à 75 % du coût total du projet",
-      "en": "Up to 75% of total project cost"
+      "en": "Up to 75% of total project cost",
+      "ja": "プロジェクト総費用の最大75％"
     },
     "coverage": ["travel", "stay", "transport", "promotion"],
     "cashflow": {
       "fr": "Confirmation écrite d’un diffuseur reconnu requise",
-      "en": "Written confirmation from a recognized presenter required"
+      "en": "Written confirmation from a recognized presenter required",
+      "ja": "認定された主催者・会場からの書面による確認が必要"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aides/circulation-hors-quebec/",
     "verifiedAt": "2026-07-20"
@@ -54,16 +60,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "Selon chaque appel",
-      "en": "Varies by call"
+      "en": "Varies by call",
+      "ja": "各募集により異なる"
     },
     "amount": {
       "fr": "Selon la résidence; environ 40 occasions internationales dans le réseau",
-      "en": "Varies by residency; about 40 international opportunities in the network"
+      "en": "Varies by residency; about 40 international opportunities in the network",
+      "ja": "各レジデンスにより異なる。ネットワーク内に国際案件が約40件"
     },
     "coverage": ["travel", "stay", "production"],
     "cashflow": {
       "fr": "Modalités propres à chaque résidence",
-      "en": "Residency-specific payment terms"
+      "en": "Residency-specific payment terms",
+      "ja": "支給条件は各レジデンスにより異なる"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aide-financiere/international",
     "verifiedAt": "2026-07-20"
@@ -77,16 +86,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "En continu, avant le départ",
-      "en": "Rolling, before departure"
+      "en": "Rolling, before departure",
+      "ja": "随時受付。出発前に申請"
     },
     "amount": {
       "fr": "Montant déterminé dans le portail selon le profil",
-      "en": "Amount determined in the portal by applicant profile"
+      "en": "Amount determined in the portal by applicant profile",
+      "ja": "申請者区分に応じてポータル上で金額を確認"
     },
     "coverage": ["travel", "promotion", "market"],
     "cashflow": {
       "fr": "Délai de réponse habituel d’environ 4 mois",
-      "en": "Typical decision time is about 4 months"
+      "en": "Typical decision time is about 4 months",
+      "ja": "通常、審査結果まで約4か月"
     },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
@@ -100,16 +112,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "Prochaine échéance : 7 octobre 2026",
-      "en": "Next deadline: October 7, 2026"
+      "en": "Next deadline: October 7, 2026",
+      "ja": "次回締切：2026年10月7日"
     },
     "amount": {
       "fr": "Jusqu’à 200 000 $, maximum 50 % des coûts admissibles",
-      "en": "Up to $200,000, maximum 50% of eligible costs"
+      "en": "Up to $200,000, maximum 50% of eligible costs",
+      "ja": "最大20万カナダドル。対象経費の50％が上限"
     },
     "coverage": ["travel", "touring", "transport", "fees"],
     "cashflow": {
       "fr": "Délai de réponse habituel d’environ 5 mois",
-      "en": "Typical decision time is about 5 months"
+      "en": "Typical decision time is about 5 months",
+      "ja": "通常、審査結果まで約5か月"
     },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
@@ -123,16 +138,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "Prochaine échéance : 21 octobre 2026",
-      "en": "Next deadline: October 21, 2026"
+      "en": "Next deadline: October 21, 2026",
+      "ja": "次回締切：2026年10月21日"
     },
     "amount": {
       "fr": "Montant déterminé dans le portail selon le profil",
-      "en": "Amount determined in the portal by applicant profile"
+      "en": "Amount determined in the portal by applicant profile",
+      "ja": "申請者区分に応じてポータル上で金額を確認"
     },
     "coverage": ["travel", "stay", "production"],
     "cashflow": {
       "fr": "Délai de réponse habituel d’environ 5 mois",
-      "en": "Typical decision time is about 5 months"
+      "en": "Typical decision time is about 5 months",
+      "ja": "通常、審査結果まで約5か月"
     },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
@@ -146,16 +164,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "Prochaine échéance : 4 novembre 2026",
-      "en": "Next deadline: November 4, 2026"
+      "en": "Next deadline: November 4, 2026",
+      "ja": "次回締切：2026年11月4日"
     },
     "amount": {
       "fr": "Montant déterminé dans le portail selon le profil",
-      "en": "Amount determined in the portal by applicant profile"
+      "en": "Amount determined in the portal by applicant profile",
+      "ja": "申請者区分に応じてポータル上で金額を確認"
     },
     "coverage": ["production", "fees", "travel"],
     "cashflow": {
       "fr": "Délai de réponse habituel d’environ 5 mois",
-      "en": "Typical decision time is about 5 months"
+      "en": "Typical decision time is about 5 months",
+      "ja": "通常、審査結果まで約5か月"
     },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
@@ -169,16 +190,19 @@
     "disciplines": ["all"],
     "deadline": {
       "fr": "Prochaine échéance : 19 août 2026",
-      "en": "Next deadline: August 19, 2026"
+      "en": "Next deadline: August 19, 2026",
+      "ja": "次回締切：2026年8月19日"
     },
     "amount": {
       "fr": "Montant selon le projet et le cadre du programme",
-      "en": "Amount varies by project and program framework"
+      "en": "Amount varies by project and program framework",
+      "ja": "プロジェクト内容と制度の枠組みにより異なる"
     },
     "coverage": ["research", "creation", "production"],
     "cashflow": {
       "fr": "Modalités de versement décrites dans le programme",
-      "en": "Payment terms are described in the program"
+      "en": "Payment terms are described in the program",
+      "ja": "支給条件は制度要項に記載"
     },
     "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
     "verifiedAt": "2026-07-20"

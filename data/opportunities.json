@@ -9,17 +9,20 @@
     "deadlineDate": "2026-09-15",
     "deadlineLabel": {
       "fr": "15 septembre 2026",
-      "en": "September 15, 2026"
+      "en": "September 15, 2026",
+      "ja": "2026年9月15日"
     },
     "profiles": ["artist", "collective"],
     "disciplines": ["circus"],
     "summary": {
       "fr": "Concours international pour numéros de cirque portés par des artistes de 16 à 30 ans. Vidéo obligatoire.",
-      "en": "International competition for circus acts led by performers aged 16–30. A video submission is required."
+      "en": "International competition for circus acts led by performers aged 16–30. A video submission is required.",
+      "ja": "16〜30歳のアーティストによるサーカス演目を対象とした国際コンクール。演目動画の提出が必要です。"
     },
     "requirements": {
       "fr": ["16 à 30 ans, sauf exception", "Candidature individuelle ou en groupe", "Vidéo du numéro requise"],
-      "en": ["Age 16–30, with limited exceptions", "Solo or group applications", "Act video required"]
+      "en": ["Age 16–30, with limited exceptions", "Solo or group applications", "Act video required"],
+      "ja": ["原則16〜30歳", "個人またはグループで応募", "演目動画が必要"]
     },
     "applicationLanguages": ["fr", "en"],
     "sourceUrl": "https://www.cirquededemain.paris/candidatures",
@@ -30,7 +33,8 @@
         "state": "conditional",
         "note": {
           "fr": "À activer après une confirmation ou une invitation officielle.",
-          "en": "Becomes actionable after official confirmation or invitation."
+          "en": "Becomes actionable after official confirmation or invitation.",
+          "ja": "採択確認または正式な招待状を得た後に申請候補となります。"
         }
       },
       {
@@ -38,7 +42,8 @@
         "state": "conditional",
         "note": {
           "fr": "À vérifier selon le statut professionnel et la nature de la représentation.",
-          "en": "Confirm professional status and whether the trip qualifies as representation."
+          "en": "Confirm professional status and whether the trip qualifies as representation.",
+          "ja": "プロとしての活動状況と、渡航目的が対象となる対外活動に該当するかを確認してください。"
         }
       }
     ]
@@ -53,17 +58,20 @@
     "deadlineDate": null,
     "deadlineLabel": {
       "fr": "Inscription en continu",
-      "en": "Rolling registration"
+      "en": "Rolling registration",
+      "ja": "随時受付"
     },
     "profiles": ["artist", "collective", "organization"],
     "disciplines": ["circus", "theatre", "dance", "music"],
     "summary": {
       "fr": "Festival en accès libre. Les artistes du monde entier peuvent s’inscrire, mais doivent organiser leur lieu et leur économie de tournée.",
-      "en": "Open-access festival. Artists worldwide can register, but must arrange their venue and touring economics."
+      "en": "Open-access festival. Artists worldwide can register, but must arrange their venue and touring economics.",
+      "ja": "世界各地のアーティストが登録できるオープンアクセス型フェスティバル。会場の確保とツアー収支の設計は参加者側で行います。"
     },
     "requirements": {
       "fr": ["Ouvert aux artistes du monde entier", "Inscription dans le portail AVR", "Lieu et coûts à confirmer avant le départ"],
-      "en": ["Open to artists worldwide", "AVR portal registration", "Venue and costs must be confirmed before travel"]
+      "en": ["Open to artists worldwide", "AVR portal registration", "Venue and costs must be confirmed before travel"],
+      "ja": ["世界各地のアーティストが応募可能", "AVRポータルでの登録", "渡航前に会場と費用を確定"]
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://fringeworld.com.au/as-an-artist",
@@ -74,7 +82,8 @@
         "state": "conditional",
         "note": {
           "fr": "Un contrat ou une confirmation écrite d’un diffuseur reconnu est nécessaire.",
-          "en": "A contract or written confirmation from a recognized presenter is required."
+          "en": "A contract or written confirmation from a recognized presenter is required.",
+          "ja": "認定された主催者・会場からの契約書または書面による確認が必要です。"
         }
       },
       {
@@ -82,7 +91,8 @@
         "state": "conditional",
         "note": {
           "fr": "Pertinent pour une tournée structurée; l’aide ne couvre pas plus de 50 % des coûts admissibles.",
-          "en": "Relevant for a structured tour; support covers no more than 50% of eligible costs."
+          "en": "Relevant for a structured tour; support covers no more than 50% of eligible costs.",
+          "ja": "複数地を巡る計画的なツアー向け。助成は対象経費の50％が上限です。"
         }
       }
     ]
@@ -97,17 +107,20 @@
     "deadlineDate": "2026-08-20",
     "deadlineLabel": {
       "fr": "20 août 2026, midi",
-      "en": "August 20, 2026, noon"
+      "en": "August 20, 2026, noon",
+      "ja": "2026年8月20日 正午"
     },
     "profiles": ["artist", "collective"],
     "disciplines": ["theatre"],
     "summary": {
       "fr": "Compétition pour une œuvre scénique originale de 30 minutes maximum, créée en chinois autour de trois éléments imposés.",
-      "en": "Competition for an original stage work of up to 30 minutes, created in Chinese from three required elements."
+      "en": "Competition for an original stage work of up to 30 minutes, created in Chinese from three required elements.",
+      "ja": "指定された3要素を用い、中国語で制作する30分以内のオリジナル舞台作品を対象としたコンペです。"
     },
     "requirements": {
       "fr": ["Création en chinois", "30 minutes maximum", "Utiliser les trois éléments imposés en 2026"],
-      "en": ["Work must be created in Chinese", "Maximum 30 minutes", "Use all three required 2026 elements"]
+      "en": ["Work must be created in Chinese", "Maximum 30 minutes", "Use all three required 2026 elements"],
+      "ja": ["中国語で作品を制作", "上演時間は30分以内", "2026年の指定3要素をすべて使用"]
     },
     "applicationLanguages": ["zh"],
     "sourceUrl": "http://www.wuzhenfestival.com/index.php?m=Xijujie&a=qingnianjingyan",
@@ -118,7 +131,8 @@
         "state": "conditional",
         "note": {
           "fr": "À considérer seulement après la sélection et la réception d’une confirmation officielle.",
-          "en": "Consider only after selection and official confirmation."
+          "en": "Consider only after selection and official confirmation.",
+          "ja": "選出され、正式な確認書を受け取った後に検討してください。"
         }
       },
       {
@@ -126,7 +140,8 @@
         "state": "verify",
         "note": {
           "fr": "La langue et le format compétitif demandent une vérification du projet avant d’engager une demande.",
-          "en": "The language and competition format require project-specific confirmation before applying."
+          "en": "The language and competition format require project-specific confirmation before applying.",
+          "ja": "使用言語とコンペ形式を踏まえ、このプロジェクトが助成対象になるか事前確認が必要です。"
         }
       }
     ]
@@ -141,17 +156,20 @@
     "deadlineDate": "2026-07-31",
     "deadlineLabel": {
       "fr": "31 juillet 2026",
-      "en": "July 31, 2026"
+      "en": "July 31, 2026",
+      "ja": "2026年7月31日"
     },
     "profiles": ["artist"],
     "disciplines": ["circus"],
     "summary": {
       "fr": "Compétition et convention de jonglerie avec catégories de niveau et possibilité de présélection vidéo pour certaines épreuves.",
-      "en": "Juggling competition and convention with skill divisions and video pre-qualification for some events."
+      "en": "Juggling competition and convention with skill divisions and video pre-qualification for some events.",
+      "ja": "レベル別部門を持つジャグリング競技会・コンベンション。一部種目では動画による事前審査があります。"
     },
     "requirements": {
       "fr": ["Adhésion WJF requise", "Catégorie adaptée au niveau et à l’âge", "Vérifier les règles de présélection vidéo"],
-      "en": ["WJF membership required", "Choose the correct level and age category", "Confirm video pre-qualification rules"]
+      "en": ["WJF membership required", "Choose the correct level and age category", "Confirm video pre-qualification rules"],
+      "ja": ["WJF会員登録が必要", "レベルと年齢に合う部門を選択", "動画事前審査の規定を確認"]
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://www.thewjf.com/competition/",
@@ -162,7 +180,8 @@
         "state": "verify",
         "note": {
           "fr": "Le caractère professionnel et la preuve de participation doivent être confirmés.",
-          "en": "Professional status and participation evidence must be confirmed."
+          "en": "Professional status and participation evidence must be confirmed.",
+          "ja": "プロとしての活動であることと、参加を証明する書類を確認する必要があります。"
         }
       }
     ]
@@ -177,17 +196,20 @@
     "deadlineDate": "2026-10-31",
     "deadlineLabel": {
       "fr": "31 octobre 2026 — tarif hâtif le 30 septembre",
-      "en": "October 31, 2026 — early rate September 30"
+      "en": "October 31, 2026 — early rate September 30",
+      "ja": "2026年10月31日（早期料金は9月30日まで）"
     },
     "profiles": ["artist"],
     "disciplines": ["music"],
     "summary": {
       "fr": "Concours international de piano ouvert à toutes les nationalités, avec limite d’âge propre à l’édition 2027.",
-      "en": "International piano competition open to all nationalities, with a 2027-specific age limit."
+      "en": "International piano competition open to all nationalities, with a 2027-specific age limit.",
+      "ja": "全ての国籍から応募できる国際ピアノコンクール。2027年大会固有の年齢条件があります。"
     },
     "requirements": {
       "fr": ["Né entre le 19 septembre 1991 et le 30 mars 2007", "Passeport ou pièce d’identité valide", "Répertoire et vidéo selon le règlement"],
-      "en": ["Born between September 19, 1991 and March 30, 2007", "Valid passport or identification", "Repertoire and video per the rules"]
+      "en": ["Born between September 19, 1991 and March 30, 2007", "Valid passport or identification", "Repertoire and video per the rules"],
+      "ja": ["1991年9月19日〜2007年3月30日生まれ", "有効なパスポートまたは身分証明書", "規定に沿ったレパートリーと動画"]
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://www.leedspiano.com/2027-competition/",
@@ -198,7 +220,8 @@
         "state": "conditional",
         "note": {
           "fr": "La confirmation d’admission ou l’invitation doit précéder la demande de déplacement.",
-          "en": "Admission confirmation or an invitation is needed before requesting travel support."
+          "en": "Admission confirmation or an invitation is needed before requesting travel support.",
+          "ja": "渡航助成の申請前に、参加承認または招待状が必要です。"
         }
       },
       {
@@ -206,7 +229,8 @@
         "state": "verify",
         "note": {
           "fr": "Vérifier si la participation correspond à une activité de représentation admissible.",
-          "en": "Confirm whether participation qualifies as an eligible representation activity."
+          "en": "Confirm whether participation qualifies as an eligible representation activity.",
+          "ja": "コンクール参加が対象となる対外活動に該当するか確認してください。"
         }
       }
     ]
@@ -222,17 +246,20 @@
     "deadlineDate": "2026-10-31",
     "deadlineLabel": {
       "fr": "Ouverture le 3 septembre — clôture le 31 octobre 2026",
-      "en": "Opens September 3 — closes October 31, 2026"
+      "en": "Opens September 3 — closes October 31, 2026",
+      "ja": "2026年9月3日受付開始・10月31日締切"
     },
     "profiles": ["artist"],
     "disciplines": ["music"],
     "summary": {
       "fr": "Appel international accueilli à Montréal. Pour une personne déjà au Québec, aucun financement de déplacement international n’est associé automatiquement.",
-      "en": "International call hosted in Montréal. For someone already in Québec, no international travel funding is automatically attached."
+      "en": "International call hosted in Montréal. For someone already in Québec, no international travel funding is automatically attached.",
+      "ja": "モントリオール開催の国際公募です。すでにケベック州内にいる申請者には、国外渡航助成を自動的に結びつけません。"
     },
     "requirements": {
       "fr": ["18 à 30 ans pour l’édition 2027", "Toutes nationalités", "Dossier et répertoire selon le règlement"],
-      "en": ["Age 18–30 for the 2027 edition", "All nationalities", "Application and repertoire per the rules"]
+      "en": ["Age 18–30 for the 2027 edition", "All nationalities", "Application and repertoire per the rules"],
+      "ja": ["2027年大会は18〜30歳", "国籍不問", "規定に沿った応募書類とレパートリー"]
     },
     "applicationLanguages": ["fr", "en"],
     "sourceUrl": "https://www.concoursmontreal.ca/en/piano-2027/rules/",

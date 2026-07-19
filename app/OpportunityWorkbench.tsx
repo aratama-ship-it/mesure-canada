@@ -1,10 +1,10 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import fundingData from "../data/funding.json";
 import opportunityData from "../data/opportunities.json";
 
-type Language = "fr" | "en";
+type Language = "fr" | "en" | "ja";
 type Profile = "artist" | "collective" | "organization";
 type Residence = "montreal" | "quebec";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music";
@@ -114,6 +114,11 @@ const copy = {
     },
     sourceNote:
       "Lecture de présélection seulement. La page officielle, la date de vérification et la preuve demandée restent visibles avant toute décision.",
+    verified: "Information officielle vérifiée le",
+    languageLabel: "Langue d’affichage",
+    workflowLabel: "Parcours de vérification",
+    matcherLabel: "Correspondance entre appels et financement",
+    eligibleCostsLabel: "Types de dépenses admissibles",
     whyKicker: "Pourquoi ce prototype",
     whyTitle: "Une liste dit ce qui existe. Une mesure dit ce qui manque.",
     whyBody:
@@ -186,6 +191,11 @@ const copy = {
     },
     sourceNote:
       "This is a pre-screen only. The official page, verification date and required proof remain visible before any decision.",
+    verified: "Official information checked",
+    languageLabel: "Display language",
+    workflowLabel: "Matching workflow",
+    matcherLabel: "Opportunity and funding matcher",
+    eligibleCostsLabel: "Eligible cost types",
     whyKicker: "Why this prototype",
     whyTitle: "A list tells you what exists. A measure tells you what is missing.",
     whyBody:
@@ -201,7 +211,103 @@ const copy = {
     footerNote: "Limited sample data. No result guarantees eligibility or funding.",
     status: { open: "Open", rolling: "Rolling", upcoming: "Upcoming", closed: "Closed" },
   },
+  ja: {
+    edition: "モントリオール版プロトタイプ · 公式情報を確認済み",
+    eyebrow: "公募と助成を、ひとつの作業机に",
+    headline: "応募する前に、実現までの道のりを測る。",
+    intro:
+      "申請者の状況と公募を選ぶと、渡航・ツアー・制作に利用できる可能性のある助成と、まだ不足している証明書類を確認できます。",
+    stamp: `${opportunities.length}件の公募 · ${fundingPrograms.length}件の助成制度 · 2026年7月19〜20日確認`,
+    steps: ["申請者の状況", "具体的な公募", "利用可能性のある助成"],
+    profileHeading: "出発点",
+    profile: "申請主体",
+    residence: "ケベック州内の拠点",
+    discipline: "活動分野",
+    profiles: {
+      artist: "個人アーティスト",
+      collective: "法人格のないコレクティブ",
+      organization: "団体・カンパニー",
+    },
+    residences: { montreal: "モントリオール島内", quebec: "ケベック州内（モントリオール島外）" },
+    disciplines: {
+      all: "すべて",
+      circus: "サーカス・ジャグリング",
+      theatre: "演劇",
+      dance: "ダンス",
+      music: "音楽",
+    },
+    profileNote:
+      "この試作版が助成機関に代わって可否を決めることはありません。「利用できそう」「条件を満たせば可能」「個別確認が必要」を分けて表示します。",
+    callsHeading: "該当する公募",
+    callsCount: "件",
+    noResults: "このサンプル内に条件と一致する公募がありません。別の活動分野を選んでください。",
+    fundingHeading: "資金計画",
+    chosen: "選択中の公募",
+    officialCall: "公募の公式情報を確認 ↗",
+    fundingFor: "関連する助成制度",
+    noFunding:
+      "直接対応する助成制度を自動表示していません。地元開催の公募や渡航の証明がないコンペに、誤った助成候補を結びつけないためです。",
+    officialFunding: "助成制度の公式情報を確認 ↗",
+    states: {
+      possible: "現時点で利用可能性あり",
+      conditional: "条件を満たせば可能性あり",
+      verify: "個別確認が必要",
+    },
+    coverage: {
+      travel: "渡航費",
+      stay: "滞在費",
+      visa: "査証費",
+      transport: "機材運搬費",
+      promotion: "広報費",
+      market: "市場開拓費",
+      touring: "ツアー費",
+      fees: "報酬",
+      production: "制作費",
+      research: "調査費",
+      creation: "創作費",
+    },
+    sourceNote:
+      "これは事前確認用の判定です。申請を決める前に、公式ページ、情報の確認日、必要書類を必ず確認してください。",
+    verified: "公式情報の確認日",
+    languageLabel: "表示言語",
+    workflowLabel: "照合の手順",
+    matcherLabel: "公募と助成制度の照合",
+    eligibleCostsLabel: "対象となる経費",
+    whyKicker: "この試作版の目的",
+    whyTitle: "一覧は「何があるか」を示す。物差しは「何が足りないか」を示す。",
+    whyBody:
+      "最終的な根拠は各機関の公式サイトです。MESUREはその一歩手前で、居住地、申請主体、プロジェクト時期をもとに、実在する公募と利用可能性のある助成を結びつけます。",
+    rulesKicker: "信頼性のルール",
+    rulesTitle: "根拠のない「最適な助成」は表示しません。",
+    rules: [
+      "国と都市は「国外」のような相対表現ではなく、絶対値で記録します。",
+      "招待状、契約書、認定された主催者などの条件を省略せず表示します。",
+      "判断に影響する情報には、公式情報へのリンクと確認日を付けます。",
+    ],
+    footer: "MESURE — Québec · 検証用MVP",
+    footerNote: "限定的なサンプルデータです。表示結果は申請資格や採択を保証しません。",
+    status: { open: "募集中", rolling: "随時受付", upcoming: "近日開始", closed: "募集終了" },
+  },
 } as const;
+
+const placeNames: Record<Language, Record<string, string>> = {
+  fr: {},
+  en: {},
+  ja: {
+    France: "フランス",
+    Paris: "パリ",
+    Australia: "オーストラリア",
+    Perth: "パース",
+    China: "中国",
+    Wuzhen: "烏鎮",
+    "United States": "アメリカ合衆国",
+    Seattle: "シアトル",
+    "United Kingdom": "イギリス",
+    Leeds: "リーズ",
+    Canada: "カナダ",
+    Montréal: "モントリオール",
+  },
+};
 
 const profileOptions: Profile[] = ["artist", "collective", "organization"];
 const residenceOptions: Residence[] = ["montreal", "quebec"];
@@ -237,6 +343,10 @@ export function OpportunityWorkbench() {
   const [discipline, setDiscipline] = useState<Discipline>("all");
   const [selectedId, setSelectedId] = useState(opportunities[0]?.id ?? "");
   const t = copy[language];
+
+  useEffect(() => {
+    document.documentElement.lang = language === "fr" ? "fr-CA" : language === "en" ? "en-CA" : "ja";
+  }, [language]);
 
   const filteredOpportunities = useMemo(
     () =>
@@ -283,8 +393,8 @@ export function OpportunityWorkbench() {
           <h1 className="brand">MESURE</h1>
           <span className="edition">{t.edition}</span>
         </div>
-        <div className="language-switch" aria-label="Language / Langue">
-          {(["fr", "en"] as Language[]).map((item) => (
+        <div className="language-switch" aria-label={t.languageLabel}>
+          {(["fr", "en", "ja"] as Language[]).map((item) => (
             <button
               key={item}
               type="button"
@@ -308,7 +418,7 @@ export function OpportunityWorkbench() {
         </div>
       </section>
 
-      <nav className="steps" aria-label="Workflow">
+      <nav className="steps" aria-label={t.workflowLabel}>
         {t.steps.map((label, index) => (
           <div className="step" key={label}>
             <span className="step-number">0{index + 1}</span>
@@ -317,7 +427,7 @@ export function OpportunityWorkbench() {
         ))}
       </nav>
 
-      <section className="workbench" aria-label="Opportunity and funding matcher">
+      <section className="workbench" aria-label={t.matcherLabel}>
         <aside className="panel panel-profile">
           <div className="panel-heading">
             <span className="section-kicker">01</span>
@@ -415,7 +525,9 @@ export function OpportunityWorkbench() {
                     </span>
                     <h4>{opportunity.title}</h4>
                     <p className="row-meta">
-                      {opportunity.city} · {opportunity.country} · {opportunity.organizer}
+                      {placeNames[language][opportunity.city] ?? opportunity.city} ·{" "}
+                      {placeNames[language][opportunity.country] ?? opportunity.country} ·{" "}
+                      {opportunity.organizer}
                     </p>
                   </button>
                 );
@@ -451,6 +563,7 @@ export function OpportunityWorkbench() {
                 >
                   {t.officialCall}
                 </a>
+                <span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span>
               </article>
 
               <div className="matches-title">
@@ -465,7 +578,7 @@ export function OpportunityWorkbench() {
                       <span className="match-state">{t.states[match.state]}</span>
                       <h5>{funding.name}</h5>
                       <p>{match.note[language]}</p>
-                      <div className="coverage" aria-label="Eligible cost types">
+                      <div className="coverage" aria-label={t.eligibleCostsLabel}>
                         {funding.coverage.map((item) => (
                           <span key={item}>{t.coverage[item as keyof typeof t.coverage]}</span>
                         ))}
@@ -481,6 +594,7 @@ export function OpportunityWorkbench() {
                       >
                         {t.officialFunding}
                       </a>
+                      <span className="verified-date">{t.verified}: {funding.verifiedAt}</span>
                     </article>
                   ))}
                 </div>

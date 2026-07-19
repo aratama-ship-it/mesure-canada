@@ -24,6 +24,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Festival Mondial du Cirque de Demain/);
   assert.match(html, /CALQ — Déplacement/);
+  assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
 
@@ -43,9 +44,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
     assert.match(record.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(!String(record.country).includes("海外"));
+    assert.ok(record.deadlineLabel.ja);
+    assert.ok(record.summary.ja);
+    assert.ok(record.requirements.ja.length > 0);
     for (const match of record.fundingMatches) {
       assert.ok(fundingIds.has(match.fundingId), `Missing funding record: ${match.fundingId}`);
       assert.ok(["possible", "conditional", "verify"].includes(match.state));
+      assert.ok(match.note.ja);
     }
   }
   for (const record of funding) {
@@ -53,5 +58,8 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.match(record.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
+    assert.ok(record.deadline.ja);
+    assert.ok(record.amount.ja);
+    assert.ok(record.cashflow.ja);
   }
 });
