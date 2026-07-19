@@ -1,0 +1,186 @@
+[
+  {
+    "id": "calq-travel",
+    "name": "CALQ — Déplacement",
+    "funder": "Conseil des arts et des lettres du Québec",
+    "profiles": ["artist"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "En tout temps, au moins 4 semaines avant le départ",
+      "en": "Rolling, at least 4 weeks before departure"
+    },
+    "amount": {
+      "fr": "Sans montant maximal fixe; calculé selon les coûts admissibles",
+      "en": "No fixed maximum; calculated from eligible costs"
+    },
+    "coverage": ["travel", "stay", "visa"],
+    "cashflow": {
+      "fr": "Réponse généralement en environ 8 semaines",
+      "en": "Decision usually takes about 8 weeks"
+    },
+    "sourceUrl": "https://www.calq.gouv.qc.ca/aides/deplacement",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "calq-circulation",
+    "name": "CALQ — Circulation d’œuvres hors Québec",
+    "funder": "Conseil des arts et des lettres du Québec",
+    "profiles": ["artist"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "En tout temps, au moins 4 semaines avant le projet",
+      "en": "Rolling, at least 4 weeks before the project"
+    },
+    "amount": {
+      "fr": "Jusqu’à 75 % du coût total du projet",
+      "en": "Up to 75% of total project cost"
+    },
+    "coverage": ["travel", "stay", "transport", "promotion"],
+    "cashflow": {
+      "fr": "Confirmation écrite d’un diffuseur reconnu requise",
+      "en": "Written confirmation from a recognized presenter required"
+    },
+    "sourceUrl": "https://www.calq.gouv.qc.ca/aides/circulation-hors-quebec/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "calq-residencies",
+    "name": "CALQ — Ateliers-résidences",
+    "funder": "Conseil des arts et des lettres du Québec",
+    "profiles": ["artist"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "Selon chaque appel",
+      "en": "Varies by call"
+    },
+    "amount": {
+      "fr": "Selon la résidence; environ 40 occasions internationales dans le réseau",
+      "en": "Varies by residency; about 40 international opportunities in the network"
+    },
+    "coverage": ["travel", "stay", "production"],
+    "cashflow": {
+      "fr": "Modalités propres à chaque résidence",
+      "en": "Residency-specific payment terms"
+    },
+    "sourceUrl": "https://www.calq.gouv.qc.ca/aide-financiere/international",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cca-representation",
+    "name": "Canada Council — Representation and Promotion",
+    "funder": "Canada Council for the Arts",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "En continu, avant le départ",
+      "en": "Rolling, before departure"
+    },
+    "amount": {
+      "fr": "Montant déterminé dans le portail selon le profil",
+      "en": "Amount determined in the portal by applicant profile"
+    },
+    "coverage": ["travel", "promotion", "market"],
+    "cashflow": {
+      "fr": "Délai de réponse habituel d’environ 4 mois",
+      "en": "Typical decision time is about 4 months"
+    },
+    "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cca-touring",
+    "name": "Canada Council — Circulation and Touring",
+    "funder": "Canada Council for the Arts",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "Prochaine échéance : 7 octobre 2026",
+      "en": "Next deadline: October 7, 2026"
+    },
+    "amount": {
+      "fr": "Jusqu’à 200 000 $, maximum 50 % des coûts admissibles",
+      "en": "Up to $200,000, maximum 50% of eligible costs"
+    },
+    "coverage": ["travel", "touring", "transport", "fees"],
+    "cashflow": {
+      "fr": "Délai de réponse habituel d’environ 5 mois",
+      "en": "Typical decision time is about 5 months"
+    },
+    "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cca-residencies",
+    "name": "Canada Council — International Residencies",
+    "funder": "Canada Council for the Arts",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "Prochaine échéance : 21 octobre 2026",
+      "en": "Next deadline: October 21, 2026"
+    },
+    "amount": {
+      "fr": "Montant déterminé dans le portail selon le profil",
+      "en": "Amount determined in the portal by applicant profile"
+    },
+    "coverage": ["travel", "stay", "production"],
+    "cashflow": {
+      "fr": "Délai de réponse habituel d’environ 5 mois",
+      "en": "Typical decision time is about 5 months"
+    },
+    "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cca-coproductions",
+    "name": "Canada Council — International Co-productions",
+    "funder": "Canada Council for the Arts",
+    "profiles": ["collective", "organization"],
+    "residencies": ["quebec"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "Prochaine échéance : 4 novembre 2026",
+      "en": "Next deadline: November 4, 2026"
+    },
+    "amount": {
+      "fr": "Montant déterminé dans le portail selon le profil",
+      "en": "Amount determined in the portal by applicant profile"
+    },
+    "coverage": ["production", "fees", "travel"],
+    "cashflow": {
+      "fr": "Délai de réponse habituel d’environ 5 mois",
+      "en": "Typical decision time is about 5 months"
+    },
+    "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cam-collectives",
+    "name": "CAM — Aide aux projets pour les collectifs d’artistes",
+    "funder": "Conseil des arts de Montréal",
+    "profiles": ["collective"],
+    "residencies": ["montreal"],
+    "disciplines": ["all"],
+    "deadline": {
+      "fr": "Prochaine échéance : 19 août 2026",
+      "en": "Next deadline: August 19, 2026"
+    },
+    "amount": {
+      "fr": "Montant selon le projet et le cadre du programme",
+      "en": "Amount varies by project and program framework"
+    },
+    "coverage": ["research", "creation", "production"],
+    "cashflow": {
+      "fr": "Modalités de versement décrites dans le programme",
+      "en": "Payment terms are described in the program"
+    },
+    "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
+    "verifiedAt": "2026-07-20"
+  }
+]

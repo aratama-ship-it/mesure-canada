@@ -1,0 +1,242 @@
+[
+  {
+    "id": "cirque-de-demain-2027",
+    "title": "Festival Mondial du Cirque de Demain — 46e édition",
+    "organizer": "Festival Mondial du Cirque de Demain",
+    "country": "France",
+    "city": "Paris",
+    "status": "open",
+    "deadlineDate": "2026-09-15",
+    "deadlineLabel": {
+      "fr": "15 septembre 2026",
+      "en": "September 15, 2026"
+    },
+    "profiles": ["artist", "collective"],
+    "disciplines": ["circus"],
+    "summary": {
+      "fr": "Concours international pour numéros de cirque portés par des artistes de 16 à 30 ans. Vidéo obligatoire.",
+      "en": "International competition for circus acts led by performers aged 16–30. A video submission is required."
+    },
+    "requirements": {
+      "fr": ["16 à 30 ans, sauf exception", "Candidature individuelle ou en groupe", "Vidéo du numéro requise"],
+      "en": ["Age 16–30, with limited exceptions", "Solo or group applications", "Act video required"]
+    },
+    "applicationLanguages": ["fr", "en"],
+    "sourceUrl": "https://www.cirquededemain.paris/candidatures",
+    "verifiedAt": "2026-07-19",
+    "fundingMatches": [
+      {
+        "fundingId": "calq-travel",
+        "state": "conditional",
+        "note": {
+          "fr": "À activer après une confirmation ou une invitation officielle.",
+          "en": "Becomes actionable after official confirmation or invitation."
+        }
+      },
+      {
+        "fundingId": "cca-representation",
+        "state": "conditional",
+        "note": {
+          "fr": "À vérifier selon le statut professionnel et la nature de la représentation.",
+          "en": "Confirm professional status and whether the trip qualifies as representation."
+        }
+      }
+    ]
+  },
+  {
+    "id": "fringe-world-perth-2027",
+    "title": "FRINGE WORLD Perth — Artist Registration 2027",
+    "organizer": "ARTRAGE",
+    "country": "Australia",
+    "city": "Perth",
+    "status": "rolling",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Inscription en continu",
+      "en": "Rolling registration"
+    },
+    "profiles": ["artist", "collective", "organization"],
+    "disciplines": ["circus", "theatre", "dance", "music"],
+    "summary": {
+      "fr": "Festival en accès libre. Les artistes du monde entier peuvent s’inscrire, mais doivent organiser leur lieu et leur économie de tournée.",
+      "en": "Open-access festival. Artists worldwide can register, but must arrange their venue and touring economics."
+    },
+    "requirements": {
+      "fr": ["Ouvert aux artistes du monde entier", "Inscription dans le portail AVR", "Lieu et coûts à confirmer avant le départ"],
+      "en": ["Open to artists worldwide", "AVR portal registration", "Venue and costs must be confirmed before travel"]
+    },
+    "applicationLanguages": ["en"],
+    "sourceUrl": "https://fringeworld.com.au/as-an-artist",
+    "verifiedAt": "2026-07-19",
+    "fundingMatches": [
+      {
+        "fundingId": "calq-circulation",
+        "state": "conditional",
+        "note": {
+          "fr": "Un contrat ou une confirmation écrite d’un diffuseur reconnu est nécessaire.",
+          "en": "A contract or written confirmation from a recognized presenter is required."
+        }
+      },
+      {
+        "fundingId": "cca-touring",
+        "state": "conditional",
+        "note": {
+          "fr": "Pertinent pour une tournée structurée; l’aide ne couvre pas plus de 50 % des coûts admissibles.",
+          "en": "Relevant for a structured tour; support covers no more than 50% of eligible costs."
+        }
+      }
+    ]
+  },
+  {
+    "id": "wuzhen-emerging-2026",
+    "title": "Wuzhen Theatre Festival — Emerging Theatre Artists Competition",
+    "organizer": "Wuzhen Theatre Festival",
+    "country": "China",
+    "city": "Wuzhen",
+    "status": "open",
+    "deadlineDate": "2026-08-20",
+    "deadlineLabel": {
+      "fr": "20 août 2026, midi",
+      "en": "August 20, 2026, noon"
+    },
+    "profiles": ["artist", "collective"],
+    "disciplines": ["theatre"],
+    "summary": {
+      "fr": "Compétition pour une œuvre scénique originale de 30 minutes maximum, créée en chinois autour de trois éléments imposés.",
+      "en": "Competition for an original stage work of up to 30 minutes, created in Chinese from three required elements."
+    },
+    "requirements": {
+      "fr": ["Création en chinois", "30 minutes maximum", "Utiliser les trois éléments imposés en 2026"],
+      "en": ["Work must be created in Chinese", "Maximum 30 minutes", "Use all three required 2026 elements"]
+    },
+    "applicationLanguages": ["zh"],
+    "sourceUrl": "http://www.wuzhenfestival.com/index.php?m=Xijujie&a=qingnianjingyan",
+    "verifiedAt": "2026-07-19",
+    "fundingMatches": [
+      {
+        "fundingId": "calq-travel",
+        "state": "conditional",
+        "note": {
+          "fr": "À considérer seulement après la sélection et la réception d’une confirmation officielle.",
+          "en": "Consider only after selection and official confirmation."
+        }
+      },
+      {
+        "fundingId": "cca-representation",
+        "state": "verify",
+        "note": {
+          "fr": "La langue et le format compétitif demandent une vérification du projet avant d’engager une demande.",
+          "en": "The language and competition format require project-specific confirmation before applying."
+        }
+      }
+    ]
+  },
+  {
+    "id": "wjf-23-seattle",
+    "title": "World Juggling Federation — WJF 23",
+    "organizer": "World Juggling Federation",
+    "country": "United States",
+    "city": "Seattle",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "31 juillet 2026",
+      "en": "July 31, 2026"
+    },
+    "profiles": ["artist"],
+    "disciplines": ["circus"],
+    "summary": {
+      "fr": "Compétition et convention de jonglerie avec catégories de niveau et possibilité de présélection vidéo pour certaines épreuves.",
+      "en": "Juggling competition and convention with skill divisions and video pre-qualification for some events."
+    },
+    "requirements": {
+      "fr": ["Adhésion WJF requise", "Catégorie adaptée au niveau et à l’âge", "Vérifier les règles de présélection vidéo"],
+      "en": ["WJF membership required", "Choose the correct level and age category", "Confirm video pre-qualification rules"]
+    },
+    "applicationLanguages": ["en"],
+    "sourceUrl": "https://www.thewjf.com/competition/",
+    "verifiedAt": "2026-07-19",
+    "fundingMatches": [
+      {
+        "fundingId": "calq-travel",
+        "state": "verify",
+        "note": {
+          "fr": "Le caractère professionnel et la preuve de participation doivent être confirmés.",
+          "en": "Professional status and participation evidence must be confirmed."
+        }
+      }
+    ]
+  },
+  {
+    "id": "leeds-piano-2027",
+    "title": "The Leeds International Piano Competition 2027",
+    "organizer": "The Leeds International Piano Competition",
+    "country": "United Kingdom",
+    "city": "Leeds",
+    "status": "open",
+    "deadlineDate": "2026-10-31",
+    "deadlineLabel": {
+      "fr": "31 octobre 2026 — tarif hâtif le 30 septembre",
+      "en": "October 31, 2026 — early rate September 30"
+    },
+    "profiles": ["artist"],
+    "disciplines": ["music"],
+    "summary": {
+      "fr": "Concours international de piano ouvert à toutes les nationalités, avec limite d’âge propre à l’édition 2027.",
+      "en": "International piano competition open to all nationalities, with a 2027-specific age limit."
+    },
+    "requirements": {
+      "fr": ["Né entre le 19 septembre 1991 et le 30 mars 2007", "Passeport ou pièce d’identité valide", "Répertoire et vidéo selon le règlement"],
+      "en": ["Born between September 19, 1991 and March 30, 2007", "Valid passport or identification", "Repertoire and video per the rules"]
+    },
+    "applicationLanguages": ["en"],
+    "sourceUrl": "https://www.leedspiano.com/2027-competition/",
+    "verifiedAt": "2026-07-19",
+    "fundingMatches": [
+      {
+        "fundingId": "calq-travel",
+        "state": "conditional",
+        "note": {
+          "fr": "La confirmation d’admission ou l’invitation doit précéder la demande de déplacement.",
+          "en": "Admission confirmation or an invitation is needed before requesting travel support."
+        }
+      },
+      {
+        "fundingId": "cca-representation",
+        "state": "verify",
+        "note": {
+          "fr": "Vérifier si la participation correspond à une activité de représentation admissible.",
+          "en": "Confirm whether participation qualifies as an eligible representation activity."
+        }
+      }
+    ]
+  },
+  {
+    "id": "cmim-piano-2027",
+    "title": "Concours musical international de Montréal — Piano 2027",
+    "organizer": "Concours musical international de Montréal",
+    "country": "Canada",
+    "city": "Montréal",
+    "status": "upcoming",
+    "openDate": "2026-09-03",
+    "deadlineDate": "2026-10-31",
+    "deadlineLabel": {
+      "fr": "Ouverture le 3 septembre — clôture le 31 octobre 2026",
+      "en": "Opens September 3 — closes October 31, 2026"
+    },
+    "profiles": ["artist"],
+    "disciplines": ["music"],
+    "summary": {
+      "fr": "Appel international accueilli à Montréal. Pour une personne déjà au Québec, aucun financement de déplacement international n’est associé automatiquement.",
+      "en": "International call hosted in Montréal. For someone already in Québec, no international travel funding is automatically attached."
+    },
+    "requirements": {
+      "fr": ["18 à 30 ans pour l’édition 2027", "Toutes nationalités", "Dossier et répertoire selon le règlement"],
+      "en": ["Age 18–30 for the 2027 edition", "All nationalities", "Application and repertoire per the rules"]
+    },
+    "applicationLanguages": ["fr", "en"],
+    "sourceUrl": "https://www.concoursmontreal.ca/en/piano-2027/rules/",
+    "verifiedAt": "2026-07-19",
+    "fundingMatches": []
+  }
+]
