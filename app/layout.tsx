@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 
-const title = "MESURE — Québec | Appels et financement culturel";
+const title = "MESURE — Canada | Appels et financement culturel";
 const description =
-  "Un prototype pour relier les appels internationaux aux aides accessibles depuis le Québec.";
+  "Un outil de présélection qui relie les appels internationaux aux aides accessibles depuis le Québec et l’Ontario, selon le lieu de résidence et le statut au Canada.";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
@@ -27,7 +27,7 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
       type: "website",
       locale: "fr_CA",
-      images: [{ url: imageUrl, width: 1731, height: 909, alt: "MESURE — Québec" }],
+      images: [{ url: imageUrl, width: 1732, height: 908, alt: "MESURE — Canada" }],
     },
     twitter: {
       card: "summary_large_image",

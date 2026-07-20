@@ -20,10 +20,15 @@ test("server-renders the MESURE product surface", async () => {
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
-  assert.match(html, /<title>MESURE — Québec/);
+  assert.match(html, /<title>MESURE — Canada/);
   assert.match(html, /Avant d’envoyer le dossier/);
+  assert.match(html, /Où résidez-vous actuellement/);
+  assert.match(html, /Ville de Toronto/);
+  assert.match(html, /Ville d’Ottawa/);
+  assert.match(html, /Gatineau/);
   assert.match(html, /Festival Mondial du Cirque de Demain/);
   assert.match(html, /CALQ — Déplacement/);
+  assert.match(html, /Canada Council — Arts Abroad: Travel/);
   assert.match(html, /Votre statut au Canada/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
@@ -40,7 +45,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const fundingById = new Map(funding.map((record) => [record.id, record]));
 
   assert.ok(opportunities.length >= 6);
-  assert.ok(funding.length >= 8);
+  assert.ok(funding.length >= 16);
   for (const record of opportunities) {
     assert.ok(record.country && record.city);
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
@@ -65,6 +70,11 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.match(record.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
+    assert.ok(record.residencies.every((scope) =>
+      ["canada", "quebec", "montreal", "ontario", "gta", "toronto", "ottawa"].includes(scope)
+    ));
+    assert.ok(["mobility_export", "home_base_creation", "career_support"].includes(record.purpose));
+    assert.ok(["grant", "paid_program"].includes(record.kind));
     assert.ok(record.deadline.ja);
     assert.ok(record.amount.ja);
     assert.ok(record.cashflow.ja);
@@ -79,4 +89,25 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const representation = funding.find((record) => record.id === "cca-representation");
   assert.ok(representation);
   assert.deepEqual(representation.profiles, ["organization"]);
+  assert.deepEqual(representation.residencies, ["canada"]);
+
+  const newcomer = funding.find((record) => record.id === "tac-newcomer-mentorship");
+  assert.ok(newcomer.eligibility.individualStatuses.includes("temporary_work"));
+  assert.equal(newcomer.eligibility.sinRequired, true);
+  assert.equal(newcomer.eligibility.arrivalOnOrAfter, "2019-01-01");
+
+  const ottawa = funding.find((record) => record.id === "ottawa-creation-production");
+  assert.deepEqual(ottawa.residencies, ["ottawa"]);
+  assert.ok(ottawa.eligibility.verificationStatuses.includes("temporary_work"));
+
+  const artworks = funding.find((record) => record.id === "artworks-to-newcomer");
+  assert.equal(artworks.kind, "paid_program");
+  assert.ok(artworks.eligibility.conditionalStatuses.includes("temporary_work"));
+
+  for (const record of opportunities.filter((item) => item.country !== "Canada")) {
+    assert.ok(
+      record.fundingMatches.some((match) => match.fundingId === "cca-travel"),
+      `Missing Canada-wide travel screen: ${record.id}`,
+    );
+  }
 });

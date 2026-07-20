@@ -36,6 +36,15 @@
           "en": "Becomes actionable after official confirmation or invitation.",
           "ja": "採択確認または正式な招待状を得た後に申請候補となります。"
         }
+      },
+      {
+        "fundingId": "cca-travel",
+        "state": "verify",
+        "note": {
+          "fr": "Le volet Travel exige une activité internationale admissible et une invitation; l’admissibilité d’un concours doit être confirmée.",
+          "en": "Travel requires an eligible international activity and invitation; competition eligibility must be confirmed.",
+          "ja": "Travel制度は対象となる国際活動と招待状が必要です。コンクール参加が対象になるか個別確認してください。"
+        }
       }
     ]
   },
@@ -85,6 +94,24 @@
           "en": "Relevant for a structured tour; support covers no more than 50% of eligible costs.",
           "ja": "複数地を巡る計画的なツアー向け。助成は対象経費の50％が上限です。"
         }
+      },
+      {
+        "fundingId": "cca-travel",
+        "state": "conditional",
+        "note": {
+          "fr": "Une invitation et une activité internationale admissible sont nécessaires avant la demande.",
+          "en": "An invitation and eligible international activity are required before applying.",
+          "ja": "申請前に、招待状と対象となる国際活動の証明が必要です。"
+        }
+      },
+      {
+        "fundingId": "oac-touring",
+        "state": "conditional",
+        "note": {
+          "fr": "À utiliser seulement dans une tournée d’au moins trois engagements avec des hôtes distincts et une invitation confirmée.",
+          "en": "Use only as part of a tour with at least three engagements, distinct hosts and one confirmed invitation.",
+          "ja": "異なる主催者による3件以上の公演と確定した招待を含むツアーとして組める場合のみ候補です。"
+        }
       }
     ]
   },
@@ -124,6 +151,15 @@
           "fr": "À considérer seulement après la sélection et la réception d’une confirmation officielle.",
           "en": "Consider only after selection and official confirmation.",
           "ja": "選出され、正式な確認書を受け取った後に検討してください。"
+        }
+      },
+      {
+        "fundingId": "cca-travel",
+        "state": "verify",
+        "note": {
+          "fr": "La sélection, l’invitation et l’admissibilité de cette compétition doivent être vérifiées avant de compter sur l’aide.",
+          "en": "Selection, invitation and competition eligibility must be checked before relying on this funding.",
+          "ja": "採択・招待状に加え、このコンペが助成対象活動に当たるか確認してから資金計画へ入れてください。"
         }
       }
     ]
@@ -165,6 +201,15 @@
           "en": "Professional status and participation evidence must be confirmed.",
           "ja": "プロとしての活動であることと、参加を証明する書類を確認する必要があります。"
         }
+      },
+      {
+        "fundingId": "cca-travel",
+        "state": "verify",
+        "note": {
+          "fr": "Le statut professionnel, l’invitation et l’admissibilité d’une compétition doivent être confirmés.",
+          "en": "Professional standing, invitation and competition eligibility all need confirmation.",
+          "ja": "プロとしての活動、招待状、競技会参加が制度対象となるかの3点を確認してください。"
+        }
       }
     ]
   },
@@ -204,6 +249,15 @@
           "fr": "La confirmation d’admission ou l’invitation doit précéder la demande de déplacement.",
           "en": "Admission confirmation or an invitation is needed before requesting travel support.",
           "ja": "渡航助成の申請前に、参加承認または招待状が必要です。"
+        }
+      },
+      {
+        "fundingId": "cca-travel",
+        "state": "verify",
+        "note": {
+          "fr": "L’admission et une invitation sont nécessaires; l’admissibilité d’un concours doit être confirmée.",
+          "en": "Admission and an invitation are required; competition eligibility must be confirmed.",
+          "ja": "参加承認と招待状が必要です。コンクール参加が制度対象となるかも個別確認してください。"
         }
       }
     ]

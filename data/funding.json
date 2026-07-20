@@ -6,6 +6,8 @@
     "profiles": ["artist"],
     "residencies": ["quebec"],
     "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
     "deadline": {
       "fr": "En tout temps, au moins 4 semaines avant le départ",
       "en": "Rolling, at least 4 weeks before departure",
@@ -24,7 +26,7 @@
     },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent"],
-      "minimumQuebecMonths": 12,
+      "minimumProvinceMonths": 12,
       "note": {
         "fr": "Citoyenneté canadienne ou résidence permanente, avec résidence habituelle au Québec pendant les 12 derniers mois.",
         "en": "Canadian citizenship or permanent residence, plus habitual residence in Québec for the previous 12 months.",
@@ -43,6 +45,8 @@
     "profiles": ["artist"],
     "residencies": ["quebec"],
     "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
     "deadline": {
       "fr": "En tout temps, au moins 4 semaines avant le projet",
       "en": "Rolling, at least 4 weeks before the project",
@@ -61,7 +65,7 @@
     },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent"],
-      "minimumQuebecMonths": 12,
+      "minimumProvinceMonths": 12,
       "note": {
         "fr": "Citoyenneté canadienne ou résidence permanente, avec résidence habituelle au Québec pendant les 12 derniers mois.",
         "en": "Canadian citizenship or permanent residence, plus habitual residence in Québec for the previous 12 months.",
@@ -80,11 +84,9 @@
     "profiles": ["artist"],
     "residencies": ["quebec"],
     "disciplines": ["all"],
-    "deadline": {
-      "fr": "Selon chaque appel",
-      "en": "Varies by call",
-      "ja": "各募集により異なる"
-    },
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "Selon chaque appel", "en": "Varies by call", "ja": "各募集により異なる" },
     "amount": {
       "fr": "Selon la résidence; environ 40 occasions internationales dans le réseau",
       "en": "Varies by residency; about 40 international opportunities in the network",
@@ -98,7 +100,7 @@
     },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent"],
-      "minimumQuebecMonths": 12,
+      "minimumProvinceMonths": 12,
       "note": {
         "fr": "Les conditions générales du CALQ exigent la citoyenneté ou la résidence permanente et 12 mois de résidence au Québec; chaque appel doit aussi être vérifié.",
         "en": "CALQ general rules require citizenship or permanent residence and 12 months in Québec; each residency call must also be checked.",
@@ -111,17 +113,51 @@
     "verifiedAt": "2026-07-20"
   },
   {
+    "id": "cca-travel",
+    "name": "Canada Council — Arts Abroad: Travel",
+    "funder": "Canada Council for the Arts",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["canada"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": {
+      "fr": "En continu, avant le départ; prévoir normalement environ 2 mois",
+      "en": "Rolling before departure; normally allow about 2 months",
+      "ja": "随時受付。出発前に申請し、通常は約2か月の余裕が必要"
+    },
+    "amount": { "fr": "Jusqu’à 30 000 $", "en": "Up to $30,000", "ja": "最大3万カナダドル" },
+    "coverage": ["travel", "stay", "visa", "transport"],
+    "cashflow": {
+      "fr": "Déplacement à l’extérieur du Canada d’au moins 500 km, avec invitation ou activité admissible",
+      "en": "Travel outside Canada of at least 500 km, with an invitation or eligible activity",
+      "ja": "カナダ国外へ500km以上移動し、招待状または対象活動の証明が必要"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected"],
+      "collectiveRule": "cca_half",
+      "organizationRegisteredInCanada": true,
+      "note": {
+        "fr": "Les individus peuvent être citoyens, résidents permanents ou personnes protégées. Un groupe doit compter au moins la moitié de membres principaux admissibles; les deux membres d’un duo doivent l’être.",
+        "en": "Individuals may be citizens, permanent residents or protected persons. At least half of a group’s core members must qualify; both members of a duo must qualify.",
+        "ja": "個人は市民・永住者・Protected Personが対象です。グループは主要メンバーの半数以上、2人組は2人とも対象資格を持つ必要があります。"
+      },
+      "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://apply.canadacouncil.ca/Configuration/Application_Forms/P6/en-CA/CCA_6.1.pdf",
+    "verifiedAt": "2026-07-20"
+  },
+  {
     "id": "cca-representation",
     "name": "Canada Council — Representation and Promotion",
     "funder": "Canada Council for the Arts",
     "profiles": ["organization"],
-    "residencies": ["quebec"],
+    "residencies": ["canada"],
     "disciplines": ["all"],
-    "deadline": {
-      "fr": "En continu, avant le départ",
-      "en": "Rolling, before departure",
-      "ja": "随時受付。出発前に申請"
-    },
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "En continu, avant le départ", "en": "Rolling, before departure", "ja": "随時受付。出発前に申請" },
     "amount": {
       "fr": "Montant déterminé dans le portail selon le profil",
       "en": "Amount determined in the portal by applicant profile",
@@ -136,9 +172,9 @@
     "eligibility": {
       "organizationRegisteredInCanada": true,
       "note": {
-        "fr": "Le profil d’artiste individuel ne donne pas accès à ce volet. L’organisme doit avoir un profil admissible et être constitué ou enregistré au Canada.",
-        "en": "The individual artist profile does not access this component. The organization needs an eligible profile and Canadian incorporation or registration.",
-        "ja": "個人アーティストのプロフィールはこの制度の対象ではありません。団体は適格な申請者プロフィールを持ち、カナダで法人化または登録されている必要があります。"
+        "fr": "Ce volet exige un profil d’organisme admissible constitué ou enregistré au Canada; il n’est pas accessible avec un profil individuel.",
+        "en": "This component requires an eligible organization profile incorporated or registered in Canada; individual profiles cannot apply.",
+        "ja": "対象となる団体プロフィールを持ち、カナダで法人化または登録されている必要があります。個人プロフィールでは申請できません。"
       },
       "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
       "verifiedAt": "2026-07-20"
@@ -151,31 +187,25 @@
     "name": "Canada Council — Circulation and Touring",
     "funder": "Canada Council for the Arts",
     "profiles": ["artist", "collective", "organization"],
-    "residencies": ["quebec"],
+    "residencies": ["canada"],
     "disciplines": ["all"],
-    "deadline": {
-      "fr": "Prochaine échéance : 7 octobre 2026",
-      "en": "Next deadline: October 7, 2026",
-      "ja": "次回締切：2026年10月7日"
-    },
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "Prochaine échéance : 7 octobre 2026", "en": "Next deadline: October 7, 2026", "ja": "次回締切：2026年10月7日" },
     "amount": {
       "fr": "Jusqu’à 200 000 $, maximum 50 % des coûts admissibles",
       "en": "Up to $200,000, maximum 50% of eligible costs",
       "ja": "最大20万カナダドル。対象経費の50％が上限"
     },
     "coverage": ["travel", "touring", "transport", "fees"],
-    "cashflow": {
-      "fr": "Délai de réponse habituel d’environ 5 mois",
-      "en": "Typical decision time is about 5 months",
-      "ja": "通常、審査結果まで約5か月"
-    },
+    "cashflow": { "fr": "Délai de réponse habituel d’environ 5 mois", "en": "Typical decision time is about 5 months", "ja": "通常、審査結果まで約5か月" },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent", "protected"],
       "collectiveRule": "cca_half",
       "organizationRegisteredInCanada": true,
       "note": {
         "fr": "Les individus peuvent être citoyens, résidents permanents ou personnes protégées. Pour un groupe, au moins la moitié des membres principaux — ou les deux membres d’un duo — doivent avoir un statut reconnu.",
-        "en": "Individuals may be citizens, permanent residents or protected persons. For a group, at least half of core members—or both members of a duo—need a recognized status.",
+        "en": "Individuals may be citizens, permanent residents or protected persons. At least half of core members—or both members of a duo—need a recognized status.",
         "ja": "個人は市民・永住者・Protected Personが対象です。グループは主要メンバーの半数以上、2人組の場合は2人とも対象資格を持つ必要があります。"
       },
       "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
@@ -189,32 +219,22 @@
     "name": "Canada Council — International Residencies",
     "funder": "Canada Council for the Arts",
     "profiles": ["artist", "collective", "organization"],
-    "residencies": ["quebec"],
+    "residencies": ["canada"],
     "disciplines": ["all"],
-    "deadline": {
-      "fr": "Prochaine échéance : 21 octobre 2026",
-      "en": "Next deadline: October 21, 2026",
-      "ja": "次回締切：2026年10月21日"
-    },
-    "amount": {
-      "fr": "Montant déterminé dans le portail selon le profil",
-      "en": "Amount determined in the portal by applicant profile",
-      "ja": "申請者区分に応じてポータル上で金額を確認"
-    },
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "Prochaine échéance : 21 octobre 2026", "en": "Next deadline: October 21, 2026", "ja": "次回締切：2026年10月21日" },
+    "amount": { "fr": "Montant déterminé dans le portail selon le profil", "en": "Amount determined in the portal by applicant profile", "ja": "申請者区分に応じてポータル上で金額を確認" },
     "coverage": ["travel", "stay", "production"],
-    "cashflow": {
-      "fr": "Délai de réponse habituel d’environ 5 mois",
-      "en": "Typical decision time is about 5 months",
-      "ja": "通常、審査結果まで約5か月"
-    },
+    "cashflow": { "fr": "Délai de réponse habituel d’environ 5 mois", "en": "Typical decision time is about 5 months", "ja": "通常、審査結果まで約5か月" },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent", "protected"],
       "collectiveRule": "cca_half",
       "organizationRegisteredInCanada": true,
       "note": {
-        "fr": "Les individus peuvent être citoyens, résidents permanents ou personnes protégées. Pour un groupe, au moins la moitié des membres principaux — ou les deux membres d’un duo — doivent avoir un statut reconnu.",
-        "en": "Individuals may be citizens, permanent residents or protected persons. For a group, at least half of core members—or both members of a duo—need a recognized status.",
-        "ja": "個人は市民・永住者・Protected Personが対象です。グループは主要メンバーの半数以上、2人組の場合は2人とも対象資格を持つ必要があります。"
+        "fr": "Les règles de profil du Conseil des arts du Canada s’appliquent; chaque résidence ajoute ses propres conditions.",
+        "en": "Canada Council profile rules apply, and each residency adds its own conditions.",
+        "ja": "Canada Councilの申請者プロフィール条件に加え、各レジデンス固有の条件があります。"
       },
       "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
       "verifiedAt": "2026-07-20"
@@ -227,31 +247,21 @@
     "name": "Canada Council — International Co-productions",
     "funder": "Canada Council for the Arts",
     "profiles": ["collective", "organization"],
-    "residencies": ["quebec"],
+    "residencies": ["canada"],
     "disciplines": ["all"],
-    "deadline": {
-      "fr": "Prochaine échéance : 4 novembre 2026",
-      "en": "Next deadline: November 4, 2026",
-      "ja": "次回締切：2026年11月4日"
-    },
-    "amount": {
-      "fr": "Montant déterminé dans le portail selon le profil",
-      "en": "Amount determined in the portal by applicant profile",
-      "ja": "申請者区分に応じてポータル上で金額を確認"
-    },
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "Prochaine échéance : 4 novembre 2026", "en": "Next deadline: November 4, 2026", "ja": "次回締切：2026年11月4日" },
+    "amount": { "fr": "Montant déterminé dans le portail selon le profil", "en": "Amount determined in the portal by applicant profile", "ja": "申請者区分に応じてポータル上で金額を確認" },
     "coverage": ["production", "fees", "travel"],
-    "cashflow": {
-      "fr": "Délai de réponse habituel d’environ 5 mois",
-      "en": "Typical decision time is about 5 months",
-      "ja": "通常、審査結果まで約5か月"
-    },
+    "cashflow": { "fr": "Délai de réponse habituel d’environ 5 mois", "en": "Typical decision time is about 5 months", "ja": "通常、審査結果まで約5か月" },
     "eligibility": {
       "collectiveRule": "cca_half",
       "organizationRegisteredInCanada": true,
       "note": {
-        "fr": "Ce volet s’adresse aux groupes et organismes admissibles, pas aux artistes individuels. Un groupe doit satisfaire au seuil de statut des membres principaux.",
-        "en": "This component is for eligible groups and organizations, not individual artists. Groups must meet the core-member status threshold.",
-        "ja": "個人アーティストではなく、適格なグループ・団体向けです。グループは主要メンバーの在留資格比率を満たす必要があります。"
+        "fr": "Ce volet s’adresse aux groupes et organismes admissibles; les groupes doivent satisfaire au seuil des membres principaux.",
+        "en": "This component is for eligible groups and organizations; groups must meet the core-member threshold.",
+        "ja": "適格なグループ・団体向けです。グループは主要メンバーの資格比率を満たす必要があります。"
       },
       "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
       "verifiedAt": "2026-07-20"
@@ -266,34 +276,234 @@
     "profiles": ["collective"],
     "residencies": ["montreal"],
     "disciplines": ["all"],
-    "deadline": {
-      "fr": "Prochaine échéance : 19 août 2026",
-      "en": "Next deadline: August 19, 2026",
-      "ja": "次回締切：2026年8月19日"
-    },
-    "amount": {
-      "fr": "Montant selon le projet et le cadre du programme",
-      "en": "Amount varies by project and program framework",
-      "ja": "プロジェクト内容と制度の枠組みにより異なる"
-    },
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "Prochaine échéance : 19 août 2026", "en": "Next deadline: August 19, 2026", "ja": "次回締切：2026年8月19日" },
+    "amount": { "fr": "Montant selon le projet et le cadre du programme", "en": "Amount varies by project and program framework", "ja": "プロジェクト内容と制度の枠組みにより異なる" },
     "coverage": ["research", "creation", "production"],
-    "cashflow": {
-      "fr": "Modalités de versement décrites dans le programme",
-      "en": "Payment terms are described in the program",
-      "ja": "支給条件は制度要項に記載"
-    },
+    "cashflow": { "fr": "Modalités de versement décrites dans le programme", "en": "Payment terms are described in the program", "ja": "支給条件は制度要項に記載" },
     "eligibility": {
       "representativeStatuses": ["citizen", "permanent"],
       "collectiveRule": "cam_two_thirds",
       "note": {
         "fr": "La personne responsable doit être citoyenne ou résidente permanente et domiciliée sur l’île de Montréal; les deux tiers des membres doivent aussi avoir l’un de ces statuts.",
         "en": "The representative must be a citizen or permanent resident living on Montréal Island; two thirds of members must also hold one of those statuses.",
-        "ja": "申請代表者は市民または永住者で、モントリオール島内に居住している必要があります。メンバーの3分の2以上も市民または永住者でなければなりません。"
+        "ja": "申請代表者は市民または永住者でモントリオール島内居住が必要です。メンバーの3分の2以上も市民または永住者でなければなりません。"
       },
       "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
       "verifiedAt": "2026-07-20"
     },
     "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "oac-touring",
+    "name": "Ontario Arts Council — Touring and Circulation Projects",
+    "funder": "Ontario Arts Council",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["ontario"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "Prochaine échéance : 22 octobre 2026 à 13 h HE", "en": "Next deadline: October 22, 2026 at 1 p.m. ET", "ja": "次回締切：2026年10月22日 午後1時（東部時間）" },
+    "amount": { "fr": "Jusqu’à 30 000 $; jusqu’à 60 000 $ pour certains organismes", "en": "Up to $30,000; up to $60,000 for some organizations", "ja": "最大3万カナダドル。一部団体は最大6万カナダドル" },
+    "coverage": ["travel", "stay", "visa", "transport", "promotion", "fees", "touring"],
+    "cashflow": { "fr": "Au moins 3 engagements avec des hôtes distincts et une invitation confirmée", "en": "At least 3 engagements with distinct hosts and one confirmed presenter invitation", "ja": "異なる主催者による3件以上の公演と、少なくとも1件の確定した招待が必要" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "permanent_pending"],
+      "representativeStatuses": ["citizen", "permanent", "permanent_pending"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "oac_half",
+      "organizationRegisteredInCanada": true,
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Les individus doivent avoir 18 ans, un statut accepté et 12 mois de résidence en Ontario. Les critères propres aux groupes et organismes doivent aussi être vérifiés. Les concours sont généralement exclus.",
+        "en": "Individuals must be 18+, hold an accepted status and have 12 months in Ontario. Group and organization rules also require checking. Competitions are generally ineligible.",
+        "ja": "個人は18歳以上、対象となる在留資格、直近12か月のオンタリオ居住が必要です。グループ・団体固有の条件も確認してください。コンペ参加は原則対象外です。"
+      },
+      "sourceUrl": "https://www.arts.on.ca/grants/general-granting-information/guide-to-project-programs",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://www.arts.on.ca/grants/touring-and-circulation-projects",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "oac-market-travel",
+    "name": "Ontario Arts Council — Market Development Travel",
+    "funder": "Ontario Arts Council",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["ontario"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "availability": "closed",
+    "deadline": { "fr": "Programme 2026–2027 fermé", "en": "2026–27 program closed", "ja": "2026–27年度は募集終了" },
+    "amount": { "fr": "Forfait de 1 000 $ à 2 000 $ selon la destination", "en": "Fixed $1,000–$2,000 depending on destination", "ja": "行き先に応じて1,000〜2,000カナダドルの定額" },
+    "coverage": ["travel", "market", "promotion"],
+    "cashflow": { "fr": "Déplacement d’au moins 100 km pour rencontrer un diffuseur ou un contact de marché", "en": "Travel at least 100 km to meet a presenter or market contact", "ja": "主催者・市場関係者との面談を目的とする100km以上の移動が対象" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "permanent_pending"],
+      "representativeStatuses": ["citizen", "permanent", "permanent_pending"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "oac_half",
+      "organizationRegisteredInCanada": true,
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Le programme est actuellement fermé. Les critères généraux de projet de l’OAC s’appliquent aux individus, groupes et organismes ontariens.",
+        "en": "The program is currently closed. OAC project-program rules apply to Ontario individuals, groups and organizations.",
+        "ja": "現在は募集終了です。オンタリオ州の個人・グループ・団体にOACのプロジェクト助成共通条件が適用されます。"
+      },
+      "sourceUrl": "https://www.arts.on.ca/grants/general-granting-information/guide-to-project-programs",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://www.arts.on.ca/grants/market-development-travel",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tac-music",
+    "name": "Toronto Arts Council — Music Creation & Audio Recording",
+    "funder": "Toronto Arts Council",
+    "profiles": ["artist"],
+    "residencies": ["toronto"],
+    "disciplines": ["music"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "3 septembre 2026", "en": "September 3, 2026", "ja": "2026年9月3日" },
+    "amount": { "fr": "Création 10 000 $; démo/EP 8 000 $; album 15 000 $", "en": "Creation $10,000; demo/EP $8,000; full-length $15,000", "ja": "創作1万、デモ／EP 8,000、フルアルバム1万5,000カナダドルまで" },
+    "coverage": ["creation", "production", "recording", "fees"],
+    "cashflow": { "fr": "Les tournées, voyages et dépenses hors Toronto ne sont pas admissibles", "en": "Touring, travel and expenses outside Toronto are ineligible", "ja": "ツアー、渡航、トロント市外の支出は対象外" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "permanent_pending"],
+      "minimumTorontoMonths": 12,
+      "sinRequired": true,
+      "ageRange": { "min": 18 },
+      "note": {
+        "fr": "Artiste individuel de 18 ans ou plus, résident actuel de Toronto depuis au moins un an, avec NAS. La page du programme accepte citoyenneté, résidence permanente ou demande de résidence permanente en cours.",
+        "en": "Individual artist age 18+, currently in Toronto after at least one year of residence, with a SIN. The program page accepts citizenship, permanent residence or a pending PR application.",
+        "ja": "18歳以上の個人アーティストで、トロント市に現在居住し、1年以上の居住歴とSINが必要です。制度ページでは市民、永住者、永住申請中が対象です。"
+      },
+      "sourceUrl": "https://torontoartscouncil.org/grants/music-creation-and-recording/",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://torontoartscouncil.org/grants/music-creation-and-recording/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "tac-newcomer-mentorship",
+    "name": "Toronto Arts Council — Newcomer & Refugee Artist Mentorship",
+    "funder": "Toronto Arts Council",
+    "profiles": ["artist"],
+    "residencies": ["toronto"],
+    "disciplines": ["all"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "availability": "closed",
+    "deadline": { "fr": "Échéance 2026 passée (13 avril)", "en": "2026 deadline passed (April 13)", "ja": "2026年締切（4月13日）は終了" },
+    "amount": { "fr": "15 000 $ : 7 500 $ à l’artiste nouvel arrivant et 7 500 $ au mentor", "en": "$15,000: $7,500 to the newcomer artist and $7,500 to the mentor", "ja": "総額1万5,000カナダドル（新人アーティストとメンターに各7,500）" },
+    "coverage": ["mentorship", "creation", "fees"],
+    "cashflow": { "fr": "Dépôt par l’artiste nouvel arrivant avec un mentor comme codemandeur", "en": "Submitted by the newcomer artist with a mentor as co-applicant", "ja": "新人アーティストが申請し、メンターを共同申請者とする" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work"],
+      "sinRequired": true,
+      "arrivalOnOrAfter": "2019-01-01",
+      "ageRange": { "min": 18 },
+      "note": {
+        "fr": "L’artiste nouvel arrivant doit résider actuellement à Toronto, être arrivé au Canada après le 1er janvier 2019, être autorisé à travailler et avoir un NAS. La règle générale d’un an à Toronto ne s’applique pas à l’artiste nouvel arrivant.",
+        "en": "The newcomer artist must currently live in Toronto, have arrived after January 1, 2019, be legally able to work and have a SIN. The general one-year Toronto rule does not apply to the newcomer artist.",
+        "ja": "トロント市に現在居住し、2019年1月1日以降にカナダへ到着、合法的に就労でき、SINを持つ新人アーティストが対象です。新人側には通常のトロント1年居住要件は適用されません。"
+      },
+      "sourceUrl": "https://torontoartscouncil.org/grants/newcomer-and-refugee-artist-mentorship/",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://torontoartscouncil.org/grants/newcomer-and-refugee-artist-mentorship/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "artworks-to-newcomer",
+    "name": "ArtWorksTO — Newcomer Program",
+    "funder": "Toronto Arts Foundation",
+    "profiles": ["artist"],
+    "residencies": ["gta"],
+    "disciplines": ["media"],
+    "purpose": "career_support",
+    "kind": "paid_program",
+    "availability": "closed",
+    "deadline": { "fr": "Cohorte 2026 fermée; mai 2027 prévu, à confirmer", "en": "2026 cohort closed; May 2027 expected, to be confirmed", "ja": "2026年枠は終了。2027年5月予定（要確認）" },
+    "amount": { "fr": "Contrat créatif rémunéré garanti de 5 000 $", "en": "Guaranteed paid creative contract of $5,000", "ja": "5,000カナダドルの有給クリエイティブ契約を保証" },
+    "coverage": ["training", "mentorship", "fees"],
+    "cashflow": { "fr": "Programme de développement professionnel, pas une subvention", "en": "Workforce-development program, not a grant", "ja": "助成金ではなく、就業・キャリア開発プログラム" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work"],
+      "conditionalStatuses": ["temporary_work"],
+      "sinRequired": true,
+      "arrivalOnOrAfter": "2019-01-01",
+      "ageRange": { "min": 18 },
+      "note": {
+        "fr": "Pour les artistes en arts médiatiques ou en éducation artistique dans la région du Grand Toronto, arrivés depuis 7 ans au plus. Un statut temporaire avec autorisation de travail peut être considéré selon la capacité du programme.",
+        "en": "For media-arts or arts-education practitioners in the GTA who arrived within the past 7 years. Temporary residents with valid work authorization may be considered subject to program capacity.",
+        "ja": "GTA在住で、到着後7年以内のメディア芸術・芸術教育分野の人が対象です。有効な就労許可を持つ一時滞在者は、受入状況により検討対象となる場合があります。"
+      },
+      "sourceUrl": "https://torontoartsfoundation.org/programs_networks/neighbourhood-arts-network/",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://torontoartsfoundation.org/programs_networks/neighbourhood-arts-network/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "ottawa-creation-production",
+    "name": "City of Ottawa — Creation and Production Fund for Professional Artists",
+    "funder": "City of Ottawa",
+    "profiles": ["artist"],
+    "residencies": ["ottawa"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "Programme 2027 : 2 décembre 2026", "en": "2027 program: December 2, 2026", "ja": "2027年度締切：2026年12月2日" },
+    "amount": { "fr": "Jusqu’à 10 000 $ pour la création; 15 000 $ pour la production", "en": "Up to $10,000 for creation; $15,000 for production", "ja": "創作は最大1万、制作は最大1万5,000カナダドル" },
+    "coverage": ["research", "creation", "production", "fees"],
+    "cashflow": { "fr": "Artiste professionnel de 18 ans ou plus, résident actuel de la ville d’Ottawa", "en": "Professional artist age 18+, currently resident in the City of Ottawa", "ja": "18歳以上のプロアーティストで、オタワ市に現在居住していること" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending"],
+      "verificationStatuses": ["temporary_work", "temporary_no_work"],
+      "ageRange": { "min": 18 },
+      "note": {
+        "fr": "Les lignes directrices publiées exigent la résidence actuelle à Ottawa, l’âge et le statut professionnel, mais ne publient pas de condition de citoyenneté ou de résidence permanente. Les statuts temporaires sont donc marqués « à confirmer », et non refusés automatiquement.",
+        "en": "Published guidelines require current Ottawa residence, age and professional practice, but do not state a citizenship or permanent-residence rule. Temporary statuses are therefore marked for confirmation, not automatically rejected.",
+        "ja": "公開要項はオタワ市の現居住、年齢、プロとしての活動を求めますが、市民権・永住権の条件を明記していません。そのため一時滞在者は自動除外せず「要確認」とします。"
+      },
+      "sourceUrl": "https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/creation-and-production-fund-artists/creation-and-production-fund-program-guidelines",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/creation-and-production-fund-artists/program-information-and-deadline-dates",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "ottawa-youth-culture",
+    "name": "City of Ottawa — Youth in Culture Program",
+    "funder": "City of Ottawa",
+    "profiles": ["artist"],
+    "residencies": ["ottawa"],
+    "disciplines": ["all"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "availability": "closed",
+    "deadline": { "fr": "Échéance 2026 passée (6 mai)", "en": "2026 deadline passed (May 6)", "ja": "2026年締切（5月6日）は終了" },
+    "amount": { "fr": "Jusqu’à 2 000 $", "en": "Up to $2,000", "ja": "最大2,000カナダドル" },
+    "coverage": ["training", "mentorship", "travel", "stay"],
+    "cashflow": { "fr": "Formation, mentorat, conférence ou résidence pour les 18 à 30 ans", "en": "Training, mentorship, conference or residency for ages 18–30", "ja": "18〜30歳の研修、メンタリング、会議、レジデンス参加を支援" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending"],
+      "verificationStatuses": ["temporary_work", "temporary_no_work"],
+      "ageRange": { "min": 18, "max": 30 },
+      "note": {
+        "fr": "Résidence actuelle à Ottawa et âge de 18 à 30 ans. La page publiée ne précise pas de statut d’immigration; les statuts temporaires doivent être confirmés auprès du programme.",
+        "en": "Current Ottawa residence and age 18–30. The published page does not specify immigration status, so temporary statuses need confirmation from the program.",
+        "ja": "オタワ市に現在居住する18〜30歳が対象です。公開ページに在留資格の指定がないため、一時滞在者は制度担当への確認が必要です。"
+      },
+      "sourceUrl": "https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/youth-culture-program/program-information",
+      "verifiedAt": "2026-07-20"
+    },
+    "sourceUrl": "https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/youth-culture-program/program-information",
     "verifiedAt": "2026-07-20"
   }
 ]
