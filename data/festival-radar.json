@@ -378,5 +378,290 @@
     "nextCheckDate": "2026-10-01",
     "sourceUrl": "https://www.brooklynfilmfestival.org/submit",
     "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "circa-residencies-2027-28",
+    "title": "CIRCA — Contemporary Circus Creation Residencies",
+    "country": "France",
+    "city": "Auch",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "selection",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Demandes pour septembre 2027–juillet 2028 à partir de novembre 2026",
+      "en": "Applications for September 2027–July 2028 open from November 2026",
+      "ja": "2027年9月〜2028年7月のレジデンス申請は2026年11月から"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://circa.auch.fr/avec-les-artistes/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "circada-panorama-watch",
+    "title": "Festival Circada — Panorama Circus Showcase",
+    "country": "Spain",
+    "city": "Seville",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel Panorama 2026 terminé; surveiller le prochain cycle",
+      "en": "The 2026 Panorama call is closed; watch the next cycle",
+      "ja": "Panorama 2026の公募は終了。次回サイクルを監視"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://festivalcircada.com/en/convocatoria-panorama-2/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "fedec-circle-watch",
+    "title": "FEDEC CIRCLE at Festival CIRCA — Circus Student Platform",
+    "country": "France",
+    "city": "Auch",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Édition 2026 composée; suivre le prochain appel destiné aux écoles et étudiant·es de cirque",
+      "en": "The 2026 edition is selected; watch the next call for circus schools and students",
+      "ja": "2026年の選定は終了。サーカス学校・学生向け次回募集を監視"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://www.fedec.eu/en/article/922-circle-2026",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "firatarrega-watch",
+    "title": "FiraTàrrega — International Street Arts Programme",
+    "country": "Spain",
+    "city": "Tàrrega",
+    "region": "Europe",
+    "family": "street",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel de programmation précédent terminé; surveiller la prochaine publication internationale",
+      "en": "The previous programming call is closed; watch the next international publication",
+      "ja": "前回の選考公募は終了。次の国際公募を監視"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://beta.firatarrega.com/media/upload/pdf/bases-convocatoria-2025_ang_editora_14_253_3.pdf",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "porec-street-art-2026",
+    "title": "Street Art Poreč 2026 — Artist Proposals",
+    "country": "Croatia",
+    "city": "Poreč",
+    "region": "Europe",
+    "family": "street",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Propositions acceptées toute l’année; confirmer l’admissibilité avec l’organisateur",
+      "en": "Proposals are accepted year-round; confirm eligibility with the organizer",
+      "ja": "提案は通年受付。応募資格は主催者へ確認"
+    },
+    "nextCheckDate": "2026-08-15",
+    "sourceUrl": "https://www.poup.hr/en/news/events/call-for-artists-to-participate-in-the-26th-street-art-festival-porec/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "nuit-blanche-toronto-watch",
+    "title": "Nuit Blanche Toronto — International Open Call Projects",
+    "country": "Canada",
+    "city": "Toronto",
+    "region": "North America",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est fermé; suivre le prochain appel international",
+      "en": "The 2026 call is closed; watch the next international open call",
+      "ja": "2026年公募は終了。次回の国際公募を監視"
+    },
+    "nextCheckDate": "2026-10-15",
+    "sourceUrl": "https://www.toronto.ca/explore-enjoy/festivals-events/nuitblanche/call-for-proposals__trashed/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "ica-live-art-cape-town-watch",
+    "title": "ICA Live Art Festival — Artist Proposals",
+    "country": "South Africa",
+    "city": "Cape Town",
+    "region": "Africa",
+    "family": "street",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est terminé; surveiller la prochaine édition",
+      "en": "The 2026 call is closed; watch the next edition",
+      "ja": "2026年公募は終了。次回開催を監視"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://humanities.uct.ac.za/ica/articles/2026-03-26-open-call-ica-live-art-festival-2026",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "caff-touring-lottery-watch",
+    "title": "Canadian Association of Fringe Festivals — Touring Lottery",
+    "country": "Canada",
+    "city": "Canada-wide",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La loterie 2026 est terminée; la voie internationale vise les artistes non-résidents du Canada ou des États-Unis ayant déjà participé à un Fringe",
+      "en": "The 2026 lottery is closed; the international stream is for non-Canada/US residents with prior Fringe participation",
+      "ja": "2026年ロッタリーは終了。国際枠は、過去にフリンジ参加歴のあるカナダ・米国非居住者向け"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://fringefestivals.com/for-artists/2026-touring-lottery/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "calgary-fringe-amv-watch",
+    "title": "Calgary Fringe — Artist Managed Venue Route",
+    "country": "Canada",
+    "city": "Calgary",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La voie AMV accepte des artistes du monde entier; vérifier les places et conditions de la prochaine édition",
+      "en": "The AMV route accepts artists from anywhere in the world; verify next-edition spaces and conditions",
+      "ja": "AMV枠は世界中のアーティストが応募可能。次回の空き枠・条件を確認"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://fringefestivals.com/festivals/calgary-fringe/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "yukon-fringe-watch",
+    "title": "Yukon Fringe Festival — Multi-arts Lottery",
+    "country": "Canada",
+    "city": "Whitehorse",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La loterie inaugurale 2026 est terminée; le festival annonce des compagnies du Yukon, du Canada et d’ailleurs",
+      "en": "The inaugural 2026 lottery is closed; the festival describes companies from Yukon, Canada and beyond",
+      "ja": "初回の2026年ロッタリーは終了。ユーコン、カナダ国内外の団体を対象と案内"
+    },
+    "nextCheckDate": "2027-01-05",
+    "sourceUrl": "https://fringefestivals.com/festivals/yukon-fringe-festival/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "bnfn-artist-call-watch",
+    "title": "Baltic Nordic Fringe Network — Global Artist Call",
+    "country": "Nordic region",
+    "city": "Nordic circuit",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’appel mondial BNFN 2026 est terminé; surveiller le prochain circuit nordique",
+      "en": "The 2026 BNFN global artist call is closed; watch the next Nordic circuit",
+      "ja": "BNFN 2026の世界公募は終了。次の北欧巡回回路を監視"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://stockholmfringe.com/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "brighton-fringe-2027-watch",
+    "title": "Brighton Fringe 2027 — Open-access Event Registration",
+    "country": "United Kingdom",
+    "city": "Brighton",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé; festival à accès libre, sans sélection artistique",
+      "en": "The 2026 cycle is closed; this is an open-access festival with no artist selection",
+      "ja": "2026年サイクルは終了。選考なしのオープンアクセス型フェス"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.brightonfringe.org/fringe-info/how-to-register-your-event/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "orlando-fringe-watch",
+    "title": "Orlando International Fringe Theatre Festival — Artist Lottery",
+    "country": "United States",
+    "city": "Orlando",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La loterie documentée est terminée; le festival prévoit un accueil pour artistes nationaux et internationaux",
+      "en": "The documented lottery is closed; the festival provides for national and international artists",
+      "ja": "確認済みロッタリーは終了。国内外アーティストの受け入れを案内"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.orlandofringe.org/may-fest",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "idfa-forum-2026",
+    "title": "IDFA Forum 2026 — Project Entry",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "region": "Europe",
+    "family": "film",
+    "participation": "selection",
+    "status": "open",
+    "deadlineDate": "2026-07-23",
+    "deadlineLabel": {
+      "fr": "23 juillet 2026",
+      "en": "July 23, 2026",
+      "ja": "2026年7月23日"
+    },
+    "nextCheckDate": "2026-07-24",
+    "sourceUrl": "https://professionals.idfa.nl/markets/co-producing-co-financing/enter-your-project/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "idfa-docs-for-sale-2026",
+    "title": "IDFA Docs for Sale 2026 — Film & Series Entry",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "region": "Europe",
+    "family": "film",
+    "participation": "selection",
+    "status": "open",
+    "deadlineDate": "2026-09-07",
+    "deadlineLabel": {
+      "fr": "7 septembre 2026",
+      "en": "September 7, 2026",
+      "ja": "2026年9月7日"
+    },
+    "nextCheckDate": "2026-09-08",
+    "sourceUrl": "https://professionals.idfa.nl/markets/sales-distribution/enter-your-film/",
+    "verifiedAt": "2026-07-20"
   }
 ]

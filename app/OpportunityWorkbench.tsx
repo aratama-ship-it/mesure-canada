@@ -12,7 +12,7 @@ type Residence = "montreal" | "quebec" | "gatineau" | "toronto" | "gta" | "ottaw
 type ResidenceScope = "canada" | "quebec" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
 type RadarFamily = "all" | "circus" | "street" | "fringe" | "film";
-type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions";
+type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions" | "eligibility_check";
 type RadarStatus = "open" | "upcoming" | "watch";
 type CoverageKey =
   | "travel"
@@ -231,7 +231,7 @@ const copy = {
       count: "pistes officielles",
       all: "Tous",
       families: { circus: "Cirque", street: "Arts de la rue", fringe: "Fringe", film: "Cinéma" },
-      participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier" },
+      participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier", eligibility_check: "Admissibilité à confirmer" },
       status: { open: "Ouvert", upcoming: "À venir", watch: "À surveiller" },
       official: "Voir la source officielle ↗",
       nextCheck: "Prochaine vérification",
@@ -339,7 +339,7 @@ const copy = {
       count: "official routes",
       all: "All",
       families: { circus: "Circus", street: "Street arts", fringe: "Fringe", film: "Film" },
-      participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check" },
+      participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check", eligibility_check: "Eligibility to confirm" },
       status: { open: "Open", upcoming: "Opening soon", watch: "Watch next cycle" },
       official: "Open official source ↗",
       nextCheck: "Next check",
@@ -428,7 +428,7 @@ const copy = {
       count: "件の公式ルート",
       all: "すべて",
       families: { circus: "サーカス", street: "大道芸・公共空間", fringe: "フリンジ", film: "映画" },
-      participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認" },
+      participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認", eligibility_check: "応募資格を要確認" },
       status: { open: "募集中", upcoming: "開始予定", watch: "次回を監視" },
       official: "公式情報を開く ↗",
       nextCheck: "次回確認日",
@@ -476,7 +476,7 @@ const placeNames: Record<Language, Record<string, string>> = {
   fr: {},
   en: {},
   ja: {
-    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック",
+    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック", Spain: "スペイン", Seville: "セビリア", "Tàrrega": "タラガ", Auch: "オーシュ", Croatia: "クロアチア", "Poreč": "ポレッチ", "South Africa": "南アフリカ", "Cape Town": "ケープタウン", "Canada-wide": "カナダ各地", "Nordic region": "北欧", "Nordic circuit": "北欧巡回", Calgary: "カルガリー", Whitehorse: "ホワイトホース", Brighton: "ブライトン", Orlando: "オーランド",
   },
 };
 
