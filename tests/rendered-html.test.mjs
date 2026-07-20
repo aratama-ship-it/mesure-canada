@@ -30,17 +30,22 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /CALQ — Déplacement/);
   assert.match(html, /Canada Council — Arts Abroad: Travel/);
   assert.match(html, /Votre statut au Canada/);
+  assert.match(html, /Radar mondial/);
+  assert.match(html, /Imaginarius 2027 — International Open Call/);
+  assert.match(html, /Sundance Film Festival 2027/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
 
 test("opportunity and funding records preserve evidence fields", async () => {
-  const [opportunitiesText, fundingText] = await Promise.all([
+  const [opportunitiesText, fundingText, festivalRadarText] = await Promise.all([
     readFile(new URL("data/opportunities.json", root), "utf8"),
     readFile(new URL("data/funding.json", root), "utf8"),
+    readFile(new URL("data/festival-radar.json", root), "utf8"),
   ]);
   const opportunities = JSON.parse(opportunitiesText);
   const funding = JSON.parse(fundingText);
+  const festivalRadar = JSON.parse(festivalRadarText);
   const fundingIds = new Set(funding.map((record) => record.id));
   const fundingById = new Map(funding.map((record) => [record.id, record]));
 
@@ -84,6 +89,21 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.eligibility.note.ja);
     assert.ok(/^https?:\/\//.test(record.eligibility.sourceUrl));
     assert.match(record.eligibility.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
+  }
+
+  assert.ok(festivalRadar.length >= 20);
+  assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film"]));
+  assert.ok(new Set(festivalRadar.map((record) => record.region)).size >= 6);
+  for (const record of festivalRadar) {
+    assert.ok(record.title && record.country && record.city);
+    assert.ok(["circus", "street", "fringe", "film"].includes(record.family));
+    assert.ok(["international", "open_access", "selection", "regional_conditions"].includes(record.participation));
+    assert.ok(["open", "upcoming", "watch"].includes(record.status));
+    assert.ok(/^https?:\/\//.test(record.sourceUrl));
+    assert.match(record.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
+    assert.match(record.nextCheckDate, /^\d{4}-\d{2}-\d{2}$/);
+    if (record.deadlineDate) assert.match(record.deadlineDate, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(record.deadlineLabel.ja);
   }
 
   const representation = funding.find((record) => record.id === "cca-representation");

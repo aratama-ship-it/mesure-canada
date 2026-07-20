@@ -795,6 +795,150 @@ a {
   line-height: 1.5;
 }
 
+.status-tag.radar-upcoming {
+  background: #d8e2ff;
+}
+
+.status-tag.radar-watch {
+  background: #e9e2d5;
+}
+
+.festival-radar {
+  margin-top: 46px;
+  padding: clamp(24px, 4vw, 46px);
+  border: 3px solid var(--ink);
+  background:
+    linear-gradient(90deg, rgba(23, 70, 207, 0.05) 1px, transparent 1px),
+    var(--paper-bright);
+  background-size: 28px 100%;
+  box-shadow: 5px 5px 0 var(--blue);
+}
+
+.radar-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(250px, 0.75fr);
+  gap: clamp(20px, 5vw, 72px);
+  align-items: end;
+}
+
+.radar-intro h3 {
+  max-width: 790px;
+  margin: 8px 0 0;
+  font-size: clamp(1.8rem, 4.2vw, 3.6rem);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.radar-intro p {
+  margin: 0 0 13px;
+  color: #3f3e38;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.radar-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 26px 0 16px;
+  padding-top: 14px;
+  border-top: 2px solid var(--ink);
+}
+
+.radar-filters button {
+  min-height: 36px;
+  padding: 6px 10px;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.radar-filters button[aria-pressed="true"] {
+  background: var(--ink);
+  color: var(--paper-bright);
+}
+
+.radar-filters button:hover,
+.radar-filters button:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 1px;
+}
+
+.radar-ledger {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.radar-row {
+  display: flex;
+  min-width: 0;
+  min-height: 250px;
+  flex-direction: column;
+  padding: 14px;
+  border: 1px solid var(--ink);
+  background: rgba(255, 253, 246, 0.94);
+}
+
+.radar-row-topline,
+.radar-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radar-family,
+.radar-bottom span {
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.59rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.radar-family {
+  color: var(--blue-dark);
+}
+
+.radar-row h4 {
+  margin: 12px 0 7px;
+  font-size: 1rem;
+  line-height: 1.22;
+}
+
+.radar-deadline {
+  margin: 13px 0 10px;
+  font-size: 0.78rem;
+  font-weight: 780;
+  line-height: 1.42;
+}
+
+.radar-bottom {
+  min-height: 37px;
+  margin-top: auto;
+  padding: 8px 0;
+  border-top: 1px dashed var(--rule);
+  color: var(--muted);
+}
+
+.radar-row .source-link {
+  min-height: 32px;
+  margin-top: 5px;
+  font-size: 0.7rem;
+}
+
+.radar-note {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
 .below-fold {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -860,6 +1004,10 @@ a {
   .funding-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .radar-ledger {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 760px) {
@@ -888,6 +1036,23 @@ a {
   .intro-copy {
     padding: 0;
     border-left: 0;
+  }
+
+  .festival-radar {
+    padding: 20px 16px;
+  }
+
+  .radar-intro {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .radar-ledger {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-row {
+    min-height: 0;
   }
 
   .base-ruler {

@@ -1,0 +1,382 @@
+[
+  {
+    "id": "cirque-de-demain-2027",
+    "title": "Festival Mondial du Cirque de Demain — 46e édition",
+    "country": "France",
+    "city": "Paris",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-15",
+    "deadlineLabel": {
+      "fr": "15 septembre 2026",
+      "en": "September 15, 2026",
+      "ja": "2026年9月15日"
+    },
+    "nextCheckDate": "2026-09-16",
+    "sourceUrl": "https://www.cirquededemain.paris/en/applications",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "circusstad-circunstruction-15",
+    "title": "Circusstad Festival — Circunstruction #15",
+    "country": "Netherlands",
+    "city": "Rotterdam",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "31 juillet 2026, 23 h 59",
+      "en": "July 31, 2026, 23:59",
+      "ja": "2026年7月31日 23:59"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://circusstad.nl/open-call/open-call-circunstruction-15/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "seoul-circus-festival-watch",
+    "title": "Seoul Circus Festival — International Program",
+    "country": "South Korea",
+    "city": "Seoul",
+    "region": "Asia",
+    "family": "circus",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel 2026 terminé; surveiller l’édition suivante",
+      "en": "2026 call closed; watch for the next edition",
+      "ja": "2026年募集は終了。次回公募を監視"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://www.sfac.or.kr/site/SFAC_ENG/ex/bbs/View.do?bcIdx=137628&cbIdx=1009&pageIndex=1&type=",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "berlin-circus-festival-watch",
+    "title": "Berlin Circus Festival — Art Open Call",
+    "country": "Germany",
+    "city": "Berlin",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel 2026 terminé; suivre la prochaine publication",
+      "en": "2026 call closed; follow the next publication",
+      "ja": "2026年募集は終了。次回告知を監視"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.berlin-circus-festival.de/artopencall-en.html",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "imaginarius-2027",
+    "title": "Imaginarius 2027 — International Open Call",
+    "country": "Portugal",
+    "city": "Santa Maria da Feira",
+    "region": "Europe",
+    "family": "street",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-07-30",
+    "deadlineLabel": {
+      "fr": "30 juillet 2026",
+      "en": "July 30, 2026",
+      "ja": "2026年7月30日"
+    },
+    "nextCheckDate": "2026-07-31",
+    "sourceUrl": "https://www.imaginarius.pt/convocatoria-internacional/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "seoul-street-arts-watch",
+    "title": "Seoul Street Arts Festival — International Program",
+    "country": "South Korea",
+    "city": "Seoul",
+    "region": "Asia",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel 2026 terminé; surveiller le printemps 2027",
+      "en": "2026 call closed; watch spring 2027",
+      "ja": "2026年募集は終了。2027年春を監視"
+    },
+    "nextCheckDate": "2027-04-15",
+    "sourceUrl": "https://www.sfac.or.kr/site/SFAC_ENG/ex/bbs/View.do?bcIdx=138223&cbIdx=1009&pageIndex=1&type=",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "aurillac-compagnies-watch",
+    "title": "Festival d’Aurillac — Compagnies de passage",
+    "country": "France",
+    "city": "Aurillac",
+    "region": "Europe",
+    "family": "street",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Cycle annuel annoncé du 15 janvier au 15 février",
+      "en": "Annual collective cycle listed as January 15–February 15",
+      "ja": "団体枠は例年1月15日〜2月15日と案内"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.aurillac.net/festival-aurillac/compagnies-de-passage/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "edinburgh-fringe-2026",
+    "title": "Edinburgh Festival Fringe — Show Registration",
+    "country": "United Kingdom",
+    "city": "Edinburgh",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Inscription en ligne pour Fringe 2026 ouverte",
+      "en": "Online-only Fringe 2026 listings are open",
+      "ja": "2026年のオンライン掲載登録が受付中"
+    },
+    "nextCheckDate": "2026-08-31",
+    "sourceUrl": "https://www.edfringe.com/take-part/artists/organise-a-show/registration/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "adelaide-fringe-2027",
+    "title": "Adelaide Fringe 2027 — Artist & Show Registration",
+    "country": "Australia",
+    "city": "Adelaide",
+    "region": "Oceania",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Inscriptions d’artistes annoncées pour août 2026",
+      "en": "Artist registrations announced for August 2026",
+      "ja": "アーティスト登録は2026年8月開始予定"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://adelaidefringe.com.au/as-an-artist",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "toronto-fringe-2027",
+    "title": "Toronto Fringe Festival 2027 — Artist Opportunities",
+    "country": "Canada",
+    "city": "Toronto",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Inscriptions 2027 annoncées pour la fin de l’automne 2026",
+      "en": "2027 applications announced for late fall 2026",
+      "ja": "2027年応募は2026年晩秋に開始予定"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://fringetoronto.com/get-involved/artists/fringe",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "amsterdam-fringe-2027",
+    "title": "Amsterdam Fringe Festival 2027 — Artist Open Call",
+    "country": "Netherlands",
+    "city": "Amsterdam",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture attendue autour de décembre 2026",
+      "en": "Open call expected around December 2026",
+      "ja": "公募は2026年12月頃に開始予定"
+    },
+    "nextCheckDate": "2026-12-01",
+    "sourceUrl": "https://amsterdamfringefestival.nl/en/home-eng/join-us/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "singapore-fringe-watch",
+    "title": "Singapore Fringe Festival — Artist Applications",
+    "country": "Singapore",
+    "city": "Singapore",
+    "region": "Asia",
+    "family": "fringe",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 est terminé; surveiller la prochaine édition",
+      "en": "The 2027 cycle is closed; watch the next edition",
+      "ja": "2027年募集は終了。次回公募を監視"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://2026.singaporefringe.com/Fringe-2027",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "ypam-fringe-2027",
+    "title": "YPAM Fringe 2027 — Performance Registration",
+    "country": "Japan",
+    "city": "Yokohama",
+    "region": "Asia",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "open",
+    "deadlineDate": "2026-08-31",
+    "deadlineLabel": {
+      "fr": "Inscription initiale : 31 août 2026 (JST)",
+      "en": "Initial registration: August 31, 2026 (JST)",
+      "ja": "初回登録：2026年8月31日（JST）"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://ypam.jp/2027/fringe_registration/index.en.html",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "sxsw-film-2027",
+    "title": "SXSW Film & TV Festival 2027 — Submissions",
+    "country": "United States",
+    "city": "Austin",
+    "region": "North America",
+    "family": "film",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": "2026-10-01",
+    "deadlineLabel": {
+      "fr": "Ouverture le 28 juillet; dernière date le 1er octobre 2026",
+      "en": "Opens July 28; final deadline October 1, 2026",
+      "ja": "7月28日開始、最終締切は2026年10月1日"
+    },
+    "nextCheckDate": "2026-07-28",
+    "sourceUrl": "https://sxsw.com/apply/film-submissions/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "sundance-film-2027",
+    "title": "Sundance Film Festival 2027 — International Submissions",
+    "country": "United States",
+    "city": "Boulder",
+    "region": "North America",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-21",
+    "deadlineLabel": {
+      "fr": "Dernière date long métrage international : 21 septembre 2026",
+      "en": "Late international feature deadline: September 21, 2026",
+      "ja": "国際長編のレイト締切：2026年9月21日"
+    },
+    "nextCheckDate": "2026-08-04",
+    "sourceUrl": "https://www.sundance.org/wp-content/uploads/2026/06/2027_Submissions_FAQ.pdf",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "iffr-2027",
+    "title": "International Film Festival Rotterdam 2027 — Film Entry",
+    "country": "Netherlands",
+    "city": "Rotterdam",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Soumissions 2027 ouvertes depuis le 1er mai 2026",
+      "en": "2027 submissions open since May 1, 2026",
+      "ja": "2027年応募は2026年5月1日から受付中"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://iffr.com/en/frequently-asked-questions/professionals-faq/film-entry-submission-materials",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "fifdh-2027",
+    "title": "FIFDH 2027 — Call for Films and Projects",
+    "country": "Switzerland",
+    "city": "Geneva",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-07-28",
+    "deadlineLabel": {
+      "fr": "28 juillet 2026",
+      "en": "July 28, 2026",
+      "ja": "2026年7月28日"
+    },
+    "nextCheckDate": "2026-07-29",
+    "sourceUrl": "https://fifdh.org/en/pro/news/call-for-films-and-projects/",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "cairo-film-2026",
+    "title": "Cairo International Film Festival — 47th Edition Submissions",
+    "country": "Egypt",
+    "city": "Cairo",
+    "region": "Africa",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-01",
+    "deadlineLabel": {
+      "fr": "1er août 2026",
+      "en": "August 1, 2026",
+      "ja": "2026年8月1日"
+    },
+    "nextCheckDate": "2026-08-02",
+    "sourceUrl": "https://www.ciff.org.eg/en/media/news/ciff-announces-the-opening-of-submissions-for-its-47th-edition",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "guadalajara-film-2027",
+    "title": "Guadalajara International Film Festival 2027 — Call for Entries",
+    "country": "Mexico",
+    "city": "Guadalajara",
+    "region": "Latin America",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-18",
+    "deadlineLabel": {
+      "fr": "18 août 2026",
+      "en": "August 18, 2026",
+      "ja": "2026年8月18日"
+    },
+    "nextCheckDate": "2026-08-19",
+    "sourceUrl": "https://vp.eventival.com/ficg/2027",
+    "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "brooklyn-film-2027",
+    "title": "Brooklyn Film Festival 2027 — Submit a Film",
+    "country": "United States",
+    "city": "Brooklyn",
+    "region": "North America",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2027-03-13",
+    "deadlineLabel": {
+      "fr": "13 mars 2027",
+      "en": "March 13, 2027",
+      "ja": "2027年3月13日"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.brooklynfilmfestival.org/submit",
+    "verifiedAt": "2026-07-20"
+  }
+]

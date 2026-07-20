@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import fundingData from "../data/funding.json";
+import festivalRadarData from "../data/festival-radar.json";
 import opportunityData from "../data/opportunities.json";
 import { evaluateFundingEligibility, supportsResidence } from "./eligibility.mjs";
 
@@ -10,6 +11,9 @@ type Profile = "artist" | "collective" | "organization";
 type Residence = "montreal" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa";
 type ResidenceScope = "canada" | "quebec" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
+type RadarFamily = "all" | "circus" | "street" | "fringe" | "film";
+type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions";
+type RadarStatus = "open" | "upcoming" | "watch";
 type CoverageKey =
   | "travel"
   | "stay"
@@ -79,6 +83,22 @@ type FundingMatch = {
   note: Localized;
 };
 
+type FestivalRadar = {
+  id: string;
+  title: string;
+  country: string;
+  city: string;
+  region: string;
+  family: Exclude<RadarFamily, "all">;
+  participation: RadarParticipation;
+  status: RadarStatus;
+  deadlineDate: string | null;
+  deadlineLabel: Localized;
+  nextCheckDate: string;
+  sourceUrl: string;
+  verifiedAt: string;
+};
+
 type Opportunity = {
   id: string;
   title: string;
@@ -138,6 +158,7 @@ type Assessment = { state: MatchState; reasonKeys: EligibilityReasonKey[] };
 
 const opportunities = opportunityData as Opportunity[];
 const fundingPrograms = fundingData as Funding[];
+const festivalRadar = festivalRadarData as FestivalRadar[];
 
 const copy = {
   fr: {
@@ -146,7 +167,7 @@ const copy = {
     headline: "Avant d’envoyer le dossier, mesurez tout le trajet.",
     intro:
       "Choisissez votre ville de résidence, votre statut et une occasion. MESURE distingue les programmes nationaux, provinciaux et municipaux — y compris les cas où la citoyenneté canadienne n’est pas exigée.",
-    stamp: `${opportunities.length} appels · ${fundingPrograms.length} programmes · vérifiés le 20 juillet 2026`,
+    stamp: `${opportunities.length} appels liés · ${festivalRadar.length} pistes de festivals · ${fundingPrograms.length} programmes · vérifiés le 20 juillet 2026`,
     baseKicker: "Point zéro de la règle",
     baseHeading: "Où résidez-vous actuellement?",
     baseNote: "La ville et la province changent les programmes visibles; la nationalité est vérifiée séparément.",
@@ -203,6 +224,20 @@ const copy = {
     profileNote: "La présélection est volontairement prudente. Une réponse inconnue produit « à confirmer », jamais une admissibilité positive.",
     callsHeading: "Appels pertinents",
     callsCount: "résultats",
+    radar: {
+      kicker: "Radar mondial",
+      heading: "Festivals à surveiller, sans mélanger les appels fermés aux appels ouverts.",
+      intro: "Un registre de sources officielles pour le cirque, les arts de la rue, les fringes et le cinéma. Chaque ligne indique si l’appel est actif, attendu ou à surveiller.",
+      count: "pistes officielles",
+      all: "Tous",
+      families: { circus: "Cirque", street: "Arts de la rue", fringe: "Fringe", film: "Cinéma" },
+      participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier" },
+      status: { open: "Ouvert", upcoming: "À venir", watch: "À surveiller" },
+      official: "Voir la source officielle ↗",
+      nextCheck: "Prochaine vérification",
+      verified: "Vérifié le",
+      note: "Le registre n’affirme jamais qu’un appel est ouvert au-delà de la date vérifiée. Ouvrez la source avant de préparer un dossier.",
+    },
     noResults: "Aucun appel de l’échantillon ne correspond à ce profil. Essayez une autre discipline.",
     fundingHeading: "Plan de financement",
     chosen: "Occasion choisie",
@@ -262,7 +297,7 @@ const copy = {
     eyebrow: "Calls + funding, measured from your home base",
     headline: "Before you submit, measure the whole route.",
     intro: "Choose your current city, status and one opportunity. MESURE separates national, provincial and municipal programs—including cases where Canadian citizenship is not required.",
-    stamp: `${opportunities.length} calls · ${fundingPrograms.length} programs · checked July 20, 2026`,
+    stamp: `${opportunities.length} linked calls · ${festivalRadar.length} festival routes · ${fundingPrograms.length} programs · checked July 20, 2026`,
     baseKicker: "Zero point on the ruler",
     baseHeading: "Where do you currently live?",
     baseNote: "City and province change the programs shown; nationality is checked separately.",
@@ -297,6 +332,20 @@ const copy = {
     profileNote: "The pre-screen is deliberately conservative. An unknown answer becomes “needs confirmation,” never a positive eligibility result.",
     callsHeading: "Relevant calls",
     callsCount: "results",
+    radar: {
+      kicker: "Global radar",
+      heading: "Festivals to follow—without mixing closed cycles into live calls.",
+      intro: "An official-source register for circus, street arts, Fringe and film. Each line says whether the route is live, about to open or worth watching.",
+      count: "official routes",
+      all: "All",
+      families: { circus: "Circus", street: "Street arts", fringe: "Fringe", film: "Film" },
+      participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check" },
+      status: { open: "Open", upcoming: "Opening soon", watch: "Watch next cycle" },
+      official: "Open official source ↗",
+      nextCheck: "Next check",
+      verified: "Verified",
+      note: "This register never treats an old deadline as live. Open the official source before preparing a submission.",
+    },
     noResults: "No call in this sample matches the profile. Try another discipline.",
     fundingHeading: "Funding plan",
     chosen: "Selected opportunity",
@@ -337,7 +386,7 @@ const copy = {
     eyebrow: "居住地から、公募と助成の距離を測る",
     headline: "応募する前に、実現までの道のりを測る。",
     intro: "現在の居住地、在留資格、公募を選ぶと、国・州・市の制度を分けて判定します。カナダ市民でなくても利用できる制度と、個別確認が必要な制度も区別します。",
-    stamp: `${opportunities.length}件の公募 · ${fundingPrograms.length}件の制度 · 2026年7月20日確認`,
+    stamp: `${opportunities.length}件の資金連動公募 · ${festivalRadar.length}件のフェスティバルルート · ${fundingPrograms.length}件の制度 · 2026年7月20日確認`,
     baseKicker: "物差しのゼロ地点",
     baseHeading: "現在どこに住んでいますか？",
     baseNote: "市と州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
@@ -372,6 +421,20 @@ const copy = {
     profileNote: "判定は意図的に慎重です。不明な回答は「利用可能」とせず、必ず「要確認」にします。",
     callsHeading: "該当する公募",
     callsCount: "件",
+    radar: {
+      kicker: "世界フェスティバル・レーダー",
+      heading: "終了した募集を「募集中」に見せず、次の公募を追えるようにする。",
+      intro: "サーカス、大道芸、フリンジ、映画を対象に、公式情報だけを記録した監視台帳です。各行は、募集中・開始予定・次回監視のどれかを示します。",
+      count: "件の公式ルート",
+      all: "すべて",
+      families: { circus: "サーカス", street: "大道芸・公共空間", fringe: "フリンジ", film: "映画" },
+      participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認" },
+      status: { open: "募集中", upcoming: "開始予定", watch: "次回を監視" },
+      official: "公式情報を開く ↗",
+      nextCheck: "次回確認日",
+      verified: "公式情報の確認日",
+      note: "古い締切を「募集中」とは扱いません。応募準備の前に必ず公式情報を開いてください。",
+    },
     noResults: "このサンプル内に条件と一致する公募がありません。別の活動分野を選んでください。",
     fundingHeading: "資金計画",
     chosen: "選択中の公募",
@@ -413,7 +476,7 @@ const placeNames: Record<Language, Record<string, string>> = {
   fr: {},
   en: {},
   ja: {
-    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール",
+    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック",
   },
 };
 
@@ -423,6 +486,7 @@ const residenceGroups: Record<"quebec" | "ontario", Residence[]> = {
   ontario: ["toronto", "gta", "ottawa"],
 };
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
+const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film"];
 const legalStatusOptions: LegalStatus[] = ["unsure", "citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
 const provinceHistoryOptions: ProvinceHistory[] = ["unsure", "twelve_plus", "under_twelve"];
 const torontoHistoryOptions: TorontoHistory[] = ["unsure", "meets", "does_not"];
@@ -451,6 +515,16 @@ function isUrgent(opportunity: Opportunity) {
   return remainingDays >= 0 && remainingDays <= 21;
 }
 
+function normalizedRadarStatus(record: FestivalRadar) {
+  if (record.status === "open" && record.deadlineDate) {
+    const deadline = new Date(`${record.deadlineDate}T23:59:59`);
+    if (Date.now() > deadline.getTime()) return "watch" as const;
+  }
+  return record.status;
+}
+
+const radarStatusOrder: Record<RadarStatus, number> = { open: 0, upcoming: 1, watch: 2 };
+
 export function OpportunityWorkbench() {
   const [language, setLanguage] = useState<Language>("fr");
   const [profile, setProfile] = useState<Profile>("artist");
@@ -466,6 +540,7 @@ export function OpportunityWorkbench() {
   const [canadaArrival, setCanadaArrival] = useState<CanadaArrival>("unsure");
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
   const [selectedId, setSelectedId] = useState(opportunities[0]?.id ?? "");
+  const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
   const t = copy[language];
   const provinceKey = (["montreal", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
@@ -489,6 +564,19 @@ export function OpportunityWorkbench() {
   );
 
   const selectedOpportunity = filteredOpportunities.find((opportunity) => opportunity.id === selectedId) ?? filteredOpportunities[0];
+
+  const filteredRadar = useMemo(
+    () => festivalRadar
+      .filter((record) => radarFamily === "all" || record.family === radarFamily)
+      .sort((a, b) => {
+        const statusDifference = radarStatusOrder[normalizedRadarStatus(a)] - radarStatusOrder[normalizedRadarStatus(b)];
+        if (statusDifference) return statusDifference;
+        if (!a.deadlineDate) return 1;
+        if (!b.deadlineDate) return -1;
+        return a.deadlineDate.localeCompare(b.deadlineDate);
+      }),
+    [radarFamily],
+  );
 
   const answers = useMemo(() => ({
     profile, legalStatus, provinceHistory, torontoHistory, collectiveComposition, collectiveSize,
@@ -630,6 +718,31 @@ export function OpportunityWorkbench() {
             <p className="honesty-note">{t.sourceNote}</p>
           </> : <p className="no-results">{t.noResults}</p>}
         </section>
+      </section>
+
+      <section className="festival-radar" aria-labelledby="festival-radar-heading">
+        <div className="radar-intro">
+          <div><span className="section-kicker">{t.radar.kicker}</span><h3 id="festival-radar-heading">{t.radar.heading}</h3></div>
+          <div><p>{t.radar.intro}</p><span className="data-stamp">{festivalRadar.length} {t.radar.count} · {new Set(festivalRadar.map((record) => record.region)).size} regions</span></div>
+        </div>
+        <div className="radar-filters" aria-label={t.radar.kicker}>
+          {radarFamilyOptions.map((family) => <button type="button" key={family} aria-pressed={radarFamily === family} onClick={() => setRadarFamily(family)}>{family === "all" ? t.radar.all : t.radar.families[family]}</button>)}
+        </div>
+        <div className="radar-ledger">
+          {filteredRadar.map((record) => {
+            const status = normalizedRadarStatus(record);
+            return <article className="radar-row" key={record.id}>
+              <div className="radar-row-topline"><span className={`status-tag radar-${status}`}>{t.radar.status[status]}</span><span className="radar-family">{t.radar.families[record.family]}</span></div>
+              <h4>{record.title}</h4>
+              <p className="row-meta">{placeNames[language][record.city] ?? record.city} · {placeNames[language][record.country] ?? record.country}</p>
+              <p className="radar-deadline">{record.deadlineLabel[language]}</p>
+              <div className="radar-bottom"><span>{t.radar.participation[record.participation]}</span><span>{t.radar.nextCheck}: {record.nextCheckDate}</span></div>
+              <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>
+              <span className="verified-date">{t.radar.verified}: {record.verifiedAt}</span>
+            </article>;
+          })}
+        </div>
+        <p className="radar-note">{t.radar.note}</p>
       </section>
 
       <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
