@@ -22,6 +22,17 @@
       "en": "Decision usually takes about 8 weeks",
       "ja": "通常、審査結果まで約8週間"
     },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumQuebecMonths": 12,
+      "note": {
+        "fr": "Citoyenneté canadienne ou résidence permanente, avec résidence habituelle au Québec pendant les 12 derniers mois.",
+        "en": "Canadian citizenship or permanent residence, plus habitual residence in Québec for the previous 12 months.",
+        "ja": "カナダ市民または永住者で、直近12か月にわたり通常ケベック州に居住していることが必要です。"
+      },
+      "sourceUrl": "https://www.calq.gouv.qc.ca/aides/deplacement/",
+      "verifiedAt": "2026-07-20"
+    },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aides/deplacement",
     "verifiedAt": "2026-07-20"
   },
@@ -47,6 +58,17 @@
       "fr": "Confirmation écrite d’un diffuseur reconnu requise",
       "en": "Written confirmation from a recognized presenter required",
       "ja": "認定された主催者・会場からの書面による確認が必要"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumQuebecMonths": 12,
+      "note": {
+        "fr": "Citoyenneté canadienne ou résidence permanente, avec résidence habituelle au Québec pendant les 12 derniers mois.",
+        "en": "Canadian citizenship or permanent residence, plus habitual residence in Québec for the previous 12 months.",
+        "ja": "カナダ市民または永住者で、直近12か月にわたり通常ケベック州に居住していることが必要です。"
+      },
+      "sourceUrl": "https://www.calq.gouv.qc.ca/fileadmin/fichiers/Programmes_Aide_financiere/Circulation-au-Qc-et-HQ-Renseignements-personnels.pdf",
+      "verifiedAt": "2026-07-20"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aides/circulation-hors-quebec/",
     "verifiedAt": "2026-07-20"
@@ -74,6 +96,17 @@
       "en": "Residency-specific payment terms",
       "ja": "支給条件は各レジデンスにより異なる"
     },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumQuebecMonths": 12,
+      "note": {
+        "fr": "Les conditions générales du CALQ exigent la citoyenneté ou la résidence permanente et 12 mois de résidence au Québec; chaque appel doit aussi être vérifié.",
+        "en": "CALQ general rules require citizenship or permanent residence and 12 months in Québec; each residency call must also be checked.",
+        "ja": "CALQの一般条件では市民権または永住権と直近12か月のケベック居住が必要です。各レジデンス固有の条件も確認してください。"
+      },
+      "sourceUrl": "https://www.calq.gouv.qc.ca/aide-financiere/foire-aux-questions/bourses-aux-artistes",
+      "verifiedAt": "2026-07-20"
+    },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aide-financiere/international",
     "verifiedAt": "2026-07-20"
   },
@@ -81,7 +114,7 @@
     "id": "cca-representation",
     "name": "Canada Council — Representation and Promotion",
     "funder": "Canada Council for the Arts",
-    "profiles": ["artist", "collective", "organization"],
+    "profiles": ["organization"],
     "residencies": ["quebec"],
     "disciplines": ["all"],
     "deadline": {
@@ -99,6 +132,16 @@
       "fr": "Délai de réponse habituel d’environ 4 mois",
       "en": "Typical decision time is about 4 months",
       "ja": "通常、審査結果まで約4か月"
+    },
+    "eligibility": {
+      "organizationRegisteredInCanada": true,
+      "note": {
+        "fr": "Le profil d’artiste individuel ne donne pas accès à ce volet. L’organisme doit avoir un profil admissible et être constitué ou enregistré au Canada.",
+        "en": "The individual artist profile does not access this component. The organization needs an eligible profile and Canadian incorporation or registration.",
+        "ja": "個人アーティストのプロフィールはこの制度の対象ではありません。団体は適格な申請者プロフィールを持ち、カナダで法人化または登録されている必要があります。"
+      },
+      "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
+      "verifiedAt": "2026-07-20"
     },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
@@ -126,6 +169,18 @@
       "en": "Typical decision time is about 5 months",
       "ja": "通常、審査結果まで約5か月"
     },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected"],
+      "collectiveRule": "cca_half",
+      "organizationRegisteredInCanada": true,
+      "note": {
+        "fr": "Les individus peuvent être citoyens, résidents permanents ou personnes protégées. Pour un groupe, au moins la moitié des membres principaux — ou les deux membres d’un duo — doivent avoir un statut reconnu.",
+        "en": "Individuals may be citizens, permanent residents or protected persons. For a group, at least half of core members—or both members of a duo—need a recognized status.",
+        "ja": "個人は市民・永住者・Protected Personが対象です。グループは主要メンバーの半数以上、2人組の場合は2人とも対象資格を持つ必要があります。"
+      },
+      "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
+      "verifiedAt": "2026-07-20"
+    },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
   },
@@ -151,6 +206,18 @@
       "fr": "Délai de réponse habituel d’environ 5 mois",
       "en": "Typical decision time is about 5 months",
       "ja": "通常、審査結果まで約5か月"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected"],
+      "collectiveRule": "cca_half",
+      "organizationRegisteredInCanada": true,
+      "note": {
+        "fr": "Les individus peuvent être citoyens, résidents permanents ou personnes protégées. Pour un groupe, au moins la moitié des membres principaux — ou les deux membres d’un duo — doivent avoir un statut reconnu.",
+        "en": "Individuals may be citizens, permanent residents or protected persons. For a group, at least half of core members—or both members of a duo—need a recognized status.",
+        "ja": "個人は市民・永住者・Protected Personが対象です。グループは主要メンバーの半数以上、2人組の場合は2人とも対象資格を持つ必要があります。"
+      },
+      "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
+      "verifiedAt": "2026-07-20"
     },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
@@ -178,6 +245,17 @@
       "en": "Typical decision time is about 5 months",
       "ja": "通常、審査結果まで約5か月"
     },
+    "eligibility": {
+      "collectiveRule": "cca_half",
+      "organizationRegisteredInCanada": true,
+      "note": {
+        "fr": "Ce volet s’adresse aux groupes et organismes admissibles, pas aux artistes individuels. Un groupe doit satisfaire au seuil de statut des membres principaux.",
+        "en": "This component is for eligible groups and organizations, not individual artists. Groups must meet the core-member status threshold.",
+        "ja": "個人アーティストではなく、適格なグループ・団体向けです。グループは主要メンバーの在留資格比率を満たす必要があります。"
+      },
+      "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
+      "verifiedAt": "2026-07-20"
+    },
     "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
     "verifiedAt": "2026-07-20"
   },
@@ -203,6 +281,17 @@
       "fr": "Modalités de versement décrites dans le programme",
       "en": "Payment terms are described in the program",
       "ja": "支給条件は制度要項に記載"
+    },
+    "eligibility": {
+      "representativeStatuses": ["citizen", "permanent"],
+      "collectiveRule": "cam_two_thirds",
+      "note": {
+        "fr": "La personne responsable doit être citoyenne ou résidente permanente et domiciliée sur l’île de Montréal; les deux tiers des membres doivent aussi avoir l’un de ces statuts.",
+        "en": "The representative must be a citizen or permanent resident living on Montréal Island; two thirds of members must also hold one of those statuses.",
+        "ja": "申請代表者は市民または永住者で、モントリオール島内に居住している必要があります。メンバーの3分の2以上も市民または永住者でなければなりません。"
+      },
+      "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
+      "verifiedAt": "2026-07-20"
     },
     "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
     "verifiedAt": "2026-07-20"

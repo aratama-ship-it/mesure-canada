@@ -24,6 +24,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Festival Mondial du Cirque de Demain/);
   assert.match(html, /CALQ — Déplacement/);
+  assert.match(html, /Votre statut au Canada/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
@@ -36,6 +37,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const opportunities = JSON.parse(opportunitiesText);
   const funding = JSON.parse(fundingText);
   const fundingIds = new Set(funding.map((record) => record.id));
+  const fundingById = new Map(funding.map((record) => [record.id, record]));
 
   assert.ok(opportunities.length >= 6);
   assert.ok(funding.length >= 8);
@@ -51,6 +53,11 @@ test("opportunity and funding records preserve evidence fields", async () => {
       assert.ok(fundingIds.has(match.fundingId), `Missing funding record: ${match.fundingId}`);
       assert.ok(["possible", "conditional", "verify"].includes(match.state));
       assert.ok(match.note.ja);
+      const linkedFunding = fundingById.get(match.fundingId);
+      assert.ok(
+        record.profiles.some((profile) => linkedFunding.profiles.includes(profile)),
+        `No compatible applicant profile: ${record.id} -> ${match.fundingId}`,
+      );
     }
   }
   for (const record of funding) {
@@ -61,5 +68,15 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.deadline.ja);
     assert.ok(record.amount.ja);
     assert.ok(record.cashflow.ja);
+    assert.ok(record.eligibility);
+    assert.ok(record.eligibility.note.fr);
+    assert.ok(record.eligibility.note.en);
+    assert.ok(record.eligibility.note.ja);
+    assert.ok(/^https?:\/\//.test(record.eligibility.sourceUrl));
+    assert.match(record.eligibility.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
   }
+
+  const representation = funding.find((record) => record.id === "cca-representation");
+  assert.ok(representation);
+  assert.deepEqual(representation.profiles, ["organization"]);
 });

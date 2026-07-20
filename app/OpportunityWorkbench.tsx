@@ -3,18 +3,33 @@
 import { useEffect, useMemo, useState } from "react";
 import fundingData from "../data/funding.json";
 import opportunityData from "../data/opportunities.json";
+import { evaluateFundingEligibility } from "./eligibility.mjs";
 
 type Language = "fr" | "en" | "ja";
 type Profile = "artist" | "collective" | "organization";
 type Residence = "montreal" | "quebec";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music";
-type MatchState = "possible" | "conditional" | "verify";
+type MatchState = "possible" | "conditional" | "verify" | "ineligible";
+type FundingMatchState = Exclude<MatchState, "ineligible">;
+type LegalStatus = "citizen" | "permanent" | "protected" | "temporary" | "unsure";
+type QuebecHistory = "twelve_plus" | "under_twelve" | "unsure";
+type CollectiveComposition = "all" | "two_thirds" | "half_qualified" | "under_half" | "unsure";
+type OrganizationRegistration = "yes" | "no" | "unsure";
+type EligibilityReasonKey =
+  | "statusUnknown"
+  | "statusNotAccepted"
+  | "residencyUnknown"
+  | "residencyTooShort"
+  | "groupUnknown"
+  | "groupNotEnough"
+  | "organizationUnknown"
+  | "organizationNotEligible";
 
 type Localized = Record<Language, string>;
 
 type FundingMatch = {
   fundingId: string;
-  state: MatchState;
+  state: FundingMatchState;
   note: Localized;
 };
 
@@ -49,6 +64,16 @@ type Funding = {
   amount: Localized;
   coverage: string[];
   cashflow: Localized;
+  eligibility: {
+    individualStatuses?: LegalStatus[];
+    representativeStatuses?: LegalStatus[];
+    minimumQuebecMonths?: 12;
+    collectiveRule?: "cca_half" | "cam_two_thirds";
+    organizationRegisteredInCanada?: true;
+    note: Localized;
+    sourceUrl: string;
+    verifiedAt: string;
+  };
   sourceUrl: string;
   verifiedAt: string;
 };
@@ -82,6 +107,36 @@ const copy = {
       dance: "Danse",
       music: "Musique",
     },
+    legalStatusArtist: "Votre statut au Canada",
+    legalStatusCollective: "Statut de la personne responsable",
+    legalStatuses: {
+      citizen: "Citoyenneté canadienne",
+      permanent: "Résidence permanente",
+      protected: "Personne protégée",
+      temporary: "Statut temporaire (travail, études, etc.)",
+      unsure: "Je ne sais pas / à vérifier",
+    },
+    quebecHistory: "Résidence au Québec au cours des 12 derniers mois",
+    quebecHistories: {
+      twelve_plus: "Oui, 12 mois ou plus",
+      under_twelve: "Non, moins de 12 mois",
+      unsure: "Je ne sais pas / à vérifier",
+    },
+    collectiveComposition: "Composition du collectif",
+    collectiveCompositions: {
+      all: "Tous les membres ont un statut reconnu",
+      two_thirds: "Au moins 2/3 sont citoyens ou résidents permanents",
+      half_qualified: "Au moins la moitié ont un statut reconnu par le Conseil des arts du Canada",
+      under_half: "Moins de la moitié ont un statut reconnu",
+      unsure: "Je ne sais pas / à vérifier",
+    },
+    collectiveCompositionNote: "Pour un groupe de deux personnes, choisissez « tous les membres » seulement si les deux ont un statut reconnu.",
+    organizationRegistration: "Statut juridique de l’organisme",
+    organizationRegistrations: {
+      yes: "Constitué ou enregistré au Canada",
+      no: "Non constitué ou non enregistré au Canada",
+      unsure: "Je ne sais pas / à vérifier",
+    },
     profileNote:
       "Ce prototype ne décide pas à la place du bailleur. Il sépare ce qui paraît possible, ce qui dépend d’une invitation et ce qui doit être confirmé.",
     callsHeading: "Appels pertinents",
@@ -94,10 +149,23 @@ const copy = {
     noFunding:
       "Aucune aide directe n’est associée automatiquement. C’est volontaire : une occasion locale ou un concours sans preuve de déplacement ne doit pas produire un faux match.",
     officialFunding: "Vérifier le programme officiel ↗",
+    eligibilityHeading: "Contrôle d’admissibilité",
+    eligibilitySource: "Vérifier les critères officiels ↗",
+    eligibilityReasons: {
+      statusUnknown: "Le statut au Canada doit être confirmé.",
+      statusNotAccepted: "Le statut sélectionné n’est pas admissible à ce programme.",
+      residencyUnknown: "La durée de résidence au Québec doit être confirmée.",
+      residencyTooShort: "Ce programme exige 12 mois de résidence habituelle au Québec.",
+      groupUnknown: "La composition du collectif doit être confirmée.",
+      groupNotEnough: "Le collectif n’atteint pas le seuil de membres admissibles.",
+      organizationUnknown: "La constitution ou l’enregistrement canadien doit être confirmé.",
+      organizationNotEligible: "Un organisme constitué ou enregistré au Canada est requis.",
+    },
     states: {
       possible: "Possible maintenant",
       conditional: "Possible sous condition",
       verify: "À confirmer",
+      ineligible: "Non admissible selon ces réponses",
     },
     coverage: {
       travel: "transport",
@@ -159,6 +227,36 @@ const copy = {
       dance: "Dance",
       music: "Music",
     },
+    legalStatusArtist: "Your status in Canada",
+    legalStatusCollective: "Status of the application representative",
+    legalStatuses: {
+      citizen: "Canadian citizen",
+      permanent: "Permanent resident",
+      protected: "Protected Person",
+      temporary: "Temporary status (work, study, etc.)",
+      unsure: "Not sure / needs checking",
+    },
+    quebecHistory: "Residence in Québec during the previous 12 months",
+    quebecHistories: {
+      twelve_plus: "Yes, 12 months or more",
+      under_twelve: "No, less than 12 months",
+      unsure: "Not sure / needs checking",
+    },
+    collectiveComposition: "Collective composition",
+    collectiveCompositions: {
+      all: "All members hold a recognized status",
+      two_thirds: "At least 2/3 are citizens or permanent residents",
+      half_qualified: "At least half hold a Canada Council-recognized status",
+      under_half: "Fewer than half hold a recognized status",
+      unsure: "Not sure / needs checking",
+    },
+    collectiveCompositionNote: "For a two-person group, choose “all members” only when both people hold a recognized status.",
+    organizationRegistration: "Organization’s legal status",
+    organizationRegistrations: {
+      yes: "Incorporated or registered in Canada",
+      no: "Not incorporated or registered in Canada",
+      unsure: "Not sure / needs checking",
+    },
     profileNote:
       "This prototype does not decide for the funder. It separates what looks possible, what depends on an invitation, and what still needs confirmation.",
     callsHeading: "Relevant calls",
@@ -171,10 +269,23 @@ const copy = {
     noFunding:
       "No direct funding is attached automatically. This is intentional: a local opportunity or a competition without travel proof should not create a false match.",
     officialFunding: "Check official program ↗",
+    eligibilityHeading: "Eligibility checkpoint",
+    eligibilitySource: "Check official eligibility rules ↗",
+    eligibilityReasons: {
+      statusUnknown: "Status in Canada still needs confirmation.",
+      statusNotAccepted: "The selected status is not eligible for this program.",
+      residencyUnknown: "Length of Québec residence still needs confirmation.",
+      residencyTooShort: "This program requires 12 months of habitual residence in Québec.",
+      groupUnknown: "The collective’s composition still needs confirmation.",
+      groupNotEnough: "The collective does not meet the qualifying-member threshold.",
+      organizationUnknown: "Canadian incorporation or registration still needs confirmation.",
+      organizationNotEligible: "A Canadian-incorporated or registered organization is required.",
+    },
     states: {
       possible: "Possible now",
       conditional: "Possible with conditions",
       verify: "Needs confirmation",
+      ineligible: "Not eligible from these answers",
     },
     coverage: {
       travel: "travel",
@@ -236,6 +347,36 @@ const copy = {
       dance: "ダンス",
       music: "音楽",
     },
+    legalStatusArtist: "カナダでの在留資格",
+    legalStatusCollective: "申請代表者の在留資格",
+    legalStatuses: {
+      citizen: "カナダ市民",
+      permanent: "永住者",
+      protected: "Protected Person（保護対象者）",
+      temporary: "一時滞在（就労・留学など）",
+      unsure: "不明・要確認",
+    },
+    quebecHistory: "直近12か月のケベック州居住",
+    quebecHistories: {
+      twelve_plus: "12か月以上居住している",
+      under_twelve: "12か月未満",
+      unsure: "不明・要確認",
+    },
+    collectiveComposition: "コレクティブの構成",
+    collectiveCompositions: {
+      all: "全員が対象となる在留資格を持つ",
+      two_thirds: "3分の2以上が市民または永住者",
+      half_qualified: "半数以上がCanada Councilの対象資格を持つ",
+      under_half: "対象資格を持つメンバーが半数未満",
+      unsure: "不明・要確認",
+    },
+    collectiveCompositionNote: "2人組の場合、2人とも対象資格を持つときだけ「全員」を選んでください。",
+    organizationRegistration: "団体の法的登録状況",
+    organizationRegistrations: {
+      yes: "カナダで法人化・登録済み",
+      no: "カナダで法人化・登録されていない",
+      unsure: "不明・要確認",
+    },
     profileNote:
       "この試作版が助成機関に代わって可否を決めることはありません。「利用できそう」「条件を満たせば可能」「個別確認が必要」を分けて表示します。",
     callsHeading: "該当する公募",
@@ -248,10 +389,23 @@ const copy = {
     noFunding:
       "直接対応する助成制度を自動表示していません。地元開催の公募や渡航の証明がないコンペに、誤った助成候補を結びつけないためです。",
     officialFunding: "助成制度の公式情報を確認 ↗",
+    eligibilityHeading: "申請資格の確認",
+    eligibilitySource: "申請資格の公式条件を確認 ↗",
+    eligibilityReasons: {
+      statusUnknown: "カナダでの在留資格を確認してください。",
+      statusNotAccepted: "選択した在留資格は、この制度の対象外です。",
+      residencyUnknown: "ケベック州での居住期間を確認してください。",
+      residencyTooShort: "この制度は直近12か月のケベック州居住を必要とします。",
+      groupUnknown: "コレクティブのメンバー構成を確認してください。",
+      groupNotEnough: "対象資格を持つメンバーの割合が制度の基準に達していません。",
+      organizationUnknown: "カナダでの法人化・登録状況を確認してください。",
+      organizationNotEligible: "カナダで法人化または登録された団体である必要があります。",
+    },
     states: {
       possible: "現時点で利用可能性あり",
       conditional: "条件を満たせば可能性あり",
       verify: "個別確認が必要",
+      ineligible: "入力条件では対象外",
     },
     coverage: {
       travel: "渡航費",
@@ -312,6 +466,16 @@ const placeNames: Record<Language, Record<string, string>> = {
 const profileOptions: Profile[] = ["artist", "collective", "organization"];
 const residenceOptions: Residence[] = ["montreal", "quebec"];
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music"];
+const legalStatusOptions: LegalStatus[] = ["unsure", "citizen", "permanent", "protected", "temporary"];
+const quebecHistoryOptions: QuebecHistory[] = ["unsure", "twelve_plus", "under_twelve"];
+const collectiveCompositionOptions: CollectiveComposition[] = [
+  "unsure",
+  "all",
+  "two_thirds",
+  "half_qualified",
+  "under_half",
+];
+const organizationRegistrationOptions: OrganizationRegistration[] = ["unsure", "yes", "no"];
 
 function normalizedStatus(opportunity: Opportunity) {
   const now = new Date();
@@ -341,6 +505,12 @@ export function OpportunityWorkbench() {
   const [profile, setProfile] = useState<Profile>("artist");
   const [residence, setResidence] = useState<Residence>("montreal");
   const [discipline, setDiscipline] = useState<Discipline>("all");
+  const [legalStatus, setLegalStatus] = useState<LegalStatus>("unsure");
+  const [quebecHistory, setQuebecHistory] = useState<QuebecHistory>("unsure");
+  const [collectiveComposition, setCollectiveComposition] =
+    useState<CollectiveComposition>("unsure");
+  const [organizationRegistration, setOrganizationRegistration] =
+    useState<OrganizationRegistration>("unsure");
   const [selectedId, setSelectedId] = useState(opportunities[0]?.id ?? "");
   const t = copy[language];
 
@@ -382,9 +552,26 @@ export function OpportunityWorkbench() {
           funding.disciplines.includes(item),
         );
       if (!profileOk || !residenceOk || !disciplineOk) return [];
-      return [{ funding, match }];
+      const assessment = evaluateFundingEligibility({
+        funding,
+        baseState: match.state,
+        profile,
+        legalStatus,
+        quebecHistory,
+        collectiveComposition,
+        organizationRegistration,
+      }) as { state: MatchState; reasonKeys: EligibilityReasonKey[] };
+      return [{ funding, match, assessment }];
     });
-  }, [profile, residence, selectedOpportunity]);
+  }, [
+    collectiveComposition,
+    legalStatus,
+    organizationRegistration,
+    profile,
+    quebecHistory,
+    residence,
+    selectedOpportunity,
+  ]);
 
   return (
     <main className="site-shell">
@@ -473,6 +660,73 @@ export function OpportunityWorkbench() {
               ))}
             </div>
           </fieldset>
+
+          {profile !== "organization" ? (
+            <fieldset className="field-group">
+              <legend>
+                {profile === "collective" ? t.legalStatusCollective : t.legalStatusArtist}
+              </legend>
+              <select
+                className="field-select"
+                value={legalStatus}
+                onChange={(event) => setLegalStatus(event.target.value as LegalStatus)}
+              >
+                {legalStatusOptions.map((item) => (
+                  <option key={item} value={item}>{t.legalStatuses[item]}</option>
+                ))}
+              </select>
+            </fieldset>
+          ) : null}
+
+          {profile === "artist" ? (
+            <fieldset className="field-group">
+              <legend>{t.quebecHistory}</legend>
+              <select
+                className="field-select"
+                value={quebecHistory}
+                onChange={(event) => setQuebecHistory(event.target.value as QuebecHistory)}
+              >
+                {quebecHistoryOptions.map((item) => (
+                  <option key={item} value={item}>{t.quebecHistories[item]}</option>
+                ))}
+              </select>
+            </fieldset>
+          ) : null}
+
+          {profile === "collective" ? (
+            <fieldset className="field-group">
+              <legend>{t.collectiveComposition}</legend>
+              <select
+                className="field-select"
+                value={collectiveComposition}
+                onChange={(event) =>
+                  setCollectiveComposition(event.target.value as CollectiveComposition)
+                }
+              >
+                {collectiveCompositionOptions.map((item) => (
+                  <option key={item} value={item}>{t.collectiveCompositions[item]}</option>
+                ))}
+              </select>
+              <p className="field-note">{t.collectiveCompositionNote}</p>
+            </fieldset>
+          ) : null}
+
+          {profile === "organization" ? (
+            <fieldset className="field-group">
+              <legend>{t.organizationRegistration}</legend>
+              <select
+                className="field-select"
+                value={organizationRegistration}
+                onChange={(event) =>
+                  setOrganizationRegistration(event.target.value as OrganizationRegistration)
+                }
+              >
+                {organizationRegistrationOptions.map((item) => (
+                  <option key={item} value={item}>{t.organizationRegistrations[item]}</option>
+                ))}
+              </select>
+            </fieldset>
+          ) : null}
 
           <fieldset className="field-group">
             <legend>{t.discipline}</legend>
@@ -573,11 +827,33 @@ export function OpportunityWorkbench() {
 
               {matches.length ? (
                 <div className="funding-list">
-                  {matches.map(({ funding, match }) => (
-                    <article className={`funding-match ${match.state}`} key={funding.id}>
-                      <span className="match-state">{t.states[match.state]}</span>
+                  {matches.map(({ funding, match, assessment }) => (
+                    <article className={`funding-match ${assessment.state}`} key={funding.id}>
+                      <span className="match-state">{t.states[assessment.state]}</span>
                       <h5>{funding.name}</h5>
                       <p>{match.note[language]}</p>
+                      <div className="eligibility-check">
+                        <span className="section-kicker">{t.eligibilityHeading}</span>
+                        <p>{funding.eligibility.note[language]}</p>
+                        {assessment.reasonKeys.length ? (
+                          <ul className="eligibility-reasons">
+                            {assessment.reasonKeys.map((reason) => (
+                              <li key={reason}>{t.eligibilityReasons[reason]}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                        <a
+                          className="eligibility-link"
+                          href={funding.eligibility.sourceUrl}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          {t.eligibilitySource}
+                        </a>
+                        <span className="verified-date">
+                          {t.verified}: {funding.eligibility.verifiedAt}
+                        </span>
+                      </div>
                       <div className="coverage" aria-label={t.eligibleCostsLabel}>
                         {funding.coverage.map((item) => (
                           <span key={item}>{t.coverage[item as keyof typeof t.coverage]}</span>

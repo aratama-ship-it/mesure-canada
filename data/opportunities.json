@@ -36,15 +36,6 @@
           "en": "Becomes actionable after official confirmation or invitation.",
           "ja": "採択確認または正式な招待状を得た後に申請候補となります。"
         }
-      },
-      {
-        "fundingId": "cca-representation",
-        "state": "conditional",
-        "note": {
-          "fr": "À vérifier selon le statut professionnel et la nature de la représentation.",
-          "en": "Confirm professional status and whether the trip qualifies as representation.",
-          "ja": "プロとしての活動状況と、渡航目的が対象となる対外活動に該当するかを確認してください。"
-        }
       }
     ]
   },
@@ -134,15 +125,6 @@
           "en": "Consider only after selection and official confirmation.",
           "ja": "選出され、正式な確認書を受け取った後に検討してください。"
         }
-      },
-      {
-        "fundingId": "cca-representation",
-        "state": "verify",
-        "note": {
-          "fr": "La langue et le format compétitif demandent une vérification du projet avant d’engager une demande.",
-          "en": "The language and competition format require project-specific confirmation before applying.",
-          "ja": "使用言語とコンペ形式を踏まえ、このプロジェクトが助成対象になるか事前確認が必要です。"
-        }
       }
     ]
   },
@@ -222,15 +204,6 @@
           "fr": "La confirmation d’admission ou l’invitation doit précéder la demande de déplacement.",
           "en": "Admission confirmation or an invitation is needed before requesting travel support.",
           "ja": "渡航助成の申請前に、参加承認または招待状が必要です。"
-        }
-      },
-      {
-        "fundingId": "cca-representation",
-        "state": "verify",
-        "note": {
-          "fr": "Vérifier si la participation correspond à une activité de représentation admissible.",
-          "en": "Confirm whether participation qualifies as an eligible representation activity.",
-          "ja": "コンクール参加が対象となる対外活動に該当するか確認してください。"
         }
       }
     ]

@@ -308,6 +308,29 @@ a {
   color: var(--white);
 }
 
+.field-select {
+  width: 100%;
+  min-height: 44px;
+  padding: 9px 34px 9px 10px;
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  background: var(--paper-bright);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.field-select:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 1px;
+}
+
+.field-note {
+  margin: 7px 0 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
 .choice-mark {
   display: grid;
   width: 18px;
@@ -518,6 +541,11 @@ a {
   border-left: 7px solid var(--yellow);
 }
 
+.funding-match.ineligible {
+  border-left: 7px solid var(--muted);
+  background: #ece8df;
+}
+
 .match-state {
   display: inline-block;
   margin-bottom: 7px;
@@ -536,6 +564,49 @@ a {
   color: #3d3c36;
   font-size: 0.78rem;
   line-height: 1.5;
+}
+
+.eligibility-check {
+  margin: 12px 0;
+  padding: 11px 0;
+  border-top: 1px dashed var(--ink);
+  border-bottom: 1px dashed var(--ink);
+}
+
+.eligibility-check > p {
+  margin-top: 7px;
+}
+
+.eligibility-reasons {
+  display: grid;
+  gap: 4px;
+  margin: 8px 0;
+  padding-left: 1.1rem;
+}
+
+.eligibility-reasons li {
+  color: #6f261d;
+  font-size: 0.73rem;
+  font-weight: 720;
+  line-height: 1.4;
+}
+
+.eligibility-link {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  border-bottom: 1px solid var(--blue);
+  color: var(--blue-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.eligibility-link:hover,
+.eligibility-link:focus-visible {
+  color: var(--coral);
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
 }
 
 .coverage {
