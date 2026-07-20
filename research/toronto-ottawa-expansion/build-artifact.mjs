@@ -1,0 +1,280 @@
+import { readFileSync, writeFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+
+const generatedAt = "2026-07-20T12:00:00+09:00";
+const sqlPath = new URL("./queries/toronto_2025_applications.sql", import.meta.url);
+const sourceSql = readFileSync(sqlPath, "utf8");
+const eligibilitySqlPath = new URL("./queries/eligibility_summary.sql", import.meta.url);
+const eligibilitySql = readFileSync(eligibilitySqlPath, "utf8");
+
+const artifact = {
+  surface: "report",
+  manifest: {
+    version: 1,
+    surface: "report",
+    title: "MESURE Ontario 展開調査 — Toronto / Ottawa",
+    description: "ケベック版の判定設計をトロントとオタワへ拡張するための、公式情報に基づく日本語調査レポート。",
+    generatedAt,
+    cards: [],
+    charts: [
+      {
+        id: "tac_2025_applications",
+        title: "Toronto Arts Councilへの申請件数",
+        subtitle: "2025年・City of Toronto。区分は運営助成／プロジェクト助成／個人アーティスト／パートナーシップ。州・オタワとは合算しない。",
+        type: "bar",
+        dataset: "tac_2025_streams",
+        sourceId: "tac_2025_annual_report",
+        encodings: {
+          x: { field: "funding_stream_ja", type: "nominal", label: "制度区分" },
+          y: { field: "applications", type: "quantitative", label: "申請件数", format: "number" },
+        },
+        yAxisTitle: "申請件数",
+        valueFormat: "number",
+        layout: "full",
+      },
+    ],
+    tables: [
+      {
+        id: "eligibility_summary",
+        title: "在留資格・居住条件の比較",
+        subtitle: "2026年7月20日時点。PR＝永住者。『要確認』は、公式文書に在留資格の明記がないため確定判定しないもの。",
+        dataset: "eligibility_summary",
+        sourceId: "eligibility_official_pages",
+        columns: [
+          { field: "program", label: "管轄・制度", type: "text" },
+          { field: "standard_eligibility", label: "通常要件（在留区分・居住地）", type: "text" },
+          { field: "temporary_path_and_state", label: "一時滞在者（判定）", type: "text" },
+        ],
+        density: "dense",
+        layout: "full",
+      },
+    ],
+    sources: [
+      {
+        id: "tac_2025_annual_report",
+        label: "Toronto Arts Council 2025 Annual Report",
+        path: "queries/toronto_2025_applications.sql",
+      },
+      {
+        id: "eligibility_official_pages",
+        label: "Official eligibility criteria, compiled",
+        path: "queries/eligibility_summary.sql",
+      },
+    ],
+    blocks: [
+      {
+        id: "title",
+        type: "markdown",
+        body: `# MESURE Ontario 展開調査 — Toronto / Ottawa
+
+公式情報の確認日：**2026年7月20日**`,
+      },
+      {
+        id: "executive_summary",
+        type: "markdown",
+        body: `## Executive Summary
+
+- **派生させる価値は十分あります。** 母数の公表値は、Ontario Arts Council（OAC）が2024–25年度に**11,700件超**の申請を処理、Toronto Arts Council（TAC）が2025年に**3,051件**を受理、オタワ市が2024年に17制度で**626件**を処理しています。ただし年度・地理・集計定義が異なるため、合算して市場規模とはしません。
+- **「3サイトのコピー」ではなく、共通エンジン＋地域レイヤーが適切です。** Canada Councilを全国共通、OACをオンタリオ州共通、TAC／オタワ市を自治体固有、その上に地域の公募フィードを載せます。
+- **非カナダ人向け経路は都市ごとに差があります。** TACの通常助成は市民・永住者・永住権申請中・Protected Personが中心ですが、新規移住者向けメンタリングには有効な就労許可とSINで応募できる経路があります。オタワ市の現行方針は個人にオタワ市在住を求める一方、国籍・在留資格を列挙していません。後者は「応募可」と断定せず、サイト上では**要確認**にすべきです。
+- **国外活動は日本版の公募データを流用しつつ、資金側をCanada CouncilとOACに結び直せます。** 自治体助成は地域内制作が中心で、国外ツアー・渡航はCanada Council Arts AbroadやOAC Touring and Circulationなど別目的の制度として分ける必要があります。`,
+      },
+      {
+        id: "market_base_intro",
+        type: "markdown",
+        body: `## 需要は確認できるが、数字は同じ物差しではない
+
+OACの[2024–25 Annual Report](https://www.arts.on.ca/oac/media/oac/news/2024-2025-Ontario-Arts-Council-Annual-Report-Revised-FINAL-s.pdf?ext=.pdf)は、11,700件超の申請を処理し、プロジェクト助成2,450件に1,540万カナダドル、運営助成549件に3,680万カナダドルを交付したと報告しています。オンタリオ全体を対象にするだけの厚みがあります。
+
+TACの[2025 Annual Report](https://www.toronto.ca/legdocs/mmis/2026/ec/bgrd/backgroundfile-287210.pdf)では3,051件の申請に対して954件を採択しています。単純計算の全体採択率は約31.3%、個人アーティスト区分は271／1,282で約21.1%です。以下は同じ年・同じ機関内の区分なので、比較可能な可視化です。`,
+      },
+      {
+        id: "market_chart",
+        type: "chart",
+        chartId: "tac_2025_applications",
+        layout: "full",
+      },
+      {
+        id: "market_base_ottawa",
+        type: "markdown",
+        body: `オタワ市の[2024 Cultural Funding Summary](https://documents.ottawa.ca/sites/default/files/cultural_funding_report_2024_en.pdf)では、17の文化助成・表彰制度で626件を処理し、412件、総額1,220万カナダドル超を配分しています。これはトロントより小さいものの、MESUREの都市レイヤーを成立させるには十分な制度数です。
+
+**設計への意味：** OAC・TAC・オタワの申請件数は母数の存在を示す証拠にはなりますが、重複応募者数やユニーク利用者数は公表値から分かりません。したがってTAMとして足し算せず、「更新対象となる制度と応募行動が継続的に存在する」という需要証拠として扱います。`,
+      },
+      {
+        id: "eligibility",
+        type: "markdown",
+        body: `## 在留資格の判定は全国・州・市で分ける
+
+公式要件： [Canada Council](https://canadacouncil.ca/funding/resources/profiles)／[OAC](https://www.arts.on.ca/grants/general-granting-information/guide-to-project-programs)／[TAC通常助成](https://torontoartscouncil.org/faq-determining-eligibility-finding-grant-programs-and-additional-support/)／[TAC Newcomer Mentorship](https://torontoartscouncil.org/grants/newcomer-and-refugee-artist-mentorship/)／[ArtWorksTO](https://torontoartsfoundation.org/programs_networks/neighbourhood-arts-network/)／[オタワ市方針](https://documents.ottawa.ca/sites/default/files/03262025-Cultural%20Funding%20Policy-E.pdf)`,
+      },
+      {
+        id: "eligibility_table",
+        type: "table",
+        tableId: "eligibility_summary",
+        layout: "full",
+      },
+      {
+        id: "eligibility_interpretation",
+        type: "markdown",
+        body: `オタワの「要確認」は、方針と個別ガイドラインが国籍・在留資格を応募条件として列挙せず、現住所を条件としていることからの**推定**です。制度担当者への書面確認が取れるまでは、確定的な「応募可」にしません。
+
+また、**City of TorontoとGTA、City of OttawaとGatineauは別地域**です。位置が近いことだけで自治体助成の居住要件を満たしません。住所入力は自由記述ではなく、自治体境界を選択させる必要があります。`,
+      },
+      {
+        id: "priority_programs",
+        type: "markdown",
+        body: `## 最初に収録する制度は「地元制作・移動・キャリア支援」に分ける
+
+### 国外活動・オンタリオ共通
+
+1. [Canada Council Arts Abroad — Travel](https://apply.canadacouncil.ca/Configuration/Application_Forms/P6/en-CA/CCA_6.1.pdf)：国外での発表・展覧会・共同制作・市場開拓など。招待があり、カナダ国外へ500km以上移動する案件を対象に、随時申請、最大3万カナダドル。
+2. [OAC Touring and Circulation Projects](https://www.arts.on.ca/grants/touring-and-circulation-projects)：Ontario・Canada・国外での巡回。個人／グループは最大3万、団体は最大6万カナダドル。原則3件以上の異なる主催者・開催先と、少なくとも1件の確認済み招待が必要。次回掲載期限は2026年10月22日。
+3. [OAC Market Development Travel](https://www.arts.on.ca/grants/market-development-travel)：プレゼンター等との接点づくり。国外（米加以外）は固定2,000カナダドル。ただし2026–27年度は現在クローズ表示。
+
+### Toronto
+
+TACの[助成一覧](https://torontoartscouncil.org/grants/)には調査時点で34制度が掲載され、内訳はプロジェクト21・運営13でした。個人可14、コレクティブ可24、団体可28で、表示上「受付中／次回期限あり」の個人向けは9制度ありました。まずは Artists in the Library、Black Arts Projects、Creative Communities Projects、Dance Projects、Indigenous Arts Projects、Media Artists Creation、Music Creation & Audio Recording、TAC Accessibility、Visual Artists Creation を候補にします。
+
+ただし[TAC Music Creation & Recording](https://torontoartscouncil.org/grants/music-creation-and-recording/)のように、ツアーやToronto外での費用を対象外とする制度があります。地元制作と国外活動を一つのタグにまとめてはいけません。
+
+### Ottawa
+
+- [Creation and Production Fund](https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/creation-and-production-fund-artists/program-information-and-deadline-dates)：個人の制作は最大1万、プロダクションは最大1.5万カナダドル。2027年度サイクルの期限は2026年12月2日。
+- [Equity and Inclusion in the Arts Fund](https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/equity-and-inclusion-arts-fund/program-information-and-deadline-dates)：Seedは最大2,000カナダドル、次回期限は2026年10月7日。Growは最大2万カナダドルで、次期日程は未確定。
+- [Youth in Culture Program](https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/youth-culture-program/program-information)：18–30歳、最大2,000カナダドル。研修・メンタリング・会議・レジデンス等の渡航費も対象になり得ますが、2026年度期限は終了済みです。
+
+**収録方針：** 締切が過ぎた制度も削除せず、次回サイクルの見込みがあるものは「終了／次回未定」として残します。今開いている案件だけを並べると、制度全体の探索性が落ちます。`,
+      },
+      {
+        id: "source_ingestion",
+        type: "markdown",
+        body: `## 公募収集は公式ページを正本にする
+
+- **Ontario：** [OAC Grants](https://www.arts.on.ca/grants)を正本にし、地域団体のニュースレターは発見用に限定。
+- **Toronto：** [TAC Grants](https://torontoartscouncil.org/grants/)、[City artist residencies / open calls](https://www.toronto.ca/explore-enjoy/history-art-culture/artist-residencies-open-calls/)、[City Arts & Culture grants](https://www.toronto.ca/services-payments/grants-incentives-rebates/arts-culture-grants/)を正本にし、Neighbourhood Arts Networkの外部機会一覧は発見用に限定。
+- **Ottawa：** [City funding, calls and opportunities](https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities)、[Public Art announcements](https://ottawa.ca/en/arts-heritage-and-events/public-art-and-city-ottawa-art-collection/public-art-program/announcements)を正本にし、[Ottawa Arts Database](https://www.ottawaartsdatabase.com/opportunities)とArts Ottawaの業界情報は発見用に限定。
+
+地域アグリゲーターは取りこぼし防止に有用ですが、古い情報や空欄が混じります。制度ごとに **sourceTier、eligibilitySourceUrl、deadlineSourceUrl、verifiedAt、statusConfidence** を保存し、適格性と締切は必ず公式ページへ戻って確定します。`,
+      },
+      {
+        id: "architecture",
+        type: "markdown",
+        body: `## 推奨設計：一つの判定エンジンに地域レイヤーを追加する
+
+データ構造は、次の4層に分けます。
+
+1. **Canada**：Canada Councilなど全国共通。
+2. **Province**：Québec／Ontario。TorontoとOttawaではOACを共用。
+3. **Municipality**：Montréal／Toronto／Ottawa。市境と居住期間を判定。
+4. **Opportunity feed**：公演、レジデンス、公共芸術、オープンコール等。国外公募は日本版の案件データを再利用し、居住地側の渡航助成候補を紐づける。
+
+資金目的も **home_base_creation（地元制作）／mobility_export（巡回・国外活動）／career_support（研修・メンタリング・有償契約）** に分けます。これにより「この公募へ応募できる」と「渡航費をどこから出せる」を別々に回答できます。
+
+### 追加すべき質問
+
+1. 現在の在留区分：市民／永住者／Protected Person／永住権申請中／就労許可ありの一時滞在／就労許可なし・visitor／不明。
+2. 正確な居住自治体：Toronto市内、GTAの他自治体、Ottawa市内、Gatineau、その他。
+3. Ontarioに連続12か月居住しているか。
+4. Torontoに1年以上居住し、年間8か月以上生活・活動しているか。
+5. 有効な就労許可とSINがあるか。
+6. Canadaへの到着年または居住年数。
+7. 年齢帯（特に18–30歳）。
+8. 個人／2人組／3人以上のコレクティブ／法人、および適格メンバー比率。
+
+在留資格・SIN・属性情報はセンシティブです。保存を前提にせず、端末内での一時判定または明確な同意を基本にします。`,
+      },
+      {
+        id: "next_steps",
+        type: "markdown",
+        body: `## 推奨する次の進め方
+
+1. **判定モデルを先に地域対応する。** 既存の citizen／permanent／protected／temporary／unsure を上記7区分へ広げ、jurisdictionとmunicipalityを独立フィールドにします。
+2. **スターターデータを12–15件だけ高品質で入れる。** Canada Council 1–2件、OAC 3件、Toronto 4–5件、Ottawa 4–5件を公式根拠付きで登録します。数よりも判定理由が表示できることを優先します。
+3. **Toronto／Ottawa切替を同じ画面に追加する。** 別ドメインや別コードベースはまだ作らず、地域を切り替えて同じ質問の差分が見えるMVPにします。
+4. **5つのテスト人物像で回帰確認する。** 例：Toronto在住の市民、PR申請中、就労許可のあるnewcomer、Ottawa在住の一時滞在者、Gatineau在住者。
+5. **オタワ市へ確認を取る。** 一時滞在者／就労許可保持者が個人助成へ申請できるか、該当プログラム名を挙げて書面回答を得た後に判定を「要確認」から更新します。
+
+この順なら、まず判定の正確さを保ったまま地域を増やし、その後に公募件数を拡張できます。`,
+      },
+      {
+        id: "further_questions",
+        type: "markdown",
+        body: `## 次に決めること
+
+- 「Toronto版」はCity of Toronto限定か、GTA全体を検索対象にするか。
+- 「Ottawa版」にGatineau／Outaouaisのケベック側制度も同時表示するか。
+- 表示言語を日本語＋英語で始めるか、Montréalとの共通運用を考えてフランス語も同時に持つか。
+- 最初の対象分野を全芸術分野にするか、実演芸術・サーカス・音楽・視覚芸術から始めるか。`,
+      },
+      {
+        id: "caveats",
+        type: "markdown",
+        body: `## Caveats and assumptions
+
+- 申請件数は応募者のユニーク人数ではなく、同一人物・団体の複数申請を含み得ます。
+- OAC、TAC、オタワの公表年と集計単位が異なるため、数値は合算・直接比較していません。
+- 締切・受付状態は動的です。verifiedAtを記録し、月1回に加えて締切45日前・14日前・3日前に再確認する運用を推奨します。
+- オタワ市の一時滞在者適格性は、国籍要件が明記されていないことに基づく仮判定であり、制度担当者への確認が必要です。
+- 本レポートは制度探索と事前判定のための調査で、各助成機関による正式な適格性判断を置き換えるものではありません。`,
+      },
+    ],
+  },
+  snapshot: {
+    version: 1,
+    generatedAt,
+    status: "ready",
+    datasets: {
+      tac_2025_streams: [
+        { funding_stream: "Operating", funding_stream_ja: "運営", applications: 236, awards: 231, derived_award_rate: 0.9788 },
+        { funding_stream: "Project", funding_stream_ja: "プロジェクト", applications: 1526, awards: 445, derived_award_rate: 0.2916 },
+        { funding_stream: "Individual artist", funding_stream_ja: "個人", applications: 1282, awards: 271, derived_award_rate: 0.2114 },
+        { funding_stream: "Partnerships", funding_stream_ja: "連携", applications: 7, awards: 7, derived_award_rate: 1.0 },
+      ],
+      eligibility_summary: [
+        { program: "Canada Council 一般プロフィール", standard_eligibility: "市民・PR・Protected／居住条件は制度別", temporary_path_and_state: "不可（確定）" },
+        { program: "OAC Project Programs", standard_eligibility: "市民・PR・PR申請中／Ontario 12か月", temporary_path_and_state: "原則不可（確定）" },
+        { program: "TAC 通常助成", standard_eligibility: "市民・PR・PR申請中・Protected／Toronto 1年・年8か月", temporary_path_and_state: "原則不可（確定）" },
+        { program: "TAC Newcomer Mentorship", standard_eligibility: "国籍区分の列挙なし／Toronto市内・2019年以降に到着", temporary_path_and_state: "就労許可＋SINで可（確定）" },
+        { program: "ArtWorksTO", standard_eligibility: "市民・PR・PR申請中・Protected／GTA在住ほか", temporary_path_and_state: "就労許可あり：条件付き" },
+        { program: "オタワ市 Cultural Funding Policy", standard_eligibility: "国籍・在留区分の列挙なし／Ottawa市内", temporary_path_and_state: "明記なし（要確認）" },
+      ],
+    },
+  },
+  sources: [
+    {
+      id: "tac_2025_annual_report",
+      label: "Toronto Arts Council 2025 Annual Report",
+      path: "queries/toronto_2025_applications.sql",
+      href: "https://www.toronto.ca/legdocs/mmis/2026/ec/bgrd/backgroundfile-287210.pdf",
+      query: {
+        engine: "static_sql",
+        sql: sourceSql,
+        description: "Officially reported 2025 Toronto Arts Council applications and awards, transcribed into a reproducible static SQL table.",
+        executed_at: generatedAt,
+        tables_used: [],
+      },
+    },
+    {
+      id: "eligibility_official_pages",
+      label: "Official eligibility criteria, compiled",
+      path: "queries/eligibility_summary.sql",
+      query: {
+        engine: "static_sql",
+        sql: eligibilitySql,
+        description: "Eligibility requirements transcribed from the official sources linked in the report body, with evidence states preserved.",
+        executed_at: generatedAt,
+        tables_used: [],
+      },
+    },
+  ],
+  package_info: {
+    root: "research/toronto-ottawa-expansion",
+    manifestPath: "artifact.json",
+    snapshotPath: "artifact.json",
+  },
+};
+
+const outputPath = fileURLToPath(new URL("./artifact.json", import.meta.url));
+writeFileSync(outputPath, `${JSON.stringify(artifact, null, 2)}\n`, "utf8");
+console.log(outputPath);
