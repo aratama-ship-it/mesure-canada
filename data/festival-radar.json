@@ -2202,5 +2202,195 @@
     "nextCheckDate": "2026-08-11",
     "sourceUrl": "https://cirko.fi/w-co-production-application-criteria/",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "feten-gijon-2027-open",
+    "title": "FETEN Gijón 2027 — International Performing Arts Fair",
+    "country": "Spain",
+    "city": "Gijón",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-07-29",
+    "deadlineLabel": {
+      "fr": "29 juillet 2026. Compagnies professionnelles nationales et internationales: cirque, clown, théâtre, danse, marionnettes, magie et autres formes, en salle ou dans la rue, principalement pour l’enfance et les familles. Apport de la foire négocié, tous frais de participation inclus; chiffrer voyage et séjour avant accord.",
+      "en": "July 29, 2026. National and international professional companies may submit circus, clown, theatre, dance, puppetry, magic, and other indoor or street work, mainly for children and families. A negotiated fair contribution includes all participation expenses, so price travel and lodging before agreeing.",
+      "ja": "2026年7月29日締切。国内外のプロ団体によるサーカス、クラウン、演劇、ダンス、人形劇、マジック等が対象で、屋内・路上どちらも可。主に子ども・家族向け。出演条件は参加経費込みの一括額を双方で合意するため、渡航・滞在費を見込んで提示する必要があります。"
+    },
+    "nextCheckDate": "2026-07-30",
+    "sourceUrl": "https://drupal.gijon.es/es/feten-1",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "carthage-theatre-days-2026-open",
+    "title": "Journées Théâtrales de Carthage 2026 — Théâtre du Monde",
+    "country": "Tunisia",
+    "city": "Tunis",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "31 juillet 2026. La section Théâtre du Monde accueille les productions théâtrales et performances professionnelles du monde entier. Surtitrage français et anglais requis. Pension complète et transports locaux couverts pour 15 personnes maximum; transport international et fret à la charge de la compagnie.",
+      "en": "July 31, 2026. The Theatre of the World section accepts professional theatre productions and artistic performances worldwide. French and English surtitles are required. Full-board lodging and local transport are covered for up to 15 people; the company pays international travel and freight.",
+      "ja": "2026年7月31日締切。「世界の演劇」部門は世界各地のプロ演劇・舞台パフォーマンスが対象。仏語・英語字幕が必要です。最大15名の食事付き宿泊と現地移動は主催者負担、国際渡航と舞台装置の輸送は団体負担です。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://jtcarthage.tn/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "kyoto-art-center-performing-arts-2027-open",
+    "title": "Kyoto Art Center — Performing Arts Residency 2027",
+    "country": "Japan",
+    "city": "Kyoto",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "31 juillet 2026 à 18 h JST. Artistes ou chercheurs émergents en arts de la scène, capables de travailler en anglais ou japonais et de mener un échange public. Jusqu’à trois mois: hébergement, studio, vol aller-retour et 200 000 JPY par production. La page ne fixe pas de nationalité, mais confirmer l’admissibilité depuis le Québec; repas, cachet et vie courante non couverts.",
+      "en": "July 31, 2026 at 18:00 JST. Emerging performing artists or researchers who can work in English or Japanese and deliver a public exchange project. Up to three months with lodging, studio, round-trip airfare, and JPY 200,000 per production. The page states no nationality restriction, but confirm Quebec eligibility; food, artist fees, and living costs are not covered.",
+      "ja": "2026年7月31日18:00（日本時間）締切。英語または日本語で活動し、市民交流企画を実施できる舞台芸術の若手アーティスト／研究者が対象。最長3か月の宿泊・スタジオ・往復航空券と1制作20万円を提供。公開要項に国籍制限はありませんがケベックからの応募可否は確認推奨。食費・出演料・生活費は対象外です。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://www.kac.or.jp/en/news/20260615/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "inaf-norway-2027-open",
+    "title": "INAF27 — International Norwegian ASSITEJ Festival",
+    "country": "Norway",
+    "city": "Oslo",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-25",
+    "deadlineLabel": {
+      "fr": "25 août 2026. Artistes et compagnies du monde entier: spectacles pour les 0–19 ans autour du thème « care », ainsi que ateliers, conférences, panels et masterclasses. Le festival vise à couvrir voyage, hébergement et cachet, mais précise que ces prises en charge dépendent du financement final: obtenir une confirmation écrite.",
+      "en": "August 25, 2026. Artists and companies worldwide may submit performances for ages 0–19 around the theme of care, plus workshops, lectures, panels, and masterclasses. The festival aims to cover travel, accommodation, and an artistic fee, but says support depends on final funding: obtain written confirmation.",
+      "ja": "2026年8月25日締切。世界中の個人・団体から、0〜19歳向けで「ケア」を扱う公演、ワークショップ、講演、パネル、マスタークラスを募集。渡航・宿泊・出演料の負担を目指すとしていますが、最終的な助成状況に左右されるため書面確認が必要です。"
+    },
+    "nextCheckDate": "2026-08-26",
+    "sourceUrl": "https://www.assitej.no/inaf27/open-call",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "art-explora-paris-2027-upcoming",
+    "title": "Art Explora × Cité internationale des arts — Paris Residency",
+    "country": "France",
+    "city": "Paris",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture annoncée en septembre 2026, clôture en octobre. Toutes nationalités, sans limite d’âge, avec cinq ans minimum d’activité; arts de la scène admissibles. Résidence de trois ou six mois à Montmartre, atelier-logement, 1 000 €/mois, jusqu’à 3 000 € de production et aller-retour pris en charge.",
+      "en": "Applications are announced for September 2026, closing in October. All nationalities, no age limit, and at least five years of professional activity; performing arts are eligible. Three- or six-month Montmartre residency with live-work studio, €1,000/month, up to €3,000 production support, and a round trip.",
+      "ja": "2026年9月募集開始、10月締切予定。国籍・年齢不問、5年以上のプロ活動歴が必要で、舞台芸術も対象。モンマルトルで3か月または6か月の住居兼スタジオ、月1,000ユーロ、制作費最大3,000ユーロ、往復渡航を提供します。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.artexplora.org/en/the-artists-residencies-programme-presentation",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "cnd-cite-choreographer-residency-next-watch",
+    "title": "CN D × Cité internationale des arts — Choreographer Residency",
+    "country": "France",
+    "city": "Paris / Pantin",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-24",
+    "deadlineLabel": {
+      "fr": "Cycle 2027 terminé. Chorégraphes vivant et travaillant hors de France, 25 ans ou plus, trois ans de pratique et au moins un projet créé. Trois mois avec atelier-logement, espace au CN D, transport international, visa et assurance, 1 000 €/mois et 1 500 € de production.",
+      "en": "The 2027 cycle is closed. Choreographers living and working outside France, aged 25+, with three years of practice and at least one created project. Three months with live-work studio, CN D workspace, international transport, visa and insurance, €1,000/month, and €1,500 production support.",
+      "ja": "2027年枠は募集終了。フランス国外で生活・活動する25歳以上の振付家で、3年以上のプロ活動と制作実績が必要。3か月の住居兼スタジオとCN D制作場所、国際渡航、ビザ・保険、月1,000ユーロ、制作費1,500ユーロを提供します。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://www.cnd.fr/en/residency-program-2027-cite-internationale-des-arts-cn-d",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "art-explora-vila31-next-watch",
+    "title": "Vila 31 × Art Explora — Tirana International Residency",
+    "country": "Albania",
+    "city": "Tirana",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-05-15",
+    "deadlineLabel": {
+      "fr": "Cycle 2027 terminé. Programme SOLO de trois mois ouvert aux artistes des Balkans et internationaux; jusqu’à trente résidents par an. Atelier-logement, espaces de production et d’exposition, bourse de vie et de production. Les montants et le voyage ne figurent pas sur la page publique: revérifier dans le prochain règlement.",
+      "en": "The 2027 cycle is closed. The three-month SOLO route was open to Balkan and international artists, with up to 30 residents yearly. Live-work studio, production and exhibition spaces, plus living and production grants. Amounts and travel terms are not on the public page; recheck the next guidelines.",
+      "ja": "2027年枠は募集終了。3か月のSOLO枠はバルカン地域および国外アーティストに開かれ、年間最大30名。住居兼スタジオ、制作・展示場所、生活・制作助成を提供。公開ページに金額と渡航条件がないため次回要項で再確認が必要です。"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://www.artexplora.org/en/residences-dartistes-tirana",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "festilambe-valparaiso-next-watch",
+    "title": "FESTILAMBE Valparaíso — International Miniature Theatre",
+    "country": "Chile",
+    "city": "Valparaíso",
+    "region": "Latin America",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-20",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé; dix places internationales pour artistes résidant hors du Chili. Théâtre miniature Lambe Lambe autonome, un ou deux artistes, six minutes maximum. Cachet brut international de 595 000 CLP moins 20 %, hébergement, repas et transferts locaux; voyage jusqu’au Chili non couvert.",
+      "en": "The 2026 cycle is closed; 10 international places were reserved for artists living outside Chile. Self-contained Lambe Lambe miniature theatre, one or two artists, maximum six minutes. International gross fee of CLP 595,000 less 20%, lodging, meals, and local transfers; travel to Chile was not covered.",
+      "ja": "2026年募集は終了。チリ国外在住者に国際枠10件。1〜2名で上演する6分以内・電源不要のLambe Lambe小型人形劇が対象。国外作品の報酬は595,000チリペソから外国人税20％を控除し、宿泊・食事・現地移動を提供。チリまでの渡航費は自己負担です。"
+    },
+    "nextCheckDate": "2027-03-15",
+    "sourceUrl": "https://festilambe.cl/festilambe-de-valparaiso/convocatoria-nacional-e-intenacional/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "zirkushalle-dornbirn-residency-next-watch",
+    "title": "Zirkushalle Dornbirn — Fully Supported Circus Residency",
+    "country": "Austria",
+    "city": "Dornbirn",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-01-05",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Résidence de sept jours pour cirque contemporain professionnel et clown: espace gratuit, cachet Fair Pay pour chaque artiste, logement, indemnité repas et frais de route kilométriques. Priorité à l’Autriche; candidatures internationales considérées si possible, donc confirmer l’accès depuis le Québec.",
+      "en": "The 2026 cycle is closed. Seven-day residency for professional contemporary circus and clowning with free space, Fair Pay fees for every artist, lodging, meal allowance, and mileage-based travel costs. Austrian applications are prioritised; international ones are considered where possible, so confirm access from Quebec.",
+      "ja": "2026年募集は終了。プロの現代サーカス／クラウン向け7日間で、無料制作場所、全参加者へのFair Pay報酬、宿泊、食費手当、走行距離ベースの交通費を提供。オーストリア勢優先で国外応募は可能な範囲で審査されるため、ケベックからの応募可否は要確認です。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://www.zirkushalle.at/artists/open-call-for-artists/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "le-plongeoir-circus-residency-next-watch",
+    "title": "Le Plongeoir — International Contemporary Circus Residency",
+    "country": "France",
+    "city": "Le Mans",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-02-13",
+    "deadlineLabel": {
+      "fr": "Cycle 2027 terminé. Auteurs, autrices et compagnies professionnelles francophones et internationales du cirque de création; environ trente projets accueillis deux semaines à un mois pour recherche, création ou adaptation. Les modalités financières et de voyage doivent être relues dans le prochain dossier d’appel.",
+      "en": "The 2027 cycle is closed. Francophone and international professional contemporary-circus authors and companies; around 30 projects hosted for two weeks to one month for research, creation, or adaptation. Financial and travel terms must be rechecked in the next call document.",
+      "ja": "2027年枠は募集終了。フランス語圏および国外のプロ現代サーカス作家・団体が対象で、年間約30企画を2週間〜1か月受け入れ、研究・制作・改作を行います。資金・渡航条件は次回募集資料で再確認が必要です。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://leplongeoir-cirque.fr/actualites/appel-residences-2027",
+    "verifiedAt": "2026-07-21"
   }
 ]
