@@ -2582,5 +2582,233 @@
     "nextCheckDate": "2027-06-01",
     "sourceUrl": "https://www.immaginafestivalroma.it/",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "aviama-puppets-mobility-next-watch",
+    "title": "AVIAMA — Puppets and Mobility International Grants",
+    "country": "Global",
+    "city": "AVIAMA member cities",
+    "region": "Global",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-16",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Artistes, chercheurs et organismes du monde entier en arts de la marionnette; création, recherche, formation et mobilité. Jusqu’à 2 000 EUR, au maximum 50 % du budget ou des dépenses réelles, dont 50 % peut être avancé. Une lettre d’appui d’une ville AVIAMA est obligatoire: Outremont et Saguenay sont membres, ce qui crée une voie québécoise concrète.",
+      "en": "The 2026 cycle is closed. Puppetry artists, researchers, and organizations worldwide; creation, research, training, and mobility. Up to EUR 2,000, capped at 50% of the budget or actual costs, with up to 50% payable in advance. A support letter from an AVIAMA city is mandatory: Outremont and Saguenay are members, creating a concrete Quebec route.",
+      "ja": "2026年枠は終了。世界の人形劇アーティスト、研究者、団体による制作・研究・研修・移動を対象に、最大2,000ユーロ（予算または実費の50％以内、最大50％前払い可）。AVIAMA加盟都市の支援状が必須で、ケベックではOutremontとSaguenayが加盟しているため、現地から相談できる具体的な導線があります。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.aviama.org/en/call-for-applications-aviama-2026-grants-puppets-and-mobility/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "iida-puppet-international-next-watch",
+    "title": "Iida Puppet Festival — International Entries",
+    "country": "Japan",
+    "city": "Iida",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-16",
+    "deadlineLabel": {
+      "fr": "Les inscriptions internationales 2026 sont terminées. Après la sélection des compagnies étrangères, une voie de participation volontaire est restée ouverte jusqu’au 16 avril. Le festival ne couvre aucune dépense pour cette voie: voyage, logement, repas et transport de matériel doivent être budgétés séparément.",
+      "en": "International entries for 2026 are closed. After the recruited overseas-company route closed, voluntary international participation remained open until April 16. The festival covers no expenses under this route: travel, lodging, meals, and freight must be budgeted separately.",
+      "ja": "2026年の国外劇団受付は終了。招へい選考の終了後も4月16日まで自主参加枠がありましたが、この枠では主催者による費用負担はありません。渡航・宿泊・食事・運搬費を別途組む必要があります。"
+    },
+    "nextCheckDate": "2026-10-15",
+    "sourceUrl": "https://www.iida-puppet.com/documents/theater_foreigners/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "dance-now-asia-showcase-next-watch",
+    "title": "Dance Now Asia — Taipei & Kaohsiung Showcase",
+    "country": "Taiwan",
+    "city": "Taipei / Kaohsiung",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-06-17",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Créateurs ou interprètes de nationalité asiatique, niveau universitaire, cinq années récentes de pratique continue et anglais de base; la résidence au Québec n’exclut donc pas une personne qui conserve une nationalité asiatique. Pour les artistes asiatiques: 15 000 TWD pour un solo, logement durant le séjour, transports internes et 25 USD par jour; vol international non annoncé.",
+      "en": "The 2026 cycle is closed. Asian-nationality creators or performers with university-level education, five recent years of continuous practice, and basic English; Quebec residence therefore does not exclude someone retaining an Asian nationality. Asian artists receive TWD 15,000 for a solo, lodging for the stay, internal transport, and USD 25 per day; international airfare is not stated.",
+      "ja": "2026年枠は終了。アジア国籍を持ち、大学以上、直近5年の継続的な創作・出演歴、基礎英語がある人が対象なので、ケベック在住でも日本等のアジア国籍を保持していれば条件に合います。国外枠はソロ支援金15,000台湾ドル、滞在中の宿泊、台湾内移動、1日25米ドルを提供。国際航空券は明記されていません。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://www.zsh.gov.taipei/News_Content.aspx?n=1F1673CE4A317BE0&s=79DF20F7D883A8C7",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "subotica-childrens-theatre-next-watch",
+    "title": "Subotica International Festival of Children’s Theatres",
+    "country": "Serbia",
+    "city": "Subotica",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-02-28",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Théâtres professionnels de marionnettes ou pour enfants, sans restriction géographique annoncée; priorité à l’expression marionnettique. L’organisateur fournit transport local, hôtel en pension complète, accès aux événements et soutien technique. Le voyage aller-retour jusqu’à Subotica reste à la charge de la compagnie.",
+      "en": "The 2026 cycle is closed. Professional puppet or children’s theatres, with no geographic restriction stated; puppetry expression has priority. The organizer provides local transport, full-board hotel, festival access, and technical support. Round-trip travel to Subotica remains the company’s responsibility.",
+      "ja": "2026年枠は終了。地域制限の記載がないプロの人形劇・児童劇団が対象で、人形劇表現を優先。現地交通、全食付きホテル、全イベント入場、技術支援を主催者が提供し、Suboticaまでの往復渡航は団体負担です。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.lutfestsubotica.net/en/main-programme",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "flum-mostar-puppetry-next-watch",
+    "title": "FLUM Mostar — International Festival of Puppetry Art",
+    "country": "Bosnia and Herzegovina",
+    "city": "Mostar",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "language_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-03-31",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Théâtres et groupes professionnels proposant une œuvre de marionnette pour enfants ou adultes; maximum 12 personnes. Sous-titres requis si la langue n’est ni bosnien, ni croate, ni serbe. L’organisateur couvre transport local, hôtel, repas, technique et accréditation; voyage international à la charge des participants.",
+      "en": "The 2026 cycle is closed. Professional theatres and groups with a puppet show for children or adults; maximum 12 people. Subtitles are required when the language is not Bosnian, Croatian, or Serbian. The organizer covers local transport, hotel, meals, technical support, and accreditation; participants pay international travel.",
+      "ja": "2026年枠は終了。子ども／大人向け人形劇を持つプロ劇団・団体が対象で、最大12名。ボスニア語・クロアチア語・セルビア語以外は字幕が必要です。現地交通、ホテル、食事、技術、参加証は主催者負担、国際渡航は参加者負担です。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://www.plm.ba/en/2026/press/flum-en/call-for-puppeteers-submissions-of-puppet-shows-for-the-flum-2026/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "banja-luka-childrens-theatre-next-watch",
+    "title": "Banja Luka International Festival of Children’s Theatres",
+    "country": "Bosnia and Herzegovina",
+    "city": "Banja Luka",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-15",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Festival compétitif pour théâtres professionnels pour enfants, avec une histoire de compagnies venues d’Europe et du monde. L’organisateur offre logement et repas en pension complète pour un maximum de 12 personnes par théâtre sélectionné. Voyage et dépenses supplémentaires restent à la charge des participants.",
+      "en": "The 2026 cycle is closed. A competitive festival for professional children’s theatres, with a history of companies from Europe and worldwide. The organizer provides full-board lodging and meals for up to 12 people per selected theatre. Travel and additional expenses remain the participants’ responsibility.",
+      "ja": "2026年枠は終了。欧州および世界各地のプロ児童劇団が参加してきたコンペティション形式。選出劇団1団体につき最大12名の宿泊と全食を主催者が提供し、渡航費と追加費用は参加者負担です。"
+    },
+    "nextCheckDate": "2027-02-15",
+    "sourceUrl": "https://djecijepozoristers.ba/wp-content/uploads/2026/03/Invitation_Letter_Banja_Luka_2026.pdf.pdf",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "novi-sad-theatre-festival-2027-open",
+    "title": "Novi Sad Theatre Festival 2027 — Children & Youth",
+    "country": "Serbia",
+    "city": "Novi Sad",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-10-31",
+    "deadlineLabel": {
+      "fr": "Ouvert jusqu’au 31 octobre 2026. Théâtres et troupes professionnels du monde entier peuvent proposer une œuvre pour enfants ou jeunes publics; festival en mai 2027 et sélection finale avant le 15 janvier. La brève annonce 2027 ne précise pas encore cachet, logement, repas ou voyage: demander les conditions avant de budgéter.",
+      "en": "Open through October 31, 2026. Professional theatres and troupes worldwide may submit work for children or young audiences; the festival is in May 2027, with final selection by January 15. The short 2027 notice does not yet state fee, lodging, meals, or travel: request terms before budgeting.",
+      "ja": "2026年10月31日締切で受付中。世界のプロ劇団・団体が子ども／若者向け作品を応募でき、開催は2027年5月、最終選考は1月15日まで。2027年の短い募集告知には出演料・宿泊・食事・渡航条件が未記載のため、予算化前に確認が必要です。"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://festivalnpi.co.rs/sr/vesti/otvoren-poziv-za-prijavu-na-6-novosadske-pozorisne-igre",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "solostage-krakow-2026-open",
+    "title": "SoloStage Kraków 2026 — Solo Performance Call",
+    "country": "Poland",
+    "city": "Kraków",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "language_conditions",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "Ouvert jusqu’au 31 juillet 2026. Solo de 15 à 50 minutes, en anglais, polonais, ukrainien ou sans paroles; théâtre physique et formes expérimentales acceptés, professionnels, émergents et étudiants. Candidature gratuite, espace, technique, promotion et partage modeste de billetterie; voyage et hôtel non couverts, hébergement communautaire non garanti.",
+      "en": "Open through July 31, 2026. A 15–50 minute solo in English, Polish, Ukrainian, or non-verbal; physical theatre and experimental forms accepted, for professionals, emerging artists, and students. No application fee; venue, technical, marketing, and a modest ticket split are provided. Travel and hotel are not covered, with community hosting not guaranteed.",
+      "ja": "2026年7月31日締切で受付中。15〜50分のソロ作品で、英語・ポーランド語・ウクライナ語またはノンバーバル。フィジカルシアターや実験表現も対象で、プロ・若手・学生が応募可。応募無料、会場・技術・広報と少額の売上分配あり。渡航・ホテルは対象外で、地域住民宅への滞在も保証されません。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://ettc.pl/solostage/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "puppet-fair-sofia-next-watch",
+    "title": "PUPPET FAIR Sofia — Street & Puppet Theatre",
+    "country": "Bulgaria",
+    "city": "Sofia",
+    "region": "Europe",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-11-30",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Festival international non compétitif ouvert aux spectacles professionnels en salle, en extérieur, de rue et aux différentes formes de marionnette. La page officielle de l’appel ne publie pas de cachet ni de prise en charge du voyage ou du logement: demander les conditions avant d’accepter une invitation.",
+      "en": "The 2026 cycle is closed. A non-competitive international festival open to professional indoor, outdoor, street, and varied puppetry performances. The official call page does not publish fee, travel, or lodging coverage: request the terms before accepting an invitation.",
+      "ja": "2026年枠は終了。屋内・屋外・大道芸・各種人形劇のプロ作品を対象とする非コンペ型の国際祭。公式公募ページに出演料、渡航、宿泊負担の記載がないため、招へい受諾前に条件確認が必要です。"
+    },
+    "nextCheckDate": "2026-10-15",
+    "sourceUrl": "https://www.sofiapuppet.com/en/puppet-fair-2026_44_351",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "bielsko-puppetry-art-next-watch",
+    "title": "Bielsko-Biała International Festival of Puppetry Art",
+    "country": "Poland",
+    "city": "Bielsko-Biała",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-08-30",
+    "deadlineLabel": {
+      "fr": "L’appel international 2026 est terminé. Théâtres institutionnels ou indépendants, écoles et artistes étrangers; marionnette, objet, théâtre visuel, danse, scène et extérieur, avec priorité aux œuvres encore non présentées en Pologne. Le dossier demande les attentes financières de voyage et cachet: les montants sont donc négociés, non garantis publiquement.",
+      "en": "The 2026 international call is closed. Foreign institutional or independent theatres, schools, and artists; puppetry, object, visual, dance, stage, and outdoor work, prioritizing productions not yet shown in Poland. The application asks for travel-cost and fee expectations, so amounts are negotiated rather than publicly guaranteed.",
+      "ja": "2026年の国外公募は終了。国外の公立・独立劇団、学校、アーティストによる人形劇、オブジェクト、ビジュアル、ダンス、屋内外作品が対象で、ポーランド未上演作を優先。応募時に渡航費と出演料の希望額を出す方式のため、支給額は公開保証ではなく個別交渉です。"
+    },
+    "nextCheckDate": "2027-04-15",
+    "sourceUrl": "https://puppetryartfestival.com/en/news/833/we-are-now-accepting-applications-from-international-ensembles-for-the-31th-puppetry-art-festival",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "destinos-chicago-2026-open",
+    "title": "Destinos 2026 — Chicago International Latino Theater Festival",
+    "country": "United States",
+    "city": "Chicago",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’appel national et international est affiché ouvert, sans date limite publique. Priorité aux œuvres d’auteurs latines ou latino-américains et aux petites équipes; 45 à 90 minutes, maximum 3 voyageurs pour un solo ou 5 pour les autres productions. Cachet, accueil, vol aller-retour si applicable, transports locaux, 60 USD par jour de travail, 30 USD par jour de voyage et petit-déjeuner d’hôtel.",
+      "en": "The national and international call is listed as open with no public deadline. Priority goes to Latine and Latin-American playwrights and smaller teams; 45–90 minutes, up to 3 travelers for a solo or 5 for other productions. Honorarium, hospitality, round-trip airfare when applicable, local transport, USD 60 per workday, USD 30 per travel day, and hotel breakfast are provided.",
+      "ja": "国内外公募は受付中表示ですが、公開締切日はありません。Latine／ラテンアメリカ系劇作家の作品と小編成を優先し、45〜90分、ソロは渡航3名まで、その他は5名まで。出演料、受入、該当時の往復航空券、現地移動、稼働日60米ドル・移動日30米ドルの日当、ホテル朝食を提供します。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://www.clata.org/en/programs/Destinos-2026-Open-Call",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "unima-passport-prelet-2026-open",
+    "title": "UNIMA PASSPORT — Festival Visitor Mobility",
+    "country": "Global",
+    "city": "Participating festivals",
+    "region": "Global",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-08-04",
+    "deadlineLabel": {
+      "fr": "Voie encore praticable pour PRELET en République tchèque, du 4 au 8 novembre 2026: déposer au moins trois mois avant, donc au plus tard le 4 août, et le plus tôt possible. Jeunes marionnettistes ou étudiants membres de l’UNIMA, avec attestation du centre national; attribution selon l’ordre d’arrivée. Hébergement et billets gratuits; voyage, repas et visa à la charge du bénéficiaire.",
+      "en": "A viable current route remains for PRELET in the Czech Republic, November 4–8, 2026: apply at least three months ahead, therefore by August 4, and as early as possible. Young puppeteers or students who are UNIMA members need a national-centre confirmation; places are first come, first served. Free lodging and festival tickets; recipient pays travel, meals, and visa.",
+      "ja": "2026年11月4〜8日のチェコPRELET枠は現在検討可能です。開始3か月前まで、つまり8月4日までに早めの申請が必要。UNIMA会員の若手人形劇人または学生が対象で、国内センターの会員証明を添付し先着順。宿泊と公演チケットは無料、渡航・食事・ビザは本人負担です。"
+    },
+    "nextCheckDate": "2026-08-05",
+    "sourceUrl": "https://www.unima.org/en/useful-information/unima-grants/passport-program/",
+    "verifiedAt": "2026-07-21"
   }
 ]
