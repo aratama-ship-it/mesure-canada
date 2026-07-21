@@ -505,5 +505,44 @@
     },
     "sourceUrl": "https://ottawa.ca/en/arts-heritage-and-events/funding-calls-and-opportunities/cultural-funding/youth-culture-program/program-information",
     "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "quebec-city-le-levier",
+    "name": "Ville de Québec — Le Levier",
+    "funder": "Ville de Québec",
+    "profiles": ["artist"],
+    "residencies": ["quebec_city"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "1er décembre 2026; volet Circuler en continu, au moins 1 mois avant le projet",
+      "en": "December 1, 2026; the Circuler stream is rolling, at least 1 month before the project",
+      "ja": "通常枠の次回締切：2026年12月1日。Circuler枠は随時で、プロジェクトの少なくとも1か月前"
+    },
+    "amount": {
+      "fr": "Jusqu’à 5 000 $ (Concrétiser); jusqu’à 2 500 $ (Écrire et développer); 500 à 1 500 $ (Circuler)",
+      "en": "Up to $5,000 (Concrétiser); up to $2,500 (Écrire et développer); $500–$1,500 (Circuler)",
+      "ja": "Concrétiserは最大5,000カナダドル、Écrire et développerは最大2,500ドル、Circulerは500〜1,500ドル"
+    },
+    "coverage": ["travel", "stay", "fees", "research", "creation", "production"],
+    "cashflow": {
+      "fr": "Décision approximative en 10 semaines; la subvention est versée en un versement après l’approbation municipale.",
+      "en": "Decision in about 10 weeks; the grant is paid in one instalment after municipal approval.",
+      "ja": "決定まで約10週間。市の承認後に一括で支給されます。"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Pour une personne physique artiste professionnelle, citoyenne canadienne ou résidente permanente, résidant dans la ville de Québec. La majorité des artistes impliqués doit aussi y résider; reconnaissance professionnelle et revenus significatifs dans les deux dernières déclarations fiscales sont requis.",
+        "en": "For an individual professional artist who is a Canadian citizen or permanent resident and lives in the City of Québec. Most artists involved must also live there; professional recognition and meaningful self-employment income in the two most recent tax returns are required.",
+        "ja": "ケベック・シティ在住の個人プロアーティスト向けで、カナダ市民または永住者が対象です。関与するアーティストの過半数も市内在住であること、プロとしての評価と直近2回の税申告での十分な自営業収入が必要です。一時滞在者は対象外です。"
+      },
+      "sourceUrl": "https://www.ville.quebec.qc.ca/apropos/programmes-subventions/art-culture/levier/docs/description-mesure-levier.pdf",
+      "verifiedAt": "2026-07-21"
+    },
+    "sourceUrl": "https://www.ville.quebec.qc.ca/apropos/programmes-subventions/art-culture/levier/docs/description-mesure-levier.pdf",
+    "verifiedAt": "2026-07-21"
   }
 ]

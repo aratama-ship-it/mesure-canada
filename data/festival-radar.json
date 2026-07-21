@@ -777,5 +777,157 @@
     "nextCheckDate": "2026-09-08",
     "sourceUrl": "https://roseq.qc.ca/circulationspectacles",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "micc-tour-de-piste-2026-watch",
+    "title": "MICC — Tour de Piste / Pitch Sessions",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel 2026 terminé. Compagnies professionnelles ayant déjà tourné, artistes individuels qui tournent régulièrement des œuvres complètes, et adhésion MICC active requises; prochaine date non publiée.",
+      "en": "The 2026 call is closed. It requires professional touring experience (or an individual regularly touring full-length works) and active MICC membership; the next date is not published.",
+      "ja": "2026年公募は終了。巡回実績のあるプロのカンパニー、または全編作品を定期的に巡回する個人、かつ有効なMICC会員が対象。次回日程は未公表。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://micc.tohu.ca/fr/appelaprojets",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-circulation-releve-2026-watch",
+    "title": "En Piste — Circulation de la relève",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": "2026-04-10",
+    "deadlineLabel": {
+      "fr": "Appel 2026 fermé le 10 avril. Première tournée au Québec avec accompagnement et accès au réseau Destination Cirque; vérifier les critères de relève et d’expérience de diffusion au prochain cycle.",
+      "en": "The 2026 call closed April 10. It supports a first Québec tour with guidance and access to the Destination Cirque network; verify emerging-artist and touring criteria in the next cycle.",
+      "ja": "2026年の締切は4月10日。ケベック州での初回ツアー、伴走支援、Destination Cirqueネットワークへの接続を目的とする枠。次回時に新人性・巡演実績の要件を確認。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://enpiste.qc.ca/circulation-de-la-releve-le-tremplin-de-demain-est-de-retour/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-trajectoire-cirque-2026-watch",
+    "title": "En Piste / CAM — Trajectoire cirque, 3e édition",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-04-10",
+    "deadlineLabel": {
+      "fr": "Appel 2026 fermé le 10 avril. Résidence de recherche et création; l’édition vérifiée exigeait notamment citoyenneté canadienne ou résidence permanente et résidence sur l’île de Montréal.",
+      "en": "The 2026 call closed April 10. It is a research-and-creation residency; the verified edition required, among other conditions, Canadian citizenship or permanent residence and residence on the Island of Montréal.",
+      "ja": "2026年の締切は4月10日。リサーチ／創作レジデンスで、確認済みの回は少なくともカナダ市民または永住者、かつモントリオール島内居住を求めていました。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://enpiste.qc.ca/trajectoire-cirque-seance-dinformation-sur-la-3e-edition/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-mon-premier-micc-2026-watch",
+    "title": "LOJIQ / En Piste / MICC — Mon premier MICC",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-05-11",
+    "deadlineLabel": {
+      "fr": "Appel 2026 fermé le 11 mai. Première participation au Rendez-vous annuel MICC pour des professionnel·les du cirque et des arts de la scène au Canada; vérifier les modalités de la prochaine édition.",
+      "en": "The 2026 call closed May 11. It supported a first MICC Annual Market participation for circus and performing-arts professionals in Canada; verify next-edition terms.",
+      "ja": "2026年の締切は5月11日。カナダのサーカス／舞台芸術のプロによるMICC初参加を対象とした枠。次回の細則を確認。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://enpiste.qc.ca/appel-de-candidatures-mon-premier-micc/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-mentorat-pancanadien-2026-watch",
+    "title": "En Piste — Mentorat pancanadien en arts du cirque",
+    "country": "Canada",
+    "city": "Canada-wide",
+    "region": "North America",
+    "family": "circus",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-05-29",
+    "deadlineLabel": {
+      "fr": "Appel 2026 fermé le 29 mai. Parcours destiné aux artistes de régions du Canada hors Québec; les ateliers annoncés incluaient Toronto. Ce n’est pas une voie pour les résident·es du Québec dans cette édition.",
+      "en": "The 2026 call closed May 29. This pathway was for artists in Canadian regions outside Québec, with announced sessions including Toronto. It was not a Québec-resident route in this edition.",
+      "ja": "2026年の締切は5月29日。ケベック州外のカナダ各地のアーティスト向けで、トロントを含む回が案内されていました。この回ではケベック在住者向けではありません。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://enpiste.qc.ca/appel-candidature-mentorat-pancanadien/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-prix-propulsion-2026-watch",
+    "title": "En Piste / Conseil des arts de Montréal — Prix Propulsion",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-04-10",
+    "deadlineLabel": {
+      "fr": "Appel 2026 fermé le 10 avril. Prix de 10 000 $ pour un·e artiste, un collectif ou un organisme en arts du cirque contribuant à la vitalité artistique montréalaise; prochain cycle à vérifier.",
+      "en": "The 2026 call closed April 10. This $10,000 prize is for a circus artist, collective or organization contributing to Montréal’s artistic vitality; verify the next cycle.",
+      "ja": "2026年の締切は4月10日。モントリオールの芸術的活力に寄与するサーカスの個人・コレクティブ・団体を対象にした1万カナダドルの賞。次回を確認。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://enpiste.qc.ca/prix-propulsion-2026/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "tohu-research-creation-residencies-watch",
+    "title": "TOHU — Résidences de recherche et création",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La page officielle affiche encore les dates 2025. Soutien en espace et services, sans aide financière, pour individus, collectifs et organismes de cirque à but non lucratif; vérifier le cycle 2026–2027 avant de déposer.",
+      "en": "The official page still shows 2025 dates. It offers space and services—not cash funding—to circus individuals, collectives and nonprofit organizations; verify the 2026–27 cycle before applying.",
+      "ja": "公式ページは2025年の日程のままです。助成金ではなく、サーカスの個人・コレクティブ・非営利団体へ空間とサービスを提供する制度。申請前に2026〜27年サイクルを確認。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://tohu.ca/fr/attraits-et-services/artistes-et-professionnels/residences",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "valspec-circus-residency-2026-watch",
+    "title": "Valspec / En Piste — Résidence en arts du cirque",
+    "country": "Canada",
+    "city": "Salaberry-de-Valleyfield",
+    "region": "North America",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-01-16",
+    "deadlineLabel": {
+      "fr": "Appel 2026 fermé le 16 janvier. Une compagnie ou un collectif membre d’En Piste devait proposer une création tout public et être disponible pour la sortie de résidence; surveiller la prochaine édition.",
+      "en": "The 2026 call closed January 16. An En Piste-member company or collective had to propose a general-audience creation and be available for the residency showing; watch the next edition.",
+      "ja": "2026年の締切は1月16日。En Piste会員のカンパニーまたはコレクティブが一般向け作品を提案し、レジデンス成果発表に参加できることが要件でした。次回を監視。"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://enpiste.qc.ca/appel-de-projet-residence-en-arts-du-cirque-a-valspec/",
+    "verifiedAt": "2026-07-21"
   }
 ]

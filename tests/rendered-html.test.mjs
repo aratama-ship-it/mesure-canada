@@ -25,6 +25,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Où résidez-vous actuellement/);
   assert.match(html, /Ville de Toronto/);
   assert.match(html, /Ville d’Ottawa/);
+  assert.match(html, /Ville de Québec/);
   assert.match(html, /Gatineau/);
   assert.match(html, /Festival Mondial du Cirque de Demain/);
   assert.match(html, /CALQ — Déplacement/);
@@ -37,6 +38,8 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Sundance Film Festival 2027/);
   assert.match(html, /Contact ontarois 2027/);
   assert.match(html, /CINARS Biennale 2026 — OFF-CINARS Showcase/);
+  assert.match(html, /MICC — Tour de Piste \/ Pitch Sessions/);
+  assert.match(html, /TOHU — Résidences de recherche et création/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
@@ -80,7 +83,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
-      ["canada", "quebec", "montreal", "ontario", "gta", "toronto", "ottawa"].includes(scope)
+      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa"].includes(scope)
     ));
     assert.ok(["mobility_export", "home_base_creation", "career_support"].includes(record.purpose));
     assert.ok(["grant", "paid_program"].includes(record.kind));
@@ -95,10 +98,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.match(record.eligibility.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
   }
 
-  assert.ok(festivalRadar.length >= 41);
+  assert.ok(festivalRadar.length >= 49);
   assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film", "showcase"]));
   assert.ok(new Set(festivalRadar.map((record) => record.region)).size >= 6);
-  assert.ok(festivalRadar.filter((record) => record.family === "circus").length >= 7);
+  assert.ok(festivalRadar.filter((record) => record.family === "circus").length >= 15);
   assert.ok(festivalRadar.filter((record) => record.family === "street").length >= 7);
   assert.ok(festivalRadar.filter((record) => record.family === "fringe").length >= 12);
   assert.ok(festivalRadar.filter((record) => record.family === "showcase").length >= 6);
@@ -106,6 +109,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "bnfn-artist-call-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "contact-ontarois-2027-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "roseq-seasonal-2027-28"));
+  assert.ok(festivalRadar.some((record) => record.id === "micc-tour-de-piste-2026-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "tohu-research-creation-residencies-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "valspec-circus-residency-2026-watch"));
   for (const record of festivalRadar) {
     assert.ok(record.title && record.country && record.city);
     assert.ok(["circus", "street", "fringe", "film", "showcase"].includes(record.family));
@@ -135,6 +141,11 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const artworks = funding.find((record) => record.id === "artworks-to-newcomer");
   assert.equal(artworks.kind, "paid_program");
   assert.ok(artworks.eligibility.conditionalStatuses.includes("temporary_work"));
+
+  const leLevier = funding.find((record) => record.id === "quebec-city-le-levier");
+  assert.deepEqual(leLevier.residencies, ["quebec_city"]);
+  assert.deepEqual(leLevier.eligibility.individualStatuses, ["citizen", "permanent"]);
+  assert.equal(leLevier.eligibility.professionalPracticeVerificationRequired, true);
 
   for (const record of opportunities.filter((item) => item.country !== "Canada")) {
     assert.ok(

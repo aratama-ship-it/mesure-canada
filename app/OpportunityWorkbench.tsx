@@ -8,8 +8,8 @@ import { evaluateFundingEligibility, supportsResidence } from "./eligibility.mjs
 
 type Language = "fr" | "en" | "ja";
 type Profile = "artist" | "collective" | "organization";
-type Residence = "montreal" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa";
-type ResidenceScope = "canada" | "quebec" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa";
+type Residence = "montreal" | "quebec_city" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa";
+type ResidenceScope = "canada" | "quebec" | "quebec_city" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
 type RadarFamily = "all" | "circus" | "street" | "fringe" | "film" | "showcase";
 type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions" | "language_conditions" | "eligibility_check";
@@ -73,7 +73,8 @@ type EligibilityReasonKey =
   | "arrivalUnknown"
   | "arrivalTooEarly"
   | "ageUnknown"
-  | "ageOutOfRange";
+  | "ageOutOfRange"
+  | "professionalPracticeCheck";
 
 type Localized = Record<Language, string>;
 
@@ -143,6 +144,7 @@ type Funding = {
     collectiveRule?: "cca_half" | "cam_two_thirds" | "oac_half" | "tac_majority" | "ottawa_half";
     organizationRegisteredInCanada?: true;
     organizationVerificationRequired?: true;
+    professionalPracticeVerificationRequired?: true;
     sinRequired?: true;
     arrivalOnOrAfter?: "2019-01-01";
     ageRange?: { min?: 18; max?: 30 };
@@ -174,6 +176,7 @@ const copy = {
     regions: { quebec: "Québec", ontario: "Ontario" },
     residences: {
       montreal: "Île de Montréal",
+      quebec_city: "Ville de Québec",
       quebec: "Ailleurs au Québec",
       gatineau: "Gatineau",
       toronto: "Ville de Toronto",
@@ -270,6 +273,7 @@ const copy = {
       arrivalTooEarly: "La date d’arrivée ne correspond pas à la cohorte de nouveaux arrivants.",
       ageUnknown: "L’âge doit être confirmé.",
       ageOutOfRange: "La tranche d’âge ne correspond pas au programme.",
+      professionalPracticeCheck: "Le statut professionnel, la reconnaissance par les pairs et les preuves de revenus doivent être vérifiés.",
     },
     states: { possible: "Critères apparemment satisfaits", conditional: "Possible sous condition", verify: "À confirmer", ineligible: "Non admissible selon ces réponses" },
     purposes: { mobility_export: "Mobilité / diffusion", home_base_creation: "Création locale", career_support: "Parcours / mentorat" },
@@ -302,7 +306,7 @@ const copy = {
     baseHeading: "Where do you currently live?",
     baseNote: "City and province change the programs shown; nationality is checked separately.",
     regions: { quebec: "Québec", ontario: "Ontario" },
-    residences: { montreal: "Island of Montréal", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa" },
+    residences: { montreal: "Island of Montréal", quebec_city: "City of Québec", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa" },
     steps: ["Your situation", "A concrete opportunity", "Possible funding"],
     profileHeading: "Your situation",
     profile: "You are applying as…",
@@ -358,7 +362,7 @@ const copy = {
     eligibilityHeading: "Eligibility checkpoint",
     eligibilitySource: "Check official eligibility rules ↗",
     eligibilityReasons: {
-      statusUnknown: "Status in Canada still needs confirmation.", statusNotAccepted: "The selected status is not accepted by this program.", statusConditional: "This status may be considered, subject to valid authorization and program capacity.", statusVerification: "The official page does not resolve this status; contact the program.", provinceHistoryUnknown: "Length of residence in the province still needs confirmation.", provinceHistoryTooShort: "This program requires 12 months of residence in the province.", torontoHistoryUnknown: "Length of residence in the City of Toronto still needs confirmation.", torontoHistoryTooShort: "This program requires at least one year in the City of Toronto.", groupUnknown: "The collective’s composition still needs confirmation.", groupNotEnough: "The collective does not meet the qualifying-member threshold.", groupSizeUnknown: "The number of core members still needs confirmation.", organizationUnknown: "Canadian incorporation or registration still needs confirmation.", organizationNotEligible: "A Canadian-incorporated or registered organization is required.", organizationProgramCheck: "Ontario-specific organization conditions must be checked in the guide.", sinUnknown: "SIN status still needs confirmation.", sinMissing: "A valid SIN is required for this program.", arrivalUnknown: "Arrival date in Canada still needs confirmation.", arrivalTooEarly: "The arrival date does not fit this newcomer cohort.", ageUnknown: "Age still needs confirmation.", ageOutOfRange: "The selected age range does not fit the program."
+      statusUnknown: "Status in Canada still needs confirmation.", statusNotAccepted: "The selected status is not accepted by this program.", statusConditional: "This status may be considered, subject to valid authorization and program capacity.", statusVerification: "The official page does not resolve this status; contact the program.", provinceHistoryUnknown: "Length of residence in the province still needs confirmation.", provinceHistoryTooShort: "This program requires 12 months of residence in the province.", torontoHistoryUnknown: "Length of residence in the City of Toronto still needs confirmation.", torontoHistoryTooShort: "This program requires at least one year in the City of Toronto.", groupUnknown: "The collective’s composition still needs confirmation.", groupNotEnough: "The collective does not meet the qualifying-member threshold.", groupSizeUnknown: "The number of core members still needs confirmation.", organizationUnknown: "Canadian incorporation or registration still needs confirmation.", organizationNotEligible: "A Canadian-incorporated or registered organization is required.", organizationProgramCheck: "Ontario-specific organization conditions must be checked in the guide.", sinUnknown: "SIN status still needs confirmation.", sinMissing: "A valid SIN is required for this program.", arrivalUnknown: "Arrival date in Canada still needs confirmation.", arrivalTooEarly: "The arrival date does not fit this newcomer cohort.", ageUnknown: "Age still needs confirmation.", ageOutOfRange: "The selected age range does not fit the program.", professionalPracticeCheck: "Professional standing, peer recognition and income evidence still need checking."
     },
     states: { possible: "Published criteria appear met", conditional: "Possible with conditions", verify: "Needs confirmation", ineligible: "Not eligible from these answers" },
     purposes: { mobility_export: "Mobility / export", home_base_creation: "Local creation", career_support: "Career / mentorship" },
@@ -391,7 +395,7 @@ const copy = {
     baseHeading: "現在どこに住んでいますか？",
     baseNote: "市と州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
     regions: { quebec: "ケベック州", ontario: "オンタリオ州" },
-    residences: { montreal: "モントリオール島内", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市" },
+    residences: { montreal: "モントリオール島内", quebec_city: "ケベック・シティ", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市" },
     steps: ["申請者の状況", "具体的な公募", "利用可能性のある制度"],
     profileHeading: "申請者の状況",
     profile: "申請主体",
@@ -447,7 +451,7 @@ const copy = {
     eligibilityHeading: "申請資格の確認",
     eligibilitySource: "申請資格の公式条件を確認 ↗",
     eligibilityReasons: {
-      statusUnknown: "カナダでの在留資格を確認してください。", statusNotAccepted: "選択した在留資格は、この制度で認められていません。", statusConditional: "有効な許可と受入枠を条件に検討対象となる可能性があります。", statusVerification: "公式ページだけではこの在留資格を判定できません。制度担当へ確認してください。", provinceHistoryUnknown: "州内の居住期間を確認してください。", provinceHistoryTooShort: "この制度は州内で12か月以上の居住を必要とします。", torontoHistoryUnknown: "トロント市内の居住期間を確認してください。", torontoHistoryTooShort: "この制度はトロント市内で1年以上の居住を必要とします。", groupUnknown: "コレクティブの構成を確認してください。", groupNotEnough: "対象条件を満たす主要メンバーの割合が基準に達していません。", groupSizeUnknown: "主要メンバー数を確認してください。", organizationUnknown: "カナダでの法人化・登録状況を確認してください。", organizationNotEligible: "カナダで法人化または登録された団体である必要があります。", organizationProgramCheck: "オンタリオ州の団体固有条件を公式要項で追加確認してください。", sinUnknown: "SINの有無を確認してください。", sinMissing: "この制度には有効なSINが必要です。", arrivalUnknown: "カナダへの到着時期を確認してください。", arrivalTooEarly: "到着時期が新人向けプログラムの対象期間外です。", ageUnknown: "年齢を確認してください。", ageOutOfRange: "選択した年齢区分は制度の対象外です。"
+      statusUnknown: "カナダでの在留資格を確認してください。", statusNotAccepted: "選択した在留資格は、この制度で認められていません。", statusConditional: "有効な許可と受入枠を条件に検討対象となる可能性があります。", statusVerification: "公式ページだけではこの在留資格を判定できません。制度担当へ確認してください。", provinceHistoryUnknown: "州内の居住期間を確認してください。", provinceHistoryTooShort: "この制度は州内で12か月以上の居住を必要とします。", torontoHistoryUnknown: "トロント市内の居住期間を確認してください。", torontoHistoryTooShort: "この制度はトロント市内で1年以上の居住を必要とします。", groupUnknown: "コレクティブの構成を確認してください。", groupNotEnough: "対象条件を満たす主要メンバーの割合が基準に達していません。", groupSizeUnknown: "主要メンバー数を確認してください。", organizationUnknown: "カナダでの法人化・登録状況を確認してください。", organizationNotEligible: "カナダで法人化または登録された団体である必要があります。", organizationProgramCheck: "オンタリオ州の団体固有条件を公式要項で追加確認してください。", sinUnknown: "SINの有無を確認してください。", sinMissing: "この制度には有効なSINが必要です。", arrivalUnknown: "カナダへの到着時期を確認してください。", arrivalTooEarly: "到着時期が新人向けプログラムの対象期間外です。", ageUnknown: "年齢を確認してください。", ageOutOfRange: "選択した年齢区分は制度の対象外です。", professionalPracticeCheck: "プロとしての活動実績、同業者からの評価、収入証明を確認してください。"
     },
     states: { possible: "公表条件には適合", conditional: "条件を満たせば可能性あり", verify: "個別確認が必要", ineligible: "入力条件では対象外" },
     purposes: { mobility_export: "渡航・国外展開", home_base_creation: "居住地での創作", career_support: "キャリア・メンタリング" },
@@ -476,13 +480,13 @@ const placeNames: Record<Language, Record<string, string>> = {
   fr: {},
   en: {},
   ja: {
-    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Ottawa: "オタワ", Québec: "ケベック・シティ", Rimouski: "リムースキ", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック", Spain: "スペイン", Seville: "セビリア", "Tàrrega": "タラガ", Auch: "オーシュ", Croatia: "クロアチア", "Poreč": "ポレッチ", "South Africa": "南アフリカ", "Cape Town": "ケープタウン", "Canada-wide": "カナダ各地", "Nordic region": "北欧", "Nordic circuit": "北欧巡回", Calgary: "カルガリー", Whitehorse: "ホワイトホース", Brighton: "ブライトン", Orlando: "オーランド",
+    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Ottawa: "オタワ", Québec: "ケベック・シティ", Rimouski: "リムースキ", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック", Spain: "スペイン", Seville: "セビリア", "Tàrrega": "タラガ", Auch: "オーシュ", Croatia: "クロアチア", "Poreč": "ポレッチ", "South Africa": "南アフリカ", "Cape Town": "ケープタウン", "Canada-wide": "カナダ各地", "Nordic region": "北欧", "Nordic circuit": "北欧巡回", Calgary: "カルガリー", Whitehorse: "ホワイトホース", Brighton: "ブライトン", Orlando: "オーランド", "Salaberry-de-Valleyfield": "サラベリー＝ド＝バレーフィールド",
   },
 };
 
 const profileOptions: Profile[] = ["artist", "collective", "organization"];
 const residenceGroups: Record<"quebec" | "ontario", Residence[]> = {
-  quebec: ["montreal", "quebec", "gatineau"],
+  quebec: ["montreal", "quebec_city", "quebec", "gatineau"],
   ontario: ["toronto", "gta", "ottawa"],
 };
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
@@ -542,7 +546,7 @@ export function OpportunityWorkbench() {
   const [selectedId, setSelectedId] = useState(opportunities[0]?.id ?? "");
   const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
   const t = copy[language];
-  const provinceKey = (["montreal", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
+  const provinceKey = (["montreal", "quebec_city", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
   const showAgeQuestion = profile === "artist" && ["toronto", "gta", "ottawa"].includes(residence);
 

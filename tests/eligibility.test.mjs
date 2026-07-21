@@ -176,11 +176,27 @@ test("Toronto city history and SIN remain separate gates", () => {
 
 test("residence scopes distinguish cities, metro areas, provinces and Canada", () => {
   assert.equal(supportsResidence({ residencies: ["canada"] }, "gatineau"), true);
+  assert.equal(supportsResidence({ residencies: ["quebec_city"] }, "quebec_city"), true);
+  assert.equal(supportsResidence({ residencies: ["quebec_city"] }, "quebec"), false);
   assert.equal(supportsResidence({ residencies: ["quebec"] }, "ottawa"), false);
   assert.equal(supportsResidence({ residencies: ["ontario"] }, "toronto"), true);
   assert.equal(supportsResidence({ residencies: ["gta"] }, "toronto"), true);
   assert.equal(supportsResidence({ residencies: ["toronto"] }, "gta"), false);
   assert.equal(supportsResidence({ residencies: ["ottawa"] }, "ottawa"), true);
+});
+
+test("professional-practice evidence keeps a municipal artist grant in verification", () => {
+  const eligibility = {
+    individualStatuses: ["citizen", "permanent"],
+    professionalPracticeVerificationRequired: true,
+  };
+  const eligibleStatus = evaluate("artist", eligibility, { legalStatus: "permanent" });
+  assert.equal(eligibleStatus.state, "verify");
+  assert.ok(eligibleStatus.reasonKeys.includes("professionalPracticeCheck"));
+  assert.equal(
+    evaluate("artist", eligibility, { legalStatus: "temporary_work" }).state,
+    "ineligible",
+  );
 });
 
 test("unknown answers stay in verification and unregistered organizations are excluded", () => {

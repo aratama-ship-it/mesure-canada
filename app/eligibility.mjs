@@ -133,6 +133,11 @@ export function evaluateFundingEligibility({
     addReason("organizationProgramCheck");
   }
 
+  if (profile === "artist" && rules.professionalPracticeVerificationRequired) {
+    state = raiseState(state, "verify");
+    addReason("professionalPracticeCheck");
+  }
+
   if (profile === "artist" && rules.sinRequired) {
     if (sinStatus === "unsure") {
       state = raiseState(state, "verify");
@@ -172,6 +177,7 @@ export function evaluateFundingEligibility({
 
 const residenceScopes = {
   montreal: new Set(["canada", "quebec", "montreal"]),
+  quebec_city: new Set(["canada", "quebec", "quebec_city"]),
   quebec: new Set(["canada", "quebec"]),
   gatineau: new Set(["canada", "quebec"]),
   toronto: new Set(["canada", "ontario", "gta", "toronto"]),
