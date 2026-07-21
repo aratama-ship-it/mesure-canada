@@ -11,8 +11,8 @@ type Profile = "artist" | "collective" | "organization";
 type Residence = "montreal" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa";
 type ResidenceScope = "canada" | "quebec" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
-type RadarFamily = "all" | "circus" | "street" | "fringe" | "film";
-type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions" | "eligibility_check";
+type RadarFamily = "all" | "circus" | "street" | "fringe" | "film" | "showcase";
+type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions" | "language_conditions" | "eligibility_check";
 type RadarStatus = "open" | "upcoming" | "watch";
 type CoverageKey =
   | "travel"
@@ -167,7 +167,7 @@ const copy = {
     headline: "Avant d’envoyer le dossier, mesurez tout le trajet.",
     intro:
       "Choisissez votre ville de résidence, votre statut et une occasion. MESURE distingue les programmes nationaux, provinciaux et municipaux — y compris les cas où la citoyenneté canadienne n’est pas exigée.",
-    stamp: `${opportunities.length} appels liés · ${festivalRadar.length} pistes de festivals · ${fundingPrograms.length} programmes · vérifiés le 20 juillet 2026`,
+    stamp: `${opportunities.length} appels liés · ${festivalRadar.length} pistes festivals + marchés · ${fundingPrograms.length} programmes · vérifiés le 21 juillet 2026`,
     baseKicker: "Point zéro de la règle",
     baseHeading: "Où résidez-vous actuellement?",
     baseNote: "La ville et la province changent les programmes visibles; la nationalité est vérifiée séparément.",
@@ -225,13 +225,13 @@ const copy = {
     callsHeading: "Appels pertinents",
     callsCount: "résultats",
     radar: {
-      kicker: "Radar mondial",
-      heading: "Festivals à surveiller, sans mélanger les appels fermés aux appels ouverts.",
-      intro: "Un registre de sources officielles pour le cirque, les arts de la rue, les fringes et le cinéma. Chaque ligne indique si l’appel est actif, attendu ou à surveiller.",
+      kicker: "Radar international",
+      heading: "Festivals et marchés à suivre, sans mélanger les appels fermés aux accès actifs.",
+      intro: "Un registre de sources officielles pour le cirque, les arts de la rue, les fringes, le cinéma et les marchés professionnels. Chaque ligne indique si la voie est active, attendue ou à surveiller.",
       count: "pistes officielles",
       all: "Tous",
-      families: { circus: "Cirque", street: "Arts de la rue", fringe: "Fringe", film: "Cinéma" },
-      participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier", eligibility_check: "Admissibilité à confirmer" },
+      families: { circus: "Cirque", street: "Arts de la rue", fringe: "Fringe", film: "Cinéma", showcase: "Vitrines / marchés" },
+      participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier", language_conditions: "Conditions linguistiques à vérifier", eligibility_check: "Admissibilité à confirmer" },
       status: { open: "Ouvert", upcoming: "À venir", watch: "À surveiller" },
       official: "Voir la source officielle ↗",
       nextCheck: "Prochaine vérification",
@@ -297,7 +297,7 @@ const copy = {
     eyebrow: "Calls + funding, measured from your home base",
     headline: "Before you submit, measure the whole route.",
     intro: "Choose your current city, status and one opportunity. MESURE separates national, provincial and municipal programs—including cases where Canadian citizenship is not required.",
-    stamp: `${opportunities.length} linked calls · ${festivalRadar.length} festival routes · ${fundingPrograms.length} programs · checked July 20, 2026`,
+    stamp: `${opportunities.length} linked calls · ${festivalRadar.length} festival + market routes · ${fundingPrograms.length} programs · checked July 21, 2026`,
     baseKicker: "Zero point on the ruler",
     baseHeading: "Where do you currently live?",
     baseNote: "City and province change the programs shown; nationality is checked separately.",
@@ -333,13 +333,13 @@ const copy = {
     callsHeading: "Relevant calls",
     callsCount: "results",
     radar: {
-      kicker: "Global radar",
-      heading: "Festivals to follow—without mixing closed cycles into live calls.",
-      intro: "An official-source register for circus, street arts, Fringe and film. Each line says whether the route is live, about to open or worth watching.",
+      kicker: "International radar",
+      heading: "Festivals and markets to follow—without mixing closed cycles into live access.",
+      intro: "An official-source register for circus, street arts, Fringe, film and professional markets. Each line says whether the route is live, about to open or worth watching.",
       count: "official routes",
       all: "All",
-      families: { circus: "Circus", street: "Street arts", fringe: "Fringe", film: "Film" },
-      participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check", eligibility_check: "Eligibility to confirm" },
+      families: { circus: "Circus", street: "Street arts", fringe: "Fringe", film: "Film", showcase: "Showcases / markets" },
+      participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check", language_conditions: "Language conditions to check", eligibility_check: "Eligibility to confirm" },
       status: { open: "Open", upcoming: "Opening soon", watch: "Watch next cycle" },
       official: "Open official source ↗",
       nextCheck: "Next check",
@@ -386,7 +386,7 @@ const copy = {
     eyebrow: "居住地から、公募と助成の距離を測る",
     headline: "応募する前に、実現までの道のりを測る。",
     intro: "現在の居住地、在留資格、公募を選ぶと、国・州・市の制度を分けて判定します。カナダ市民でなくても利用できる制度と、個別確認が必要な制度も区別します。",
-    stamp: `${opportunities.length}件の資金連動公募 · ${festivalRadar.length}件のフェスティバルルート · ${fundingPrograms.length}件の制度 · 2026年7月20日確認`,
+    stamp: `${opportunities.length}件の資金連動公募 · ${festivalRadar.length}件のフェス・ショーケースルート · ${fundingPrograms.length}件の制度 · 2026年7月21日確認`,
     baseKicker: "物差しのゼロ地点",
     baseHeading: "現在どこに住んでいますか？",
     baseNote: "市と州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
@@ -422,13 +422,13 @@ const copy = {
     callsHeading: "該当する公募",
     callsCount: "件",
     radar: {
-      kicker: "世界フェスティバル・レーダー",
-      heading: "終了した募集を「募集中」に見せず、次の公募を追えるようにする。",
-      intro: "サーカス、大道芸、フリンジ、映画を対象に、公式情報だけを記録した監視台帳です。各行は、募集中・開始予定・次回監視のどれかを示します。",
+      kicker: "国際公募・ショーケース レーダー",
+      heading: "終了した募集を「募集中」に見せず、フェスと市場の次の入口を追えるようにする。",
+      intro: "サーカス、大道芸、フリンジ、映画、プロ向けショーケースを対象に、公式情報だけを記録した監視台帳です。各行は、募集中・開始予定・次回監視のどれかを示します。",
       count: "件の公式ルート",
       all: "すべて",
-      families: { circus: "サーカス", street: "大道芸・公共空間", fringe: "フリンジ", film: "映画" },
-      participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認", eligibility_check: "応募資格を要確認" },
+      families: { circus: "サーカス", street: "大道芸・公共空間", fringe: "フリンジ", film: "映画", showcase: "ショーケース・市場" },
+      participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認", language_conditions: "言語条件を要確認", eligibility_check: "応募資格を要確認" },
       status: { open: "募集中", upcoming: "開始予定", watch: "次回を監視" },
       official: "公式情報を開く ↗",
       nextCheck: "次回確認日",
@@ -476,7 +476,7 @@ const placeNames: Record<Language, Record<string, string>> = {
   fr: {},
   en: {},
   ja: {
-    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック", Spain: "スペイン", Seville: "セビリア", "Tàrrega": "タラガ", Auch: "オーシュ", Croatia: "クロアチア", "Poreč": "ポレッチ", "South Africa": "南アフリカ", "Cape Town": "ケープタウン", "Canada-wide": "カナダ各地", "Nordic region": "北欧", "Nordic circuit": "北欧巡回", Calgary: "カルガリー", Whitehorse: "ホワイトホース", Brighton: "ブライトン", Orlando: "オーランド",
+    France: "フランス", Paris: "パリ", Australia: "オーストラリア", Perth: "パース", China: "中国", Wuzhen: "烏鎮", "United States": "アメリカ合衆国", Seattle: "シアトル", "United Kingdom": "イギリス", Leeds: "リーズ", Canada: "カナダ", Montréal: "モントリオール", Ottawa: "オタワ", Québec: "ケベック・シティ", Rimouski: "リムースキ", Netherlands: "オランダ", Rotterdam: "ロッテルダム", Germany: "ドイツ", Berlin: "ベルリン", Portugal: "ポルトガル", "Santa Maria da Feira": "サンタ・マリア・ダ・フェイラ", "South Korea": "韓国", Seoul: "ソウル", Edinburgh: "エディンバラ", Adelaide: "アデレード", Toronto: "トロント", Amsterdam: "アムステルダム", Singapore: "シンガポール", Japan: "日本", Yokohama: "横浜", Boulder: "ボルダー", Switzerland: "スイス", Geneva: "ジュネーブ", Egypt: "エジプト", Cairo: "カイロ", Mexico: "メキシコ", Guadalajara: "グアダラハラ", Brooklyn: "ブルックリン", Aurillac: "オーリヤック", Spain: "スペイン", Seville: "セビリア", "Tàrrega": "タラガ", Auch: "オーシュ", Croatia: "クロアチア", "Poreč": "ポレッチ", "South Africa": "南アフリカ", "Cape Town": "ケープタウン", "Canada-wide": "カナダ各地", "Nordic region": "北欧", "Nordic circuit": "北欧巡回", Calgary: "カルガリー", Whitehorse: "ホワイトホース", Brighton: "ブライトン", Orlando: "オーランド",
   },
 };
 
@@ -486,7 +486,7 @@ const residenceGroups: Record<"quebec" | "ontario", Residence[]> = {
   ontario: ["toronto", "gta", "ottawa"],
 };
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
-const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film"];
+const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film", "showcase"];
 const legalStatusOptions: LegalStatus[] = ["unsure", "citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
 const provinceHistoryOptions: ProvinceHistory[] = ["unsure", "twelve_plus", "under_twelve"];
 const torontoHistoryOptions: TorontoHistory[] = ["unsure", "meets", "does_not"];

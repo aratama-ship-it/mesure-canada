@@ -30,11 +30,13 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /CALQ — Déplacement/);
   assert.match(html, /Canada Council — Arts Abroad: Travel/);
   assert.match(html, /Votre statut au Canada/);
-  assert.match(html, /Radar mondial/);
+  assert.match(html, /Radar international/);
   assert.match(html, /Imaginarius 2027 — International Open Call/);
   assert.match(html, /Canadian Association of Fringe Festivals — Touring Lottery/);
   assert.match(html, /IDFA Forum 2026 — Project Entry/);
   assert.match(html, /Sundance Film Festival 2027/);
+  assert.match(html, /Contact ontarois 2027/);
+  assert.match(html, /CINARS Biennale 2026 — OFF-CINARS Showcase/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
@@ -93,18 +95,21 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.match(record.eligibility.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);
   }
 
-  assert.ok(festivalRadar.length >= 35);
-  assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film"]));
+  assert.ok(festivalRadar.length >= 41);
+  assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film", "showcase"]));
   assert.ok(new Set(festivalRadar.map((record) => record.region)).size >= 6);
   assert.ok(festivalRadar.filter((record) => record.family === "circus").length >= 7);
   assert.ok(festivalRadar.filter((record) => record.family === "street").length >= 7);
   assert.ok(festivalRadar.filter((record) => record.family === "fringe").length >= 12);
+  assert.ok(festivalRadar.filter((record) => record.family === "showcase").length >= 6);
   assert.ok(festivalRadar.some((record) => record.id === "caff-touring-lottery-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "bnfn-artist-call-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "contact-ontarois-2027-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "roseq-seasonal-2027-28"));
   for (const record of festivalRadar) {
     assert.ok(record.title && record.country && record.city);
-    assert.ok(["circus", "street", "fringe", "film"].includes(record.family));
-    assert.ok(["international", "open_access", "selection", "regional_conditions", "eligibility_check"].includes(record.participation));
+    assert.ok(["circus", "street", "fringe", "film", "showcase"].includes(record.family));
+    assert.ok(["international", "open_access", "selection", "regional_conditions", "language_conditions", "eligibility_check"].includes(record.participation));
     assert.ok(["open", "upcoming", "watch"].includes(record.status));
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
     assert.match(record.verifiedAt, /^\d{4}-\d{2}-\d{2}$/);

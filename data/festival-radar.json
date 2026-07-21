@@ -663,5 +663,119 @@
     "nextCheckDate": "2026-09-08",
     "sourceUrl": "https://professionals.idfa.nl/markets/sales-distribution/enter-your-film/",
     "verifiedAt": "2026-07-20"
+  },
+  {
+    "id": "contact-ontarois-2027-watch",
+    "title": "Contact ontarois 2027 — Vitrines des arts de la scène",
+    "country": "Canada",
+    "city": "Ottawa",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "language_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-07-07",
+    "deadlineLabel": {
+      "fr": "Dépôt 2027 fermé le 7 juillet; édition à Ottawa du 13 au 16 janvier 2027. Exigences de contenu et d’interaction en français à vérifier.",
+      "en": "The 2027 submission closed July 7; Ottawa edition runs January 13–16, 2027. Check the French-content and interaction requirements.",
+      "ja": "2027年向け申請は7月7日終了。2027年1月13〜16日にオタワで開催。フランス語コンテンツ・観客とのフランス語でのやり取り要件を確認。"
+    },
+    "nextCheckDate": "2026-10-20",
+    "sourceUrl": "https://www.reseauontario.ca/contact-ontarois/candidatures-inscriptions",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "cinars-biennale-2026-official-watch",
+    "title": "CINARS Biennale 2026 — Official Programme",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-11-24",
+    "deadlineLabel": {
+      "fr": "La sélection officielle 2026 est fermée. Le cycle vérifié acceptait les artistes de tous pays; prochaine Biennale à surveiller.",
+      "en": "The 2026 official-program call is closed. The verified cycle accepted artists from all countries; watch the next Biennale cycle.",
+      "ja": "2026年公式プログラムの公募は終了。確認済みの回は全ての国のアーティストを対象としていたため、次回ビエンナーレを監視。"
+    },
+    "nextCheckDate": "2027-09-01",
+    "sourceUrl": "https://cinars.org/en/biennale/registration-and-rates?section=call-for-applications",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "cinars-off-2026",
+    "title": "CINARS Biennale 2026 — OFF-CINARS Showcase",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Inscription OFF-CINARS disponible; ce n’est pas une sélection officielle. Une accréditation exposant, un stand et la prise en charge des coûts de production sont requis.",
+      "en": "OFF-CINARS registration is available; this is not the official selection. Exhibitor accreditation, a market stand and self-funded production are required.",
+      "ja": "OFF-CINARS登録を案内中。公式選考ではなく、出展者登録・市場ブース・制作費の自己負担が必要。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://cinars.org/en/agents-and-companies",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "rideau-showcase-watch",
+    "title": "RIDEAU — Performing Arts Showcase Selection",
+    "country": "Canada",
+    "city": "Québec",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Les dates et critères de la prochaine sélection ne sont pas encore publiés sur la source officielle vérifiée. Dépôt par Scène Pro à confirmer au prochain appel.",
+      "en": "Dates and criteria for the next selection are not yet published on the verified official source. Confirm Scène Pro submission when the next call opens.",
+      "ja": "次回選考の期日・要項は、確認した公式情報では未公表。次回公募時にScène Pro経由の応募要件を確認。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://associationrideau.ca/fr/projets/scene-pro",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "roseq-rencontre-automne-2026-watch",
+    "title": "ROSEQ — 35e Rencontre d’automne",
+    "country": "Canada",
+    "city": "Rimouski",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "13–16 octobre 2026. Les inscriptions de l’événement sont en cours, mais la capacité agent·e/producteur·trice/artiste en autoproduction est affichée complète; surveiller le prochain cycle.",
+      "en": "October 13–16, 2026. Event registration is underway, but the agent/producer/self-produced artist capacity is listed as full; watch the next cycle.",
+      "ja": "2026年10月13〜16日。イベント登録は進行中だが、代理人・プロデューサー・自主制作アーティスト枠は満席表示。次回サイクルを監視。"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://www.roseq.qc.ca/rencontre-automne",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "roseq-seasonal-2027-28",
+    "title": "ROSEQ — Dépôt saisonnier automne 2027 / hiver-printemps 2028",
+    "country": "Canada",
+    "city": "Rimouski",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "selection",
+    "status": "upcoming",
+    "deadlineDate": "2026-10-21",
+    "deadlineLabel": {
+      "fr": "Dépôt du 8 septembre au 21 octobre 2026, 16 h. Profil, organisation et offre Scène Pro requis; une tournée se construit à partir de l’intérêt d’au moins trois diffuseurs.",
+      "en": "Submission runs September 8–October 21, 2026, 4 p.m. A Scène Pro profile, organization and show listing are required; a tour is built from interest by at least three presenters.",
+      "ja": "2026年9月8日〜10月21日16時。Scène Proのプロフィール・団体・作品登録が必要で、少なくとも3つの主催者の関心から巡回が組まれる。"
+    },
+    "nextCheckDate": "2026-09-08",
+    "sourceUrl": "https://roseq.qc.ca/circulationspectacles",
+    "verifiedAt": "2026-07-21"
   }
 ]
