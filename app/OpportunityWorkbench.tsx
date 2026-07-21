@@ -12,6 +12,8 @@ type Residence = "montreal" | "quebec_city" | "quebec" | "gatineau" | "toronto" 
 type ResidenceScope = "canada" | "quebec" | "quebec_city" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
 type RadarFamily = "all" | "circus" | "street" | "fringe" | "film" | "showcase";
+type RadarSearchTag = "all" | "regional_festival" | "event_performance" | "choreographer_development" | "residency";
+type RadarSearchTagKey = Exclude<RadarSearchTag, "all">;
 type RadarParticipation = "international" | "open_access" | "selection" | "regional_conditions" | "language_conditions" | "eligibility_check";
 type RadarStatus = "open" | "upcoming" | "watch";
 type CoverageKey =
@@ -161,10 +163,21 @@ type Assessment = { state: MatchState; reasonKeys: EligibilityReasonKey[] };
 const opportunities = opportunityData as Opportunity[];
 const fundingPrograms = fundingData as Funding[];
 const festivalRadar = festivalRadarData as FestivalRadar[];
+const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
 
 const copy = {
   fr: {
     edition: "Édition Canada · Québec + Ontario",
+    sourceNotice: {
+      label: "À propos des informations",
+      text: "Les informations sont recueillies et organisées à partir des sources primaires des organisateurs. Elles peuvent différer des informations les plus récentes en raison du délai de mise à jour. Vérifiez toujours les détails sur chaque site officiel.",
+    },
+    betaNotice: {
+      label: "BÊTA",
+      before: "Ce site est actuellement en version bêta. Pour nous transmettre une suggestion, un commentaire ou une correction, utilisez",
+      link: "le formulaire",
+      after: ".",
+    },
     eyebrow: "Appels + financement, mesurés depuis votre base",
     headline: "Avant d’envoyer le dossier, mesurez tout le trajet.",
     intro:
@@ -233,7 +246,22 @@ const copy = {
       intro: "Un registre de sources officielles pour le cirque, les arts de la rue, les fringes, le cinéma et les marchés professionnels. Chaque ligne indique si la voie est active, attendue ou à surveiller.",
       count: "pistes officielles",
       all: "Tous",
+      familyFilter: "Discipline / réseau",
+      formatFilter: "Type d’occasion",
       families: { circus: "Cirque", street: "Arts de la rue", fringe: "Fringe", film: "Cinéma", showcase: "Vitrines / marchés" },
+      searchTags: {
+        regional_festival: "Appels de festivals régionaux",
+        event_performance: "Prestations événementielles",
+        choreographer_development: "Développement chorégraphique",
+        residency: "Résidences / création sur place",
+      },
+      searchTagDescriptions: {
+        regional_festival: "Trouver des appels de festivals et de scènes régionales",
+        event_performance: "Trouver des inscriptions et sélections pour se produire",
+        choreographer_development: "Trouver des programmes destinés aux chorégraphes",
+        residency: "Trouver des résidences et des périodes de création sur place",
+      },
+      noTagResults: "Aucune piste vérifiée ne porte encore cette étiquette. Le filtre est prêt pour les prochains ajouts.",
       participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier", language_conditions: "Conditions linguistiques à vérifier", eligibility_check: "Admissibilité à confirmer" },
       status: { open: "Ouvert", upcoming: "À venir", watch: "À surveiller" },
       official: "Voir la source officielle ↗",
@@ -298,6 +326,16 @@ const copy = {
   },
   en: {
     edition: "Canada edition · Québec + Ontario",
+    sourceNotice: {
+      label: "About the listings",
+      text: "Listings are collected and organized from organizers’ primary sources. Because updates take time, displayed details may differ from the latest information. Always confirm details on each official website.",
+    },
+    betaNotice: {
+      label: "BETA",
+      before: "This website is currently in beta. To send a request, comment or correction, please use",
+      link: "the feedback form",
+      after: ".",
+    },
     eyebrow: "Calls + funding, measured from your home base",
     headline: "Before you submit, measure the whole route.",
     intro: "Choose your current city, status and one opportunity. MESURE separates national, provincial and municipal programs—including cases where Canadian citizenship is not required.",
@@ -342,7 +380,22 @@ const copy = {
       intro: "An official-source register for circus, street arts, Fringe, film and professional markets. Each line says whether the route is live, about to open or worth watching.",
       count: "official routes",
       all: "All",
+      familyFilter: "Discipline / network",
+      formatFilter: "Opportunity type",
       families: { circus: "Circus", street: "Street arts", fringe: "Fringe", film: "Film", showcase: "Showcases / markets" },
+      searchTags: {
+        regional_festival: "Regional festival calls",
+        event_performance: "Event performances",
+        choreographer_development: "Choreographer development",
+        residency: "AIR / residencies",
+      },
+      searchTagDescriptions: {
+        regional_festival: "Find festival and regional performance calls",
+        event_performance: "Find event performance registrations and selections",
+        choreographer_development: "Find development programs for choreographers",
+        residency: "Find artist-in-residence and on-site creation opportunities",
+      },
+      noTagResults: "No verified route carries this tag yet. The filter is ready for future additions.",
       participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check", language_conditions: "Language conditions to check", eligibility_check: "Eligibility to confirm" },
       status: { open: "Open", upcoming: "Opening soon", watch: "Watch next cycle" },
       official: "Open official source ↗",
@@ -387,6 +440,16 @@ const copy = {
   },
   ja: {
     edition: "カナダ版 · ケベック州＋オンタリオ州",
+    sourceNotice: {
+      label: "掲載情報について",
+      text: "掲載情報は、主催者等の一次情報をもとに収集・整理しています。更新のタイミングにより、最新の情報と異なる場合があります。詳細・最新情報は、必ず各公式サイトでご確認ください。",
+    },
+    betaNotice: {
+      label: "BETA",
+      before: "このウェブサイトは現在ベータ版です。ご要望・ご意見、掲載情報の訂正などがありましたら、",
+      link: "フォーム",
+      after: "よりご連絡いただけると幸いです。",
+    },
     eyebrow: "居住地から、公募と助成の距離を測る",
     headline: "応募する前に、実現までの道のりを測る。",
     intro: "現在の居住地、在留資格、公募を選ぶと、国・州・市の制度を分けて判定します。カナダ市民でなくても利用できる制度と、個別確認が必要な制度も区別します。",
@@ -431,7 +494,22 @@ const copy = {
       intro: "サーカス、大道芸、フリンジ、映画、プロ向けショーケースを対象に、公式情報だけを記録した監視台帳です。各行は、募集中・開始予定・次回監視のどれかを示します。",
       count: "件の公式ルート",
       all: "すべて",
+      familyFilter: "分野・ネットワーク",
+      formatFilter: "募集形式タグ",
       families: { circus: "サーカス", street: "大道芸・公共空間", fringe: "フリンジ", film: "映画", showcase: "ショーケース・市場" },
+      searchTags: {
+        regional_festival: "地域フェスティバル・出演者公募",
+        event_performance: "イベント出演",
+        choreographer_development: "振付家育成プログラム",
+        residency: "AIR・滞在制作",
+      },
+      searchTagDescriptions: {
+        regional_festival: "地域のフェスティバルや舞台への出演公募を探す",
+        event_performance: "イベント出演の登録・選考ルートを探す",
+        choreographer_development: "振付家や振付作品の育成プログラムを探す",
+        residency: "アーティスト・イン・レジデンスや滞在制作を探す",
+      },
+      noTagResults: "現在の確認済みデータには、このタグに該当する公募がありません。今後の追加に備えて検索条件を用意しています。",
       participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認", language_conditions: "言語条件を要確認", eligibility_check: "応募資格を要確認" },
       status: { open: "募集中", upcoming: "開始予定", watch: "次回を監視" },
       official: "公式情報を開く ↗",
@@ -491,6 +569,7 @@ const residenceGroups: Record<"quebec" | "ontario", Residence[]> = {
 };
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
 const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film", "showcase"];
+const radarSearchTagOptions: RadarSearchTag[] = ["all", "regional_festival", "event_performance", "choreographer_development", "residency"];
 const legalStatusOptions: LegalStatus[] = ["unsure", "citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
 const provinceHistoryOptions: ProvinceHistory[] = ["unsure", "twelve_plus", "under_twelve"];
 const torontoHistoryOptions: TorontoHistory[] = ["unsure", "meets", "does_not"];
@@ -529,6 +608,24 @@ function normalizedRadarStatus(record: FestivalRadar) {
 
 const radarStatusOrder: Record<RadarStatus, number> = { open: 0, upcoming: 1, watch: 2 };
 
+// Search tags are derived only from existing titles and families. They never infer eligibility.
+const radarSearchTagMatchers: Record<RadarSearchTagKey, (record: FestivalRadar) => boolean> = {
+  regional_festival: (record) =>
+    ["circus", "street", "fringe"].includes(record.family)
+    && /festival|fringe|fira|imaginarius|circada|aurillac/i.test(record.title),
+  event_performance: (record) =>
+    ["circus", "street", "fringe", "showcase"].includes(record.family)
+    && !/residen|résiden/i.test(record.title)
+    && /artist|performance|showcase|pitch|programme|program|compagn|vitrine|tour de piste|circulation|selection|registration|lottery|open call|appel|prix|market|biennale|rencontre/i.test(record.title),
+  choreographer_development: (record) => /choreograph|chorégraphe|振付/i.test(record.title),
+  residency: (record) => /residen|résiden|滞在制作/i.test(record.title),
+};
+
+function radarSearchTagsOf(record: FestivalRadar) {
+  return (Object.keys(radarSearchTagMatchers) as RadarSearchTagKey[])
+    .filter((tag) => radarSearchTagMatchers[tag](record));
+}
+
 export function OpportunityWorkbench() {
   const [language, setLanguage] = useState<Language>("fr");
   const [profile, setProfile] = useState<Profile>("artist");
@@ -545,6 +642,7 @@ export function OpportunityWorkbench() {
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
   const [selectedId, setSelectedId] = useState(opportunities[0]?.id ?? "");
   const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
+  const [radarSearchTag, setRadarSearchTag] = useState<RadarSearchTag>("all");
   const t = copy[language];
   const provinceKey = (["montreal", "quebec_city", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
@@ -572,6 +670,7 @@ export function OpportunityWorkbench() {
   const filteredRadar = useMemo(
     () => festivalRadar
       .filter((record) => radarFamily === "all" || record.family === radarFamily)
+      .filter((record) => radarSearchTag === "all" || radarSearchTagsOf(record).includes(radarSearchTag))
       .sort((a, b) => {
         const statusDifference = radarStatusOrder[normalizedRadarStatus(a)] - radarStatusOrder[normalizedRadarStatus(b)];
         if (statusDifference) return statusDifference;
@@ -579,7 +678,7 @@ export function OpportunityWorkbench() {
         if (!b.deadlineDate) return -1;
         return a.deadlineDate.localeCompare(b.deadlineDate);
       }),
-    [radarFamily],
+    [radarFamily, radarSearchTag],
   );
 
   const answers = useMemo(() => ({
@@ -651,6 +750,17 @@ export function OpportunityWorkbench() {
           {(["fr", "en", "ja"] as Language[]).map((item) => <button key={item} type="button" aria-pressed={language === item} onClick={() => setLanguage(item)}>{item.toUpperCase()}</button>)}
         </div>
       </header>
+
+      <div className="site-notices">
+        <aside className="source-notice" aria-label={t.sourceNotice.label}>
+          <strong>{t.sourceNotice.label}</strong>
+          <span>{t.sourceNotice.text}</span>
+        </aside>
+        <aside className="beta-notice" aria-label={t.betaNotice.label}>
+          <strong>{t.betaNotice.label}</strong>
+          <span>{t.betaNotice.before} <a href={feedbackFormUrl} target="_blank" rel="noreferrer">{t.betaNotice.link}</a>{t.betaNotice.after}</span>
+        </aside>
+      </div>
 
       <section className="intro" aria-labelledby="intro-title">
         <div><p className="eyebrow">{t.eyebrow}</p><h2 id="intro-title">{t.headline}</h2></div>
@@ -729,22 +839,37 @@ export function OpportunityWorkbench() {
           <div><span className="section-kicker">{t.radar.kicker}</span><h3 id="festival-radar-heading">{t.radar.heading}</h3></div>
           <div><p>{t.radar.intro}</p><span className="data-stamp">{festivalRadar.length} {t.radar.count} · {new Set(festivalRadar.map((record) => record.region)).size} regions</span></div>
         </div>
-        <div className="radar-filters" aria-label={t.radar.kicker}>
-          {radarFamilyOptions.map((family) => <button type="button" key={family} aria-pressed={radarFamily === family} onClick={() => setRadarFamily(family)}>{family === "all" ? t.radar.all : t.radar.families[family]}</button>)}
+        <div className="radar-filter-group">
+          <span className="radar-filter-label">{t.radar.familyFilter}</span>
+          <div className="radar-filters" aria-label={t.radar.familyFilter}>
+            {radarFamilyOptions.map((family) => <button type="button" key={family} aria-pressed={radarFamily === family} onClick={() => setRadarFamily(family)}>{family === "all" ? t.radar.all : t.radar.families[family]}</button>)}
+          </div>
+        </div>
+        <div className="radar-filter-group radar-format-group">
+          <span className="radar-filter-label">{t.radar.formatFilter}</span>
+          <div className="radar-filters radar-format-filters" aria-label={t.radar.formatFilter}>
+            {radarSearchTagOptions.map((tag) => {
+              const count = tag === "all" ? festivalRadar.length : festivalRadar.filter((record) => radarSearchTagMatchers[tag](record)).length;
+              const label = tag === "all" ? t.radar.all : t.radar.searchTags[tag];
+              return <button type="button" key={tag} aria-pressed={radarSearchTag === tag} title={tag === "all" ? undefined : t.radar.searchTagDescriptions[tag]} onClick={() => setRadarSearchTag(tag)}><span>{label}</span><small>{count}</small></button>;
+            })}
+          </div>
         </div>
         <div className="radar-ledger">
-          {filteredRadar.map((record) => {
+          {filteredRadar.length ? filteredRadar.map((record) => {
             const status = normalizedRadarStatus(record);
+            const searchTags = radarSearchTagsOf(record);
             return <article className="radar-row" key={record.id}>
               <div className="radar-row-topline"><span className={`status-tag radar-${status}`}>{t.radar.status[status]}</span><span className="radar-family">{t.radar.families[record.family]}</span></div>
               <h4>{record.title}</h4>
               <p className="row-meta">{placeNames[language][record.city] ?? record.city} · {placeNames[language][record.country] ?? record.country}</p>
+              {searchTags.length ? <div className="radar-search-tags">{searchTags.map((tag) => <span key={tag}>{t.radar.searchTags[tag]}</span>)}</div> : null}
               <p className="radar-deadline">{record.deadlineLabel[language]}</p>
               <div className="radar-bottom"><span>{t.radar.participation[record.participation]}</span><span>{t.radar.nextCheck}: {record.nextCheckDate}</span></div>
               <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>
               <span className="verified-date">{t.radar.verified}: {record.verifiedAt}</span>
             </article>;
-          })}
+          }) : <p className="radar-empty">{t.radar.noTagResults}</p>}
         </div>
         <p className="radar-note">{t.radar.note}</p>
       </section>

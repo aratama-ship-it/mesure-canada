@@ -23,6 +23,9 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /<title>MESURE — Canada/);
   assert.match(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Où résidez-vous actuellement/);
+  assert.match(html, /À propos des informations/);
+  assert.match(html, /Ce site est actuellement en version bêta/);
+  assert.match(html, /docs\.google\.com\/forms/);
   assert.match(html, /Ville de Toronto/);
   assert.match(html, /Ville d’Ottawa/);
   assert.match(html, /Ville de Québec/);
@@ -32,6 +35,10 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Canada Council — Arts Abroad: Travel/);
   assert.match(html, /Votre statut au Canada/);
   assert.match(html, /Radar international/);
+  assert.match(html, /Type d’occasion/);
+  assert.match(html, /Appels de festivals régionaux/);
+  assert.match(html, /Développement chorégraphique/);
+  assert.match(html, /Résidences \/ création sur place/);
   assert.match(html, /Imaginarius 2027 — International Open Call/);
   assert.match(html, /Canadian Association of Fringe Festivals — Touring Lottery/);
   assert.match(html, /IDFA Forum 2026 — Project Entry/);

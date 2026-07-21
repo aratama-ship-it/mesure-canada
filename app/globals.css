@@ -60,14 +60,15 @@ a {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
   gap: 20px;
-  align-items: start;
+  align-items: center;
   padding-bottom: 18px;
   border-bottom: 3px solid var(--ink);
 }
 
 .brandline {
   display: flex;
-  flex-wrap: wrap;
+  min-width: 0;
+  flex-wrap: nowrap;
   gap: 10px 16px;
   align-items: baseline;
 }
@@ -78,6 +79,7 @@ a {
   font-weight: 900;
   letter-spacing: -0.075em;
   line-height: 0.82;
+  white-space: nowrap;
 }
 
 .brand::after {
@@ -100,6 +102,7 @@ a {
 
 .language-switch {
   display: flex;
+  flex: 0 0 auto;
   border: 2px solid var(--ink);
   background: var(--paper-bright);
 }
@@ -124,6 +127,60 @@ a {
 .language-switch button[aria-pressed="true"] {
   background: var(--ink);
   color: var(--paper-bright);
+}
+
+.site-notices {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.source-notice,
+.beta-notice {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 8px 14px;
+  align-items: start;
+  margin: 0;
+  padding: 12px 14px;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+  color: #3d3c36;
+  font-size: 0.75rem;
+  line-height: 1.58;
+}
+
+.source-notice {
+  border-left: 7px solid var(--blue);
+}
+
+.beta-notice {
+  border-left: 7px solid var(--coral);
+}
+
+.source-notice strong,
+.beta-notice strong {
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.beta-notice a {
+  color: var(--blue-dark);
+  font-weight: 850;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.beta-notice a:hover,
+.beta-notice a:focus-visible {
+  color: var(--coral);
+  outline: 2px solid var(--yellow);
+  outline-offset: 2px;
 }
 
 .intro {
@@ -836,13 +893,33 @@ a {
   line-height: 1.55;
 }
 
+.radar-filter-group {
+  margin-top: 25px;
+  padding-top: 13px;
+  border-top: 2px solid var(--ink);
+}
+
+.radar-format-group {
+  margin-top: 12px;
+  border-top: 1px dashed var(--rule);
+}
+
+.radar-filter-label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .radar-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin: 26px 0 16px;
-  padding-top: 14px;
-  border-top: 2px solid var(--ink);
+  margin: 0;
 }
 
 .radar-filters button {
@@ -861,6 +938,23 @@ a {
   color: var(--paper-bright);
 }
 
+.radar-format-filters button {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.radar-format-filters small {
+  display: inline-grid;
+  min-width: 20px;
+  min-height: 20px;
+  place-items: center;
+  padding: 0 4px;
+  border: 1px solid currentColor;
+  font-size: 0.58rem;
+  line-height: 1;
+}
+
 .radar-filters button:hover,
 .radar-filters button:focus-visible {
   outline: 3px solid var(--yellow);
@@ -871,6 +965,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 10px;
+  margin-top: 16px;
 }
 
 .radar-row {
@@ -916,6 +1011,33 @@ a {
   font-size: 0.78rem;
   font-weight: 780;
   line-height: 1.42;
+}
+
+.radar-search-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 10px;
+}
+
+.radar-search-tags span {
+  padding: 3px 5px;
+  border: 1px solid var(--rule);
+  background: #eee8dc;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.55rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.radar-empty {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 28px 18px;
+  border: 1px dashed var(--ink);
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.55;
 }
 
 .radar-bottom {
@@ -1017,14 +1139,33 @@ a {
 
   .masthead {
     grid-template-columns: 1fr auto;
+    gap: 8px;
   }
 
   .brand {
-    font-size: clamp(2.7rem, 18vw, 5rem);
+    font-size: clamp(2.15rem, 11.5vw, 3.6rem);
+  }
+
+  .language-switch button {
+    min-width: 38px;
+    min-height: 38px;
+    padding: 0 6px;
   }
 
   .edition {
     display: none;
+  }
+
+  .site-notices {
+    grid-template-columns: 1fr;
+    margin-top: 12px;
+  }
+
+  .source-notice,
+  .beta-notice {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    padding: 11px 12px;
   }
 
   .intro {
