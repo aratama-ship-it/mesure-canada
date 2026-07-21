@@ -1803,5 +1803,233 @@
     "nextCheckDate": "2026-09-01",
     "sourceUrl": "https://fringefestivals.com/festivals/san-diego-international-fringe-festival/",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "ceara-international-circus-next-watch",
+    "title": "Festival Internacional de Circo do Ceará — International Selection",
+    "country": "Brazil",
+    "city": "Fortaleza",
+    "region": "Latin America",
+    "family": "circus",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-30",
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est terminé. Il acceptait les artistes et compagnies de tous pays; transport aérien/terrestre depuis la ville déclarée, hébergement, repas et cachet négocié étaient pris en charge. Une entité juridique brésilienne est nécessaire pour le contrat et le paiement.",
+      "en": "The 2026 call is closed. It accepted artists and companies from any country; air/ground travel from the declared city, accommodation, meals, and a negotiated fee were covered. A Brazilian legal entity is required for contracting and payment.",
+      "ja": "2026年募集は終了。世界各国の個人・団体が対象で、申告した出発都市からの航空／陸路、宿泊、食事、交渉制の出演料を主催者が負担。契約・支払いにはブラジル法人による代理が必要です。"
+    },
+    "nextCheckDate": "2027-02-15",
+    "sourceUrl": "https://www.festivaldecircoceara.com/documents/REGULAMENTO-12FICC.pdf",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "world-buskers-festival-2027-open",
+    "title": "World Buskers Festival 2027 — Expressions of Interest",
+    "country": "New Zealand",
+    "city": "Christchurch",
+    "region": "Oceania",
+    "family": "street",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Manifestations d’intérêt ouvertes pour les arts de rue, le cirque, la comédie, la musique et la performance contemporaine. Date limite, admissibilité internationale, cachet, voyage, visa et hébergement non publiés sur la page officielle.",
+      "en": "Expressions of interest are open for street theatre, circus, comedy, music, and contemporary performance. The official page does not publish a deadline, international eligibility, fee, travel, visa, or accommodation terms.",
+      "ja": "大道芸、サーカス、コメディ、音楽、現代表現のEOIを受付中。公式ページに締切、海外応募資格、出演料、渡航、ビザ、宿泊条件の記載がないため要確認です。"
+    },
+    "nextCheckDate": "2026-08-15",
+    "sourceUrl": "https://www.worldbuskersfestival.co.nz/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "buskers-bern-2027-upcoming",
+    "title": "Buskers Bern 2027 — Main Programme",
+    "country": "Switzerland",
+    "city": "Bern",
+    "region": "Europe",
+    "family": "street",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures dès novembre 2026. Pas de cachet: rémunération au chapeau. Les conditions 2026 prévoient hébergement et repas; le voyage est convenu au cas par cas, sans garantie de couvrir seul un trajet outre-mer, et le festival ne gère pas les visas.",
+      "en": "Applications start in November 2026. No fee: artists earn by hat. The 2026 terms provide accommodation and meals; travel is agreed case by case, overseas travel may require shared support, and the festival does not arrange visas.",
+      "ja": "応募は2026年11月開始。出演料はなく投げ銭制。2026年要項では宿泊・食事あり、渡航費は個別協議で、海外長距離は他祭との共同負担が必要な場合があり、ビザ手配は自己責任です。"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://buskersbern.ch/en/participate",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "neuchatel-buskers-next-upcoming",
+    "title": "Buskers Festival Neuchâtel — Artist Booking",
+    "country": "Switzerland",
+    "city": "Neuchâtel",
+    "region": "Europe",
+    "family": "street",
+    "participation": "eligibility_check",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Inscriptions annoncées d’octobre à février par courriel. Festival surtout musical, avec quelques spectacles vus au préalable; pas de cachet, mais voyage depuis le domicile, hébergement et repas pris en charge, puis rémunération au chapeau. Admissibilité depuis le Canada à confirmer.",
+      "en": "Applications are listed as October–February by email. Primarily a street-music festival, with some previously seen shows; no fee, but travel from home, accommodation, and meals are covered, with hat earnings. Canada-based eligibility must be confirmed.",
+      "ja": "応募は10月〜2月にメール受付予定。主に路上音楽で、事前に実演を見た一部ショーも選考。出演料なし・投げ銭制ですが、自宅からの旅費、宿泊、食事は主催者負担。カナダ拠点からの応募可否は要確認です。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.buskersfestival.ch/contact/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "nelson-fringe-2027-upcoming",
+    "title": "Nelson Fringe Festival 2027 — Artist Applications",
+    "country": "New Zealand",
+    "city": "Nelson",
+    "region": "Oceania",
+    "family": "fringe",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture en août 2026. Sélection partiellement curatée et partiellement tirée au sort; candidature gratuite, partage billetterie 60/40, voyage et hébergement à la charge de l’artiste. Festival approuvé pour l’exemption de visa sous conditions de nationalité.",
+      "en": "Opens August 2026. Part-curated, part-lottery selection; free application, 60/40 box-office split, with travel and accommodation paid by the artist. The festival has visa-exempt approval subject to nationality conditions.",
+      "ja": "2026年8月受付開始。選考と抽選の混合方式で、応募無料、興行収入は出演者60％／主催40％。渡航・宿泊は自己負担。国籍条件を満たす場合は認定フリンジとして就労ビザ免除枠があります。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://nelsonfringe.co.nz/artists/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "new-zealand-fringe-2027-watch",
+    "title": "New Zealand Fringe 2027 — Open-access Registration",
+    "country": "New Zealand",
+    "city": "Wellington",
+    "region": "Oceania",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Festival 2027 annoncé du 12 février au 6 mars; calendrier d’inscription non encore publié. Modèle open access: inscription payante, spectacle autoproduit et lieu confirmé requis; les comptes internationaux entraînent des frais bancaires supplémentaires.",
+      "en": "The 2027 festival is announced for February 12–March 6; registration dates are not yet published. It is open access with a paid registration, self-produced show, and confirmed venue; international accounts incur extra bank charges.",
+      "ja": "2027年2月12日〜3月6日の開催は発表済みですが、登録日程は未発表。参加料を払うオープンアクセス方式で、自主制作・会場確保が必要。海外口座への売上送金には追加銀行手数料があります。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://www.fringe.co.nz/artists/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "dublin-fringe-next-watch",
+    "title": "Dublin Fringe Festival — International Application Pool",
+    "country": "Ireland",
+    "city": "Dublin",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-01-22",
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est terminé. Une petite sélection internationale est acceptée via l’appel ouvert, mais les artistes programmés doivent couvrir production, voyage, hébergement et visa; le festival fournit notamment location subventionnée, marketing, billetterie et assistance de production.",
+      "en": "The 2026 call is closed. A small international selection is accepted through the open call, but programmed artists cover production, travel, accommodation, and visas; the festival provides subsidised venue hire, marketing, box office, and production assistance.",
+      "ja": "2026年募集は終了。海外作品も少数を公開応募から選考しますが、制作・渡航・宿泊・ビザは出演者負担。主催者は割引会場、広報、チケット販売、制作支援等を提供します。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://www.fringefest.com/news/dublin-fringe-festival-2026-applications-now-open",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "masa-festival-next-watch",
+    "title": "MASA Festival — Non-African Companies Route",
+    "country": "Côte d’Ivoire",
+    "city": "Abidjan",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-08-31",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. La voie Festival est exclusivement ouverte aux artistes et compagnies non africains; cirque et arts de rue admissibles, œuvre de moins de trois ans, huit personnes maximum pour le cirque. Soutien financier et logistique exact à revérifier au prochain appel.",
+      "en": "The 2026 cycle is closed. The Festival route is exclusively for non-African artists and companies; circus and street arts are eligible, work must be under three years old, and circus groups are capped at eight. Exact financial and logistical support must be rechecked next cycle.",
+      "ja": "2026年募集は終了。Festival枠はアフリカ以外の個人・団体専用で、サーカス／大道芸が対象。初演から3年未満、サーカスはスタッフ込み8名まで。費用・運営支援の詳細は次回要項で再確認が必要です。"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://www.en.masa.ci/masa-2026-call-for-application-for-artistic-groups",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "gwangju-busking-worldcup-next-watch",
+    "title": "Gwangju Busking WorldCup — International Musicians",
+    "country": "South Korea",
+    "city": "Gwangju",
+    "region": "Asia",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-05-31",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé; réservé aux musiciens de 19 ans et plus, sans condition de nationalité. Pour les finalistes étrangers: vol aller-retour en classe économique jusqu’à trois personnes, deux nuits d’hôtel et 500 000 KRW pour la prestation de rue obligatoire.",
+      "en": "The 2026 cycle is closed; musicians aged 19+ could apply regardless of nationality. Overseas finalists received round-trip economy airfare for up to three people, two hotel nights, and KRW 500,000 for the mandatory street performance.",
+      "ja": "2026年募集は終了。19歳以上の音楽家は国籍不問。海外ファイナリストには最大3名の往復エコノミー航空券、2泊の宿泊、必須路上公演に50万ウォンを提供していました。"
+    },
+    "nextCheckDate": "2027-03-15",
+    "sourceUrl": "https://www.buskingworldcup.com/en/artist/participation.php",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "busan-magic-busking-next-watch",
+    "title": "Busan International Magic Festival — Busking Championship",
+    "country": "South Korea",
+    "city": "Busan",
+    "region": "Asia",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-04-30",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Disciplines: magie, jonglage et formes mixtes comme le clown; vidéo réelle de 10–15 minutes demandée. La page municipale anglaise n’indique ni restriction de nationalité, ni cachet, voyage, hébergement ou visa: confirmer avant de candidater.",
+      "en": "The 2026 cycle is closed. Genres included magic, juggling, and mixed forms such as clown, with a 10–15 minute real-performance video. The city’s English notice states no nationality restriction or fee, travel, lodging, or visa terms: confirm before applying.",
+      "ja": "2026年募集は終了。マジック、ジャグリング、クラウン等の複合ジャンルが対象で、編集なしの実演動画10〜15分が必要。市の英語告知には国籍制限、出演料、渡航、宿泊、ビザ条件がないため応募前に要確認です。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://www.busan.go.kr/eng/bsnews01/1728624",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "evora-2027-our-lab-watch",
+    "title": "Évora 2027 — Our Lab International Programme",
+    "country": "Portugal",
+    "city": "Évora",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-01-31",
+    "deadlineLabel": {
+      "fr": "Appel terminé. Le programme 2027 acceptait les artistes individuels, collectifs et personnes morales résidant en Europe hors Portugal ou hors Europe, notamment en cirque et arts de rue, pour des présentations dans des espaces culturels, patrimoniaux, publics, urbains et naturels.",
+      "en": "The call is closed. The 2027 programme accepted individual artists, collectives, and legal entities based elsewhere in Europe or outside Europe, including circus and street arts, for cultural, heritage, public, urban, and natural spaces.",
+      "ja": "募集終了。2027年プログラムはポルトガル国外・欧州外の個人、団体、法人も対象で、サーカス／大道芸を含み、文化施設、歴史建築、公共・都市・自然空間で上演する枠でした。"
+    },
+    "nextCheckDate": "2027-08-01",
+    "sourceUrl": "https://www.evora2027.com/en/open-calls",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "aoca-africa-circus-partner-route-2027",
+    "title": "AOCA 2027 — Africa Circus / Street Arts Partner Route",
+    "country": "African countries",
+    "city": "Multiple cities",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-10-30",
+    "deadlineLabel": {
+      "fr": "30 octobre 2026. Cirque, arts de rue et marionnettes admissibles; 5 000–15 000 €, jusqu’à 50 % du budget. Un artiste au Québec ne peut pas déposer directement: le porteur doit être une structure africaine ou le réseau culturel français; partenariat possible pour une coproduction Afrique–France.",
+      "en": "October 30, 2026. Circus, street arts, and puppetry are eligible; €5,000–15,000, up to 50% of budget. A Quebec artist cannot apply directly: the lead must be an African organization or the French cultural network; an Africa–France co-production partnership may fit.",
+      "ja": "2026年10月30日。サーカス／大道芸／人形劇が対象で5,000〜15,000ユーロ、予算の最大50％。ケベック在住者の直接申請は不可で、アフリカの組織またはフランス文化ネットワークが申請主体。アフリカ–フランス共同制作の協力者としては可能性があります。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.institutfrancais.com/en/programme/project-support/aoca-support-cultural-operators-africa",
+    "verifiedAt": "2026-07-21"
   }
 ]
