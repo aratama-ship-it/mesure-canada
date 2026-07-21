@@ -544,5 +544,82 @@
     },
     "sourceUrl": "https://www.ville.quebec.qc.ca/apropos/programmes-subventions/art-culture/levier/docs/description-mesure-levier.pdf",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "oif-artist-mobility-2026",
+    "name": "OIF — Soutien à la mobilité des artistes 2026",
+    "funder": "Organisation internationale de la Francophonie",
+    "profiles": ["artist", "collective"],
+    "residencies": ["canada"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": {
+      "fr": "31 août 2026; sélections trimestrielles, dernière sélection à partir du 14 septembre",
+      "en": "August 31, 2026; quarterly selections, with the final selection beginning September 14",
+      "ja": "2026年8月31日締切。四半期ごとに選考し、最終選考は9月14日開始"
+    },
+    "amount": {
+      "fr": "Jusqu’à 5 000 € pour la mobilité; jusqu’à 2 500 € pour la circulation de biens culturels, cumulables",
+      "en": "Up to €5,000 for artist mobility; up to €2,500 for cultural-goods circulation, which may be combined",
+      "ja": "アーティスト移動は最大5,000ユーロ、文化物品輸送は最大2,500ユーロ。併用可能"
+    },
+    "coverage": ["travel", "stay", "visa", "transport", "training"],
+    "cashflow": {
+      "fr": "Décision en 8 à 10 semaines; 80 % à la signature et 20 % après validation du rapport final",
+      "en": "Decision in 8–10 weeks; 80% on contract signature and 20% after final-report approval",
+      "ja": "結果まで8〜10週間。契約時に80％、最終報告承認後に20％"
+    },
+    "eligibility": {
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Il faut être artiste professionnel·le ou collectif constitué, avoir un lien avéré avec l’espace francophone, être originaire et résider dans un État ou gouvernement membre de l’OIF, et avoir au moins deux ans de pratique. Canada–Québec est membre, mais résider au Québec ne prouve pas à lui seul la condition « originaire »; le cirque n’est pas nommé dans la liste des secteurs du spectacle vivant et doit être confirmé auprès de l’OIF.",
+        "en": "Applicants must be professional artists or constituted collectives, show a genuine Francophone connection, originate from and reside in an OIF member state or government, and have at least two years of practice. Canada–Québec is a member, but Québec residence alone does not prove the “originate from” rule; circus is not named in the live-performance sector list and should be confirmed with OIF.",
+        "ja": "プロの個人または正式なコレクティブで、フランコフォニー圏との明確な関係、OIF加盟国・政府の出身かつ居住、2年以上の活動歴が必要です。Canada–Québecは加盟していますが、ケベック居住だけでは「出身」条件を満たすと断定できません。また舞台芸術の列挙にサーカスが明記されていないためOIFへの確認が必要です。"
+      },
+      "sourceUrl": "https://www.francophonie.org/sites/default/files/2026-02/AAP_Mobilite_artistes_2026.pdf",
+      "verifiedAt": "2026-07-21"
+    },
+    "sourceUrl": "https://www.francophonie.org/index.php/soutien-la-mobilite-des-artistes-et-circulation-des-biens-culturels-8385",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-training-expense-reimbursement-2026",
+    "name": "En Piste — Remboursement des dépenses d’entraînement",
+    "funder": "En Piste",
+    "profiles": ["artist"],
+    "residencies": ["quebec"],
+    "disciplines": ["circus"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Prochaine fenêtre : du 1er au 10 octobre 2026 pour les factures de juillet à septembre",
+      "en": "Next window: October 1–10, 2026, for July–September invoices",
+      "ja": "次回：2026年10月1〜10日。7〜9月発行の請求書が対象"
+    },
+    "amount": {
+      "fr": "Jusqu’à 300 $ par trimestre et 650 $ par année civile",
+      "en": "Up to $300 per quarter and $650 per calendar year",
+      "ja": "四半期あたり最大300、暦年あたり最大650カナダドル"
+    },
+    "coverage": ["training", "fees"],
+    "cashflow": {
+      "fr": "100 % pour entraînement libre supervisé, formation individuelle ou personnel technique; 50 % pour cours et stages de groupe, selon les plafonds et l’enveloppe disponible",
+      "en": "100% for supervised open training, individual instruction or technical staff; 50% for group classes and workshops, subject to caps and available budget",
+      "ja": "監督付き自主練習、個人指導、技術スタッフ費は100％、グループ講習・ワークショップ等は50％。上限と予算枠の範囲内"
+    },
+    "eligibility": {
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "La page officielle exige d’être membre payé d’En Piste dans une catégorie admissible, de résider au Québec avec preuve, et d’avoir engagé au Québec une dépense d’entraînement admissible après l’adhésion. Elle ne publie pas de condition de citoyenneté ou de résidence permanente; un statut temporaire n’est donc pas exclu automatiquement, mais l’admission comme membre professionnel doit être vérifiée.",
+        "en": "The official page requires paid En Piste membership in an eligible category, proof of Québec residence, and an eligible Québec training expense incurred after joining. It does not publish a citizenship or permanent-residence condition, so temporary status is not automatically excluded, but professional membership eligibility must be verified.",
+        "ja": "公式ページでは、対象区分のEn Piste有料会員であること、ケベック居住証明、入会後にケベック州内で発生した対象トレーニング費を求めています。市民権・永住権条件は公開されていないため一時滞在者を自動除外しませんが、プロ会員としての加入資格は確認が必要です。"
+      },
+      "sourceUrl": "https://enpiste.qc.ca/programme/remboursement-depenses/",
+      "verifiedAt": "2026-07-21"
+    },
+    "sourceUrl": "https://enpiste.qc.ca/programme/remboursement-depenses/",
+    "verifiedAt": "2026-07-21"
   }
 ]

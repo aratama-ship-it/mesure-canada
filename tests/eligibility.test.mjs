@@ -199,6 +199,31 @@ test("professional-practice evidence keeps a municipal artist grant in verificat
   );
 });
 
+test("Quebec circus reimbursement does not invent a citizenship exclusion", () => {
+  const eligibility = { professionalPracticeVerificationRequired: true };
+  const result = evaluate("artist", eligibility, { legalStatus: "temporary_work" });
+  assert.equal(result.state, "verify");
+  assert.ok(result.reasonKeys.includes("professionalPracticeCheck"));
+  assert.ok(!result.reasonKeys.includes("statusNotAccepted"));
+});
+
+test("OIF mobility keeps every Canadian status in source-level verification", () => {
+  const eligibility = {
+    verificationStatuses: [
+      "citizen",
+      "permanent",
+      "protected",
+      "permanent_pending",
+      "temporary_work",
+      "temporary_no_work",
+    ],
+    professionalPracticeVerificationRequired: true,
+  };
+  for (const legalStatus of eligibility.verificationStatuses) {
+    assert.equal(evaluate("artist", eligibility, { legalStatus }).state, "verify");
+  }
+});
+
 test("unknown answers stay in verification and unregistered organizations are excluded", () => {
   assert.equal(
     evaluate("artist", { individualStatuses: ["citizen", "permanent"] }).state,

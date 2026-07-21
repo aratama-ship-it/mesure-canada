@@ -680,7 +680,7 @@
       "ja": "2027年向け申請は7月7日終了。2027年1月13〜16日にオタワで開催。フランス語コンテンツ・観客とのフランス語でのやり取り要件を確認。"
     },
     "nextCheckDate": "2026-10-20",
-    "sourceUrl": "https://www.reseauontario.ca/contact-ontarois/candidatures-inscriptions",
+    "sourceUrl": "https://scenesfrancophones.ca/inscriptions/contact-ontarois",
     "verifiedAt": "2026-07-21"
   },
   {
@@ -928,6 +928,291 @@
     },
     "nextCheckDate": "2026-11-01",
     "sourceUrl": "https://enpiste.qc.ca/appel-de-projet-residence-en-arts-du-cirque-a-valspec/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "contact-ouest-repertoire-2027-28",
+    "title": "Contact Ouest — Répertoire d’offres de spectacles 2027–28",
+    "country": "Canada",
+    "city": "Victoria",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "language_conditions",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "Répertoire 2027–2028 ouvert jusqu’au 31 juillet 2026. L’appel aux vitrines 2026 est fermé; contenu verbal à 80 % en français pour le grand public et interaction en français.",
+      "en": "The 2027–28 performance catalogue is open through July 31, 2026. The 2026 showcase call is closed; verbal public-facing work must be at least 80% French, with audience interaction in French.",
+      "ja": "2027〜28年公演カタログ登録は2026年7月31日まで。2026年ショーケース選考は終了。言語を使う一般向け作品は80％以上がフランス語で、観客とのやり取りもフランス語が必要。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://scenesfrancophones.ca/inscriptions/contact-ouest",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "francofete-acadie-2027-28",
+    "title": "FrancoFête en Acadie — Vitrines et répertoire 2027–28",
+    "country": "Canada",
+    "city": "Dieppe",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "language_conditions",
+    "status": "open",
+    "deadlineDate": "2026-08-28",
+    "deadlineLabel": {
+      "fr": "Ouvert jusqu’au 28 août 2026. Artistes professionnel·les; spectacle de plus d’une heure pour le grand public, interaction en français et au moins 80 % de contenu en français lorsque pertinent.",
+      "en": "Open through August 28, 2026. Applicants must be professional; public shows must run over one hour, interact in French and use at least 80% French content where applicable.",
+      "ja": "2026年8月28日まで。プロのアーティストが対象。一般向け作品は1時間超で、観客対応をフランス語で行い、該当する場合は内容の80％以上をフランス語にする必要あり。"
+    },
+    "nextCheckDate": "2026-08-29",
+    "sourceUrl": "https://www.scenesfrancophones.ca/inscriptions/francofete-en-acadie",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "ottawa-fringe-2027-watch",
+    "title": "Ottawa Fringe Festival 2027 — Lottery",
+    "country": "Canada",
+    "city": "Ottawa",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La loterie 2026 est fermée. Le dernier cycle réservait 50 % aux artistes d’Ottawa–Gatineau, 30 % aux personnes résidant ailleurs au Canada et 20 % aux candidatures de l’extérieur du Canada; vérifier le travail autorisé et les dates 2027.",
+      "en": "The 2026 lottery is closed. The last cycle reserved 50% for Ottawa–Gatineau artists, 30% for applicants elsewhere in Canada and 20% for applicants outside Canada; verify work authorization and 2027 dates.",
+      "ja": "2026年ロッタリーは終了。前回はオタワ・ガティノー在住50％、カナダ国内のその他地域30％、国外20％。就労資格と2027年日程は次回要項で確認。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://ottawafringe.com/lottery/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "edmonton-fringe-2027-upcoming",
+    "title": "Edmonton International Fringe 2027 — Indoor Lottery",
+    "country": "Canada",
+    "city": "Edmonton",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture habituelle au début d’octobre, tirage en novembre. Les artistes résidant au Canada déposent dans la catégorie nationale; la catégorie internationale vise les personnes résidant hors Canada. Vérifier les dates et le droit de travailler pour 2027.",
+      "en": "Applications normally open in early October with a November draw. Artists residing in Canada apply as National; International means residing outside Canada. Verify 2027 dates and work authorization.",
+      "ja": "例年10月初旬に受付開始、11月に抽選。カナダ居住者はNational枠、International枠はカナダ国外居住者向け。2027年日程と就労資格を確認。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.fringetheatre.ca/festival/artists/indoor/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "vancouver-fringe-2027-upcoming",
+    "title": "Vancouver Fringe 2027 — Mainstage Lottery",
+    "country": "Canada",
+    "city": "Vancouver",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture annoncée pour l’automne 2026; tirage en janvier 2027. Disponibilité requise du 7 au 19 septembre 2027. Les règles publiques ne précisent pas la citoyenneté; vérifier le droit de travailler.",
+      "en": "Applications are announced for fall 2026, with a January 2027 draw. Applicants must be available September 7–19, 2027. Public rules do not state citizenship; verify work authorization.",
+      "ja": "2026年秋に募集開始、2027年1月に抽選予定。2027年9月7〜19日に参加可能であること。公開要項に市民権条件はないため、就労資格を確認。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.vancouverfringe.com/artist-zone/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "winnipeg-fringe-2027-upcoming",
+    "title": "Winnipeg Fringe 2027 — Company Lottery",
+    "country": "Canada",
+    "city": "Winnipeg",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La source officielle annonce une échéance d’inscription en novembre 2026 et un tirage au début de décembre; date exacte et règles de résidence à confirmer.",
+      "en": "The official source says company entries will close in November 2026, with the lottery in early December; confirm the exact date and residence rules.",
+      "ja": "公式情報では団体応募の締切は2026年11月、抽選は12月初旬。正確な締切日と居住区分は次回要項で確認。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://royalmtc.ca/Education-Outreach/Pathways-Fringe.aspx",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "prague-fringe-2027",
+    "title": "Prague Fringe 2027 — Artist Applications",
+    "country": "Czech Republic",
+    "city": "Prague",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "selection",
+    "status": "upcoming",
+    "deadlineDate": "2026-10-31",
+    "deadlineLabel": {
+      "fr": "Ouverture en août 2026; échéance le 31 octobre. Théâtre, comédie et performance en anglais, avec possibilité de spectacles sans paroles; sélection par jury, frais de participation, voyage et hébergement à la charge des artistes.",
+      "en": "Opens August 2026; deadline October 31. English-language theatre, comedy and performance, including non-verbal work; panel selection, participation fees, and artists cover travel and accommodation.",
+      "ja": "2026年8月開始、10月31日締切。英語の演劇・コメディ・パフォーマンス（ノンバーバル可）。審査制で参加費があり、渡航・宿泊は自己負担。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://www.praguefringe.com/artist-info/26th-prague-fringe-may-2027-artist-applications-open-august/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "tampa-fringe-2027",
+    "title": "Tampa Fringe 2027 — Touring Artist Lottery",
+    "country": "United States",
+    "city": "Tampa",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "upcoming",
+    "deadlineDate": "2027-01-10",
+    "deadlineLabel": {
+      "fr": "Ouverture le 12 septembre 2026; échéance le 10 janvier 2027. Frais de candidature de 35 $ US, puis 225 $ US pour les artistes en tournée sélectionnés; trois représentations et 100 % du prix de base des billets.",
+      "en": "Opens September 12, 2026; closes January 10, 2027. US$35 application fee, then US$225 for selected touring artists; three performances and 100% of the base ticket price.",
+      "ja": "2026年9月12日開始、2027年1月10日締切。応募料35米ドル、選出された巡演アーティストは登録料225米ドル。3公演で基本チケット代の100％を受領。"
+    },
+    "nextCheckDate": "2026-09-12",
+    "sourceUrl": "https://festival.tampafringe.org/artists/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "bergen-fringe-2027",
+    "title": "Bergen Fringe Festival 2027 — International Professionals",
+    "country": "Norway",
+    "city": "Bergen",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-19",
+    "deadlineLabel": {
+      "fr": "19 août 2026. Catégorie internationale ouverte aux productions professionnelles indépendantes; festival du 2 au 5 septembre 2027.",
+      "en": "August 19, 2026. The international category is open to professional productions from the independent performing-arts field; festival September 2–5, 2027.",
+      "ja": "2026年8月19日締切。国際枠は独立系舞台芸術のプロ作品が対象。フェスティバルは2027年9月2〜5日。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://www.bergenfringe.no/opencall2027eng",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "tallinn-fringe-2026-open",
+    "title": "Tallinn Fringe 2026 — Open-access Artist Call",
+    "country": "Estonia",
+    "city": "Tallinn",
+    "region": "Europe",
+    "family": "fringe",
+    "participation": "open_access",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel ouvert pendant le festival, du 18 août au 18 septembre 2026. L’artiste réserve directement un lieu; aucun frais de candidature ou de participation. Le programme de rue 2026 est sur invitation.",
+      "en": "The call stays open through the August 18–September 18, 2026 festival. Artists book directly with a venue; no application or participation fee. The 2026 street program is invitation-only.",
+      "ja": "2026年8月18日〜9月18日の開催中も受付。アーティストが会場と直接契約し、応募料・参加料なし。2026年のストリート枠は招待制。"
+    },
+    "nextCheckDate": "2026-09-19",
+    "sourceUrl": "https://fringe.ee/participate/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "dynamo-circus-residency-2027-28",
+    "title": "DYNAMO — Non-thematic Circus Residency 2027–28",
+    "country": "Denmark",
+    "city": "Odense",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures en continu pour 2027–2028, examinées chaque mois. Résidence de 3 jours à 1 mois pour artistes de cirque professionnel·les; espace, hébergement, soutien technique, repas de semaine et aide au voyage selon conditions.",
+      "en": "Rolling applications for 2027–28, reviewed monthly. Three-day to one-month residencies for professional circus artists; workspace, accommodation, technical support, weekday lunch and a travel grant subject to terms.",
+      "ja": "2027〜28年分を随時受付し、毎月審査。プロのサーカスアーティスト向けに3日〜1か月。制作空間、宿泊、技術支援、平日昼食、条件付き渡航支援あり。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://dynamoworkspace.dk/en/residency/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "garage-hochelaga-residency-watch",
+    "title": "Le Patin Libre — Garage Hochelaga Free Residency",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-05-15",
+    "deadlineLabel": {
+      "fr": "Le cycle gratuit de mai–juin 2026 est fermé et aucune récurrence n’est confirmée. Il visait la communauté montréalaise des arts de la scène, sans condition de citoyenneté publiée.",
+      "en": "The free May–June 2026 cycle is closed and recurrence is not confirmed. It served Montréal’s performing-arts community, with no published citizenship condition.",
+      "ja": "2026年5〜6月の無料枠は終了し、継続開催は未確認。モントリオールの舞台芸術コミュニティ向けで、公開要項に市民権条件はなし。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://enpiste.qc.ca/en/artistic-residency-hochelaga/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "sherbrooke-ftms-2027-watch",
+    "title": "Festival des traditions du monde de Sherbrooke — Call for Artists",
+    "country": "Canada",
+    "city": "Sherbrooke",
+    "region": "North America",
+    "family": "street",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-01-08",
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est fermé. Musique, danse, cirque, arts de rue, art de la parole et ateliers étaient explicitement acceptés; aucune condition de citoyenneté n’était publiée.",
+      "en": "The 2026 call is closed. Music, dance, circus, street performance, spoken arts and workshops were explicitly accepted; no citizenship condition was published.",
+      "ja": "2026年募集は終了。音楽、ダンス、サーカス、大道芸、話芸、ワークショップを明示的に募集し、市民権条件は公開されていませんでした。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://ftms.ca/en/take-part-in-the-festival/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "veregra-street-2027-watch",
+    "title": "Veregra Street Festival — International Call",
+    "country": "Italy",
+    "city": "Montegranaro",
+    "region": "Europe",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-02-20",
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est fermé. Artistes professionnel·les de toute nationalité; jonglage, clown, cirque, théâtre physique et autres arts de rue. Cachet négocié, hébergement et dîner fournis, voyage non couvert.",
+      "en": "The 2026 call is closed. Professional artists of any nationality; juggling, clown, circus, physical theatre and other street arts. Fee negotiated, accommodation and dinner provided, travel not covered.",
+      "ja": "2026年募集は終了。国籍不問のプロを対象に、ジャグリング、クラウン、サーカス、フィジカルシアター等を募集。出演料は交渉、宿泊・夕食あり、渡航費は対象外。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.veregrastreetfestival.it/call-for-participation-for-companies-and-artists-2/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "awaji-art-circus-next-watch",
+    "title": "Awaji Art Circus — International Artist Open Call",
+    "country": "Japan",
+    "city": "Awaji Island",
+    "region": "Asia",
+    "family": "circus",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-03-02",
+    "deadlineLabel": {
+      "fr": "L’appel conjoint 2026–2027 est fermé. Environ 10 artistes de disciplines physiques, 18 ans et plus; cachet, vol économique, repas, hébergement, assurance et accompagnement visa prévus. Prochain cycle non confirmé.",
+      "en": "The joint 2026–27 call is closed. About 10 artists in physical disciplines, age 18+; fee, economy airfare, meals, accommodation, insurance and visa support were included. No next cycle is confirmed.",
+      "ja": "2026・27年合同募集は終了。18歳以上の身体表現分野から約10人。出演料、エコノミー航空券、食事、宿泊、保険、ビザ支援を含む条件でした。次回は未確認。"
+    },
+    "nextCheckDate": "2027-12-01",
+    "sourceUrl": "https://en.awajiartscircus.com/file/AAC2026_2027_OpenCall_en.pdf",
     "verifiedAt": "2026-07-21"
   }
 ]
