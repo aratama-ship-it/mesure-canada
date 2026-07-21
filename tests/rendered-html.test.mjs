@@ -56,7 +56,14 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /TOHU — Résidences de recherche et création/);
   assert.match(html, /DYNAMO — Non-thematic Circus Residency 2027–28/);
   assert.match(html, /Bergen Fringe Festival 2027/);
+  assert.match(html, /FringeMTL — Main Festival Lottery/);
+  assert.match(html, /OSAC Showcase 2027/);
+  assert.match(html, /Pacific Contact — BC Performing Arts Showcase/);
+  assert.match(html, /National Folk Festival — Circus and Street Performers/);
+  assert.match(html, /Out There Arts — Supported Circus and Outdoor Arts Residency/);
   assert.match(html, /En Piste — Remboursement des dépenses d’entraînement/);
+  assert.match(html, /En Piste — Formation individualisée \/ sur mesure/);
+  assert.match(html, /En Piste — Mon premier RIDEAU/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
@@ -74,7 +81,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const fundingById = new Map(funding.map((record) => [record.id, record]));
 
   assert.ok(opportunities.length >= 6);
-  assert.ok(funding.length >= 19);
+  assert.ok(funding.length >= 21);
   assert.equal(new Set(opportunities.map((record) => record.id)).size, opportunities.length, "Duplicate opportunity id");
   assert.equal(new Set(funding.map((record) => record.id)).size, funding.length, "Duplicate funding id");
   for (const record of opportunities) {
@@ -119,14 +126,14 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.ok(festivalRadar.length >= 64);
+  assert.ok(festivalRadar.length >= 77);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");
   assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film", "showcase"]));
   assert.ok(new Set(festivalRadar.map((record) => record.region)).size >= 6);
-  assert.ok(festivalRadar.filter((record) => record.family === "circus").length >= 18);
+  assert.ok(festivalRadar.filter((record) => record.family === "circus").length >= 21);
   assert.ok(festivalRadar.filter((record) => record.family === "street").length >= 7);
-  assert.ok(festivalRadar.filter((record) => record.family === "fringe").length >= 20);
-  assert.ok(festivalRadar.filter((record) => record.family === "showcase").length >= 8);
+  assert.ok(festivalRadar.filter((record) => record.family === "fringe").length >= 25);
+  assert.ok(festivalRadar.filter((record) => record.family === "showcase").length >= 13);
   assert.ok(festivalRadar.some((record) => record.id === "caff-touring-lottery-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "bnfn-artist-call-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "contact-ontarois-2027-watch"));
@@ -140,6 +147,12 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "prague-fringe-2027"));
   assert.ok(festivalRadar.some((record) => record.id === "bergen-fringe-2027"));
   assert.ok(festivalRadar.some((record) => record.id === "dynamo-circus-residency-2027-28"));
+  assert.ok(festivalRadar.some((record) => record.id === "fringemtl-2027-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "osac-showcase-2027-upcoming"));
+  assert.ok(festivalRadar.some((record) => record.id === "contact-east-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "pacific-contact-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "national-folk-festival-2028-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "out-there-supported-residency-open"));
   for (const record of festivalRadar) {
     assert.ok(record.title && record.country && record.city);
     assert.ok(["circus", "street", "fringe", "film", "showcase"].includes(record.family));
@@ -186,6 +199,16 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.deepEqual(enPisteReimbursement.disciplines, ["circus"]);
   assert.equal(enPisteReimbursement.eligibility.individualStatuses, undefined);
   assert.equal(enPisteReimbursement.eligibility.professionalPracticeVerificationRequired, true);
+
+  const personalizedTraining = funding.find((record) => record.id === "en-piste-personalized-training-2026");
+  assert.deepEqual(personalizedTraining.residencies, ["quebec"]);
+  assert.ok(personalizedTraining.eligibility.verificationStatuses.includes("temporary_work"));
+  assert.equal(personalizedTraining.eligibility.professionalPracticeVerificationRequired, true);
+
+  const firstRideau = funding.find((record) => record.id === "en-piste-mon-premier-rideau");
+  assert.deepEqual(firstRideau.residencies, ["quebec"]);
+  assert.ok(firstRideau.eligibility.individualStatuses.includes("temporary_work"));
+  assert.ok(!firstRideau.eligibility.individualStatuses.includes("temporary_no_work"));
 
   for (const record of opportunities.filter((item) => item.country !== "Canada")) {
     assert.ok(

@@ -207,6 +207,21 @@ test("Quebec circus reimbursement does not invent a citizenship exclusion", () =
   assert.ok(!result.reasonKeys.includes("statusNotAccepted"));
 });
 
+test("Mon premier RIDEAU keeps work-permit holders in the screening path", () => {
+  const eligibility = {
+    individualStatuses: ["citizen", "permanent", "temporary_work"],
+    professionalPracticeVerificationRequired: true,
+  };
+  const workPermit = evaluate("artist", eligibility, { legalStatus: "temporary_work" });
+  assert.equal(workPermit.state, "verify");
+  assert.ok(workPermit.reasonKeys.includes("professionalPracticeCheck"));
+  assert.ok(!workPermit.reasonKeys.includes("statusNotAccepted"));
+  assert.equal(
+    evaluate("artist", eligibility, { legalStatus: "temporary_no_work" }).state,
+    "ineligible",
+  );
+});
+
 test("OIF mobility keeps every Canadian status in source-level verification", () => {
   const eligibility = {
     verificationStatuses: [

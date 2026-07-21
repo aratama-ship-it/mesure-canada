@@ -621,5 +621,92 @@
     },
     "sourceUrl": "https://enpiste.qc.ca/programme/remboursement-depenses/",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-personalized-training-2026",
+    "name": "En Piste — Formation individualisée / sur mesure",
+    "funder": "En Piste",
+    "profiles": ["artist", "collective"],
+    "residencies": ["quebec"],
+    "disciplines": ["circus"],
+    "purpose": "career_support",
+    "kind": "paid_program",
+    "availability": "closed",
+    "deadline": {
+      "fr": "Le cycle automne 2026 a fermé le 12 juillet; prochaine fenêtre non annoncée",
+      "en": "The fall 2026 cycle closed July 12; the next window is not announced",
+      "ja": "2026年秋期は7月12日締切で終了。次回募集は未発表"
+    },
+    "amount": {
+      "fr": "85 % des frais de formation couverts; participation de 15 %, taux maximal du formateur de 90 $/h",
+      "en": "85% of training costs covered; participant pays 15%, with a $90/hour maximum trainer rate",
+      "ja": "研修費の85％を負担、参加者負担15％。講師単価は最大90カナダドル／時"
+    },
+    "coverage": ["training", "fees"],
+    "cashflow": {
+      "fr": "En Piste paie directement la personne formatrice; la personne participante verse sa part de 15 % après approbation et avant le début de la formation",
+      "en": "En Piste pays the trainer directly; the participant pays the 15% share after approval and before training begins",
+      "ja": "En Pisteが講師へ直接支払い、参加者は承認後・研修開始前に15％を支払います"
+    },
+    "eligibility": {
+      "verificationStatuses": [
+        "citizen",
+        "permanent",
+        "protected",
+        "permanent_pending",
+        "temporary_work",
+        "temporary_no_work"
+      ],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Compétences-Carrières vise les professionnel·les du cirque et Soutien à l’entraînement les artistes de cirque. La session 2026 devait avoir lieu à Montréal ou en ligne. L’adhésion professionnelle d’En Piste accepte notamment les titulaires d’un permis de travail, mais la page du programme ne publie pas toutes les règles de statut ou de résidence: confirmation requise avant candidature.",
+        "en": "Compétences-Carrières is for circus professionals and Soutien à l’entraînement for circus artists. The 2026 session had to take place in Montréal or online. En Piste professional membership can include work-permit holders, but the program page does not publish every status or residence rule, so confirmation is required before applying.",
+        "ja": "Compétences-Carrièresはサーカス業界のプロ、Soutien à l’entraînementはサーカスアーティスト向けです。2026年期はモントリオールまたはオンライン実施。En Pisteのプロ会員は就労許可保持者も加入できますが、制度ページに在留資格・居住条件の全要件がないため応募前確認が必要です。"
+      },
+      "sourceUrl": "https://enpiste.qc.ca/en/programme/personalized-training/",
+      "verifiedAt": "2026-07-21"
+    },
+    "sourceUrl": "https://enpiste.qc.ca/en/formation/personalized-training/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "en-piste-mon-premier-rideau",
+    "name": "En Piste — Mon premier RIDEAU",
+    "funder": "En Piste / Caisse de la Culture",
+    "profiles": ["artist"],
+    "residencies": ["quebec"],
+    "disciplines": ["circus"],
+    "purpose": "career_support",
+    "kind": "paid_program",
+    "availability": "closed",
+    "deadline": {
+      "fr": "Le cycle 2026 est fermé; programme récurrent, prochaine édition non annoncée",
+      "en": "The 2026 cycle is closed; recurring program, next edition not announced",
+      "ja": "2026年期は終了。継続プログラムですが次回募集は未発表"
+    },
+    "amount": {
+      "fr": "Accès à RIDEAU, 3 nuits d’hébergement hors Québec, déplacement au Québec, indemnité de 3 jours, accompagnement et formation",
+      "en": "RIDEAU access, 3 nights of accommodation for participants from outside Québec City, Québec travel, 3-day per diem, support and training",
+      "ja": "RIDEAU参加費、ケベック・シティ外からの参加者の3泊、州内移動費、3日分の日当、伴走・研修"
+    },
+    "coverage": ["travel", "stay", "fees", "training"],
+    "cashflow": {
+      "fr": "Soutien en nature et prise en charge logistique pour trois participant·es; le calendrier de versement des déplacements et indemnités n’était pas précisé",
+      "en": "In-kind and logistical support for three participants; the timing of travel and per-diem payments was not published",
+      "ja": "3名への現物・運営支援。移動費・日当の支給時期は公開要項に記載なし"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "temporary_work"],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Il faut être membre d’En Piste, artiste émergent·e en cirque au Québec, participer à RIDEAU pour la première fois, préparer un spectacle sans agent et ne pas faire partie de la sélection officielle. Les conditions d’adhésion professionnelle d’En Piste acceptent les citoyen·nes, résident·es permanent·es et titulaires d’un permis de travail; c’est donc une piste concrète pour une personne non citoyenne avec permis de travail, sous réserve de l’admission comme membre.",
+        "en": "Applicants must be En Piste members, emerging circus artists in Québec, first-time RIDEAU participants, developing a show without an agent, and outside the official selection. En Piste professional membership accepts citizens, permanent residents and work-permit holders, making this a concrete route for a non-citizen with a work permit, subject to membership approval.",
+        "ja": "En Piste会員で、ケベックの若手サーカスアーティスト、RIDEAU初参加、エージェントなしで作品をツアー準備中、公式選考外であることが条件です。En Pisteのプロ会員は市民・永住者・就労許可保持者を受け入れるため、会員審査を前提に、非市民の就労許可保持者にも具体的な可能性があります。"
+      },
+      "sourceUrl": "https://enpiste.qc.ca/en/call-for-projects-mon-premier-rideau-2026/",
+      "verifiedAt": "2026-07-21"
+    },
+    "sourceUrl": "https://enpiste.qc.ca/en/projet-recurrent/call-for-projects/",
+    "verifiedAt": "2026-07-21"
   }
 ]

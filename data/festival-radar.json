@@ -86,13 +86,13 @@
     "status": "open",
     "deadlineDate": "2026-07-30",
     "deadlineLabel": {
-      "fr": "30 juillet 2026",
-      "en": "July 30, 2026",
-      "ja": "2026年7月30日"
+      "fr": "30 juillet 2026. Artistes internationaux; jusqu’à 1 200 € de voyage par personne hors Europe, hébergement, repas et 150 € par personne et représentation.",
+      "en": "July 30, 2026. International artists; up to €1,200 travel support per person outside Europe, accommodation, meals and €150 per person per performance.",
+      "ja": "2026年7月30日。海外応募可。欧州外からは1人最大1,200ユーロの渡航補助、宿泊・食事、1人1公演150ユーロ。"
     },
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://www.imaginarius.pt/convocatoria-internacional/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-21"
   },
   {
     "id": "seoul-street-arts-watch",
@@ -1213,6 +1213,253 @@
     },
     "nextCheckDate": "2027-12-01",
     "sourceUrl": "https://en.awajiartscircus.com/file/AAC2026_2027_OpenCall_en.pdf",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "alberta-showcase-2027-watch",
+    "title": "Alberta Showcase — Juried Performing Arts Showcase",
+    "country": "Canada",
+    "city": "Fort Saskatchewan",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-04-01",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 est fermé. Les candidatures ouvrent chaque année le 1er février et ferment le 1er avril; 150 à 200 dossiers pour environ 27 vitrines. Aucune condition de citoyenneté n’est publiée.",
+      "en": "The 2026 cycle is closed. Applications open annually February 1 and close April 1; 150–200 applications compete for about 27 showcase slots. No citizenship condition is published.",
+      "ja": "2026年募集は終了。毎年2月1日開始・4月1日締切で、約150〜200件から約27組を選考。市民権条件は公開されていません。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://www.artstouring.com/wp-content/uploads/5-Steps-to-Apply-to-perform-at-Alberta-Showcase-2.pdf",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "osac-showcase-2027-upcoming",
+    "title": "OSAC Showcase 2027 — Saskatchewan Touring Market",
+    "country": "Canada",
+    "city": "Saskatchewan",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture officielle annoncée pour février 2027. Les offres doivent intégrer déplacement, technique et hébergement; aucune condition de citoyenneté n’est publiée.",
+      "en": "Applications are officially announced to open in February 2027. Submitted prices should include travel, technical and accommodation costs; no citizenship condition is published.",
+      "ja": "2027年2月に応募開始予定と公式発表済み。提示料金には移動・技術・宿泊費を含める方式で、市民権条件は公開されていません。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://www.osac.ca/performing-arts/for-artists-agents",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "contact-east-next-watch",
+    "title": "Contact East — Atlantic Performing Arts Showcase",
+    "country": "Canada",
+    "city": "Saint John",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2025-10-26",
+    "deadlineLabel": {
+      "fr": "Le cycle biennal 2026 est fermé. Le cirque figurait explicitement parmi les disciplines et des artistes régionaux, nationaux et internationaux y participent; la prochaine édition n’est pas encore annoncée.",
+      "en": "The biennial 2026 cycle is closed. Circus was explicitly included and regional, national and international artists participate; the next edition has not yet been announced.",
+      "ja": "隔年開催の2026年募集は終了。サーカスを明示的に含み、地域・国内・海外のアーティストが参加します。次回日程は未発表です。"
+    },
+    "nextCheckDate": "2027-09-01",
+    "sourceUrl": "https://atlanticpresenters.ca/contact-east/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "pacific-contact-next-watch",
+    "title": "Pacific Contact — BC Performing Arts Showcase",
+    "country": "Canada",
+    "city": "Nanaimo",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-03-06",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 est fermé. Environ 24 vitrines de 15 minutes et 20 séances Pitch and Perform visaient des artistes disponibles pour tourner en C.-B.; aucune condition de citoyenneté n’est publiée.",
+      "en": "The 2026 cycle is closed. About 24 fifteen-minute showcases and 20 Pitch and Perform slots targeted artists available to tour in B.C.; no citizenship condition is published.",
+      "ja": "2026年募集は終了。BC州ツアー可能な出演者向けに約24組の15分ショーケースと20組のPitch and Perform枠があり、市民権条件は公開されていません。"
+    },
+    "nextCheckDate": "2027-01-07",
+    "sourceUrl": "https://creativebc.com/2026/01/apply-to-showcase-at-pacific-contact-2026/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "manitoba-showcase-next-watch",
+    "title": "Manitoba Showcase — Rural and Northern Touring Market",
+    "country": "Canada",
+    "city": "Brandon",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 est fermé. Tous genres scéniques, artistes prêts à tourner; 18 des 20 artistes de 2025 ont obtenu des tournées. La page 2026 affiche deux dates finales différentes, à revérifier au prochain cycle.",
+      "en": "The 2026 cycle is closed. All performing genres and tour-ready artists; 18 of 20 artists in 2025 secured tours. The 2026 page lists two different final deadlines, so the next cycle must be rechecked.",
+      "ja": "2026年募集は終了。全舞台ジャンルのツアー可能な出演者向けで、2025年は20組中18組がツアーを獲得。2026ページ内の最終締切表記が2通りあるため次回再確認します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://iwanttoshowcase.ca/manitoba-showcase-2026/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "fringemtl-2027-watch",
+    "title": "FringeMTL — Main Festival Lottery / First-Come Route",
+    "country": "Canada",
+    "city": "Montréal",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Le festival 2026 est terminé. Sélection par loterie et premier arrivé; 109 compagnies et 161 000 $ remis aux artistes lors de l’édition la plus récente. Les dates 2027 ne sont pas encore publiées.",
+      "en": "The 2026 festival is over. Selection uses lottery and first-come routes; the latest edition lists 109 companies and $161,000 returned to artists. 2027 dates are not yet published.",
+      "ja": "2026年開催は終了。抽選と先着枠があり、直近実績は109団体・アーティスト還元161,000カナダドル。2027年日程は未発表です。"
+    },
+    "nextCheckDate": "2026-08-17",
+    "sourceUrl": "https://fringefestivals.com/festivals/fringemtl/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "halifax-fringe-2027-watch",
+    "title": "Halifax Fringe Festival — Artist Lottery",
+    "country": "Canada",
+    "city": "Halifax",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’édition 2026 aura lieu du 3 au 13 septembre; la prochaine candidature n’est pas publiée. Loterie et premier arrivé, avec 100 % de la billetterie remise aux artistes.",
+      "en": "The 2026 edition runs September 3–13; the next application is not published. Lottery and first-come selection, with 100% of box office returned to artists.",
+      "ja": "2026年は9月3〜13日開催。次回応募は未発表。抽選・先着方式で、興行収入の100％をアーティストへ還元します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://fringefestivals.com/festivals/halifax-fringe-festival/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "saskatoon-fringe-2027-watch",
+    "title": "Saskatoon Fringe Festival — Artist Lottery",
+    "country": "Canada",
+    "city": "Saskatoon",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’édition 2026 se tient du 30 juillet au 8 août; prochaine loterie non publiée. Le cycle historique ouvrait en novembre et prévoyait six représentations.",
+      "en": "The 2026 edition runs July 30–August 8; the next lottery is not published. The historical cycle opened in November and provided six performances.",
+      "ja": "2026年は7月30日〜8月8日開催。次回抽選は未発表。過去サイクルは11月に受付を開始し、6公演枠でした。"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://fringefestivals.com/festivals/saskatoon-fringe-festival/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "hamilton-fringe-2027-watch",
+    "title": "Hamilton Fringe Festival — Lottery and BYOV Route",
+    "country": "Canada",
+    "city": "Hamilton",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’édition 2026 se tient du 15 au 26 juillet; prochaine candidature non publiée. Les spectacles réguliers passent par loterie et les lieux BYOV par ordre d’arrivée.",
+      "en": "The 2026 edition runs July 15–26; the next application is not published. Regular shows use a lottery and BYOV venues use first-come selection.",
+      "ja": "2026年は7月15〜26日開催。次回応募は未発表。通常枠は抽選、BYOV会場枠は先着方式です。"
+    },
+    "nextCheckDate": "2026-10-15",
+    "sourceUrl": "https://fringefestivals.com/festivals/hamilton-fringe-festival/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "victoria-fringe-2027-watch",
+    "title": "Victoria Fringe Theatre Festival — Artist Lottery",
+    "country": "Canada",
+    "city": "Victoria",
+    "region": "North America",
+    "family": "fringe",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "L’édition 2026 se tient du 26 août au 6 septembre; prochaine loterie non publiée. Cinq représentations et 100 % des recettes de billetterie remises aux artistes au dernier cycle publié.",
+      "en": "The 2026 edition runs August 26–September 6; the next lottery is not published. The last published cycle provided five performances and returned 100% of box office to artists.",
+      "ja": "2026年は8月26日〜9月6日開催。次回抽選は未発表。直近公開サイクルは5公演で、興行収入の100％をアーティストへ還元しました。"
+    },
+    "nextCheckDate": "2026-09-15",
+    "sourceUrl": "https://fringefestivals.com/festivals/victoria-fringe-theatre-festival/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "national-folk-festival-2028-watch",
+    "title": "National Folk Festival — Circus and Street Performers",
+    "country": "Australia",
+    "city": "Canberra",
+    "region": "Oceania",
+    "family": "circus",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-19",
+    "deadlineLabel": {
+      "fr": "L’appel 2027 vient de fermer. Artistes internationaux de cirque et de rue acceptés; minimum professionnel de 250 AUD par jour pendant trois jours, mais voyage et hébergement doivent généralement être inclus dans le cachet demandé.",
+      "en": "The 2027 call has just closed. International circus and street artists were accepted; the professional minimum was AUD 250 per day for three days, but travel and accommodation generally had to be included in the requested fee.",
+      "ja": "2027年募集は終了直後。海外のサーカス・大道芸アーティストも対象で、プロ最低額は1日250豪ドル×3日。ただし移動・宿泊費は通常、希望出演料に含める必要があります。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://nff.festivalpro.com/form/juvgHuCbLMDHNAVfxmkT/51",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "salieri-circus-award-next-watch",
+    "title": "International Salieri Circus Award — Global Act Competition",
+    "country": "Italy",
+    "city": "Legnago",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La sélection 2026 est terminée: 23 numéros issus d’environ 550 candidatures mondiales, représentant 25 nationalités. Le prochain appel et ses conditions financières ne sont pas encore publiés.",
+      "en": "The 2026 selection is complete: 23 acts from about 550 worldwide applications, representing 25 nationalities. The next call and its financial conditions are not yet published.",
+      "ja": "2026年選考は終了。世界約550件から23演目、25国籍を選出。次回公募と費用条件は未発表です。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.saliericircus.it/index_en.html",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "out-there-supported-residency-open",
+    "title": "Out There Arts — Supported Circus and Outdoor Arts Residency",
+    "country": "United Kingdom",
+    "city": "Great Yarmouth",
+    "region": "Europe",
+    "family": "circus",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Prise de contact directe, sans date fixe publiée. Un nombre limité de résidences soutenues offre l’espace gratuitement ou à coût partagé, souvent en échange d’une représentation ou d’une activité locale; admissibilité internationale à confirmer.",
+      "en": "Direct enquiry with no fixed published deadline. A limited number of supported residencies offer free or part-hire space, often in exchange for a performance or local activity; international eligibility must be confirmed.",
+      "ja": "固定締切のない直接相談型。件数限定で、無料または一部負担の滞在制作を、上演・地域活動等との交換で提供します。海外応募の可否は要確認です。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://outtherearts.org.uk/residencies/",
     "verifiedAt": "2026-07-21"
   }
 ]
