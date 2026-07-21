@@ -72,6 +72,13 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /MASA Festival/);
   assert.match(html, /Gwangju Busking WorldCup/);
   assert.match(html, /AOCA 2027/);
+  assert.match(html, /Festival Internacional Santiago Off/);
+  assert.match(html, /Festival de Circo de Londrina/);
+  assert.match(html, /Jerusalem International Solo Dance Festival/);
+  assert.match(html, /Beirut Choreography Encounters/);
+  assert.match(html, /National Arts Festival Fringe/);
+  assert.match(html, /Irish Aerial Creation Centre/);
+  assert.match(html, /Cirko w\/ Co-production 2028/);
   assert.match(html, /En Piste — Remboursement des dépenses d’entraînement/);
   assert.match(html, /En Piste — Formation individualisée \/ sur mesure/);
   assert.match(html, /En Piste — Mon premier RIDEAU/);
@@ -137,7 +144,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.ok(festivalRadar.length >= 107);
+  assert.ok(festivalRadar.length >= 116);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");
   assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film", "showcase"]));
   assert.ok(new Set(festivalRadar.map((record) => record.region)).size >= 6);
@@ -180,6 +187,15 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "gwangju-busking-worldcup-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "busan-magic-busking-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "aoca-africa-circus-partner-route-2027"));
+  assert.ok(festivalRadar.some((record) => record.id === "santiago-off-international-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "londrina-circus-festival-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "jerusalem-solo-dance-circus-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "beirut-choreography-encounters-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "buffer-fringe-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "south-africa-national-arts-fringe-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "uct-ica-live-art-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "irish-aerial-wild-card-residency-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "cirko-w-coproduction-2028-regional"));
   for (const record of festivalRadar) {
     assert.ok(record.title && record.country && record.city);
     assert.ok(["circus", "street", "fringe", "film", "showcase"].includes(record.family));
