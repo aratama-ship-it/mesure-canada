@@ -46,11 +46,11 @@
     "family": "circus",
     "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-02-05",
     "deadlineLabel": {
-      "fr": "Appel 2026 terminé; surveiller l’édition suivante",
-      "en": "2026 call closed; watch for the next edition",
-      "ja": "2026年募集は終了。次回公募を監視"
+      "fr": "Cycle 2026 terminé. Cirque professionnel basé hors de Corée; cachet net jusqu’à 5 000 000 KRW, indemnité de 30 000 KRW par personne et par jour, trois nuits d’hôtel et un transfert aéroport par équipe. Vols, fret, assurance et visa restent à la charge de l’équipe.",
+      "en": "The 2026 cycle is closed. Professional circus based outside Korea; net fee up to KRW 5,000,000, KRW 30,000 per person per day, three hotel nights, and one airport transfer per team. Airfare, freight, insurance, and visa costs remain with the team.",
+      "ja": "2026年募集は終了。韓国外を拠点とするプロサーカスが対象。出演料は手取り最大500万ウォン、1人1日3万ウォンの日当、3泊の宿泊、1団体1回の空港送迎を提供。航空券・貨物・保険・ビザ費用は団体負担です。"
     },
     "nextCheckDate": "2026-12-15",
     "sourceUrl": "https://www.sfac.or.kr/site/SFAC_ENG/ex/bbs/View.do?bcIdx=137628&cbIdx=1009&pageIndex=1&type=",
@@ -103,11 +103,11 @@
     "family": "street",
     "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-05-31",
     "deadlineLabel": {
-      "fr": "Appel 2026 terminé; surveiller le printemps 2027",
-      "en": "2026 call closed; watch spring 2027",
-      "ja": "2026年募集は終了。2027年春を監視"
+      "fr": "Cycle 2026 terminé. Individus non coréens résidant hors de Corée, ou groupes représentés par une telle personne; théâtre de rue, danse, cirque, marionnette, installation et formes extérieures. Jusqu’à 20 000 000 KRW par œuvre pour cachet, vols, bagages et transport, plus logement, indemnités, accueil aéroport, technique et visa.",
+      "en": "The 2026 cycle is closed. Non-Korean individuals living outside Korea, or groups represented by one; street theatre, dance, circus, puppetry, installation, and outdoor work. Up to KRW 20,000,000 per work for fees, flights, baggage, and transport, plus lodging, per diem, airport pickup, technical, and visa support.",
+      "ja": "2026年募集は終了。韓国籍ではなく韓国外在住の個人、またはその条件を満たす代表者がいる団体が対象。大道芸、ダンス、サーカス、人形劇、インスタレーション等。1作品最大2,000万ウォンに出演料・航空券・手荷物・輸送費を含み、別途宿泊・日当・空港送迎・技術・ビザ支援があります。"
     },
     "nextCheckDate": "2027-04-15",
     "sourceUrl": "https://www.sfac.or.kr/site/SFAC_ENG/ex/bbs/View.do?bcIdx=138223&cbIdx=1009&pageIndex=1&type=",
@@ -120,13 +120,13 @@
     "city": "Aurillac",
     "region": "Europe",
     "family": "street",
-    "participation": "regional_conditions",
+    "participation": "open_access",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-02-15",
     "deadlineLabel": {
-      "fr": "Cycle annuel annoncé du 15 janvier au 15 février",
-      "en": "Annual collective cycle listed as January 15–February 15",
-      "ja": "団体枠は例年1月15日〜2月15日と案内"
+      "fr": "Cycle collectif annuel du 15 janvier au 15 février. Inscription sans sélection artistique pour compagnies professionnelles ou amateurs et toutes disciplines de rue; un lieu et un horaire par jour, sous réserve des autorisations et capacités. Autoproduction: repas, logement, voyage et technique à la charge de la compagnie.",
+      "en": "Annual collective cycle runs January 15–February 15. Registration without artistic selection for professional or amateur companies across street disciplines; one place and time per day, subject to permits and capacity. Self-produced: company pays meals, lodging, travel, and technical costs.",
+      "ja": "団体枠は例年1月15日〜2月15日。プロ／アマ、路上芸術全分野を芸術選考なしで登録し、許可と収容状況に応じて1日1会場・時間を割り当てます。自己制作型で、食事・宿泊・渡航・技術費は団体負担です。"
     },
     "nextCheckDate": "2027-01-15",
     "sourceUrl": "https://www.aurillac.net/festival-aurillac/compagnies-de-passage/",
@@ -1433,11 +1433,11 @@
     "family": "circus",
     "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-03-03",
     "deadlineLabel": {
-      "fr": "La sélection 2026 est terminée: 23 numéros issus d’environ 550 candidatures mondiales, représentant 25 nationalités. Le prochain appel et ses conditions financières ne sont pas encore publiés.",
-      "en": "The 2026 selection is complete: 23 acts from about 550 worldwide applications, representing 25 nationalities. The next call and its financial conditions are not yet published.",
-      "ja": "2026年選考は終了。世界約550件から23演目、25国籍を選出。次回公募と費用条件は未発表です。"
+      "fr": "Cycle 2026 terminé: 23 numéros issus d’environ 550 candidatures mondiales, représentant 25 nationalités. Candidature gratuite; pour les artistes sélectionnés, l’organisation rembourse voyage et prend en charge repas et logement. Prochain règlement à confirmer.",
+      "en": "The 2026 cycle is closed: 23 acts from about 550 worldwide applications, representing 25 nationalities. No application fee; for selected artists, the production reimburses travel and covers board and lodging. Reconfirm in the next rules.",
+      "ja": "2026年募集は終了。世界約550件から23演目、25国籍を選出。応募料はなく、選出者の渡航費は主催者が精算し、食事と宿泊も提供します。次回要項で再確認が必要です。"
     },
     "nextCheckDate": "2027-01-15",
     "sourceUrl": "https://www.saliericircus.it/index_en.html",
@@ -2391,6 +2391,196 @@
     },
     "nextCheckDate": "2026-12-15",
     "sourceUrl": "https://leplongeoir-cirque.fr/actualites/appel-residences-2027",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "pflasterspektakel-linz-2027-upcoming",
+    "title": "Pflasterspektakel Linz — International Street Art Festival",
+    "country": "Austria",
+    "city": "Linz",
+    "region": "Europe",
+    "family": "street",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": "2027-01-15",
+    "deadlineLabel": {
+      "fr": "Cycle annuel annoncé du 15 novembre au 15 janvier pour les artistes de rue du monde entier: clown, jonglage, acrobatie, aérien, feu, marionnette, magie, danse et musique. Hôtel avec petit-déjeuner, indemnité journalière et contribution au voyage; festival au chapeau, sans cachet fixe annoncé.",
+      "en": "Annual cycle is listed as November 15–January 15 for street artists worldwide: clowning, juggling, acrobatics, aerial, fire, puppetry, magic, dance, and music. Hotel with breakfast, per diem, and a travel contribution; hat-money festival with no fixed fee stated.",
+      "ja": "世界の路上芸術家を対象に例年11月15日〜1月15日募集。クラウン、ジャグリング、アクロバット、空中、火、人形劇、マジック、ダンス、音楽等。朝食付きホテル、日当、渡航補助を提供しますが、投げ銭型で固定出演料は明記されていません。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://pflasterspektakel.at/de/kuenstlerinnen-info/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "chalon-dans-la-rue-off-next-watch",
+    "title": "Chalon dans la rue — Sélection OFF",
+    "country": "France",
+    "city": "Chalon-sur-Saône",
+    "region": "Europe",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-01-08",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé; le dernier appel allait du 1er décembre au 8 janvier. Compagnies françaises et internationales avec une création récente pour l’espace public; sélection d’environ 150 à 180 compagnies et visibilité auprès de plus de 1 000 professionnels. Le OFF est en autoproduction: aucun cachet, voyage ou logement garanti dans les règles publiques.",
+      "en": "The 2026 cycle is closed; the last call ran December 1–January 8. French and international companies with recent work for public space; about 150–180 companies selected and visibility to 1,000+ professionals. The OFF is self-produced: no fee, travel, or lodging guarantee in the public rules.",
+      "ja": "2026年募集は終了。直近は12月1日〜1月8日募集。公共空間向けの近作を持つフランス国内外の団体から約150〜180組を選び、1,000人超の業界関係者に届く機会です。OFFは自己制作型で、公開要項に出演料・渡航・宿泊の保証はありません。"
+    },
+    "nextCheckDate": "2026-12-01",
+    "sourceUrl": "https://www.chalondanslarue.com/fr/nos-activites/le-festival/edition-annuelle-english",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "villa-albertine-performing-street-next-watch",
+    "title": "Villa Albertine — Performing & Street Arts Residency",
+    "country": "United States",
+    "city": "Multiple cities",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-29",
+    "deadlineLabel": {
+      "fr": "Cycle général 2027 terminé. Toutes nationalités et langues; arts de la scène et de la rue admissibles, mais le projet doit être soutenu par un partenaire basé en France. Résidence de recherche d’un à trois mois aux États-Unis avec indemnité journalière, voyages internationaux et intérieurs, logement, assurance et voiture si nécessaire; technique, matériel et espace de travail non inclus.",
+      "en": "The general 2027 cycle is closed. All nationalities and languages; performing and street arts are eligible, but the project needs support from a partner based in France. One- to three-month U.S. research residency with per diem, international and domestic travel, lodging, insurance, and a car if needed; technical, material, and workspace costs are excluded.",
+      "ja": "2027年一般枠は募集終了。国籍・言語不問で舞台芸術・路上芸術も対象ですが、フランス国内のパートナーによる支援が必要です。米国で1〜3か月の調査滞在を行い、日当、国際・米国内移動、宿泊、保険、必要時の車両を提供。技術・材料・制作場所は対象外です。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://villa-albertine.org/va/professionals/general-call-for-applications-2027-residencies/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "directors-in-tya-2027-open",
+    "title": "DIRECTORS IN TYA 2027 — International Exchange",
+    "country": "Germany",
+    "city": "Cologne",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-09-01",
+    "deadlineLabel": {
+      "fr": "1er septembre 2026. Échange du 23 au 30 mai 2027 pour les personnes actives dans la mise en scène et les arts de la scène pour jeunes publics. Lettre de recommandation et contact d’un centre ou réseau ASSITEJ requis; l’appel est mondial. Voyage normalement payé par la personne ou son réseau, avec un fonds d’aide très limité sur demande; autres prises en charge 2027 non précisées.",
+      "en": "September 1, 2026. May 23–30, 2027 exchange for people active in directing and performing arts for young audiences. A recommendation letter and ASSITEJ centre or network contact are required; the call is worldwide. Travel is normally paid by the participant or network, with a very limited support budget on request; other 2027 coverage is not stated.",
+      "ja": "2026年9月1日締切。2027年5月23〜30日、子ども・若者向け舞台芸術の演出等に携わる人の国際交流。推薦状とASSITEJ国内センター／ネットワークの連絡先が必要です。世界公募ですが、渡航費は原則本人またはネットワーク負担で、申請できる補助枠はごく限定的。2027年のその他負担条件は未記載です。"
+    },
+    "nextCheckDate": "2026-09-02",
+    "sourceUrl": "https://jungespublikum.de/en/events/directors-in-tya-2027/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "saison-visiting-fellows-next-watch",
+    "title": "Saison Artist in Residence — Visiting Fellows",
+    "country": "Japan",
+    "city": "Tokyo",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-03",
+    "deadlineLabel": {
+      "fr": "Cycle 2026–2027 terminé. Un artiste international et deux responsables artistiques internationaux en arts de la scène contemporains sont accueillis pour une recherche au Japon. Soutien total maximal de 500 000 JPY: billet aller-retour en économie et/ou 5 000 JPY par jour de vie et/ou jusqu’à 5 000 JPY par jour de recherche; ce n’est pas une résidence de production.",
+      "en": "The 2026–27 cycle is closed. One international artist and two international arts managers in contemporary performing arts are hosted for research in Japan. Total support capped at JPY 500,000: an economy round trip and/or JPY 5,000 daily living costs and/or up to JPY 5,000 daily research costs; this is not a production residency.",
+      "ja": "2026〜27年枠は募集終了。現代舞台芸術の国外アーティスト1名と国外アーツマネージャー2名が、日本の舞台芸術を調査します。支援総額は最大50万円で、エコノミー往復航空券、1日5,000円の生活費、1日最大5,000円の調査活動費の全部または一部。制作滞在ではありません。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://www.saison.or.jp/en/topics/open-call-saison-artist-in-residence-visiting-fellows-2026.html",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "kinosaki-performing-arts-air-next-watch",
+    "title": "Kinosaki International Arts Center — Artist-in-Residence",
+    "country": "Japan",
+    "city": "Toyooka",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2026-06-27",
+    "deadlineLabel": {
+      "fr": "Cycle 2027–2028 terminé. Individus ou groupes en arts de la scène, de sept jours à trois mois: salles et studios gratuits, résidence jusqu’à sept chambres et soutien de l’équipe. La page anglaise ne fixe pas de nationalité, mais confirmer l’accès depuis le Québec. Voyage jusqu’à Kinosaki, personnel et 350 JPY par personne et par jour de charges restent à payer.",
+      "en": "The 2027–28 cycle is closed. Performing-arts individuals or groups, seven days to three months: free halls and studios, residence with up to seven rooms, and staff support. The English page states no nationality restriction, but confirm Quebec access. Travel to Kinosaki, personnel, and JPY 350 utilities per person per day remain payable.",
+      "ja": "2027〜28年枠は募集終了。舞台芸術の個人・団体が7日〜3か月滞在し、ホール・スタジオ無料、最大7室の宿泊施設、スタッフ支援を利用できます。英語ページに国籍制限はありませんが、ケベックからの応募可否は確認推奨。城崎までの移動、人件費、1人1日350円の光熱費は自己負担です。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://kiac.jp/en/article/3918/",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "tokas-international-performance-art-next-watch",
+    "title": "TOKAS — International Creator Residency: Performance Art",
+    "country": "Japan",
+    "city": "Tokyo",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-16",
+    "deadlineLabel": {
+      "fr": "Cycle 2027 terminé. Six créateurs internationaux pour trois mois; la performance est admissible dans la catégorie arts visuels, mais pas le cirque ou théâtre général. Logement, studio partagé, vol aller-retour en économie, 4 200 JPY par jour et 300 000 JPY de projet avant impôt; retenue japonaise de 20,42 % sur les paiements.",
+      "en": "The 2027 cycle is closed. Six international creators for three months; performance is eligible within visual arts, but not general circus or theatre. Lodging, shared studio, economy round-trip flight, JPY 4,200 per day, and JPY 300,000 project fee before tax; Japanese withholding of 20.42% applies to payments.",
+      "ja": "2027年枠は募集終了。国外クリエーター6名が3か月滞在。ビジュアルアーツ内のパフォーマンスは対象ですが、一般的なサーカス／演劇公募ではありません。宿泊、共有スタジオ、エコノミー往復航空券、1日4,200円、制作費30万円（税引前）を提供し、支給金には20.42％の源泉徴収があります。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://www.tokyoartsandspace.jp/en/archive/application/2026/20260430-317.html",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "goyang-street-arts-global-next-watch",
+    "title": "Goyang Street Arts Festival — GSAF Global",
+    "country": "South Korea",
+    "city": "Goyang",
+    "region": "Asia",
+    "family": "street",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-20",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Individus non coréens résidant hors de Corée, ou groupes représentés par une telle personne; cirque, théâtre, mime, comédie, marionnette et autres arts de rue. Cachet total jusqu’à 10 000 000 KRW, trois nuits de logement, indemnités, accueil aéroport, technique, communication et visa; vols et fret non couverts.",
+      "en": "The 2026 cycle is closed. Non-Korean individuals living outside Korea, or groups represented by one; circus, theatre, mime, comedy, puppetry, and other street arts. Total fee up to KRW 10,000,000, three hotel nights, per diem, airport pickup, technical, PR, and visa support; airfare and freight are excluded.",
+      "ja": "2026年募集は終了。韓国籍ではなく韓国外在住の個人、またはその条件を満たす代表者がいる団体が対象。サーカス、演劇、マイム、コメディ、人形劇等。出演料総額最大1,000万ウォン、最大3泊、日当、空港送迎、技術・広報・ビザ支援を提供し、航空券・貨物費は対象外です。"
+    },
+    "nextCheckDate": "2027-03-15",
+    "sourceUrl": "https://www.artgy.or.kr/CU/CU0101M.aspx?boardid=cs_notice&code=3052&depth=a&mode=V",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "newcastle-puppetry-festival-next-watch",
+    "title": "Newcastle Puppetry Festival — Worldwide Artist Call",
+    "country": "United Kingdom",
+    "city": "Newcastle upon Tyne",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-05-24",
+    "deadlineLabel": {
+      "fr": "Appel 2027 terminé. Artistes du monde entier en marionnette, théâtre d’objets, stop motion, art cinétique et automates; scènes intérieures, spectacles extérieurs et déambulatoires, cabaret, ateliers et expérimentations. Tous les artistes sélectionnés sont payés, avec voyage, repas et logement, mais le budget de voyage hors Europe est limité: prévoir une aide de mobilité complémentaire.",
+      "en": "The 2027 call is closed. Worldwide artists in puppetry, object theatre, stop motion, kinetic art, and automata; indoor, outdoor and walkabout shows, cabaret, workshops, and experiments. All selected artists are paid with travel, food, and lodging covered, but non-European travel budgets are limited: plan complementary mobility funding.",
+      "ja": "2027年募集は終了。世界の人形劇、オブジェクトシアター、ストップモーション、キネティックアート、オートマタを対象に、屋内・屋外・練り歩き、キャバレー、講座、実験作を募集。選出者には出演料・渡航・食事・宿泊を提供しますが、欧州外からの渡航予算は限られるため追加の移動助成を推奨しています。"
+    },
+    "nextCheckDate": "2027-03-15",
+    "sourceUrl": "https://www.unima.org.uk/p/artist-opportunity-spotlight",
+    "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "immagina-rome-puppetry-next-watch",
+    "title": "IMMAGINA Rome — International Puppetry & Figure Theatre",
+    "country": "Italy",
+    "city": "Rome",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-20",
+    "deadlineLabel": {
+      "fr": "L’appel 2027 vient de fermer. Compagnies et artistes du monde entier utilisant principalement marionnette, ombre, objet, figure animée ou forme hybride, pour tous âges et lieux intérieurs, non théâtraux ou extérieurs. Cachet et logement avec petit-déjeuner pour l’équipe en scène; voyage, repas et traduction à la charge de la compagnie.",
+      "en": "The 2027 call has just closed. Companies and artists worldwide using puppetry, shadow, object, animated figure, or hybrid forms as the main language, for all ages and indoor, non-theatre, or outdoor venues. Fee and bed-and-breakfast lodging for the performing team; company pays travel, meals, and translation.",
+      "ja": "2027年募集は終了直後。世界の団体・アーティストから、人形、影、オブジェクト、可動フィギュア、複合形式を主言語とする全年齢向け作品を募集し、劇場内外・非劇場空間も対象。出演料と出演チームの朝食付き宿泊を提供し、渡航・食事・翻訳費は団体負担です。"
+    },
+    "nextCheckDate": "2027-06-01",
+    "sourceUrl": "https://www.immaginafestivalroma.it/",
     "verifiedAt": "2026-07-21"
   }
 ]
