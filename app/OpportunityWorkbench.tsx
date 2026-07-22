@@ -214,7 +214,13 @@ const fundingPageSize = 3;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
 const languageStorageKey = "mesure-canada-language";
 const languageChangeEvent = "mesure-canada-language-change";
+const savedCandidatesStorageKey = "mesure-canada-saved-candidates-v1";
+const savedCandidatesChangeEvent = "mesure-canada-saved-candidates-change";
+const savedCandidateLimit = 3;
 let inMemoryLanguage: Language = "fr";
+const emptySavedCandidateIds: readonly string[] = [];
+let inMemorySavedCandidateIds: readonly string[] = emptySavedCandidateIds;
+let lastSavedCandidateStorageValue: string | null = null;
 
 function isLanguage(value: string | null): value is Language {
   return value === "fr" || value === "en" || value === "ja";
@@ -265,6 +271,66 @@ function usePersistentLanguage() {
   };
 
   return [language, setLanguage] as const;
+}
+
+function parseSavedCandidateIds(value: string | null): readonly string[] {
+  if (!value) return emptySavedCandidateIds;
+  try {
+    const parsed = JSON.parse(value);
+    if (!Array.isArray(parsed)) return emptySavedCandidateIds;
+    return [...new Set(parsed.filter((item): item is string => typeof item === "string"))].slice(0, savedCandidateLimit);
+  } catch {
+    return emptySavedCandidateIds;
+  }
+}
+
+function subscribeToSavedCandidates(callback: () => void) {
+  window.addEventListener("storage", callback);
+  window.addEventListener(savedCandidatesChangeEvent, callback);
+  return () => {
+    window.removeEventListener("storage", callback);
+    window.removeEventListener(savedCandidatesChangeEvent, callback);
+  };
+}
+
+function getSavedCandidateIdsSnapshot(): readonly string[] {
+  try {
+    const storedValue = window.localStorage.getItem(savedCandidatesStorageKey);
+    if (storedValue !== lastSavedCandidateStorageValue) {
+      inMemorySavedCandidateIds = parseSavedCandidateIds(storedValue);
+      lastSavedCandidateStorageValue = storedValue;
+    }
+  } catch {
+    // Keep the in-memory shortlist when browser storage is unavailable.
+  }
+  return inMemorySavedCandidateIds;
+}
+
+function getServerSavedCandidateIdsSnapshot(): readonly string[] {
+  return emptySavedCandidateIds;
+}
+
+function useSavedCandidateIds() {
+  const savedCandidateIds = useSyncExternalStore<readonly string[]>(
+    subscribeToSavedCandidates,
+    getSavedCandidateIdsSnapshot,
+    getServerSavedCandidateIdsSnapshot,
+  );
+
+  const setSavedCandidateIds = (nextCandidateIds: readonly string[]) => {
+    const normalizedIds = parseSavedCandidateIds(JSON.stringify(nextCandidateIds));
+    const storedValue = JSON.stringify(normalizedIds);
+    inMemorySavedCandidateIds = normalizedIds;
+    lastSavedCandidateStorageValue = storedValue;
+    try {
+      window.localStorage.setItem(savedCandidatesStorageKey, storedValue);
+    } catch {
+      // The shortlist still works for the current page when storage is unavailable.
+    }
+    window.dispatchEvent(new Event(savedCandidatesChangeEvent));
+  };
+
+  return [savedCandidateIds, setSavedCandidateIds] as const;
 }
 
 const copy = {
@@ -364,6 +430,31 @@ const copy = {
       reset: "Réinitialiser les filtres",
     },
     selectPrompt: { heading: "Choisissez un appel pour ouvrir sa fiche", body: "La réalité de l’accès, les coûts à votre charge, le soutien de l’organisateur et les aides reliées apparaîtront ici." },
+    candidateCard: { caution: "Point décisif", pending: "Les coûts et conditions d’accueil n’ont pas encore été examinés en détail." },
+    shortlist: {
+      heading: "Candidatures à garder",
+      count: (count: number) => `${count} / ${savedCandidateLimit}`,
+      empty: "Enregistrez jusqu’à trois appels pour les comparer sans créer de compte.",
+      save: "Garder",
+      saved: "Gardé",
+      remove: "Retirer",
+      limit: "Trois appels maximum. Retirez-en un pour en garder un autre.",
+      compare: "Comparer les candidatures gardées",
+      fields: { deadline: "Échéance", access: "Accès", applicantCost: "Coûts à votre charge", organizerSupport: "Soutien de l’organisateur", funding: "Aides reliées", action: "Fiche" },
+      fundingPending: "Aucune aide directement reliée pour l’instant",
+      practicalReviewPending: "Conditions pratiques à vérifier",
+      open: "Ouvrir la fiche",
+    },
+    actionChecklist: {
+      heading: "Prochaines actions",
+      intro: "Cochez au fur et à mesure. Cette liste reste uniquement dans cette page.",
+      fit: "Confirmer que le projet et l’équipe satisfont les conditions d’accès",
+      organizer: "Demander par écrit les conditions manquantes à l’organisateur",
+      costs: "Chiffrer le reste à charge et l’avance de trésorerie",
+      funding: "Vérifier les aides reliées et leurs échéances",
+      apply: "Fixer une échéance personnelle et préparer la candidature",
+      official: "Ouvrir l’appel officiel",
+    },
     showMoreCalls: (count: number, remaining: number) => `Voir ${count} pistes de plus · ${remaining} restantes`,
     showMoreFunding: (count: number, remaining: number) => `Voir ${count} aides de plus · ${remaining} restantes`,
     radar: {
@@ -542,6 +633,31 @@ const copy = {
       reset: "Reset filters",
     },
     selectPrompt: { heading: "Choose a call to open its practical brief", body: "Application access, costs you carry, organizer support, and any linked funding will appear here." },
+    candidateCard: { caution: "Deciding factor", pending: "Costs and hosting conditions have not yet been reviewed in detail." },
+    shortlist: {
+      heading: "Saved candidates",
+      count: (count: number) => `${count} / ${savedCandidateLimit}`,
+      empty: "Save up to three calls and compare them without creating an account.",
+      save: "Save",
+      saved: "Saved",
+      remove: "Remove",
+      limit: "Three-call limit reached. Remove one before saving another.",
+      compare: "Compare saved candidates",
+      fields: { deadline: "Deadline", access: "Access", applicantCost: "Your costs", organizerSupport: "Organizer support", funding: "Linked funding", action: "Brief" },
+      fundingPending: "No directly linked funding yet",
+      practicalReviewPending: "Practical terms still need review",
+      open: "Open brief",
+    },
+    actionChecklist: {
+      heading: "Next actions",
+      intro: "Check these off as you go. This checklist stays only on the current page.",
+      fit: "Confirm that the project and team meet the access conditions",
+      organizer: "Ask the organizer for missing terms in writing",
+      costs: "Estimate your uncovered costs and cash-flow needs",
+      funding: "Check linked funding and its deadlines",
+      apply: "Set an internal deadline and prepare the application",
+      official: "Open the official call",
+    },
     showMoreCalls: (count: number, remaining: number) => `Show ${count} more · ${remaining} remaining`,
     showMoreFunding: (count: number, remaining: number) => `Show ${count} more funding programs · ${remaining} remaining`,
     radar: {
@@ -700,6 +816,31 @@ const copy = {
       reset: "絞り込みを解除",
     },
     selectPrompt: { heading: "公募を選ぶと、現実性チェックを表示します", body: "応募可能性、自己負担、主催者支援、直接関連する助成候補をここで確認できます。" },
+    candidateCard: { caution: "最大の注意点", pending: "費用・受入条件はまだ詳細確認できていません。" },
+    shortlist: {
+      heading: "候補に保存",
+      count: (count: number) => `${count} / ${savedCandidateLimit}`,
+      empty: "ログインなしで最大3件を保存し、比較できます。",
+      save: "保存する",
+      saved: "保存済み",
+      remove: "外す",
+      limit: "保存できるのは3件までです。別の案件を保存するには1件外してください。",
+      compare: "保存した候補を比較する",
+      fields: { deadline: "締切", access: "応募可能性", applicantCost: "自己負担", organizerSupport: "主催者支援", funding: "助成候補", action: "詳細" },
+      fundingPending: "直接対応する助成候補はまだありません",
+      practicalReviewPending: "実務条件は要確認",
+      open: "詳細を見る",
+    },
+    actionChecklist: {
+      heading: "次にやること",
+      intro: "進んだ項目をチェックできます。チェック状態はこのページ内だけで使います。",
+      fit: "作品・チームが応募条件を満たすか確認する",
+      organizer: "不足している受入条件を主催者へ書面で確認する",
+      costs: "自己負担額と立替資金を見積もる",
+      funding: "関連助成とその締切を確認する",
+      apply: "自分用の締切を決めて応募準備を始める",
+      official: "公式公募を開く",
+    },
     showMoreCalls: (count: number, remaining: number) => `続きを${count}件見る（残り${remaining}件）`,
     showMoreFunding: (count: number, remaining: number) => `助成・支援制度をさらに${count}件見る（残り${remaining}件）`,
     radar: {
@@ -906,6 +1047,47 @@ function compareCandidateDeadlines(left: CandidateRoute, right: CandidateRoute) 
   return leftDeadline.localeCompare(rightDeadline) || candidateTitle(left).localeCompare(candidateTitle(right));
 }
 
+function candidateFromId(candidateId: string): CandidateRoute | undefined {
+  if (candidateId.startsWith("call:")) {
+    const opportunity = opportunities.find((record) => `call:${record.id}` === candidateId);
+    if (!opportunity) return undefined;
+    return {
+      candidateId,
+      source: "call",
+      status: normalizedStatus(opportunity) as CandidateStatus,
+      opportunity,
+    };
+  }
+  if (candidateId.startsWith("radar:")) {
+    const radar = festivalRadar.find((record) => `radar:${record.id}` === candidateId);
+    if (!radar || radar.linkedOpportunityId) return undefined;
+    const status = normalizedRadarStatus(radar);
+    if (status === "watch") return undefined;
+    return { candidateId, source: "radar", status, radar };
+  }
+  return undefined;
+}
+
+function candidateDeadlineLabel(candidate: CandidateRoute, language: Language) {
+  return candidate.source === "call" ? candidate.opportunity.deadlineLabel[language] : candidate.radar.deadlineLabel[language];
+}
+
+function candidatePlace(candidate: CandidateRoute, language: Language) {
+  const city = candidate.source === "call" ? candidate.opportunity.city : candidate.radar.city;
+  const country = candidate.source === "call" ? candidate.opportunity.country : candidate.radar.country;
+  return `${placeNames[language][city] ?? city} · ${placeNames[language][country] ?? country}`;
+}
+
+function candidateOfficialUrl(candidate: CandidateRoute) {
+  return candidate.source === "call" ? candidate.opportunity.sourceUrl : candidate.radar.sourceUrl;
+}
+
+function candidateFundingIds(candidate: CandidateRoute) {
+  if (candidate.source === "call") return candidate.opportunity.fundingMatches.map((match) => match.fundingId);
+  if (candidate.radar.fundingReview?.status !== "suggested") return [];
+  return candidate.radar.fundingReview.fundingMatches.map((match) => match.fundingId);
+}
+
 function radarMatchesDiscipline(record: FestivalRadar, discipline: Discipline) {
   return discipline === "all" || radarFamilyDisciplines[record.family].includes(discipline);
 }
@@ -930,6 +1112,7 @@ function radarSearchTagsOf(record: FestivalRadar) {
 
 export function OpportunityWorkbench() {
   const [language, setLanguage] = usePersistentLanguage();
+  const [savedCandidateIds, setSavedCandidateIds] = useSavedCandidateIds();
   const [profile, setProfile] = useState<Profile>("artist");
   const [residence, setResidence] = useState<Residence>("montreal");
   const [discipline, setDiscipline] = useState<Discipline>("all");
@@ -1019,8 +1202,15 @@ export function OpportunityWorkbench() {
     });
   }, [allCandidateRoutes, candidateParticipationFilter, candidateRegionFilter, candidateSort, candidateStatusFilter, candidateSupportFilter]);
 
-  const selectedCandidate = candidateRoutes.find((candidate) => candidate.candidateId === selectedCandidateId);
+  const selectedCandidate = candidateRoutes.find((candidate) => candidate.candidateId === selectedCandidateId) ?? candidateFromId(selectedCandidateId);
   const selectedOpportunity = selectedCandidate?.source === "call" ? selectedCandidate.opportunity : undefined;
+  const savedCandidates = useMemo(
+    () => savedCandidateIds.flatMap((candidateId) => {
+      const candidate = candidateFromId(candidateId);
+      return candidate ? [candidate] : [];
+    }),
+    [savedCandidateIds],
+  );
   const visibleCandidateRoutes = candidateRoutes.slice(0, visibleCandidateCount);
   const remainingCandidateCount = Math.max(0, candidateRoutes.length - visibleCandidateRoutes.length);
   const nextCandidateBatchSize = Math.min(candidatePageSize, remainingCandidateCount);
@@ -1033,6 +1223,15 @@ export function OpportunityWorkbench() {
     setCandidateSupportFilter("all");
     setCandidateSort("deadline");
     setVisibleCandidateCount(candidatePageSize);
+  };
+
+  const toggleSavedCandidate = (candidateId: string) => {
+    if (savedCandidateIds.includes(candidateId)) {
+      setSavedCandidateIds(savedCandidateIds.filter((savedId) => savedId !== candidateId));
+      return;
+    }
+    if (savedCandidateIds.length >= savedCandidateLimit) return;
+    setSavedCandidateIds([...savedCandidateIds, candidateId]);
   };
 
   const selectCandidate = (candidateId: string) => {
@@ -1172,6 +1371,59 @@ export function OpportunityWorkbench() {
     </div>
   );
 
+  const renderCandidateEntry = (candidate: CandidateRoute) => {
+    const saved = savedCandidateIds.includes(candidate.candidateId);
+    const saveDisabled = !saved && savedCandidateIds.length >= savedCandidateLimit;
+    const guide = candidateDecisionGuide(candidate);
+    const statusLabel = candidate.source === "call" ? t.status[candidate.status] : t.radar.status[candidate.status];
+    const urgent = candidate.source === "call" ? isUrgent(candidate.opportunity) : isUrgentDeadline(candidate.radar.deadlineDate);
+
+    return (
+      <article className="opportunity-entry" key={candidate.candidateId}>
+        <button
+          className={`opportunity-row ${candidate.source === "radar" ? "radar-candidate" : ""}`}
+          type="button"
+          data-candidate-kind={candidate.source}
+          data-radar-candidate-id={candidate.source === "radar" ? candidate.radar.id : undefined}
+          aria-current={selectedCandidate?.candidateId === candidate.candidateId}
+          onClick={() => selectCandidate(candidate.candidateId)}
+        >
+          <span className="row-topline"><span className={`status-tag ${candidate.status}`}>{statusLabel}</span><span className={`deadline ${urgent ? "urgent" : ""}`}>{candidateDeadlineLabel(candidate, language)}</span></span>
+          <h4>{candidateTitle(candidate)}</h4>
+          <p className="row-meta">{candidatePlace(candidate, language)}</p>
+          <span className={`practicality-tag row-practicality ${guide?.quebecAssessment.state ?? "verify"}`}>{guide ? t.practicality[guide.quebecAssessment.state] : t.shortlist.practicalReviewPending}</span>
+          <p className="candidate-caution"><span>{t.candidateCard.caution}</span>{guide?.quebecAssessment.note[language] ?? t.candidateCard.pending}</p>
+        </button>
+        <button
+          className="candidate-save"
+          type="button"
+          aria-pressed={saved}
+          aria-label={`${saved ? t.shortlist.remove : t.shortlist.save}: ${candidateTitle(candidate)}`}
+          disabled={saveDisabled}
+          title={saveDisabled ? t.shortlist.limit : undefined}
+          onClick={() => toggleSavedCandidate(candidate.candidateId)}
+        ><span aria-hidden="true">{saved ? "★" : "☆"}</span>{saved ? t.shortlist.saved : t.shortlist.save}</button>
+      </article>
+    );
+  };
+
+  const renderActionChecklist = (candidate: CandidateRoute) => {
+    const actions = [
+      t.actionChecklist.fit,
+      t.actionChecklist.organizer,
+      t.actionChecklist.costs,
+      t.actionChecklist.funding,
+      t.actionChecklist.apply,
+    ];
+    return (
+      <aside className="action-checklist" key={candidate.candidateId} aria-labelledby={`action-heading-${candidate.candidateId}`}>
+        <div><span className="section-kicker">ACTION</span><h5 id={`action-heading-${candidate.candidateId}`}>{t.actionChecklist.heading}</h5><p>{t.actionChecklist.intro}</p></div>
+        <ol>{actions.map((action, index) => <li key={action}><label><input type="checkbox" /><span><b>{String(index + 1).padStart(2, "0")}</b>{action}</span></label></li>)}</ol>
+        <a className="action-official-link" href={candidateOfficialUrl(candidate)} target="_blank" rel="noreferrer">{t.actionChecklist.official} ↗</a>
+      </aside>
+    );
+  };
+
   return (
     <main className="site-shell">
       <header className="masthead">
@@ -1255,15 +1507,33 @@ export function OpportunityWorkbench() {
             <label><span>{t.candidateFilters.sortLabel}</span><select value={candidateSort} onChange={(event) => { setCandidateSort(event.target.value as CandidateSort); setVisibleCandidateCount(candidatePageSize); }}>{candidateSortOptions.map((item) => <option key={item} value={item}>{t.candidateFilters.sort[item]}</option>)}</select></label>
             {candidateFiltersActive ? <button type="button" onClick={resetCandidateFilters}>{t.candidateFilters.reset}</button> : null}
           </div>
+          <section className="candidate-shortlist" aria-labelledby="candidate-shortlist-heading">
+            <div className="shortlist-heading"><div><span className="section-kicker">SHORTLIST</span><h4 id="candidate-shortlist-heading">{t.shortlist.heading}</h4></div><strong>{t.shortlist.count(savedCandidates.length)}</strong></div>
+            {savedCandidates.length ? <>
+              <div className="saved-candidate-strip">
+                {savedCandidates.map((candidate) => <article key={candidate.candidateId}><button type="button" onClick={() => selectCandidate(candidate.candidateId)}><span>{candidateTitle(candidate)}</span><small>{candidateDeadlineLabel(candidate, language)}</small></button><button type="button" aria-label={`${t.shortlist.remove}: ${candidateTitle(candidate)}`} onClick={() => toggleSavedCandidate(candidate.candidateId)}>×</button></article>)}
+              </div>
+              <details className="candidate-comparison">
+                <summary>{t.shortlist.compare}</summary>
+                <div className="comparison-scroll">
+                  <table>
+                    <thead><tr><th scope="col" aria-label={t.shortlist.compare}></th>{savedCandidates.map((candidate) => <th scope="col" key={candidate.candidateId}>{candidateTitle(candidate)}</th>)}</tr></thead>
+                    <tbody>
+                      <tr><th scope="row">{t.shortlist.fields.deadline}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDeadlineLabel(candidate, language)}</td>)}</tr>
+                      <tr><th scope="row">{t.shortlist.fields.access}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDecisionGuide(candidate)?.access[language] ?? t.shortlist.practicalReviewPending}</td>)}</tr>
+                      <tr><th scope="row">{t.shortlist.fields.applicantCost}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDecisionGuide(candidate)?.applicantCost[language] ?? t.shortlist.practicalReviewPending}</td>)}</tr>
+                      <tr><th scope="row">{t.shortlist.fields.organizerSupport}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDecisionGuide(candidate)?.organizerSupport[language] ?? t.shortlist.practicalReviewPending}</td>)}</tr>
+                      <tr><th scope="row">{t.shortlist.fields.funding}</th>{savedCandidates.map((candidate) => { const names = candidateFundingIds(candidate).flatMap((fundingId) => { const funding = fundingPrograms.find((program) => program.id === fundingId); return funding ? [funding.name] : []; }); return <td key={candidate.candidateId}>{names.length ? <ul>{names.map((name) => <li key={name}>{name}</li>)}</ul> : t.shortlist.fundingPending}</td>; })}</tr>
+                      <tr><th scope="row">{t.shortlist.fields.action}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}><button type="button" onClick={() => selectCandidate(candidate.candidateId)}>{t.shortlist.open}</button><a href={candidateOfficialUrl(candidate)} target="_blank" rel="noreferrer">{t.actionChecklist.official} ↗</a></td>)}</tr>
+                    </tbody>
+                  </table>
+                </div>
+              </details>
+            </> : <p className="shortlist-empty">{t.shortlist.empty}</p>}
+            {savedCandidateIds.length >= savedCandidateLimit ? <p className="shortlist-limit">{t.shortlist.limit}</p> : null}
+          </section>
           <div className="opportunity-list" id="candidate-opportunity-list">
-            {candidateRoutes.length ? visibleCandidateRoutes.map((candidate) => {
-              if (candidate.source === "radar") {
-                const { radar } = candidate;
-                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => selectCandidate(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p>{radar.decisionGuide ? <span className={`practicality-tag row-practicality ${radar.decisionGuide.quebecAssessment.state}`}>{t.practicality[radar.decisionGuide.quebecAssessment.state]}</span> : null}</button>;
-              }
-              const { opportunity } = candidate;
-              return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => selectCandidate(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p><span className={`practicality-tag row-practicality ${opportunity.decisionGuide.quebecAssessment.state}`}>{t.practicality[opportunity.decisionGuide.quebecAssessment.state]}</span></button>;
-            }) : <p className="no-results">{t.noResults}</p>}
+            {candidateRoutes.length ? visibleCandidateRoutes.map(renderCandidateEntry) : <p className="no-results">{t.noResults}</p>}
             {remainingCandidateCount ? <button className="show-more-opportunities" type="button" aria-controls="candidate-opportunity-list" onClick={() => setVisibleCandidateCount((count) => count + candidatePageSize)}>{t.showMoreCalls(nextCandidateBatchSize, remainingCandidateCount)}</button> : null}
           </div>
         </section>
@@ -1272,16 +1542,18 @@ export function OpportunityWorkbench() {
           <div className="panel-heading"><span className="section-kicker">03</span><h3 id="funding-panel-heading">{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
             <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p>{selectedCandidate.radar.decisionGuide ? renderDecisionGuide(selectedCandidate.radar.decisionGuide) : null}<div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
+            {renderActionChecklist(selectedCandidate)}
             {selectedCandidate.radar.fundingReview ? <>
               <aside className={`radar-funding-notice ${selectedCandidate.radar.fundingReview.status}`}><span className="section-kicker">{t.radar.fundingReviewHeading}</span><strong>{t.radar.fundingReviewStatus[selectedCandidate.radar.fundingReview.status]}</strong><p>{selectedCandidate.radar.fundingReview.note[language]}</p><span className="verified-date">{t.radar.fundingReviewed}: {selectedCandidate.radar.fundingReview.verifiedAt}</span></aside>
               {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <><div className="funding-list" id="radar-funding-list" data-visible-count={visibleRadarMatches.length} data-total-count={radarMatches.length}>{visibleRadarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingRadarMatchCount ? <button className="show-more-funding" type="button" aria-controls="radar-funding-list" onClick={() => revealMoreFunding("radar", radarMatches.length)}>{t.showMoreFunding(nextRadarMatchBatchSize, remainingRadarMatchCount)}</button> : null}</> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
             </> : <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>}
           </> : selectedOpportunity ? <>
             <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p>{renderDecisionGuide(selectedOpportunity.decisionGuide)}<ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
+            {renderActionChecklist(selectedCandidate)}
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
             {matches.length ? <><div className="funding-list" id="direct-funding-list" data-visible-count={visibleMatches.length} data-total-count={matches.length}>{visibleMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingMatchCount ? <button className="show-more-funding" type="button" aria-controls="direct-funding-list" onClick={() => revealMoreFunding("direct", matches.length)}>{t.showMoreFunding(nextMatchBatchSize, remainingMatchCount)}</button> : null}</> : <p className="no-results">{t.noFunding}</p>}
 
-            {regionalPrograms.length ? <details className="regional-programs" open><summary><span>{t.regionalHeading} — {t.residences[residence]}</span><span className="matches-count">{regionalPrograms.length}</span></summary><div className="regional-list" id="regional-funding-list" data-visible-count={visibleRegionalPrograms.length} data-total-count={regionalPrograms.length}>{visibleRegionalPrograms.map(({ funding, assessment }) => renderFundingCard(funding, assessment, t.regionalNote, true))}</div>{remainingRegionalProgramCount ? <button className="show-more-funding" type="button" aria-controls="regional-funding-list" onClick={() => revealMoreFunding("regional", regionalPrograms.length)}>{t.showMoreFunding(nextRegionalProgramBatchSize, remainingRegionalProgramCount)}</button> : null}</details> : null}
+            {regionalPrograms.length ? <details className="regional-programs"><summary><span>{t.regionalHeading} — {t.residences[residence]}</span><span className="matches-count">{regionalPrograms.length}</span></summary><div className="regional-list" id="regional-funding-list" data-visible-count={visibleRegionalPrograms.length} data-total-count={regionalPrograms.length}>{visibleRegionalPrograms.map(({ funding, assessment }) => renderFundingCard(funding, assessment, t.regionalNote, true))}</div>{remainingRegionalProgramCount ? <button className="show-more-funding" type="button" aria-controls="regional-funding-list" onClick={() => revealMoreFunding("regional", regionalPrograms.length)}>{t.showMoreFunding(nextRegionalProgramBatchSize, remainingRegionalProgramCount)}</button> : null}</details> : null}
             <p className="honesty-note">{t.sourceNote}</p>
           </> : <p className="no-results">{t.noResults}</p> : candidateRoutes.length ? <article className="selection-prompt"><strong>{t.selectPrompt.heading}</strong><p>{t.selectPrompt.body}</p></article> : <p className="no-results">{t.noResults}</p>}
         </section>

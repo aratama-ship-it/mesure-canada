@@ -594,16 +594,211 @@ a {
   outline-color: var(--blue);
 }
 
+.candidate-shortlist {
+  margin: -4px 0 18px;
+  padding: 14px;
+  border: 2px solid var(--ink);
+  border-left: 7px solid var(--blue);
+  background: #f1eee4;
+}
+
+.shortlist-heading {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shortlist-heading h4 {
+  margin: 3px 0 0;
+  font-size: 0.98rem;
+  letter-spacing: -0.02em;
+}
+
+.shortlist-heading > strong {
+  padding: 4px 7px;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.68rem;
+}
+
+.shortlist-empty,
+.shortlist-limit {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 0.72rem;
+  line-height: 1.5;
+}
+
+.shortlist-limit {
+  color: #8f251b;
+  font-weight: 760;
+}
+
+.saved-candidate-strip {
+  display: grid;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.saved-candidate-strip article {
+  display: grid;
+  grid-template-columns: 1fr 38px;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+}
+
+.saved-candidate-strip button {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.saved-candidate-strip article > button:first-child {
+  display: grid;
+  gap: 3px;
+  padding: 9px 10px;
+  text-align: left;
+}
+
+.saved-candidate-strip article > button:last-child {
+  border-left: 1px solid var(--ink);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.saved-candidate-strip button:hover,
+.saved-candidate-strip button:focus-visible {
+  background: var(--yellow);
+  outline: 2px solid var(--blue);
+  outline-offset: -3px;
+}
+
+.saved-candidate-strip span {
+  font-size: 0.72rem;
+  font-weight: 820;
+  line-height: 1.3;
+}
+
+.saved-candidate-strip small {
+  color: var(--muted);
+  font-size: 0.6rem;
+}
+
+.candidate-comparison {
+  margin-top: 10px;
+  border-top: 1px solid var(--ink);
+}
+
+.candidate-comparison > summary {
+  padding: 11px 2px 2px;
+  cursor: pointer;
+  font-size: 0.74rem;
+  font-weight: 850;
+}
+
+.candidate-comparison > summary:hover,
+.candidate-comparison > summary:focus-visible {
+  color: var(--blue-dark);
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+.comparison-scroll {
+  overflow-x: auto;
+  margin: 10px -2px 0;
+  padding-bottom: 4px;
+}
+
+.candidate-comparison table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  background: var(--paper-bright);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.candidate-comparison th,
+.candidate-comparison td {
+  min-width: 170px;
+  padding: 9px;
+  border: 1px solid var(--ink);
+  vertical-align: top;
+  text-align: left;
+}
+
+.candidate-comparison thead th {
+  background: var(--blue-dark);
+  color: var(--white);
+  font-size: 0.72rem;
+}
+
+.candidate-comparison thead th:first-child,
+.candidate-comparison tbody th {
+  min-width: 112px;
+  background: #e4dfd1;
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.59rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.candidate-comparison td ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.candidate-comparison td button,
+.candidate-comparison td a {
+  display: block;
+  width: 100%;
+  margin: 0 0 6px;
+  padding: 7px;
+  border: 1px solid var(--ink);
+  background: var(--yellow);
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 820;
+  text-align: center;
+  text-decoration: none;
+}
+
+.candidate-comparison td a {
+  background: transparent;
+}
+
+.candidate-comparison td button:hover,
+.candidate-comparison td button:focus-visible,
+.candidate-comparison td a:hover,
+.candidate-comparison td a:focus-visible {
+  box-shadow: 2px 2px 0 var(--blue);
+  outline: 2px solid var(--ink);
+  outline-offset: 1px;
+}
+
 .opportunity-list {
   display: grid;
   gap: 9px;
 }
 
-.opportunity-row {
+.opportunity-entry {
   position: relative;
-  width: 100%;
-  padding: 14px 14px 13px;
+  display: grid;
+  grid-template-columns: 1fr auto;
   border: 1px solid var(--rule);
+}
+
+.opportunity-row {
+  width: 100%;
+  min-width: 0;
+  padding: 14px 14px 13px;
+  border: 0;
   background: transparent;
   color: var(--ink);
   text-align: left;
@@ -612,15 +807,52 @@ a {
 
 .opportunity-row:hover,
 .opportunity-row:focus-visible {
-  border-color: var(--ink);
   outline: 3px solid var(--yellow);
-  outline-offset: 1px;
+  outline-offset: -4px;
 }
 
-.opportunity-row[aria-current="true"] {
+.opportunity-entry:has(.opportunity-row[aria-current="true"]) {
   border: 2px solid var(--ink);
   background: var(--white);
   box-shadow: 3px 3px 0 var(--blue);
+}
+
+.candidate-save {
+  display: grid;
+  min-width: 74px;
+  place-content: center;
+  gap: 3px;
+  padding: 9px;
+  border: 0;
+  border-left: 1px solid var(--rule);
+  border-radius: 0;
+  background: #eee9dd;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 0.62rem;
+  font-weight: 850;
+}
+
+.candidate-save span {
+  color: var(--blue-dark);
+  font-size: 1rem;
+}
+
+.candidate-save[aria-pressed="true"] {
+  background: var(--yellow);
+}
+
+.candidate-save:hover,
+.candidate-save:focus-visible {
+  background: var(--yellow);
+  outline: 3px solid var(--blue);
+  outline-offset: -4px;
+}
+
+.candidate-save:disabled {
+  background: #e2dfd7;
+  color: #77746d;
+  cursor: not-allowed;
 }
 
 .show-more-opportunities,
@@ -727,6 +959,27 @@ a {
   display: inline-block;
   margin: 9px 0 0;
   padding: 3px 5px;
+}
+
+.candidate-caution {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 9px 0 0;
+  color: #3f3e38;
+  font-size: 0.68rem;
+  line-height: 1.45;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.candidate-caution span {
+  margin-right: 6px;
+  color: #96291f;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.57rem;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .no-results {
@@ -885,6 +1138,104 @@ a {
   color: var(--muted);
   font-size: 0.64rem;
   line-height: 1.45;
+}
+
+.action-checklist {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 22px;
+  padding: 16px;
+  border: 2px solid var(--ink);
+  border-top: 7px solid var(--coral);
+  background: var(--paper-bright);
+}
+
+.action-checklist h5 {
+  margin: 4px 0 3px;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.action-checklist > div p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.action-checklist ol {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  background: var(--rule);
+  list-style: none;
+}
+
+.action-checklist li {
+  background: #f4f0e6;
+}
+
+.action-checklist label {
+  display: block;
+  cursor: pointer;
+}
+
+.action-checklist label > span {
+  display: grid;
+  grid-template-columns: 28px 1fr;
+  gap: 8px;
+  align-items: start;
+  padding: 10px;
+  color: #33322d;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.action-checklist label b {
+  color: var(--blue-dark);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.62rem;
+}
+
+.action-checklist input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.action-checklist input:checked + span {
+  background: #dce9d4;
+  color: #55534c;
+  text-decoration: line-through;
+}
+
+.action-checklist input:focus-visible + span {
+  outline: 3px solid var(--yellow);
+  outline-offset: -4px;
+}
+
+.action-official-link {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 40px;
+  align-items: center;
+  padding: 8px 11px;
+  border: 1px solid var(--ink);
+  background: var(--yellow);
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.action-official-link:hover,
+.action-official-link:focus-visible {
+  box-shadow: 3px 3px 0 var(--blue);
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
 }
 
 .selected-radar-flags {
@@ -1654,6 +2005,24 @@ a {
 
   .candidate-toolbar {
     gap: 8px;
+  }
+
+  .candidate-shortlist {
+    padding: 12px;
+  }
+
+  .candidate-save {
+    min-width: 62px;
+    padding: 7px;
+    font-size: 0.58rem;
+  }
+
+  .candidate-comparison table {
+    min-width: 680px;
+  }
+
+  .action-checklist {
+    padding: 13px;
   }
 
   .funding-list {
