@@ -396,6 +396,17 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "cirque-de-demain-2027").linkedOpportunityId, "cirque-de-demain-2027");
   assert.equal(festivalRadar.find((record) => record.id === "feten-gijon-2027-open").fundingReview.fundingMatches.length, 2);
 
+  const secondFundingBatch = [
+    ["jskd-cankarjeva-puppetry-2026-open", 1],
+    ["imaginarius-2027", 2],
+    ["solostage-krakow-2026-open", 2],
+  ];
+  for (const [id, expectedMatches] of secondFundingBatch) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.fundingReview.status, "suggested", `${id} should expose reviewed leads`);
+    assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
+  }
+
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,
     0,

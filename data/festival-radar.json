@@ -103,7 +103,36 @@
     },
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://www.imaginarius.pt/convocatoria-internacional/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-21",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "L’appel accepte les artistes, collectifs et structures internationaux et prévoit 3 à 5 représentations. Pour les projets hors Europe, Imaginarius offre jusqu’à 1 200 € de déplacement par personne, ainsi que l’hébergement, les repas et 150 € par personne et représentation; le paiement est effectué après le festival. Les aides ci-dessous ne concernent donc que les coûts admissibles non couverts et le besoin de trésorerie doit être anticipé.",
+        "en": "The call accepts international artists, collectives and organizations for three to five performances. For projects from outside Europe, Imaginarius provides up to €1,200 travel support per person, plus lodging, meals and €150 per person per performance; payment is made after the festival. The programs below therefore apply only to eligible uncovered costs, and cash flow must be planned.",
+        "ja": "国外のアーティスト・コレクティブ・団体を対象に3〜5公演を行います。欧州外からは1人最大1,200ユーロの渡航補助、宿泊・食事、1人1公演150ユーロが提供されますが、支払いはフェス終了後です。下記制度は未負担の対象経費だけに用い、立替資金も見込む必要があります。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "La présentation publique hors Québec correspond au volet Circulation. Après sélection, joignez la confirmation écrite d’Imaginarius indiquant les dates et les conditions d’accueil, au moins quatre semaines avant le projet.",
+            "en": "Public presentation outside Quebec aligns with the Circulation component. After selection, apply at least four weeks before the project with written confirmation from Imaginarius stating dates and hosting conditions.",
+            "ja": "ケベック州外での作品上演としてCirculation制度に対応します。採択後、日程と受入条件を記したImaginariusの書面確認を添え、開始4週間以上前までに申請します。"
+          }
+        },
+        {
+          "fundingId": "cca-travel",
+          "state": "conditional",
+          "note": {
+            "fr": "Arts Abroad: Travel admet la présentation d’une œuvre hors Canada sur invitation. Déclarez l’aide au voyage et l’accueil fournis par Imaginarius et ne budgétez que les frais admissibles non couverts.",
+            "en": "Arts Abroad: Travel allows invited presentation of work outside Canada. Declare the travel and hosting support from Imaginarius and budget only eligible uncovered costs.",
+            "ja": "Arts Abroad: Travelは、招待を受けてカナダ国外で作品を上演する活動を対象に含みます。Imaginariusの渡航・受入支援を申告し、未負担の対象経費だけを予算化してください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "seoul-street-arts-watch",
@@ -2820,7 +2849,36 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://ettc.pl/solostage/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "SoloStage prend en charge l’espace, la technique et la promotion et prévoit un cachet modeste lié à la billetterie, mais ni le voyage ni l’hôtel; l’hébergement communautaire n’est pas garanti. Les pistes deviennent pertinentes uniquement après sélection et invitation écrite.",
+        "en": "SoloStage provides the venue, technical support and promotion, with a modest ticket-split fee, but neither travel nor hotel; community hosting is not guaranteed. The leads only become relevant after selection and written invitation.",
+        "ja": "SoloStageは会場・技術・広報と、売上分配による少額の出演料を提供しますが、渡航・ホテルは対象外で、地域住民宅への滞在も保証されません。下記制度は採択と書面による招待の後に検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "verify",
+          "note": {
+            "fr": "Le projet est une présentation d’œuvre hors Québec, mais il faut confirmer que l’ettc constitue un lieu de diffusion reconnu au sens du CALQ. En cas de réponse positive, une confirmation écrite des dates et conditions d’accueil est requise.",
+            "en": "The project is a presentation outside Quebec, but confirm that ettc qualifies as a recognized presenter under CALQ rules. If so, written confirmation of dates and hosting conditions is required.",
+            "ja": "州外での作品上演には当たりますが、ettcがCALQ上の認定主催者・会場に該当するか確認が必要です。該当する場合も、日程と受入条件を記した書面確認が必要です。"
+          }
+        },
+        {
+          "fundingId": "cca-travel",
+          "state": "conditional",
+          "note": {
+            "fr": "La présentation d’une œuvre hors Canada sur invitation fait partie des activités du volet Travel. La demande doit être déposée avant le départ avec l’invitation; l’hébergement et l’indemnité journalière sont limités à cinq jours dans le guide actuel.",
+            "en": "Invited presentation of work outside Canada is an eligible Travel activity. Apply before departure with the invitation; the current guide limits accommodation and per diem to five days.",
+            "ja": "招待を受けたカナダ国外での作品上演はTravel制度の対象活動です。出発前に招待状を添えて申請し、現行ガイドでは宿泊・日当は最大5日までです。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "puppet-fair-sofia-next-watch",
@@ -2953,7 +3011,27 @@
     },
     "nextCheckDate": "2026-07-25",
     "sourceUrl": "https://www.jskd.si/financiranje/poziv_rezidence/2026/razpis_rezidence_2026_eng.htm",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "JSKD fournit gratuitement un appartement meublé et certains espaces, mais aucune bourse ni remboursement de voyage. Le programme impose un atelier, une collaboration locale et une présentation publique. Le volet Déplacement du CALQ n’est pas relié: une résidence n’y est admissible que si l’hôte finance entièrement le séjour et la production, ce qui n’est pas le cas ici.",
+        "en": "JSKD provides a furnished apartment and selected workspaces free of charge, but no stipend or travel reimbursement. The program requires a workshop, local collaboration and a public presentation. CALQ Travel is not linked because a residency qualifies there only when the host fully funds both the stay and production, which is not the case here.",
+        "ja": "JSKDは家具付き住居と一部制作場所を無料提供しますが、給付金・渡航費はありません。ワークショップ、地域協働、公開発表が必須です。CALQの渡航制度は、受入先が滞在費と制作費を全額負担するレジデンスのみ対象のため、この案件には結びません。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-travel",
+          "state": "verify",
+          "note": {
+            "fr": "Après sélection, demandez une invitation précisant collaboration, atelier et présentation publique. Arts Abroad: Travel peut couvrir un déplacement lié à une collaboration artistique ou à une présentation internationale, mais confirmez ce format de résidence avec un agent avant de déposer.",
+            "en": "After selection, obtain an invitation describing the collaboration, workshop and public presentation. Arts Abroad: Travel can support travel for artistic collaboration or international presentation, but confirm this residency format with a program officer before applying.",
+            "ja": "採択後、協働・ワークショップ・公開発表を明記した招待状を取得します。Arts Abroad: Travelは芸術的協働や国際発表に伴う渡航を対象に含みますが、このレジデンス形式が該当するか申請前に担当者へ確認してください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "fmtm-programming-route-2027-open",
