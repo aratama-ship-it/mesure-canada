@@ -57,9 +57,8 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /href="\/radar"/);
   assert.match(html, /Consulter le registre de veille/);
   assert.doesNotMatch(html, /id="festival-radar-heading"/);
-  assert.match(html, /En Piste — Remboursement des dépenses d’entraînement/);
-  assert.match(html, /En Piste — Formation individualisée \/ sur mesure/);
-  assert.match(html, /En Piste — Mon premier RIDEAU/);
+  assert.match(html, /id="regional-funding-list" data-visible-count="3" data-total-count="\d+"/);
+  assert.match(html, /Voir 3 aides de plus/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
 });
@@ -97,9 +96,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const festivalRadar = JSON.parse(festivalRadarText);
   const fundingIds = new Set(funding.map((record) => record.id));
   const fundingById = new Map(funding.map((record) => [record.id, record]));
+  const fundingNames = new Set(funding.map((record) => record.name));
 
   assert.ok(opportunities.length >= 6);
   assert.ok(funding.length >= 21);
+  assert.ok(fundingNames.has("En Piste — Remboursement des dépenses d’entraînement"));
+  assert.ok(fundingNames.has("En Piste — Formation individualisée / sur mesure"));
+  assert.ok(fundingNames.has("En Piste — Mon premier RIDEAU"));
   assert.equal(new Set(opportunities.map((record) => record.id)).size, opportunities.length, "Duplicate opportunity id");
   assert.equal(new Set(funding.map((record) => record.id)).size, funding.length, "Duplicate funding id");
   for (const record of opportunities) {

@@ -134,6 +134,7 @@ type Opportunity = {
 };
 
 type CandidateStatus = "open" | "rolling" | "upcoming";
+type FundingSection = "direct" | "radar" | "regional";
 type CandidateRoute =
   | {
     candidateId: string;
@@ -190,6 +191,7 @@ const opportunities = opportunityData as Opportunity[];
 const fundingPrograms = fundingData as Funding[];
 const festivalRadar = festivalRadarData as FestivalRadar[];
 const candidatePageSize = 8;
+const fundingPageSize = 3;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
 
 const copy = {
@@ -271,6 +273,7 @@ const copy = {
     callsHeading: "Appels pertinents",
     callsCount: "résultats",
     showMoreCalls: (count: number, remaining: number) => `Voir ${count} pistes de plus · ${remaining} restantes`,
+    showMoreFunding: (count: number, remaining: number) => `Voir ${count} aides de plus · ${remaining} restantes`,
     radar: {
       kicker: "Radar international",
       heading: "Festivals et marchés à suivre, sans mélanger les appels fermés aux accès actifs.",
@@ -425,6 +428,7 @@ const copy = {
     callsHeading: "Relevant calls",
     callsCount: "results",
     showMoreCalls: (count: number, remaining: number) => `Show ${count} more · ${remaining} remaining`,
+    showMoreFunding: (count: number, remaining: number) => `Show ${count} more funding programs · ${remaining} remaining`,
     radar: {
       kicker: "International radar",
       heading: "Festivals and markets to follow—without mixing closed cycles into live access.",
@@ -559,6 +563,7 @@ const copy = {
     callsHeading: "該当する公募",
     callsCount: "件",
     showMoreCalls: (count: number, remaining: number) => `続きを${count}件見る（残り${remaining}件）`,
+    showMoreFunding: (count: number, remaining: number) => `助成・支援制度をさらに${count}件見る（残り${remaining}件）`,
     radar: {
       kicker: "国際公募・ショーケース レーダー",
       heading: "終了した募集を「募集中」に見せず、フェスと市場の次の入口を追えるようにする。",
@@ -745,6 +750,10 @@ export function OpportunityWorkbench() {
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
   const [selectedCandidateId, setSelectedCandidateId] = useState(() => opportunities[0] ? `call:${opportunities[0].id}` : "");
   const [visibleCandidateCount, setVisibleCandidateCount] = useState(candidatePageSize);
+  const [fundingPagination, setFundingPagination] = useState<{
+    contextKey: string;
+    counts: Partial<Record<FundingSection, number>>;
+  } | null>(null);
   const t = copy[language];
   const provinceKey = (["montreal", "quebec_city", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
@@ -854,6 +863,48 @@ export function OpportunityWorkbench() {
       .map((funding) => ({ funding, assessment: evaluateFundingEligibility({ funding, baseState: "possible", ...answers }) as Assessment }))
       .sort((a, b) => stateOrder[a.assessment.state] - stateOrder[b.assessment.state] || a.funding.name.localeCompare(b.funding.name));
   }, [answers, discipline, profile, residence, selectedOpportunity]);
+
+  const fundingContextKey = [
+    selectedCandidate?.candidateId ?? "none",
+    profile,
+    residence,
+    discipline,
+    legalStatus,
+    provinceHistory,
+    torontoHistory,
+    collectiveComposition,
+    collectiveSize,
+    organizationRegistration,
+    sinStatus,
+    canadaArrival,
+    ageBand,
+  ].join("|");
+  const visibleFundingCount = (section: FundingSection) => (
+    fundingPagination?.contextKey === fundingContextKey
+      ? fundingPagination.counts[section] ?? fundingPageSize
+      : fundingPageSize
+  );
+  const revealMoreFunding = (section: FundingSection, total: number) => {
+    setFundingPagination((current) => {
+      const counts = current?.contextKey === fundingContextKey ? current.counts : {};
+      return {
+        contextKey: fundingContextKey,
+        counts: {
+          ...counts,
+          [section]: Math.min((counts[section] ?? fundingPageSize) + fundingPageSize, total),
+        },
+      };
+    });
+  };
+  const visibleMatches = matches.slice(0, visibleFundingCount("direct"));
+  const remainingMatchCount = Math.max(0, matches.length - visibleMatches.length);
+  const nextMatchBatchSize = Math.min(fundingPageSize, remainingMatchCount);
+  const visibleRadarMatches = radarMatches.slice(0, visibleFundingCount("radar"));
+  const remainingRadarMatchCount = Math.max(0, radarMatches.length - visibleRadarMatches.length);
+  const nextRadarMatchBatchSize = Math.min(fundingPageSize, remainingRadarMatchCount);
+  const visibleRegionalPrograms = regionalPrograms.slice(0, visibleFundingCount("regional"));
+  const remainingRegionalProgramCount = Math.max(0, regionalPrograms.length - visibleRegionalPrograms.length);
+  const nextRegionalProgramBatchSize = Math.min(fundingPageSize, remainingRegionalProgramCount);
 
   const renderFundingCard = (funding: Funding, assessment: Assessment, note: string, compact = false) => (
     <article className={`funding-match ${assessment.state} ${compact ? "compact" : ""}`} key={funding.id}>
@@ -978,14 +1029,14 @@ export function OpportunityWorkbench() {
             <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
             {selectedCandidate.radar.fundingReview ? <>
               <aside className={`radar-funding-notice ${selectedCandidate.radar.fundingReview.status}`}><span className="section-kicker">{t.radar.fundingReviewHeading}</span><strong>{t.radar.fundingReviewStatus[selectedCandidate.radar.fundingReview.status]}</strong><p>{selectedCandidate.radar.fundingReview.note[language]}</p><span className="verified-date">{t.radar.fundingReviewed}: {selectedCandidate.radar.fundingReview.verifiedAt}</span></aside>
-              {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <div className="funding-list">{radarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
+              {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <><div className="funding-list" id="radar-funding-list" data-visible-count={visibleRadarMatches.length} data-total-count={radarMatches.length}>{visibleRadarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingRadarMatchCount ? <button className="show-more-funding" type="button" aria-controls="radar-funding-list" onClick={() => revealMoreFunding("radar", radarMatches.length)}>{t.showMoreFunding(nextRadarMatchBatchSize, remainingRadarMatchCount)}</button> : null}</> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
             </> : <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>}
           </> : selectedOpportunity ? <>
             <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p><ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
-            {matches.length ? <div className="funding-list">{matches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div> : <p className="no-results">{t.noFunding}</p>}
+            {matches.length ? <><div className="funding-list" id="direct-funding-list" data-visible-count={visibleMatches.length} data-total-count={matches.length}>{visibleMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingMatchCount ? <button className="show-more-funding" type="button" aria-controls="direct-funding-list" onClick={() => revealMoreFunding("direct", matches.length)}>{t.showMoreFunding(nextMatchBatchSize, remainingMatchCount)}</button> : null}</> : <p className="no-results">{t.noFunding}</p>}
 
-            {regionalPrograms.length ? <details className="regional-programs" open><summary><span>{t.regionalHeading} — {t.residences[residence]}</span><span className="matches-count">{regionalPrograms.length}</span></summary><div className="regional-list">{regionalPrograms.map(({ funding, assessment }) => renderFundingCard(funding, assessment, t.regionalNote, true))}</div></details> : null}
+            {regionalPrograms.length ? <details className="regional-programs" open><summary><span>{t.regionalHeading} — {t.residences[residence]}</span><span className="matches-count">{regionalPrograms.length}</span></summary><div className="regional-list" id="regional-funding-list" data-visible-count={visibleRegionalPrograms.length} data-total-count={regionalPrograms.length}>{visibleRegionalPrograms.map(({ funding, assessment }) => renderFundingCard(funding, assessment, t.regionalNote, true))}</div>{remainingRegionalProgramCount ? <button className="show-more-funding" type="button" aria-controls="regional-funding-list" onClick={() => revealMoreFunding("regional", regionalPrograms.length)}>{t.showMoreFunding(nextRegionalProgramBatchSize, remainingRegionalProgramCount)}</button> : null}</details> : null}
             <p className="honesty-note">{t.sourceNote}</p>
           </> : <p className="no-results">{t.noResults}</p> : <p className="no-results">{t.noResults}</p>}
         </section>

@@ -545,7 +545,8 @@ a {
   box-shadow: 3px 3px 0 var(--blue);
 }
 
-.show-more-opportunities {
+.show-more-opportunities,
+.show-more-funding {
   min-height: 44px;
   margin-top: 3px;
   padding: 10px 14px;
@@ -558,11 +559,18 @@ a {
 }
 
 .show-more-opportunities:hover,
-.show-more-opportunities:focus-visible {
+.show-more-opportunities:focus-visible,
+.show-more-funding:hover,
+.show-more-funding:focus-visible {
   background: var(--yellow);
   box-shadow: 3px 3px 0 var(--blue);
   outline: 2px solid var(--ink);
   outline-offset: 2px;
+}
+
+.show-more-funding {
+  width: 100%;
+  margin-top: 10px;
 }
 
 .row-topline {
