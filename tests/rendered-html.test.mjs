@@ -407,6 +407,17 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
   }
 
+  const thirdFundingBatch = new Map([
+    ["contact-ouest-repertoire-2027-28", ["reviewed_no_match", 0]],
+    ["bergen-fringe-2027", ["suggested", 2]],
+    ["cubadupa-2027-open", ["pending_terms", 0]],
+  ]);
+  for (const [id, [expectedStatus, expectedMatches]] of thirdFundingBatch) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.fundingReview.status, expectedStatus, `${id} funding review status`);
+    assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
+  }
+
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,
     0,

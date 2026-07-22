@@ -980,7 +980,17 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://scenesfrancophones.ca/inscriptions/contact-ouest",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-21",
+    "fundingReview": {
+      "status": "reviewed_no_match",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La voie encore ouverte concerne uniquement l’inscription au répertoire d’offres de spectacles 2027–2028. L’appel aux vitrines 2026 est fermé et aucune présentation, invitation de voyage ou condition d’accueil n’est accordée par cette inscription. Une aide à la circulation ne sera reliée qu’après l’obtention d’un contrat ou d’une confirmation de diffusion distincte.",
+        "en": "The route still open is only registration in the 2027–28 performance catalogue. The 2026 showcase call is closed, and catalogue registration does not provide a performance, travel invitation or hosting terms. Circulation funding will only be linked after a separate booking contract or presenter confirmation is obtained.",
+        "ja": "現在開いているのは2027〜28年公演カタログへの登録だけです。2026年ショーケース募集は終了しており、登録だけでは上演、渡航招待、受入条件は発生しません。別途、公演契約または主催者の上演確認を得た段階でCirculation助成を照合します。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "francofete-acadie-2027-28",
@@ -1132,7 +1142,36 @@
     },
     "nextCheckDate": "2026-08-20",
     "sourceUrl": "https://www.bergenfringe.no/opencall2027eng",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-21",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La catégorie International Professionals accepte les productions professionnelles indépendantes et offre un lieu, un soutien technique, de la visibilité et du réseautage. Les conditions financières sont négociées individuellement: les aides ci-dessous ne deviennent actionnables qu’après sélection, invitation écrite et ventilation des coûts couverts par le festival.",
+        "en": "The International Professionals category accepts independent professional productions and provides a venue, technical support, visibility and networking. Financial terms are negotiated individually, so the leads below only become actionable after selection, written invitation and a breakdown of costs covered by the festival.",
+        "ja": "International Professionals枠は独立系のプロ作品を対象とし、会場、技術支援、広報、ネットワーキングを提供します。金銭条件は個別交渉のため、採択、書面招待、フェス側負担費目の確定後に下記制度を検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "La présentation d’une œuvre au festival correspond au volet Circulation hors Québec. Déposez au moins quatre semaines avant le projet avec une confirmation écrite indiquant les dates et les conditions d’accueil négociées.",
+            "en": "Presenting work at the festival aligns with Circulation outside Quebec. Apply at least four weeks before the project with written confirmation stating the dates and negotiated hosting conditions.",
+            "ja": "フェスでの作品上演はCALQの州外作品巡回制度に対応します。開始4週間以上前までに、日程と交渉済みの受入条件を記した書面確認を添えて申請します。"
+          }
+        },
+        {
+          "fundingId": "cca-travel",
+          "state": "conditional",
+          "note": {
+            "fr": "Arts Abroad: Travel admet la présentation d’une œuvre hors Canada sur invitation. Joignez l’invitation et déclarez les dépenses prises en charge par Bergen Fringe afin de ne budgéter que les coûts admissibles non couverts.",
+            "en": "Arts Abroad: Travel allows invited presentation of work outside Canada. Include the invitation and declare expenses covered by Bergen Fringe so only eligible uncovered costs are budgeted.",
+            "ja": "Arts Abroad: Travelは、招待を受けたカナダ国外での作品上演を対象に含みます。招待状を添え、Bergen Fringeの負担費目を申告して、未負担の対象経費だけを予算化してください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "tallinn-fringe-2026-open",
@@ -1761,7 +1800,17 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://www.cubadupa.co.nz/cubadupa-2027-artist-eois-now-open/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-21",
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "L’appel public décrit trois formats et ses priorités 2027, mais ne précise ni l’admissibilité des artistes internationaux, ni le cachet, le voyage, l’hébergement ou les conditions d’accueil. Il faut obtenir une réponse écrite sur ces points avant de candidater depuis le Canada et avant de relier une aide; la page sera revérifiée avant l’échéance.",
+        "en": "The public call describes three application formats and its 2027 priorities, but does not state international eligibility, fees, travel, lodging or hosting terms. Written confirmation is needed before applying from Canada and before funding can be linked; the page will be rechecked before the deadline.",
+        "ja": "公式募集は3つの応募形式と2027年の優先分野を示していますが、国外応募可否、出演料、渡航、宿泊、受入条件を記載していません。カナダから応募し助成を結ぶ前に書面確認が必要で、締切前に公式ページを再確認します。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "sixfest-plovdiv-next-watch",
