@@ -28,7 +28,10 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<title>MESURE — Canada/);
-  assert.match(html, /Avant d’envoyer le dossier/);
+  assert.match(html, /Trouvez où votre travail peut aller ensuite/);
+  assert.match(html, /pistes d’appels au Canada et à l’international/);
+  assert.match(html, /Le financement apparaît ensuite/);
+  assert.doesNotMatch(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Où résidez-vous actuellement/);
   assert.match(html, /À propos des informations/);
   assert.match(html, /Ce site est actuellement en version bêta/);
