@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import fundingData from "../data/funding.json";
 import festivalRadarData from "../data/festival-radar.json";
 import opportunityData from "../data/opportunities.json";
@@ -148,6 +148,11 @@ type Opportunity = {
 };
 
 type CandidateStatus = "open" | "rolling" | "upcoming";
+type CandidateStatusFilter = "all" | "active" | "upcoming";
+type CandidateRegionFilter = "all" | "canada" | "north_america" | "latin_america" | "europe" | "asia" | "oceania" | "africa" | "middle_east" | "global";
+type CandidateParticipationFilter = "all" | "international" | "open_access" | "selection" | "conditions";
+type CandidateSupportFilter = "all" | OpportunityPracticality;
+type CandidateSort = "deadline" | "support" | "title";
 type FundingSection = "direct" | "radar" | "regional";
 type CandidateRoute =
   | {
@@ -207,6 +212,60 @@ const festivalRadar = festivalRadarData as FestivalRadar[];
 const candidatePageSize = 8;
 const fundingPageSize = 3;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
+const languageStorageKey = "mesure-canada-language";
+const languageChangeEvent = "mesure-canada-language-change";
+let inMemoryLanguage: Language = "fr";
+
+function isLanguage(value: string | null): value is Language {
+  return value === "fr" || value === "en" || value === "ja";
+}
+
+function subscribeToLanguage(callback: () => void) {
+  window.addEventListener("storage", callback);
+  window.addEventListener(languageChangeEvent, callback);
+  return () => {
+    window.removeEventListener("storage", callback);
+    window.removeEventListener(languageChangeEvent, callback);
+  };
+}
+
+function getLanguageSnapshot(): Language {
+  try {
+    const savedLanguage = window.localStorage.getItem(languageStorageKey);
+    if (isLanguage(savedLanguage)) return savedLanguage;
+  } catch {
+    // Fall back to memory when browser storage is unavailable.
+  }
+  return inMemoryLanguage;
+}
+
+function getServerLanguageSnapshot(): Language {
+  return "fr";
+}
+
+function usePersistentLanguage() {
+  const language = useSyncExternalStore<Language>(
+    subscribeToLanguage,
+    getLanguageSnapshot,
+    getServerLanguageSnapshot,
+  );
+
+  useEffect(() => {
+    document.documentElement.lang = language === "fr" ? "fr-CA" : language === "en" ? "en-CA" : "ja";
+  }, [language]);
+
+  const setLanguage = (nextLanguage: Language) => {
+    inMemoryLanguage = nextLanguage;
+    try {
+      window.localStorage.setItem(languageStorageKey, nextLanguage);
+    } catch {
+      // Language still changes for the current page when storage is unavailable.
+    }
+    window.dispatchEvent(new Event(languageChangeEvent));
+  };
+
+  return [language, setLanguage] as const;
+}
 
 const copy = {
   fr: {
@@ -290,6 +349,21 @@ const copy = {
     profileNote: "La présélection est volontairement prudente. Une réponse inconnue produit « à confirmer », jamais une admissibilité positive.",
     callsHeading: "Appels pertinents",
     callsCount: "résultats",
+    candidateFilters: {
+      heading: "Affiner les appels",
+      statusLabel: "État",
+      regionLabel: "Région",
+      participationLabel: "Accès",
+      supportLabel: "Prise en charge",
+      sortLabel: "Trier",
+      status: { all: "Tous les états", active: "Ouverts maintenant", upcoming: "À venir" },
+      regions: { all: "Toutes les régions", canada: "Canada", north_america: "Amérique du Nord hors Canada", latin_america: "Amérique latine", europe: "Europe", asia: "Asie", oceania: "Océanie", africa: "Afrique", middle_east: "Moyen-Orient", global: "Mondial / itinérant" },
+      participation: { all: "Tous les accès", international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", conditions: "Conditions locales ou linguistiques" },
+      support: { all: "Tous les niveaux", supported: "Soutien logistique notable", conditional: "Décider après vérification", self_funded: "Budget autonome", verify: "Contacter l’organisateur", not_direct: "Pas une voie directe" },
+      sort: { deadline: "État puis échéance", support: "Soutien le plus fort", title: "Titre A–Z" },
+      reset: "Réinitialiser les filtres",
+    },
+    selectPrompt: { heading: "Choisissez un appel pour ouvrir sa fiche", body: "La réalité de l’accès, les coûts à votre charge, le soutien de l’organisateur et les aides reliées apparaîtront ici." },
     showMoreCalls: (count: number, remaining: number) => `Voir ${count} pistes de plus · ${remaining} restantes`,
     showMoreFunding: (count: number, remaining: number) => `Voir ${count} aides de plus · ${remaining} restantes`,
     radar: {
@@ -453,6 +527,21 @@ const copy = {
     profileNote: "The pre-screen is deliberately conservative. An unknown answer becomes “needs confirmation,” never a positive eligibility result.",
     callsHeading: "Relevant calls",
     callsCount: "results",
+    candidateFilters: {
+      heading: "Narrow the calls",
+      statusLabel: "Status",
+      regionLabel: "Region",
+      participationLabel: "Access route",
+      supportLabel: "Support level",
+      sortLabel: "Sort",
+      status: { all: "All statuses", active: "Open now", upcoming: "Upcoming" },
+      regions: { all: "All regions", canada: "Canada", north_america: "North America outside Canada", latin_america: "Latin America", europe: "Europe", asia: "Asia", oceania: "Oceania", africa: "Africa", middle_east: "Middle East", global: "Global / touring" },
+      participation: { all: "All access routes", international: "International application", open_access: "Open access", selection: "Selection process", conditions: "Regional or language conditions" },
+      support: { all: "All support levels", supported: "Notable logistical support", conditional: "Decide after checking", self_funded: "Self-funded budget", verify: "Contact the organizer", not_direct: "Not a direct route" },
+      sort: { deadline: "Status then deadline", support: "Strongest support", title: "Title A–Z" },
+      reset: "Reset filters",
+    },
+    selectPrompt: { heading: "Choose a call to open its practical brief", body: "Application access, costs you carry, organizer support, and any linked funding will appear here." },
     showMoreCalls: (count: number, remaining: number) => `Show ${count} more · ${remaining} remaining`,
     showMoreFunding: (count: number, remaining: number) => `Show ${count} more funding programs · ${remaining} remaining`,
     radar: {
@@ -596,6 +685,21 @@ const copy = {
     profileNote: "判定は意図的に慎重です。不明な回答は「利用可能」とせず、必ず「要確認」にします。",
     callsHeading: "該当する公募",
     callsCount: "件",
+    candidateFilters: {
+      heading: "公募を絞り込む",
+      statusLabel: "募集状況",
+      regionLabel: "地域",
+      participationLabel: "応募形式",
+      supportLabel: "支援度",
+      sortLabel: "並べ替え",
+      status: { all: "すべての状況", active: "現在募集中", upcoming: "開始予定" },
+      regions: { all: "すべての地域", canada: "カナダ", north_america: "カナダ以外の北米", latin_america: "中南米", europe: "ヨーロッパ", asia: "アジア", oceania: "オセアニア", africa: "アフリカ", middle_east: "中東", global: "世界・巡回型" },
+      participation: { all: "すべての応募形式", international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", conditions: "地域・言語条件あり" },
+      support: { all: "すべての支援度", supported: "支援が厚い", conditional: "条件確認後に判断", self_funded: "自己資金が中心", verify: "主催者への確認が先", not_direct: "直接応募対象外" },
+      sort: { deadline: "募集状況・締切順", support: "支援が厚い順", title: "名称順" },
+      reset: "絞り込みを解除",
+    },
+    selectPrompt: { heading: "公募を選ぶと、現実性チェックを表示します", body: "応募可能性、自己負担、主催者支援、直接関連する助成候補をここで確認できます。" },
     showMoreCalls: (count: number, remaining: number) => `続きを${count}件見る（残り${remaining}件）`,
     showMoreFunding: (count: number, remaining: number) => `助成・支援制度をさらに${count}件見る（残り${remaining}件）`,
     radar: {
@@ -700,6 +804,11 @@ const residenceGroups: Record<"quebec" | "ontario", Residence[]> = {
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
 const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film", "showcase"];
 const radarSearchTagOptions: RadarSearchTag[] = ["all", "regional_festival", "event_performance", "choreographer_development", "residency"];
+const candidateStatusFilterOptions: CandidateStatusFilter[] = ["all", "active", "upcoming"];
+const candidateRegionFilterOptions: CandidateRegionFilter[] = ["all", "canada", "north_america", "latin_america", "europe", "asia", "oceania", "africa", "middle_east", "global"];
+const candidateParticipationFilterOptions: CandidateParticipationFilter[] = ["all", "international", "open_access", "selection", "conditions"];
+const candidateSupportFilterOptions: CandidateSupportFilter[] = ["all", "supported", "conditional", "self_funded", "verify", "not_direct"];
+const candidateSortOptions: CandidateSort[] = ["deadline", "support", "title"];
 const radarFamilyDisciplines: Record<Exclude<RadarFamily, "all">, Exclude<Discipline, "all">[]> = {
   circus: ["circus"],
   street: ["circus", "theatre", "dance", "music"],
@@ -749,6 +858,53 @@ function normalizedRadarStatus(record: FestivalRadar) {
 
 const radarStatusOrder: Record<RadarStatus, number> = { open: 0, upcoming: 1, watch: 2 };
 const candidateStatusOrder: Record<CandidateStatus, number> = { open: 0, rolling: 0, upcoming: 1 };
+const candidateSupportOrder: Record<OpportunityPracticality, number> = { supported: 0, conditional: 1, verify: 2, self_funded: 3, not_direct: 4 };
+const regionByCountry = new Map(festivalRadar.map((record) => [record.country, record.region]));
+
+function candidateTitle(candidate: CandidateRoute) {
+  return candidate.source === "call" ? candidate.opportunity.title : candidate.radar.title;
+}
+
+function candidateDeadline(candidate: CandidateRoute) {
+  return candidate.source === "call" ? candidate.opportunity.deadlineDate : candidate.radar.deadlineDate;
+}
+
+function candidateDecisionGuide(candidate: CandidateRoute) {
+  return candidate.source === "call" ? candidate.opportunity.decisionGuide : candidate.radar.decisionGuide;
+}
+
+function candidateRegion(candidate: CandidateRoute): Exclude<CandidateRegionFilter, "all"> {
+  const country = candidate.source === "call" ? candidate.opportunity.country : candidate.radar.country;
+  if (country === "Canada") return "canada";
+  const region = candidate.source === "radar" ? candidate.radar.region : regionByCountry.get(country);
+  if (region === "North America") return "north_america";
+  if (region === "Latin America") return "latin_america";
+  if (region === "Europe") return "europe";
+  if (region === "Asia") return "asia";
+  if (region === "Oceania") return "oceania";
+  if (region === "Africa") return "africa";
+  if (region === "Middle East") return "middle_east";
+  return "global";
+}
+
+function candidateParticipation(candidate: CandidateRoute): Exclude<CandidateParticipationFilter, "all"> {
+  if (candidate.source === "call") return "selection";
+  if (candidate.radar.participation === "international") return "international";
+  if (candidate.radar.participation === "open_access") return "open_access";
+  if (candidate.radar.participation === "selection") return "selection";
+  return "conditions";
+}
+
+function compareCandidateDeadlines(left: CandidateRoute, right: CandidateRoute) {
+  const statusDifference = candidateStatusOrder[left.status] - candidateStatusOrder[right.status];
+  if (statusDifference) return statusDifference;
+  const leftDeadline = candidateDeadline(left);
+  const rightDeadline = candidateDeadline(right);
+  if (!leftDeadline && !rightDeadline) return candidateTitle(left).localeCompare(candidateTitle(right));
+  if (!leftDeadline) return 1;
+  if (!rightDeadline) return -1;
+  return leftDeadline.localeCompare(rightDeadline) || candidateTitle(left).localeCompare(candidateTitle(right));
+}
 
 function radarMatchesDiscipline(record: FestivalRadar, discipline: Discipline) {
   return discipline === "all" || radarFamilyDisciplines[record.family].includes(discipline);
@@ -773,10 +929,15 @@ function radarSearchTagsOf(record: FestivalRadar) {
 }
 
 export function OpportunityWorkbench() {
-  const [language, setLanguage] = useState<Language>("fr");
+  const [language, setLanguage] = usePersistentLanguage();
   const [profile, setProfile] = useState<Profile>("artist");
   const [residence, setResidence] = useState<Residence>("montreal");
   const [discipline, setDiscipline] = useState<Discipline>("all");
+  const [candidateStatusFilter, setCandidateStatusFilter] = useState<CandidateStatusFilter>("all");
+  const [candidateRegionFilter, setCandidateRegionFilter] = useState<CandidateRegionFilter>("all");
+  const [candidateParticipationFilter, setCandidateParticipationFilter] = useState<CandidateParticipationFilter>("all");
+  const [candidateSupportFilter, setCandidateSupportFilter] = useState<CandidateSupportFilter>("all");
+  const [candidateSort, setCandidateSort] = useState<CandidateSort>("deadline");
   const [legalStatus, setLegalStatus] = useState<LegalStatus>("unsure");
   const [provinceHistory, setProvinceHistory] = useState<ProvinceHistory>("unsure");
   const [torontoHistory, setTorontoHistory] = useState<TorontoHistory>("unsure");
@@ -786,8 +947,9 @@ export function OpportunityWorkbench() {
   const [sinStatus, setSinStatus] = useState<YesNoUnsure>("unsure");
   const [canadaArrival, setCanadaArrival] = useState<CanadaArrival>("unsure");
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
-  const [selectedCandidateId, setSelectedCandidateId] = useState(() => opportunities[0] ? `call:${opportunities[0].id}` : "");
+  const [selectedCandidateId, setSelectedCandidateId] = useState("");
   const [visibleCandidateCount, setVisibleCandidateCount] = useState(candidatePageSize);
+  const fundingPanelRef = useRef<HTMLElement>(null);
   const [fundingPagination, setFundingPagination] = useState<{
     contextKey: string;
     counts: Partial<Record<FundingSection, number>>;
@@ -796,10 +958,6 @@ export function OpportunityWorkbench() {
   const provinceKey = (["montreal", "quebec_city", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
   const showAgeQuestion = profile === "artist" && ["toronto", "gta", "ottawa"].includes(residence);
-
-  useEffect(() => {
-    document.documentElement.lang = language === "fr" ? "fr-CA" : language === "en" ? "en-CA" : "ja";
-  }, [language]);
 
   const filteredOpportunities = useMemo(
     () => opportunities
@@ -829,8 +987,8 @@ export function OpportunityWorkbench() {
     [discipline],
   );
 
-  const candidateRoutes = useMemo(
-    () => [
+  const allCandidateRoutes = useMemo(
+    () => ([
       ...filteredOpportunities.map((opportunity) => ({
         candidateId: `call:${opportunity.id}`,
         source: "call" as const,
@@ -838,28 +996,57 @@ export function OpportunityWorkbench() {
         opportunity,
       })),
       ...activeRadarCandidates,
-    ].sort((left, right) => {
-      const statusDifference = candidateStatusOrder[left.status] - candidateStatusOrder[right.status];
-      if (statusDifference) return statusDifference;
-      const leftDeadline = left.source === "call" ? left.opportunity.deadlineDate : left.radar.deadlineDate;
-      const rightDeadline = right.source === "call" ? right.opportunity.deadlineDate : right.radar.deadlineDate;
-      if (!leftDeadline && !rightDeadline) {
-        const leftTitle = left.source === "call" ? left.opportunity.title : left.radar.title;
-        const rightTitle = right.source === "call" ? right.opportunity.title : right.radar.title;
-        return leftTitle.localeCompare(rightTitle);
-      }
-      if (!leftDeadline) return 1;
-      if (!rightDeadline) return -1;
-      return leftDeadline.localeCompare(rightDeadline);
-    }) as CandidateRoute[],
+    ] as CandidateRoute[]),
     [activeRadarCandidates, filteredOpportunities],
   );
 
-  const selectedCandidate = candidateRoutes.find((candidate) => candidate.candidateId === selectedCandidateId) ?? candidateRoutes[0];
+  const candidateRoutes = useMemo(() => {
+    const filtered = allCandidateRoutes
+      .filter((candidate) => candidateStatusFilter === "all" || (candidateStatusFilter === "active" ? candidate.status !== "upcoming" : candidate.status === "upcoming"))
+      .filter((candidate) => candidateRegionFilter === "all" || candidateRegion(candidate) === candidateRegionFilter)
+      .filter((candidate) => candidateParticipationFilter === "all" || candidateParticipation(candidate) === candidateParticipationFilter)
+      .filter((candidate) => candidateSupportFilter === "all" || candidateDecisionGuide(candidate)?.quebecAssessment.state === candidateSupportFilter);
+
+    return [...filtered].sort((left, right) => {
+      if (candidateSort === "title") return candidateTitle(left).localeCompare(candidateTitle(right));
+      if (candidateSort === "support") {
+        const leftSupport = candidateDecisionGuide(left)?.quebecAssessment.state;
+        const rightSupport = candidateDecisionGuide(right)?.quebecAssessment.state;
+        const supportDifference = (leftSupport ? candidateSupportOrder[leftSupport] : 5) - (rightSupport ? candidateSupportOrder[rightSupport] : 5);
+        if (supportDifference) return supportDifference;
+      }
+      return compareCandidateDeadlines(left, right);
+    });
+  }, [allCandidateRoutes, candidateParticipationFilter, candidateRegionFilter, candidateSort, candidateStatusFilter, candidateSupportFilter]);
+
+  const selectedCandidate = candidateRoutes.find((candidate) => candidate.candidateId === selectedCandidateId);
   const selectedOpportunity = selectedCandidate?.source === "call" ? selectedCandidate.opportunity : undefined;
   const visibleCandidateRoutes = candidateRoutes.slice(0, visibleCandidateCount);
   const remainingCandidateCount = Math.max(0, candidateRoutes.length - visibleCandidateRoutes.length);
   const nextCandidateBatchSize = Math.min(candidatePageSize, remainingCandidateCount);
+  const candidateFiltersActive = candidateStatusFilter !== "all" || candidateRegionFilter !== "all" || candidateParticipationFilter !== "all" || candidateSupportFilter !== "all" || candidateSort !== "deadline";
+
+  const resetCandidateFilters = () => {
+    setCandidateStatusFilter("all");
+    setCandidateRegionFilter("all");
+    setCandidateParticipationFilter("all");
+    setCandidateSupportFilter("all");
+    setCandidateSort("deadline");
+    setVisibleCandidateCount(candidatePageSize);
+  };
+
+  const selectCandidate = (candidateId: string) => {
+    setSelectedCandidateId(candidateId);
+    if (typeof window !== "undefined" && window.matchMedia("(max-width: 760px)").matches) {
+      window.requestAnimationFrame(() => {
+        const panel = fundingPanelRef.current;
+        if (!panel) return;
+        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        panel.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
+        panel.focus({ preventScroll: true });
+      });
+    }
+  };
 
   const answers = useMemo(() => ({
     profile, legalStatus, provinceHistory, torontoHistory, collectiveComposition, collectiveSize,
@@ -1059,22 +1246,30 @@ export function OpportunityWorkbench() {
         </aside>
 
         <section className="panel panel-opportunities">
-          <div className="panel-heading"><span className="section-kicker">02</span><h3>{t.callsHeading}</h3><span className="data-stamp">{candidateRoutes.length} {t.callsCount}</span></div>
+          <div className="panel-heading"><span className="section-kicker">02</span><h3>{t.callsHeading}</h3><span className="data-stamp">{candidateRoutes.length} {t.callsCount}{candidateFiltersActive ? ` / ${allCandidateRoutes.length}` : ""}</span></div>
+          <div className="candidate-toolbar" aria-label={t.candidateFilters.heading}>
+            <label><span>{t.candidateFilters.statusLabel}</span><select value={candidateStatusFilter} onChange={(event) => { setCandidateStatusFilter(event.target.value as CandidateStatusFilter); setVisibleCandidateCount(candidatePageSize); }}>{candidateStatusFilterOptions.map((item) => <option key={item} value={item}>{t.candidateFilters.status[item]}</option>)}</select></label>
+            <label><span>{t.candidateFilters.regionLabel}</span><select value={candidateRegionFilter} onChange={(event) => { setCandidateRegionFilter(event.target.value as CandidateRegionFilter); setVisibleCandidateCount(candidatePageSize); }}>{candidateRegionFilterOptions.map((item) => <option key={item} value={item}>{t.candidateFilters.regions[item]}</option>)}</select></label>
+            <label><span>{t.candidateFilters.participationLabel}</span><select value={candidateParticipationFilter} onChange={(event) => { setCandidateParticipationFilter(event.target.value as CandidateParticipationFilter); setVisibleCandidateCount(candidatePageSize); }}>{candidateParticipationFilterOptions.map((item) => <option key={item} value={item}>{t.candidateFilters.participation[item]}</option>)}</select></label>
+            <label><span>{t.candidateFilters.supportLabel}</span><select value={candidateSupportFilter} onChange={(event) => { setCandidateSupportFilter(event.target.value as CandidateSupportFilter); setVisibleCandidateCount(candidatePageSize); }}>{candidateSupportFilterOptions.map((item) => <option key={item} value={item}>{t.candidateFilters.support[item]}</option>)}</select></label>
+            <label><span>{t.candidateFilters.sortLabel}</span><select value={candidateSort} onChange={(event) => { setCandidateSort(event.target.value as CandidateSort); setVisibleCandidateCount(candidatePageSize); }}>{candidateSortOptions.map((item) => <option key={item} value={item}>{t.candidateFilters.sort[item]}</option>)}</select></label>
+            {candidateFiltersActive ? <button type="button" onClick={resetCandidateFilters}>{t.candidateFilters.reset}</button> : null}
+          </div>
           <div className="opportunity-list" id="candidate-opportunity-list">
             {candidateRoutes.length ? visibleCandidateRoutes.map((candidate) => {
               if (candidate.source === "radar") {
                 const { radar } = candidate;
-                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p>{radar.decisionGuide ? <span className={`practicality-tag row-practicality ${radar.decisionGuide.quebecAssessment.state}`}>{t.practicality[radar.decisionGuide.quebecAssessment.state]}</span> : null}</button>;
+                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => selectCandidate(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p>{radar.decisionGuide ? <span className={`practicality-tag row-practicality ${radar.decisionGuide.quebecAssessment.state}`}>{t.practicality[radar.decisionGuide.quebecAssessment.state]}</span> : null}</button>;
               }
               const { opportunity } = candidate;
-              return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p><span className={`practicality-tag row-practicality ${opportunity.decisionGuide.quebecAssessment.state}`}>{t.practicality[opportunity.decisionGuide.quebecAssessment.state]}</span></button>;
+              return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => selectCandidate(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p><span className={`practicality-tag row-practicality ${opportunity.decisionGuide.quebecAssessment.state}`}>{t.practicality[opportunity.decisionGuide.quebecAssessment.state]}</span></button>;
             }) : <p className="no-results">{t.noResults}</p>}
             {remainingCandidateCount ? <button className="show-more-opportunities" type="button" aria-controls="candidate-opportunity-list" onClick={() => setVisibleCandidateCount((count) => count + candidatePageSize)}>{t.showMoreCalls(nextCandidateBatchSize, remainingCandidateCount)}</button> : null}
           </div>
         </section>
 
-        <section className="panel panel-funding" id="funding-panel">
-          <div className="panel-heading"><span className="section-kicker">03</span><h3>{t.fundingHeading}</h3></div>
+        <section className="panel panel-funding" id="funding-panel" ref={fundingPanelRef} tabIndex={-1} aria-labelledby="funding-panel-heading">
+          <div className="panel-heading"><span className="section-kicker">03</span><h3 id="funding-panel-heading">{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
             <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p>{selectedCandidate.radar.decisionGuide ? renderDecisionGuide(selectedCandidate.radar.decisionGuide) : null}<div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
             {selectedCandidate.radar.fundingReview ? <>
@@ -1088,7 +1283,7 @@ export function OpportunityWorkbench() {
 
             {regionalPrograms.length ? <details className="regional-programs" open><summary><span>{t.regionalHeading} — {t.residences[residence]}</span><span className="matches-count">{regionalPrograms.length}</span></summary><div className="regional-list" id="regional-funding-list" data-visible-count={visibleRegionalPrograms.length} data-total-count={regionalPrograms.length}>{visibleRegionalPrograms.map(({ funding, assessment }) => renderFundingCard(funding, assessment, t.regionalNote, true))}</div>{remainingRegionalProgramCount ? <button className="show-more-funding" type="button" aria-controls="regional-funding-list" onClick={() => revealMoreFunding("regional", regionalPrograms.length)}>{t.showMoreFunding(nextRegionalProgramBatchSize, remainingRegionalProgramCount)}</button> : null}</details> : null}
             <p className="honesty-note">{t.sourceNote}</p>
-          </> : <p className="no-results">{t.noResults}</p> : <p className="no-results">{t.noResults}</p>}
+          </> : <p className="no-results">{t.noResults}</p> : candidateRoutes.length ? <article className="selection-prompt"><strong>{t.selectPrompt.heading}</strong><p>{t.selectPrompt.body}</p></article> : <p className="no-results">{t.noResults}</p>}
         </section>
       </section>
 
@@ -1099,14 +1294,10 @@ export function OpportunityWorkbench() {
 }
 
 export function FestivalRadarLedger() {
-  const [language, setLanguage] = useState<Language>("fr");
+  const [language, setLanguage] = usePersistentLanguage();
   const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
   const [radarSearchTag, setRadarSearchTag] = useState<RadarSearchTag>("all");
   const t = copy[language];
-
-  useEffect(() => {
-    document.documentElement.lang = language === "fr" ? "fr-CA" : language === "en" ? "en-CA" : "ja";
-  }, [language]);
 
   const filteredRadar = useMemo(
     () => festivalRadar
