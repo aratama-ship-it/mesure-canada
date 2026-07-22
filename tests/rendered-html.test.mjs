@@ -51,6 +51,9 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Accès à la candidature/);
   assert.match(html, /Lecture depuis le Québec/);
   assert.match(html, /elle ne mesure ni la probabilité de sélection ni la qualité artistique/);
+  assert.match(html, /Budget autonome à construire/);
+  assert.match(html, /Soutien logistique notable/);
+  assert.match(html, /Pas une voie directe depuis le Québec/);
   assert.match(html, /data-candidate-kind="call"/);
   assert.match(html, /data-candidate-kind="radar"/);
   assert.match(html, /data-radar-candidate-id="idfa-forum-2026"/);
@@ -122,7 +125,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.deadlineLabel.ja);
     assert.ok(record.summary.ja);
     assert.ok(record.requirements.ja.length > 0);
-    assert.ok(["supported", "conditional", "self_funded", "verify"].includes(record.decisionGuide.quebecAssessment.state));
+    assert.ok(["supported", "conditional", "self_funded", "verify", "not_direct"].includes(record.decisionGuide.quebecAssessment.state));
     for (const language of ["fr", "en", "ja"]) {
       assert.ok(record.decisionGuide.access[language], `${record.id}.decisionGuide.access.${language}`);
       assert.ok(record.decisionGuide.applicantCost[language], `${record.id}.decisionGuide.applicantCost.${language}`);
@@ -363,6 +366,15 @@ test("opportunity and funding records preserve evidence fields", async () => {
     if (record.linkedOpportunityId) {
       assert.ok(opportunities.some((opportunity) => opportunity.id === record.linkedOpportunityId), `${record.id}.linkedOpportunityId`);
     }
+    if (record.decisionGuide) {
+      assert.ok(["supported", "conditional", "self_funded", "verify", "not_direct"].includes(record.decisionGuide.quebecAssessment.state));
+      for (const language of ["fr", "en", "ja"]) {
+        assert.ok(record.decisionGuide.access[language], `${record.id}.decisionGuide.access.${language}`);
+        assert.ok(record.decisionGuide.applicantCost[language], `${record.id}.decisionGuide.applicantCost.${language}`);
+        assert.ok(record.decisionGuide.organizerSupport[language], `${record.id}.decisionGuide.organizerSupport.${language}`);
+        assert.ok(record.decisionGuide.quebecAssessment.note[language], `${record.id}.decisionGuide.quebecAssessment.note.${language}`);
+      }
+    }
     if (record.fundingReview) {
       assert.ok(["suggested", "reviewed_no_match", "pending_terms"].includes(record.fundingReview.status));
       assertISODate(record.fundingReview.verifiedAt, `${record.id}.fundingReview.verifiedAt`);
@@ -384,6 +396,29 @@ test("opportunity and funding records preserve evidence fields", async () => {
       }
     }
   }
+
+  const radarDecisionGuideIds = [
+    "idfa-forum-2026",
+    "jskd-cankarjeva-puppetry-2026-open",
+    "fifdh-2027",
+    "feten-gijon-2027-open",
+    "imaginarius-2027",
+    "carthage-theatre-days-2026-open",
+    "circusstad-circunstruction-15",
+    "contact-ouest-repertoire-2027-28",
+    "kyoto-art-center-performing-arts-2027-open",
+    "smethwick-puppetry-2027-open",
+  ];
+  assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
+  for (const id of radarDecisionGuideIds) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.ok(record?.decisionGuide, `${id} must expose a practical decision guide`);
+    assert.equal(record.verifiedAt, "2026-07-22", `${id} decision guide must use the current source audit`);
+  }
+  assert.equal(festivalRadar.find((record) => record.id === "circusstad-circunstruction-15").decisionGuide.quebecAssessment.state, "not_direct");
+  assert.equal(festivalRadar.find((record) => record.id === "imaginarius-2027").decisionGuide.quebecAssessment.state, "supported");
+  assert.equal(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.match(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.applicantCost.ja, /475ユーロ/);
 
   const firstCircusFundingBatch = [
     "cirque-de-demain-2027",

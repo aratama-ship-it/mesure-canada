@@ -740,6 +740,18 @@ a {
   background: #f5cec7;
 }
 
+.practicality-tag.not_direct {
+  border-color: #5f5d56;
+  background: #dfddd6;
+  color: #4d4b45;
+}
+
+.row-practicality {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 9px;
+}
+
 .decision-guide dl {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

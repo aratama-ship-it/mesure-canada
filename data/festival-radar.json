@@ -37,6 +37,31 @@
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://circusstad.nl/open-call/open-call-circunstruction-15/",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Réservé aux artistes de cirque qui vivent ou travaillent aux Pays-Bas, de préférence dans la région de Rotterdam.",
+        "en": "Restricted to circus artists who live or work in the Netherlands, preferably in the Rotterdam area.",
+        "ja": "オランダ在住または同国で活動するサーカスアーティストが対象で、ロッテルダム周辺が優先されます。"
+      },
+      "applicantCost": {
+        "fr": "Les frais personnels hors budgets locaux publiés restent à confirmer avec le programme.",
+        "en": "Personal expenses outside the published local budgets still need confirmation with the program.",
+        "ja": "公表された現地支援以外の個人負担は、プログラムへの確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Budgets de création et de déplacement local prévus pour les personnes admissibles.",
+        "en": "Creation and local travel budgets are available to eligible participants.",
+        "ja": "対象者には制作費と現地移動費の支援があります。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne établie uniquement au Québec ne satisfait pas la condition territoriale publiée; ne préparez pas de dossier sans lien réel de résidence ou de travail aux Pays-Bas.",
+          "en": "Someone based only in Québec does not meet the published territorial rule; do not prepare an application without a genuine residence or work link to the Netherlands.",
+          "ja": "ケベックだけを拠点とする人は公表地域条件を満たしません。オランダでの居住・活動実態がない限り応募準備の対象外です。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "reviewed_no_match",
       "verifiedAt": "2026-07-22",
@@ -104,6 +129,31 @@
     "nextCheckDate": "2026-07-30",
     "sourceUrl": "https://www.imaginarius.pt/convocatoria-internacional/",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes, collectifs et structures internationaux; théâtre, danse, musique, cirque, performance, installation, nouveaux médias et formes pluridisciplinaires liées à l’espace public.",
+        "en": "International artists, collectives, and organizations across theatre, dance, music, circus, performance, installation, new media, and multidisciplinary public-space work.",
+        "ja": "国外の個人・コレクティブ・団体が応募可能。演劇、ダンス、音楽、サーカス、パフォーマンス、インスタレーション等の公共空間作品が対象です。"
+      },
+      "applicantCost": {
+        "fr": "Prévoir l’avance de trésorerie jusqu’au paiement après le festival et tout voyage dépassant 1 200 € par personne hors Europe.",
+        "en": "Plan cash flow until payment after the festival and any non-European travel amount above €1,200 per person.",
+        "ja": "支払いはフェス終了後のため立替資金が必要です。欧州外からの渡航費で1人1,200ユーロを超える分も自己負担です。"
+      },
+      "organizerSupport": {
+        "fr": "Jusqu’à 1 200 € de voyage par personne hors Europe, hébergement, repas et 150 € par personne et représentation pour trois à cinq représentations.",
+        "en": "Up to €1,200 travel per person outside Europe, accommodation, meals, and €150 per person per performance for three to five performances.",
+        "ja": "欧州外から1人最大1,200ユーロの渡航補助、宿泊、食事、3〜5公演について1人1公演150ユーロがあります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Une des voies les plus concrètes depuis le Québec pour les arts de la rue, à condition de pouvoir avancer les coûts et de confirmer par écrit les dépenses couvertes.",
+          "en": "One of the more concrete routes from Québec for street arts, provided the team can front costs and confirms covered expenses in writing.",
+          "ja": "大道芸・公共空間作品ではケベックから比較的進めやすい案件です。ただし立替能力と主催者負担範囲の書面確認が必要です。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "suggested",
       "verifiedAt": "2026-07-22",
@@ -381,7 +431,32 @@
     },
     "nextCheckDate": "2026-07-28",
     "sourceUrl": "https://fifdh.org/en/pro/news/call-for-films-and-projects/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cinéastes et producteur·rices du monde entier; trois voies pour film achevé, campagne d’impact ou documentaire en production développant une campagne d’impact.",
+        "en": "Filmmakers and producers worldwide; three routes cover completed films, impact campaigns, or documentaries in production developing an impact campaign.",
+        "ja": "世界中の映画制作者・プロデューサーが対象。完成作品、インパクト・キャンペーン付き作品、キャンペーン開発中の制作作品という3ルートがあります。"
+      },
+      "applicantCost": {
+        "fr": "La page d’ensemble ne publie ni frais de dépôt, ni voyage, ni séjour; vérifiez les conditions du formulaire correspondant avant l’envoi.",
+        "en": "The overview publishes no submission fee, travel, or accommodation terms; check the selected route’s form before submitting.",
+        "ja": "概要ページには応募料、渡航、宿泊条件の記載がありません。該当ルートの応募フォームで送信前に確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Sélection au festival ou accompagnement Impact; aucune prise en charge financière ou logistique précise n’est publiée dans cette annonce.",
+        "en": "Festival selection or Impact-program support; this announcement publishes no precise financial or logistical coverage.",
+        "ja": "フェス選出またはImpactプログラムでの伴走がありますが、この告知には具体的な金銭・渡航支援が記載されていません。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "L’accès international est confirmé, mais le coût réel et les conditions d’accueil restent insuffisants pour un budget depuis le Québec; ouvrez le formulaire de la voie choisie.",
+          "en": "International access is confirmed, but costs and hosting terms are too incomplete for a Québec-based budget; open the chosen route’s form first.",
+          "ja": "国外応募は確認済みですが、ケベックからの予算を組めるほど費用・受入条件が揃っていません。選ぶルートの応募フォームを先に確認してください。"
+        }
+      }
+    }
   },
   {
     "id": "cairo-film-2026",
@@ -697,7 +772,32 @@
     },
     "nextCheckDate": "2026-07-23",
     "sourceUrl": "https://professionals.idfa.nl/markets/co-producing-co-financing/enter-your-project/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Sociétés de production indépendantes et producteur·rices du monde entier; documentaire créatif ou projet immersif, selon son stade, avec présentation physique à Amsterdam.",
+        "en": "Independent production companies and producers worldwide; creative documentary or immersive projects by stage, with live presentation in Amsterdam.",
+        "ja": "世界各地の独立系制作会社・プロデューサーが対象。制作段階に応じた創造的ドキュメンタリー／没入型作品で、アムステルダムでの対面発表が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Dépôt: 30 € hors TVA, non remboursables. Si sélection: 475 € hors TVA par projet; voyage et séjour ne sont pas précisés sur la page.",
+        "en": "Entry: €30 excluding VAT, non-refundable. If selected: €475 excluding VAT per project; travel and accommodation are not specified on the page.",
+        "ja": "応募料30ユーロ（VAT別、返金不可）。選出後は1企画475ユーロ（VAT別）。渡航・宿泊費の負担はページに明記されていません。"
+      },
+      "organizerSupport": {
+        "fr": "Deux accréditations, présentation, rendez-vous professionnels, catalogue et accès au programme de l’industrie; aucune aide de voyage ou séjour annoncée.",
+        "en": "Two accreditations, presentation, curated meetings, catalogue inclusion, and industry-program access; no travel or accommodation funding is announced.",
+        "ja": "2人分の参加資格、企画発表、個別商談、カタログ掲載、業界プログラム参加が含まれます。渡航・宿泊支援の記載はありません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Route de marché solide pour un projet documentaire prêt à chercher des partenaires, mais chiffrez les frais de sélection, deux personnes à Amsterdam et leur séjour avant de déposer.",
+          "en": "A strong market route for a documentary ready to seek partners, but budget the selection fee and two people’s Amsterdam travel and stay before entry.",
+          "ja": "国際共同製作先を探す段階のドキュメンタリーには有力ですが、応募前に選出料と2人分のアムステルダム渡航・滞在費を見積もる必要があります。"
+        }
+      }
+    }
   },
   {
     "id": "idfa-docs-for-sale-2026",
@@ -1002,7 +1102,32 @@
     },
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://scenesfrancophones.ca/inscriptions/contact-ouest",
-    "verifiedAt": "2026-07-21",
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Inscription au répertoire 2027–2028 pour des offres destinées au marché francophone; contenu verbal grand public à 80 % en français et interaction en français.",
+        "en": "Registration in the 2027–28 catalogue for Francophone-market offerings; public-facing verbal content must be 80% French with interaction in French.",
+        "ja": "フランス語圏市場向けの2027〜28年公演カタログ登録。一般向け作品の言語部分は80％以上がフランス語で、観客対応もフランス語が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Cette inscription ne crée pas de déplacement; les coûts de tournée ne deviennent pertinents qu’après un contrat séparé.",
+        "en": "Catalogue registration creates no travel engagement; touring costs only become relevant after a separate booking.",
+        "ja": "カタログ登録だけでは渡航は発生しません。ツアー費用を考えるのは別途公演契約を得た後です。"
+      },
+      "organizerSupport": {
+        "fr": "Visibilité dans le répertoire seulement; ni vitrine 2026, ni spectacle, ni invitation de voyage ne sont accordés par cette voie.",
+        "en": "Catalogue visibility only; this route provides no 2026 showcase, performance, or travel invitation.",
+        "ja": "支援はカタログ掲載による可視化です。このルートから2026年ショーケース出演、公演、渡航招待は得られません。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Utile comme outil de prospection pour une œuvre francophone, pas comme engagement de diffusion. Ne reliez une aide de tournée qu’après un contrat réel.",
+          "en": "Useful market outreach for Francophone work, not a presenting engagement. Link touring funding only after a real contract.",
+          "ja": "フランス語作品の市場開拓には有用ですが、出演公募そのものではありません。助成金を結びつけるのは実際の契約後です。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "reviewed_no_match",
       "verifiedAt": "2026-07-22",
@@ -2380,6 +2505,31 @@
     "nextCheckDate": "2026-07-29",
     "sourceUrl": "https://drupal.gijon.es/es/feten-1",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Compagnies professionnelles nationales et internationales; cirque, clown, théâtre, danse, marionnettes, magie et formes voisines, surtout pour l’enfance et les familles.",
+        "en": "National and international professional companies; circus, clown, theatre, dance, puppetry, magic, and related forms, mainly for children and families.",
+        "ja": "国内外のプロ団体が対象。サーカス、クラウン、演劇、ダンス、人形劇、マジック等で、主に子ども・家族向け作品です。"
+      },
+      "applicantCost": {
+        "fr": "Le montant proposé doit intégrer voyage, séjour et tous les frais de participation; évitez une offre qui sous-évalue le départ du Québec.",
+        "en": "The proposed amount must include travel, accommodation, and all participation costs; avoid underpricing a Québec departure.",
+        "ja": "提示額に渡航、宿泊、全参加経費を含めます。ケベックからの実費を過小に見積もらないことが重要です。"
+      },
+      "organizerSupport": {
+        "fr": "Contribution globale négociée avec la foire; aucune enveloppe séparée et fixe de voyage ou séjour n’est annoncée.",
+        "en": "A single contribution negotiated with the fair; no separate fixed travel or accommodation envelope is announced.",
+        "ja": "主催者との交渉で参加経費込みの一括額を決めます。固定の渡航・宿泊枠は別途公表されていません。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Voie internationale réelle pour une compagnie professionnelle, à condition de présenter dès le dépôt un prix couvrant honnêtement toute la tournée.",
+          "en": "A real international route for a professional company, provided the submitted price honestly covers the entire trip.",
+          "ja": "プロ団体には現実的な国際ルートですが、応募段階から全渡航経費を含む妥当な金額を提示できることが条件です。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "suggested",
       "verifiedAt": "2026-07-22",
@@ -2429,6 +2579,31 @@
     "sourceUrl": "https://forms.gle/d4Z6KCvERyozKByu9",
     "networkSourceUrl": "https://jtcarthage.tn/",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Productions théâtrales et performances professionnelles du monde entier; surtitrage français et anglais obligatoire.",
+        "en": "Professional theatre productions and performances worldwide; French and English surtitles are required.",
+        "ja": "世界各地のプロ演劇・舞台パフォーマンスが対象で、フランス語・英語字幕が必須です。"
+      },
+      "applicantCost": {
+        "fr": "La compagnie paie le voyage international et le fret des décors; le surtitrage doit aussi être préparé.",
+        "en": "The company pays international travel and freight for scenery; surtitles must also be prepared.",
+        "ja": "団体が国際渡航費と舞台装置輸送費を負担し、字幕制作も準備する必要があります。"
+      },
+      "organizerSupport": {
+        "fr": "Pension complète et transports locaux pour 15 personnes au maximum.",
+        "en": "Full-board accommodation and local transport for up to 15 people.",
+        "ja": "最大15人分の食事付き宿泊と現地移動を主催者が負担します。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Accueil local solide, mais la faisabilité dépend du financement du vol et du fret depuis le Québec ainsi que de la préparation bilingue des surtitres.",
+          "en": "Strong local hosting, but feasibility depends on funding Québec travel and freight and preparing bilingual surtitles.",
+          "ja": "現地受入は手厚い一方、ケベックからの航空・貨物費と二言語字幕を確保できるかが実現性を左右します。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "suggested",
       "verifiedAt": "2026-07-22",
@@ -2477,6 +2652,31 @@
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://www.kac.or.jp/en/news/20260615/",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artiste ou chercheur·euse émergent·e en arts de la scène, capable de travailler en anglais ou japonais et de mener un échange public; aucune restriction de nationalité publiée, mais l’admissibilité depuis le Québec doit être confirmée.",
+        "en": "Emerging performing artist or researcher able to work in English or Japanese and lead public exchange; no nationality restriction is published, but Québec eligibility should be confirmed.",
+        "ja": "英語または日本語で活動し、市民交流を行える舞台芸術の若手アーティスト／研究者が対象。国籍制限は未記載ですがケベックからの応募可否は確認推奨です。"
+      },
+      "applicantCost": {
+        "fr": "Repas, cachet, vie courante, fournitures, assurance et accompagnant·es ne sont pas couverts.",
+        "en": "Food, artist fees, living expenses, supplies, insurance, and accompanying people are not covered.",
+        "ja": "食費、出演料、生活費、制作用品、保険、同行者費用は対象外です。"
+      },
+      "organizerSupport": {
+        "fr": "Jusqu’à trois mois d’hébergement, studio, vol aller-retour économique, 200 000 JPY par production, relations publiques et accompagnement de coordination.",
+        "en": "Up to three months of accommodation, studio, round-trip economy airfare, JPY 200,000 per production, publicity, and coordinator support.",
+        "ja": "最長3か月の宿泊、スタジオ、往復エコノミー航空券、1制作20万円、広報・コーディネーター支援があります。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Soutien substantiel, mais confirmez d’abord l’accès depuis le Québec puis chiffrez trois mois de repas et de vie courante, non couverts.",
+          "en": "Substantial support, but first confirm access from Québec and budget up to three months of uncovered food and living costs.",
+          "ja": "支援は非常に具体的ですが、ケベックからの応募可否を確認し、最長3か月分の食費・生活費を別途見積もってから判断します。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "suggested",
       "verifiedAt": "2026-07-22",
@@ -3157,6 +3357,31 @@
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://www.bctouring.org.uk/puppet",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Trois voies pour marionnette: spectacle prêt pour lieux communautaires, soirée scratch ou commande d’exposition; l’admissibilité hors Royaume-Uni n’est pas publiée.",
+        "en": "Three puppetry routes: community-ready show, scratch night, or exhibition commission; eligibility outside the United Kingdom is not published.",
+        "ja": "地域会場向け完成人形劇、Scratch Night、展示コミッションの3枠。英国外からの応募可否は公表されていません。"
+      },
+      "applicantCost": {
+        "fr": "Cachet, voyage, hébergement et frais de production ne sont pas précisés; ne chiffrez pas le projet sans réponse écrite.",
+        "en": "Fee, travel, accommodation, and production costs are unspecified; do not budget the project without a written answer.",
+        "ja": "出演料、渡航、宿泊、制作費の条件が未記載です。書面回答なしに予算化しないでください。"
+      },
+      "organizerSupport": {
+        "fr": "La page confirme les trois cadres artistiques, mais aucune prise en charge financière ou logistique.",
+        "en": "The page confirms the three artistic formats but no financial or logistical coverage.",
+        "ja": "3つの応募形式は確認できますが、金銭・渡航面の支援は公表されていません。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Contactez l’organisateur avant de déposer pour confirmer l’accès international, le cachet et l’accueil; sans ces réponses, ce n’est pas encore une route budgétable depuis le Québec.",
+          "en": "Contact the organizer before applying to confirm international access, fee, and hosting; without those answers, this is not yet budgetable from Québec.",
+          "ja": "応募前に国外応募可否、出演料、受入条件を主催者へ確認してください。回答がない限りケベックから予算を組める案件ではありません。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "pending_terms",
       "verifiedAt": "2026-07-22",
@@ -3186,6 +3411,31 @@
     "nextCheckDate": "2026-07-24",
     "sourceUrl": "https://www.jskd.si/financiranje/poziv_rezidence/2026/razpis_rezidence_2026_eng.htm",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Marionnette, théâtre physique, site-specific ou théâtre-éducation, avec atelier de huit heures, collaboration locale et présentation; l’admissibilité depuis le Québec doit être confirmée.",
+        "en": "Puppetry, physical, site-specific, or drama-in-education work with an eight-hour workshop, local collaboration, and presentation; Québec eligibility must be confirmed.",
+        "ja": "人形劇、フィジカル、サイトスペシフィック、演劇教育が対象。8時間のワークショップ、地域協働、発表が必要で、ケベックからの応募可否は要確認です。"
+      },
+      "applicantCost": {
+        "fr": "Aucune bourse ni remboursement de voyage; prévoyez transport international, vie courante et autres coûts non fournis.",
+        "en": "No stipend or travel reimbursement; budget international travel, living expenses, and other uncovered costs.",
+        "ja": "給付金・渡航費支援はありません。国際渡航、生活費、その他の未負担費用が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Appartement meublé et certains espaces de travail gratuits pendant la résidence.",
+        "en": "A furnished apartment and selected workspaces are free during the residency.",
+        "ja": "レジデンス期間中の家具付き住居と一部制作場所を無料提供します。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Confirmez d’abord que les personnes établies au Québec sont recevables. Même en cas d’accord, un financement externe du vol et de la vie courante sera nécessaire.",
+          "en": "First confirm that Québec-based applicants are eligible. Even if accepted, external funding for airfare and living costs will be needed.",
+          "ja": "まずケベック在住者が応募対象か確認してください。対象でも航空券と生活費には外部資金が必要です。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "suggested",
       "verifiedAt": "2026-07-22",

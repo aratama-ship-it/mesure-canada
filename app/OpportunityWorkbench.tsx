@@ -110,10 +110,11 @@ type FestivalRadar = {
   networkSourceUrl?: string;
   verifiedAt: string;
   linkedOpportunityId?: string;
+  decisionGuide?: OpportunityDecisionGuide;
   fundingReview?: RadarFundingReview;
 };
 
-type OpportunityPracticality = "supported" | "conditional" | "self_funded" | "verify";
+type OpportunityPracticality = "supported" | "conditional" | "self_funded" | "verify" | "not_direct";
 
 type OpportunityDecisionGuide = {
   access: Localized;
@@ -342,7 +343,7 @@ const copy = {
     officialCall: "Voir l’appel officiel ↗",
     decisionGuideHeading: "Décider avant de budgéter",
     decisionLabels: { access: "Accès à la candidature", applicantCost: "À votre charge", organizerSupport: "Pris en charge par l’organisateur", quebec: "Lecture depuis le Québec" },
-    practicality: { supported: "Soutien logistique notable", conditional: "Décider après vérification", self_funded: "Budget autonome à construire", verify: "Contacter d’abord l’organisateur" },
+    practicality: { supported: "Soutien logistique notable", conditional: "Décider après vérification", self_funded: "Budget autonome à construire", verify: "Contacter d’abord l’organisateur", not_direct: "Pas une voie directe depuis le Québec" },
     decisionGuideNote: "Lecture MESURE fondée sur les conditions publiées; elle ne mesure ni la probabilité de sélection ni la qualité artistique.",
     fundingFor: "Aides directement associées",
     noFunding: "Aucune aide n’est reliée directement à cet appel. Les programmes de votre base restent visibles ci-dessous, sans créer de faux match.",
@@ -505,7 +506,7 @@ const copy = {
     officialCall: "Open official call ↗",
     decisionGuideHeading: "Decide before you budget",
     decisionLabels: { access: "Application access", applicantCost: "Costs you carry", organizerSupport: "Organizer support", quebec: "Québec-based reading" },
-    practicality: { supported: "Notable logistical support", conditional: "Decide after checking", self_funded: "Build a self-funded budget", verify: "Contact the organizer first" },
+    practicality: { supported: "Notable logistical support", conditional: "Decide after checking", self_funded: "Build a self-funded budget", verify: "Contact the organizer first", not_direct: "Not a direct route from Québec" },
     decisionGuideNote: "MESURE reading based on published terms; it does not score selection odds or artistic quality.",
     fundingFor: "Programs linked directly",
     noFunding: "No program is directly linked to this call. Home-base programs remain visible below without creating a false match.",
@@ -648,7 +649,7 @@ const copy = {
     officialCall: "公募の公式情報を確認 ↗",
     decisionGuideHeading: "応募前の現実性チェック",
     decisionLabels: { access: "応募できる可能性", applicantCost: "本人が負担するもの", organizerSupport: "主催者の支援", quebec: "ケベックからの進めやすさ" },
-    practicality: { supported: "条件を満たせば支援が厚い", conditional: "条件確認後に判断", self_funded: "自己資金の設計が先", verify: "まず主催者へ確認" },
+    practicality: { supported: "条件を満たせば支援が厚い", conditional: "条件確認後に判断", self_funded: "自己資金の設計が先", verify: "まず主催者へ確認", not_direct: "ケベックからの直接応募対象外" },
     decisionGuideNote: "公開条件に基づくMESUREの整理です。採択可能性や芸術的評価を点数化するものではありません。",
     fundingFor: "この公募に直接関連する制度",
     noFunding: "この公募へ直接結びつけた制度はありません。誤った対応関係を作らず、居住地で使えるその他の制度を下に分けて表示します。",
@@ -976,6 +977,14 @@ export function OpportunityWorkbench() {
     </article>
   );
 
+  const renderDecisionGuide = (guide: OpportunityDecisionGuide) => (
+    <div className="decision-guide">
+      <div className="decision-guide-heading"><strong>{t.decisionGuideHeading}</strong><span className={`practicality-tag ${guide.quebecAssessment.state}`}>{t.practicality[guide.quebecAssessment.state]}</span></div>
+      <dl><div><dt>{t.decisionLabels.access}</dt><dd>{guide.access[language]}</dd></div><div><dt>{t.decisionLabels.applicantCost}</dt><dd>{guide.applicantCost[language]}</dd></div><div><dt>{t.decisionLabels.organizerSupport}</dt><dd>{guide.organizerSupport[language]}</dd></div><div className="quebec-reading"><dt>{t.decisionLabels.quebec}</dt><dd>{guide.quebecAssessment.note[language]}</dd></div></dl>
+      <p className="decision-guide-note">{t.decisionGuideNote}</p>
+    </div>
+  );
+
   return (
     <main className="site-shell">
       <header className="masthead">
@@ -1055,10 +1064,10 @@ export function OpportunityWorkbench() {
             {candidateRoutes.length ? visibleCandidateRoutes.map((candidate) => {
               if (candidate.source === "radar") {
                 const { radar } = candidate;
-                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p></button>;
+                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p>{radar.decisionGuide ? <span className={`practicality-tag row-practicality ${radar.decisionGuide.quebecAssessment.state}`}>{t.practicality[radar.decisionGuide.quebecAssessment.state]}</span> : null}</button>;
               }
               const { opportunity } = candidate;
-              return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p></button>;
+              return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p><span className={`practicality-tag row-practicality ${opportunity.decisionGuide.quebecAssessment.state}`}>{t.practicality[opportunity.decisionGuide.quebecAssessment.state]}</span></button>;
             }) : <p className="no-results">{t.noResults}</p>}
             {remainingCandidateCount ? <button className="show-more-opportunities" type="button" aria-controls="candidate-opportunity-list" onClick={() => setVisibleCandidateCount((count) => count + candidatePageSize)}>{t.showMoreCalls(nextCandidateBatchSize, remainingCandidateCount)}</button> : null}
           </div>
@@ -1067,13 +1076,13 @@ export function OpportunityWorkbench() {
         <section className="panel panel-funding" id="funding-panel">
           <div className="panel-heading"><span className="section-kicker">03</span><h3>{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
-            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p><div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
+            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p>{selectedCandidate.radar.decisionGuide ? renderDecisionGuide(selectedCandidate.radar.decisionGuide) : null}<div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
             {selectedCandidate.radar.fundingReview ? <>
               <aside className={`radar-funding-notice ${selectedCandidate.radar.fundingReview.status}`}><span className="section-kicker">{t.radar.fundingReviewHeading}</span><strong>{t.radar.fundingReviewStatus[selectedCandidate.radar.fundingReview.status]}</strong><p>{selectedCandidate.radar.fundingReview.note[language]}</p><span className="verified-date">{t.radar.fundingReviewed}: {selectedCandidate.radar.fundingReview.verifiedAt}</span></aside>
               {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <><div className="funding-list" id="radar-funding-list" data-visible-count={visibleRadarMatches.length} data-total-count={radarMatches.length}>{visibleRadarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingRadarMatchCount ? <button className="show-more-funding" type="button" aria-controls="radar-funding-list" onClick={() => revealMoreFunding("radar", radarMatches.length)}>{t.showMoreFunding(nextRadarMatchBatchSize, remainingRadarMatchCount)}</button> : null}</> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
             </> : <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>}
           </> : selectedOpportunity ? <>
-            <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p><div className="decision-guide"><div className="decision-guide-heading"><strong>{t.decisionGuideHeading}</strong><span className={`practicality-tag ${selectedOpportunity.decisionGuide.quebecAssessment.state}`}>{t.practicality[selectedOpportunity.decisionGuide.quebecAssessment.state]}</span></div><dl><div><dt>{t.decisionLabels.access}</dt><dd>{selectedOpportunity.decisionGuide.access[language]}</dd></div><div><dt>{t.decisionLabels.applicantCost}</dt><dd>{selectedOpportunity.decisionGuide.applicantCost[language]}</dd></div><div><dt>{t.decisionLabels.organizerSupport}</dt><dd>{selectedOpportunity.decisionGuide.organizerSupport[language]}</dd></div><div className="quebec-reading"><dt>{t.decisionLabels.quebec}</dt><dd>{selectedOpportunity.decisionGuide.quebecAssessment.note[language]}</dd></div></dl><p className="decision-guide-note">{t.decisionGuideNote}</p></div><ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
+            <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p>{renderDecisionGuide(selectedOpportunity.decisionGuide)}<ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
             {matches.length ? <><div className="funding-list" id="direct-funding-list" data-visible-count={visibleMatches.length} data-total-count={matches.length}>{visibleMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingMatchCount ? <button className="show-more-funding" type="button" aria-controls="direct-funding-list" onClick={() => revealMoreFunding("direct", matches.length)}>{t.showMoreFunding(nextMatchBatchSize, remainingMatchCount)}</button> : null}</> : <p className="no-results">{t.noFunding}</p>}
 
