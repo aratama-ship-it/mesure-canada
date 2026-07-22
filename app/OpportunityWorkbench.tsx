@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import fundingData from "../data/funding.json";
 import festivalRadarData from "../data/festival-radar.json";
@@ -194,6 +195,9 @@ const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyo
 const copy = {
   fr: {
     edition: "Édition Canada · Québec + Ontario",
+    ledgerEdition: "Canada · Registre de veille",
+    radarLink: "Consulter le registre de veille",
+    backToSearch: "Retour à la recherche d’occasions",
     sourceNotice: {
       label: "À propos des informations",
       text: "Les informations sont recueillies et organisées à partir des sources primaires des organisateurs. Elles peuvent différer des informations les plus récentes en raison du délai de mise à jour. Vérifiez toujours les détails sur chaque site officiel.",
@@ -272,6 +276,7 @@ const copy = {
       heading: "Festivals et marchés à suivre, sans mélanger les appels fermés aux accès actifs.",
       intro: "Un registre de sources officielles pour le cirque, les arts de la rue, les fringes, le cinéma et les marchés professionnels. Chaque ligne indique si la voie est active, attendue ou à surveiller.",
       count: "pistes officielles",
+      regions: "régions",
       all: "Tous",
       familyFilter: "Discipline / réseau",
       formatFilter: "Type d’occasion",
@@ -368,6 +373,9 @@ const copy = {
   },
   en: {
     edition: "Canada edition · Québec + Ontario",
+    ledgerEdition: "Canada · Monitoring ledger",
+    radarLink: "Open the monitoring ledger",
+    backToSearch: "Back to opportunity search",
     sourceNotice: {
       label: "About the listings",
       text: "Listings are collected and organized from organizers’ primary sources. Because updates take time, displayed details may differ from the latest information. Always confirm details on each official website.",
@@ -422,6 +430,7 @@ const copy = {
       heading: "Festivals and markets to follow—without mixing closed cycles into live access.",
       intro: "An official-source register for circus, street arts, Fringe, film and professional markets. Each line says whether the route is live, about to open or worth watching.",
       count: "official routes",
+      regions: "regions",
       all: "All",
       familyFilter: "Discipline / network",
       formatFilter: "Opportunity type",
@@ -498,6 +507,9 @@ const copy = {
   },
   ja: {
     edition: "カナダ版 · ケベック州＋オンタリオ州",
+    ledgerEdition: "カナダ版 · 監視台帳",
+    radarLink: "監視台帳を見る",
+    backToSearch: "公募検索へ戻る",
     sourceNotice: {
       label: "掲載情報について",
       text: "掲載情報は、主催者等の一次情報をもとに収集・整理しています。更新のタイミングにより、最新の情報と異なる場合があります。詳細・最新情報は、必ず各公式サイトでご確認ください。",
@@ -552,6 +564,7 @@ const copy = {
       heading: "終了した募集を「募集中」に見せず、フェスと市場の次の入口を追えるようにする。",
       intro: "サーカス、大道芸、フリンジ、映画、プロ向けショーケースを対象に、公式情報だけを記録した監視台帳です。各行は、募集中・開始予定・次回監視のどれかを示します。",
       count: "件の公式ルート",
+      regions: "地域",
       all: "すべて",
       familyFilter: "分野・ネットワーク",
       formatFilter: "募集形式タグ",
@@ -732,8 +745,6 @@ export function OpportunityWorkbench() {
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
   const [selectedCandidateId, setSelectedCandidateId] = useState(() => opportunities[0] ? `call:${opportunities[0].id}` : "");
   const [visibleCandidateCount, setVisibleCandidateCount] = useState(candidatePageSize);
-  const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
-  const [radarSearchTag, setRadarSearchTag] = useState<RadarSearchTag>("all");
   const t = copy[language];
   const provinceKey = (["montreal", "quebec_city", "quebec", "gatineau"] as Residence[]).includes(residence) ? "quebec" : "ontario";
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
@@ -802,20 +813,6 @@ export function OpportunityWorkbench() {
   const visibleCandidateRoutes = candidateRoutes.slice(0, visibleCandidateCount);
   const remainingCandidateCount = Math.max(0, candidateRoutes.length - visibleCandidateRoutes.length);
   const nextCandidateBatchSize = Math.min(candidatePageSize, remainingCandidateCount);
-
-  const filteredRadar = useMemo(
-    () => festivalRadar
-      .filter((record) => radarFamily === "all" || record.family === radarFamily)
-      .filter((record) => radarSearchTag === "all" || radarSearchTagsOf(record).includes(radarSearchTag))
-      .sort((a, b) => {
-        const statusDifference = radarStatusOrder[normalizedRadarStatus(a)] - radarStatusOrder[normalizedRadarStatus(b)];
-        if (statusDifference) return statusDifference;
-        if (!a.deadlineDate) return 1;
-        if (!b.deadlineDate) return -1;
-        return a.deadlineDate.localeCompare(b.deadlineDate);
-      }),
-    [radarFamily, radarSearchTag],
-  );
 
   const answers = useMemo(() => ({
     profile, legalStatus, provinceHistory, torontoHistory, collectiveComposition, collectiveSize,
@@ -994,10 +991,63 @@ export function OpportunityWorkbench() {
         </section>
       </section>
 
+      <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
+      <footer className="footer"><div><strong>{t.footer}</strong><span>{t.footerNote}</span></div><Link className="footer-ledger-link" href="/radar">{t.radarLink} →</Link></footer>
+    </main>
+  );
+}
+
+export function FestivalRadarLedger() {
+  const [language, setLanguage] = useState<Language>("fr");
+  const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
+  const [radarSearchTag, setRadarSearchTag] = useState<RadarSearchTag>("all");
+  const t = copy[language];
+
+  useEffect(() => {
+    document.documentElement.lang = language === "fr" ? "fr-CA" : language === "en" ? "en-CA" : "ja";
+  }, [language]);
+
+  const filteredRadar = useMemo(
+    () => festivalRadar
+      .filter((record) => radarFamily === "all" || record.family === radarFamily)
+      .filter((record) => radarSearchTag === "all" || radarSearchTagsOf(record).includes(radarSearchTag))
+      .sort((a, b) => {
+        const statusDifference = radarStatusOrder[normalizedRadarStatus(a)] - radarStatusOrder[normalizedRadarStatus(b)];
+        if (statusDifference) return statusDifference;
+        if (!a.deadlineDate) return 1;
+        if (!b.deadlineDate) return -1;
+        return a.deadlineDate.localeCompare(b.deadlineDate);
+      }),
+    [radarFamily, radarSearchTag],
+  );
+
+  return (
+    <main className="site-shell radar-page-shell">
+      <header className="masthead">
+        <div className="brandline"><h1 className="brand">MESURE</h1><span className="edition">{t.ledgerEdition}</span></div>
+        <div className="header-actions">
+          <Link className="page-return-link" href="/">← {t.backToSearch}</Link>
+          <div className="language-switch" aria-label={t.languageLabel}>
+            {(["fr", "en", "ja"] as Language[]).map((item) => <button key={item} type="button" aria-pressed={language === item} onClick={() => setLanguage(item)}>{item.toUpperCase()}</button>)}
+          </div>
+        </div>
+      </header>
+
+      <div className="site-notices">
+        <aside className="source-notice" aria-label={t.sourceNotice.label}>
+          <strong>{t.sourceNotice.label}</strong>
+          <span>{t.sourceNotice.text}</span>
+        </aside>
+        <aside className="beta-notice" aria-label={t.betaNotice.label}>
+          <strong>{t.betaNotice.label}</strong>
+          <span>{t.betaNotice.before} <a href={feedbackFormUrl} target="_blank" rel="noreferrer">{t.betaNotice.link}</a>{t.betaNotice.after}</span>
+        </aside>
+      </div>
+
       <section className="festival-radar" aria-labelledby="festival-radar-heading">
         <div className="radar-intro">
-          <div><span className="section-kicker">{t.radar.kicker}</span><h3 id="festival-radar-heading">{t.radar.heading}</h3></div>
-          <div><p>{t.radar.intro}</p><span className="data-stamp">{festivalRadar.length} {t.radar.count} · {new Set(festivalRadar.map((record) => record.region)).size} regions</span></div>
+          <div><span className="section-kicker">{t.radar.kicker}</span><h2 id="festival-radar-heading">{t.radar.heading}</h2></div>
+          <div><p>{t.radar.intro}</p><span className="data-stamp">{festivalRadar.length} {t.radar.count} · {new Set(festivalRadar.map((record) => record.region)).size} {t.radar.regions}</span></div>
         </div>
         <div className="radar-filter-group">
           <span className="radar-filter-label">{t.radar.familyFilter}</span>
@@ -1015,13 +1065,13 @@ export function OpportunityWorkbench() {
             })}
           </div>
         </div>
-        <div className="radar-ledger">
+        <div className="radar-ledger" id="radar-ledger-page">
           {filteredRadar.length ? filteredRadar.map((record) => {
             const status = normalizedRadarStatus(record);
             const searchTags = radarSearchTagsOf(record);
             return <article className="radar-row" key={record.id}>
               <div className="radar-row-topline"><span className={`status-tag radar-${status}`}>{t.radar.status[status]}</span><span className="radar-family">{t.radar.families[record.family]}</span></div>
-              <h4>{record.title}</h4>
+              <h3>{record.title}</h3>
               <p className="row-meta">{placeNames[language][record.city] ?? record.city} · {placeNames[language][record.country] ?? record.country}</p>
               {searchTags.length ? <div className="radar-search-tags">{searchTags.map((tag) => <span key={tag}>{t.radar.searchTags[tag]}</span>)}</div> : null}
               <p className="radar-deadline">{record.deadlineLabel[language]}</p>
@@ -1038,8 +1088,7 @@ export function OpportunityWorkbench() {
         <p className="radar-note">{t.radar.note}</p>
       </section>
 
-      <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
-      <footer className="footer"><strong>{t.footer}</strong><span>{t.footerNote}</span></footer>
+      <footer className="footer"><div><strong>{t.footer}</strong><span>{t.footerNote}</span></div><Link className="footer-ledger-link" href="/">← {t.backToSearch}</Link></footer>
     </main>
   );
 }

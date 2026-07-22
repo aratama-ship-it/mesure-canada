@@ -11,12 +11,12 @@ function assertISODate(value, label) {
   assert.equal(parsed.toISOString().slice(0, 10), value, `${label} must be a real calendar date`);
 }
 
-async function render() {
+async function render(pathname = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
   return worker.fetch(
-    new Request("http://localhost/", { headers: { accept: "text/html" } }),
+    new Request(new URL(pathname, "http://localhost"), { headers: { accept: "text/html" } }),
     { ASSETS: { fetch: async () => new Response("Not found", { status: 404 }) } },
     { waitUntil() {}, passThroughOnException() {} },
   );
@@ -51,107 +51,39 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Voir 8 pistes de plus/);
   assert.match(html, /candidate-opportunity-list/);
   assert.match(html, /Route active du radar/);
-  assert.match(html, /Pistes fondées sur les critères officiels/);
-  assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
-  assert.match(html, /En attente de modalités suffisantes/);
   assert.match(html, /CALQ — Déplacement/);
   assert.match(html, /Canada Council — Micro-grants/);
   assert.match(html, /Votre statut au Canada/);
-  assert.match(html, /Radar international/);
-  assert.match(html, /Type d’occasion/);
-  assert.match(html, /Appels de festivals régionaux/);
-  assert.match(html, /Développement chorégraphique/);
-  assert.match(html, /Résidences \/ création sur place/);
-  assert.match(html, /Imaginarius 2027 — International Open Call/);
-  assert.match(html, /Canadian Association of Fringe Festivals — Touring Lottery/);
-  assert.match(html, /IDFA Forum 2026 — Project Entry/);
-  assert.match(html, /Sundance Film Festival 2027/);
-  assert.match(html, /Contact ontarois 2027/);
-  assert.match(html, /CINARS Biennale 2026 — OFF-CINARS Showcase/);
-  assert.match(html, /MICC — Tour de Piste \/ Pitch Sessions/);
-  assert.match(html, /TOHU — Résidences de recherche et création/);
-  assert.match(html, /DYNAMO — Non-thematic Circus Residency 2027–28/);
-  assert.match(html, /Bergen Fringe Festival 2027/);
-  assert.match(html, /FringeMTL — Main Festival Lottery/);
-  assert.match(html, /OSAC Showcase 2027/);
-  assert.match(html, /Pacific Contact — BC Performing Arts Showcase/);
-  assert.match(html, /National Folk Festival — Circus and Street Performers/);
-  assert.match(html, /Out There Arts — Supported Circus and Outdoor Arts Residency/);
-  assert.match(html, /Guelph Fringe Festival — Artist Lottery/);
-  assert.match(html, /Nogojiwanong Indigenous Fringe Festival/);
-  assert.match(html, /Mostra Igualada 2027/);
-  assert.match(html, /CubaDupa 2027/);
-  assert.match(html, /6Fest Plovdiv/);
-  assert.match(html, /Festival Internacional de Circo do Ceará/);
-  assert.match(html, /World Buskers Festival 2027/);
-  assert.match(html, /Nelson Fringe Festival 2027/);
-  assert.match(html, /MASA Festival/);
-  assert.match(html, /Gwangju Busking WorldCup/);
-  assert.match(html, /AOCA 2027/);
-  assert.match(html, /Festival Internacional Santiago Off/);
-  assert.match(html, /Festival de Circo de Londrina/);
-  assert.match(html, /Jerusalem International Solo Dance Festival/);
-  assert.match(html, /Beirut Choreography Encounters/);
-  assert.match(html, /National Arts Festival Fringe/);
-  assert.match(html, /Irish Aerial Creation Centre/);
-  assert.match(html, /Cirko w\/ Co-production 2028/);
-  assert.match(html, /FETEN Gijón 2027/);
-  assert.match(html, /Journées Théâtrales de Carthage 2026/);
-  assert.match(html, /Kyoto Art Center — Performing Arts Residency 2027/);
-  assert.match(html, /INAF27 — International Norwegian ASSITEJ Festival/);
-  assert.match(html, /Art Explora × Cité internationale des arts/);
-  assert.match(html, /CN D × Cité internationale des arts/);
-  assert.match(html, /FESTILAMBE Valparaíso/);
-  assert.match(html, /Zirkushalle Dornbirn/);
-  assert.match(html, /Le Plongeoir/);
-  assert.match(html, /Pflasterspektakel Linz/);
-  assert.match(html, /Chalon dans la rue/);
-  assert.match(html, /Villa Albertine/);
-  assert.match(html, /DIRECTORS IN TYA 2027/);
-  assert.match(html, /Saison Artist in Residence/);
-  assert.match(html, /Kinosaki International Arts Center/);
-  assert.match(html, /TOKAS/);
-  assert.match(html, /Goyang Street Arts Festival/);
-  assert.match(html, /Newcastle Puppetry Festival/);
-  assert.match(html, /IMMAGINA Rome/);
-  assert.match(html, /AVIAMA — Puppets and Mobility International Grants/);
-  assert.match(html, /Iida Puppet Festival — International Entries/);
-  assert.match(html, /Dance Now Asia/);
-  assert.match(html, /Subotica International Festival/);
-  assert.match(html, /FLUM Mostar/);
-  assert.match(html, /Banja Luka International Festival/);
-  assert.match(html, /Novi Sad Theatre Festival 2027/);
-  assert.match(html, /SoloStage Kraków 2026/);
-  assert.match(html, /PUPPET FAIR Sofia/);
-  assert.match(html, /Bielsko-Biała International Festival/);
-  assert.match(html, /Destinos 2026/);
-  assert.match(html, /UNIMA PASSPORT/);
-  assert.match(html, /FIAMS Saguenay 2027/);
-  assert.match(html, /Smethwick Puppetry Festival 2027/);
-  assert.match(html, /Cankarjeva Residency Centre 2026–27/);
-  assert.match(html, /Charleville FMTM 2027/);
-  assert.match(html, /Pôle International de la Marionnette — Documentary Residency/);
-  assert.match(html, /CALENDURETA 2027/);
-  assert.match(html, /Toyooka Theater Festival — Fringe Selection/);
-  assert.match(html, /AIR Taipei 2027/);
-  assert.match(html, /Lìzé Puppet Art Colony/);
-  assert.match(html, /Pôle International de la Marionnette — Creation Residency/);
-  assert.match(html, /TITIRIMADROÑO/);
-  assert.doesNotMatch(html, /Beverley Puppet Festival/);
-  assert.match(html, /Arab Theatre Festival 17/);
-  assert.match(html, /Practice as Research Residency, Abidjan/);
-  assert.match(html, /PESTA BONEKA #10/);
-  assert.match(html, /Eazees International Women/);
-  assert.match(html, /Cairo International Festival for Experimental Theatre/);
-  assert.match(html, /Physical Theater Festival Chicago/);
-  assert.match(html, /International Puppet Fringe Festival NYC/);
-  assert.match(html, /FITU UNAM/);
-  assert.match(html, /FAOT Álamos/);
+  assert.match(html, /href="\/radar"/);
+  assert.match(html, /Consulter le registre de veille/);
+  assert.doesNotMatch(html, /id="festival-radar-heading"/);
   assert.match(html, /En Piste — Remboursement des dépenses d’entraînement/);
   assert.match(html, /En Piste — Formation individualisée \/ sur mesure/);
   assert.match(html, /En Piste — Mon premier RIDEAU/);
   assert.match(html, />JA<\/button>/);
   assert.doesNotMatch(html, /codex-preview|Building your site|react-loading-skeleton/i);
+});
+
+test("server-renders the monitoring ledger on its own route", async () => {
+  const response = await render("/radar");
+  assert.equal(response.status, 200);
+  const html = await response.text();
+  assert.match(html, /Registre de veille des appels artistiques/);
+  assert.match(html, /id="festival-radar-heading"/);
+  assert.match(html, /Type d’occasion/);
+  assert.match(html, /Appels de festivals régionaux/);
+  assert.match(html, /Résidences \/ création sur place/);
+  assert.match(html, /Canadian Association of Fringe Festivals — Touring Lottery/);
+  assert.match(html, /Contact ontarois 2027/);
+  assert.match(html, /TOHU — Résidences de recherche et création/);
+  assert.match(html, /UNIMA PASSPORT/);
+  assert.match(html, /Practice as Research Residency, Abidjan/);
+  assert.match(html, /Pistes fondées sur les critères officiels/);
+  assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
+  assert.match(html, /En attente de modalités suffisantes/);
+  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 166);
+  assert.match(html, /Retour à la recherche d’occasions/);
+  assert.doesNotMatch(html, /class="workbench"/);
 });
 
 test("opportunity and funding records preserve evidence fields", async () => {

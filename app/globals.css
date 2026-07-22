@@ -124,6 +124,33 @@ a {
   border-right: 0;
 }
 
+.header-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-return-link,
+.footer-ledger-link {
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid var(--ink);
+  background: var(--paper-bright);
+  color: var(--ink);
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.page-return-link:hover,
+.page-return-link:focus-visible,
+.footer-ledger-link:hover,
+.footer-ledger-link:focus-visible {
+  background: var(--yellow);
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
 .language-switch button[aria-pressed="true"] {
   background: var(--ink);
   color: var(--paper-bright);
@@ -1005,6 +1032,10 @@ a {
   box-shadow: 5px 5px 0 var(--blue);
 }
 
+.radar-page-shell .festival-radar {
+  margin-top: 28px;
+}
+
 .radar-intro {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(250px, 0.75fr);
@@ -1012,6 +1043,7 @@ a {
   align-items: end;
 }
 
+.radar-intro h2,
 .radar-intro h3 {
   max-width: 790px;
   margin: 8px 0 0;
@@ -1134,6 +1166,7 @@ a {
   color: var(--blue-dark);
 }
 
+.radar-row h3,
 .radar-row h4 {
   margin: 12px 0 7px;
   font-size: 1rem;
@@ -1253,6 +1286,17 @@ a {
   line-height: 1.5;
 }
 
+.footer > div {
+  display: grid;
+  gap: 3px;
+}
+
+.footer-ledger-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: start;
+}
+
 @media (max-width: 1080px) {
   .workbench {
     grid-template-columns: minmax(220px, 0.65fr) minmax(360px, 1.1fr);
@@ -1284,6 +1328,21 @@ a {
   .masthead {
     grid-template-columns: 1fr auto;
     gap: 8px;
+  }
+
+  .radar-page-shell .masthead {
+    grid-template-columns: 1fr;
+  }
+
+  .radar-page-shell .header-actions {
+    justify-content: space-between;
+  }
+
+  .page-return-link {
+    max-width: 58%;
+    padding: 8px 10px;
+    font-size: 0.7rem;
+    line-height: 1.25;
   }
 
   .brand {
