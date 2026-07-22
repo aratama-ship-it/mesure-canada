@@ -113,8 +113,8 @@
     "verifiedAt": "2026-07-20"
   },
   {
-    "id": "cca-travel",
-    "name": "Canada Council — Arts Abroad: Travel",
+    "id": "cca-microgrants",
+    "name": "Canada Council — Micro-grants",
     "funder": "Canada Council for the Arts",
     "profiles": ["artist", "collective", "organization"],
     "residencies": ["canada"],
@@ -122,16 +122,16 @@
     "purpose": "mobility_export",
     "kind": "grant",
     "deadline": {
-      "fr": "En continu, avant le départ; prévoir normalement environ 2 mois",
-      "en": "Rolling before departure; normally allow about 2 months",
-      "ja": "随時受付。出発前に申請し、通常は約2か月の余裕が必要"
+      "fr": "En continu, avant le début du projet, de l’activité ou le départ",
+      "en": "Rolling, before the project, activity or departure starts",
+      "ja": "随時受付。プロジェクト・活動の開始または出発前まで"
     },
-    "amount": { "fr": "Jusqu’à 30 000 $", "en": "Up to $30,000", "ja": "最大3万カナダドル" },
-    "coverage": ["travel", "stay", "visa", "transport"],
+    "amount": { "fr": "Jusqu’à 10 000 $ par demande", "en": "Up to $10,000 per application", "ja": "1申請につき最大1万カナダドル" },
+    "coverage": ["travel", "market"],
     "cashflow": {
-      "fr": "Déplacement à l’extérieur du Canada d’au moins 500 km, avec invitation ou activité admissible",
-      "en": "Travel outside Canada of at least 500 km, with an invitation or eligible activity",
-      "ja": "カナダ国外へ500km以上移動し、招待状または対象活動の証明が必要"
+      "fr": "Réponse habituellement dans environ 4 mois; couvre notamment les occasions de présentation et le développement de marchés ou de réseaux",
+      "en": "Decision usually takes about 4 months; includes presentation opportunities and market or network development",
+      "ja": "通常、審査結果まで約4か月。発表機会への参加や市場・ネットワーク開拓などが対象"
     },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent", "protected"],
@@ -143,10 +143,10 @@
         "ja": "個人は市民・永住者・Protected Personが対象です。グループは主要メンバーの半数以上、2人組は2人とも対象資格を持つ必要があります。"
       },
       "sourceUrl": "https://canadacouncil.ca/funding/resources/profiles",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-07-22"
     },
-    "sourceUrl": "https://apply.canadacouncil.ca/Configuration/Application_Forms/P6/en-CA/CCA_6.1.pdf",
-    "verifiedAt": "2026-07-20"
+    "sourceUrl": "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "cca-representation",

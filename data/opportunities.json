@@ -38,12 +38,12 @@
         }
       },
       {
-        "fundingId": "cca-travel",
+        "fundingId": "cca-microgrants",
         "state": "verify",
         "note": {
-          "fr": "Le volet Travel exige une activité internationale admissible et une invitation; l’admissibilité d’un concours doit être confirmée.",
-          "en": "Travel requires an eligible international activity and invitation; competition eligibility must be confirmed.",
-          "ja": "Travel制度は対象となる国際活動と招待状が必要です。コンクール参加が対象になるか個別確認してください。"
+          "fr": "Les Micro-subventions admettent notamment une occasion de présentation. Après sélection, confirmez dans le portail que ce concours constitue une activité admissible et joignez la preuve de participation.",
+          "en": "Micro-grants include presentation opportunities. After selection, confirm in the portal that this competition is eligible and include proof of participation.",
+          "ja": "Micro-grantsは発表機会への参加を対象に含みます。選出後、このコンクールが対象活動に当たるかポータルで確認し、参加証明を添えてください。"
         }
       }
     ]
@@ -96,12 +96,12 @@
         }
       },
       {
-        "fundingId": "cca-travel",
+        "fundingId": "cca-microgrants",
         "state": "conditional",
         "note": {
-          "fr": "Une invitation et une activité internationale admissible sont nécessaires avant la demande.",
-          "en": "An invitation and eligible international activity are required before applying.",
-          "ja": "申請前に、招待状と対象となる国際活動の証明が必要です。"
+          "fr": "Les Micro-subventions soutiennent les occasions de présentation et le développement de marchés ou de réseaux. Faites confirmer l’inscription et ne budgétez que les coûts non couverts.",
+          "en": "Micro-grants support presentation opportunities and market or network development. Obtain registration confirmation and budget only uncovered costs.",
+          "ja": "Micro-grantsは発表機会や市場・ネットワーク開拓を支援します。登録確認書を取得し、未負担の費目だけを予算化してください。"
         }
       },
       {
@@ -154,12 +154,12 @@
         }
       },
       {
-        "fundingId": "cca-travel",
+        "fundingId": "cca-microgrants",
         "state": "verify",
         "note": {
-          "fr": "La sélection, l’invitation et l’admissibilité de cette compétition doivent être vérifiées avant de compter sur l’aide.",
-          "en": "Selection, invitation and competition eligibility must be checked before relying on this funding.",
-          "ja": "採択・招待状に加え、このコンペが助成対象活動に当たるか確認してから資金計画へ入れてください。"
+          "fr": "Après sélection, vérifiez dans le portail que la compétition constitue une occasion de présentation admissible et joignez la confirmation officielle avant de compter sur cette aide.",
+          "en": "After selection, confirm in the portal that the competition is an eligible presentation opportunity and include official confirmation before relying on this funding.",
+          "ja": "選出後、このコンペが対象となる発表機会に当たるかポータルで確認し、正式な参加確認書を得てから資金計画へ入れてください。"
         }
       }
     ]
@@ -203,12 +203,12 @@
         }
       },
       {
-        "fundingId": "cca-travel",
+        "fundingId": "cca-microgrants",
         "state": "verify",
         "note": {
-          "fr": "Le statut professionnel, l’invitation et l’admissibilité d’une compétition doivent être confirmés.",
-          "en": "Professional standing, invitation and competition eligibility all need confirmation.",
-          "ja": "プロとしての活動、招待状、競技会参加が制度対象となるかの3点を確認してください。"
+          "fr": "Confirmez le profil professionnel, la preuve de participation et le fait que cette compétition est une occasion de présentation admissible aux Micro-subventions.",
+          "en": "Confirm professional profile eligibility, proof of participation, and whether this competition is an eligible Micro-grants presentation opportunity.",
+          "ja": "プロとしてのプロフィール資格、参加証明、この競技会がMicro-grantsの対象となる発表機会かを確認してください。"
         }
       }
     ]
@@ -252,12 +252,12 @@
         }
       },
       {
-        "fundingId": "cca-travel",
+        "fundingId": "cca-microgrants",
         "state": "verify",
         "note": {
-          "fr": "L’admission et une invitation sont nécessaires; l’admissibilité d’un concours doit être confirmée.",
-          "en": "Admission and an invitation are required; competition eligibility must be confirmed.",
-          "ja": "参加承認と招待状が必要です。コンクール参加が制度対象となるかも個別確認してください。"
+          "fr": "Après admission, vérifiez que le concours est une occasion de présentation admissible aux Micro-subventions et joignez la confirmation officielle de participation.",
+          "en": "After admission, confirm that the competition is an eligible Micro-grants presentation opportunity and include official participation confirmation.",
+          "ja": "参加承認後、このコンクールがMicro-grantsの対象となる発表機会か確認し、正式な参加確認書を添えてください。"
         }
       }
     ]

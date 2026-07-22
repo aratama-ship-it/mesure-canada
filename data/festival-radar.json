@@ -123,12 +123,12 @@
           }
         },
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-microgrants",
           "state": "conditional",
           "note": {
-            "fr": "Arts Abroad: Travel admet la présentation d’une œuvre hors Canada sur invitation. Déclarez l’aide au voyage et l’accueil fournis par Imaginarius et ne budgétez que les frais admissibles non couverts.",
-            "en": "Arts Abroad: Travel allows invited presentation of work outside Canada. Declare the travel and hosting support from Imaginarius and budget only eligible uncovered costs.",
-            "ja": "Arts Abroad: Travelは、招待を受けてカナダ国外で作品を上演する活動を対象に含みます。Imaginariusの渡航・受入支援を申告し、未負担の対象経費だけを予算化してください。"
+            "fr": "Les Micro-subventions admettent notamment la participation à une occasion de présentation. Après sélection, déclarez l’aide au voyage et l’accueil fournis par Imaginarius et ne budgétez que les frais non couverts.",
+            "en": "Micro-grants include participation in a presentation opportunity. After selection, declare the travel and hosting support from Imaginarius and budget only uncovered costs.",
+            "ja": "Micro-grantsは発表機会への参加を対象に含みます。採択後、Imaginariusの渡航・受入支援を申告し、未負担の費目だけを予算化してください。"
           }
         }
       ]
@@ -284,7 +284,27 @@
     },
     "nextCheckDate": "2026-09-01",
     "sourceUrl": "https://ypam.jp/2027/fringe_registration/index.en.html",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "YPAM Fringe est un programme ouvert sans sélection et entièrement autoproduit: YPAM ne fournit aucun soutien financier, de production ou d’exploitation; les artistes doivent sécuriser le lieu, le visa et toute la production. YPAM peut toutefois émettre une lettre standard pour une demande de subvention. Le volet Circulation du CALQ n’est pas relié, car ses règles excluent l’autodiffusion.",
+        "en": "YPAM Fringe is open access with no selection and is fully self-produced: YPAM provides no financial, production or operational support, and artists must secure the venue, visa and all production arrangements. YPAM may issue a standard letter for grant applications. CALQ Circulation is not linked because its rules exclude self-presentation projects.",
+        "ja": "YPAM Fringeは選考のないオープンアクセス型で、全面的な自主制作です。YPAMは金銭・制作・運営支援を行わず、会場、査証、制作全般は参加者が手配します。一方、助成申請用の定型書簡は発行できる場合があります。CALQの州外作品巡回制度は自主興行を対象外としているため結びません。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-microgrants",
+          "state": "verify",
+          "note": {
+            "fr": "Les Micro-subventions soutiennent les occasions de présentation et le développement de marchés ou de réseaux. Après l’inscription, demandez la lettre standard de YPAM et confirmez dans le portail qu’un programme ouvert et autoproduit est admissible; ne budgétez que les coûts à votre charge.",
+            "en": "Micro-grants support presentation opportunities and market or network development. After registration, request YPAM’s standard letter and confirm in the portal that an open-access, self-produced program qualifies; budget only participant-borne costs.",
+            "ja": "Micro-grantsは発表機会や市場・ネットワーク開拓を支援します。登録後にYPAMの定型書簡を依頼し、オープンアクセスの自主制作企画が対象になるかポータルで確認したうえで、自己負担分だけを予算化してください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "sxsw-film-2027",
@@ -1162,12 +1182,12 @@
           }
         },
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-microgrants",
           "state": "conditional",
           "note": {
-            "fr": "Arts Abroad: Travel admet la présentation d’une œuvre hors Canada sur invitation. Joignez l’invitation et déclarez les dépenses prises en charge par Bergen Fringe afin de ne budgéter que les coûts admissibles non couverts.",
-            "en": "Arts Abroad: Travel allows invited presentation of work outside Canada. Include the invitation and declare expenses covered by Bergen Fringe so only eligible uncovered costs are budgeted.",
-            "ja": "Arts Abroad: Travelは、招待を受けたカナダ国外での作品上演を対象に含みます。招待状を添え、Bergen Fringeの負担費目を申告して、未負担の対象経費だけを予算化してください。"
+            "fr": "Les Micro-subventions admettent notamment la participation à une occasion de présentation. Joignez la confirmation de Bergen Fringe et déclarez les dépenses prises en charge afin de ne budgéter que les coûts non couverts.",
+            "en": "Micro-grants include participation in a presentation opportunity. Include Bergen Fringe’s confirmation and disclose covered expenses so only uncovered costs are budgeted.",
+            "ja": "Micro-grantsは発表機会への参加を対象に含みます。Bergen Fringeの参加確認書を添え、主催者負担分を申告して未負担の費目だけを予算化してください。"
           }
         }
       ]
@@ -1220,12 +1240,12 @@
       },
       "fundingMatches": [
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-residencies",
           "state": "verify",
           "note": {
-            "fr": "Arts Abroad: Travel exige un déplacement hors Canada d’au moins 500 km et une invitation. Confirmez auprès d’un agent que cette résidence relève d’une collaboration artistique admissible; ne réclamez pas les frais déjà couverts par DYNAMO.",
-            "en": "Arts Abroad: Travel requires invited travel outside Canada of at least 500 km. Confirm with a program officer that this residency qualifies as artistic collaboration, and do not claim costs already covered by DYNAMO.",
-            "ja": "Arts Abroad: Travelは、カナダ国外へ500km以上移動する招待案件が前提です。この滞在制作が対象となる芸術的協働に当たるか担当者へ確認し、DYNAMO負担分を重複申請しないでください。"
+            "fr": "Le volet Résidences internationales soutient les résidences à l’étranger. Après sélection, confirmez l’admissibilité dans le portail, joignez l’invitation et ne réclamez pas les frais déjà couverts par DYNAMO.",
+            "en": "International Residencies supports residencies abroad. After selection, confirm eligibility in the portal, include the invitation, and do not claim costs already covered by DYNAMO.",
+            "ja": "International Residenciesは国外レジデンスを支援します。採択後にポータルで適合性を確認し、招待状を添え、DYNAMO負担分を重複申請しないでください。"
           }
         }
       ]
@@ -2299,12 +2319,12 @@
       },
       "fundingMatches": [
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-residencies",
           "state": "verify",
           "note": {
-            "fr": "Une invitation est obligatoire. Vérifiez avec le Conseil que la résidence constitue une collaboration ou activité internationale admissible; l’hébergement et l’indemnité journalière ne sont couverts que jusqu’à cinq jours selon le guide actuel.",
-            "en": "An invitation is required. Confirm with the Council that the residency is an eligible international collaboration or activity; the current guide limits accommodation and per diem support to five days.",
-            "ja": "招待状が必須です。この滞在制作が対象となる国際協働・活動に当たるかCanada Councilへ確認してください。現行ガイドでは宿泊・日当の対象は最大5日です。"
+            "fr": "Le volet Résidences internationales correspond mieux à cette résidence à l’étranger. Après sélection, joignez l’invitation, confirmez les frais admissibles dans le portail et indiquez clairement qu’IACC ne finance ni voyage ni hébergement.",
+            "en": "International Residencies is the closer match for this residency abroad. After selection, include the invitation, confirm eligible expenses in the portal, and clearly state that IACC funds neither travel nor lodging.",
+            "ja": "国外レジデンスにはInternational Residenciesの方が適合します。採択後、招待状を添え、対象経費をポータルで確認し、IACCが渡航・宿泊を負担しないことを明記してください。"
           }
         }
       ]
@@ -2376,12 +2396,12 @@
           }
         },
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-microgrants",
           "state": "conditional",
           "note": {
-            "fr": "Arts Abroad: Travel couvre notamment la présentation d’une œuvre et les vitrines professionnelles hors Canada, à au moins 500 km et sur invitation. Une invitation ou confirmation de rencontre est requise.",
-            "en": "Arts Abroad: Travel includes presenting work and official showcases outside Canada, at least 500 km away and by invitation. An invitation or meeting confirmation is required.",
-            "ja": "Arts Abroad: Travelは、カナダ国外500km以上の場所で行う作品上演や公式ショーケースを対象に含み、招待状または面談確認書が必要です。"
+            "fr": "Les Micro-subventions admettent les occasions de présentation ainsi que le développement de marchés ou de réseaux. Après sélection, joignez la confirmation de FETEN et vérifiez les dépenses admissibles dans le portail avant le départ.",
+            "en": "Micro-grants include presentation opportunities and market or network development. After selection, include FETEN’s confirmation and verify eligible expenses in the portal before departure.",
+            "ja": "Micro-grantsは発表機会や市場・ネットワーク開拓を対象に含みます。採択後、FETENの参加確認書を添え、出発前にポータルで対象経費を確認してください。"
           }
         }
       ]
@@ -2404,7 +2424,36 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://forms.gle/d4Z6KCvERyozKByu9",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La section Théâtre du Monde accueille les structures professionnelles internationales. L’hôte couvre la pension complète et les transports locaux pour 15 personnes au maximum, tandis que le voyage international et le fret restent à la charge de la compagnie. Les pistes ci-dessous ne concernent que ces coûts non couverts, après sélection et confirmation écrite.",
+        "en": "The Theatre of the World section accepts international professional companies. The host covers full board and local transport for up to 15 people, while international travel and freight remain the company’s responsibility. The leads below apply only to those uncovered costs, after selection and written confirmation.",
+        "ja": "「世界の演劇」部門は国外のプロ団体を受け付けます。主催者は最大15名の食事付き宿泊と現地移動を負担しますが、国際渡航と貨物輸送は団体負担です。下記候補は、採択と書面確認を得た後、この未負担分だけを対象に検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "La présentation publique hors Québec correspond au volet Circulation. Après sélection, obtenez une confirmation d’un diffuseur reconnu précisant les dates et les conditions d’accueil, puis déposez au moins quatre semaines avant le projet. Le voyage international et le fret non couverts peuvent être budgétés; excluez la pension et les transports locaux déjà payés.",
+            "en": "Public presentation outside Quebec aligns with Circulation. After selection, obtain confirmation from a recognized presenter stating dates and hosting conditions, then apply at least four weeks before the project. Uncovered international travel and freight may be budgeted; exclude full board and local transport already paid.",
+            "ja": "ケベック州外での公開上演としてCirculation制度に対応します。採択後、日程と受入条件を記した認定主催者の書面確認を取得し、開始4週間以上前までに申請します。未負担の国際渡航・貨物輸送は予算候補ですが、主催者負担の食事付き宿泊・現地移動は除外します。"
+          }
+        },
+        {
+          "fundingId": "cca-microgrants",
+          "state": "conditional",
+          "note": {
+            "fr": "Les Micro-subventions admettent notamment la participation à une occasion de présentation. Après sélection, joignez la confirmation du festival, déclarez l’accueil fourni et demandez seulement les frais internationaux ou de fret non couverts, avant le début de l’activité ou le départ.",
+            "en": "Micro-grants include participation in a presentation opportunity. After selection, include the festival confirmation, disclose host support, and request only uncovered international travel or freight costs before the activity or departure begins.",
+            "ja": "Micro-grantsは発表機会への参加を対象に含みます。採択後、フェスティバルの参加確認書を添え、主催者支援を申告し、活動開始または出発前に未負担の国際渡航・貨物輸送費だけを申請候補とします。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "kyoto-art-center-performing-arts-2027-open",
@@ -2423,7 +2472,27 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://www.kac.or.jp/en/news/20260615/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Kyoto Art Center fournit l’hébergement, le studio, le vol aller-retour et 200 000 JPY, mais exclut repas, cachets, vie courante et fournitures de production. Le volet Déplacement du CALQ n’est pas relié: une résidence n’y est admissible que si l’hôte finance entièrement le séjour et la production, condition non remplie ici.",
+        "en": "Kyoto Art Center provides lodging, studio space, round-trip airfare and JPY 200,000, but excludes food, artist fees, living costs and production supplies. CALQ Travel is not linked because a residency qualifies there only when the host fully funds both the stay and production, which is not the case here.",
+        "ja": "京都芸術センターは宿泊、スタジオ、往復航空券、20万円を提供しますが、食費、出演料、生活費、制作用品は対象外です。CALQの渡航制度は受入先が滞在費と制作費を全額負担するレジデンスのみ対象のため、この案件には結びません。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-residencies",
+          "state": "verify",
+          "note": {
+            "fr": "Le volet Résidences internationales soutient les artistes et groupes du Canada participant à une résidence à l’étranger. Toutefois, l’échéance publiée du 21 octobre 2026 précède les résultats de Kyoto prévus fin novembre: vérifiez si une demande avant sélection est possible ou s’il faut attendre le cycle 2027, et déclarez toute l’aide fournie par Kyoto.",
+            "en": "International Residencies supports Canada-based artists and groups attending a residency abroad. However, the published October 21, 2026 deadline precedes Kyoto’s results expected in late November: confirm whether applying before selection is allowed or whether the 2027 intake is needed, and disclose all Kyoto support.",
+            "ja": "International Residenciesはカナダ拠点のアーティスト／団体による国外レジデンス参加を支援します。ただし公表締切の2026年10月21日は京都の結果通知予定（11月下旬）より早いため、採択前申請が可能か、2027年枠を待つ必要があるか確認し、京都側の全支援を申告してください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "inaf-norway-2027-open",
@@ -2918,12 +2987,12 @@
           }
         },
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-microgrants",
           "state": "conditional",
           "note": {
-            "fr": "La présentation d’une œuvre hors Canada sur invitation fait partie des activités du volet Travel. La demande doit être déposée avant le départ avec l’invitation; l’hébergement et l’indemnité journalière sont limités à cinq jours dans le guide actuel.",
-            "en": "Invited presentation of work outside Canada is an eligible Travel activity. Apply before departure with the invitation; the current guide limits accommodation and per diem to five days.",
-            "ja": "招待を受けたカナダ国外での作品上演はTravel制度の対象活動です。出発前に招待状を添えて申請し、現行ガイドでは宿泊・日当は最大5日までです。"
+            "fr": "Les Micro-subventions admettent notamment la participation à une occasion de présentation. Après sélection, joignez la confirmation de SoloStage et déposez avant le début de l’activité ou le départ.",
+            "en": "Micro-grants include participation in a presentation opportunity. After selection, include SoloStage’s confirmation and apply before the activity or departure begins.",
+            "ja": "Micro-grantsは発表機会への参加を対象に含みます。採択後、SoloStageの参加確認書を添え、活動開始または出発前に申請してください。"
           }
         }
       ]
@@ -3071,12 +3140,12 @@
       },
       "fundingMatches": [
         {
-          "fundingId": "cca-travel",
+          "fundingId": "cca-residencies",
           "state": "verify",
           "note": {
-            "fr": "Après sélection, demandez une invitation précisant collaboration, atelier et présentation publique. Arts Abroad: Travel peut couvrir un déplacement lié à une collaboration artistique ou à une présentation internationale, mais confirmez ce format de résidence avec un agent avant de déposer.",
-            "en": "After selection, obtain an invitation describing the collaboration, workshop and public presentation. Arts Abroad: Travel can support travel for artistic collaboration or international presentation, but confirm this residency format with a program officer before applying.",
-            "ja": "採択後、協働・ワークショップ・公開発表を明記した招待状を取得します。Arts Abroad: Travelは芸術的協働や国際発表に伴う渡航を対象に含みますが、このレジデンス形式が該当するか申請前に担当者へ確認してください。"
+            "fr": "Après sélection, demandez une invitation précisant la résidence, la collaboration, l’atelier et la présentation publique. Vérifiez ensuite l’admissibilité et les frais dans le volet Résidences internationales avant de déposer.",
+            "en": "After selection, obtain an invitation describing the residency, collaboration, workshop and public presentation. Then confirm eligibility and expenses under International Residencies before applying.",
+            "ja": "採択後、レジデンス、協働、ワークショップ、公開発表を明記した招待状を取得し、International Residenciesの適合性と対象経費を確認してから申請してください。"
           }
         }
       ]

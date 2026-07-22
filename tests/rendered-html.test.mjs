@@ -46,7 +46,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
   assert.match(html, /En attente de modalités suffisantes/);
   assert.match(html, /CALQ — Déplacement/);
-  assert.match(html, /Canada Council — Arts Abroad: Travel/);
+  assert.match(html, /Canada Council — Micro-grants/);
   assert.match(html, /Votre statut au Canada/);
   assert.match(html, /Radar international/);
   assert.match(html, /Type d’occasion/);
@@ -418,6 +418,25 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
   }
 
+  const fourthFundingBatch = new Map([
+    ["carthage-theatre-days-2026-open", ["suggested", 2]],
+    ["kyoto-art-center-performing-arts-2027-open", ["suggested", 1]],
+    ["ypam-fringe-2027", ["suggested", 1]],
+  ]);
+  for (const [id, [expectedStatus, expectedMatches]] of fourthFundingBatch) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.fundingReview.status, expectedStatus, `${id} funding review status`);
+    assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
+  }
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "carthage-theatre-days-2026-open").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["calq-circulation", "cca-microgrants"],
+  );
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "kyoto-art-center-performing-arts-2027-open").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["cca-residencies"],
+  );
+
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,
     0,
@@ -475,10 +494,15 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(firstRideau.eligibility.individualStatuses.includes("temporary_work"));
   assert.ok(!firstRideau.eligibility.individualStatuses.includes("temporary_no_work"));
 
+  const microGrants = funding.find((record) => record.id === "cca-microgrants");
+  assert.equal(microGrants.name, "Canada Council — Micro-grants");
+  assert.equal(microGrants.verifiedAt, "2026-07-22");
+  assert.equal(microGrants.sourceUrl, "https://canadacouncil.ca/funding/grants/arts-across-canada-and-abroad");
+
   for (const record of opportunities.filter((item) => item.country !== "Canada")) {
     assert.ok(
-      record.fundingMatches.some((match) => match.fundingId === "cca-travel"),
-      `Missing Canada-wide travel screen: ${record.id}`,
+      record.fundingMatches.some((match) => match.fundingId === "cca-microgrants"),
+      `Missing Canada-wide micro-grant screen: ${record.id}`,
     );
   }
 });
