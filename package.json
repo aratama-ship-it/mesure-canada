@@ -11,6 +11,7 @@
     "build:pages": "GITHUB_PAGES=true NEXT_PUBLIC_SITE_URL=https://aratama-ship-it.github.io/mesure-canada next build",
     "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
     "test": "npm run build && node --test tests/eligibility.test.mjs tests/rendered-html.test.mjs",
+    "audit:funding-data": "node scripts/audit-funding-data.mjs",
     "audit:funding-links": "node scripts/check-funding-links.mjs",
     "typecheck": "tsc --noEmit -p tsconfig.app.json",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",

@@ -1,6 +1,8 @@
 [
   {
     "id": "calq-travel",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "CALQ — Déplacement",
     "funder": "Conseil des arts et des lettres du Québec",
     "profiles": ["artist"],
@@ -40,6 +42,8 @@
   },
   {
     "id": "calq-circulation",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "CALQ — Circulation d’œuvres hors Québec",
     "funder": "Conseil des arts et des lettres du Québec",
     "profiles": ["artist"],
@@ -79,6 +83,8 @@
   },
   {
     "id": "calq-residencies",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-08-20",
     "name": "CALQ — Ateliers-résidences",
     "funder": "Conseil des arts et des lettres du Québec",
     "profiles": ["artist"],
@@ -114,6 +120,8 @@
   },
   {
     "id": "cca-microgrants",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-20",
     "name": "Canada Council — Micro-grants",
     "funder": "Canada Council for the Arts",
     "profiles": ["artist", "collective", "organization"],
@@ -150,6 +158,8 @@
   },
   {
     "id": "cca-representation",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-20",
     "name": "Canada Council — Representation and Promotion",
     "funder": "Canada Council for the Arts",
     "profiles": ["organization"],
@@ -184,6 +194,8 @@
   },
   {
     "id": "cca-touring",
+    "deadlineDate": "2026-10-07",
+    "nextCheckDate": "2026-09-07",
     "name": "Canada Council — Circulation and Touring",
     "funder": "Canada Council for the Arts",
     "profiles": ["artist", "collective", "organization"],
@@ -216,6 +228,8 @@
   },
   {
     "id": "cca-residencies",
+    "deadlineDate": "2026-10-21",
+    "nextCheckDate": "2026-09-21",
     "name": "Canada Council — International Residencies",
     "funder": "Canada Council for the Arts",
     "profiles": ["artist", "collective", "organization"],
@@ -244,6 +258,8 @@
   },
   {
     "id": "cca-coproductions",
+    "deadlineDate": "2026-11-04",
+    "nextCheckDate": "2026-10-05",
     "name": "Canada Council — International Co-productions",
     "funder": "Canada Council for the Arts",
     "profiles": ["collective", "organization"],
@@ -271,6 +287,8 @@
   },
   {
     "id": "cam-collectives",
+    "deadlineDate": "2026-08-19",
+    "nextCheckDate": "2026-08-05",
     "name": "CAM — Aide aux projets pour les collectifs d’artistes",
     "funder": "Conseil des arts de Montréal",
     "profiles": ["collective"],
@@ -298,6 +316,8 @@
   },
   {
     "id": "oac-touring",
+    "deadlineDate": "2026-10-22",
+    "nextCheckDate": "2026-09-22",
     "name": "Ontario Arts Council — Touring and Circulation Projects",
     "funder": "Ontario Arts Council",
     "profiles": ["artist", "collective", "organization"],
@@ -329,6 +349,8 @@
   },
   {
     "id": "oac-market-travel",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "Ontario Arts Council — Market Development Travel",
     "funder": "Ontario Arts Council",
     "profiles": ["artist", "collective", "organization"],
@@ -361,6 +383,8 @@
   },
   {
     "id": "tac-music",
+    "deadlineDate": "2026-09-03",
+    "nextCheckDate": "2026-08-04",
     "name": "Toronto Arts Council — Music Creation & Audio Recording",
     "funder": "Toronto Arts Council",
     "profiles": ["artist"],
@@ -390,6 +414,8 @@
   },
   {
     "id": "tac-newcomer-mentorship",
+    "deadlineDate": "2026-04-13",
+    "nextCheckDate": "2026-12-01",
     "name": "Toronto Arts Council — Newcomer & Refugee Artist Mentorship",
     "funder": "Toronto Arts Council",
     "profiles": ["artist"],
@@ -420,6 +446,8 @@
   },
   {
     "id": "artworks-to-newcomer",
+    "deadlineDate": null,
+    "nextCheckDate": "2027-04-01",
     "name": "ArtWorksTO — Newcomer Program",
     "funder": "Toronto Arts Foundation",
     "profiles": ["artist"],
@@ -451,6 +479,8 @@
   },
   {
     "id": "ottawa-creation-production",
+    "deadlineDate": "2026-12-02",
+    "nextCheckDate": "2026-11-02",
     "name": "City of Ottawa — Creation and Production Fund for Professional Artists",
     "funder": "City of Ottawa",
     "profiles": ["artist"],
@@ -479,6 +509,8 @@
   },
   {
     "id": "ottawa-youth-culture",
+    "deadlineDate": "2026-05-06",
+    "nextCheckDate": "2026-12-01",
     "name": "City of Ottawa — Youth in Culture Program",
     "funder": "City of Ottawa",
     "profiles": ["artist"],
@@ -508,6 +540,8 @@
   },
   {
     "id": "quebec-city-le-levier",
+    "deadlineDate": "2026-12-01",
+    "nextCheckDate": "2026-11-01",
     "name": "Ville de Québec — Le Levier",
     "funder": "Ville de Québec",
     "profiles": ["artist"],
@@ -547,6 +581,8 @@
   },
   {
     "id": "oif-artist-mobility-2026",
+    "deadlineDate": "2026-08-31",
+    "nextCheckDate": "2026-08-17",
     "name": "OIF — Soutien à la mobilité des artistes 2026",
     "funder": "Organisation internationale de la Francophonie",
     "profiles": ["artist", "collective"],
@@ -586,6 +622,8 @@
   },
   {
     "id": "en-piste-training-expense-reimbursement-2026",
+    "deadlineDate": "2026-10-10",
+    "nextCheckDate": "2026-09-01",
     "name": "En Piste — Remboursement des dépenses d’entraînement",
     "funder": "En Piste",
     "profiles": ["artist"],
@@ -624,6 +662,8 @@
   },
   {
     "id": "en-piste-personalized-training-2026",
+    "deadlineDate": "2026-07-12",
+    "nextCheckDate": "2026-09-01",
     "name": "En Piste — Formation individualisée / sur mesure",
     "funder": "En Piste",
     "profiles": ["artist", "collective"],
@@ -671,6 +711,8 @@
   },
   {
     "id": "en-piste-mon-premier-rideau",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-10-01",
     "name": "En Piste — Mon premier RIDEAU",
     "funder": "En Piste / Caisse de la Culture",
     "profiles": ["artist"],
@@ -711,6 +753,8 @@
   },
   {
     "id": "bcac-circulation-touring-individuals-2026",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "BC Arts Council — Arts Circulation and Touring (Individuals)",
     "funder": "BC Arts Council",
     "profiles": ["artist"],
@@ -752,6 +796,8 @@
   },
   {
     "id": "bcac-performing-artists-2026",
+    "deadlineDate": "2026-05-27",
+    "nextCheckDate": "2027-03-01",
     "name": "BC Arts Council — Individual Arts Grants: Performing Artists",
     "funder": "BC Arts Council",
     "profiles": ["artist"],
@@ -789,6 +835,8 @@
   },
   {
     "id": "afa-theatre-individual-project-2026",
+    "deadlineDate": "2026-09-01",
+    "nextCheckDate": "2026-08-02",
     "name": "Alberta Foundation for the Arts — Theatre Individual Project Funding",
     "funder": "Alberta Foundation for the Arts",
     "profiles": ["artist", "collective"],
@@ -819,6 +867,8 @@
   },
   {
     "id": "afa-dance-individual-project-2026",
+    "deadlineDate": "2026-09-01",
+    "nextCheckDate": "2026-08-02",
     "name": "Alberta Foundation for the Arts — Dance Individual Project Funding",
     "funder": "Alberta Foundation for the Arts",
     "profiles": ["artist", "collective"],
@@ -849,6 +899,8 @@
   },
   {
     "id": "sk-arts-independent-artists-2026",
+    "deadlineDate": "2026-10-01",
+    "nextCheckDate": "2026-09-01",
     "name": "SK Arts — Independent Artists",
     "funder": "SK Arts",
     "profiles": ["artist", "collective"],
@@ -883,6 +935,8 @@
   },
   {
     "id": "mac-create-2026",
+    "deadlineDate": "2026-10-10",
+    "nextCheckDate": "2026-09-10",
     "name": "Manitoba Arts Council — Create",
     "funder": "Manitoba Arts Council",
     "profiles": ["artist"],
@@ -907,6 +961,8 @@
   },
   {
     "id": "mac-travel-professional-development-2026",
+    "deadlineDate": "2026-09-01",
+    "nextCheckDate": "2026-08-02",
     "name": "Manitoba Arts Council — Learn: Travel / Professional Development",
     "funder": "Manitoba Arts Council",
     "profiles": ["artist"],
@@ -931,6 +987,8 @@
   },
   {
     "id": "artsnb-creation-2026",
+    "deadlineDate": "2026-10-01",
+    "nextCheckDate": "2026-09-01",
     "name": "artsnb — Creation",
     "funder": "New Brunswick Arts Board / artsnb",
     "profiles": ["artist"],
@@ -956,6 +1014,8 @@
   },
   {
     "id": "artsnb-career-arts-by-invitation-2026",
+    "deadlineDate": "2026-11-01",
+    "nextCheckDate": "2026-10-01",
     "name": "artsnb — Career Development: Arts by Invitation",
     "funder": "New Brunswick Arts Board / artsnb",
     "profiles": ["artist"],
@@ -981,6 +1041,8 @@
   },
   {
     "id": "artsnb-artist-in-residence-2026",
+    "deadlineDate": "2026-09-01",
+    "nextCheckDate": "2026-08-02",
     "name": "artsnb — Artist in Residence (Artists)",
     "funder": "New Brunswick Arts Board / artsnb",
     "profiles": ["artist"],
@@ -1006,6 +1068,8 @@
   },
   {
     "id": "artsns-grants-individuals-2026",
+    "deadlineDate": "2026-11-15",
+    "nextCheckDate": "2026-10-15",
     "name": "Arts Nova Scotia — Grants to Individuals",
     "funder": "Arts Nova Scotia",
     "profiles": ["artist"],
@@ -1046,6 +1110,8 @@
   },
   {
     "id": "artsns-organizations-groups-2026",
+    "deadlineDate": "2026-10-15",
+    "nextCheckDate": "2026-09-15",
     "name": "Arts Nova Scotia — Grants to Organizations and Groups",
     "funder": "Arts Nova Scotia",
     "profiles": ["collective", "organization"],
@@ -1088,6 +1154,8 @@
   },
   {
     "id": "pei-arts-create-fall-2026",
+    "deadlineDate": "2026-10-19",
+    "nextCheckDate": "2026-09-21",
     "name": "PEI Arts Grants — Create",
     "funder": "Innovation PEI",
     "profiles": ["artist", "collective"],
@@ -1131,6 +1199,8 @@
   },
   {
     "id": "pei-arts-share-fall-2026",
+    "deadlineDate": "2026-10-19",
+    "nextCheckDate": "2026-09-21",
     "name": "PEI Arts Grants — Share",
     "funder": "Innovation PEI",
     "profiles": ["artist", "collective"],
@@ -1174,6 +1244,8 @@
   },
   {
     "id": "pei-arts-learn-fall-2026",
+    "deadlineDate": "2026-10-19",
+    "nextCheckDate": "2026-09-21",
     "name": "PEI Arts Grants — Learn",
     "funder": "Innovation PEI",
     "profiles": ["artist", "collective"],
@@ -1216,6 +1288,8 @@
   },
   {
     "id": "artsnl-professional-projects-2026",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-08-15",
     "name": "ArtsNL — Professional Project Grants Program",
     "funder": "Newfoundland and Labrador Arts Council / ArtsNL",
     "profiles": ["artist"],
@@ -1256,6 +1330,8 @@
   },
   {
     "id": "artsnl-professional-travel-2026",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "ArtsNL — Professional Artists’ Travel Fund",
     "funder": "Newfoundland and Labrador Arts Council / ArtsNL",
     "profiles": ["artist", "collective"],
@@ -1297,6 +1373,8 @@
   },
   {
     "id": "yukon-express-microgrant-2026",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "Yukon — Express Micro-grant",
     "funder": "Government of Yukon — Arts Section",
     "profiles": ["artist", "collective", "organization"],
@@ -1339,6 +1417,8 @@
   },
   {
     "id": "yukon-advanced-artist-award-2026",
+    "deadlineDate": "2026-10-01",
+    "nextCheckDate": "2026-09-01",
     "name": "Yukon — Advanced Artist Award",
     "funder": "Government of Yukon — Arts Section",
     "profiles": ["artist"],
@@ -1380,6 +1460,8 @@
   },
   {
     "id": "yukon-touring-artist-fund-2026",
+    "deadlineDate": "2026-09-15",
+    "nextCheckDate": "2026-08-16",
     "name": "Yukon — Touring Artist Fund",
     "funder": "Government of Yukon — Arts Section",
     "profiles": ["artist", "collective", "organization"],
@@ -1423,6 +1505,8 @@
   },
   {
     "id": "nwt-small-arts-project-fund-2026",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "Northwest Territories — Small Arts Project Fund",
     "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
     "profiles": ["artist", "collective", "organization"],
@@ -1465,6 +1549,8 @@
   },
   {
     "id": "nwt-medium-arts-project-grant-2026",
+    "deadlineDate": "2026-10-31",
+    "nextCheckDate": "2026-10-01",
     "name": "Northwest Territories — Medium Arts Project Grant",
     "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
     "profiles": ["artist", "collective", "organization"],
@@ -1507,6 +1593,8 @@
   },
   {
     "id": "nwt-artist-travel-touring-fund-2026",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-09-01",
     "name": "Northwest Territories — Artist Travel and Touring Fund",
     "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
     "profiles": ["artist", "collective"],
@@ -1548,6 +1636,8 @@
   },
   {
     "id": "nunavut-commissioners-arts-award",
+    "deadlineDate": null,
+    "nextCheckDate": "2026-10-01",
     "name": "Nunavut Commissioner’s Arts Award",
     "funder": "Office of the Commissioner of Nunavut",
     "profiles": ["artist"],

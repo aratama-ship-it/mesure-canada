@@ -174,6 +174,8 @@ type CandidateRoute =
 
 type Funding = {
   id: string;
+  deadlineDate: string | null;
+  nextCheckDate: string;
   name: string;
   funder: string;
   profiles: Profile[];

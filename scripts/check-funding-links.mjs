@@ -16,31 +16,35 @@ const results = [];
 let cursor = 0;
 
 async function checkUrl([url, uses]) {
-  try {
-    const response = await fetch(url, {
-      redirect: "follow",
-      headers: { "user-agent": "MESURE funding source audit/1.0" },
-      signal: AbortSignal.timeout(15_000),
-    });
-    const status = response.status;
-    const classification = status >= 200 && status < 400
-      ? "healthy"
-      : [401, 403, 405, 429].includes(status)
-        ? "restricted"
-        : [404, 410].includes(status)
-          ? "dead"
-          : "error";
-    return { url, uses, status, classification, finalUrl: response.url };
-  } catch (error) {
-    return {
-      url,
-      uses,
-      status: "network",
-      classification: "unreachable",
-      finalUrl: url,
-      detail: error instanceof Error ? error.name : "UnknownError",
-    };
+  let lastError;
+  for (const timeout of [15_000, 30_000]) {
+    try {
+      const response = await fetch(url, {
+        redirect: "follow",
+        headers: { "user-agent": "MESURE funding source audit/1.0" },
+        signal: AbortSignal.timeout(timeout),
+      });
+      const status = response.status;
+      const classification = status >= 200 && status < 400
+        ? "healthy"
+        : [401, 403, 405, 429].includes(status)
+          ? "restricted"
+          : [404, 410].includes(status)
+            ? "dead"
+            : "error";
+      return { url, uses, status, classification, finalUrl: response.url };
+    } catch (error) {
+      lastError = error;
+    }
   }
+  return {
+    url,
+    uses,
+    status: "network",
+    classification: "unreachable",
+    finalUrl: url,
+    detail: lastError instanceof Error ? lastError.name : "UnknownError",
+  };
 }
 
 async function worker() {

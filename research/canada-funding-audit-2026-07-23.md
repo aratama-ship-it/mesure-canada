@@ -4,7 +4,7 @@
 
 The beta now covers every Canadian province and territory as a residence choice. The funding database contains 45 records, including six Canada-wide programs, so every residence is included in the geographic scope of federal programs even when no current local project grant can be verified.
 
-No release-blocking data defect was found after the final territory expansion. One substantive eligibility defect was corrected during the audit: the Northwest Territories uses a six-month residence threshold, so the former 12-month yes/no question was replaced with four choices that distinguish 12+ months, 6–11 months, under 6 months, and unknown.
+No release-blocking data defect was found after the final territory expansion. One substantive eligibility defect was corrected during the audit: the Northwest Territories uses a six-month residence threshold, so the former 12-month yes/no question was replaced with four choices that distinguish 12+ months, 6–11 months, under 6 months, and unknown. A second audit pass then added structured deadline and review dates to all 45 funding records.
 
 This is a source-backed beta collection, not a claim that every Canadian arts program has been exhaustively catalogued.
 
@@ -32,6 +32,22 @@ The regular Arts Contributions program was therefore **not promoted as current f
 - [Expired Culture and Heritage Grants and Contributions Policy](https://www.gov.nu.ca/sites/default/files/documents/2025-02/CH_Grants_and_Contributions_Policy_03_23.pdf)
 - [Application form still present on the official site](https://www.gov.nu.ca/sites/default/files/documents/2025-06/APPLICATION_FORM_-_CH_Grants___Contributions__Sept_27__2024__EN.pdf)
 
+## Structured deadline audit
+
+Every funding record now carries both `deadlineDate` and `nextCheckDate`.
+
+- `deadlineDate` is an official, exact application deadline when one is published. It is explicitly `null` for rolling intake, no-deadline awards, variable sub-calls, and cycles whose next exact date is not yet published. A null is therefore an evidence state, not a missing field.
+- `nextCheckDate` is MESURE's editorial review date, not a date asserted by the funder. Upcoming fixed deadlines are checked before submission closes; rolling and unpublished calls are assigned a scheduled source review.
+
+| Deadline state | Records | Audit interpretation |
+|---|---:|---|
+| Exact official date recorded | 30 | Includes 26 current deadlines and four closed calls with a known past deadline |
+| Explicitly no exact date | 15 | Rolling, no deadline, varies by sub-call, or next cycle not announced |
+| Closed records | 8 | Four retain an exact past deadline; four have `null` because no defensible exact date was found |
+| Reviews due on 2026-07-23 | 0 | All review dates are later than this audit date |
+
+The audit command fails when a required date is malformed or missing, an active deadline has passed, a review date falls after an active deadline, or a scheduled review is due. A simulated run as of 2026-08-03 correctly flags the four records scheduled for review on August 2, which verifies that stale records are detectable rather than silently retained.
+
 ## Automated integrity checks
 
 | Check | Result |
@@ -42,6 +58,10 @@ The regular Arts Contributions program was therefore **not promoted as current f
 | Missing FR / EN / JA deadline, amount, cash-flow, or eligibility text | 0 |
 | Invalid residence, purpose, kind, coverage, or residence-month enum | 0 |
 | Missing or malformed official URLs and verification dates | 0 |
+| Missing or malformed `deadlineDate` / `nextCheckDate` fields | 0 |
+| Exact deadlines / explicit null deadline states | 30 / 15 |
+| Active records already past an exact deadline | 0 |
+| Source reviews due on the audit date | 0 |
 | Type check | Pass |
 | Lint | Pass |
 | Build and test suite | Pass — 22 tests |
@@ -61,10 +81,10 @@ The eligibility tests now separately cover federal, provincial, municipal, non-c
 
 ## Remaining non-blocking risks
 
-1. Funding deadlines are currently localized text rather than a machine-readable `deadlineDate` plus `nextCheckDate`. Eight records are explicitly marked closed, but future expiry still needs manual review. Adding structured dates is the highest-value next data-quality change when monitoring work resumes.
-2. Five official pages restrict automated access. Their records remain usable because the pages are live and the content was checked through official search/indexed results, but they should be manually opened during the next content review.
-3. Nunavut’s regular Arts Contributions route needs direct 2026–27 confirmation before insertion. An older policy and a surviving form are not sufficient evidence of a current call.
-4. Several local programs do not state immigration status. Those records deliberately return “needs confirmation” for every status rather than inventing citizen or permanent-resident eligibility.
+1. Five official pages restrict automated access. Their records remain usable because the pages are live and the content was checked through official search/indexed results, but they should be manually opened during the next content review.
+2. Nunavut’s regular Arts Contributions route needs direct 2026–27 confirmation before insertion. An older policy and a surviving form are not sufficient evidence of a current call.
+3. Several local programs do not state immigration status. Those records deliberately return “needs confirmation” for every status rather than inventing citizen or permanent-resident eligibility.
+4. Scheduled review dates now make staleness detectable, but they do not fetch or approve new information automatically. Each flagged record still needs an official-source review before its content is changed.
 
 ## Reproduction
 
@@ -72,5 +92,6 @@ The eligibility tests now separately cover federal, provincial, municipal, non-c
 npm run typecheck
 npm run lint
 npm test
+npm run audit:funding-data -- --date 2026-07-23
 npm run audit:funding-links
 ```

@@ -244,6 +244,15 @@ test("opportunity and funding records preserve evidence fields", async () => {
   for (const record of funding) {
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
     assertISODate(record.verifiedAt, `${record.id}.verifiedAt`);
+    assert.ok(Object.hasOwn(record, "deadlineDate"), `${record.id}.deadlineDate is required, including explicit null`);
+    assertISODate(record.nextCheckDate, `${record.id}.nextCheckDate`);
+    assert.ok(record.nextCheckDate >= record.verifiedAt, `${record.id}.nextCheckDate predates verification`);
+    if (record.deadlineDate !== null) {
+      assertISODate(record.deadlineDate, `${record.id}.deadlineDate`);
+      if (record.availability !== "closed") {
+        assert.ok(record.nextCheckDate <= record.deadlineDate, `${record.id}.nextCheckDate must not fall after an active deadline`);
+      }
+    }
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
@@ -270,6 +279,12 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(/^https?:\/\//.test(record.eligibility.sourceUrl));
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
+
+  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 30);
+  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 15);
+  assert.equal(fundingById.get("cca-touring").deadlineDate, "2026-10-07");
+  assert.equal(fundingById.get("calq-travel").deadlineDate, null);
+  assert.equal(fundingById.get("bcac-performing-artists-2026").deadlineDate, "2026-05-27");
 
   assert.ok(festivalRadar.length >= 166);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");
