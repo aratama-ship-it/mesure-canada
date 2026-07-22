@@ -300,15 +300,61 @@
     "family": "fringe",
     "participation": "open_access",
     "status": "upcoming",
-    "deadlineDate": null,
+    "deadlineDate": "2026-10-30",
     "deadlineLabel": {
-      "fr": "Inscriptions d’artistes annoncées pour août 2026",
-      "en": "Artist registrations announced for August 2026",
-      "ja": "アーティスト登録は2026年8月開始予定"
+      "fr": "Ouverture des inscriptions le 8 septembre 2026; 30 octobre pour figurer dans le guide officiel imprimé. Le festival se tient du 19 février au 21 mars 2027. Le Fringe Fund interne ferme le 10 août à minuit ACST; les candidatures internationales sont admises, mais les volets les plus élevés exigent une équipe créative comprenant au moins 30 % de personnes d’Australie-Méridionale.",
+      "en": "Registration opens September 8, 2026; October 30 is the deadline for inclusion in the printed Official Guide. The festival runs February 19–March 21, 2027. The internal Fringe Fund closes August 10 at midnight ACST; international applicants are eligible, but the larger tiers require at least 30% of the creative team to be South Australian.",
+      "ja": "登録開始は2026年9月8日、印刷版Official Guide掲載締切は10月30日。開催は2027年2月19日〜3月21日です。内部助成Fringe Fundは8月10日深夜ACST締切で海外申請者も対象ですが、高額枠は制作チームの30％以上が南オーストラリア州関係者であることを求めます。"
     },
-    "nextCheckDate": "2026-08-01",
-    "sourceUrl": "https://adelaidefringe.com.au/as-an-artist",
-    "verifiedAt": "2026-07-20"
+    "nextCheckDate": "2026-09-08",
+    "sourceUrl": "https://avr.adelaidefringe.com.au/blog/events/key-dates",
+    "networkSourceUrl": "https://avr.adelaidefringe.com.au/blog/plan/2027-adelaide-fringe-fund-grants",
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Festival open access: les artistes du monde entier peuvent s’inscrire, mais doivent trouver un lieu et produire leur saison. Le 30 octobre est l’échéance du guide imprimé, pas une garantie de place ni nécessairement la dernière date de participation.",
+        "en": "This is an open-access festival: artists worldwide may register, but must secure a venue and produce their season. October 30 is the printed-guide deadline, not a guarantee of a place or necessarily the final participation deadline.",
+        "ja": "世界から登録できるオープンアクセス型ですが、会場確保と公演制作は参加者が担います。10月30日は印刷版ガイド掲載締切であり、出演枠の保証や最終参加締切を意味しません。"
+      },
+      "applicantCost": {
+        "fr": "Les tarifs d’inscription 2027, le lieu, le voyage, le logement, le visa, la technique et la promotion restent à budgéter; les montants définitifs ne sont pas encore publiés dans les sources vérifiées.",
+        "en": "The 2027 registration fee, venue, travel, lodging, visa, technical and promotion costs remain participant-borne budget items; final amounts are not yet published in the verified sources.",
+        "ja": "2027年の登録料、会場、渡航、宿泊、査証、技術、広報は参加者側の予算項目です。確認した公式情報では最終金額はまだ公表されていません。"
+      },
+      "organizerSupport": {
+        "fr": "Plateforme d’inscription, guide et marché Fringe; le Fringe Fund peut attribuer 5 000 AUD aux candidatures internationales et prévoit des volets plus élevés ou régionaux sous conditions de contenu, de coproduction et de cofinancement.",
+        "en": "Registration platform, Fringe guide and marketplace; the Fringe Fund can award AUD 5,000 to international applicants and offers larger or regional tiers subject to content, co-production and co-funding conditions.",
+        "ja": "登録基盤、Fringeガイド、マーケット機能があります。Fringe Fundには海外申請者も対象となる5,000豪ドル枠があり、より高額または地方巡演枠は内容・共同制作・自己資金等の条件付きです。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "N’inscrivez pas le spectacle avant d’avoir un lieu et un budget complet. Le Fringe Fund est une piste distincte et compétitive, pas une prise en charge automatique de l’inscription.",
+          "en": "Do not register until a venue and full budget are in place. The Fringe Fund is a separate competitive route, not automatic coverage attached to registration.",
+          "ja": "会場と全体予算が固まるまで登録を確定しないでください。Fringe Fundは別途審査のある制度で、登録に自動付帯する支援ではありません。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le modèle open access reste autoproduit et le fonds interne est concurrentiel. Le volet Circulation du CALQ n’est pas relié, car ses règles excluent l’autodiffusion; la piste ci-dessous exige une vérification explicite de l’admissibilité d’un projet open access.",
+        "en": "The open-access model remains self-produced and the internal fund is competitive. CALQ Circulation is not linked because its rules exclude self-presentation; the lead below requires explicit confirmation that an open-access project qualifies.",
+        "ja": "オープンアクセスの自主制作型で、内部助成も競争制です。CALQの州外作品巡回制度は自主興行を対象外とするため結びません。下記候補も、オープンアクセス企画が対象になるか明示確認が必要です。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-microgrants",
+          "state": "verify",
+          "note": {
+            "fr": "Après confirmation du lieu et de l’inscription, demandez une lettre du festival et vérifiez dans le portail si cette occasion de présentation autoproduite est admissible. Tenez compte du délai habituel d’environ quatre mois et excluez tout coût déjà couvert par le Fringe Fund.",
+            "en": "After venue and registration confirmation, request a festival letter and verify in the portal whether this self-produced presentation opportunity qualifies. Allow for the usual roughly four-month decision time and exclude any costs covered by the Fringe Fund.",
+            "ja": "会場と登録の確定後、フェスティバルの書面を取得し、この自主制作型の発表機会が対象かポータルで確認してください。通常約4か月の審査期間を見込み、Fringe Fundで負担される費目は除外します。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "toronto-fringe-2027",
@@ -501,6 +547,7 @@
       "en": "Late international feature deadline: September 21, 2026",
       "ja": "国際長編のレイト締切：2026年9月21日"
     },
+    "deadlineTimeZone": "PST (as published)",
     "nextCheckDate": "2026-08-04",
     "sourceUrl": "https://www.sundance.org/wp-content/uploads/2026/06/2027_Submissions_FAQ.pdf",
     "verifiedAt": "2026-07-22",
@@ -528,6 +575,16 @@
           "ja": "早期応募ほど費用を抑えられます。採択され、部門別支援を書面で受け取るまでは渡航を予算化しないでください。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le FAQ confirme les frais, l’heure limite publiée et une notification au plus tard le 4 décembre 2026, mais ne confirme pas le voyage ni le logement des équipes retenues. Attendre une invitation et les avantages de la section avant de relier une aide; le délai habituel d’environ quatre mois des Micro-subventions serait alors probablement trop court.",
+        "en": "The FAQ confirms fees, the published cutoff time and notification no later than December 4, 2026, but not selected-team travel or lodging. Wait for an invitation and section benefits before linking funding; the usual roughly four-month Micro-grant decision time would then likely be too short.",
+        "ja": "FAQで応募料、公開された締切時刻、2026年12月4日までの結果通知は確認できますが、採択者の渡航・宿泊支援は不明です。招待と部門別支援が判明するまで助成を結ばず、その時点ではMicro-grantの通常約4か月審査に間に合わない可能性が高い案件です。"
+      },
+      "fundingMatches": []
     }
   },
   {
@@ -545,7 +602,8 @@
       "en": "Feature, short, and mid-length films have a final deadline of September 15, 2026, with tiered fees. Art Directions also accepts audiovisual live performance under sound//vision through August 7 and immersive media through August 14, at EUR 40 excluding VAT. Work must be completed after January 1, 2026; student films outside a postgraduate master's year are excluded.",
       "ja": "長編・短編・中編映画の最終締切は2026年9月15日で、時期により応募料が変わります。Art Directionsではライブ映像パフォーマンスsound//visionを8月7日、没入型メディアを8月14日まで、税別40ユーロで受付。2026年1月1日以降の完成作品が対象で、修士課程年を除く学生映画は対象外です。"
     },
-    "nextCheckDate": "2026-08-08",
+    "deadlineTimeZone": "CEST",
+    "nextCheckDate": "2026-08-07",
     "sourceUrl": "https://iffr.com/en/iffr-pro-submissions/film-entry",
     "networkSourceUrl": "https://iffr.com/en/frequently-asked-questions/professionals-faq/film-entry-submission-materials",
     "verifiedAt": "2026-07-22",
@@ -556,9 +614,9 @@
         "ja": "2026年1月1日以降の完成作品で、尺に応じたプレミア条件があります。学生作品は修士課程年を除き対象外。Art Directionsでは映像パフォーマンスや没入型作品も対象です。"
       },
       "applicantCost": {
-        "fr": "Long métrage: 65/85/110 EUR hors TVA selon la date; sound//vision et médias immersifs: 40 EUR hors TVA. Les dossiers non admissibles ne sont pas remboursés.",
-        "en": "Features cost EUR 65/85/110 excluding VAT by deadline; sound//vision and immersive media cost EUR 40 excluding VAT. Ineligible entries are not refunded.",
-        "ja": "長編は時期により税別65／85／110ユーロ、sound//visionと没入型作品は税別40ユーロ。応募資格不適合による返金はありません。"
+        "fr": "Court et moyen métrage: 40/55/70 EUR hors TVA; long métrage: 65/85/110 EUR; sound//vision et médias immersifs: 40 EUR. Les dossiers non admissibles ne sont pas remboursés.",
+        "en": "Short and mid-length entries cost EUR 40/55/70 excluding VAT; features EUR 65/85/110; sound//vision and immersive media EUR 40. Ineligible entries are not refunded.",
+        "ja": "短編・中編は時期により税別40／55／70ユーロ、長編は65／85／110ユーロ、sound//visionと没入型作品は40ユーロ。応募資格不適合による返金はありません。"
       },
       "organizerSupport": {
         "fr": "Examen pour la programmation IFFR; la page de dépôt ne publie pas de prise en charge générale du voyage, du séjour ou des copies pour les équipes sélectionnées.",
@@ -573,6 +631,16 @@
           "ja": "先にプレミア条件と部門を確認し、可能な限り安い期間に応募してください。渡航判断は採択後です。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La page confirme les catégories, frais et échéances, mais pas la prise en charge du voyage ou du séjour. Les décisions finales sont annoncées vers la mi-décembre pour un festival commençant le 28 janvier 2027; une nouvelle aide à délai d’environ quatre mois ne serait donc pas exploitable après sélection.",
+        "en": "The page confirms categories, fees and deadlines, but not travel or lodging coverage. Final decisions are expected around mid-December for a festival beginning January 28, 2027, so a new grant with a roughly four-month decision cycle would not be actionable after selection.",
+        "ja": "部門、応募料、締切は確認できますが、渡航・宿泊支援は不明です。最終結果は12月中旬頃、映画祭は2027年1月28日開始のため、採択後に通常約4か月かかる助成へ新規申請する余地はありません。"
+      },
+      "fundingMatches": []
     }
   },
   {
@@ -682,6 +750,16 @@
           "ja": "世界から応募できる点は確認済みですが、2026年の条件が不足しています。支出前にフォームを開き、現行規約を確認してください。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La candidature mondiale et l’échéance sont confirmées, mais l’annonce ne publie ni règlement 2026 détaillé, ni frais, ni voyage, ni logement. Aucune aide n’est reliée avant réception des modalités à jour; attendre la sélection rendrait aussi le délai habituel d’environ quatre mois des Micro-subventions probablement incompatible avec novembre 2026.",
+        "en": "Worldwide submission and the deadline are confirmed, but the announcement publishes no detailed 2026 regulations, fees, travel or lodging terms. No funding is linked before current terms are obtained; waiting for selection would also likely make the usual roughly four-month Micro-grant timeline incompatible with November 2026.",
+        "ja": "世界からの応募と締切は確認済みですが、2026年の詳細規約、応募料、渡航、宿泊条件が公表されていません。現行条件を得るまで助成を結ばず、採択後ではMicro-grantの通常約4か月審査が2026年11月開催に間に合わない可能性が高い案件です。"
+      },
+      "fundingMatches": []
     }
   },
   {
@@ -1201,16 +1279,52 @@
     "region": "North America",
     "family": "showcase",
     "participation": "selection",
-    "status": "watch",
-    "deadlineDate": null,
+    "status": "upcoming",
+    "deadlineDate": "2026-09-17",
     "deadlineLabel": {
-      "fr": "Les dates et critères de la prochaine sélection ne sont pas encore publiés sur la source officielle vérifiée. Dépôt par Scène Pro à confirmer au prochain appel.",
-      "en": "Dates and criteria for the next selection are not yet published on the verified official source. Confirm Scène Pro submission when the next call opens.",
-      "ja": "次回選考の期日・要項は、確認した公式情報では未公表。次回公募時にScène Pro経由の応募要件を確認。"
+      "fr": "La sélection nationale RIDEAU 2027 ouvre le 18 août et ferme le 17 septembre 2026 pour musique, théâtre et arts de la parole, danse, humour et cirque. Les critères détaillés, frais et conditions d’accueil seront à confirmer à l’ouverture.",
+      "en": "RIDEAU 2027 national selection opens August 18 and closes September 17, 2026 for music, theatre and spoken word, dance, comedy, and circus. Detailed eligibility, fees and hosting terms must be confirmed when the call opens.",
+      "ja": "RIDEAU 2027の全国選考は2026年8月18日開始、9月17日締切。音楽、演劇・語り、ダンス、コメディ、サーカスが対象です。詳細資格、費用、受入条件は公募開始時に確認します。"
     },
-    "nextCheckDate": "2026-08-01",
-    "sourceUrl": "https://associationrideau.ca/fr/projets/scene-pro",
-    "verifiedAt": "2026-07-21"
+    "nextCheckDate": "2026-08-18",
+    "sourceUrl": "https://www.evenementrideau.ca/",
+    "networkSourceUrl": "https://associationrideau.ca/fr/projets/scene-pro",
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "La page annonce une « sélection nationale » et cinq disciplines, mais ne publie pas encore les conditions de résidence, de représentation professionnelle, de langue ou de dépôt. Ne pas interpréter « tous les artistes » comme une admissibilité internationale avant le règlement.",
+        "en": "The page announces a “national selection” across five disciplines, but does not yet publish residence, professional representation, language or submission conditions. Do not read “all artists” as international eligibility before the rules appear.",
+        "ja": "公式ページは「全国選考」と5分野を告知していますが、居住地、プロとしての代理・所属、言語、応募条件はまだ未公表です。「すべてのアーティスト」を国外応募可と解釈せず、要項を待ちます。"
+      },
+      "applicantCost": {
+        "fr": "Frais de dépôt, accréditation, déplacement, séjour, technique et conditions de cachet non encore publiés pour la sélection 2027.",
+        "en": "Submission, accreditation, travel, lodging, technical and artist-fee terms are not yet published for the 2027 selection.",
+        "ja": "2027年選考の応募料、登録料、移動、宿泊、技術、出演料条件はまだ公表されていません。"
+      },
+      "organizerSupport": {
+        "fr": "Vitrine professionnelle devant des diffuseurs à Québec; les avantages précis accordés aux artistes sélectionné·es seront à relever dans l’appel du 18 août.",
+        "en": "Professional showcase exposure to presenters in Québec City; exact benefits for selected artists must be captured from the August 18 call.",
+        "ja": "ケベック・シティで主催者・プレゼンターに作品を見せる業界ショーケースです。採択者への具体的支援は8月18日の要項で確認します。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Bonne piste locale à préparer, mais attendre le règlement pour vérifier qui peut déposer, par quelle plateforme et avec quels coûts ou engagements.",
+          "en": "A strong local lead to prepare for, but wait for the rules to confirm who may apply, through which platform, and with what costs or commitments.",
+          "ja": "有力な州内候補として準備できますが、誰がどの経路で申請でき、何を負担するかは要項公開後に確定します。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "L’événement et la fenêtre de sélection sont confirmés, mais les modalités 2027 ne permettent pas encore d’isoler des coûts admissibles ni un besoin de mobilité. Réexaminer les aides dès l’ouverture du 18 août.",
+        "en": "The event and selection window are confirmed, but 2027 terms do not yet identify eligible costs or a mobility need. Reassess funding when the call opens August 18.",
+        "ja": "開催と選考期間は確認できましたが、2027年要項が未公開で対象経費や移動支援の必要性を切り分けられません。8月18日の公募開始時に助成接続を再確認します。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "roseq-rencontre-automne-2026-watch",
@@ -1591,9 +1705,64 @@
       "en": "Opens August 2026; deadline October 31. English-language theatre, comedy and performance, including non-verbal work; panel selection, participation fees, and artists cover travel and accommodation.",
       "ja": "2026年8月開始、10月31日締切。英語の演劇・コメディ・パフォーマンス（ノンバーバル可）。審査制で参加費があり、渡航・宿泊は自己負担。"
     },
+    "deadlineTimeZone": "HST (as published)",
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://www.praguefringe.com/artist-info/26th-prague-fringe-may-2027-artist-applications-open-august/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Sélection sur dossier pour théâtre, comédie et performance principalement en anglais; les œuvres sans paroles sont bienvenues et d’autres langues peuvent être envisagées avec surtitres tchèque et anglais. Durée standard souhaitée: 60 minutes.",
+        "en": "Panel selection for theatre, comedy and performance primarily in English; non-verbal work is welcome, and other languages may be considered with Czech and English surtitles. The preferred standard duration is 60 minutes.",
+        "ja": "主に英語の演劇、コメディ、パフォーマンスを審査で選考します。ノンバーバル作品も歓迎され、他言語はチェコ語・英語字幕付きで検討される場合があります。標準的な希望尺は60分です。"
+      },
+      "applicantCost": {
+        "fr": "Frais par créneau selon la salle, voyage et hébergement à la charge de l’artiste. La page donne un exemple de 3 500 CZK par créneau dans la grande salle, soit 21 000 CZK pour six représentations, mais certains exemples de billetterie portent encore la mention 2025 et doivent être confirmés au contrat 2027.",
+        "en": "Artists pay a venue-based fee per slot plus travel and lodging. The page gives an example of CZK 3,500 per slot in the largest room, or CZK 21,000 for six shows, but some ticketing examples still carry 2025 wording and must be confirmed in the 2027 contract.",
+        "ja": "会場別の1公演枠ごとの参加費、渡航、宿泊は出演者負担です。最大会場の例は1枠3,500チェコ・コルナ、6公演で21,000コルナですが、売上例には2025年表記が残るため2027年契約で確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Salle, programmation, billetterie et visibilité Fringe; la page annonce un partage de billetterie après frais et taxes, mais aucun voyage ni hébergement, seulement des réductions chez des partenaires.",
+        "en": "Venue, programming, ticketing and Fringe visibility; the page describes a box-office split after fees and taxes, but no travel or accommodation coverage, only partner discounts.",
+        "ja": "会場、プログラム掲載、発券、Fringeでの露出があります。手数料・税控除後の売上分配はありますが、渡航・宿泊負担はなく、提携割引のみです。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Candidature directe possible, mais calculez le seuil de rentabilité avec six créneaux, le voyage et le logement. Confirmez par écrit les tarifs, la part de billetterie, les taxes et la salle avant engagement.",
+          "en": "Direct application is possible, but model break-even across six slots plus travel and lodging. Confirm rates, box-office share, taxes and venue in writing before committing.",
+          "ja": "直接応募は可能ですが、6公演分の参加費、渡航、宿泊を含む損益分岐を先に計算してください。契約前に料金、売上分配、税、会場を書面確認します。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La sélection par jury, le lieu et la billetterie distinguent cette voie d’une simple location autonome, mais tous les grands coûts restent à l’artiste. Les pistes ci-dessous ne deviennent actionnables qu’après sélection en décembre, invitation écrite et budget des coûts non couverts.",
+        "en": "Panel selection, venue and ticketing distinguish this route from simple self-rental, but the artist still carries the major costs. The leads below become actionable only after December selection, a written invitation and a budget of uncovered costs.",
+        "ja": "審査選考、会場、発券があるため単なる自主会場借りとは異なりますが、主要費用は出演者負担です。12月の採択、書面招待、未負担費の予算確定後に下記候補を検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "Après sélection, vérifiez que Prague Fringe est reconnu comme diffuseur et obtenez une confirmation écrite des dates, de la salle et des conditions d’accueil. Déposez au moins quatre semaines avant le projet et excluez tout coût déjà payé par l’hôte.",
+            "en": "After selection, verify that Prague Fringe qualifies as a recognized presenter and obtain written confirmation of dates, venue and hosting terms. Apply at least four weeks before the project and exclude any host-covered costs.",
+            "ja": "採択後、Prague Fringeが認定主催者として扱われるか確認し、日程、会場、受入条件の書面を取得します。開始4週間以上前までに申請し、主催者負担分は除外します。"
+          }
+        },
+        {
+          "fundingId": "cca-microgrants",
+          "state": "conditional",
+          "note": {
+            "fr": "L’occasion de présentation et de réseautage peut correspondre aux Micro-subventions. Déposez dès la sélection de décembre pour laisser environ quatre mois de traitement avant fin mai 2027, avec invitation et budget détaillé.",
+            "en": "The presentation and networking opportunity may align with Micro-grants. Apply as soon as December selection arrives to allow roughly four months before late May 2027, with the invitation and detailed budget.",
+            "ja": "発表・ネットワーキング機会としてMicro-grantに対応する可能性があります。2027年5月末まで通常約4か月の審査期間を確保するため、12月の採択後すぐに招待書と詳細予算を添えて申請します。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "tampa-fringe-2027",
@@ -2552,39 +2721,60 @@
     "family": "street",
     "participation": "selection",
     "status": "open",
-    "deadlineDate": null,
+    "deadlineDate": "2026-08-31",
     "deadlineLabel": {
-      "fr": "Manifestations d’intérêt ouvertes pour les arts de rue, le cirque, la comédie, la musique et la performance contemporaine. Date limite, admissibilité internationale, cachet, voyage, visa et hébergement non publiés sur la page officielle.",
-      "en": "Expressions of interest are open for street theatre, circus, comedy, music, and contemporary performance. The official page does not publish a deadline, international eligibility, fee, travel, visa, or accommodation terms.",
-      "ja": "大道芸、サーカス、コメディ、音楽、現代表現のEOIを受付中。公式ページに締切、海外応募資格、出演料、渡航、ビザ、宿泊条件の記載がないため要確認です。"
+      "fr": "Clôture le 31 août 2026; réponses au plus tard le 30 septembre. Les candidat·es internationaux sont explicitement prévus: une retenue, une aide au voyage et un hébergement peuvent être proposés, sans garantie. Les artistes conservent la totalité du chapeau des spectacles sur pitch.",
+      "en": "Closes August 31, 2026, with outcomes by September 30. International applicants are explicitly included and may be offered a retainer, travel support and accommodation, without guarantee. Artists keep all hat income from pitch performances.",
+      "ja": "2026年8月31日締切、9月30日までに結果通知。国外応募者が明記され、リテイナー、渡航支援、宿泊を提示される場合がありますが保証ではありません。屋外ピッチ公演の投げ銭は全額出演者に帰属します。"
     },
     "nextCheckDate": "2026-08-15",
     "sourceUrl": "https://www.worldbuskersfestival.co.nz/",
+    "networkSourceUrl": "https://forms.monday.com/forms/1a14ab4d4c06e08b765d9cc27fb55e5f?r=apse2",
     "verifiedAt": "2026-07-22",
     "decisionGuide": {
       "access": {
-        "fr": "Manifestation d’intérêt pour artistes émergent·es ou établi·es en théâtre de rue, cirque, comédie, musique, arts māori et pasifika et performance contemporaine; accès international non explicitement garanti.",
-        "en": "EOI for emerging or established artists in street theatre, circus, comedy, music, Māori and Pasifika arts, and contemporary performance; international access is not explicitly guaranteed.",
-        "ja": "大道芸、サーカス、コメディ、音楽、マオリ／パシフィカ芸術、現代表現の若手・実績者を募集していますが、国外応募可否は明示されていません。"
+        "fr": "Manifestation d’intérêt internationale pour busking de 30–45 minutes, spectacle payant de 45–60 minutes, gala, atelier, projet communautaire ou forme déambulatoire. Le formulaire demande nationalité du passeport et autres citoyennetés ou résidences.",
+        "en": "International EOI for 30–45 minute outdoor busking, 45–60 minute ticketed shows, gala acts, workshops, community projects or roving work. The form asks passport nationality and any other citizenship or residency.",
+        "ja": "30〜45分の屋外バスキング、45〜60分の有料公演、ガラ、ワークショップ、地域企画、回遊型作品を対象とする国外応募可のEOIです。フォームでは旅券上の国籍と他国の市民権・居住権を申告します。"
       },
       "applicantCost": {
-        "fr": "La page officielle ne publie ni frais, ni cachet, ni voyage, visa, logement, fret ou per diem; le formulaire doit être vérifié avant envoi.",
-        "en": "The official page publishes no fee, artist payment, travel, visa, lodging, freight or per diem terms; inspect the form before submitting.",
-        "ja": "公式ページには応募料、出演料、渡航、査証、宿泊、貨物、日当条件がありません。送信前にフォーム確認が必要です。"
+        "fr": "Aucun frais de dépôt n’est indiqué. Le formulaire demande les besoins en billets, bagages, logement et fret, ainsi que les financements de voyage accessibles dans le pays de résidence; le montant finalement offert est négocié et non garanti.",
+        "en": "No submission fee is stated. The form asks for airfare, baggage, accommodation and freight needs, plus travel funding available in the country of residence; any final offer is negotiated and not guaranteed.",
+        "ja": "応募料の記載はありません。フォームでは航空券、手荷物、宿泊、貨物の希望と、居住国で利用できる渡航助成を申告します。最終提示額は交渉事項で保証されません。"
       },
       "organizerSupport": {
-        "fr": "Possibilité d’intégrer un important festival de rue à Christchurch; aucune prise en charge financière ou logistique précise n’est annoncée.",
-        "en": "Potential inclusion in a major Christchurch street festival; no precise financial or logistical coverage is announced.",
-        "ja": "クライストチャーチの大規模ストリートフェス参加機会ですが、具体的な金銭・物流支援は公表されていません。"
+        "fr": "Les artistes internationaux retenus peuvent recevoir une retenue, une aide au voyage et un hébergement; les artistes locaux, une retenue ou un cachet. La totalité du chapeau des performances de rue revient aux artistes.",
+        "en": "Successful international artists may receive a retainer, travel support and accommodation; local artists may receive a retainer or fee. Artists keep all hat income from pitch performances.",
+        "ja": "採択された国外出演者にはリテイナー、渡航支援、宿泊が提示される場合があります。地元出演者にはリテイナーまたは出演料の可能性があり、路上公演の投げ銭は全額出演者に帰属します。"
       },
       "quebecAssessment": {
-        "state": "verify",
+        "state": "conditional",
         "note": {
-          "fr": "Demandez avant dépôt si le Canada est admissible et quels sont cachet, billets, logement, visa, fret, nombre de spectacles et partage du chapeau.",
-          "en": "Before entry, ask whether Canada is eligible and confirm fee, flights, lodging, visa, freight, performance count and hat-income arrangement.",
-          "ja": "応募前にカナダ拠点の可否と、出演料、航空券、宿泊、査証、貨物、公演回数、投げ銭分配を確認してください。"
+          "fr": "Candidature québécoise recevable et soutien possible, mais ne considérez rien comme acquis avant une offre écrite précisant retenue, vols, bagages, logement, fret, visa et nombre de prestations.",
+          "en": "A Quebec-based application is accepted and support is possible, but treat nothing as secured until a written offer states retainer, flights, baggage, lodging, freight, visa and performance count.",
+          "ja": "ケベック拠点から応募でき、支援の可能性もありますが、リテイナー、航空券、手荷物、宿泊、貨物、査証、公演数を書面提示されるまでは確定支援と扱いません。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le festival demande explicitement aux artistes internationaux de déclarer les aides de voyage accessibles dans leur pays de résidence. Attendre l’offre de soutien et ne financer que les coûts non couverts. Les résultats au 30 septembre laissent moins de quatre mois avant le 21 janvier, ce qui rend la Micro-subvention fédérale trop serrée si l’on attend la sélection.",
+        "en": "The festival explicitly asks international artists to disclose travel funding available in their country of residence. Wait for the support offer and fund only uncovered costs. Results by September 30 leave under four months before January 21, making the federal Micro-grant timeline too tight if selection is awaited.",
+        "ja": "国外出演者には居住国で使える渡航助成の申告が明示的に求められます。主催者の支援提示を待ち、未負担分だけを助成対象にします。9月30日結果から1月21日までは4か月未満のため、採択後の連邦Micro-grantは時間的に厳しいと判断しました。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "Après sélection, obtenez une lettre détaillant dates, retenue et coûts pris en charge, puis vérifiez la reconnaissance du diffuseur. Déposez au moins quatre semaines avant le départ pour les billets, bagages, fret ou séjour restant à votre charge.",
+            "en": "After selection, obtain a letter detailing dates, retainer and covered costs, then verify presenter recognition. Apply at least four weeks before departure for airfare, baggage, freight or lodging that remains uncovered.",
+            "ja": "採択後、日程、リテイナー、主催者負担費を記した書面を取得し、認定主催者に該当するか確認します。出発4週間以上前までに、未負担の航空券、手荷物、貨物、滞在費だけを申請します。"
+          }
+        }
+      ]
     }
   },
   {
@@ -2642,7 +2832,61 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://nelsonfringe.co.nz/artists/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Candidature internationale gratuite, puis sélection en partie curatée et en partie tirée au sort. Une priorité est accordée aux artistes de Te Tauihu. Les personnes admissibles au régime d’exemption du festival doivent tout de même obtenir une NZeTA; les autres doivent vérifier leur visa.",
+        "en": "Free international application followed by a partly curated, partly lottery-based selection, with priority for Te Tauihu artists. People eligible for the festival’s visa-exempt route still need an NZeTA; others must verify their visa.",
+        "ja": "国外から無料応募でき、選考と抽選を組み合わせて採択します。Te Tauihu地域の出演者が優先されます。認定フェスの就労ビザ免除条件を満たす場合もNZeTAが必要で、それ以外は査証確認が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Dépôt gratuit; acompte remboursable de 50 NZD par représentation après acceptation. L’artiste garde 60 % de la billetterie après frais et GST, mais paie voyage, logement et tout temps ou équipement technique supplémentaire.",
+        "en": "Application is free; accepted artists pay a refundable NZD 50 deposit per performance. Artists retain 60% of box office after fees and GST, but cover travel, lodging, and extra technical time or equipment.",
+        "ja": "応募無料。採択後は1公演につき返金可能な50ニュージーランドドルのデポジットが必要です。発券手数料・GST控除後の売上60％を受け取りますが、渡航、宿泊、追加技術時間・機材は自己負担です。"
+      },
+      "organizerSupport": {
+        "fr": "Une à trois représentations, billetterie et environ une heure d’installation ou répétition avec technicien; hébergement partenaire à tarif réduit seulement, sans prise en charge du voyage.",
+        "en": "One to three performances, ticketing, and roughly one hour of setup or rehearsal with a technician; partner lodging is discounted only, with no travel coverage.",
+        "ja": "1〜3公演、発券、技術者付き約1時間の仕込み／リハーサルがあります。宿泊は提携割引のみで、渡航支援はありません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Candidature accessible, mais le modèle 60/40 ne garantit pas le remboursement du voyage. Attendre la sélection, confirmer visa, dates et besoins techniques, puis chiffrer sans compter sur la recette.",
+          "en": "The application is accessible, but a 60/40 split does not guarantee travel recovery. Wait for selection, confirm visa, dates and technical needs, then budget without relying on box-office income.",
+          "ja": "応募しやすい一方、60／40の売上分配で渡航費を回収できる保証はありません。採択後に査証、日程、技術条件を確認し、売上を当てにしない予算を作ります。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le festival sélectionne les œuvres, fournit lieu, billetterie et soutien technique de base, mais laisse voyage et logement aux artistes. Les pistes ci-dessous concernent uniquement ces coûts non couverts, après acceptation et confirmation écrite.",
+        "en": "The festival selects work and provides venue, ticketing and basic technical support, but leaves travel and lodging to artists. The leads below apply only to those uncovered costs after acceptance and written confirmation.",
+        "ja": "主催者が作品を選考し、会場、発券、基礎技術支援を提供しますが、渡航・宿泊は出演者負担です。下記候補は採択と書面確認後、未負担の費目だけに検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "Après sélection, vérifiez que le festival est accepté comme diffuseur reconnu et demandez une lettre indiquant dates, représentations et accueil. Déposez au moins quatre semaines avant le départ avec voyage et logement non couverts seulement.",
+            "en": "After selection, verify that the festival qualifies as a recognized presenter and obtain a letter stating dates, performances and hosting. Apply at least four weeks before departure for uncovered travel and lodging only.",
+            "ja": "採択後、認定主催者として扱われるか確認し、日程、公演数、受入条件を記した書面を取得します。出発4週間以上前までに、未負担の渡航・宿泊だけを対象として申請します。"
+          }
+        },
+        {
+          "fundingId": "cca-microgrants",
+          "state": "conditional",
+          "note": {
+            "fr": "La présentation internationale peut être admissible. Déposez dès l’acceptation avec la lettre du festival et un budget excluant l’heure technique et les autres services déjà fournis; conserver environ quatre mois pour la décision.",
+            "en": "The international presentation may qualify. Apply as soon as accepted with the festival letter and a budget excluding the technical hour and other services already provided; allow roughly four months for a decision.",
+            "ja": "国外での発表機会として対象になる可能性があります。採択後すぐにフェス書面を添え、技術時間など主催者提供分を除いた予算で申請し、通常約4か月の審査期間を確保します。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "new-zealand-fringe-2027-watch",
@@ -2659,9 +2903,45 @@
       "en": "The 2027 festival is announced for February 12–March 6; registration dates are not yet published. It is open access with a paid registration, self-produced show, and confirmed venue; international accounts incur extra bank charges.",
       "ja": "2027年2月12日〜3月6日の開催は発表済みですが、登録日程は未発表。参加料を払うオープンアクセス方式で、自主制作・会場確保が必要。海外口座への売上送金には追加銀行手数料があります。"
     },
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-08-15",
     "sourceUrl": "https://www.fringe.co.nz/artists/",
-    "verifiedAt": "2026-07-21"
+    "networkSourceUrl": "https://www.fringe.co.nz/artists/international-artists/",
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Festival open access: tout projet peut s’inscrire après avoir confirmé un lieu. La page affiche encore la fermeture et les tarifs 2026; les dates et tarifs 2027 ne sont donc pas encore utilisables comme conditions actuelles.",
+        "en": "Open-access festival: any project may register after confirming a venue. The page still shows the closed 2026 cycle and 2026 prices, so 2027 dates and fees are not yet current terms.",
+        "ja": "会場確保後に登録するオープンアクセス型です。公式ページはまだ2026年受付終了と2026年料金を表示しており、2027年の日程・料金としては使えません。"
+      },
+      "applicantCost": {
+        "fr": "À titre indicatif seulement, les inscriptions 2026 allaient de 30 à 350 NZD selon le format, avec frais de billetterie et frais bancaires pour les comptes internationaux. Lieu, production, technique, accueil du public, voyage et logement restent à la charge de l’artiste; attendre les tarifs 2027.",
+        "en": "For reference only, 2026 registrations ranged from NZD 30 to 350 by format, plus ticketing and international-account banking charges. Venue, production, technical, front of house, travel and lodging remain artist-borne; wait for 2027 prices.",
+        "ja": "参考値として2026年の登録料は形式別に30〜350ニュージーランドドルで、発券料や海外口座への銀行手数料もありました。会場、制作、技術、受付、渡航、宿泊は出演者負担で、2027年料金の公開待ちです。"
+      },
+      "organizerSupport": {
+        "fr": "Inscription au programme, marketing, billetterie, permis de rue, prix, séances professionnelles, badges et exposition aux diffuseurs. Le financement Living Wage 2026 était réservé aux citoyen·nes et résident·es permanent·es de Nouvelle-Zélande.",
+        "en": "Program listing, marketing, ticketing, street permit, awards, industry sessions, artist passes and presenter exposure. The 2026 Living Wage fund was limited to New Zealand citizens and permanent residents.",
+        "ja": "プログラム掲載、広報、発券、路上許可、賞、業界セッション、出演者パス、プレゼンターへの露出があります。2026年Living Wage助成はニュージーランド市民・永住者限定でした。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Bonne piste ouverte, mais pas encore une candidature 2027 active. Attendre le calendrier, les tarifs, le lieu et les règles de visa 2027 avant tout budget ou dépôt.",
+          "en": "A useful open route, but not yet an active 2027 registration. Wait for the 2027 calendar, prices, venue and visa rules before budgeting or submitting.",
+          "ja": "有用なオープン枠ですが、2027年登録はまだ始まっていません。日程、料金、会場、査証条件が出るまで予算化・登録を行いません。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Les modalités visibles concernent encore 2026 et le fonds interne n’est pas accessible aux artistes québécois sans statut néo-zélandais admissible. Attendre l’ouverture 2027, un lieu confirmé et les coûts actuels avant de tester une aide externe.",
+        "en": "Visible terms still concern 2026, and the internal fund is unavailable to Quebec artists without qualifying New Zealand status. Wait for the 2027 opening, a confirmed venue and current costs before testing external funding.",
+        "ja": "表示中の条件はまだ2026年版で、内部助成は対象となるニュージーランド上の身分がないケベックの出演者には使えません。2027年受付、会場、現行費用が確定してから外部助成を検討します。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "dublin-fringe-next-watch",
@@ -4025,12 +4305,13 @@
     "status": "open",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "Appel actuellement ouvert, sans date limite publique. Artistes et compagnies peuvent proposer un spectacle pour la biennale du 27 juillet au 1er août 2027. Une vidéo intégrale est obligatoire pour une œuvre déjà créée. Cachet, voyage, hébergement et critères de résidence ne sont pas publiés: les confirmer avec la production avant de budgéter.",
-      "en": "Currently open with no public deadline. Artists and companies may submit a show for the July 27–August 1, 2027 biennial. A full-length video is required for completed work. Fee, travel, lodging, and residence criteria are not published; confirm them with production before budgeting.",
-      "ja": "現在受付中で、公開締切日はありません。2027年7月27日〜8月1日の隔年祭に、アーティスト／団体が作品を提案できます。完成済み作品は全編映像が必須。出演料・渡航・宿泊・居住条件は未公表のため、予算化前に制作担当への確認が必要です。"
+      "fr": "Appel ouvert sans date limite publique pour la biennale du 27 juillet au 1er août 2027. Vidéo intégrale obligatoire pour une œuvre créée. Le formulaire demande un cachet en CAD pour une à quatre représentations; réponses à l’automne 2026 pour les propositions hors Québec et en février 2027 pour celles du Québec.",
+      "en": "Open with no public deadline for the July 27–August 1, 2027 biennial. Completed work requires a full video. The form asks for a CAD fee for one to four performances; responses are due in autumn 2026 for proposals outside Quebec and February 2027 for Quebec proposals.",
+      "ja": "公開締切なしで受付中。開催は2027年7月27日〜8月1日、完成作品は全編映像必須です。フォームでは1〜4公演分の希望出演料をカナダドルで提示します。州外提案は2026年秋、ケベック州内提案は2027年2月に結果通知予定です。"
     },
     "nextCheckDate": "2026-08-15",
     "sourceUrl": "https://www.fiams.com/appel-a-projet-27/",
+    "networkSourceUrl": "https://forms.monday.com/forms/9d29b3f32b955ed5f5fd650f1dfe0416?r=use1",
     "verifiedAt": "2026-07-22",
     "decisionGuide": {
       "access": {
@@ -4039,23 +4320,33 @@
         "ja": "個人・団体がFIAMS 2027へ完成済みまたは制作中の人形劇作品を提案でき、完成作品は全編映像が必須です。"
       },
       "applicantCost": {
-        "fr": "Aucun frais, cachet, voyage, logement, fret ou per diem n’est publié. Aucun délai public n’est affiché, donc confirmer l’ouverture du formulaire avant travail lourd.",
-        "en": "No fee, artist payment, travel, lodging, freight or per diem is published. No public deadline is shown, so confirm the form remains open before heavy preparation.",
-        "ja": "応募料、出演料、渡航、宿泊、貨物、日当は未公表です。公開締切もないため、大きな準備前にフォーム受付中か確認してください。"
+        "fr": "Aucun frais de dépôt n’est affiché. L’artiste propose un cachet en CAD pour une à quatre représentations, hors repas, logement et transport. FIAMS ne paie pas le transport international et demande aux compagnies étrangères d’indiquer autofinancement, subvention ou autre source.",
+        "en": "No submission fee is shown. The applicant proposes a CAD fee for one to four performances, excluding meals, accommodation and transport. FIAMS does not cover international transport and asks foreign companies to identify self-funding, grants or other sources.",
+        "ja": "応募料の表示はありません。1〜4公演分の希望出演料をカナダドルで提示し、食事・宿泊・交通費は出演料に含めません。FIAMSは国際渡航費を負担せず、国外団体には自己資金・助成等の財源申告を求めます。"
       },
       "organizerSupport": {
-        "fr": "Examen pour la programmation de la biennale internationale de Saguenay; aucune condition financière ou d’accueil précise n’est annoncée sur la page.",
-        "en": "Consideration for the Saguenay international biennial program; the page announces no precise financial or hosting terms.",
-        "ja": "サグネの国際ビエンナーレでの選考対象になりますが、具体的な金銭・受入条件はページにありません。"
+        "fr": "Le formulaire prévoit un cachet négocié et demande combien d’artistes et technicien·nes nécessaires doivent être hébergé·es par le festival; les directions de compagnie et responsables de diffusion ne sont pas pris en charge. Un hébergement chez l’habitant peut être proposé.",
+        "en": "The form provides for a negotiated fee and asks how many necessary artists and technicians need festival-covered accommodation; company directors and booking representatives are excluded. Homestay accommodation may be used.",
+        "ja": "フォームは出演料交渉を前提とし、公演に必要な出演者・技術者のうち主催者が宿泊を負担すべき人数を申告します。団体代表者・営業担当は対象外で、ホームステイ受入の可能性があります。"
       },
       "quebecAssessment": {
-        "state": "verify",
+        "state": "conditional",
         "note": {
-          "fr": "Proximité québécoise intéressante, mais demandez cachet, transport, fret, logement, repas, technique et calendrier de décision avant de chiffrer.",
-          "en": "Quebec proximity is attractive, but ask about fee, transport, freight, lodging, meals, technical and decision schedule before budgeting.",
-          "ja": "ケベック州内で有望ですが、予算化前に出演料、移動、貨物、宿泊、食事、技術、決定時期を確認してください。"
+          "fr": "Voie directe et rémunérée depuis le Québec, avec hébergement possible. Le cachet et la prise en charge ne sont toutefois pas garantis avant sélection; obtenir un contrat séparant cachet, déplacement, fret, repas, logement et technique.",
+          "en": "A direct, paid route from Quebec with possible accommodation. Fee and coverage are not guaranteed before selection; obtain a contract separating fee, travel, freight, meals, lodging and technical costs.",
+          "ja": "ケベックから直接応募でき、出演料と宿泊支援の可能性があります。ただし採択前は保証されないため、出演料、移動、貨物、食事、宿泊、技術費を分けた契約を取得します。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le formulaire fournit désormais une base solide sur le cachet et l’hébergement, mais le transport à l’intérieur du Québec, les repas, le fret et le contrat final restent à négocier. Pour une proposition québécoise, attendre la décision de février 2027 et le détail des coûts non couverts avant de relier une aide.",
+        "en": "The form now provides a solid basis on fee and accommodation, but Quebec travel, meals, freight and the final contract remain negotiable. For a Quebec proposal, wait for the February 2027 decision and a breakdown of uncovered costs before linking funding.",
+        "ja": "フォームで出演料と宿泊の根拠は得られましたが、州内移動、食事、貨物、最終契約は交渉事項です。ケベック州内提案は2027年2月の結果と未負担費の内訳を待ってから助成を結びます。"
+      },
+      "fundingMatches": []
     }
   },
   {
@@ -4338,7 +4629,42 @@
     },
     "nextCheckDate": "2026-08-15",
     "sourceUrl": "https://artres.moc.gov.tw/en/calls/content/ff80818196c95f3b01977d0410ed00b6",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle vérifiable visait les artistes de toute nationalité en marionnette, théâtre d’objet ou formes voisines. Le plan B pouvait soutenir une personne; les duos étaient possibles seulement si la deuxième personne couvrait elle-même ses coûts.",
+        "en": "The verifiable cycle accepted artists of any nationality in puppetry, object theatre and adjacent forms. Plan B could support one person; duos were possible only if the second person covered their own costs.",
+        "ja": "確認できる回は国籍不問で、人形劇、オブジェクト・シアター等の創作者が対象でした。Plan Bの支援対象は1名で、デュオは2人目が自己負担する場合のみ可能でした。"
+      },
+      "applicantCost": {
+        "fr": "Cycle clos. Pour l’ancien plan B, la personne soutenue recevait le voyage et l’accueil annoncés; une deuxième personne, les assurances, visas et dépenses non listées restaient à la charge du projet.",
+        "en": "This cycle is closed. Under the former Plan B, the supported person received the listed travel and hosting; a second person, insurance, visas and unlisted expenses remained project-borne.",
+        "ja": "当該回は終了しています。旧Plan Bでは支援対象1名の渡航・受入が提供されましたが、2人目、保険、査証、未記載費は企画側負担でした。"
+      },
+      "organizerSupport": {
+        "fr": "Ancien plan B: vol international aller-retour, transfert aéroport, 20 000 TWD pour la création, 3 500 TWD pour l’action publique, logement, repas de semaine et atelier pour une personne.",
+        "en": "Former Plan B: round-trip international airfare, airport transfer, TWD 20,000 creation support, TWD 3,500 outreach support, lodging, weekday meals and workspace for one person.",
+        "ja": "旧Plan Bは1名分の国際往復航空券、空港送迎、制作費2万台湾ドル、交流活動費3,500台湾ドル、宿泊、平日食事、制作場所を提供しました。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Excellent modèle de résidence soutenue à surveiller, mais aucune candidature active: ne pas préparer ni financer un dossier avant publication d’un nouveau cycle daté.",
+          "en": "A strong supported-residency model to watch, but there is no active application: do not prepare or fund a submission until a newly dated cycle is published.",
+          "ja": "支援の厚い監視候補ですが、現在応募できる回はありません。新しい日付の公募が出るまで応募準備・助成接続を行いません。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "reviewed_no_match",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le seul cycle vérifiable est fermé et la phrase 2026-09-14 contredit les champs officiels 2025. Malgré un ancien accueil important, aucune aide actuelle ne doit être reliée sans nouvel appel.",
+        "en": "The only verifiable cycle is closed, and the 2026-09-14 sentence conflicts with the official 2025 fields. Despite substantial former support, no current funding should be linked without a new call.",
+        "ja": "確認可能な回は終了しており、本文の2026年9月14日という記載は公式欄の2025年情報と矛盾します。過去の支援が厚くても、新公募が出るまで現行助成は結びません。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "pole-marionnette-creation-residency-next-watch",

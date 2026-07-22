@@ -439,6 +439,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadarById.get("kyoto-art-center-performing-arts-2027-open")?.deadlineTimeZone, "JST");
   assert.equal(festivalRadarById.get("fifdh-2027")?.deadlineTimeZone, "CET (as published)");
   assert.equal(festivalRadarById.get("sxsw-film-2027")?.deadlineTimeZone, "CT");
+  assert.equal(festivalRadarById.get("sundance-film-2027")?.deadlineTimeZone, "PST (as published)");
+  assert.equal(festivalRadarById.get("iffr-2027")?.deadlineTimeZone, "CEST");
+  assert.equal(festivalRadarById.get("prague-fringe-2027")?.deadlineTimeZone, "HST (as published)");
 
   const radarDecisionGuideIds = [
     "idfa-forum-2026",
@@ -453,8 +456,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "kyoto-art-center-performing-arts-2027-open",
     "smethwick-puppetry-2027-open",
     "solostage-krakow-2026-open",
+    "adelaide-fringe-2027",
     "cairo-film-2026",
     "cubadupa-2027-open",
+    "rideau-showcase-watch",
+    "prague-fringe-2027",
+    "nelson-fringe-2027-upcoming",
+    "new-zealand-fringe-2027-watch",
     "cirko-w-coproduction-2028-regional",
     "guadalajara-film-2027",
     "bergen-fringe-2027",
@@ -483,6 +491,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "arab-theatre-festival-2027-open",
     "unima-passport-prelet-2026-open",
     "pesta-boneka-puppet-camp-2026-open",
+    "lize-puppet-residency-next-watch",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
   assert.equal(festivalRadar.filter((record) => record.status === "open" && !record.decisionGuide).length, 0, "Every open radar record must expose a practical decision guide");
@@ -502,6 +511,11 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "solostage-krakow-2026-open").decisionGuide.quebecAssessment.state, "self_funded");
   assert.equal(festivalRadar.find((record) => record.id === "cairo-film-2026").decisionGuide.quebecAssessment.state, "verify");
   assert.equal(festivalRadar.find((record) => record.id === "cubadupa-2027-open").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "adelaide-fringe-2027").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "rideau-showcase-watch").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "prague-fringe-2027").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "nelson-fringe-2027-upcoming").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "new-zealand-fringe-2027-watch").decisionGuide.quebecAssessment.state, "self_funded");
   assert.equal(festivalRadar.find((record) => record.id === "cirko-w-coproduction-2028-regional").decisionGuide.quebecAssessment.state, "not_direct");
   assert.equal(festivalRadar.find((record) => record.id === "guadalajara-film-2027").decisionGuide.quebecAssessment.state, "verify");
   assert.equal(festivalRadar.find((record) => record.id === "bergen-fringe-2027").decisionGuide.quebecAssessment.state, "conditional");
@@ -516,6 +530,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "aoca-africa-circus-partner-route-2027").decisionGuide.quebecAssessment.state, "not_direct");
   assert.equal(festivalRadar.find((record) => record.id === "arab-theatre-festival-2027-open").decisionGuide.quebecAssessment.state, "supported");
   assert.equal(festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open").decisionGuide.quebecAssessment.state, "not_direct");
+  assert.equal(festivalRadar.find((record) => record.id === "world-buskers-festival-2027-open").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "fiams-saguenay-2027-open").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "lize-puppet-residency-next-watch").decisionGuide.quebecAssessment.state, "not_direct");
   assert.match(festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open").decisionGuide.applicantCost.ja, /1,200米ドル/);
   assert.match(festivalRadar.find((record) => record.id === "ypam-fringe-2027").decisionGuide.applicantCost.ja, /18,700〜38,500円/);
   assert.match(festivalRadar.find((record) => record.id === "guadalajara-film-2027").decisionGuide.applicantCost.ja, /応募は無料/);
@@ -524,6 +541,16 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.match(festivalRadar.find((record) => record.id === "sundance-film-2027").decisionGuide.applicantCost.ja, /55〜95米ドル/);
   assert.match(festivalRadar.find((record) => record.id === "idfa-docs-for-sale-2026").decisionGuide.applicantCost.ja, /210ユーロ/);
   assert.match(festivalRadar.find((record) => record.id === "pole-marionnette-documentary-residency-open").decisionGuide.applicantCost.ja, /助成金はありません/);
+  assert.match(festivalRadar.find((record) => record.id === "adelaide-fringe-2027").deadlineLabel.ja, /9月8日/);
+  assert.match(festivalRadar.find((record) => record.id === "adelaide-fringe-2027").deadlineLabel.ja, /8月10日/);
+  assert.equal(festivalRadar.find((record) => record.id === "rideau-showcase-watch").deadlineDate, "2026-09-17");
+  assert.equal(festivalRadar.find((record) => record.id === "world-buskers-festival-2027-open").deadlineDate, "2026-08-31");
+  assert.match(festivalRadar.find((record) => record.id === "world-buskers-festival-2027-open").decisionGuide.organizerSupport.ja, /渡航支援/);
+  assert.match(festivalRadar.find((record) => record.id === "nelson-fringe-2027-upcoming").decisionGuide.applicantCost.ja, /50ニュージーランドドル/);
+  assert.match(festivalRadar.find((record) => record.id === "nelson-fringe-2027-upcoming").decisionGuide.applicantCost.ja, /60％/);
+  assert.match(festivalRadar.find((record) => record.id === "new-zealand-fringe-2027-watch").decisionGuide.applicantCost.ja, /2026年/);
+  assert.match(festivalRadar.find((record) => record.id === "fiams-saguenay-2027-open").decisionGuide.organizerSupport.ja, /出演料交渉/);
+  assert.equal(festivalRadar.find((record) => record.id === "iffr-2027").nextCheckDate, "2026-08-07");
 
   const firstCircusFundingBatch = [
     "cirque-de-demain-2027",
@@ -628,6 +655,43 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.deepEqual(
     festivalRadar.find((record) => record.id === "fifdh-2027").fundingReview.fundingMatches.map((match) => match.fundingId),
     ["cca-microgrants"],
+  );
+
+  const seventhFundingBatch = new Map([
+    ["adelaide-fringe-2027", ["suggested", 1]],
+    ["sundance-film-2027", ["pending_terms", 0]],
+    ["iffr-2027", ["pending_terms", 0]],
+    ["cairo-film-2026", ["pending_terms", 0]],
+    ["rideau-showcase-watch", ["pending_terms", 0]],
+    ["prague-fringe-2027", ["suggested", 2]],
+    ["cubadupa-2027-open", ["pending_terms", 0]],
+    ["world-buskers-festival-2027-open", ["suggested", 1]],
+    ["nelson-fringe-2027-upcoming", ["suggested", 2]],
+    ["new-zealand-fringe-2027-watch", ["pending_terms", 0]],
+    ["cirko-w-coproduction-2028-regional", ["reviewed_no_match", 0]],
+    ["fiams-saguenay-2027-open", ["pending_terms", 0]],
+    ["lize-puppet-residency-next-watch", ["reviewed_no_match", 0]],
+  ]);
+  for (const [id, [expectedStatus, expectedMatches]] of seventhFundingBatch) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.fundingReview.status, expectedStatus, `${id} funding review status`);
+    assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
+  }
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "adelaide-fringe-2027").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["cca-microgrants"],
+  );
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "prague-fringe-2027").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["calq-circulation", "cca-microgrants"],
+  );
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "world-buskers-festival-2027-open").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["calq-circulation"],
+  );
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "nelson-fringe-2027-upcoming").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["calq-circulation", "cca-microgrants"],
   );
   const pestaBoneka = festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open");
   assert.equal(pestaBoneka.status, "watch");
