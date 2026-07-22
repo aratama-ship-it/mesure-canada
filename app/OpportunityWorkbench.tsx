@@ -86,6 +86,13 @@ type FundingMatch = {
   note: Localized;
 };
 
+type RadarFundingReview = {
+  status: "suggested" | "reviewed_no_match" | "pending_terms";
+  verifiedAt: string;
+  note: Localized;
+  fundingMatches: FundingMatch[];
+};
+
 type FestivalRadar = {
   id: string;
   title: string;
@@ -101,6 +108,8 @@ type FestivalRadar = {
   sourceUrl: string;
   networkSourceUrl?: string;
   verifiedAt: string;
+  linkedOpportunityId?: string;
+  fundingReview?: RadarFundingReview;
 };
 
 type Opportunity = {
@@ -289,6 +298,16 @@ const copy = {
       candidateChosen: "Route sélectionnée dans le radar",
       fundingCheck: "Aide à vérifier séparément",
       fundingCheckNote: "Cette route est active ou annoncée, mais ses conditions et ses dépenses ne sont pas assez structurées pour relier une aide automatiquement. Vérifiez l’appel officiel, puis le programme de financement.",
+      fundingReviewHeading: "Revue du financement",
+      fundingReviewStatus: {
+        suggested: "Pistes fondées sur les critères officiels",
+        reviewed_no_match: "Vérifié : aucun lien prudent pour l’instant",
+        pending_terms: "En attente de modalités suffisantes",
+      },
+      fundingSuggested: "Aides à envisager sous conditions",
+      fundingSuggestedForProfile: "Aucune piste de cette revue ne correspond au profil et au lieu de résidence sélectionnés.",
+      fundingReviewed: "Revue vérifiée le",
+      fundingLinked: "Financement relié dans la fiche détaillée",
     },
     noResults: "Aucun appel de l’échantillon ne correspond à ce profil. Essayez une autre discipline.",
     fundingHeading: "Plan de financement",
@@ -428,6 +447,16 @@ const copy = {
       candidateChosen: "Selected radar route",
       fundingCheck: "Funding requires a separate check",
       fundingCheckNote: "This route is open or announced, but its conditions and expenses are not structured enough to link funding automatically. Check the official call first, then the funding program.",
+      fundingReviewHeading: "Funding review",
+      fundingReviewStatus: {
+        suggested: "Evidence-based funding leads",
+        reviewed_no_match: "Reviewed: no prudent link yet",
+        pending_terms: "Waiting for sufficient terms",
+      },
+      fundingSuggested: "Programs to consider under conditions",
+      fundingSuggestedForProfile: "None of the reviewed leads fits the selected profile and place of residence.",
+      fundingReviewed: "Funding review verified",
+      fundingLinked: "Funding linked in the detailed call",
     },
     noResults: "No call in this sample matches the profile. Try another discipline.",
     fundingHeading: "Funding plan",
@@ -547,6 +576,16 @@ const copy = {
       candidateChosen: "監視台帳から選択した案件",
       fundingCheck: "助成金は個別確認",
       fundingCheckNote: "このルートは募集中または開始予定ですが、活動内容・費目の情報が助成金を自動照合できるほど構造化されていません。まず公式要項を確認し、その後に助成制度を個別に確認してください。",
+      fundingReviewHeading: "助成金の照合結果",
+      fundingReviewStatus: {
+        suggested: "公式条件に基づく候補あり",
+        reviewed_no_match: "確認済み：現時点で安全な直結なし",
+        pending_terms: "要項不足のため保留",
+      },
+      fundingSuggested: "条件付きで検討できる助成制度",
+      fundingSuggestedForProfile: "今回確認した候補には、選択中の申請者区分・居住地に合う制度がありません。",
+      fundingReviewed: "助成金照合日",
+      fundingLinked: "詳細公募で助成金を連動済み",
     },
     noResults: "このサンプル内に条件と一致する公募がありません。別の活動分野を選んでください。",
     fundingHeading: "資金計画",
@@ -716,6 +755,7 @@ export function OpportunityWorkbench() {
     () => festivalRadar
       .map((radar) => ({ radar, status: normalizedRadarStatus(radar) }))
       .filter(({ status }) => status !== "watch")
+      .filter(({ radar }) => !radar.linkedOpportunityId)
       .filter(({ radar }) => radarMatchesDiscipline(radar, discipline))
       .map(({ radar, status }) => ({
         candidateId: `radar:${radar.id}`,
@@ -785,6 +825,18 @@ export function OpportunityWorkbench() {
       return [{ funding, match, assessment }];
     });
   }, [answers, profile, residence, selectedOpportunity]);
+
+  const radarMatches = useMemo(() => {
+    if (selectedCandidate?.source !== "radar" || selectedCandidate.radar.fundingReview?.status !== "suggested") return [];
+    return selectedCandidate.radar.fundingReview.fundingMatches.flatMap((match) => {
+      const funding = fundingPrograms.find((program) => program.id === match.fundingId);
+      if (!funding) return [];
+      const disciplineOk = funding.disciplines.includes("all") || radarFamilyDisciplines[selectedCandidate.radar.family].some((item) => funding.disciplines.includes(item));
+      if (!funding.profiles.includes(profile) || !supportsResidence(funding, residence) || !disciplineOk) return [];
+      const assessment = evaluateFundingEligibility({ funding, baseState: match.state, ...answers }) as Assessment;
+      return [{ funding, match, assessment }];
+    });
+  }, [answers, profile, residence, selectedCandidate]);
 
   const regionalPrograms = useMemo(() => {
     if (!selectedOpportunity) return [];
@@ -906,7 +958,7 @@ export function OpportunityWorkbench() {
             {candidateRoutes.length ? candidateRoutes.map((candidate) => {
               if (candidate.source === "radar") {
                 const { radar } = candidate;
-                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}</p></button>;
+                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p></button>;
               }
               const { opportunity } = candidate;
               return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p></button>;
@@ -918,7 +970,10 @@ export function OpportunityWorkbench() {
           <div className="panel-heading"><span className="section-kicker">03</span><h3>{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
             <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
-            <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>
+            {selectedCandidate.radar.fundingReview ? <>
+              <aside className={`radar-funding-notice ${selectedCandidate.radar.fundingReview.status}`}><span className="section-kicker">{t.radar.fundingReviewHeading}</span><strong>{t.radar.fundingReviewStatus[selectedCandidate.radar.fundingReview.status]}</strong><p>{selectedCandidate.radar.fundingReview.note[language]}</p><span className="verified-date">{t.radar.fundingReviewed}: {selectedCandidate.radar.fundingReview.verifiedAt}</span></aside>
+              {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <div className="funding-list">{radarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
+            </> : <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>}
           </> : selectedOpportunity ? <>
             <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p><ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
@@ -962,6 +1017,7 @@ export function OpportunityWorkbench() {
               {searchTags.length ? <div className="radar-search-tags">{searchTags.map((tag) => <span key={tag}>{t.radar.searchTags[tag]}</span>)}</div> : null}
               <p className="radar-deadline">{record.deadlineLabel[language]}</p>
               <div className="radar-bottom"><span>{t.radar.participation[record.participation]}</span><span>{t.radar.nextCheck}: {record.nextCheckDate}</span></div>
+              {record.linkedOpportunityId ? <span className="radar-funding-state linked">{t.radar.fundingLinked}</span> : record.fundingReview ? <span className={`radar-funding-state ${record.fundingReview.status}`}>{t.radar.fundingReviewStatus[record.fundingReview.status]}</span> : null}
               <div className="radar-source-links">
                 <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>
                 {record.networkSourceUrl ? <a className="source-link secondary-source-link" href={record.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}

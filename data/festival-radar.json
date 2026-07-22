@@ -16,7 +16,8 @@
     },
     "nextCheckDate": "2026-09-16",
     "sourceUrl": "https://www.cirquededemain.paris/en/applications",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-20",
+    "linkedOpportunityId": "cirque-de-demain-2027"
   },
   {
     "id": "circusstad-circunstruction-15",
@@ -35,7 +36,17 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://circusstad.nl/open-call/open-call-circunstruction-15/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-20",
+    "fundingReview": {
+      "status": "reviewed_no_match",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La résidence exige de vivre ou travailler aux Pays-Bas, de préférence près de Rotterdam. Il ne s’agit donc pas d’une voie directe pour une candidature québécoise, même si des budgets de création et de déplacement locaux sont prévus.",
+        "en": "The residency requires applicants to live or work in the Netherlands, preferably near Rotterdam. It is therefore not a direct route for a Quebec applicant, even though local creation and travel budgets are included.",
+        "ja": "オランダ在住または同国で活動していること（ロッテルダム周辺を推奨）が条件です。制作費・現地移動費の支援はありますが、ケベックからの直接応募に結べる助成候補とは扱いません。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "seoul-circus-festival-watch",
@@ -396,7 +407,17 @@
     },
     "nextCheckDate": "2026-11-01",
     "sourceUrl": "https://circa.auch.fr/avec-les-artistes/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-20",
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "CIRCA indique que les demandes 2027–2028 commenceront en novembre 2026 et que les modalités sont encore en préparation. Les prises en charge varient selon le projet; une aide canadienne ne sera reliée qu’après publication des conditions et du document de sélection.",
+        "en": "CIRCA says 2027–28 requests will begin in November 2026 and the terms are still being prepared. Host support varies by project, so Canadian funding will only be linked after the terms and selection documentation are published.",
+        "ja": "CIRCAは2027〜28年分を2026年11月から受け付ける一方、募集方法は現在策定中としています。受入支援も案件ごとに異なるため、要項と選考書類が公開されるまで助成制度を直結しません。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "circada-panorama-watch",
@@ -1120,7 +1141,27 @@
     },
     "nextCheckDate": "2026-10-01",
     "sourceUrl": "https://dynamoworkspace.dk/en/residency/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "DYNAMO accepte les candidatures sans limite géographique et offre espace, hébergement et une aide au voyage, mais avertit que les trajets outre-mer peuvent ne pas être entièrement couverts. La piste canadienne ci-dessous n’est à examiner qu’après sélection et invitation, pour les coûts non déjà payés par l’hôte.",
+        "en": "DYNAMO has no geographic application limit and offers workspace, lodging and a travel grant, but warns that overseas travel may not be fully covered. The Canadian lead below should only be screened after selection and invitation, for costs not already paid by the host.",
+        "ja": "DYNAMOは地域制限なしで応募を受け付け、制作空間・宿泊・渡航支援を提供しますが、海外からの移動費を全額負担できない場合があります。下記のカナダ側制度は、採択・招待後に、受入先が負担しない費目だけを対象として検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-travel",
+          "state": "verify",
+          "note": {
+            "fr": "Arts Abroad: Travel exige un déplacement hors Canada d’au moins 500 km et une invitation. Confirmez auprès d’un agent que cette résidence relève d’une collaboration artistique admissible; ne réclamez pas les frais déjà couverts par DYNAMO.",
+            "en": "Arts Abroad: Travel requires invited travel outside Canada of at least 500 km. Confirm with a program officer that this residency qualifies as artistic collaboration, and do not claim costs already covered by DYNAMO.",
+            "ja": "Arts Abroad: Travelは、カナダ国外へ500km以上移動する招待案件が前提です。この滞在制作が対象となる芸術的協働に当たるか担当者へ確認し、DYNAMO負担分を重複申請しないでください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "garage-hochelaga-residency-watch",
@@ -1448,7 +1489,17 @@
     },
     "nextCheckDate": "2026-10-01",
     "sourceUrl": "https://outtherearts.org.uk/residencies/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Les résidences sont négociées individuellement et l’aide peut se limiter à un espace gratuit ou à coût partagé, parfois contre une représentation ou une activité locale. L’admissibilité internationale, l’invitation écrite et les frais réellement pris en charge doivent être confirmés avant de proposer une aide canadienne.",
+        "en": "Residencies are negotiated individually and support may be limited to free or part-hire space, sometimes in exchange for a performance or local activity. International eligibility, a written invitation and the actual covered costs must be confirmed before suggesting Canadian funding.",
+        "ja": "受入条件は個別交渉で、無料または一部負担の制作空間と、上演・地域活動等との交換に留まる場合があります。海外応募の可否、書面による招待、実際の負担費目が確定するまで、カナダ側助成は提案保留とします。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "guelph-fringe-2027-watch",
@@ -2159,7 +2210,27 @@
     },
     "nextCheckDate": "2026-10-15",
     "sourceUrl": "https://irishaerialcreationcentre.com/professionals/residencies/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "IACC accepte les artistes internationaux, mais n’offre aucune aide financière et demande que voyage et hébergement soient déjà financés. La piste fédérale doit donc être vérifiée après une invitation; elle ne constitue pas une preuve de financement au moment de candidater à la résidence.",
+        "en": "IACC accepts international artists but provides no financial support and expects travel and lodging to be funded already. The federal lead must therefore be checked after an invitation; it is not proof of funding when applying to the residency.",
+        "ja": "IACCは国外アーティストを受け入れますが、金銭支援はなく、渡航・宿泊資金を別途確保していることを求めています。連動候補の連邦制度は招待後に確認するもので、レジデンス応募時の資金確保を保証しません。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-travel",
+          "state": "verify",
+          "note": {
+            "fr": "Une invitation est obligatoire. Vérifiez avec le Conseil que la résidence constitue une collaboration ou activité internationale admissible; l’hébergement et l’indemnité journalière ne sont couverts que jusqu’à cinq jours selon le guide actuel.",
+            "en": "An invitation is required. Confirm with the Council that the residency is an eligible international collaboration or activity; the current guide limits accommodation and per diem support to five days.",
+            "ja": "招待状が必須です。この滞在制作が対象となる国際協働・活動に当たるかCanada Councilへ確認してください。現行ガイドでは宿泊・日当の対象は最大5日です。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "cirko-w-coproduction-2028-regional",
@@ -2178,7 +2249,17 @@
     },
     "nextCheckDate": "2026-08-11",
     "sourceUrl": "https://cirko.fi/w-co-production-application-criteria/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-21",
+    "fundingReview": {
+      "status": "reviewed_no_match",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La compagnie qui dépose doit être enregistrée en Finlande. Des artistes québécois peuvent participer à un projet porté par un partenaire finlandais, mais ce n’est pas une candidature directe; aucune aide n’est donc reliée avant l’existence d’un partenariat et d’un rôle contractuel documentés.",
+        "en": "The applying company must be registered in Finland. Quebec artists may join a project led by a Finnish partner, but this is not a direct application route, so no funding is linked until a partnership and documented contractual role exist.",
+        "ja": "申請団体はフィンランド登記が必須です。ケベックのアーティストが現地パートナーの企画に参加する余地はありますが直接応募ではないため、提携関係と契約上の役割が確定するまで助成制度を結びません。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "feten-gijon-2027-open",
@@ -2197,7 +2278,36 @@
     },
     "nextCheckDate": "2026-07-30",
     "sourceUrl": "https://drupal.gijon.es/es/feten-1",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-21",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "FETEN accepte les compagnies internationales et la contribution négociée de la foire doit inclure tous les frais de participation. Les deux pistes ci-dessous ne deviennent pertinentes qu’après sélection et confirmation écrite; le budget doit séparer clairement les coûts payés par FETEN des coûts non couverts.",
+        "en": "FETEN accepts international companies, and its negotiated fair contribution must include all participation expenses. The two leads below only become relevant after selection and written confirmation; the budget must clearly separate costs paid by FETEN from uncovered costs.",
+        "ja": "FETENは国外のプロ団体も対象で、主催者と合意する出演額には参加経費を含めます。下記2制度は採択と書面確認の後に初めて候補となり、FETEN負担分と未負担分を予算上明確に分ける必要があります。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "Le volet Circulation hors Québec vise la présentation d’un spectacle à l’international. Il faut déposer au moins quatre semaines avant le projet avec une confirmation écrite d’un diffuseur reconnu précisant dates et conditions d’accueil.",
+            "en": "Circulation outside Quebec covers international presentation of a performance. Apply at least four weeks before the project with written confirmation from a recognized presenter stating dates and hosting conditions.",
+            "ja": "CALQの州外作品巡回制度は、海外での作品上演を対象とします。開始4週間以上前までに、日程と受入条件を記した認定主催者の書面確認を添えて申請する必要があります。"
+          }
+        },
+        {
+          "fundingId": "cca-travel",
+          "state": "conditional",
+          "note": {
+            "fr": "Arts Abroad: Travel couvre notamment la présentation d’une œuvre et les vitrines professionnelles hors Canada, à au moins 500 km et sur invitation. Une invitation ou confirmation de rencontre est requise.",
+            "en": "Arts Abroad: Travel includes presenting work and official showcases outside Canada, at least 500 km away and by invitation. An invitation or meeting confirmation is required.",
+            "ja": "Arts Abroad: Travelは、カナダ国外500km以上の場所で行う作品上演や公式ショーケースを対象に含み、招待状または面談確認書が必要です。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "carthage-theatre-days-2026-open",

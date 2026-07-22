@@ -648,6 +648,59 @@ a {
   line-height: 1.55;
 }
 
+.radar-funding-notice .section-kicker {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.radar-funding-notice.suggested {
+  border-left-color: var(--green);
+  background: #edf2e8;
+}
+
+.radar-funding-notice.reviewed_no_match {
+  border-left-color: var(--blue);
+  background: #e8eef4;
+}
+
+.radar-funding-notice.pending_terms {
+  border-left-color: var(--yellow);
+  background: #f6f0d9;
+}
+
+.radar-matches-title {
+  margin-top: 20px;
+}
+
+.radar-funding-state {
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 12px;
+  padding: 4px 7px;
+  border-left: 3px solid var(--coral);
+  background: #f8e9df;
+  color: #3e3d37;
+  font-size: 0.7rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.radar-funding-state.suggested,
+.radar-funding-state.linked {
+  border-left-color: var(--green);
+  background: #edf2e8;
+}
+
+.radar-funding-state.reviewed_no_match {
+  border-left-color: var(--blue);
+  background: #e8eef4;
+}
+
+.radar-funding-state.pending_terms {
+  border-left-color: var(--yellow);
+  background: #f6f0d9;
+}
+
 .requirement-list {
   display: grid;
   gap: 6px;

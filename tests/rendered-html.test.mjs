@@ -42,6 +42,9 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /data-candidate-kind="radar"/);
   assert.match(html, /data-radar-candidate-id="brooklyn-film-2027"/);
   assert.match(html, /Route active du radar/);
+  assert.match(html, /Pistes fondées sur les critères officiels/);
+  assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
+  assert.match(html, /En attente de modalités suffisantes/);
   assert.match(html, /CALQ — Déplacement/);
   assert.match(html, /Canada Council — Arts Abroad: Travel/);
   assert.match(html, /Votre statut au Canada/);
@@ -353,7 +356,45 @@ test("opportunity and funding records preserve evidence fields", async () => {
     for (const language of ["fr", "en", "ja"]) {
       assert.ok(record.deadlineLabel[language], `${record.id}.deadlineLabel.${language}`);
     }
+    if (record.linkedOpportunityId) {
+      assert.ok(opportunities.some((opportunity) => opportunity.id === record.linkedOpportunityId), `${record.id}.linkedOpportunityId`);
+    }
+    if (record.fundingReview) {
+      assert.ok(["suggested", "reviewed_no_match", "pending_terms"].includes(record.fundingReview.status));
+      assertISODate(record.fundingReview.verifiedAt, `${record.id}.fundingReview.verifiedAt`);
+      assert.ok(record.fundingReview.verifiedAt >= record.verifiedAt, `${record.id}.fundingReview predates route verification`);
+      for (const language of ["fr", "en", "ja"]) {
+        assert.ok(record.fundingReview.note[language], `${record.id}.fundingReview.note.${language}`);
+      }
+      if (record.fundingReview.status === "suggested") {
+        assert.ok(record.fundingReview.fundingMatches.length > 0, `${record.id} needs at least one reviewed funding lead`);
+      } else {
+        assert.equal(record.fundingReview.fundingMatches.length, 0, `${record.id} must not link funding without sufficient evidence`);
+      }
+      for (const match of record.fundingReview.fundingMatches) {
+        assert.ok(fundingIds.has(match.fundingId), `Missing radar funding record: ${record.id} -> ${match.fundingId}`);
+        assert.ok(["possible", "conditional", "verify"].includes(match.state));
+        for (const language of ["fr", "en", "ja"]) {
+          assert.ok(match.note[language], `${record.id}.${match.fundingId}.note.${language}`);
+        }
+      }
+    }
   }
+
+  const firstCircusFundingBatch = [
+    "cirque-de-demain-2027",
+    "circusstad-circunstruction-15",
+    "circa-residencies-2027-28",
+    "dynamo-circus-residency-2027-28",
+    "out-there-supported-residency-open",
+    "irish-aerial-wild-card-residency-open",
+    "cirko-w-coproduction-2028-regional",
+    "feten-gijon-2027-open",
+  ].map((id) => festivalRadar.find((record) => record.id === id));
+  assert.ok(firstCircusFundingBatch.every(Boolean));
+  assert.ok(firstCircusFundingBatch.every((record) => record.linkedOpportunityId || record.fundingReview));
+  assert.equal(festivalRadar.find((record) => record.id === "cirque-de-demain-2027").linkedOpportunityId, "cirque-de-demain-2027");
+  assert.equal(festivalRadar.find((record) => record.id === "feten-gijon-2027-open").fundingReview.fundingMatches.length, 2);
 
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,
