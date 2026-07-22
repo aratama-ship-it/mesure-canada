@@ -80,6 +80,8 @@ test("server-renders the monitoring ledger on its own route", async () => {
   assert.match(html, /TOHU — Résidences de recherche et création/);
   assert.match(html, /UNIMA PASSPORT/);
   assert.match(html, /Practice as Research Residency, Abidjan/);
+  assert.match(html, /Le formulaire de candidature 2026 lié par CLATA est maintenant fermé/);
+  assert.match(html, /Voir aussi une source officielle complémentaire/);
   assert.match(html, /Pistes fondées sur les critères officiels/);
   assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
   assert.match(html, /En attente de modalités suffisantes/);
@@ -401,6 +403,16 @@ test("opportunity and funding records preserve evidence fields", async () => {
     festivalRadar.find((record) => record.id === "inaf-norway-2027-open").fundingReview.fundingMatches.map((match) => match.fundingId),
     ["calq-circulation", "cca-microgrants"],
   );
+
+  const destinos = festivalRadar.find((record) => record.id === "destinos-chicago-2026-open");
+  assert.equal(destinos.status, "watch");
+  assert.equal(destinos.sourceUrl, "https://forms.gle/D2i4p9ndywn231qW7");
+  assert.equal(destinos.networkSourceUrl, "https://www.clata.org/en/");
+  const carthage = festivalRadar.find((record) => record.id === "carthage-theatre-days-2026-open");
+  assert.equal(carthage.networkSourceUrl, "https://jtcarthage.tn/");
+  const iffr = festivalRadar.find((record) => record.id === "iffr-2027");
+  assert.equal(iffr.status, "open");
+  assert.equal(iffr.sourceUrl, "https://iffr.com/en/iffr-pro-submissions/film-entry");
 
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,

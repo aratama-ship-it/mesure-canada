@@ -2424,6 +2424,7 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://forms.gle/d4Z6KCvERyozKByu9",
+    "networkSourceUrl": "https://jtcarthage.tn/",
     "verifiedAt": "2026-07-22",
     "fundingReview": {
       "status": "suggested",
@@ -3073,15 +3074,16 @@
     "region": "North America",
     "family": "showcase",
     "participation": "regional_conditions",
-    "status": "open",
+    "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "L’appel national et international est affiché ouvert, sans date limite publique. Priorité aux œuvres d’auteurs latines ou latino-américains et aux petites équipes; 45 à 90 minutes, maximum 3 voyageurs pour un solo ou 5 pour les autres productions. Cachet, accueil, vol aller-retour si applicable, transports locaux, 60 USD par jour de travail, 30 USD par jour de voyage et petit-déjeuner d’hôtel.",
-      "en": "The national and international call is listed as open with no public deadline. Priority goes to Latine and Latin-American playwrights and smaller teams; 45–90 minutes, up to 3 travelers for a solo or 5 for other productions. Honorarium, hospitality, round-trip airfare when applicable, local transport, USD 60 per workday, USD 30 per travel day, and hotel breakfast are provided.",
-      "ja": "国内外公募は受付中表示ですが、公開締切日はありません。Latine／ラテンアメリカ系劇作家の作品と小編成を優先し、45〜90分、ソロは渡航3名まで、その他は5名まで。出演料、受入、該当時の往復航空券、現地移動、稼働日60米ドル・移動日30米ドルの日当、ホテル朝食を提供します。"
+      "fr": "Le formulaire de candidature 2026 lié par CLATA est maintenant fermé; ne plus considérer cet appel comme ouvert. Le cycle donnait priorité aux œuvres d’auteurs latines ou latino-américains et aux petites équipes, avec cachet, accueil, transport et indemnités selon les conditions publiées. Surveiller le prochain cycle.",
+      "en": "The 2026 application form linked by CLATA is now closed; do not treat this call as open. The cycle prioritized work by Latine and Latin-American playwrights and smaller teams, with fees, hospitality, transport and per diems under the published terms. Watch for the next cycle.",
+      "ja": "CLATAが案内していた2026年応募フォームは現在受付終了です。募集中とは扱わず、次回募集を監視します。2026年枠はLatine／ラテンアメリカ系劇作家の作品と小編成を優先し、公開条件では出演料、受入、渡航・現地移動、日当が示されていました。"
     },
-    "nextCheckDate": "2026-08-01",
-    "sourceUrl": "https://www.clata.org/en/programs/Destinos-2026-Open-Call",
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://forms.gle/D2i4p9ndywn231qW7",
+    "networkSourceUrl": "https://www.clata.org/en/",
     "verifiedAt": "2026-07-22"
   },
   {

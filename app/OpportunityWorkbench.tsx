@@ -304,7 +304,7 @@ const copy = {
       participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier", language_conditions: "Conditions linguistiques à vérifier", eligibility_check: "Admissibilité à confirmer" },
       status: { open: "Ouvert", upcoming: "À venir", watch: "À surveiller" },
       official: "Voir la source officielle ↗",
-      network: "Voir aussi la fiche du réseau CAFF ↗",
+      network: "Voir aussi une source officielle complémentaire ↗",
       nextCheck: "Prochaine vérification",
       verified: "Vérifié le",
       note: "Le registre n’affirme jamais qu’un appel est ouvert au-delà de la date vérifiée. Ouvrez la source avant de préparer un dossier.",
@@ -463,7 +463,7 @@ const copy = {
       participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check", language_conditions: "Language conditions to check", eligibility_check: "Eligibility to confirm" },
       status: { open: "Open", upcoming: "Opening soon", watch: "Watch next cycle" },
       official: "Open official source ↗",
-      network: "Also open the CAFF network record ↗",
+      network: "Open an additional official source ↗",
       nextCheck: "Next check",
       verified: "Verified",
       note: "This register never treats an old deadline as live. Open the official source before preparing a submission.",
@@ -602,7 +602,7 @@ const copy = {
       participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認", language_conditions: "言語条件を要確認", eligibility_check: "応募資格を要確認" },
       status: { open: "募集中", upcoming: "開始予定", watch: "次回を監視" },
       official: "公式情報を開く ↗",
-      network: "CAFFネットワーク情報も開く ↗",
+      network: "補足の公式情報も開く ↗",
       nextCheck: "次回確認日",
       verified: "公式情報の確認日",
       note: "古い締切を「募集中」とは扱いません。応募準備の前に必ず公式情報を開いてください。",
@@ -1042,7 +1042,7 @@ export function OpportunityWorkbench() {
         <section className="panel panel-funding" id="funding-panel">
           <div className="panel-heading"><span className="section-kicker">03</span><h3>{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
-            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
+            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p><div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
             {selectedCandidate.radar.fundingReview ? <>
               <aside className={`radar-funding-notice ${selectedCandidate.radar.fundingReview.status}`}><span className="section-kicker">{t.radar.fundingReviewHeading}</span><strong>{t.radar.fundingReviewStatus[selectedCandidate.radar.fundingReview.status]}</strong><p>{selectedCandidate.radar.fundingReview.note[language]}</p><span className="verified-date">{t.radar.fundingReviewed}: {selectedCandidate.radar.fundingReview.verifiedAt}</span></aside>
               {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <><div className="funding-list" id="radar-funding-list" data-visible-count={visibleRadarMatches.length} data-total-count={radarMatches.length}>{visibleRadarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingRadarMatchCount ? <button className="show-more-funding" type="button" aria-controls="radar-funding-list" onClick={() => revealMoreFunding("radar", radarMatches.length)}>{t.showMoreFunding(nextRadarMatchBatchSize, remainingRadarMatchCount)}</button> : null}</> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
