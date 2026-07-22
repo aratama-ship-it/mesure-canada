@@ -15,18 +15,18 @@
     "profiles": ["artist", "collective"],
     "disciplines": ["circus"],
     "summary": {
-      "fr": "Concours international pour numéros de cirque portés par des artistes de 16 à 30 ans. Vidéo obligatoire.",
-      "en": "International competition for circus acts led by performers aged 16–30. A video submission is required.",
-      "ja": "16〜30歳のアーティストによるサーカス演目を対象とした国際コンクール。演目動画の提出が必要です。"
+      "fr": "Concours international pour artistes de cirque de 16 à 30 ans. Le numéro doit durer six minutes au maximum. Les accompagnant·es ne sont pas pris en charge automatiquement; les formalités et frais de fret restent à la charge des artistes.",
+      "en": "International competition for circus artists aged 16–30. Acts must be no longer than six minutes. Accompanying people are not automatically supported, and artists remain responsible for freight formalities and costs.",
+      "ja": "16〜30歳のサーカスアーティストを対象とする国際コンクール。演目は6分以内です。同行者の費用は自動的には支給されず、機材輸送の手続きと費用はアーティスト負担です。"
     },
     "requirements": {
-      "fr": ["16 à 30 ans, sauf exception", "Candidature individuelle ou en groupe", "Vidéo du numéro requise"],
-      "en": ["Age 16–30, with limited exceptions", "Solo or group applications", "Act video required"],
-      "ja": ["原則16〜30歳", "個人またはグループで応募", "演目動画が必要"]
+      "fr": ["16 à 30 ans; autorisation parentale obligatoire de 16 à 18 ans", "Numéro de six minutes maximum et lien vidéo YouTube ou Vimeo", "Une participation antérieure à un autre festival de cirque peut entraîner un refus; les ancien·nes du Festival doivent proposer une autre discipline ou une évolution artistique notable"],
+      "en": ["Age 16–30; parental authorization is required from 16 to 18", "Act of no more than six minutes and a YouTube or Vimeo video link", "Prior participation in another circus festival can lead to rejection; returning Festival artists must present another discipline or notable artistic development"],
+      "ja": ["16〜30歳。16〜18歳は保護者の同意が必要", "6分以内の演目とYouTubeまたはVimeoの動画リンク", "他のサーカス・フェスティバルへの参加歴は不採択理由になり得ます。再応募者は別分野または明確な芸術的発展が必要"]
     },
     "applicationLanguages": ["fr", "en"],
-    "sourceUrl": "https://www.cirquededemain.paris/candidatures",
-    "verifiedAt": "2026-07-19",
+    "sourceUrl": "https://www.cirquededemain.paris/en/applications",
+    "verifiedAt": "2026-07-22",
     "fundingMatches": [
       {
         "fundingId": "calq-travel",
@@ -54,28 +54,28 @@
     "organizer": "ARTRAGE",
     "country": "Australia",
     "city": "Perth",
-    "status": "rolling",
-    "deadlineDate": null,
+    "status": "open",
+    "deadlineDate": "2026-10-07",
     "deadlineLabel": {
-      "fr": "Inscription en continu",
-      "en": "Rolling registration",
-      "ja": "随時受付"
+      "fr": "7 octobre 2026 — date limite d’inscription des événements",
+      "en": "October 7, 2026 — event registration deadline",
+      "ja": "2026年10月7日（イベント登録締切）"
     },
     "profiles": ["artist", "collective", "organization"],
     "disciplines": ["circus", "theatre", "dance", "music"],
     "summary": {
-      "fr": "Festival en accès libre. Les artistes du monde entier peuvent s’inscrire, mais doivent organiser leur lieu et leur économie de tournée.",
-      "en": "Open-access festival. Artists worldwide can register, but must arrange their venue and touring economics.",
-      "ja": "世界各地のアーティストが登録できるオープンアクセス型フェスティバル。会場の確保とツアー収支の設計は参加者側で行います。"
+      "fr": "Festival en accès libre du 20 janvier au 14 février 2027. Les frais d’inscription, payables d’avance et non remboursables, vont de 175 AUD pour un événement non billetterie à 335 AUD pour huit séances billetterie ou plus. Le lieu, le voyage, le séjour et les autres coûts de production restent à organiser.",
+      "en": "Open-access festival running January 20–February 14, 2027. Upfront, non-refundable registration fees range from AUD 175 for a non-ticketed event to AUD 335 for eight or more ticketed sessions. Artists still need to arrange their venue, travel, accommodation, and other production costs.",
+      "ja": "2027年1月20日〜2月14日のオープンアクセス型フェスティバル。登録料は前払い・返金不可で、無料公演等は175豪ドル、チケット制8公演以上は335豪ドルです。会場、渡航、滞在、その他の制作費は別途手配が必要です。"
     },
     "requirements": {
-      "fr": ["Ouvert aux artistes du monde entier", "Inscription dans le portail AVR", "Lieu et coûts à confirmer avant le départ"],
-      "en": ["Open to artists worldwide", "AVR portal registration", "Venue and costs must be confirmed before travel"],
-      "ja": ["世界各地のアーティストが応募可能", "AVRポータルでの登録", "渡航前に会場と費用を確定"]
+      "fr": ["Ouvert aux artistes du monde entier", "Inscription dans le portail AVR et connexion avec un lieu; un accord écrit est recommandé", "Prévoir les frais de billetterie et, dans certains lieux gérés par ARTRAGE, 32 % de frais de gestion après billetterie et coûts additionnels"],
+      "en": ["Open to artists worldwide", "Register through AVR and connect with a venue; a written venue agreement is recommended", "Budget for ticket handling and, at some ARTRAGE-managed venues, a 32% management fee after ticket handling and additional costs"],
+      "ja": ["世界各地のアーティストが応募可能", "AVRで登録し会場と接続。会場との書面合意が推奨されます", "発券手数料に加え、ARTRAGE運営会場の一部では発券・追加費用控除後に32％の運営手数料があります"]
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://fringeworld.com.au/as-an-artist",
-    "verifiedAt": "2026-07-19",
+    "verifiedAt": "2026-07-22",
     "fundingMatches": [
       {
         "fundingId": "calq-circulation",
@@ -131,18 +131,18 @@
     "profiles": ["artist", "collective"],
     "disciplines": ["theatre"],
     "summary": {
-      "fr": "Compétition pour une œuvre scénique originale de 30 minutes maximum, créée en chinois autour de trois éléments imposés.",
-      "en": "Competition for an original stage work of up to 30 minutes, created in Chinese from three required elements.",
-      "ja": "指定された3要素を用い、中国語で制作する30分以内のオリジナル舞台作品を対象としたコンペです。"
+      "fr": "Candidature gratuite et internationale. Les 18 œuvres retenues reçoivent 3 000 RMB de création, les repas et l’hébergement pour cinq personnes au maximum, ainsi qu’un soutien au transport; pour un trajet international, le billet aller-retour en classe économique est plafonné à 4 000 RMB par personne et par trajet simple.",
+      "en": "Free international application. The 18 selected works receive RMB 3,000 in creation support, meals and accommodation for up to five people, and travel support; international round-trip economy airfare is capped at RMB 4,000 per person for each one-way segment.",
+      "ja": "応募無料・国籍不問。選出18作品には制作費3,000元、最大5人分の食事・宿泊、交通支援があります。国外からの往復エコノミー航空券は、1人・片道あたり4,000元が上限です。"
     },
     "requirements": {
-      "fr": ["Création en chinois", "30 minutes maximum", "Utiliser les trois éléments imposés en 2026"],
-      "en": ["Work must be created in Chinese", "Maximum 30 minutes", "Use all three required 2026 elements"],
-      "ja": ["中国語で作品を制作", "上演時間は30分以内", "2026年の指定3要素をすべて使用"]
+      "fr": ["Sans restriction de nationalité, mais création en chinois", "Mise en scène par une personne de 35 ans au plus, sauf s’il s’agit de sa première mise en scène présentée publiquement", "Équipe complète de cinq personnes au maximum, spectacle de 30 minutes maximum et utilisation des trois éléments 2026 : glisser, renard et radio"],
+      "en": ["No nationality restriction, but the work must be created in Chinese", "Director aged 35 or younger, unless this is their first publicly presented stage directing work", "Entire team limited to five people, performance limited to 30 minutes, and all three 2026 elements required: gliding, fox, and radio"],
+      "ja": ["国籍不問。ただし作品は中国語で制作", "演出家は原則35歳以下。35歳超でも公に発表する初の舞台演出作品なら応募可能", "全スタッフ・出演者は合計5人以内、30分以内。2026年の3要素「滑る・狐・ラジオ」をすべて使用"]
     },
     "applicationLanguages": ["zh"],
-    "sourceUrl": "http://www.wuzhenfestival.com/index.php?m=Xijujie&a=qingnianjingyan",
-    "verifiedAt": "2026-07-19",
+    "sourceUrl": "https://www.wuzhenfestival.com/youthCompeti",
+    "verifiedAt": "2026-07-22",
     "fundingMatches": [
       {
         "fundingId": "calq-travel",
@@ -222,25 +222,25 @@
     "status": "open",
     "deadlineDate": "2026-10-31",
     "deadlineLabel": {
-      "fr": "31 octobre 2026 — tarif hâtif le 30 septembre",
-      "en": "October 31, 2026 — early rate September 30",
-      "ja": "2026年10月31日（早期料金は9月30日まで）"
+      "fr": "31 octobre 2026; candidature tardive jusqu’au 7 novembre avec frais majorés",
+      "en": "October 31, 2026; late applications through November 7 at a higher fee",
+      "ja": "2026年10月31日。追加料金で11月7日まで遅延応募可"
     },
     "profiles": ["artist"],
     "disciplines": ["music"],
     "summary": {
-      "fr": "Concours international de piano ouvert à toutes les nationalités, avec limite d’âge propre à l’édition 2027.",
-      "en": "International piano competition open to all nationalities, with a 2027-specific age limit.",
-      "ja": "全ての国籍から応募できる国際ピアノコンクール。2027年大会固有の年齢条件があります。"
+      "fr": "Concours ouvert à toutes les nationalités. Le montant exact des frais doit être vérifié dans le portail Acceptd. Au premier tour, le voyage, l’hébergement, les repas et le visa sont à la charge des candidat·es; à Leeds, l’organisation fournit hébergement, repas et transport local, et prévoit une contribution plafonnée au voyage dont le montant reste à publier.",
+      "en": "Competition open to all nationalities. The exact fee must be checked in the Acceptd portal. Applicants cover First Round travel, accommodation, subsistence, and visa costs; in Leeds, the organizer provides accommodation, meals, and local transport, with a capped travel contribution still to be published.",
+      "ja": "国籍不問。正確な応募料はAcceptdの応募画面で要確認です。第1ラウンドの渡航・宿泊・食費・ビザは自己負担。リーズでのラウンドは主催者が宿泊・食事・現地交通を提供し、上限未公表の渡航費補助も予定されています。"
     },
     "requirements": {
-      "fr": ["Né entre le 19 septembre 1991 et le 30 mars 2007", "Passeport ou pièce d’identité valide", "Répertoire et vidéo selon le règlement"],
-      "en": ["Born between September 19, 1991 and March 30, 2007", "Valid passport or identification", "Repertoire and video per the rules"],
-      "ja": ["1991年9月19日〜2007年3月30日生まれ", "有効なパスポートまたは身分証明書", "規定に沿ったレパートリーと動画"]
+      "fr": ["Né entre le 19 septembre 1991 et le 30 mars 2007; les anciens premiers prix ne sont pas admissibles", "Passeport valide et possibilité de voyager et de participer à toutes les étapes", "Enregistrement de présélection de 20 à 25 minutes, audio continu non monté et vidéo simultanée à caméra fixe"],
+      "en": ["Born between September 19, 1991 and March 30, 2007; previous first-prize winners are ineligible", "Valid passport and ability to travel and attend every stage", "20–25 minute preselection recording with continuous unedited audio and simultaneous fixed-camera video"],
+      "ja": ["1991年9月19日〜2007年3月30日生まれ。過去の第1位受賞者は対象外", "有効なパスポートを持ち、全日程への渡航・参加が可能", "20〜25分の予備審査録音。無編集の連続音声と固定カメラによる同時撮影動画"]
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://www.leedspiano.com/2027-competition/",
-    "verifiedAt": "2026-07-19",
+    "verifiedAt": "2026-07-22",
     "fundingMatches": [
       {
         "fundingId": "calq-travel",
@@ -272,25 +272,25 @@
     "openDate": "2026-09-03",
     "deadlineDate": "2026-10-31",
     "deadlineLabel": {
-      "fr": "Ouverture le 3 septembre — clôture le 31 octobre 2026",
-      "en": "Opens September 3 — closes October 31, 2026",
-      "ja": "2026年9月3日受付開始・10月31日締切"
+      "fr": "Ouverture le 3 septembre — clôture le 31 octobre 2026 à 23 h 59 (Montréal)",
+      "en": "Opens September 3 — closes October 31, 2026 at 11:59 p.m. Montréal time",
+      "ja": "2026年9月3日受付開始・10月31日23:59（モントリオール時間）締切"
     },
     "profiles": ["artist"],
     "disciplines": ["music"],
     "summary": {
-      "fr": "Appel international accueilli à Montréal. Pour une personne déjà au Québec, aucun financement de déplacement international n’est associé automatiquement.",
-      "en": "International call hosted in Montréal. For someone already in Québec, no international travel funding is automatically attached.",
-      "ja": "モントリオール開催の国際公募です。すでにケベック州内にいる申請者には、国外渡航助成を自動的に結びつけません。"
+      "fr": "Concours international avec frais de candidature non remboursables de 200 CAD. Les 25 personnes sélectionnées reçoivent un vol aller-retour en classe économique, ou l’équivalent, vers Montréal et un hébergement gratuit en famille d’accueil. Si vous résidez déjà au Québec, confirmez directement la forme que prend « l’équivalent ».",
+      "en": "International competition with a non-refundable CAD 200 application fee. The 25 selected competitors receive round-trip economy airfare, or equivalent transportation, to Montréal and free host-family accommodation. Québec residents should confirm directly what “equivalent” transportation means for them.",
+      "ja": "応募料200カナダドル（返金不可）の国際コンクール。選出25人にはモントリオールまでの往復エコノミー航空券または同等の交通手段と、ホストファミリーによる無料宿泊が提供されます。ケベック州在住者は「同等」の扱いを主催者に要確認です。"
     },
     "requirements": {
-      "fr": ["18 à 30 ans pour l’édition 2027", "Toutes nationalités", "Dossier et répertoire selon le règlement"],
-      "en": ["Age 18–30 for the 2027 edition", "All nationalities", "Application and repertoire per the rules"],
-      "ja": ["2027年大会は18〜30歳", "国籍不問", "規定に沿った応募書類とレパートリー"]
+      "fr": ["Toutes nationalités; né entre le 25 avril 1996 et le 24 avril 2009", "Les finalistes d’une précédente édition piano ne sont pas admissibles", "Disponible à Montréal du 23 avril au 5 mai 2027; dossier comprenant notamment quatre vidéos d’audition et deux références"],
+      "en": ["All nationalities; born between April 25, 1996 and April 24, 2009", "Finalists from a previous piano edition are ineligible", "Available in Montréal from April 23 to May 5, 2027; application includes four audition videos and two references"],
+      "ja": ["国籍不問。1996年4月25日〜2009年4月24日生まれ", "過去のピアノ部門ファイナリストは対象外", "2027年4月23日〜5月5日にモントリオールで参加可能。応募には審査動画4本と推薦者2人などが必要"]
     },
     "applicationLanguages": ["fr", "en"],
     "sourceUrl": "https://www.concoursmontreal.ca/en/piano-2027/rules/",
-    "verifiedAt": "2026-07-19",
+    "verifiedAt": "2026-07-22",
     "fundingMatches": []
   }
 ]

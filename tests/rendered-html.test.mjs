@@ -129,6 +129,41 @@ test("opportunity and funding records preserve evidence fields", async () => {
       );
     }
   }
+
+  const opportunityById = new Map(opportunities.map((record) => [record.id, record]));
+  const featuredOpportunityIds = [
+    "cirque-de-demain-2027",
+    "fringe-world-perth-2027",
+    "wuzhen-emerging-2026",
+    "wjf-23-seattle",
+    "leeds-piano-2027",
+    "cmim-piano-2027",
+  ];
+  for (const id of featuredOpportunityIds) {
+    assert.equal(opportunityById.get(id)?.verifiedAt, "2026-07-22", `${id} must use the latest featured-call audit`);
+  }
+
+  const fringeWorld = opportunityById.get("fringe-world-perth-2027");
+  assert.equal(fringeWorld.status, "open");
+  assert.equal(fringeWorld.deadlineDate, "2026-10-07");
+  assert.match(fringeWorld.summary.ja, /175豪ドル/);
+  assert.match(fringeWorld.requirements.ja.join(" "), /32％/);
+
+  const wuzhen = opportunityById.get("wuzhen-emerging-2026");
+  assert.match(wuzhen.summary.ja, /応募無料/);
+  assert.match(wuzhen.summary.ja, /片道あたり4,000元/);
+  assert.match(wuzhen.requirements.ja.join(" "), /国籍不問/);
+
+  const leeds = opportunityById.get("leeds-piano-2027");
+  assert.match(leeds.deadlineLabel.ja, /11月7日/);
+  assert.doesNotMatch(leeds.deadlineLabel.ja, /9月30日/);
+  assert.match(leeds.summary.ja, /第1ラウンド.*自己負担/);
+
+  const cmim = opportunityById.get("cmim-piano-2027");
+  assert.match(cmim.summary.ja, /200カナダドル/);
+  assert.match(cmim.summary.ja, /往復エコノミー航空券または同等の交通手段/);
+  assert.match(cmim.summary.ja, /無料宿泊/);
+
   for (const record of funding) {
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
     assertISODate(record.verifiedAt, `${record.id}.verifiedAt`);
