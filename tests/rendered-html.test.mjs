@@ -302,6 +302,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
         assert.ok(record.deadlineDate >= new Date().toISOString().slice(0, 10), `${record.id} is marked open after its deadline`);
       }
     }
+    if (["open", "upcoming"].includes(record.status) && record.deadlineDate && record.nextCheckDate) {
+      assert.ok(record.nextCheckDate <= record.deadlineDate, `${record.id}.nextCheckDate must not fall after its deadline`);
+    }
     for (const language of ["fr", "en", "ja"]) {
       assert.ok(record.deadlineLabel[language], `${record.id}.deadlineLabel.${language}`);
     }
@@ -344,6 +347,20 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(firstCircusFundingBatch.every((record) => record.linkedOpportunityId || record.fundingReview));
   assert.equal(festivalRadar.find((record) => record.id === "cirque-de-demain-2027").linkedOpportunityId, "cirque-de-demain-2027");
   assert.equal(festivalRadar.find((record) => record.id === "feten-gijon-2027-open").fundingReview.fundingMatches.length, 2);
+  for (const id of [
+    "circusstad-circunstruction-15",
+    "imaginarius-2027",
+    "fifdh-2027",
+    "cairo-film-2026",
+    "idfa-forum-2026",
+    "feten-gijon-2027-open",
+  ]) {
+    assert.equal(festivalRadar.find((record) => record.id === id).verifiedAt, "2026-07-22", `${id} should retain the deadline audit date`);
+  }
+  const wjf = opportunities.find((record) => record.id === "wjf-23-seattle");
+  assert.equal(wjf.verifiedAt, "2026-07-22");
+  assert.match(wjf.deadlineLabel.ja, /250米ドルの登録期間最終日/);
+  assert.match(wjf.deadlineLabel.ja, /登録可能/);
 
   const secondFundingBatch = [
     ["jskd-cankarjeva-puppetry-2026-open", 1],

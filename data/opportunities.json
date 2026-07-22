@@ -173,25 +173,25 @@
     "status": "open",
     "deadlineDate": "2026-07-31",
     "deadlineLabel": {
-      "fr": "31 juillet 2026",
-      "en": "July 31, 2026",
-      "ja": "2026年7月31日"
+      "fr": "31 juillet 2026 : fin du tarif à 250 $ US; les inscriptions continuent ensuite à un tarif plus élevé",
+      "en": "July 31, 2026: last day of the US$250 tier; registration continues afterward at a higher price",
+      "ja": "2026年7月31日：250米ドルの登録期間最終日。以後も値上げ後の料金で登録可能"
     },
     "profiles": ["artist"],
     "disciplines": ["circus"],
     "summary": {
-      "fr": "Compétition et convention de jonglerie avec catégories de niveau et possibilité de présélection vidéo pour certaines épreuves.",
-      "en": "Juggling competition and convention with skill divisions and video pre-qualification for some events.",
-      "ja": "レベル別部門を持つジャグリング競技会・コンベンション。一部種目では動画による事前審査があります。"
+      "fr": "Convention et compétitions de jonglerie à Seattle. L’inscription complète coûte 250 $ US jusqu’au 31 juillet, 300 $ du 1er août au 31 octobre, puis 500 $; l’accès spectateur est gratuit.",
+      "en": "Seattle juggling convention and competitions. Full registration is US$250 through July 31, US$300 from August 1 through October 31, then US$500; spectator access is free.",
+      "ja": "シアトルで開催されるジャグリング・コンベンションと競技会。通し登録は7月31日まで250米ドル、8月1日〜10月31日は300米ドル、以後500米ドル。見学は無料です。"
     },
     "requirements": {
-      "fr": ["Adhésion WJF requise", "Catégorie adaptée au niveau et à l’âge", "Vérifier les règles de présélection vidéo"],
-      "en": ["WJF membership required", "Choose the correct level and age category", "Confirm video pre-qualification rules"],
-      "ja": ["WJF会員登録が必要", "レベルと年齢に合う部門を選択", "動画事前審査の規定を確認"]
+      "fr": ["Inscription à la convention requise pour concourir", "Adhésion WJF requise pour les compétiteur·rices", "Vérifier directement les modalités WJF 23 propres à chaque épreuve"],
+      "en": ["Convention registration is required to compete", "Competitors must be current WJF members", "Confirm the WJF 23 requirements for each event directly"],
+      "ja": ["競技参加にはコンベンション登録が必要", "競技参加者は有効なWJF会員であること", "WJF 23の種目別条件を公式サイトで直接確認"]
     },
     "applicationLanguages": ["en"],
-    "sourceUrl": "https://www.thewjf.com/competition/",
-    "verifiedAt": "2026-07-19",
+    "sourceUrl": "https://www.thewjf.com/wjf23/",
+    "verifiedAt": "2026-07-22",
     "fundingMatches": [
       {
         "fundingId": "calq-travel",
