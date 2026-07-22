@@ -418,8 +418,29 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "francofete-acadie-2027-28",
     "unima-abidjan-practice-research-2026-open",
     "ypam-fringe-2027",
+    "cirque-de-demain-2027",
+    "edinburgh-fringe-2026",
+    "sundance-film-2027",
+    "iffr-2027",
+    "brooklyn-film-2027",
+    "idfa-docs-for-sale-2026",
+    "cinars-off-2026",
+    "tallinn-fringe-2026-open",
+    "dynamo-circus-residency-2027-28",
+    "out-there-supported-residency-open",
+    "world-buskers-festival-2027-open",
+    "aoca-africa-circus-partner-route-2027",
+    "irish-aerial-wild-card-residency-open",
+    "directors-in-tya-2027-open",
+    "novi-sad-theatre-festival-2027-open",
+    "fiams-saguenay-2027-open",
+    "fmtm-programming-route-2027-open",
+    "pole-marionnette-documentary-residency-open",
+    "arab-theatre-festival-2027-open",
+    "pesta-boneka-puppet-camp-2026-open",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
+  assert.equal(festivalRadar.filter((record) => record.status === "open" && !record.decisionGuide).length, 0, "Every open radar record must expose a practical decision guide");
   for (const id of radarDecisionGuideIds) {
     const record = festivalRadar.find((item) => item.id === id);
     assert.ok(record?.decisionGuide, `${id} must expose a practical decision guide`);
@@ -439,9 +460,20 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "francofete-acadie-2027-28").decisionGuide.quebecAssessment.state, "self_funded");
   assert.equal(festivalRadar.find((record) => record.id === "unima-abidjan-practice-research-2026-open").decisionGuide.quebecAssessment.state, "conditional");
   assert.equal(festivalRadar.find((record) => record.id === "ypam-fringe-2027").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "cirque-de-demain-2027").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "edinburgh-fringe-2026").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "idfa-docs-for-sale-2026").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "dynamo-circus-residency-2027-28").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "aoca-africa-circus-partner-route-2027").decisionGuide.quebecAssessment.state, "not_direct");
+  assert.equal(festivalRadar.find((record) => record.id === "arab-theatre-festival-2027-open").decisionGuide.quebecAssessment.state, "supported");
+  assert.equal(festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open").decisionGuide.quebecAssessment.state, "conditional");
   assert.match(festivalRadar.find((record) => record.id === "ypam-fringe-2027").decisionGuide.applicantCost.ja, /18,700〜38,500円/);
   assert.match(festivalRadar.find((record) => record.id === "guadalajara-film-2027").decisionGuide.applicantCost.ja, /応募は無料/);
   assert.match(festivalRadar.find((record) => record.id === "francofete-acadie-2027-28").decisionGuide.applicantCost.ja, /100カナダドル/);
+  assert.match(festivalRadar.find((record) => record.id === "edinburgh-fringe-2026").decisionGuide.applicantCost.ja, /96ポンド/);
+  assert.match(festivalRadar.find((record) => record.id === "sundance-film-2027").decisionGuide.applicantCost.ja, /55〜95米ドル/);
+  assert.match(festivalRadar.find((record) => record.id === "idfa-docs-for-sale-2026").decisionGuide.applicantCost.ja, /210ユーロ/);
+  assert.match(festivalRadar.find((record) => record.id === "pole-marionnette-documentary-residency-open").decisionGuide.applicantCost.ja, /助成金はありません/);
 
   const firstCircusFundingBatch = [
     "cirque-de-demain-2027",
