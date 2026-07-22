@@ -377,7 +377,7 @@ const copy = {
       after: ".",
     },
     eyebrow: "From Québec to festivals, stages and residencies worldwide",
-    headline: "Find where your work could go next.",
+    headline: "Find where your art could go next.",
     intro: "Explore verified calls across circus, street arts, Fringe, performance, film, showcases and residencies. Funding appears as the next layer only when a connection can be supported by official criteria.",
     stamp: `${festivalRadar.length} Canadian + international call routes · ${opportunities.length} calls with funding reviewed · ${fundingPrograms.length} support programs · checked July 22, 2026`,
     baseKicker: "Zero point on the ruler",

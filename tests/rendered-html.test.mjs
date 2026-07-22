@@ -31,6 +31,9 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Trouvez où votre travail peut aller ensuite/);
   assert.match(html, /pistes d’appels au Canada et à l’international/);
   assert.match(html, /Le financement apparaît ensuite/);
+  const workbenchSource = await readFile(new URL("../app/OpportunityWorkbench.tsx", import.meta.url), "utf8");
+  assert.match(workbenchSource, /Find where your art could go next/);
+  assert.doesNotMatch(workbenchSource, /Find where your work could go next/);
   assert.doesNotMatch(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Où résidez-vous actuellement/);
   assert.match(html, /À propos des informations/);
