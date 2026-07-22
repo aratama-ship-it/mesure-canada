@@ -323,6 +323,14 @@ a {
   gap: 5px;
 }
 
+.base-group-other {
+  grid-column: 1 / -1;
+}
+
+.base-group-other > div {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .base-group button {
   display: grid;
   grid-template-columns: 18px 1fr;
@@ -2116,6 +2124,14 @@ a {
   }
 
   .base-groups {
+    grid-template-columns: 1fr;
+  }
+
+  .base-group-other {
+    grid-column: auto;
+  }
+
+  .base-group-other > div {
     grid-template-columns: 1fr;
   }
 

@@ -1003,5 +1003,422 @@
     },
     "sourceUrl": "https://artsnb.ca/web/programs/artist-in-residence/",
     "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "artsns-grants-individuals-2026",
+    "name": "Arts Nova Scotia — Grants to Individuals",
+    "funder": "Arts Nova Scotia",
+    "profiles": ["artist"],
+    "residencies": ["nova_scotia"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "15 novembre 2026; le formulaire rouvre le 15 octobre",
+      "en": "November 15, 2026; the form reopens October 15",
+      "ja": "2026年11月15日締切。申請フォームは10月15日に再開"
+    },
+    "amount": {
+      "fr": "Création jusqu’à 15 000 $; présentation ou développement professionnel jusqu’à 5 000 $",
+      "en": "Create up to $15,000; Present or Professional Development up to $5,000",
+      "ja": "創作は最大15,000カナダドル、発表・専門能力開発は最大5,000カナダドル"
+    },
+    "coverage": ["research", "creation", "production", "travel", "stay", "promotion", "training", "mentorship"],
+    "cashflow": {
+      "fr": "Résultat annoncé 12 à 14 semaines après la date limite",
+      "en": "Results are announced 12 to 14 weeks after the deadline",
+      "ja": "結果通知は締切から12〜14週間後"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Pour les artistes professionnel·les qui sont citoyens canadiens ou résidents permanents et résident en Nouvelle-Écosse depuis au moins 12 mois. Une absence temporaire de la province ne doit pas dépasser 12 mois.",
+        "en": "For professional artists who are Canadian citizens or permanent residents and have lived in Nova Scotia for at least 12 months. A temporary absence from the province must not exceed 12 months.",
+        "ja": "カナダ市民または永住者のプロアーティストで、ノバスコシア州に12か月以上居住していること。一時的な州外滞在は12か月を超えないことが条件です。"
+      },
+      "sourceUrl": "https://artsns.ca/programs/grants-individuals",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://artsns.ca/programs/grants-individuals",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "artsns-organizations-groups-2026",
+    "name": "Arts Nova Scotia — Grants to Organizations and Groups",
+    "funder": "Arts Nova Scotia",
+    "profiles": ["collective", "organization"],
+    "residencies": ["nova_scotia"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "15 octobre 2026; puis 15 mars 2027",
+      "en": "October 15, 2026; then March 15, 2027",
+      "ja": "2026年10月15日、次回2027年3月15日"
+    },
+    "amount": {
+      "fr": "Création-présentation jusqu’à 20 000 $; commande ou développement professionnel jusqu’à 7 500 $",
+      "en": "Create and Present up to $20,000; Commission or Professional Development up to $7,500",
+      "ja": "創作・発表は最大20,000カナダドル、委嘱・専門能力開発は最大7,500カナダドル"
+    },
+    "coverage": ["creation", "production", "promotion", "fees", "training"],
+    "cashflow": {
+      "fr": "La date de versement n’est pas publiée; les travaux antérieurs à la date limite ne sont pas admissibles",
+      "en": "The payment date is not published; work completed before the deadline is ineligible",
+      "ja": "支払日は公開されていません。締切前に完了した活動は対象外です"
+    },
+    "eligibility": {
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "ns_majority",
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Un collectif doit réunir au moins trois artistes professionnel·les, dont la majorité vit en Nouvelle-Écosse. Les organismes doivent relever d’une catégorie enregistrée admissible. Le guide public ne fixe pas de statut d’immigration pour le représentant; vérifiez ce point directement.",
+        "en": "A collective needs at least three professional artists, with a majority living in Nova Scotia. Organizations must fit an eligible registered category. The public page does not state an immigration-status rule for the representative, so confirm it directly.",
+        "ja": "コレクティブは3人以上のプロアーティストで構成され、過半数がノバスコシア州在住であること。団体は対象となる州内登録区分を満たす必要があります。代表者の在留資格は公開ページに明記されていないため個別確認が必要です。"
+      },
+      "sourceUrl": "https://artsns.ca/programs/grants-organizations-and-groups",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://artsns.ca/programs/grants-organizations-and-groups",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "pei-arts-create-fall-2026",
+    "name": "PEI Arts Grants — Create",
+    "funder": "Innovation PEI",
+    "profiles": ["artist", "collective"],
+    "residencies": ["prince_edward_island"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Du 21 septembre au 19 octobre 2026 à 16 h",
+      "en": "Opens September 21 and closes October 19, 2026 at 4 p.m.",
+      "ja": "2026年9月21日受付開始、10月19日16時締切"
+    },
+    "amount": {
+      "fr": "Jusqu’à 8 000 $ pour les artistes établi·es ou 5 000 $ pour les artistes émergent·es",
+      "en": "Up to $8,000 for established artists or $5,000 for emerging artists",
+      "ja": "確立した作家は最大8,000、若手は最大5,000カナダドル"
+    },
+    "coverage": ["research", "creation", "production", "travel", "stay"],
+    "cashflow": {
+      "fr": "La page officielle ne précise pas la date de décision ou de versement",
+      "en": "The official page does not state the decision or payment date",
+      "ja": "公式ページに結果通知日・支払日は明記されていません"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "pei_majority",
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Résidence principale à l’Île-du-Prince-Édouard pendant 12 mois consécutifs. La majorité des membres d’un groupe doit résider dans la province. La page officielle ne précise pas le statut d’immigration; ce point reste à confirmer pour tous les demandeurs.",
+        "en": "Primary residence in Prince Edward Island for 12 consecutive months. A majority of group members must live in the province. The official page does not specify immigration status, so every applicant should confirm that point.",
+        "ja": "PEIを主たる居住地として連続12か月居住すること。グループは過半数が州内在住であること。在留資格は公式ページに明記されていないため、すべての申請者が制度担当へ確認する必要があります。"
+      },
+      "sourceUrl": "https://www.princeedwardisland.ca/en/service/pei-arts-grants-funding",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.princeedwardisland.ca/en/service/pei-arts-grants-funding",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "pei-arts-share-fall-2026",
+    "name": "PEI Arts Grants — Share",
+    "funder": "Innovation PEI",
+    "profiles": ["artist", "collective"],
+    "residencies": ["prince_edward_island"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Du 21 septembre au 19 octobre 2026 à 16 h",
+      "en": "Opens September 21 and closes October 19, 2026 at 4 p.m.",
+      "ja": "2026年9月21日受付開始、10月19日16時締切"
+    },
+    "amount": {
+      "fr": "Jusqu’à 2 500 $ pour les artistes établi·es ou 2 000 $ pour les artistes émergent·es",
+      "en": "Up to $2,500 for established artists or $2,000 for emerging artists",
+      "ja": "確立した作家は最大2,500、若手は最大2,000カナダドル"
+    },
+    "coverage": ["travel", "stay", "transport", "touring", "fees", "production"],
+    "cashflow": {
+      "fr": "Soutient les tournées et présentations dans la province, au Canada ou à l’international; date de versement non publiée",
+      "en": "Supports tours and presentations provincially, nationally or internationally; payment date is not published",
+      "ja": "州内・カナダ国内・海外でのツアーや発表が対象。支払日は公開されていません"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "pei_majority",
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Résidence principale à l’Î.-P.-É. pendant 12 mois; majorité des membres du groupe dans la province. Le statut d’immigration n’est pas publié et doit être confirmé avant de conclure à l’admissibilité.",
+        "en": "Twelve months of primary PEI residence; a majority of group members must live in the province. Immigration status is not published and must be confirmed before treating the applicant as eligible.",
+        "ja": "PEIを主たる居住地として12か月居住し、グループは過半数が州内在住であること。在留資格は公表されていないため、対象と判断する前に確認が必要です。"
+      },
+      "sourceUrl": "https://www.princeedwardisland.ca/en/service/pei-arts-grants-funding",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.princeedwardisland.ca/en/service/pei-arts-grants-funding",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "pei-arts-learn-fall-2026",
+    "name": "PEI Arts Grants — Learn",
+    "funder": "Innovation PEI",
+    "profiles": ["artist", "collective"],
+    "residencies": ["prince_edward_island"],
+    "disciplines": ["all"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Du 21 septembre au 19 octobre 2026 à 16 h",
+      "en": "Opens September 21 and closes October 19, 2026 at 4 p.m.",
+      "ja": "2026年9月21日受付開始、10月19日16時締切"
+    },
+    "amount": {
+      "fr": "Jusqu’à 2 500 $ établi·e, 2 000 $ émergent·e ou 1 000 $ amateur·rice",
+      "en": "Up to $2,500 established, $2,000 emerging or $1,000 amateur",
+      "ja": "確立した作家は最大2,500、若手2,000、アマチュア1,000カナダドル"
+    },
+    "coverage": ["training", "mentorship", "travel", "research"],
+    "cashflow": {
+      "fr": "Résidences, mentorats, formations, ateliers et conférences sont admissibles; subsistance non admissible",
+      "en": "Residencies, mentorships, training, workshops and conferences are eligible; subsistence is ineligible",
+      "ja": "レジデンス、メンタリング、研修、ワークショップ、会議参加が対象。生活費は対象外です"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "pei_majority",
+      "note": {
+        "fr": "Résidence principale à l’Î.-P.-É. pendant 12 mois; majorité des membres du groupe dans la province. Ce volet accepte aussi les artistes amateurs, mais le statut d’immigration n’est pas précisé et doit être confirmé.",
+        "en": "Twelve months of primary PEI residence; a majority of group members must live in the province. This stream also accepts amateur artists, but immigration status is not specified and must be confirmed.",
+        "ja": "PEIを主たる居住地として12か月居住し、グループは過半数が州内在住であること。アマチュアも対象ですが、在留資格は明記されていないため確認が必要です。"
+      },
+      "sourceUrl": "https://www.princeedwardisland.ca/en/service/pei-arts-grants-funding",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.princeedwardisland.ca/en/service/pei-arts-grants-funding",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "artsnl-professional-projects-2026",
+    "name": "ArtsNL — Professional Project Grants Program",
+    "funder": "Newfoundland and Labrador Arts Council / ArtsNL",
+    "profiles": ["artist"],
+    "residencies": ["newfoundland_labrador"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Deux dates limites par année, au printemps et à l’automne; dates exactes à confirmer",
+      "en": "Two deadlines each year, spring and fall; confirm the exact dates",
+      "ja": "年2回、春・秋締切。正確な日付は現行要項で要確認"
+    },
+    "amount": {
+      "fr": "Plafond non indiqué dans le plan officiel 2026–2029; confirmer le guide actuel",
+      "en": "Maximum not stated in the official 2026–2029 plan; confirm the current guide",
+      "ja": "公式2026–2029事業計画に上限額の記載なし。現行要項で要確認"
+    },
+    "coverage": ["creation", "production", "travel", "training", "research"],
+    "cashflow": {
+      "fr": "Création, présentation, administration, déplacement et développement professionnel sont confirmés; calendrier de versement à vérifier",
+      "en": "Creation, presentation, administration, travel and professional development are confirmed; verify the payment schedule",
+      "ja": "創作、発表、運営、渡航、専門能力開発が対象。支払時期は要確認"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Le plan officiel confirme le programme et ses activités, mais pas le statut d’immigration, la durée de résidence, le plafond ni les dates exactes. Ces quatre points doivent être vérifiés dans le guide de la session en cours.",
+        "en": "The official plan confirms the program and eligible activity areas, but not immigration status, residence duration, maximum or exact deadlines. Verify all four in the current intake guide.",
+        "ja": "公式事業計画で制度と対象活動は確認できますが、在留資格、居住期間、上限額、正確な締切は確認できません。現行募集要項で4点すべての確認が必要です。"
+      },
+      "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "artsnl-professional-travel-2026",
+    "name": "ArtsNL — Professional Artists’ Travel Fund",
+    "funder": "Newfoundland and Labrador Arts Council / ArtsNL",
+    "profiles": ["artist", "collective"],
+    "residencies": ["newfoundland_labrador"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": {
+      "fr": "En continu; confirmer le délai minimal avant le déplacement",
+      "en": "Open year-round; confirm the minimum lead time before travel",
+      "ja": "通年受付。渡航前に必要な申請期間は現行要項で要確認"
+    },
+    "amount": {
+      "fr": "Plafond non indiqué dans le plan officiel 2026–2029; confirmer le guide actuel",
+      "en": "Maximum not stated in the official 2026–2029 plan; confirm the current guide",
+      "ja": "公式2026–2029事業計画に上限額の記載なし。現行要項で要確認"
+    },
+    "coverage": ["travel", "stay"],
+    "cashflow": {
+      "fr": "Pour une invitation imprévue améliorant la carrière; calendrier de décision et de paiement à vérifier",
+      "en": "For an unexpected invited opportunity that advances a career; verify decision and payment timing",
+      "ja": "キャリア向上につながる予期しなかった招待案件向け。結果・支払時期は要確認"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Le plan officiel confirme une aide annuelle aux artistes, collaborations et groupes professionnels invités à une occasion imprévue. Le statut, la durée de résidence, le plafond et le délai de dépôt ne sont pas détaillés et restent à confirmer.",
+        "en": "The official plan confirms year-round support for artists, collaborations and professional groups invited to an unexpected opportunity. Status, residence duration, maximum and application lead time remain to be confirmed.",
+        "ja": "公式事業計画で、予期しなかった招待を受けたアーティスト、共同制作、プロ団体向けの通年支援を確認できます。在留資格、居住期間、上限額、申請期限は現行要項で要確認です。"
+      },
+      "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "yukon-express-microgrant-2026",
+    "name": "Yukon — Express Micro-grant",
+    "funder": "Government of Yukon — Arts Section",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["yukon"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "En continu",
+      "en": "Rolling intake",
+      "ja": "随時受付"
+    },
+    "amount": {
+      "fr": "De 100 $ à 5 000 $, jusqu’à 100 % des dépenses admissibles",
+      "en": "$100 to $5,000, up to 100% of eligible expenses",
+      "ja": "100〜5,000カナダドル。対象経費の100％まで"
+    },
+    "coverage": ["research", "creation", "production", "promotion", "travel", "training"],
+    "cashflow": {
+      "fr": "Décision écrite dans les 5 jours ouvrables pour le palier 1 ou 10 jours pour le palier 2",
+      "en": "Written decision within 5 working days for Tier 1 or 10 working days for Tier 2",
+      "ja": "Tier 1は5営業日以内、Tier 2は10営業日以内に書面で結果通知"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "representativeStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "yukon_three_quarters",
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Les individus doivent être citoyens ou résidents permanents et avoir vécu au Yukon pendant une année continue. Au moins 75 % des membres d’un collectif doivent satisfaire la règle de résidence. Les sociétés, entreprises et gouvernements admissibles suivent des règles propres à leur catégorie.",
+        "en": "Individuals must be citizens or permanent residents and have lived in Yukon for one continuous year. At least 75% of a collective must meet the residency rule. Eligible societies, businesses and governments follow category-specific rules.",
+        "ja": "個人はカナダ市民または永住者で、ユーコンに連続1年間居住していること。コレクティブは75％以上のメンバーが居住条件を満たすこと。団体・企業・政府には区分別の条件があります。"
+      },
+      "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-small-grant-funding-your-creative-or-cultural-project",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-small-grant-funding-your-creative-or-cultural-project",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "yukon-advanced-artist-award-2026",
+    "name": "Yukon — Advanced Artist Award",
+    "funder": "Government of Yukon — Arts Section",
+    "profiles": ["artist"],
+    "residencies": ["yukon"],
+    "disciplines": ["all"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "deadline": {
+      "fr": "1er octobre 2026, 16 h 30; puis 1er avril 2027",
+      "en": "October 1, 2026 at 4:30 p.m.; then April 1, 2027",
+      "ja": "2026年10月1日16時30分、次回2027年4月1日"
+    },
+    "amount": {
+      "fr": "Jusqu’à 10 000 $ au niveau A ou 5 000 $ au niveau B",
+      "en": "Up to $10,000 at Level A or $5,000 at Level B",
+      "ja": "Level Aは最大10,000、Level Bは最大5,000カナダドル"
+    },
+    "coverage": ["creation", "training", "research", "travel", "stay"],
+    "cashflow": {
+      "fr": "La page officielle ne précise pas la date de décision ou de versement",
+      "en": "The official page does not state the decision or payment date",
+      "ja": "公式ページに結果通知日・支払日は明記されていません"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Réservé aux individus ayant vécu au Yukon pendant une année continue et ayant atteint un niveau avancé de pratique. Le statut d’immigration n’est pas précisé sur la page officielle et doit être confirmé.",
+        "en": "For individuals who have lived in Yukon for one continuous year and have reached an advanced level of practice. Immigration status is not specified on the official page and must be confirmed.",
+        "ja": "ユーコンに連続1年間居住し、高度な活動実績を持つ個人アーティストが対象。在留資格は公式ページに明記されていないため確認が必要です。"
+      },
+      "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-professional-artistic-development-funding",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-professional-artistic-development-funding",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "yukon-touring-artist-fund-2026",
+    "name": "Yukon — Touring Artist Fund",
+    "funder": "Government of Yukon — Arts Section",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["yukon"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": {
+      "fr": "15 septembre 2026; puis 15 décembre 2026",
+      "en": "September 15, 2026; then December 15, 2026",
+      "ja": "2026年9月15日、次回12月15日"
+    },
+    "amount": {
+      "fr": "Jusqu’à 10 000 $ par tournée",
+      "en": "Up to $10,000 per tour",
+      "ja": "1ツアーにつき最大10,000カナダドル"
+    },
+    "coverage": ["travel", "stay", "touring", "fees", "visa", "transport", "promotion", "production"],
+    "cashflow": {
+      "fr": "Résultat communiqué dans les 8 semaines suivant la date limite",
+      "en": "Applicants are notified within 8 weeks of the deadline",
+      "ja": "締切から8週間以内に結果通知"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "organizationVerificationRequired": true,
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Pour les artistes, ensembles ou compagnies professionnels ayant vécu au Yukon pendant une année continue. Il faut une invitation ferme issue d’une sélection professionnelle, plus d’un événement et une présentation publique. Le statut d’immigration n’est pas précisé et doit être confirmé.",
+        "en": "For professional Yukon artists, ensembles or companies with one continuous year of residence. A firm invitation from a professional selection process, more than one event and public presentation are required. Immigration status is not specified and must be confirmed.",
+        "ja": "ユーコンに連続1年間居住するプロのアーティスト、アンサンブル、カンパニー向け。専門的な選考を経た正式招待、2件以上の催事、公演の一般公開が必要です。在留資格は明記されていないため確認が必要です。"
+      },
+      "sourceUrl": "https://yukon.ca/en/touring-artist-fund",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://yukon.ca/en/touring-artist-fund",
+    "verifiedAt": "2026-07-23"
   }
 ]

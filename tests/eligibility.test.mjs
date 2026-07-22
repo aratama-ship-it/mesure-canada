@@ -186,6 +186,49 @@ test("residence scopes distinguish cities, metro areas, provinces and Canada", (
   assert.equal(supportsResidence({ residencies: ["british_columbia"] }, "british_columbia"), true);
   assert.equal(supportsResidence({ residencies: ["alberta"] }, "saskatchewan"), false);
   assert.equal(supportsResidence({ residencies: ["canada"] }, "new_brunswick"), true);
+  assert.equal(supportsResidence({ residencies: ["nova_scotia"] }, "nova_scotia"), true);
+  assert.equal(supportsResidence({ residencies: ["prince_edward_island"] }, "newfoundland_labrador"), false);
+  assert.equal(supportsResidence({ residencies: ["canada"] }, "yukon"), true);
+});
+
+test("Yukon Express Micro-grant enforces citizenship and the 75 percent collective rule", () => {
+  const eligibility = {
+    representativeStatuses: ["citizen", "permanent"],
+    minimumProvinceMonths: 12,
+    collectiveRule: "yukon_three_quarters",
+  };
+  const baseAnswers = {
+    legalStatus: "permanent",
+    provinceHistory: "twelve_plus",
+    collectiveSize: "three_plus",
+  };
+  assert.equal(
+    evaluate("collective", eligibility, { ...baseAnswers, collectiveComposition: "three_quarters" }).state,
+    "possible",
+  );
+  assert.equal(
+    evaluate("collective", eligibility, { ...baseAnswers, collectiveComposition: "two_thirds" }).state,
+    "ineligible",
+  );
+  assert.equal(
+    evaluate("collective", eligibility, { ...baseAnswers, legalStatus: "temporary_work", collectiveComposition: "all" }).state,
+    "ineligible",
+  );
+});
+
+test("PEI does not infer immigration eligibility from a residence-only public page", () => {
+  const allListedStatuses = ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
+  const eligibility = {
+    individualStatuses: allListedStatuses,
+    verificationStatuses: allListedStatuses,
+    minimumProvinceMonths: 12,
+  };
+  const result = evaluate("artist", eligibility, {
+    legalStatus: "temporary_work",
+    provinceHistory: "twelve_plus",
+  });
+  assert.equal(result.state, "verify");
+  assert.ok(result.reasonKeys.includes("statusVerification"));
 });
 
 test("Alberta includes Protected Persons conditionally and requires every project co-owner", () => {

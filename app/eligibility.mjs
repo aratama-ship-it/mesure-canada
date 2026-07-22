@@ -1,11 +1,14 @@
 const qualifyingCollectiveShares = {
-  cca_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
-  cam_two_thirds: new Set(["all", "two_thirds"]),
-  oac_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
-  tac_majority: new Set(["all", "two_thirds", "majority_qualified"]),
-  ottawa_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
+  cca_half: new Set(["all", "three_quarters", "two_thirds", "majority_qualified", "half_qualified"]),
+  cam_two_thirds: new Set(["all", "three_quarters", "two_thirds"]),
+  oac_half: new Set(["all", "three_quarters", "two_thirds", "majority_qualified", "half_qualified"]),
+  tac_majority: new Set(["all", "three_quarters", "two_thirds", "majority_qualified"]),
+  ottawa_half: new Set(["all", "three_quarters", "two_thirds", "majority_qualified", "half_qualified"]),
   afa_all: new Set(["all"]),
-  sk_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
+  sk_half: new Set(["all", "three_quarters", "two_thirds", "majority_qualified", "half_qualified"]),
+  ns_majority: new Set(["all", "three_quarters", "two_thirds", "majority_qualified"]),
+  pei_majority: new Set(["all", "three_quarters", "two_thirds", "majority_qualified"]),
+  yukon_three_quarters: new Set(["all", "three_quarters"]),
 };
 
 const statePriority = {
@@ -190,6 +193,10 @@ const residenceScopes = {
   saskatchewan: new Set(["canada", "saskatchewan"]),
   manitoba: new Set(["canada", "manitoba"]),
   new_brunswick: new Set(["canada", "new_brunswick"]),
+  nova_scotia: new Set(["canada", "nova_scotia"]),
+  prince_edward_island: new Set(["canada", "prince_edward_island"]),
+  newfoundland_labrador: new Set(["canada", "newfoundland_labrador"]),
+  yukon: new Set(["canada", "yukon"]),
 };
 
 export function supportsResidence(funding, residence) {
