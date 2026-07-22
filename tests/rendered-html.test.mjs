@@ -196,8 +196,29 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.ok(festivalRadar.length >= 169);
+  assert.ok(festivalRadar.length >= 168);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");
+  const normalizeRouteKey = (value) => value
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/\p{P}+/gu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+  const routeKeys = festivalRadar.map((record) => `${normalizeRouteKey(record.title)}|${normalizeRouteKey(record.city)}`);
+  assert.equal(new Set(routeKeys).size, routeKeys.length, "Duplicate normalized festival title and city");
+
+  const sourceOwners = new Map();
+  for (const record of festivalRadar) {
+    sourceOwners.set(record.sourceUrl, [...(sourceOwners.get(record.sourceUrl) ?? []), record.id]);
+  }
+  const allowedSharedSources = new Set([
+    "https://marionnette.com/app/uploads/2026/03/appel-a-candidatures-residences-2026-2027_engl.pdf",
+  ]);
+  for (const [sourceUrl, ids] of sourceOwners) {
+    if (ids.length > 1) {
+      assert.ok(allowedSharedSources.has(sourceUrl), `Unexpected shared festival source: ${sourceUrl} (${ids.join(", ")})`);
+    }
+  }
   assert.deepEqual(new Set(festivalRadar.map((record) => record.family)), new Set(["circus", "street", "fringe", "film", "showcase"]));
   assert.ok(new Set(festivalRadar.map((record) => record.region)).size >= 6);
   assert.ok(festivalRadar.filter((record) => record.family === "circus").length >= 22);
@@ -309,7 +330,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
     assertISODate(record.verifiedAt, `${record.id}.verifiedAt`);
     assertISODate(record.nextCheckDate, `${record.id}.nextCheckDate`);
-    if (record.deadlineDate) assertISODate(record.deadlineDate, `${record.id}.deadlineDate`);
+    assert.ok(record.nextCheckDate >= record.verifiedAt, `${record.id}.nextCheckDate predates verification`);
+    if (record.deadlineDate) {
+      assertISODate(record.deadlineDate, `${record.id}.deadlineDate`);
+      if (record.status === "open") {
+        assert.ok(record.deadlineDate >= new Date().toISOString().slice(0, 10), `${record.id} is marked open after its deadline`);
+      }
+    }
     for (const language of ["fr", "en", "ja"]) {
       assert.ok(record.deadlineLabel[language], `${record.id}.deadlineLabel.${language}`);
     }

@@ -293,15 +293,15 @@
     "family": "film",
     "participation": "international",
     "status": "open",
-    "deadlineDate": null,
+    "deadlineDate": "2026-09-15",
     "deadlineLabel": {
-      "fr": "Soumissions 2027 ouvertes depuis le 1er mai 2026",
-      "en": "2027 submissions open since May 1, 2026",
-      "ja": "2027年応募は2026年5月1日から受付中"
+      "fr": "Films longs, courts et moyens métrages: échéance finale le 15 septembre 2026, avec frais progressifs. Art Directions accueille aussi la performance audiovisuelle sound//vision jusqu’au 7 août et les médias immersifs jusqu’au 14 août, à 40 EUR hors TVA. Œuvres achevées après le 1er janvier 2026; les films étudiants hors année de master sont exclus.",
+      "en": "Feature, short, and mid-length films have a final deadline of September 15, 2026, with tiered fees. Art Directions also accepts audiovisual live performance under sound//vision through August 7 and immersive media through August 14, at EUR 40 excluding VAT. Work must be completed after January 1, 2026; student films outside a postgraduate master's year are excluded.",
+      "ja": "長編・短編・中編映画の最終締切は2026年9月15日で、時期により応募料が変わります。Art Directionsではライブ映像パフォーマンスsound//visionを8月7日、没入型メディアを8月14日まで、税別40ユーロで受付。2026年1月1日以降の完成作品が対象で、修士課程年を除く学生映画は対象外です。"
     },
-    "nextCheckDate": "2026-08-01",
-    "sourceUrl": "https://iffr.com/en/frequently-asked-questions/professionals-faq/film-entry-submission-materials",
-    "verifiedAt": "2026-07-20"
+    "nextCheckDate": "2026-08-08",
+    "sourceUrl": "https://iffr.com/en/iffr-pro-submissions/film-entry",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "fifdh-2027",
@@ -491,25 +491,6 @@
     },
     "nextCheckDate": "2026-10-15",
     "sourceUrl": "https://www.toronto.ca/explore-enjoy/festivals-events/nuitblanche/call-for-proposals__trashed/",
-    "verifiedAt": "2026-07-20"
-  },
-  {
-    "id": "ica-live-art-cape-town-watch",
-    "title": "ICA Live Art Festival — Artist Proposals",
-    "country": "South Africa",
-    "city": "Cape Town",
-    "region": "Africa",
-    "family": "street",
-    "participation": "selection",
-    "status": "watch",
-    "deadlineDate": null,
-    "deadlineLabel": {
-      "fr": "L’appel 2026 est terminé; surveiller la prochaine édition",
-      "en": "The 2026 call is closed; watch the next edition",
-      "ja": "2026年公募は終了。次回開催を監視"
-    },
-    "nextCheckDate": "2027-03-01",
-    "sourceUrl": "https://humanities.uct.ac.za/ica/articles/2026-03-26-open-call-ica-live-art-festival-2026",
     "verifiedAt": "2026-07-20"
   },
   {
@@ -2238,8 +2219,8 @@
       "ja": "2026年7月31日締切。「世界の演劇」部門は世界各地のプロ演劇・舞台パフォーマンスが対象。仏語・英語字幕が必要です。最大15名の食事付き宿泊と現地移動は主催者負担、国際渡航と舞台装置の輸送は団体負担です。"
     },
     "nextCheckDate": "2026-08-01",
-    "sourceUrl": "https://jtcarthage.tn/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://forms.gle/d4Z6KCvERyozKByu9",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "kyoto-art-center-performing-arts-2027-open",
@@ -2733,7 +2714,7 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://ettc.pl/solostage/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "puppet-fair-sofia-next-watch",
