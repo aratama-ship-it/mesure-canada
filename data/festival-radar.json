@@ -2810,5 +2810,233 @@
     "nextCheckDate": "2026-08-05",
     "sourceUrl": "https://www.unima.org/en/useful-information/unima-grants/passport-program/",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "fiams-saguenay-2027-open",
+    "title": "FIAMS Saguenay 2027 — Project Submission",
+    "country": "Canada",
+    "city": "Saguenay",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel actuellement ouvert, sans date limite publique. Artistes et compagnies peuvent proposer un spectacle pour la biennale du 27 juillet au 1er août 2027. Une vidéo intégrale est obligatoire pour une œuvre déjà créée. Cachet, voyage, hébergement et critères de résidence ne sont pas publiés: les confirmer avec la production avant de budgéter.",
+      "en": "Currently open with no public deadline. Artists and companies may submit a show for the July 27–August 1, 2027 biennial. A full-length video is required for completed work. Fee, travel, lodging, and residence criteria are not published; confirm them with production before budgeting.",
+      "ja": "現在受付中で、公開締切日はありません。2027年7月27日〜8月1日の隔年祭に、アーティスト／団体が作品を提案できます。完成済み作品は全編映像が必須。出演料・渡航・宿泊・居住条件は未公表のため、予算化前に制作担当への確認が必要です。"
+    },
+    "nextCheckDate": "2026-08-15",
+    "sourceUrl": "https://www.fiams.com/appel-a-projet-27/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "smethwick-puppetry-2027-open",
+    "title": "Smethwick Puppetry Festival 2027 — Artist Open Call",
+    "country": "United Kingdom",
+    "city": "Smethwick",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "Ouvert jusqu’au 31 juillet 2026. Trois voies: spectacle de marionnette prêt pour des lieux communautaires, soirée scratch pour une création en cours, ou commande d’exposition. La page accueille nouveaux et anciens participants mais ne précise ni admissibilité internationale, ni cachet, voyage ou logement: demander ces conditions avant de déposer depuis le Québec.",
+      "en": "Open through July 31, 2026. Three routes: a ready-to-tour puppetry show for community venues, a scratch night for work in progress, or an exhibition commission. The page welcomes new and returning applicants but does not state international eligibility, fee, travel, or lodging; ask before applying from Quebec.",
+      "ja": "2026年7月31日締切。地域会場向けの完成人形劇、制作途中のScratch Night、展示コミッションの3枠があります。新規／過去参加者を歓迎していますが、国外応募可否・出演料・渡航・宿泊は未記載のため、ケベックからは応募前に確認が必要です。"
+    },
+    "nextCheckDate": "2026-08-01",
+    "sourceUrl": "https://www.bctouring.org.uk/puppet",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "jskd-cankarjeva-puppetry-2026-open",
+    "title": "Cankarjeva Residency Centre 2026–27 — Theatre & Puppetry",
+    "country": "Slovenia",
+    "city": "Ljubljana",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": "2026-07-24",
+    "deadlineLabel": {
+      "fr": "Urgent: 24 juillet 2026. Marionnette et objet, théâtre physique, site-specific ou théâtre-éducation; atelier d’au moins 8 heures, travail avec des groupes locaux et présentation publique. Appartement meublé et certains espaces gratuits entre novembre 2026 et décembre 2027; aucune bourse ni remboursement de voyage. La collaboration internationale est encouragée, mais l’admissibilité des personnes établies au Québec doit être confirmée auprès du conseiller.",
+      "en": "Urgent: July 24, 2026. Puppet/object, physical, site-specific, or drama-in-education work; an eight-hour minimum workshop, local-group engagement, and a public presentation are required. Free furnished apartment and selected workspaces between November 2026 and December 2027; no stipend or travel reimbursement. International collaboration is encouraged, but Quebec-based applicant eligibility should be confirmed with the adviser.",
+      "ja": "急募、2026年7月24日締切。人形／オブジェクト、フィジカル、サイトスペシフィック、演劇教育が対象で、8時間以上のワークショップ、地域グループとの活動、公開発表が必要。2026年11月〜2027年12月に家具付き住居と一部制作場所を無料提供しますが、給付金・渡航費はありません。国際協働は推奨されていますが、ケベック在住者の応募可否は担当者への確認が必要です。"
+    },
+    "nextCheckDate": "2026-07-25",
+    "sourceUrl": "https://www.jskd.si/financiranje/poziv_rezidence/2026/razpis_rezidence_2026_eng.htm",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "fmtm-programming-route-2027-open",
+    "title": "Charleville FMTM 2027 — Programming Materials Route",
+    "country": "France",
+    "city": "Charleville-Mézières",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "selection",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ce n’est plus un appel classique: le FMTM a supprimé l’appel dès 2027, mais accepte actuellement les dossiers à programmation2027@marionnette.com. Envoyer portfolio, âge et jauge du public, date de création, liens photo/vidéo pérennes, fiche technique et fiche financière avec l’effectif en tournée. Tous les messages sont examinés sans réponse garantie; aucun cachet ni frais n’est annoncé à ce stade.",
+      "en": "This is no longer a conventional call: FMTM discontinued open applications for 2027, but currently accepts materials at programmation2027@marionnette.com. Send a portfolio, audience age and capacity, creation date, permanent photo/video links, technical rider, and financial sheet with touring party size. Every email is considered without a guaranteed reply; no fee or cost coverage is stated at this stage.",
+      "ja": "通常公募ではありません。FMTMは2027年から公募を廃止しましたが、現在 programmation2027@marionnette.com で作品資料を受け付けています。ポートフォリオ、対象年齢と客席数、初演日、期限切れしない写真・映像、技術資料、巡演人数を含む予算資料を送付。全メールを検討するものの返信保証はなく、出演料や費用負担も現段階では未公表です。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://marionnette.com/en/festivals-et-rdv/fmtm/be-part-of-the-program/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "pole-marionnette-documentary-residency-open",
+    "title": "Pôle International de la Marionnette — Documentary Residency",
+    "country": "France",
+    "city": "Charleville-Mézières",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures acceptées toute l’année pour un projet documentaire ou de recherche en marionnette ne nécessitant pas une publication formelle. Envoyer CV, sujet, dates souhaitées et ressources à consulter. Accès aux collections et hébergement fournis; aucune bourse et aucune durée imposée. La page ne fixe pas de restriction géographique, mais confirmer l’accueil international avant d’engager un voyage.",
+      "en": "Applications are accepted year-round for a puppetry documentary or research project that does not require formal publication. Send a CV, topic, preferred dates, and requested resources. Collection access and accommodation are provided, with no grant and no required duration. No geographic restriction is stated, but confirm international hosting before committing to travel.",
+      "ja": "正式出版を前提としない人形劇の資料調査／研究滞在を通年受付。CV、研究テーマ、希望日程、閲覧したい資料を送ります。コレクション利用と宿泊を提供し、助成金と必須滞在期間はありません。地域制限は記載されていませんが、国外からの受入可否は渡航決定前に確認が必要です。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://marionnette.com/app/uploads/2026/03/appel-a-candidatures-residences-2026-2027_engl.pdf",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "calendureta-2027-upcoming",
+    "title": "CALENDURETA 2027 — Ibero-American Puppet, Object & Visual Theatre",
+    "country": "Spain",
+    "city": "Elche",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "upcoming",
+    "deadlineDate": "2026-11-15",
+    "deadlineLabel": {
+      "fr": "Appel annoncé du 15 octobre au 15 novembre 2026 pour la 5e édition 2027. Le festival vise des compagnies ibéro-américaines de marionnette, objet et théâtre visuel; les règles et conditions financières seront publiées au lancement. Une compagnie établie au Québec doit vérifier si son lien artistique ou juridique avec un territoire ibéro-américain suffit.",
+      "en": "The 2027 fifth-edition call is announced for October 15–November 15, 2026. It targets Ibero-American puppetry, object, and visual-theatre companies; rules and financial conditions will be published when it opens. A Quebec-based company must verify whether its artistic or legal connection to an Ibero-American territory qualifies.",
+      "ja": "2027年第5回の公募は2026年10月15日〜11月15日と公式予告されています。イベロアメリカの人形劇・オブジェクト・ビジュアルシアター団体が対象で、規約と費用条件は開始時に公開予定。ケベック拠点の団体は、イベロアメリカ圏との芸術的／法的な関係で対象になるか確認が必要です。"
+    },
+    "nextCheckDate": "2026-10-15",
+    "sourceUrl": "https://lacarretateatro.com/v-calendureta-festival-iberoamericano-2027/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "toyooka-fringe-selection-next-watch",
+    "title": "Toyooka Theater Festival — Fringe Selection",
+    "country": "Japan",
+    "city": "Toyooka",
+    "region": "Asia",
+    "family": "fringe",
+    "participation": "selection",
+    "status": "watch",
+    "deadlineDate": "2026-04-01",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Théâtre, danse, musique, arts visuels, cirque, cabaret et variété; le dossier recueille aussi le pays et la ville de base. Subvention de représentation jusqu’à 500 000 JPY, résidence jusqu’à 100 000 JPY, lieux désignés sans frais et totalité de la billetterie. Voyage et logement restent organisés et financés par l’équipe, éventuellement avec la subvention.",
+      "en": "The 2026 cycle is closed. Theatre, dance, music, visual arts, circus, cabaret, and variety; the application also records the applicant’s base country and city. Performance support up to JPY 500,000, residency support up to JPY 100,000, selected venues at no charge, and all ticket revenue. The team arranges and pays travel and lodging, potentially using the subsidy.",
+      "ja": "2026年枠は終了。演劇、ダンス、音楽、美術、サーカス、キャバレー、バラエティが対象で、応募時に活動国・都市も記入します。上演支援最大50万円、滞在制作最大10万円、指定会場費無料、売上全額還元。渡航・宿泊は支援金も活用しつつ団体自身で手配・負担します。"
+    },
+    "nextCheckDate": "2027-02-15",
+    "sourceUrl": "https://toyooka-theaterfestival.jp/en/news/16007/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "air-taipei-puppetry-2027-next-watch",
+    "title": "AIR Taipei 2027 — Treasure Hill × Puppetry Art Center",
+    "country": "Taiwan",
+    "city": "Taipei",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-30",
+    "deadlineLabel": {
+      "fr": "Cycle 2027 terminé. Réservé aux non-citoyens taïwanais, individu ou groupe entièrement non taïwanais, avec trois ans de pratique et anglais ou chinois; étudiants exclus sauf maîtrise ou doctorat. Marionnette et théâtre d’objet, août-octobre 2027. Subvention de 20 000 TWD, ateliers partagés et studio-logement gratuit; voyage, vie, création, visa et assurance à la charge de l’artiste.",
+      "en": "The 2027 cycle is closed. For non-Taiwan citizens, individually or in an all-non-Taiwanese group, with three years of practice and English or Chinese; students excluded except master’s or doctoral candidates. Puppetry/object theatre, August–October 2027. TWD 20,000, shared workshops, and free live-work studio; artist pays travel, living, creation, visa, and insurance.",
+      "ja": "2027年枠は終了。台湾籍でない個人、または全員が台湾籍でない団体で、3年以上の実績と英語／中国語が必要。学生は修士・博士課程を除き対象外。2027年8〜10月の人形劇／オブジェクトシアター滞在で、2万台湾ドル、共同工房、住居付きスタジオを提供。渡航・生活・制作・ビザ・保険は本人負担です。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://www.hccc.gov.tw/Utility/DisplayFile?id=15937",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "lize-puppet-residency-next-watch",
+    "title": "Lìzé Puppet Art Colony — International Artist Residency",
+    "country": "Taiwan",
+    "city": "Yilan County",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-09-14",
+    "deadlineLabel": {
+      "fr": "Résidence 2026 terminée; surveiller le cycle suivant. Créateurs de toute nationalité en marionnette, objet ou disciplines voisines. Le plan B offrait vol international aller-retour, transfert aéroport, 20 000 TWD de création, 3 500 TWD d’action publique, logement, repas de semaine et atelier. Attention: la page officielle affiche 2025-09-14 dans ses champs et sa période, mais contient aussi une phrase erronée indiquant 2026-09-14; le cycle est donc classé fermé.",
+      "en": "The 2026 residency is closed; watch the next cycle. Creators of any nationality in puppetry, object theatre, or adjacent forms. Plan B offered round-trip international airfare, airport transfer, TWD 20,000 creation support, TWD 3,500 outreach materials, lodging, weekday meals, and workspace. Note: the official page lists 2025-09-14 in its deadline field and submission period but also contains one erroneous 2026-09-14 sentence, so this cycle is treated as closed.",
+      "ja": "2026年滞在枠は終了、次回を監視。国籍不問で、人形劇・オブジェクトや周辺分野の創作者が対象。Plan Bは国際往復航空券、空港送迎、制作費2万台湾ドル、交流活動費3,500台湾ドル、宿泊、平日昼食、制作場所を提供しました。公式ページの締切欄と受付期間は2025年9月14日ですが、本文1か所だけ2026年9月14日と誤記が混在するため、現在公募とは扱っていません。"
+    },
+    "nextCheckDate": "2026-08-15",
+    "sourceUrl": "https://artres.moc.gov.tw/en/calls/content/ff80818196c95f3b01977d0410ed00b6",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "pole-marionnette-creation-residency-next-watch",
+    "title": "Pôle International de la Marionnette — Creation Residency",
+    "country": "France",
+    "city": "Charleville-Mézières",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-05-03",
+    "deadlineLabel": {
+      "fr": "Cycle 2026-27 terminé. Artistes professionnels de la marionnette, toutes formes et croisements, avec projet porté par une entité juridique professionnelle conforme aux règles sociales et du travail. Une à deux semaines: rémunération CCNEAC par personne et par jour, indemnité repas, transport jusqu’à 150 EUR par personne et 600 EUR par équipe, hébergement si possible. Matériaux, consommables et technique supplémentaire restent à la charge de l’équipe.",
+      "en": "The 2026–27 cycle is closed. Professional puppetry artists across forms and intersections, with a project carried by a professional legal entity compliant with social and labour rules. One to two weeks: CCNEAC-rate pay per person/day, meal allowance, transport up to EUR 150 per person and EUR 600 per team, and lodging where possible. Materials, consumables, and additional technical needs remain with the team.",
+      "ja": "2026–27年枠は終了。あらゆる人形劇と他分野との交差を扱うプロが対象で、社会・労働法規に適合するプロの法人格がプロジェクトを担う必要があります。1〜2週間で、CCNEAC基準の日額報酬、食費、交通費1人最大150ユーロ／団体最大600ユーロ、可能な場合は宿泊を提供。材料・消耗品・追加技術は団体負担です。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://marionnette.com/app/uploads/2026/03/appel-a-candidatures-residences-2026-2027_engl.pdf",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "titirimadrono-next-watch",
+    "title": "TITIRIMADROÑO — International Puppet, Visual & Object Theatre",
+    "country": "Spain",
+    "city": "Madrid",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-30",
+    "deadlineLabel": {
+      "fr": "Cycle 2026 terminé. Compagnies nationales et internationales de marionnette, théâtre visuel ou d’objet; salles, extérieur, déambulation, installation, atelier, conférence et accessibilité. Le festival paie le cachet convenu et le repas du jour de représentation, mais pas le voyage ni l’hébergement.",
+      "en": "The 2026 cycle is closed. National and international puppet, visual, or object-theatre companies; indoor, outdoor, walkabout, installation, workshop, lecture, and accessibility routes. The festival pays the agreed performance fee and meal on the performance day, but not travel or accommodation.",
+      "ja": "2026年枠は終了。国内外の人形劇・ビジュアル・オブジェクトシアター団体を対象に、屋内外、回遊、インスタレーション、研修、講演、アクセシビリティ枠があります。合意した出演料と公演日の食事を主催者が負担し、渡航・宿泊は対象外です。"
+    },
+    "nextCheckDate": "2027-03-15",
+    "sourceUrl": "https://titirimadrono.com/open-call-2026/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "beverley-puppet-next-watch",
+    "title": "Beverley Puppet Festival — Biennial Artist Call",
+    "country": "United Kingdom",
+    "city": "Beverley",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "eligibility_check",
+    "status": "watch",
+    "deadlineDate": "2025-09-30",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 est terminé. Appel ouvert une fois tous les deux ans; le précédent s’est déroulé du 1er au 30 septembre 2025. Le festival dit accueillir toutes les candidatures et encourage les artistes sous-représentés, mais ne publie pas de critères géographiques, cachet, voyage ou logement. Surveiller l’infolettre et confirmer les conditions internationales au prochain cycle.",
+      "en": "The 2026 cycle is closed. The artist call runs once every two years; the last was September 1–30, 2025. The festival says it welcomes all applications and encourages underrepresented artists, but publishes no geographic eligibility, fee, travel, or lodging terms. Watch the mailing list and confirm international conditions next cycle.",
+      "ja": "2026年枠は終了。アーティスト公募は2年に1度で、前回は2025年9月1〜30日でした。全応募を歓迎し、過小評価されているアーティストを奨励していますが、地域条件・出演料・渡航・宿泊は未公表。次周期はメーリングリストを監視し、国外条件を確認します。"
+    },
+    "nextCheckDate": "2027-08-01",
+    "sourceUrl": "https://www.beverleypuppetfestival.com/artist-opportunities",
+    "verifiedAt": "2026-07-22"
   }
 ]
