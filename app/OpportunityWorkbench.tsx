@@ -99,6 +99,7 @@ type FestivalRadar = {
   deadlineLabel: Localized;
   nextCheckDate: string;
   sourceUrl: string;
+  networkSourceUrl?: string;
   verifiedAt: string;
 };
 
@@ -265,6 +266,7 @@ const copy = {
       participation: { international: "Candidature internationale", open_access: "Accès libre", selection: "Sélection sur dossier", regional_conditions: "Conditions locales à vérifier", language_conditions: "Conditions linguistiques à vérifier", eligibility_check: "Admissibilité à confirmer" },
       status: { open: "Ouvert", upcoming: "À venir", watch: "À surveiller" },
       official: "Voir la source officielle ↗",
+      network: "Voir aussi la fiche du réseau CAFF ↗",
       nextCheck: "Prochaine vérification",
       verified: "Vérifié le",
       note: "Le registre n’affirme jamais qu’un appel est ouvert au-delà de la date vérifiée. Ouvrez la source avant de préparer un dossier.",
@@ -399,6 +401,7 @@ const copy = {
       participation: { international: "International applications", open_access: "Open access", selection: "Curated selection", regional_conditions: "Local conditions to check", language_conditions: "Language conditions to check", eligibility_check: "Eligibility to confirm" },
       status: { open: "Open", upcoming: "Opening soon", watch: "Watch next cycle" },
       official: "Open official source ↗",
+      network: "Also open the CAFF network record ↗",
       nextCheck: "Next check",
       verified: "Verified",
       note: "This register never treats an old deadline as live. Open the official source before preparing a submission.",
@@ -513,6 +516,7 @@ const copy = {
       participation: { international: "国際応募可", open_access: "オープンアクセス", selection: "選考型", regional_conditions: "地域条件を要確認", language_conditions: "言語条件を要確認", eligibility_check: "応募資格を要確認" },
       status: { open: "募集中", upcoming: "開始予定", watch: "次回を監視" },
       official: "公式情報を開く ↗",
+      network: "CAFFネットワーク情報も開く ↗",
       nextCheck: "次回確認日",
       verified: "公式情報の確認日",
       note: "古い締切を「募集中」とは扱いません。応募準備の前に必ず公式情報を開いてください。",
@@ -866,7 +870,10 @@ export function OpportunityWorkbench() {
               {searchTags.length ? <div className="radar-search-tags">{searchTags.map((tag) => <span key={tag}>{t.radar.searchTags[tag]}</span>)}</div> : null}
               <p className="radar-deadline">{record.deadlineLabel[language]}</p>
               <div className="radar-bottom"><span>{t.radar.participation[record.participation]}</span><span>{t.radar.nextCheck}: {record.nextCheckDate}</span></div>
-              <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>
+              <div className="radar-source-links">
+                <a className="source-link" href={record.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>
+                {record.networkSourceUrl ? <a className="source-link secondary-source-link" href={record.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}
+              </div>
               <span className="verified-date">{t.radar.verified}: {record.verifiedAt}</span>
             </article>;
           }) : <p className="radar-empty">{t.radar.noTagResults}</p>}

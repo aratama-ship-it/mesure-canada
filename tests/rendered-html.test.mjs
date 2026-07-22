@@ -210,6 +210,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const sourceOwners = new Map();
   for (const record of festivalRadar) {
     sourceOwners.set(record.sourceUrl, [...(sourceOwners.get(record.sourceUrl) ?? []), record.id]);
+    if (record.networkSourceUrl) {
+      assert.ok(/^https?:\/\//.test(record.networkSourceUrl), `${record.id}.networkSourceUrl`);
+      assert.notEqual(record.networkSourceUrl, record.sourceUrl, `${record.id} repeats its primary source`);
+    }
   }
   const allowedSharedSources = new Set([
     "https://marionnette.com/app/uploads/2026/03/appel-a-candidatures-residences-2026-2027_engl.pdf",
@@ -245,6 +249,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "national-folk-festival-2028-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "out-there-supported-residency-open"));
   assert.ok(festivalRadar.some((record) => record.id === "guelph-fringe-2027-watch"));
+  assert.equal(festivalRadar.find((record) => record.id === "porec-street-art-2026").status, "watch");
+  assert.equal(festivalRadar.find((record) => record.id === "guelph-fringe-2027-watch").deadlineDate, "2026-02-22");
+  assert.equal(festivalRadar.find((record) => record.id === "yukon-fringe-watch").deadlineDate, "2026-04-10");
+  assert.match(festivalRadar.find((record) => record.id === "caff-touring-lottery-watch").deadlineLabel.ja, /居住|住所/);
   assert.ok(festivalRadar.some((record) => record.id === "fundy-fringe-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "nogojiwanong-indigenous-fringe-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "mostra-igualada-2027-watch"));

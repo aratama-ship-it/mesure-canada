@@ -1054,6 +1054,16 @@ a {
   font-size: 0.7rem;
 }
 
+.radar-source-links {
+  display: grid;
+  justify-items: start;
+}
+
+.radar-row .secondary-source-link {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .radar-note {
   margin: 18px 0 0;
   color: var(--muted);

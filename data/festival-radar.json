@@ -149,7 +149,7 @@
     },
     "nextCheckDate": "2026-08-31",
     "sourceUrl": "https://www.edfringe.com/take-part/artists/organise-a-show/registration/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "adelaide-fringe-2027",
@@ -462,17 +462,17 @@
     "city": "Poreč",
     "region": "Europe",
     "family": "street",
-    "participation": "eligibility_check",
-    "status": "open",
-    "deadlineDate": null,
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-05",
     "deadlineLabel": {
-      "fr": "Propositions acceptées toute l’année; confirmer l’admissibilité avec l’organisateur",
-      "en": "Proposals are accepted year-round; confirm eligibility with the organizer",
-      "ja": "提案は通年受付。応募資格は主催者へ確認"
+      "fr": "L’appel 2026 a fermé le 5 juillet. Les propositions sont acceptées toute l’année, mais la prochaine sélection n’est pas encore publiée; festival du 24 au 29 août 2026.",
+      "en": "The 2026 call closed July 5. Proposals are accepted year-round, but the next selection is not yet published; the festival runs August 24–29, 2026.",
+      "ja": "2026年公募は7月5日に終了。提案自体は通年受付ですが、次回選考は未発表です。2026年の開催は8月24〜29日。"
     },
-    "nextCheckDate": "2026-08-15",
+    "nextCheckDate": "2027-05-15",
     "sourceUrl": "https://www.poup.hr/en/news/events/call-for-artists-to-participate-in-the-26th-street-art-festival-porec/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "nuit-blanche-toronto-watch",
@@ -502,15 +502,15 @@
     "family": "fringe",
     "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2025-10-27",
     "deadlineLabel": {
-      "fr": "La loterie 2026 est terminée; la voie internationale vise les artistes non-résidents du Canada ou des États-Unis ayant déjà participé à un Fringe",
-      "en": "The 2026 lottery is closed; the international stream is for non-Canada/US residents with prior Fringe participation",
-      "ja": "2026年ロッタリーは終了。国際枠は、過去にフリンジ参加歴のあるカナダ・米国非居住者向け"
+      "fr": "La loterie 2026 a fermé le 27 octobre 2025. La catégorie dépend de l’adresse permanente, pas de la citoyenneté: une personne résidant au Québec utilise la catégorie Canadian; une participation antérieure à un Fringe est exigée.",
+      "en": "The 2026 lottery closed October 27, 2025. The stream is based on permanent address, not citizenship: a Québec resident uses the Canadian stream; prior Fringe participation is required.",
+      "ja": "2026年抽選は2025年10月27日に終了。区分は国籍ではなく恒久住所・居住地で決まり、ケベック居住者はCanadian枠です。過去のFringe参加歴が必要です。"
     },
     "nextCheckDate": "2026-10-01",
     "sourceUrl": "https://fringefestivals.com/for-artists/2026-touring-lottery/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "calgary-fringe-amv-watch",
@@ -523,13 +523,14 @@
     "status": "watch",
     "deadlineDate": "2025-12-05",
     "deadlineLabel": {
-      "fr": "Le cycle 2026 est terminé. La voie AMV accepte jusqu’à quatre artistes du monde entier, coûte 150–450 CAD selon le nombre de représentations et remet 100 % du prix du billet hors frais et taxes; l’hébergement chez l’habitant n’est pas garanti.",
-      "en": "The 2026 cycle is closed. The AMV route accepts up to four artists from anywhere in the world, costs CAD 150–450 depending on performance count, and returns 100% of ticket price before surcharges and tax; billeting is not guaranteed.",
-      "ja": "2026年枠は終了。AMVは世界中から最大4組を受け入れ、公演数により150〜450カナダドル。手数料・税を除くチケット価格の100％を還元しますが、ホームステイは保証されません。"
+      "fr": "Le cycle 2026 est terminé. La voie AMV est attribuée par ordre d’arrivée et demande à l’artiste de gérer lieu et technique; le site officiel fournit aussi une procédure fiscale pour les artistes internationaux. L’hébergement n’est offert que selon disponibilité.",
+      "en": "The 2026 cycle is closed. The AMV route is first-come and artist-managed for venue and technical needs; the official artist page also provides tax-waiver guidance for international artists. Billeting is availability-dependent.",
+      "ja": "2026年枠は終了。AMVは先着で、会場・技術をアーティスト側が管理します。公式ページには海外アーティスト向け税免除手続きも掲載。ホームステイは空き状況次第です。"
     },
     "nextCheckDate": "2026-11-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/calgary-fringe/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.calgaryfringe.ca/fringing-in-calgary",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/calgary-fringe/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "yukon-fringe-watch",
@@ -538,17 +539,18 @@
     "city": "Whitehorse",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-04-10",
     "deadlineLabel": {
-      "fr": "La loterie inaugurale 2026 est terminée; le festival annonce des compagnies du Yukon, du Canada et d’ailleurs",
-      "en": "The inaugural 2026 lottery is closed; the festival describes companies from Yukon, Canada and beyond",
-      "ja": "初回の2026年ロッタリーは終了。ユーコン、カナダ国内外の団体を対象と案内"
+      "fr": "L’appel 2026 a fermé le 10 avril. La moitié des huit places est réservée aux artistes hors Yukon, y compris Canada, États-Unis et international; aucun frais de candidature, puis 250 CAD si sélection.",
+      "en": "The 2026 call closed April 10. Half of eight slots are reserved for artists outside Yukon, including Canada, the US and international; no application fee, then CAD 250 if selected.",
+      "ja": "2026年公募は4月10日に終了。全8枠の半数がユーコン外（カナダ国内・米国・海外）向け。応募料なし、選出時250カナダドルです。"
     },
     "nextCheckDate": "2027-01-05",
-    "sourceUrl": "https://fringefestivals.com/festivals/yukon-fringe-festival/",
-    "verifiedAt": "2026-07-20"
+    "sourceUrl": "https://www.yukonfringe.ca/artists",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/yukon-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "bnfn-artist-call-watch",
@@ -700,7 +702,7 @@
     },
     "nextCheckDate": "2026-09-01",
     "sourceUrl": "https://cinars.org/en/agents-and-companies",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "rideau-showcase-watch",
@@ -1099,7 +1101,7 @@
     },
     "nextCheckDate": "2026-09-19",
     "sourceUrl": "https://fringe.ee/participate/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "dynamo-circus-residency-2027-28",
@@ -1118,7 +1120,7 @@
     },
     "nextCheckDate": "2026-10-01",
     "sourceUrl": "https://dynamoworkspace.dk/en/residency/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "garage-hochelaga-residency-watch",
@@ -1226,13 +1228,13 @@
     "status": "upcoming",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "Ouverture officielle annoncée pour février 2027. Les offres doivent intégrer déplacement, technique et hébergement; aucune condition de citoyenneté n’est publiée.",
-      "en": "Applications are officially announced to open in February 2027. Submitted prices should include travel, technical and accommodation costs; no citizenship condition is published.",
-      "ja": "2027年2月に応募開始予定と公式発表済み。提示料金には移動・技術・宿泊費を含める方式で、市民権条件は公開されていません。"
+      "fr": "Ouverture annoncée pour février 2027. Les offres doivent intégrer déplacement, technique et hébergement. OSAC déclare ne pas discriminer selon l’origine nationale, mais le statut de travail et les pièces fiscales restent à confirmer au dépôt.",
+      "en": "Applications are announced to open in February 2027. Prices should include travel, technical and accommodation costs. OSAC states it does not discriminate by national origin, but work status and tax documents still need confirmation at application.",
+      "ja": "2027年2月に応募開始予定。提示料金には移動・技術・宿泊費を含めます。OSACは出身国による差別をしないと明記していますが、応募時に就労資格・税務書類の確認は必要です。"
     },
     "nextCheckDate": "2027-02-01",
     "sourceUrl": "https://www.osac.ca/performing-arts/for-artists-agents",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "contact-east-next-watch",
@@ -1336,17 +1338,18 @@
     "city": "Saskatoon",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2025-11-25",
     "deadlineLabel": {
-      "fr": "L’édition 2026 se tient du 30 juillet au 8 août; prochaine loterie non publiée. Le cycle historique ouvrait en novembre et prévoyait six représentations.",
-      "en": "The 2026 edition runs July 30–August 8; the next lottery is not published. The historical cycle opened in November and provided six performances.",
-      "ja": "2026年は7月30日〜8月8日開催。次回抽選は未発表。過去サイクルは11月に受付を開始し、6公演枠でした。"
+      "fr": "Le cycle 2026 a fermé le 25 novembre 2025. Il réservait six places internationales; frais de 40 CAD à la candidature puis 693,75 CAD si sélection. Surveiller le prochain appel dès novembre 2026.",
+      "en": "The 2026 cycle closed November 25, 2025. It reserved six international slots; CAD 40 to apply and CAD 693.75 if selected. Watch for the next call from November 2026.",
+      "ja": "2026年枠は2025年11月25日に終了。海外枠6組、応募40カナダドル、選出時693.75カナダドルでした。2026年11月から次回を監視します。"
     },
     "nextCheckDate": "2026-11-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/saskatoon-fringe-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://25thstreettheatre.org/fringe-artists/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/saskatoon-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "hamilton-fringe-2027-watch",
@@ -1355,17 +1358,18 @@
     "city": "Hamilton",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-01-11",
     "deadlineLabel": {
-      "fr": "L’édition 2026 se tient du 15 au 26 juillet; prochaine candidature non publiée. Les spectacles réguliers passent par loterie et les lieux BYOV par ordre d’arrivée.",
-      "en": "The 2026 edition runs July 15–26; the next application is not published. Regular shows use a lottery and BYOV venues use first-come selection.",
-      "ja": "2026年は7月15〜26日開催。次回応募は未発表。通常枠は抽選、BYOV会場枠は先着方式です。"
+      "fr": "La loterie principale 2026 a fermé le 11 janvier. Une catégorie International de 60 minutes était prévue: 30 CAD à la candidature et 675 CAD si sélection. Les dates 2027 ne sont pas encore publiées.",
+      "en": "The 2026 main lottery closed January 11. It included a 60-minute International category: CAD 30 to apply and CAD 675 if selected. 2027 dates are not yet published.",
+      "ja": "2026年メイン抽選は1月11日に終了。60分のInternational枠があり、応募30カナダドル、選出時675カナダドルでした。2027年日程は未発表です。"
     },
     "nextCheckDate": "2026-10-15",
-    "sourceUrl": "https://fringefestivals.com/festivals/hamilton-fringe-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://hftco.ca/apply-to-the-fringe/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/hamilton-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "victoria-fringe-2027-watch",
@@ -1374,17 +1378,18 @@
     "city": "Victoria",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-01-12",
     "deadlineLabel": {
-      "fr": "L’édition 2026 se tient du 26 août au 6 septembre; prochaine loterie non publiée. Cinq représentations et 100 % des recettes de billetterie remises aux artistes au dernier cycle publié.",
-      "en": "The 2026 edition runs August 26–September 6; the next lottery is not published. The last published cycle provided five performances and returned 100% of box office to artists.",
-      "ja": "2026年は8月26日〜9月6日開催。次回抽選は未発表。直近公開サイクルは5公演で、興行収入の100％をアーティストへ還元しました。"
+      "fr": "La loterie 2026 a fermé le 12 janvier et réservait 15 % des places à l’international. Frais: 30 CAD à la candidature, puis 570 CAD ou 470 CAD au tarif équité; visas et permis restent à la charge de l’artiste.",
+      "en": "The 2026 lottery closed January 12 and reserved 15% of spots for International applicants. Fees were CAD 30 to apply, then CAD 570 or CAD 470 equity rate; artists remain responsible for visas and permits.",
+      "ja": "2026年抽選は1月12日に終了し、15％が海外枠でした。応募30カナダドル、選出後570（公平性対象470）カナダドル。ビザ・許可はアーティスト負担です。"
     },
     "nextCheckDate": "2026-09-15",
-    "sourceUrl": "https://fringefestivals.com/festivals/victoria-fringe-theatre-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://intrepidtheatre.com/festivals/fringe-festival/apply/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/victoria-fringe-theatre-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "national-folk-festival-2028-watch",
@@ -1441,7 +1446,7 @@
     },
     "nextCheckDate": "2026-10-01",
     "sourceUrl": "https://outtherearts.org.uk/residencies/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "guelph-fringe-2027-watch",
@@ -1452,15 +1457,16 @@
     "family": "fringe",
     "participation": "eligibility_check",
     "status": "watch",
-    "deadlineDate": "2026-02-28",
+    "deadlineDate": "2026-02-22",
     "deadlineLabel": {
-      "fr": "La loterie 2026 est terminée. Le dernier cycle publié comptait 15 compagnies, trois représentations, des frais totaux de 350 CAD et une durée maximale de 60 minutes; l’admissibilité liée au statut d’immigration n’est pas précisée.",
-      "en": "The 2026 lottery is closed. The last published cycle had 15 companies, three performances, CAD 350 total fees, and a 60-minute maximum; immigration-status eligibility is not stated.",
-      "ja": "2026年抽選は終了。直近公開サイクルは15団体、3公演、費用合計350カナダドル、最長60分。移民資格による制限は明記されていません。"
+      "fr": "La loterie 2026 a fermé le 22 février à 18 h HE, et non le 28 février indiqué par CAFF. Frais officiels: 25 CAD à la candidature puis 300 CAD si sélection; l’admissibilité liée au statut d’immigration n’est pas précisée.",
+      "en": "The 2026 lottery closed February 22 at 6 PM ET, not February 28 as listed by CAFF. Official fees: CAD 25 to apply, then CAD 300 if selected; immigration-status eligibility is not stated.",
+      "ja": "2026年抽選は、CAFF記載の2月28日ではなく公式サイトの2月22日18時（東部時間）に終了。応募25、選出後300カナダドル。移民資格条件は未記載です。"
     },
     "nextCheckDate": "2027-01-15",
-    "sourceUrl": "https://fringefestivals.com/festivals/guelph-fringe-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.guelphfringe.ca/applytoperform",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/guelph-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "on-the-edge-fringe-next-watch",
@@ -1471,15 +1477,16 @@
     "family": "fringe",
     "participation": "eligibility_check",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-01-15",
     "deadlineLabel": {
-      "fr": "Le festival 2026 se tient du 12 au 16 août, mais la page d’inscription affiche encore les dates de la loterie 2024. Derniers frais publiés: 25 CAD de loterie + 250 CAD si sélection; cinq représentations, maximum 60 minutes.",
-      "en": "The 2026 festival runs August 12–16, but the application page still shows the 2024 lottery dates. Last published fees: CAD 25 lottery + CAD 250 if selected; five performances, 60-minute maximum.",
-      "ja": "2026年は8月12〜16日開催ですが、応募ページの抽選日程は2024年版のままです。直近公開費用は抽選25＋選出後250カナダドル、5公演、最長60分。"
+      "fr": "La loterie 2026 a fermé le 15 janvier. Les catégories Local et Non-Local sont déterminées par l’adresse; frais de 25 CAD puis 250 CAD si sélection. Une compagnie suisse figure parmi les résultats officiels 2026, mais permis et fiscalité restent à confirmer.",
+      "en": "The 2026 lottery closed January 15. Local and Non-Local categories are address-based; CAD 25 to apply, then CAD 250 if selected. A Swiss company appears in the official 2026 results, but permits and tax remain to confirm.",
+      "ja": "2026年抽選は1月15日に終了。地元／非地元は住所で区分し、応募25、選出後250カナダドル。公式結果にはスイス団体もありますが、許可・税務は要確認です。"
     },
     "nextCheckDate": "2026-10-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/on-the-edge-fringe-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://fringenorth.com/lottery/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/on-the-edge-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "nanaimo-fringe-next-watch",
@@ -1549,13 +1556,14 @@
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "L’édition 2026 se tient du 7 au 11 octobre. Pas de frais de candidature; 250 CAD seulement si sélection. Quatre représentations de 60 minutes maximum dans des lieux non conventionnels; la prochaine loterie n’est pas publiée.",
-      "en": "The 2026 edition runs October 7–11. No application fee; CAD 250 only if selected. Four performances up to 60 minutes in unconventional locations; the next lottery is not published.",
-      "ja": "2026年は10月7〜11日開催。応募料なし、選出時のみ250カナダドル。非典型会場で最長60分を4公演。次回抽選は未発表です。"
+      "fr": "L’édition 2026 se tient du 7 au 11 octobre. Candidature gratuite, puis 300 CAD si sélection; la page accepte de nombreux arts vivants sans publier de restriction géographique. Prochaine fenêtre visée: fin octobre à mi-mars.",
+      "en": "The 2026 edition runs October 7–11. Applications are free, then CAD 300 if selected; the page welcomes many live-performance forms without a published geographic restriction. The next window is expected from late October to mid-March.",
+      "ja": "2026年は10月7〜11日開催。応募料なし、選出時300カナダドル。幅広いライブ作品を対象とし、地域制限は公開されていません。次回は10月末〜3月中旬の見込みです。"
     },
     "nextCheckDate": "2026-10-19",
-    "sourceUrl": "https://fringefestivals.com/festivals/island-fringe-festival-pei/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://islandfringe.com/become-a-fringe-performer/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/island-fringe-festival-pei/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "mississauga-multilingual-fringe-next-watch",
@@ -1602,17 +1610,18 @@
     "city": "Kingston",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "L’édition 2026 se tient du 6 au 16 août. Derniers frais publiés: 25 CAD + TVH pour la candidature et 325 CAD + TVH pour l’inscription; huit représentations de 60 minutes maximum. Surveiller la prochaine loterie dès novembre.",
-      "en": "The 2026 edition runs August 6–16. Last published fees: CAD 25 + HST to apply and CAD 325 + HST to register; eight performances up to 60 minutes. Watch for the next lottery from November.",
-      "ja": "2026年は8月6〜16日開催。直近公開費用は応募25＋HST、登録325＋HSTカナダドル。最長60分を8公演。11月から次回抽選を監視します。"
+      "fr": "La page 2026 dit encore « candidatures ouvertes » à l’approche du festival: ne pas la traiter comme active sans réponse directe. Tous les artistes sont annoncés admissibles, jusqu’à trois places peuvent venir de la loterie internationale CAFF; 30 CAD puis 420 CAD TVH comprise.",
+      "en": "The 2026 page still says “applications open” close to the festival, so do not treat it as live without direct confirmation. All performers are welcome and up to three slots may come through the CAFF international lottery; CAD 30 then CAD 420 including HST.",
+      "ja": "開催直前でも2026年ページが「受付中」のままなので、直接確認なしに募集中とは扱いません。全アーティスト応募可、CAFF国際抽選から最大3枠。応募30、選出後420カナダドル（HST込）です。"
     },
     "nextCheckDate": "2026-11-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/theatre-kingston-fringe/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.theatrekingston.com/about-the-tk-fringe.html",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/theatre-kingston-fringe/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "fort-mcmurray-fringe-next-watch",
@@ -1718,15 +1727,16 @@
     "family": "fringe",
     "participation": "eligibility_check",
     "status": "watch",
-    "deadlineDate": null,
+    "deadlineDate": "2026-03-01",
     "deadlineLabel": {
-      "fr": "La prochaine loterie n’est pas publiée. Le dernier dossier sépare les catégories locale, tournée et équité, sans frais de candidature, avec 80–250 USD de production, 100 % de la billetterie et un taux d’hébergement chez l’habitant annoncé à 100 %; admissibilité depuis le Canada à confirmer.",
-      "en": "The next lottery is not published. The last package splits local, touring, and equity categories, with no application fee, USD 80–250 production fees, 100% box office, and reported 100% billeting; Canada-based eligibility needs confirmation.",
-      "ja": "次回抽選は未発表。直近要項は地元・巡回・公平性枠に分かれ、応募料なし、制作費80〜250米ドル、興行収入100％還元、ホームステイ手配率100％を掲載。カナダ拠点からの応募可否は要確認です。"
+      "fr": "L’appel 2026 a fermé le 1er mars. La sélection se faisait par loteries liées au lieu et à la représentation; frais de production de 80 USD par représentation longue ou 125 USD pour trois formats courts. Visa et admissibilité depuis le Canada restent à confirmer.",
+      "en": "The 2026 call closed March 1. Selection used lotteries based on artist location and representation; production fees were USD 80 per full-length performance or USD 125 for three short shows. Visa and Canada-based eligibility remain to confirm.",
+      "ja": "2026年公募は3月1日に終了。所在地・代表性別の抽選で、長編は1公演80米ドル、短編は3公演125米ドル。カナダ拠点からの応募資格とビザは要確認です。"
     },
     "nextCheckDate": "2027-02-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/elgin-fringe-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.elginfringefestival.com/performingartists",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/elgin-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "new-york-city-fringe-next-watch",
@@ -1736,16 +1746,17 @@
     "region": "North America",
     "family": "fringe",
     "participation": "eligibility_check",
-    "status": "watch",
-    "deadlineDate": null,
+    "status": "upcoming",
+    "deadlineDate": "2026-10-31",
     "deadlineLabel": {
-      "fr": "Le prochain cycle n’est pas publié. Derniers chiffres CAFF: 40 USD de candidature, 750–1 000 USD de participation, quatre représentations locales ou cinq hors ville et 100 % de la billetterie aux artistes; visa et admissibilité depuis le Canada à vérifier.",
-      "en": "The next cycle is not published. Last CAFF figures: USD 40 application, USD 750–1,000 participation, four local or five out-of-town performances, and 100% box office to artists; visa and Canada-based eligibility must be checked.",
-      "ja": "次回サイクルは未発表。CAFF直近情報は応募40米ドル、参加750〜1,000米ドル、市内4公演／遠征5公演、興行収入100％還元。ビザとカナダ拠点からの応募可否は要確認です。"
+      "fr": "Le dossier 2027 sera publié mi/fin août et ouvrira le 7 septembre; le site indique une fenêtre jusqu’à Halloween, soit le 31 octobre. Festival non juré, premier arrivé + loterie, 100 % de la billetterie; visa et droit de travail à vérifier.",
+      "en": "The 2027 preview is due mid-to-late August and applications go live September 7; the site says the window runs through Halloween, October 31. Unjuried first-come + lottery, 100% box office; visa and work authorization need checking.",
+      "ja": "2027年要項は8月中〜下旬公開、9月7日受付開始。公式案内ではハロウィーン（10月31日）までです。無審査の先着＋抽選、興行収入100％還元。ビザ・就労資格は要確認です。"
     },
-    "nextCheckDate": "2026-09-15",
-    "sourceUrl": "https://fringefestivals.com/festivals/new-york-city-fringe/",
-    "verifiedAt": "2026-07-21"
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://frigid.nyc/festivals/new-york-city-fringe/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/new-york-city-fringe/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "portfringe-next-watch",
@@ -1754,17 +1765,18 @@
     "city": "Portland, Maine",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "regional_conditions",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "Le prochain cycle n’est pas publié. Le dernier dossier CAFF indique 20–25 USD de candidature, 150–200 USD de production, quatre représentations ou plus et une sélection non jurée par loterie; admissibilité et visa pour une compagnie canadienne à confirmer.",
-      "en": "The next cycle is not published. The last CAFF package lists USD 20–25 application, USD 150–200 production, four or more performances, and a non-juried lottery; eligibility and visa for a Canadian-based company need confirmation.",
-      "ja": "次回サイクルは未発表。CAFF直近要項は応募20〜25米ドル、制作150〜200米ドル、4公演以上、審査なしの抽選。カナダ拠点団体の応募資格とビザは要確認です。"
+      "fr": "L’édition 2026 est terminée et le prochain dossier n’est pas publié. La dernière page de candidature encore publique (2024) était réservée aux artistes locaux de Portland: ne pas la classer comme accessible depuis le Canada avant de nouvelles règles.",
+      "en": "The 2026 edition is over and the next package is not published. The latest still-public application page (2024) was limited to local Portland artists, so do not classify it as Canada-accessible until new rules appear.",
+      "ja": "2026年開催は終了、次回要項は未発表です。現在確認できる直近の公式応募ページ（2024年）はポートランド地元アーティスト限定のため、新要項まではカナダから応募可能と扱いません。"
     },
     "nextCheckDate": "2027-01-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/portfringe/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://portfringe.com/apply2024/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/portfringe/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "san-diego-fringe-next-watch",
@@ -1821,7 +1833,7 @@
     },
     "nextCheckDate": "2026-08-15",
     "sourceUrl": "https://www.worldbuskersfestival.co.nz/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "buskers-bern-2027-upcoming",
@@ -2163,7 +2175,7 @@
     },
     "nextCheckDate": "2026-10-15",
     "sourceUrl": "https://irishaerialcreationcentre.com/professionals/residencies/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "cirko-w-coproduction-2028-regional",
@@ -2771,7 +2783,7 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://www.clata.org/en/programs/Destinos-2026-Open-Call",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "unima-passport-prelet-2026-open",
