@@ -166,6 +166,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(fundingNames.has("Northwest Territories — Medium Arts Project Grant"));
   assert.ok(fundingNames.has("Northwest Territories — Artist Travel and Touring Fund"));
   assert.ok(fundingNames.has("Nunavut Commissioner’s Arts Award"));
+  assert.ok(fundingNames.has("Nunavut Culture and Heritage — Arts Contributions"));
   assert.equal(new Set(opportunities.map((record) => record.id)).size, opportunities.length, "Duplicate opportunity id");
   assert.equal(new Set(funding.map((record) => record.id)).size, funding.length, "Duplicate funding id");
   assert.equal(fundingNames.size, funding.length, "Duplicate funding name");
@@ -280,11 +281,14 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 30);
-  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 15);
+  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 32);
+  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 14);
   assert.equal(fundingById.get("cca-touring").deadlineDate, "2026-10-07");
   assert.equal(fundingById.get("calq-travel").deadlineDate, null);
   assert.equal(fundingById.get("bcac-performing-artists-2026").deadlineDate, "2026-05-27");
+  assert.equal(fundingById.get("nunavut-commissioners-arts-award").availability, "closed");
+  assert.equal(fundingById.get("nunavut-commissioners-arts-award").deadlineDate, "2025-12-15");
+  assert.equal(fundingById.get("nunavut-arts-contributions-2026-27").availability, "closed");
 
   assert.ok(festivalRadar.length >= 166);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");

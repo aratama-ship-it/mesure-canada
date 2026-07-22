@@ -201,7 +201,7 @@ type Funding = {
     professionalPracticeVerificationRequired?: true;
     sinRequired?: true;
     arrivalOnOrAfter?: "2019-01-01";
-    ageRange?: { min?: 18; max?: 30 };
+    ageRange?: { min?: 16 | 18; max?: 30 };
     note: Localized;
     sourceUrl: string;
     verifiedAt: string;
@@ -1254,7 +1254,9 @@ export function OpportunityWorkbench() {
   const t = copy[language];
   const provinceKey = provinceByResidence[residence];
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
-  const showAgeQuestion = profile === "artist" && ["toronto", "gta", "ottawa"].includes(residence);
+  const showAgeQuestion = profile === "artist" && fundingPrograms.some((funding) =>
+    funding.profiles.includes("artist") && supportsResidence(funding, residence) && funding.eligibility.ageRange
+  );
 
   const filteredOpportunities = useMemo(
     () => opportunities

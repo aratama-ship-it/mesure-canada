@@ -240,6 +240,23 @@ test("Yukon Express Micro-grant enforces citizenship and the 75 percent collecti
   );
 });
 
+test("Yukon Express Micro-grant preserves the exact age-16 boundary", () => {
+  const eligibility = {
+    individualStatuses: ["citizen", "permanent"],
+    minimumProvinceMonths: 12,
+    ageRange: { min: 16 },
+  };
+  const eligibleAdult = {
+    legalStatus: "citizen",
+    provinceHistory: "twelve_plus",
+    ageBand: "eighteen_thirty",
+  };
+  assert.equal(evaluate("artist", eligibility, eligibleAdult).state, "possible");
+  const underEighteen = evaluate("artist", eligibility, { ...eligibleAdult, ageBand: "under_18" });
+  assert.equal(underEighteen.state, "verify");
+  assert.ok(underEighteen.reasonKeys.includes("ageUnknown"));
+});
+
 test("PEI does not infer immigration eligibility from a residence-only public page", () => {
   const allListedStatuses = ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
   const eligibility = {

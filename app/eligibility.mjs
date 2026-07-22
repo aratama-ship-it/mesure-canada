@@ -171,9 +171,13 @@ export function evaluateFundingEligibility({
       state = raiseState(state, "verify");
       addReason("ageUnknown");
     } else {
+      const exactMinimumAgeNeedsChecking = rules.ageRange.min === 16 && ageBand === "under_18";
       const tooYoung = rules.ageRange.min === 18 && ageBand === "under_18";
       const tooOld = rules.ageRange.max === 30 && ageBand === "over_thirty";
-      if (tooYoung || tooOld) {
+      if (exactMinimumAgeNeedsChecking) {
+        state = raiseState(state, "verify");
+        addReason("ageUnknown");
+      } else if (tooYoung || tooOld) {
         state = "ineligible";
         addReason("ageOutOfRange");
       }

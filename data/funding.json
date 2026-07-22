@@ -1402,12 +1402,13 @@
       "individualStatuses": ["citizen", "permanent"],
       "representativeStatuses": ["citizen", "permanent"],
       "minimumProvinceMonths": 12,
+      "ageRange": { "min": 16 },
       "collectiveRule": "yukon_three_quarters",
       "organizationVerificationRequired": true,
       "note": {
-        "fr": "Les individus doivent être citoyens ou résidents permanents et avoir vécu au Yukon pendant une année continue. Au moins 75 % des membres d’un collectif doivent satisfaire la règle de résidence. Les sociétés, entreprises et gouvernements admissibles suivent des règles propres à leur catégorie.",
-        "en": "Individuals must be citizens or permanent residents and have lived in Yukon for one continuous year. At least 75% of a collective must meet the residency rule. Eligible societies, businesses and governments follow category-specific rules.",
-        "ja": "個人はカナダ市民または永住者で、ユーコンに連続1年間居住していること。コレクティブは75％以上のメンバーが居住条件を満たすこと。団体・企業・政府には区分別の条件があります。"
+        "fr": "Les individus doivent avoir au moins 16 ans, être citoyens ou résidents permanents et avoir vécu au Yukon pendant une année continue. Au moins 75 % des membres d’un collectif doivent satisfaire la règle de résidence. Les sociétés, entreprises et gouvernements admissibles suivent des règles propres à leur catégorie.",
+        "en": "Individuals must be at least 16, be citizens or permanent residents and have lived in Yukon for one continuous year. At least 75% of a collective must meet the residency rule. Eligible societies, businesses and governments follow category-specific rules.",
+        "ja": "個人は16歳以上のカナダ市民または永住者で、ユーコンに連続1年間居住していること。コレクティブは75％以上のメンバーが居住条件を満たすこと。団体・企業・政府には区分別の条件があります。"
       },
       "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-small-grant-funding-your-creative-or-cultural-project",
       "verifiedAt": "2026-07-23"
@@ -1636,44 +1637,88 @@
   },
   {
     "id": "nunavut-commissioners-arts-award",
-    "deadlineDate": null,
+    "deadlineDate": "2025-12-15",
     "nextCheckDate": "2026-10-01",
     "name": "Nunavut Commissioner’s Arts Award",
     "funder": "Office of the Commissioner of Nunavut",
     "profiles": ["artist"],
     "residencies": ["nunavut"],
-    "disciplines": ["circus", "theatre", "dance", "music"],
+    "disciplines": ["all"],
     "purpose": "career_support",
     "kind": "grant",
+    "availability": "closed",
     "deadline": {
-      "fr": "Aucune date limite; les candidatures peuvent être soumises en continu",
-      "en": "No deadline; nominations may be submitted on an ongoing basis",
-      "ja": "締切なし・随時推薦を受付"
+      "fr": "Le cycle 2025 est fermé depuis le 15 décembre 2025; le prochain appel n’est pas annoncé",
+      "en": "The 2025 cycle closed December 15, 2025; the next call has not been announced",
+      "ja": "2025年募集は2025年12月15日に終了。次回募集は未発表"
     },
     "amount": {
-      "fr": "Un prix de 10 000 $ à une personne",
-      "en": "One $10,000 award to an individual",
-      "ja": "個人1名に10,000カナダドル"
+      "fr": "Prix annuel totalisant 10 000 $; en 2025, deux lauréats ont reçu 5 000 $ chacun",
+      "en": "Annual award totalling $10,000; in 2025, two recipients received $5,000 each",
+      "ja": "年間総額10,000カナダドル。2025年は2名に各5,000ドルを授与"
     },
     "coverage": ["promotion"],
     "cashflow": {
-      "fr": "Chèque remis avec le certificat lors d’une cérémonie officielle; calendrier non précisé",
-      "en": "Cheque presented with the certificate at an official ceremony; timing is not stated",
-      "ja": "公式式典で証書と小切手を授与。時期は明記されていません"
+      "fr": "Les lauréats du cycle 2025 ont été annoncés le 18 février 2026",
+      "en": "The 2025 recipients were announced February 18, 2026",
+      "ja": "2025年分の受賞者は2026年2月18日に発表"
     },
     "eligibility": {
       "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
       "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
       "professionalPracticeVerificationRequired": true,
       "note": {
-        "fr": "Le ou la candidate doit résider au Nunavut et avoir apporté une contribution importante et distinguée aux arts sur une longue période. Il s’agit d’une nomination appuyée par trois personnes ou organismes, non d’une auto-candidature. La page officielle mélange les mentions arts visuels et arts de la scène; il faut confirmer le volet de l’année. Le statut d’immigration n’est pas précisé.",
-        "en": "The candidate must be a Nunavut resident with a substantial and distinguished contribution to the arts over a significant period. This is a nomination supported by three people or organizations, not a self-application. The official page mixes visual- and performing-arts wording, so confirm the year’s category. Immigration status is not specified.",
-        "ja": "ヌナブト準州在住で、長期間にわたり芸術へ顕著な貢献をした人が対象です。本人申請ではなく、3名または3団体の推薦が必要です。公式ページ内で視覚芸術と舞台芸術の記述が混在するため、その年の対象分野を確認してください。在留資格も明記されていません。"
+        "fr": "Le ou la candidate doit résider au Nunavut et avoir apporté une contribution importante et distinguée aux arts sur une longue période. Il s’agit d’une nomination appuyée par trois personnes ou organismes, non d’une auto-candidature. Le dernier appel couvrait les arts visuels, les arts de la scène et la littérature. Le statut d’immigration n’est pas précisé.",
+        "en": "The candidate must be a Nunavut resident with a substantial and distinguished contribution to the arts over a significant period. This is a nomination supported by three people or organizations, not a self-application. The latest call covered visual arts, performing arts and literature. Immigration status is not specified.",
+        "ja": "ヌナブト準州在住で、長期間にわたり芸術へ顕著な貢献をした人が対象です。本人申請ではなく、3名または3団体の推薦が必要です。直近募集は視覚芸術、舞台芸術、文学を対象としていました。在留資格は明記されていません。"
       },
       "sourceUrl": "https://commissioner.gov.nu.ca/en/arts.aspx",
       "verifiedAt": "2026-07-23"
     },
-    "sourceUrl": "https://commissioner.gov.nu.ca/en/Home.aspx",
+    "sourceUrl": "https://commissioner.gov.nu.ca/pdf/2025-10%20NR%20%28Commissioner%29%20Commissioner%27s%20Arts%20Award%202025%20-%20ENG.pdf",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nunavut-arts-contributions-2026-27",
+    "deadlineDate": "2026-01-31",
+    "nextCheckDate": "2026-11-30",
+    "name": "Nunavut Culture and Heritage — Arts Contributions",
+    "funder": "Government of Nunavut — Department of Culture and Heritage",
+    "profiles": ["artist", "organization"],
+    "residencies": ["nunavut"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "availability": "closed",
+    "deadline": {
+      "fr": "Le formulaire annuel indique le 31 janvier; le cycle 2026–2027 est fermé et le prochain appel n’est pas publié",
+      "en": "The annual form states January 31; the 2026–27 cycle is closed and the next call is not published",
+      "ja": "年次申請書の締切は1月31日。2026–27年度分は終了し、次回募集は未公表"
+    },
+    "amount": {
+      "fr": "Le budget 2026–2027 réserve 325 000 $ aux contributions Arts; l’ancienne politique plafonnait une demande à 50 000 $, mais le plafond actuel doit être confirmé",
+      "en": "The 2026–27 budget allocates $325,000 to Arts Contributions; the previous policy capped one request at $50,000, but the current cap must be confirmed",
+      "ja": "2026–27年度予算はArts Contributionsに325,000ドルを計上。旧方針では1件最大50,000ドルでしたが、現行上限は要確認"
+    },
+    "coverage": ["creation", "production", "training"],
+    "cashflow": {
+      "fr": "L’ancienne politique prévoyait deux versements; les modalités 2026–2027 doivent être confirmées",
+      "en": "The previous policy used two instalments; 2026–27 payment terms must be confirmed",
+      "ja": "旧方針では2回払い。2026–27年度の支給条件は要確認"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Le budget 2026–2027 et le formulaire officiel confirment la voie Arts Contributions. L’ancienne politique admettait les particuliers, organismes sans but lucratif et municipalités actifs dans les arts au Nunavut, mais elle a expiré le 31 mars 2026. Les règles actuelles, y compris le statut d’immigration, doivent être confirmées directement.",
+        "en": "The 2026–27 budget and official form confirm the Arts Contributions route. The previous policy accepted individuals, non-profits and municipal corporations involved in the arts in Nunavut, but it expired March 31, 2026. Current rules, including immigration status, require direct confirmation.",
+        "ja": "2026–27年度予算と公式申請書でArts Contributionsの継続枠を確認できます。旧方針ではヌナブトの芸術に関わる個人、非営利団体、自治体が対象でしたが、方針は2026年3月31日に失効しました。在留資格を含む現行条件は直接確認が必要です。"
+      },
+      "sourceUrl": "https://www.gov.nu.ca/sites/default/files/documents/2025-02/CH_Grants_and_Contributions_Policy_03_23.pdf",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.gov.nu.ca/sites/default/files/documents/2025-06/APPLICATION_FORM_-_CH_Grants___Contributions__Sept_27__2024__EN.pdf",
     "verifiedAt": "2026-07-23"
   }
 ]
