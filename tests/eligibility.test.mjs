@@ -189,6 +189,30 @@ test("residence scopes distinguish cities, metro areas, provinces and Canada", (
   assert.equal(supportsResidence({ residencies: ["nova_scotia"] }, "nova_scotia"), true);
   assert.equal(supportsResidence({ residencies: ["prince_edward_island"] }, "newfoundland_labrador"), false);
   assert.equal(supportsResidence({ residencies: ["canada"] }, "yukon"), true);
+  assert.equal(supportsResidence({ residencies: ["northwest_territories"] }, "northwest_territories"), true);
+  assert.equal(supportsResidence({ residencies: ["nunavut"] }, "northwest_territories"), false);
+  assert.equal(supportsResidence({ residencies: ["canada"] }, "nunavut"), true);
+});
+
+test("NWT six-month programs distinguish 6-11 months from under 6 months", () => {
+  const eligibility = {
+    individualStatuses: ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+    verificationStatuses: ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+    minimumProvinceMonths: 6,
+  };
+  assert.equal(
+    evaluate("artist", eligibility, {
+      legalStatus: "permanent",
+      provinceHistory: "six_to_eleven",
+    }).state,
+    "verify",
+  );
+  const underSix = evaluate("artist", eligibility, {
+    legalStatus: "permanent",
+    provinceHistory: "under_six",
+  });
+  assert.equal(underSix.state, "ineligible");
+  assert.ok(underSix.reasonKeys.includes("provinceHistoryTooShort"));
 });
 
 test("Yukon Express Micro-grant enforces citizenship and the 75 percent collective rule", () => {

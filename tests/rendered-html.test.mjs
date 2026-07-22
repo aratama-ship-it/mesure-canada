@@ -149,7 +149,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const fundingNames = new Set(funding.map((record) => record.name));
 
   assert.ok(opportunities.length >= 6);
-  assert.ok(funding.length >= 41);
+  assert.ok(funding.length >= 45);
   assert.ok(fundingNames.has("En Piste — Remboursement des dépenses d’entraînement"));
   assert.ok(fundingNames.has("En Piste — Formation individualisée / sur mesure"));
   assert.ok(fundingNames.has("En Piste — Mon premier RIDEAU"));
@@ -162,8 +162,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(fundingNames.has("PEI Arts Grants — Share"));
   assert.ok(fundingNames.has("ArtsNL — Professional Artists’ Travel Fund"));
   assert.ok(fundingNames.has("Yukon — Touring Artist Fund"));
+  assert.ok(fundingNames.has("Northwest Territories — Small Arts Project Fund"));
+  assert.ok(fundingNames.has("Northwest Territories — Medium Arts Project Grant"));
+  assert.ok(fundingNames.has("Northwest Territories — Artist Travel and Touring Fund"));
+  assert.ok(fundingNames.has("Nunavut Commissioner’s Arts Award"));
   assert.equal(new Set(opportunities.map((record) => record.id)).size, opportunities.length, "Duplicate opportunity id");
   assert.equal(new Set(funding.map((record) => record.id)).size, funding.length, "Duplicate funding id");
+  assert.equal(fundingNames.size, funding.length, "Duplicate funding name");
   for (const record of opportunities) {
     assert.ok(record.country && record.city);
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
@@ -242,10 +247,14 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
-      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick", "nova_scotia", "prince_edward_island", "newfoundland_labrador", "yukon"].includes(scope)
+      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick", "nova_scotia", "prince_edward_island", "newfoundland_labrador", "yukon", "northwest_territories", "nunavut"].includes(scope)
     ));
     assert.ok(["mobility_export", "home_base_creation", "career_support"].includes(record.purpose));
     assert.ok(["grant", "paid_program"].includes(record.kind));
+    assert.ok(record.coverage.length > 0, `${record.id}.coverage`);
+    assert.ok(record.coverage.every((item) =>
+      ["travel", "stay", "visa", "transport", "promotion", "market", "touring", "fees", "production", "research", "creation", "recording", "mentorship", "training"].includes(item)
+    ), `${record.id}.coverage enum`);
     for (const language of ["fr", "en", "ja"]) {
       assert.ok(record.deadline[language], `${record.id}.deadline.${language}`);
       assert.ok(record.amount[language], `${record.id}.amount.${language}`);
@@ -255,6 +264,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.eligibility.note.fr);
     assert.ok(record.eligibility.note.en);
     assert.ok(record.eligibility.note.ja);
+    if (record.eligibility.minimumProvinceMonths) {
+      assert.ok([6, 12].includes(record.eligibility.minimumProvinceMonths), `${record.id}.eligibility.minimumProvinceMonths`);
+    }
     assert.ok(/^https?:\/\//.test(record.eligibility.sourceUrl));
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }

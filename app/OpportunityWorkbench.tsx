@@ -9,9 +9,9 @@ import { evaluateFundingEligibility, supportsResidence } from "./eligibility.mjs
 
 type Language = "fr" | "en" | "ja";
 type Profile = "artist" | "collective" | "organization";
-type ProvinceKey = "quebec" | "ontario" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon";
-type Residence = "montreal" | "quebec_city" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon";
-type ResidenceScope = "canada" | "quebec" | "quebec_city" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon";
+type ProvinceKey = "quebec" | "ontario" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut";
+type Residence = "montreal" | "quebec_city" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut";
+type ResidenceScope = "canada" | "quebec" | "quebec_city" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
 type RadarFamily = "all" | "circus" | "street" | "fringe" | "film" | "showcase";
 type RadarSearchTag = "all" | "regional_festival" | "event_performance" | "choreographer_development" | "residency";
@@ -43,7 +43,7 @@ type LegalStatus =
   | "temporary_work"
   | "temporary_no_work"
   | "unsure";
-type ProvinceHistory = "twelve_plus" | "under_twelve" | "unsure";
+type ProvinceHistory = "twelve_plus" | "six_to_eleven" | "under_six" | "unsure";
 type TorontoHistory = "meets" | "does_not" | "unsure";
 type CollectiveComposition =
   | "all"
@@ -191,7 +191,7 @@ type Funding = {
     representativeStatuses?: LegalStatus[];
     conditionalStatuses?: LegalStatus[];
     verificationStatuses?: LegalStatus[];
-    minimumProvinceMonths?: 12;
+    minimumProvinceMonths?: 6 | 12;
     minimumTorontoMonths?: 12;
     collectiveRule?: "cca_half" | "cam_two_thirds" | "oac_half" | "tac_majority" | "ottawa_half" | "afa_all" | "sk_half" | "ns_majority" | "pei_majority" | "yukon_three_quarters";
     organizationRegisteredInCanada?: true;
@@ -340,7 +340,7 @@ function useSavedCandidateIds() {
 
 const copy = {
   fr: {
-    edition: "Édition Canada · 10 provinces + Yukon",
+    edition: "Édition Canada · 10 provinces + 3 territoires",
     ledgerEdition: "Canada · Registre de veille",
     radarLink: "Consulter le registre de veille",
     backToSearch: "Retour à la recherche d’occasions",
@@ -362,8 +362,8 @@ const copy = {
     baseKicker: "Point zéro de la règle",
     baseHeading: "Où résidez-vous actuellement?",
     baseNote: "La ville et la province changent les programmes visibles; la nationalité est vérifiée séparément.",
-    regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "Colombie-Britannique", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "Nouveau-Brunswick", nova_scotia: "Nouvelle-Écosse", prince_edward_island: "Île-du-Prince-Édouard", newfoundland_labrador: "Terre-Neuve-et-Labrador", yukon: "Yukon" },
-    otherRegions: "Autres provinces et territoire",
+    regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "Colombie-Britannique", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "Nouveau-Brunswick", nova_scotia: "Nouvelle-Écosse", prince_edward_island: "Île-du-Prince-Édouard", newfoundland_labrador: "Terre-Neuve-et-Labrador", yukon: "Yukon", northwest_territories: "Territoires du Nord-Ouest", nunavut: "Nunavut" },
+    otherRegions: "Autres provinces et territoires",
     residences: {
       montreal: "Île de Montréal",
       quebec_city: "Ville de Québec",
@@ -381,6 +381,8 @@ const copy = {
       prince_edward_island: "Île-du-Prince-Édouard",
       newfoundland_labrador: "Terre-Neuve-et-Labrador",
       yukon: "Yukon",
+      northwest_territories: "Territoires du Nord-Ouest",
+      nunavut: "Nunavut",
     },
     steps: ["Votre situation", "Une occasion concrète", "Le financement possible"],
     profileHeading: "Votre situation",
@@ -399,8 +401,8 @@ const copy = {
       temporary_work: "Statut temporaire avec autorisation de travail valide",
       temporary_no_work: "Statut temporaire sans autorisation de travail",
     },
-    provinceHistory: { quebec: "Vous / les membres admissibles résidez au Québec depuis 12 mois", ontario: "Vous / les membres admissibles résidez en Ontario depuis 12 mois", british_columbia: "Vous / les membres admissibles résidez en Colombie-Britannique depuis 12 mois", alberta: "Vous / les membres admissibles résidez en Alberta depuis 12 mois", saskatchewan: "Vous / les membres admissibles résidez en Saskatchewan depuis 12 mois", manitoba: "Vous / les membres admissibles résidez au Manitoba depuis 12 mois", new_brunswick: "Vous / les membres admissibles résidez au Nouveau-Brunswick depuis 12 mois", nova_scotia: "Vous / les membres admissibles résidez en Nouvelle-Écosse depuis 12 mois", prince_edward_island: "Vous / les membres admissibles résidez à l’Île-du-Prince-Édouard depuis 12 mois", newfoundland_labrador: "Vous / les membres admissibles résidez à Terre-Neuve-et-Labrador depuis 12 mois", yukon: "Vous / les membres admissibles résidez au Yukon depuis 12 mois" },
-    provinceHistories: { unsure: "Je ne sais pas / à vérifier", twelve_plus: "Oui, 12 mois ou plus", under_twelve: "Non, moins de 12 mois" },
+    provinceHistory: { quebec: "Depuis combien de temps vous / les membres admissibles résidez au Québec?", ontario: "Depuis combien de temps vous / les membres admissibles résidez en Ontario?", british_columbia: "Depuis combien de temps vous / les membres admissibles résidez en Colombie-Britannique?", alberta: "Depuis combien de temps vous / les membres admissibles résidez en Alberta?", saskatchewan: "Depuis combien de temps vous / les membres admissibles résidez en Saskatchewan?", manitoba: "Depuis combien de temps vous / les membres admissibles résidez au Manitoba?", new_brunswick: "Depuis combien de temps vous / les membres admissibles résidez au Nouveau-Brunswick?", nova_scotia: "Depuis combien de temps vous / les membres admissibles résidez en Nouvelle-Écosse?", prince_edward_island: "Depuis combien de temps vous / les membres admissibles résidez à l’Île-du-Prince-Édouard?", newfoundland_labrador: "Depuis combien de temps vous / les membres admissibles résidez à Terre-Neuve-et-Labrador?", yukon: "Depuis combien de temps vous / les membres admissibles résidez au Yukon?", northwest_territories: "Depuis combien de temps vous / les membres admissibles résidez aux Territoires du Nord-Ouest?", nunavut: "Depuis combien de temps vous / les membres admissibles résidez au Nunavut?" },
+    provinceHistories: { unsure: "Je ne sais pas / à vérifier", twelve_plus: "12 mois ou plus", six_to_eleven: "De 6 à moins de 12 mois", under_six: "Moins de 6 mois" },
     torontoHistory: "Résidence dans la ville de Toronto pendant au moins un an",
     torontoHistories: { unsure: "Je ne sais pas / à vérifier", meets: "Oui", does_not: "Non" },
     sinStatus: "Avez-vous un numéro d’assurance sociale (NAS) valide?",
@@ -548,7 +550,7 @@ const copy = {
       statusConditional: "Ce statut peut être considéré, sous réserve d’une autorisation valide et de la capacité du programme.",
       statusVerification: "La page officielle ne tranche pas ce statut; contactez le programme.",
       provinceHistoryUnknown: "La durée de résidence dans la province doit être confirmée.",
-      provinceHistoryTooShort: "Ce programme exige 12 mois de résidence dans la province.",
+      provinceHistoryTooShort: "La durée de résidence est inférieure au minimum exigé par ce programme.",
       torontoHistoryUnknown: "La durée de résidence dans la ville de Toronto doit être confirmée.",
       torontoHistoryTooShort: "Ce programme exige au moins un an de résidence dans la ville de Toronto.",
       groupUnknown: "La composition du collectif doit être confirmée.",
@@ -587,7 +589,7 @@ const copy = {
     status: { open: "Ouvert", rolling: "En continu", upcoming: "Bientôt", closed: "Fermé" },
   },
   en: {
-    edition: "Canada edition · all 10 provinces + Yukon",
+    edition: "Canada edition · 10 provinces + 3 territories",
     ledgerEdition: "Canada · Monitoring ledger",
     radarLink: "Open the monitoring ledger",
     backToSearch: "Back to opportunity search",
@@ -608,9 +610,9 @@ const copy = {
     baseKicker: "Zero point on the ruler",
     baseHeading: "Where do you currently live?",
     baseNote: "City and province change the programs shown; nationality is checked separately.",
-    regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon" },
-    otherRegions: "Other provinces and territory",
-    residences: { montreal: "Island of Montréal", quebec_city: "City of Québec", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon" },
+    regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut" },
+    otherRegions: "Other provinces and territories",
+    residences: { montreal: "Island of Montréal", quebec_city: "City of Québec", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut" },
     steps: ["Your situation", "A concrete opportunity", "Possible funding"],
     profileHeading: "Your situation",
     profile: "You are applying as…",
@@ -620,8 +622,8 @@ const copy = {
     legalStatusArtist: "Your status in Canada",
     legalStatusCollective: "Status of the application representative",
     legalStatuses: { unsure: "Not sure / needs checking", citizen: "Canadian citizen", permanent: "Permanent resident", protected: "Protected Person", permanent_pending: "Permanent residence application pending", temporary_work: "Temporary status with valid work authorization", temporary_no_work: "Temporary status without work authorization" },
-    provinceHistory: { quebec: "You / qualifying members have lived in Québec for 12 months", ontario: "You / qualifying members have lived in Ontario for 12 months", british_columbia: "You / qualifying members have lived in British Columbia for 12 months", alberta: "You / qualifying members have lived in Alberta for 12 months", saskatchewan: "You / qualifying members have lived in Saskatchewan for 12 months", manitoba: "You / qualifying members have lived in Manitoba for 12 months", new_brunswick: "You / qualifying members have lived in New Brunswick for 12 months", nova_scotia: "You / qualifying members have lived in Nova Scotia for 12 months", prince_edward_island: "You / qualifying members have lived in Prince Edward Island for 12 months", newfoundland_labrador: "You / qualifying members have lived in Newfoundland and Labrador for 12 months", yukon: "You / qualifying members have lived in Yukon for 12 months" },
-    provinceHistories: { unsure: "Not sure / needs checking", twelve_plus: "Yes, 12 months or more", under_twelve: "No, less than 12 months" },
+    provinceHistory: { quebec: "How long have you / qualifying members lived in Québec?", ontario: "How long have you / qualifying members lived in Ontario?", british_columbia: "How long have you / qualifying members lived in British Columbia?", alberta: "How long have you / qualifying members lived in Alberta?", saskatchewan: "How long have you / qualifying members lived in Saskatchewan?", manitoba: "How long have you / qualifying members lived in Manitoba?", new_brunswick: "How long have you / qualifying members lived in New Brunswick?", nova_scotia: "How long have you / qualifying members lived in Nova Scotia?", prince_edward_island: "How long have you / qualifying members lived in Prince Edward Island?", newfoundland_labrador: "How long have you / qualifying members lived in Newfoundland and Labrador?", yukon: "How long have you / qualifying members lived in Yukon?", northwest_territories: "How long have you / qualifying members lived in the Northwest Territories?", nunavut: "How long have you / qualifying members lived in Nunavut?" },
+    provinceHistories: { unsure: "Not sure / needs checking", twelve_plus: "12 months or more", six_to_eleven: "6 to under 12 months", under_six: "Under 6 months" },
     torontoHistory: "At least one year living in the City of Toronto",
     torontoHistories: { unsure: "Not sure / needs checking", meets: "Yes", does_not: "No" },
     sinStatus: "Do you have a valid Social Insurance Number (SIN)?",
@@ -756,7 +758,7 @@ const copy = {
     eligibilityHeading: "Eligibility checkpoint",
     eligibilitySource: "Check official eligibility rules ↗",
     eligibilityReasons: {
-      statusUnknown: "Status in Canada still needs confirmation.", statusNotAccepted: "The selected status is not accepted by this program.", statusConditional: "This status may be considered, subject to valid authorization and program capacity.", statusVerification: "The official page does not resolve this status; contact the program.", provinceHistoryUnknown: "Length of residence in the province still needs confirmation.", provinceHistoryTooShort: "This program requires 12 months of residence in the province.", torontoHistoryUnknown: "Length of residence in the City of Toronto still needs confirmation.", torontoHistoryTooShort: "This program requires at least one year in the City of Toronto.", groupUnknown: "The collective’s composition still needs confirmation.", groupNotEnough: "The collective does not meet the qualifying-member threshold.", groupSizeUnknown: "The number of core members still needs confirmation.", organizationUnknown: "Canadian incorporation or registration still needs confirmation.", organizationNotEligible: "A Canadian-incorporated or registered organization is required.", organizationProgramCheck: "Ontario-specific organization conditions must be checked in the guide.", sinUnknown: "SIN status still needs confirmation.", sinMissing: "A valid SIN is required for this program.", arrivalUnknown: "Arrival date in Canada still needs confirmation.", arrivalTooEarly: "The arrival date does not fit this newcomer cohort.", ageUnknown: "Age still needs confirmation.", ageOutOfRange: "The selected age range does not fit the program.", professionalPracticeCheck: "Professional standing, peer recognition and income evidence still need checking."
+      statusUnknown: "Status in Canada still needs confirmation.", statusNotAccepted: "The selected status is not accepted by this program.", statusConditional: "This status may be considered, subject to valid authorization and program capacity.", statusVerification: "The official page does not resolve this status; contact the program.", provinceHistoryUnknown: "Length of residence in the province still needs confirmation.", provinceHistoryTooShort: "The residence period is shorter than this program’s minimum.", torontoHistoryUnknown: "Length of residence in the City of Toronto still needs confirmation.", torontoHistoryTooShort: "This program requires at least one year in the City of Toronto.", groupUnknown: "The collective’s composition still needs confirmation.", groupNotEnough: "The collective does not meet the qualifying-member threshold.", groupSizeUnknown: "The number of core members still needs confirmation.", organizationUnknown: "Canadian incorporation or registration still needs confirmation.", organizationNotEligible: "A Canadian-incorporated or registered organization is required.", organizationProgramCheck: "Ontario-specific organization conditions must be checked in the guide.", sinUnknown: "SIN status still needs confirmation.", sinMissing: "A valid SIN is required for this program.", arrivalUnknown: "Arrival date in Canada still needs confirmation.", arrivalTooEarly: "The arrival date does not fit this newcomer cohort.", ageUnknown: "Age still needs confirmation.", ageOutOfRange: "The selected age range does not fit the program.", professionalPracticeCheck: "Professional standing, peer recognition and income evidence still need checking."
     },
     states: { possible: "Published criteria appear met", conditional: "Possible with conditions", verify: "Needs confirmation", ineligible: "Not eligible from these answers" },
     purposes: { mobility_export: "Mobility / export", home_base_creation: "Local creation", career_support: "Career / mentorship" },
@@ -780,7 +782,7 @@ const copy = {
     status: { open: "Open", rolling: "Rolling", upcoming: "Upcoming", closed: "Closed" },
   },
   ja: {
-    edition: "カナダ版 · 全10州＋ユーコン",
+    edition: "カナダ版 · 全10州＋3準州",
     ledgerEdition: "カナダ版 · 監視台帳",
     radarLink: "監視台帳を見る",
     backToSearch: "公募検索へ戻る",
@@ -801,9 +803,9 @@ const copy = {
     baseKicker: "物差しのゼロ地点",
     baseHeading: "現在どこに住んでいますか？",
     baseNote: "市と州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
-    regions: { quebec: "ケベック州", ontario: "オンタリオ州", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州" },
+    regions: { quebec: "ケベック州", ontario: "オンタリオ州", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州" },
     otherRegions: "その他の州・準州",
-    residences: { montreal: "モントリオール島内", quebec_city: "ケベック・シティ", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州" },
+    residences: { montreal: "モントリオール島内", quebec_city: "ケベック・シティ", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州" },
     steps: ["申請者の状況", "具体的な公募", "利用可能性のある制度"],
     profileHeading: "申請者の状況",
     profile: "申請主体",
@@ -813,8 +815,8 @@ const copy = {
     legalStatusArtist: "カナダでの在留資格",
     legalStatusCollective: "申請代表者の在留資格",
     legalStatuses: { unsure: "不明・要確認", citizen: "カナダ市民", permanent: "永住者", protected: "Protected Person（保護対象者）", permanent_pending: "永住権を申請中", temporary_work: "有効な就労許可がある一時滞在", temporary_no_work: "就労許可がない一時滞在" },
-    provinceHistory: { quebec: "本人／対象メンバーのケベック州居住が12か月以上", ontario: "本人／対象メンバーのオンタリオ州居住が12か月以上", british_columbia: "本人／対象メンバーのブリティッシュ・コロンビア州居住が12か月以上", alberta: "本人／対象メンバーのアルバータ州居住が12か月以上", saskatchewan: "本人／対象メンバーのサスカチュワン州居住が12か月以上", manitoba: "本人／対象メンバーのマニトバ州居住が12か月以上", new_brunswick: "本人／対象メンバーのニューブランズウィック州居住が12か月以上", nova_scotia: "本人／対象メンバーのノバスコシア州居住が12か月以上", prince_edward_island: "本人／対象メンバーのPEI居住が12か月以上", newfoundland_labrador: "本人／対象メンバーのニューファンドランド・ラブラドール州居住が12か月以上", yukon: "本人／対象メンバーのユーコン居住が12か月以上" },
-    provinceHistories: { unsure: "不明・要確認", twelve_plus: "12か月以上", under_twelve: "12か月未満" },
+    provinceHistory: { quebec: "本人／対象メンバーのケベック州居住期間", ontario: "本人／対象メンバーのオンタリオ州居住期間", british_columbia: "本人／対象メンバーのブリティッシュ・コロンビア州居住期間", alberta: "本人／対象メンバーのアルバータ州居住期間", saskatchewan: "本人／対象メンバーのサスカチュワン州居住期間", manitoba: "本人／対象メンバーのマニトバ州居住期間", new_brunswick: "本人／対象メンバーのニューブランズウィック州居住期間", nova_scotia: "本人／対象メンバーのノバスコシア州居住期間", prince_edward_island: "本人／対象メンバーのPEI居住期間", newfoundland_labrador: "本人／対象メンバーのニューファンドランド・ラブラドール州居住期間", yukon: "本人／対象メンバーのユーコン準州居住期間", northwest_territories: "本人／対象メンバーのノースウエスト準州居住期間", nunavut: "本人／対象メンバーのヌナブト準州居住期間" },
+    provinceHistories: { unsure: "不明・要確認", twelve_plus: "12か月以上", six_to_eleven: "6か月以上12か月未満", under_six: "6か月未満" },
     torontoHistory: "トロント市内での居住が1年以上",
     torontoHistories: { unsure: "不明・要確認", meets: "はい", does_not: "いいえ" },
     sinStatus: "有効なSIN（社会保険番号）を持っていますか？",
@@ -949,7 +951,7 @@ const copy = {
     eligibilityHeading: "申請資格の確認",
     eligibilitySource: "申請資格の公式条件を確認 ↗",
     eligibilityReasons: {
-      statusUnknown: "カナダでの在留資格を確認してください。", statusNotAccepted: "選択した在留資格は、この制度で認められていません。", statusConditional: "有効な許可と受入枠を条件に検討対象となる可能性があります。", statusVerification: "公式ページだけではこの在留資格を判定できません。制度担当へ確認してください。", provinceHistoryUnknown: "州内の居住期間を確認してください。", provinceHistoryTooShort: "この制度は州内で12か月以上の居住を必要とします。", torontoHistoryUnknown: "トロント市内の居住期間を確認してください。", torontoHistoryTooShort: "この制度はトロント市内で1年以上の居住を必要とします。", groupUnknown: "コレクティブの構成を確認してください。", groupNotEnough: "対象条件を満たす主要メンバーの割合が基準に達していません。", groupSizeUnknown: "主要メンバー数を確認してください。", organizationUnknown: "カナダでの法人化・登録状況を確認してください。", organizationNotEligible: "カナダで法人化または登録された団体である必要があります。", organizationProgramCheck: "オンタリオ州の団体固有条件を公式要項で追加確認してください。", sinUnknown: "SINの有無を確認してください。", sinMissing: "この制度には有効なSINが必要です。", arrivalUnknown: "カナダへの到着時期を確認してください。", arrivalTooEarly: "到着時期が新人向けプログラムの対象期間外です。", ageUnknown: "年齢を確認してください。", ageOutOfRange: "選択した年齢区分は制度の対象外です。", professionalPracticeCheck: "プロとしての活動実績、同業者からの評価、収入証明を確認してください。"
+      statusUnknown: "カナダでの在留資格を確認してください。", statusNotAccepted: "選択した在留資格は、この制度で認められていません。", statusConditional: "有効な許可と受入枠を条件に検討対象となる可能性があります。", statusVerification: "公式ページだけではこの在留資格を判定できません。制度担当へ確認してください。", provinceHistoryUnknown: "州・準州内の居住期間を確認してください。", provinceHistoryTooShort: "居住期間がこの制度の最低条件を満たしていません。", torontoHistoryUnknown: "トロント市内の居住期間を確認してください。", torontoHistoryTooShort: "この制度はトロント市内で1年以上の居住を必要とします。", groupUnknown: "コレクティブの構成を確認してください。", groupNotEnough: "対象条件を満たす主要メンバーの割合が基準に達していません。", groupSizeUnknown: "主要メンバー数を確認してください。", organizationUnknown: "カナダでの法人化・登録状況を確認してください。", organizationNotEligible: "カナダで法人化または登録された団体である必要があります。", organizationProgramCheck: "オンタリオ州の団体固有条件を公式要項で追加確認してください。", sinUnknown: "SINの有無を確認してください。", sinMissing: "この制度には有効なSINが必要です。", arrivalUnknown: "カナダへの到着時期を確認してください。", arrivalTooEarly: "到着時期が新人向けプログラムの対象期間外です。", ageUnknown: "年齢を確認してください。", ageOutOfRange: "選択した年齢区分は制度の対象外です。", professionalPracticeCheck: "プロとしての活動実績、同業者からの評価、収入証明を確認してください。"
     },
     states: { possible: "公表条件には適合", conditional: "条件を満たせば可能性あり", verify: "個別確認が必要", ineligible: "入力条件では対象外" },
     purposes: { mobility_export: "渡航・国外展開", home_base_creation: "居住地での創作", career_support: "キャリア・メンタリング" },
@@ -995,6 +997,8 @@ const residenceGroups: Record<ProvinceKey, Residence[]> = {
   prince_edward_island: ["prince_edward_island"],
   newfoundland_labrador: ["newfoundland_labrador"],
   yukon: ["yukon"],
+  northwest_territories: ["northwest_territories"],
+  nunavut: ["nunavut"],
 };
 const primaryResidenceRegions: ProvinceKey[] = ["quebec", "ontario"];
 const otherResidenceRegions: ProvinceKey[] = (Object.keys(residenceGroups) as ProvinceKey[])
@@ -1016,6 +1020,8 @@ const provinceByResidence: Record<Residence, ProvinceKey> = {
   prince_edward_island: "prince_edward_island",
   newfoundland_labrador: "newfoundland_labrador",
   yukon: "yukon",
+  northwest_territories: "northwest_territories",
+  nunavut: "nunavut",
 };
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
 const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film", "showcase"];
@@ -1033,7 +1039,7 @@ const radarFamilyDisciplines: Record<Exclude<RadarFamily, "all">, Exclude<Discip
   showcase: ["circus", "theatre", "dance", "music", "media"],
 };
 const legalStatusOptions: LegalStatus[] = ["unsure", "citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
-const provinceHistoryOptions: ProvinceHistory[] = ["unsure", "twelve_plus", "under_twelve"];
+const provinceHistoryOptions: ProvinceHistory[] = ["unsure", "twelve_plus", "six_to_eleven", "under_six"];
 const torontoHistoryOptions: TorontoHistory[] = ["unsure", "meets", "does_not"];
 const collectiveCompositionOptions: CollectiveComposition[] = ["unsure", "all", "three_quarters", "two_thirds", "majority_qualified", "half_qualified", "under_half"];
 const collectiveSizeOptions: CollectiveSize[] = ["unsure", "two", "three_plus"];

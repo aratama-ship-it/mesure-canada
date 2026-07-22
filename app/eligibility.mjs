@@ -82,11 +82,14 @@ export function evaluateFundingEligibility({
   if (profile === "artist") checkStatus(rules.individualStatuses);
   if (profile === "collective") checkStatus(rules.representativeStatuses);
 
-  if (profile !== "organization" && rules.minimumProvinceMonths === 12) {
+  if (profile !== "organization" && rules.minimumProvinceMonths) {
     if (provinceHistory === "unsure") {
       state = raiseState(state, "verify");
       addReason("provinceHistoryUnknown");
-    } else if (provinceHistory === "under_twelve") {
+    } else if (
+      (rules.minimumProvinceMonths === 12 && provinceHistory !== "twelve_plus") ||
+      (rules.minimumProvinceMonths === 6 && provinceHistory === "under_six")
+    ) {
       state = "ineligible";
       addReason("provinceHistoryTooShort");
     }
@@ -197,6 +200,8 @@ const residenceScopes = {
   prince_edward_island: new Set(["canada", "prince_edward_island"]),
   newfoundland_labrador: new Set(["canada", "newfoundland_labrador"]),
   yukon: new Set(["canada", "yukon"]),
+  northwest_territories: new Set(["canada", "northwest_territories"]),
+  nunavut: new Set(["canada", "nunavut"]),
 };
 
 export function supportsResidence(funding, residence) {

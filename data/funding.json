@@ -1420,5 +1420,170 @@
     },
     "sourceUrl": "https://yukon.ca/en/touring-artist-fund",
     "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nwt-small-arts-project-fund-2026",
+    "name": "Northwest Territories — Small Arts Project Fund",
+    "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["northwest_territories"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "En continu du 1er avril au 31 mars, jusqu’à épuisement du budget annuel",
+      "en": "Rolling from April 1 to March 31, until the annual budget is exhausted",
+      "ja": "4月1日から翌3月31日まで随時受付（年度予算がなくなり次第終了）"
+    },
+    "amount": {
+      "fr": "De 500 $ à 5 000 $ par projet",
+      "en": "$500 to $5,000 per project",
+      "ja": "1プロジェクト500〜5,000カナダドル"
+    },
+    "coverage": ["creation", "production", "training", "research", "fees"],
+    "cashflow": {
+      "fr": "Premier arrivé, premier évalué; la page officielle ne précise pas le délai de décision ou de versement",
+      "en": "Assessed first-come, first-served; the official page does not state a decision or payment timeline",
+      "ja": "先着順で審査。公式ページに結果通知・支払時期の明記はありません"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 6,
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Les individus doivent résider aux TNO depuis au moins six mois et y vivre au moment de la demande. Les organismes doivent être inscrits au registre des sociétés des TNO et en règle. Le statut d’immigration n’est pas précisé et doit être confirmé.",
+        "en": "Individuals must have lived in the NWT for at least six months and be living there when applying. Organizations must be registered with NWT Corporate Registries and in good standing. Immigration status is not specified and must be confirmed.",
+        "ja": "個人は申請前にノースウエスト準州へ6か月以上居住し、申請時点でも居住していることが必要です。団体は同準州の法人登録と良好な登録状態が必要です。在留資格は明記されていないため確認が必要です。"
+      },
+      "sourceUrl": "https://www.iti.gov.nt.ca/en/services/small-arts-project-fund",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.iti.gov.nt.ca/en/services/small-arts-project-fund",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nwt-medium-arts-project-grant-2026",
+    "name": "Northwest Territories — Medium Arts Project Grant",
+    "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
+    "profiles": ["artist", "collective", "organization"],
+    "residencies": ["northwest_territories"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Prochaine échéance: 31 octobre 2026",
+      "en": "Next deadline: October 31, 2026",
+      "ja": "次回締切：2026年10月31日"
+    },
+    "amount": {
+      "fr": "De 5 001 $ à 15 000 $ par projet",
+      "en": "$5,001 to $15,000 per project",
+      "ja": "1プロジェクト5,001〜15,000カナダドル"
+    },
+    "coverage": ["creation", "production", "fees", "training", "research"],
+    "cashflow": {
+      "fr": "Résultat dans les 60 jours suivant l’échéance; les coûts engagés avant l’approbation ne sont pas couverts",
+      "en": "Results within 60 days of the deadline; costs incurred before approval are not covered",
+      "ja": "締切後60日以内に結果通知。承認前に発生した費用は対象外です"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 6,
+      "organizationVerificationRequired": true,
+      "note": {
+        "fr": "Il faut résider aux TNO depuis au moins six mois et avoir terminé et déclaré au moins un projet financé par le Small Arts Project Grant. Les organismes doivent être inscrits aux TNO, en règle et avoir un mandat artistique. Le statut d’immigration n’est pas précisé.",
+        "en": "Applicants must have lived in the NWT for at least six months and have completed and reported on at least one Small Arts Project Grant. Organizations must be NWT-registered, in good standing and have an arts mandate. Immigration status is not specified.",
+        "ja": "ノースウエスト準州で6か月以上の居住に加え、Small Arts Project Grantの採択事業を少なくとも1件完了・報告済みであることが必要です。団体は準州登録・良好な登録状態・芸術目的が必要です。在留資格は明記されていません。"
+      },
+      "sourceUrl": "https://www.iti.gov.nt.ca/en/services/medium-arts-project-grant",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.iti.gov.nt.ca/en/services/medium-arts-project-grant",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nwt-artist-travel-touring-fund-2026",
+    "name": "Northwest Territories — Artist Travel and Touring Fund",
+    "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
+    "profiles": ["artist", "collective"],
+    "residencies": ["northwest_territories"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": {
+      "fr": "En continu du 1er avril au 31 mars, jusqu’à épuisement du budget annuel",
+      "en": "Rolling from April 1 to March 31, until the annual budget is exhausted",
+      "ja": "4月1日から翌3月31日まで随時受付（年度予算がなくなり次第終了）"
+    },
+    "amount": {
+      "fr": "Jusqu’à 4 000 $ par année pour un individu; 8 000 $ pour un groupe; apport minimal de 20 %",
+      "en": "Up to $4,000 per year for an individual or $8,000 for a group; minimum 20% applicant equity",
+      "ja": "年間上限は個人4,000、グループ8,000カナダドル。申請者負担20％以上"
+    },
+    "coverage": ["travel", "stay", "transport", "fees", "promotion", "touring", "recording"],
+    "cashflow": {
+      "fr": "Premier arrivé, premier évalué; la demande doit précéder l’activité et les dépenses antérieures au dépôt ne sont pas couvertes",
+      "en": "Assessed first-come, first-served; apply before the activity and costs incurred before submission are not covered",
+      "ja": "先着順で審査。活動前の申請が必要で、申請前に発生した費用は対象外です"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "representativeStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 6,
+      "note": {
+        "fr": "Réservé aux artistes individuels et aux groupes ayant vécu aux TNO pendant au moins six mois et y résidant lors du dépôt; les organismes ne sont pas admissibles. Le statut d’immigration n’est pas précisé et doit être confirmé.",
+        "en": "For individual artists and groups who have lived in the NWT for at least six months and live there when applying; organizations are not eligible. Immigration status is not specified and must be confirmed.",
+        "ja": "ノースウエスト準州に6か月以上居住し、申請時点でも居住する個人・グループが対象です。団体は対象外。在留資格は明記されていないため確認が必要です。"
+      },
+      "sourceUrl": "https://www.iti.gov.nt.ca/en/services/artist-travel-and-tour-fund",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://www.iti.gov.nt.ca/en/services/artist-travel-and-tour-fund",
+    "verifiedAt": "2026-07-23"
+  },
+  {
+    "id": "nunavut-commissioners-arts-award",
+    "name": "Nunavut Commissioner’s Arts Award",
+    "funder": "Office of the Commissioner of Nunavut",
+    "profiles": ["artist"],
+    "residencies": ["nunavut"],
+    "disciplines": ["circus", "theatre", "dance", "music"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "deadline": {
+      "fr": "Aucune date limite; les candidatures peuvent être soumises en continu",
+      "en": "No deadline; nominations may be submitted on an ongoing basis",
+      "ja": "締切なし・随時推薦を受付"
+    },
+    "amount": {
+      "fr": "Un prix de 10 000 $ à une personne",
+      "en": "One $10,000 award to an individual",
+      "ja": "個人1名に10,000カナダドル"
+    },
+    "coverage": ["promotion"],
+    "cashflow": {
+      "fr": "Chèque remis avec le certificat lors d’une cérémonie officielle; calendrier non précisé",
+      "en": "Cheque presented with the certificate at an official ceremony; timing is not stated",
+      "ja": "公式式典で証書と小切手を授与。時期は明記されていません"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "verificationStatuses": ["citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"],
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Le ou la candidate doit résider au Nunavut et avoir apporté une contribution importante et distinguée aux arts sur une longue période. Il s’agit d’une nomination appuyée par trois personnes ou organismes, non d’une auto-candidature. La page officielle mélange les mentions arts visuels et arts de la scène; il faut confirmer le volet de l’année. Le statut d’immigration n’est pas précisé.",
+        "en": "The candidate must be a Nunavut resident with a substantial and distinguished contribution to the arts over a significant period. This is a nomination supported by three people or organizations, not a self-application. The official page mixes visual- and performing-arts wording, so confirm the year’s category. Immigration status is not specified.",
+        "ja": "ヌナブト準州在住で、長期間にわたり芸術へ顕著な貢献をした人が対象です。本人申請ではなく、3名または3団体の推薦が必要です。公式ページ内で視覚芸術と舞台芸術の記述が混在するため、その年の対象分野を確認してください。在留資格も明記されていません。"
+      },
+      "sourceUrl": "https://commissioner.gov.nu.ca/en/arts.aspx",
+      "verifiedAt": "2026-07-23"
+    },
+    "sourceUrl": "https://commissioner.gov.nu.ca/en/Home.aspx",
+    "verifiedAt": "2026-07-23"
   }
 ]
