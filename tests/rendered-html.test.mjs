@@ -437,10 +437,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const festivalRadarById = new Map(festivalRadar.map((record) => [record.id, record]));
   assert.equal(festivalRadarById.get("cirko-w-coproduction-2028-regional")?.deadlineTimeZone, "EEST (UTC+3)");
   assert.equal(festivalRadarById.get("kyoto-art-center-performing-arts-2027-open")?.deadlineTimeZone, "JST");
+  assert.equal(festivalRadarById.get("fifdh-2027")?.deadlineTimeZone, "CET (as published)");
+  assert.equal(festivalRadarById.get("sxsw-film-2027")?.deadlineTimeZone, "CT");
 
   const radarDecisionGuideIds = [
     "idfa-forum-2026",
     "jskd-cankarjeva-puppetry-2026-open",
+    "sxsw-film-2027",
     "fifdh-2027",
     "feten-gijon-2027-open",
     "imaginarius-2027",
@@ -478,6 +481,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "fmtm-programming-route-2027-open",
     "pole-marionnette-documentary-residency-open",
     "arab-theatre-festival-2027-open",
+    "unima-passport-prelet-2026-open",
     "pesta-boneka-puppet-camp-2026-open",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
@@ -491,6 +495,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "imaginarius-2027").decisionGuide.quebecAssessment.state, "supported");
   assert.equal(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.quebecAssessment.state, "self_funded");
   assert.match(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.applicantCost.ja, /475ユーロ/);
+  assert.equal(festivalRadar.find((record) => record.id === "sxsw-film-2027").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.match(festivalRadar.find((record) => record.id === "sxsw-film-2027").decisionGuide.applicantCost.ja, /125／90米ドル/);
+  assert.equal(festivalRadar.find((record) => record.id === "fifdh-2027").decisionGuide.quebecAssessment.state, "conditional");
+  assert.match(festivalRadar.find((record) => record.id === "fifdh-2027").decisionGuide.applicantCost.ja, /200スイスフラン/);
   assert.equal(festivalRadar.find((record) => record.id === "solostage-krakow-2026-open").decisionGuide.quebecAssessment.state, "self_funded");
   assert.equal(festivalRadar.find((record) => record.id === "cairo-film-2026").decisionGuide.quebecAssessment.state, "verify");
   assert.equal(festivalRadar.find((record) => record.id === "cubadupa-2027-open").decisionGuide.quebecAssessment.state, "verify");
@@ -507,7 +515,8 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "dynamo-circus-residency-2027-28").decisionGuide.quebecAssessment.state, "conditional");
   assert.equal(festivalRadar.find((record) => record.id === "aoca-africa-circus-partner-route-2027").decisionGuide.quebecAssessment.state, "not_direct");
   assert.equal(festivalRadar.find((record) => record.id === "arab-theatre-festival-2027-open").decisionGuide.quebecAssessment.state, "supported");
-  assert.equal(festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open").decisionGuide.quebecAssessment.state, "not_direct");
+  assert.match(festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open").decisionGuide.applicantCost.ja, /1,200米ドル/);
   assert.match(festivalRadar.find((record) => record.id === "ypam-fringe-2027").decisionGuide.applicantCost.ja, /18,700〜38,500円/);
   assert.match(festivalRadar.find((record) => record.id === "guadalajara-film-2027").decisionGuide.applicantCost.ja, /応募は無料/);
   assert.match(festivalRadar.find((record) => record.id === "francofete-acadie-2027-28").decisionGuide.applicantCost.ja, /100カナダドル/);
@@ -597,12 +606,32 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
   }
   const unimaPassport = festivalRadar.find((record) => record.id === "unima-passport-prelet-2026-open");
-  assert.equal(unimaPassport.status, "watch");
-  assert.equal(unimaPassport.deadlineDate, null);
+  assert.equal(unimaPassport.status, "open");
+  assert.equal(unimaPassport.deadlineDate, "2026-08-04");
+  assert.match(unimaPassport.deadlineLabel.ja, /1枠/);
   assert.deepEqual(
     festivalRadar.find((record) => record.id === "inaf-norway-2027-open").fundingReview.fundingMatches.map((match) => match.fundingId),
     ["calq-circulation", "cca-microgrants"],
   );
+
+  const sixthFundingBatch = new Map([
+    ["idfa-forum-2026", ["pending_terms", 0]],
+    ["sxsw-film-2027", ["pending_terms", 0]],
+    ["fifdh-2027", ["suggested", 1]],
+    ["pesta-boneka-puppet-camp-2026-open", ["reviewed_no_match", 0]],
+  ]);
+  for (const [id, [expectedStatus, expectedMatches]] of sixthFundingBatch) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.fundingReview.status, expectedStatus, `${id} funding review status`);
+    assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
+  }
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "fifdh-2027").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["cca-microgrants"],
+  );
+  const pestaBoneka = festivalRadar.find((record) => record.id === "pesta-boneka-puppet-camp-2026-open");
+  assert.equal(pestaBoneka.status, "watch");
+  assert.equal(pestaBoneka.networkSourceUrl, "https://bit.ly/shanksmare");
 
   const destinos = festivalRadar.find((record) => record.id === "destinos-chicago-2026-open");
   assert.equal(destinos.status, "watch");

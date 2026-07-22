@@ -441,14 +441,50 @@
     "participation": "international",
     "status": "upcoming",
     "deadlineDate": "2026-10-01",
+    "deadlineTimeZone": "CT",
     "deadlineLabel": {
-      "fr": "Ouverture le 28 juillet; dernière date le 1er octobre 2026",
-      "en": "Opens July 28; final deadline October 1, 2026",
-      "ja": "7月28日開始、最終締切は2026年10月1日"
+      "fr": "Ouverture le 28 juillet. Échéances à 23 h 59 CT: 25 août, 15 septembre et 1er octobre 2026. Frais progressifs selon la catégorie et la date.",
+      "en": "Opens July 28. Deadlines at 11:59 p.m. CT: August 25, September 15, and October 1, 2026. Tiered fees vary by category and date.",
+      "ja": "7月28日受付開始。締切はいずれも米中部時間23:59で、2026年8月25日、9月15日、10月1日。部門と提出時期で応募料が上がります。"
     },
     "nextCheckDate": "2026-07-28",
     "sourceUrl": "https://sxsw.com/apply/film-submissions/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Les projets internationaux sont admissibles selon les règles de catégorie et de première. Les œuvres doivent avoir été achevées en 2025, 2026 ou début 2027; vérifier la catégorie avant paiement.",
+        "en": "International projects are eligible under category and premiere rules. Work must be completed in 2025, 2026, or early 2027; verify the category before paying.",
+        "ja": "国外作品も部門別条件とプレミア条件のもとで応募できます。2025年、2026年、または2027年初頭の完成作品が対象で、支払い前に部門条件の確認が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Sans dispense de frais. Première échéance: 75 USD pour un long métrage et 55 USD pour court/TV/musique/XR; deuxième: 95/70 USD; finale: 125/90 USD. Si sélection, voyage, hébergement et rémunération restent à la charge de l’équipe.",
+        "en": "No fee waivers. First deadline: USD 75 for features and USD 55 for shorts/TV/music/XR; second: USD 95/70; final: USD 125/90. If selected, the team pays travel and accommodation and receives no remuneration.",
+        "ja": "応募料免除はありません。第1締切は長編75米ドル・短編／TV／音楽／XR 55米ドル、第2締切は95／70米ドル、最終締切は125／90米ドル。採択後も渡航・宿泊は自己負担で、報酬はありません。"
+      },
+      "organizerSupport": {
+        "fr": "Les projets retenus reçoivent un nombre limité de badges gratuits et un accès prioritaire au bloc hôtelier payant des cinéastes; aucun voyage ni hébergement gratuit n’est annoncé.",
+        "en": "Selected projects receive a limited number of complimentary badges and priority access to the paid filmmaker hotel block; no free travel or lodging is offered.",
+        "ja": "採択作品には限られた数の無料バッジと、有料の映画制作者向けホテル枠への優先アクセスがあります。無料の渡航・宿泊支援はありません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "L’accès international est réel, mais le coût augmente avec le temps et le séjour à Austin reste autofinancé. Déposer tôt seulement si les règles de première conviennent, puis attendre la sélection avant toute réservation.",
+          "en": "International access is real, but fees rise over time and the Austin trip is self-funded. Submit early only if premiere rules fit, then wait for selection before booking.",
+          "ja": "国外から応募できますが、遅いほど応募料が上がり、オースティン滞在も自己負担です。プレミア条件を満たす場合だけ早期提出し、予約は採択後に行います。"
+        }
+      }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "SXSW ne paie ni voyage, ni hébergement, ni rémunération. Une aide externe ne doit toutefois pas être reliée avant sélection: la date de notification et le calendrier d’un éventuel bailleur doivent laisser assez de temps avant mars 2027, et les dépenses ne doivent pas être engagées avant la demande.",
+        "en": "SXSW provides no travel, lodging, or remuneration. However, external funding should not be linked before selection: the notification date and any funder’s timeline must leave enough time before March 2027, and costs must not be committed before applying.",
+        "ja": "SXSWは渡航・宿泊・報酬を負担しません。ただし採択前に外部助成を結ぶのも早計です。採否通知から2027年3月までに助成審査期間を確保でき、申請前に経費を確定・支出しないことを確認してから再判定します。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "sundance-film-2027",
@@ -549,10 +585,11 @@
     "participation": "international",
     "status": "open",
     "deadlineDate": "2026-07-28",
+    "deadlineTimeZone": "CET (as published)",
     "deadlineLabel": {
-      "fr": "28 juillet 2026",
-      "en": "July 28, 2026",
-      "ja": "2026年7月28日"
+      "fr": "28 juillet 2026 à minuit CET (tel que publié). Trois voies: films terminés, Impact Spotlight et Impact Lab.",
+      "en": "July 28, 2026 at midnight CET (as published). Three routes: completed films, Impact Spotlight, and Impact Lab.",
+      "ja": "2026年7月28日24:00 CET（公式表記）。完成作品、Impact Spotlight、Impact Labの3ルートがあります。"
     },
     "nextCheckDate": "2026-07-28",
     "sourceUrl": "https://fifdh.org/en/pro/news/call-for-films-and-projects/",
@@ -564,23 +601,43 @@
         "ja": "世界中の映画制作者・プロデューサーが対象。完成作品、インパクト・キャンペーン付き作品、キャンペーン開発中の制作作品という3ルートがあります。"
       },
       "applicantCost": {
-        "fr": "La page d’ensemble ne publie ni frais de dépôt, ni voyage, ni séjour; vérifiez les conditions du formulaire correspondant avant l’envoi.",
-        "en": "The overview publishes no submission fee, travel, or accommodation terms; check the selected route’s form before submitting.",
-        "ja": "概要ページには応募料、渡航、宿泊条件の記載がありません。該当ルートの応募フォームで送信前に確認が必要です。"
+        "fr": "Impact Spotlight et Impact Lab sont gratuits. Pour Impact Lab, chaque membre retenu paie une accréditation de 200 CHF et le voyage reste à sa charge; l’hébergement de deux personnes au plus est offert. Vérifier séparément les conditions de la sélection de films terminés.",
+        "en": "Impact Spotlight and Impact Lab are free to enter. For Impact Lab, each selected team member pays a CHF 200 accreditation and covers travel; lodging is provided for up to two people. Check the completed-film route separately.",
+        "ja": "Impact SpotlightとImpact Labは応募無料。Impact Lab採択後は参加者1人200スイスフランの登録料が必要で、渡航は自己負担、宿泊は最大2名分が提供されます。完成作品枠の条件は別途確認が必要です。"
       },
       "organizerSupport": {
-        "fr": "Sélection au festival ou accompagnement Impact; aucune prise en charge financière ou logistique précise n’est publiée dans cette annonce.",
-        "en": "Festival selection or Impact-program support; this announcement publishes no precise financial or logistical coverage.",
-        "ja": "フェス選出またはImpactプログラムでの伴走がありますが、この告知には具体的な金銭・渡航支援が記載されていません。"
+        "fr": "Impact Spotlight prend en charge voyage et hébergement pour deux personnes, avec projection et accompagnement expert. Impact Lab offre l’hébergement de deux personnes et l’accompagnement, mais pas le voyage sauf exception limitée à certains pays prioritaires.",
+        "en": "Impact Spotlight covers travel and accommodation for two people, with a screening and expert support. Impact Lab provides lodging for two and mentoring, but not travel except a limited priority-country exception.",
+        "ja": "Impact Spotlightは2名分の渡航・宿泊、上映、専門家支援を提供。Impact Labは2名分の宿泊と伴走支援を提供しますが、一部優先国の例外を除き渡航費は自己負担です。"
       },
       "quebecAssessment": {
-        "state": "verify",
+        "state": "conditional",
         "note": {
-          "fr": "L’accès international est confirmé, mais le coût réel et les conditions d’accueil restent insuffisants pour un budget depuis le Québec; ouvrez le formulaire de la voie choisie.",
-          "en": "International access is confirmed, but costs and hosting terms are too incomplete for a Québec-based budget; open the chosen route’s form first.",
-          "ja": "国外応募は確認済みですが、ケベックからの予算を組めるほど費用・受入条件が揃っていません。選ぶルートの応募フォームを先に確認してください。"
+          "fr": "Impact Spotlight est la voie la mieux soutenue depuis le Québec. Pour Impact Lab, prévoir voyage et accréditations, puis demander une aide externe seulement après sélection et confirmation écrite des dépenses couvertes.",
+          "en": "Impact Spotlight is the best-supported route from Québec. For Impact Lab, budget travel and accreditations, then seek external funding only after selection and written confirmation of covered costs.",
+          "ja": "ケベックからはImpact Spotlightが最も支援の厚いルートです。Impact Labは渡航費と登録料を見込み、採択後に主催者負担を書面確認してから外部助成を検討します。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Impact Spotlight couvre déjà voyage et hébergement de deux personnes. Pour Impact Lab, le voyage n’est normalement pas couvert et l’accréditation est de 200 CHF par membre; la Micro-subvention ci-dessous ne concerne donc que les coûts admissibles non pris en charge, après sélection et avec le soutien du festival déclaré.",
+        "en": "Impact Spotlight already covers travel and lodging for two people. For Impact Lab, travel is normally uncovered and accreditation costs CHF 200 per team member, so the Micro-grant lead below applies only to eligible uncovered costs after selection, with festival support disclosed.",
+        "ja": "Impact Spotlightは2名分の渡航・宿泊をすでに負担します。Impact Labは通常、渡航費が対象外で、参加者1人200スイスフランの登録料が必要です。下記Micro-grantは採択後、主催者支援を申告したうえで未負担の対象経費だけに検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "cca-microgrants",
+          "state": "conditional",
+          "note": {
+            "fr": "Impact Lab combine présentation professionnelle, accompagnement et développement d’une campagne d’impact. Après sélection prévue à la mi-septembre, confirmer que le délai habituel d’environ quatre mois reste compatible avec mars 2027 et ne budgéter que voyage ou autres coûts admissibles non couverts.",
+            "en": "Impact Lab combines professional presentation, mentoring, and impact-campaign development. After the expected mid-September selection, confirm that the usual roughly four-month decision time still fits March 2027 and budget only eligible uncovered travel or other costs.",
+            "ja": "Impact Labは専門家への発表、伴走、インパクト・キャンペーン開発を含みます。9月中旬予定の採択後、通常約4か月の審査が2027年3月に間に合うか確認し、未負担の渡航費など対象経費だけを計上してください。"
+          }
+        }
+      ]
     }
   },
   {
@@ -997,6 +1054,16 @@
           "ja": "国際共同製作先を探す段階のドキュメンタリーには有力ですが、応募前に選出料と2人分のアムステルダム渡航・滞在費を見積もる必要があります。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "IDFA Forum exige une présentation physique et, si le projet est retenu, 475 € hors TVA; la page n’annonce aucune aide au voyage ni au séjour. Une micro-subvention peut en principe viser le développement de marché, mais son délai habituel d’environ quatre mois risque d’être incompatible avec une sélection tardive pour novembre. Revoir dès réception de la décision d’IDFA, avant tout engagement de dépense.",
+        "en": "IDFA Forum requires an in-person presentation and, if selected, a €475 fee excluding VAT; the page announces no travel or lodging support. A micro-grant may in principle cover market development, but its usual roughly four-month decision time may not fit a late selection for November. Reassess immediately upon IDFA’s decision and before committing costs.",
+        "ja": "IDFA Forumは対面発表が必須で、採択後はVAT別475ユーロが必要ですが、渡航・宿泊支援は公表されていません。Micro-grantは市場開拓を対象にし得るものの、通常約4か月の審査期間は11月開催に対する遅い採否通知と合わない可能性があります。IDFAの採否受領直後、支出確定前に再判定します。"
+      },
+      "fundingMatches": []
     }
   },
   {
@@ -2752,7 +2819,7 @@
     },
     "nextCheckDate": "2026-07-29",
     "sourceUrl": "https://www.santiagooff.com/bases-convocatoria-xv-15-festival-internacional-santiago-off-2026/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "londrina-circus-festival-next-watch",
@@ -3901,23 +3968,48 @@
     "region": "Global",
     "family": "showcase",
     "participation": "regional_conditions",
-    "status": "watch",
-    "deadlineDate": null,
+    "status": "open",
+    "deadlineDate": "2026-08-04",
     "deadlineLabel": {
-      "fr": "La liste officielle mise en cache en mars incluait PRELET en novembre 2026, mais cette option n’apparaît plus sur la page officielle actuellement publiée. Comme les PASSPORTS sont attribués selon l’ordre d’arrivée, ne pas considérer la voie ouverte sans confirmation directe de festivals@unima.org. Surveiller les prochains ajouts.",
-      "en": "The official list cached in March included PRELET in November 2026, but that option no longer appears on the currently published official page. Because PASSPORTS are first come, first served, do not treat the route as open without direct confirmation from festivals@unima.org. Watch for new additions.",
-      "ja": "3月時点の公式検索記録には2026年11月のPRELET枠がありましたが、現在公開されている公式ページからは消えています。PASSPORTは先着順のため、festivals@unima.orgから直接確認を得るまでは募集中と扱わず、次の追加枠を監視します。"
+      "fr": "PRELET, 4–8 novembre 2026: deux PASSPORTS de cinq jours sont publiés et un est indiqué attribué. Candidature au moins trois mois avant le festival, donc au plus tard le 4 août, mais l’attribution se fait par ordre d’arrivée: confirmer immédiatement la place restante auprès de festivals@unima.org.",
+      "en": "PRELET, November 4–8, 2026: two five-day PASSPORTS are listed and one is marked awarded. Apply at least three months before the festival, implying August 4 at the latest, but awards are first come, first served; immediately confirm the remaining place with festivals@unima.org.",
+      "ja": "PRELET（2026年11月4〜8日）は5日間のPASSPORTを2枠掲載し、うち1枠は授与済みと表示。フェスの3か月以上前、遅くとも8月4日までに申請が必要ですが先着順のため、festivals@unima.orgへ残り1枠を直ちに確認してください。"
     },
     "nextCheckDate": "2026-07-24",
     "sourceUrl": "https://www.unima.org/en/useful-information/unima-grants/passport-program/",
     "verifiedAt": "2026-07-22",
+    "decisionGuide": {
+      "access": {
+        "fr": "Jeunes marionnettistes et étudiant·es en marionnette membres de l’UNIMA. La page publie deux places PRELET, dont une déjà attribuée; l’admissibilité et la disponibilité restante doivent être confirmées directement.",
+        "en": "Young puppeteers and puppetry students who are UNIMA members. The page lists two PRELET places, one already awarded; confirm both eligibility and remaining availability directly.",
+        "ja": "UNIMA会員の若手人形劇アーティストまたは人形劇専攻学生が対象。PRELETは2枠中1枠が授与済みと掲載されているため、本人の資格と残枠を直接確認します。"
+      },
+      "applicantCost": {
+        "fr": "Le bénéficiaire paie le voyage international, les repas et les frais de visa. Aucun cachet n’est annoncé; prévoir aussi assurance et dépenses personnelles jusqu’à confirmation contraire.",
+        "en": "The recipient pays international travel, food, and visa fees. No artist fee is announced; also budget insurance and personal expenses unless confirmed otherwise.",
+        "ja": "国際渡航、食事、ビザ費用は本人負担です。報酬の記載もなく、別途確認できるまでは保険・個人費用も自己負担として見積もります。"
+      },
+      "organizerSupport": {
+        "fr": "Le PASSPORT offre cinq jours d’hébergement et les billets du festival PRELET; le programme sert à découvrir le festival et développer des liens professionnels.",
+        "en": "The PASSPORT provides five days of accommodation and PRELET festival tickets; the program supports festival access and professional connection-building.",
+        "ja": "PASSPORTは5日間の宿泊とPRELETのフェスティバルチケットを提供し、フェス視察と専門的な交流を支援します。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Bonne petite aide d’accueil pour un membre UNIMA admissible, mais elle ne finance pas le déplacement. Ne réserver qu’après confirmation écrite de la place et du calendrier exact.",
+          "en": "Useful hosting support for an eligible UNIMA member, but it does not fund travel. Book only after written confirmation of the place and exact schedule.",
+          "ja": "対象となるUNIMA会員には有用な現地支援ですが、渡航費は出ません。残枠と正確な日程を書面確認してから予約してください。"
+        }
+      }
+    },
     "fundingReview": {
       "status": "pending_terms",
       "verifiedAt": "2026-07-22",
       "note": {
-        "fr": "Le programme offre normalement l’hébergement et les billets, tandis que voyage, repas et visa restent à la charge du bénéficiaire. Mais aucune place PRELET active n’est confirmée sur la page actuelle; aucun financement externe n’est donc relié avant confirmation d’une place réelle.",
-        "en": "The program normally provides lodging and festival tickets while recipients pay travel, food and visa costs. However, no active PRELET place is confirmed on the current page, so no external funding is linked until a real place is confirmed.",
-        "ja": "通常は宿泊と公演チケットが提供され、渡航・食事・ビザは本人負担です。ただし現在の公式ページではPRELETの有効枠を確認できないため、実在する枠が確認されるまで外部助成を結びません。"
+        "fr": "La page publie encore un PASSPORT PRELET potentiellement disponible, avec hébergement et billets; voyage, repas et visa restent à la charge du bénéficiaire. Comme l’attribution est immédiate et l’échéance au plus tard le 4 août, confirmer d’abord la place et l’admissibilité UNIMA. Le délai habituel d’environ quatre mois d’une Micro-subvention ne convient pas à un départ début novembre.",
+        "en": "The page still lists one PRELET PASSPORT as potentially available, with lodging and tickets; the recipient pays travel, food, and visa. Because awards are immediate and the implied latest deadline is August 4, first confirm the place and UNIMA eligibility. A Micro-grant’s usual roughly four-month decision time does not fit an early-November departure.",
+        "ja": "公式ページではPRELETのPASSPORTが1枠残っている可能性があり、宿泊とチケットは提供されますが、渡航・食事・ビザは本人負担です。先着順かつ遅くとも8月4日までのため、まず残枠とUNIMA資格を確認します。Micro-grantの通常約4か月の審査は11月初旬の渡航に間に合いません。"
       },
       "fundingMatches": []
     }
@@ -4382,26 +4474,27 @@
     "region": "Asia",
     "family": "showcase",
     "participation": "international",
-    "status": "open",
+    "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "Appel affiché ouvert; aucune date limite n'est publiée sur l'avis officiel UNIMA, donc vérifier immédiatement le formulaire. Huit places pour marionnettistes, danseurs, interprètes et créateurs de théâtre, du 25 septembre au 11 octobre 2026. Hébergement du 24 septembre au 12 octobre, trois repas par jour, passe du festival et visa couverts. Frais de participation exigés, montant non publié; voyage international non annoncé comme couvert.",
-      "en": "Listed as open; the official UNIMA notice publishes no deadline, so check the form immediately. Eight places for puppeteers, dancers, performers, and theatre makers, September 25–October 11, 2026. Accommodation September 24–October 12, three meals daily, festival pass, and visa are covered. A participation fee applies but the amount is not published; international travel is not listed as covered.",
-      "ja": "現在募集中と表示されていますが、UNIMAの公式告知に締切日がないため、申込フォームをすぐ確認してください。人形遣い、ダンサー、パフォーマー、演劇制作者を8名募集し、2026年9月25日〜10月11日に実施。9月24日〜10月12日の宿泊、1日3食、フェスティバルパス、ビザは提供されます。参加費は必要ですが金額は未公表で、国際渡航費の負担も明記されていません。"
+      "fr": "L’appel 2026 est fermé et les dossiers sont en cours d’examen. Le formulaire officiel lié par l’UNIMA publie des frais de 1 200 USD par personne; hébergement du 24 septembre au 12 octobre, trois repas par jour, passe du festival et visa inclus. Voyage international et assurance non annoncés comme couverts.",
+      "en": "The 2026 call is closed and applications are under review. The official form linked by UNIMA states a USD 1,200 per-person fee; accommodation September 24–October 12, three meals daily, festival pass, and visa are included. International travel and insurance are not listed as covered.",
+      "ja": "2026年募集は終了し、応募審査中です。UNIMA公式告知からリンクされた申込フォームでは参加費を1人1,200米ドルと明記。9月24日〜10月12日の宿泊、1日3食、フェスティバルパス、ビザを含みますが、国際渡航・保険は提供対象に記載されていません。"
     },
-    "nextCheckDate": "2026-07-29",
+    "nextCheckDate": "2027-03-15",
     "sourceUrl": "https://www.unima.org/en/masterclass-puppet-camp-at-pesta-boneka-10-international-puppet-biennale-october-7-11-2026-yogyakarta-indonesia/",
+    "networkSourceUrl": "https://bit.ly/shanksmare",
     "verifiedAt": "2026-07-22",
     "decisionGuide": {
       "access": {
-        "fr": "Huit places pour marionnettistes, danseur·ses, interprètes et créateur·rices de théâtre participant au camp, à la masterclass et à la création collective du 25 septembre au 11 octobre 2026. L'avis officiel ne publie pas de date limite; vérifier immédiatement le formulaire.",
-        "en": "Eight places for puppeteers, dancers, performers, and theatre makers joining the camp, masterclass, and collaborative performance from September 25 to October 11, 2026. The official notice gives no deadline, so check the form immediately.",
-        "ja": "人形遣い、ダンサー、パフォーマー、演劇制作者の8名が対象で、2026年9月25日〜10月11日のキャンプ、マスタークラス、共同上演に参加します。公式告知に締切がないため、申込フォームをすぐ確認する必要があります。"
+        "fr": "Le cycle 2026 est fermé. Il visait huit marionnettistes, danseur·ses, interprètes et créateur·rices de théâtre pour le camp, la masterclass et la création collective du 25 septembre au 11 octobre 2026; surveiller un prochain cycle.",
+        "en": "The 2026 cycle is closed. It offered eight places for puppeteers, dancers, performers, and theatre makers joining the camp, masterclass, and collaborative performance September 25–October 11, 2026; watch for a future cycle.",
+        "ja": "2026年枠は終了しています。人形遣い、ダンサー、パフォーマー、演劇制作者8名が9月25日〜10月11日のキャンプ、マスタークラス、共同上演に参加する内容でした。次回募集を監視します。"
       },
       "applicantCost": {
-        "fr": "Des frais de participation sont exigés, mais leur montant n'est pas publié. Le voyage international, l'assurance et les dépenses personnelles ne sont pas annoncés comme couverts; prévoir ces coûts jusqu'à confirmation contraire.",
-        "en": "A participation fee applies, but its amount is not published. International travel, insurance, and personal expenses are not listed as covered; budget for them unless confirmed otherwise.",
-        "ja": "参加費が必要ですが、金額は公表されていません。国際渡航、保険、個人費用は提供対象と記載されていないため、別途確認できるまでは自己負担として見積もります。"
+        "fr": "Le formulaire 2026 indiquait 1 200 USD par personne. Voyage international, assurance et dépenses personnelles n’étaient pas annoncés comme couverts; le coût total depuis le Québec restait donc élevé malgré l’accueil sur place.",
+        "en": "The 2026 form stated USD 1,200 per person. International travel, insurance, and personal expenses were not listed as covered, so total cost from Québec remained substantial despite on-site hosting.",
+        "ja": "2026年フォームでは参加費が1人1,200米ドル。国際渡航、保険、個人費用は提供対象に記載されず、現地支援があってもケベックからの総費用は高額です。"
       },
       "organizerSupport": {
         "fr": "Hébergement du 24 septembre au 12 octobre, trois repas par jour, visa, passe du festival et participation à la représentation finale sont fournis. Une lettre d'invitation peut être émise pour les démarches.",
@@ -4409,13 +4502,23 @@
         "ja": "9月24日〜10月12日の宿泊、1日3食、査証、フェスティバルパス、最終上演への参加が提供されます。手続き用の招待状も発行可能です。"
       },
       "quebecAssessment": {
-        "state": "conditional",
+        "state": "not_direct",
         "note": {
-          "fr": "Le séjour est largement soutenu, mais le coût réel reste inconnu sans le montant des frais et le billet international. Demander immédiatement le tarif, la date limite, les modalités de paiement et remboursement, le niveau de la masterclass, le vol, l'assurance et les détails du visa.",
-          "en": "On-site support is substantial, but total cost is unknown without the participation fee and airfare. Immediately ask for the fee, deadline, payment and refund terms, masterclass level, flight, insurance, and visa details.",
-          "ja": "現地滞在支援は厚い一方、参加費と航空券を含む総費用が不明です。参加費、締切、支払・返金条件、講座レベル、航空券、保険、査証の詳細をすぐ問い合わせてください。"
+          "fr": "Aucune action possible pour 2026. Pour un prochain cycle, exiger avant candidature le tarif à jour, les modalités de remboursement, le billet, l’assurance, le visa et le niveau pédagogique; ne pas supposer que les conditions resteront identiques.",
+          "en": "No action is available for 2026. For a future cycle, obtain the current fee, refund terms, airfare, insurance, visa and training level before applying; do not assume the same terms will repeat.",
+          "ja": "2026年枠には現在応募できません。次回は応募前に参加費、返金条件、航空券、保険、査証、講座レベルを確認し、同条件が続くと仮定しないでください。"
         }
       }
+    },
+    "fundingReview": {
+      "status": "reviewed_no_match",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le cycle est fermé et le coût publié était de 1 200 USD par personne, hors voyage international et assurance. Aucun financement actif n’est relié à un dossier qui ne peut plus être soumis; réexaminer seulement si un nouvel appel officiel est publié avec ses conditions à jour.",
+        "en": "The cycle is closed and the published fee was USD 1,200 per person, excluding international travel and insurance. No active funding is linked to an application that can no longer be submitted; reassess only when a new official call publishes current terms.",
+        "ja": "募集は終了し、参加費は1人1,200米ドル、国際渡航と保険は別負担でした。現在応募できない案件に助成を結ばず、次回の公式募集と新条件が公開された場合だけ再精査します。"
+      },
+      "fundingMatches": []
     }
   },
   {
