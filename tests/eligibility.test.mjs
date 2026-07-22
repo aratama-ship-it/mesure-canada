@@ -10,6 +10,7 @@ const baseAnswers = {
   collectiveComposition: "unsure",
   collectiveSize: "unsure",
   organizationRegistration: "unsure",
+  fiscalSponsorStatus: "unsure",
   sinStatus: "unsure",
   canadaArrival: "unsure",
   ageBand: "unsure",
@@ -192,6 +193,29 @@ test("residence scopes distinguish cities, metro areas, provinces and Canada", (
   assert.equal(supportsResidence({ residencies: ["northwest_territories"] }, "northwest_territories"), true);
   assert.equal(supportsResidence({ residencies: ["nunavut"] }, "northwest_territories"), false);
   assert.equal(supportsResidence({ residencies: ["canada"] }, "nunavut"), true);
+  assert.equal(supportsResidence({ residencies: ["united_states"] }, "new_york"), true);
+  assert.equal(supportsResidence({ residencies: ["us_mid_atlantic"] }, "new_york"), true);
+  assert.equal(supportsResidence({ residencies: ["us_new_england"] }, "vermont"), true);
+  assert.equal(supportsResidence({ residencies: ["massachusetts"] }, "vermont"), false);
+  assert.equal(supportsResidence({ residencies: ["us_midwest"] }, "us_midwest"), true);
+  assert.equal(supportsResidence({ residencies: ["us_west"] }, "us_south"), false);
+});
+
+test("US fiscal sponsorship and organization registration are separate gates", () => {
+  assert.equal(
+    evaluate("artist", { fiscalSponsorRequired: true }, { fiscalSponsorStatus: "yes" }).state,
+    "possible",
+  );
+  const missingSponsor = evaluate("artist", { fiscalSponsorRequired: true }, { fiscalSponsorStatus: "no" });
+  assert.equal(missingSponsor.state, "ineligible");
+  assert.ok(missingSponsor.reasonKeys.includes("fiscalSponsorMissing"));
+  const unregistered = evaluate(
+    "organization",
+    { organizationRegisteredInUs: true },
+    { organizationRegistration: "no" },
+  );
+  assert.equal(unregistered.state, "ineligible");
+  assert.ok(unregistered.reasonKeys.includes("usOrganizationNotEligible"));
 });
 
 test("NWT six-month programs distinguish 6-11 months from under 6 months", () => {

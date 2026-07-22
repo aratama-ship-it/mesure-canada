@@ -9,6 +9,7 @@ const qualifyingCollectiveShares = {
   ns_majority: new Set(["all", "three_quarters", "two_thirds", "majority_qualified"]),
   pei_majority: new Set(["all", "three_quarters", "two_thirds", "majority_qualified"]),
   yukon_three_quarters: new Set(["all", "three_quarters"]),
+  usai_half: new Set(["all", "three_quarters", "two_thirds", "majority_qualified", "half_qualified"]),
 };
 
 const statePriority = {
@@ -36,6 +37,7 @@ export function evaluateFundingEligibility({
   collectiveComposition,
   collectiveSize,
   organizationRegistration,
+  fiscalSponsorStatus,
   sinStatus,
   canadaArrival,
   ageBand,
@@ -136,6 +138,26 @@ export function evaluateFundingEligibility({
     }
   }
 
+  if (profile === "organization" && rules.organizationRegisteredInUs) {
+    if (organizationRegistration === "unsure") {
+      state = raiseState(state, "verify");
+      addReason("usOrganizationUnknown");
+    } else if (organizationRegistration === "no") {
+      state = "ineligible";
+      addReason("usOrganizationNotEligible");
+    }
+  }
+
+  if (profile !== "organization" && rules.fiscalSponsorRequired) {
+    if (fiscalSponsorStatus === "unsure") {
+      state = raiseState(state, "verify");
+      addReason("fiscalSponsorUnknown");
+    } else if (fiscalSponsorStatus === "no") {
+      state = "ineligible";
+      addReason("fiscalSponsorMissing");
+    }
+  }
+
   if (profile === "organization" && rules.organizationVerificationRequired) {
     state = raiseState(state, "verify");
     addReason("organizationProgramCheck");
@@ -206,6 +228,17 @@ const residenceScopes = {
   yukon: new Set(["canada", "yukon"]),
   northwest_territories: new Set(["canada", "northwest_territories"]),
   nunavut: new Set(["canada", "nunavut"]),
+  new_york: new Set(["united_states", "us_mid_atlantic", "new_york"]),
+  vermont: new Set(["united_states", "us_new_england", "vermont"]),
+  maine: new Set(["united_states", "us_new_england", "maine"]),
+  new_hampshire: new Set(["united_states", "us_new_england", "new_hampshire"]),
+  massachusetts: new Set(["united_states", "us_new_england", "massachusetts"]),
+  us_new_england_other: new Set(["united_states", "us_new_england"]),
+  us_mid_atlantic_other: new Set(["united_states", "us_mid_atlantic"]),
+  us_midwest: new Set(["united_states", "us_midwest"]),
+  us_mid_america: new Set(["united_states", "us_mid_america"]),
+  us_south: new Set(["united_states", "us_south"]),
+  us_west: new Set(["united_states", "us_west"]),
 };
 
 export function supportsResidence(funding, residence) {

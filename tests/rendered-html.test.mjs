@@ -28,8 +28,8 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<title>MESURE — Canada/);
-  assert.match(html, /Trouvez où votre travail peut aller ensuite/);
-  assert.match(html, /pistes d’appels au Canada et à l’international/);
+  assert.match(html, /Trouvez où votre art peut aller ensuite/);
+  assert.match(html, /pistes d’appels au Canada, aux États-Unis et à l’international/);
   assert.match(html, /Le financement apparaît ensuite/);
   const workbenchSource = await readFile(new URL("../app/OpportunityWorkbench.tsx", import.meta.url), "utf8");
   assert.match(workbenchSource, /Find where your art could go next/);
@@ -62,7 +62,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.doesNotMatch(html, /aria-current="true"/);
   assert.match(html, /Budget autonome à construire/);
   assert.match(html, /Soutien logistique notable/);
-  assert.match(html, /Pas une voie directe depuis le Québec/);
+  assert.match(html, /Pas une voie directe depuis votre base/);
   assert.match(html, /aria-label="Affiner les appels"/);
   assert.match(html, /Ouverts maintenant/);
   assert.match(html, /Toutes les régions/);
@@ -94,7 +94,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /canada\.ca\/en\/services\/immigration-citizenship\/helpcentre\/glossary\.html/);
   assert.match(html, /Heure locale à confirmer/);
   assert.match(workbenchSource, /DeadlineTimeZoneNote/);
-  assert.match(html, /Votre statut au Canada/);
+  assert.match(html, /Votre statut de résidence ou d’immigration/);
   assert.match(html, /href="\/radar"/);
   assert.match(html, /Consulter le registre de veille/);
   assert.doesNotMatch(html, /id="festival-radar-heading"/);
@@ -257,7 +257,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
-      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick", "nova_scotia", "prince_edward_island", "newfoundland_labrador", "yukon", "northwest_territories", "nunavut"].includes(scope)
+      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick", "nova_scotia", "prince_edward_island", "newfoundland_labrador", "yukon", "northwest_territories", "nunavut", "united_states", "us_new_england", "us_mid_atlantic", "us_midwest", "us_mid_america", "us_south", "us_west", "new_york", "vermont", "maine", "new_hampshire", "massachusetts"].includes(scope)
     ));
     assert.ok(["mobility_export", "home_base_creation", "career_support"].includes(record.purpose));
     assert.ok(["grant", "paid_program"].includes(record.kind));
@@ -281,14 +281,19 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 32);
-  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 14);
+  assert.equal(funding.length, 63);
+  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 42);
+  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 21);
   assert.equal(fundingById.get("cca-touring").deadlineDate, "2026-10-07");
   assert.equal(fundingById.get("calq-travel").deadlineDate, null);
   assert.equal(fundingById.get("bcac-performing-artists-2026").deadlineDate, "2026-05-27");
   assert.equal(fundingById.get("nunavut-commissioners-arts-award").availability, "closed");
   assert.equal(fundingById.get("nunavut-commissioners-arts-award").deadlineDate, "2025-12-15");
   assert.equal(fundingById.get("nunavut-arts-contributions-2026-27").availability, "closed");
+  assert.equal(fundingById.get("fca-emergency-grants").deadlineDate, null);
+  assert.equal(fundingById.get("nefa-nest-fy27").deadlineDate, "2026-08-03");
+  assert.equal(fundingById.get("nysca-support-for-artists-fy27").eligibility.fiscalSponsorRequired, true);
+  assert.equal(fundingById.get("usartists-international-2026").eligibility.collectiveRule, "usai_half");
 
   assert.ok(festivalRadar.length >= 166);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");

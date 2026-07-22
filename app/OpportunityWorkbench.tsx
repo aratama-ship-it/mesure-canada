@@ -9,9 +9,12 @@ import { evaluateFundingEligibility, supportsResidence } from "./eligibility.mjs
 
 type Language = "fr" | "en" | "ja";
 type Profile = "artist" | "collective" | "organization";
+type Country = "canada" | "united_states";
 type ProvinceKey = "quebec" | "ontario" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut";
-type Residence = "montreal" | "quebec_city" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut";
-type ResidenceScope = "canada" | "quebec" | "quebec_city" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut";
+type UsRegionKey = "new_york" | "vermont" | "maine" | "new_hampshire" | "massachusetts" | "us_new_england_other" | "us_mid_atlantic_other" | "us_midwest" | "us_mid_america" | "us_south" | "us_west";
+type RegionKey = ProvinceKey | UsRegionKey;
+type Residence = "montreal" | "quebec_city" | "quebec" | "gatineau" | "toronto" | "gta" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut" | UsRegionKey;
+type ResidenceScope = "canada" | "quebec" | "quebec_city" | "montreal" | "ontario" | "gta" | "toronto" | "ottawa" | "british_columbia" | "alberta" | "saskatchewan" | "manitoba" | "new_brunswick" | "nova_scotia" | "prince_edward_island" | "newfoundland_labrador" | "yukon" | "northwest_territories" | "nunavut" | "united_states" | "us_new_england" | "us_mid_atlantic" | "us_midwest" | "us_mid_america" | "us_south" | "us_west" | "new_york" | "vermont" | "maine" | "new_hampshire" | "massachusetts";
 type Discipline = "all" | "circus" | "theatre" | "dance" | "music" | "media";
 type RadarFamily = "all" | "circus" | "street" | "fringe" | "film" | "showcase";
 type RadarSearchTag = "all" | "regional_festival" | "event_performance" | "choreographer_development" | "residency";
@@ -73,6 +76,10 @@ type EligibilityReasonKey =
   | "organizationUnknown"
   | "organizationNotEligible"
   | "organizationProgramCheck"
+  | "usOrganizationUnknown"
+  | "usOrganizationNotEligible"
+  | "fiscalSponsorUnknown"
+  | "fiscalSponsorMissing"
   | "sinUnknown"
   | "sinMissing"
   | "arrivalUnknown"
@@ -195,8 +202,10 @@ type Funding = {
     verificationStatuses?: LegalStatus[];
     minimumProvinceMonths?: 6 | 12;
     minimumTorontoMonths?: 12;
-    collectiveRule?: "cca_half" | "cam_two_thirds" | "oac_half" | "tac_majority" | "ottawa_half" | "afa_all" | "sk_half" | "ns_majority" | "pei_majority" | "yukon_three_quarters";
+    collectiveRule?: "cca_half" | "cam_two_thirds" | "oac_half" | "tac_majority" | "ottawa_half" | "afa_all" | "sk_half" | "ns_majority" | "pei_majority" | "yukon_three_quarters" | "usai_half";
     organizationRegisteredInCanada?: true;
+    organizationRegisteredInUs?: true;
+    fiscalSponsorRequired?: true;
     organizationVerificationRequired?: true;
     professionalPracticeVerificationRequired?: true;
     sinRequired?: true;
@@ -342,8 +351,8 @@ function useSavedCandidateIds() {
 
 const copy = {
   fr: {
-    edition: "Édition Canada · 10 provinces + 3 territoires",
-    ledgerEdition: "Canada · Registre de veille",
+    edition: "Canada + États-Unis · bêta",
+    ledgerEdition: "Canada + États-Unis · Registre de veille",
     radarLink: "Consulter le registre de veille",
     backToSearch: "Retour à la recherche d’occasions",
     sourceNotice: {
@@ -356,14 +365,19 @@ const copy = {
       link: "le formulaire",
       after: ".",
     },
-    eyebrow: "Du Canada aux festivals, scènes et résidences du monde",
-    headline: "Trouvez où votre travail peut aller ensuite.",
+    eyebrow: "Du Canada et des États-Unis aux festivals, scènes et résidences du monde",
+    headline: "Trouvez où votre art peut aller ensuite.",
     intro:
       "Explorez les appels vérifiés du cirque, des arts de la rue, des fringes, de la scène, du cinéma, des vitrines et des résidences. Le financement apparaît ensuite, uniquement lorsqu’un lien peut être étayé par les critères officiels.",
-    stamp: `${festivalRadar.length} pistes d’appels au Canada et à l’international · ${opportunities.length} appels avec financement étudié · ${fundingPrograms.length} programmes de soutien · vérifiés le 23 juillet 2026`,
+    stamp: `${festivalRadar.length} pistes d’appels au Canada, aux États-Unis et à l’international · ${opportunities.length} appels avec financement étudié · ${fundingPrograms.length} programmes de soutien · vérifiés le 23 juillet 2026`,
     baseKicker: "Point zéro de la règle",
     baseHeading: "Où résidez-vous actuellement?",
-    baseNote: "La ville et la province changent les programmes visibles; la nationalité est vérifiée séparément.",
+    baseNote: "Le pays, l’État ou la province changent les programmes visibles; la nationalité est vérifiée séparément.",
+    countryLabel: "Pays de résidence",
+    countries: { canada: "Canada", united_states: "États-Unis" },
+    usPriorityRegions: "États prioritaires de la première phase",
+    usOtherRegions: "Autres régions américaines",
+    usBetaNote: "La version américaine commence par les programmes nationaux, les six organismes régionaux et le Nord-Est. Les États non listés utilisent provisoirement leur région.",
     regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "Colombie-Britannique", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "Nouveau-Brunswick", nova_scotia: "Nouvelle-Écosse", prince_edward_island: "Île-du-Prince-Édouard", newfoundland_labrador: "Terre-Neuve-et-Labrador", yukon: "Yukon", northwest_territories: "Territoires du Nord-Ouest", nunavut: "Nunavut" },
     otherRegions: "Autres provinces et territoires",
     residences: {
@@ -385,6 +399,17 @@ const copy = {
       yukon: "Yukon",
       northwest_territories: "Territoires du Nord-Ouest",
       nunavut: "Nunavut",
+      new_york: "État de New York",
+      vermont: "Vermont",
+      maine: "Maine",
+      new_hampshire: "New Hampshire",
+      massachusetts: "Massachusetts",
+      us_new_england_other: "Autre État de la Nouvelle-Angleterre",
+      us_mid_atlantic_other: "Autre État du Mid-Atlantic",
+      us_midwest: "Région Arts Midwest",
+      us_mid_america: "Région Mid-America",
+      us_south: "Sud des États-Unis",
+      us_west: "Ouest des États-Unis",
     },
     steps: ["Votre situation", "Une occasion concrète", "Le financement possible"],
     profileHeading: "Votre situation",
@@ -392,7 +417,7 @@ const copy = {
     discipline: "Votre discipline",
     profiles: { artist: "Artiste individuel·le", collective: "Collectif non incorporé", organization: "Organisme / compagnie" },
     disciplines: { all: "Toutes", circus: "Cirque / jonglerie", theatre: "Théâtre", dance: "Danse", music: "Musique", media: "Arts médiatiques / éducation artistique" },
-    legalStatusArtist: "Votre statut au Canada",
+    legalStatusArtist: "Votre statut de résidence ou d’immigration",
     legalStatusCollective: "Statut de la personne responsable",
     legalStatuses: {
       unsure: "Je ne sais pas / à vérifier",
@@ -403,7 +428,8 @@ const copy = {
       temporary_work: "Statut temporaire avec autorisation de travail valide",
       temporary_no_work: "Statut temporaire sans autorisation de travail",
     },
-    provinceHistory: { quebec: "Depuis combien de temps vous / les membres admissibles résidez au Québec?", ontario: "Depuis combien de temps vous / les membres admissibles résidez en Ontario?", british_columbia: "Depuis combien de temps vous / les membres admissibles résidez en Colombie-Britannique?", alberta: "Depuis combien de temps vous / les membres admissibles résidez en Alberta?", saskatchewan: "Depuis combien de temps vous / les membres admissibles résidez en Saskatchewan?", manitoba: "Depuis combien de temps vous / les membres admissibles résidez au Manitoba?", new_brunswick: "Depuis combien de temps vous / les membres admissibles résidez au Nouveau-Brunswick?", nova_scotia: "Depuis combien de temps vous / les membres admissibles résidez en Nouvelle-Écosse?", prince_edward_island: "Depuis combien de temps vous / les membres admissibles résidez à l’Île-du-Prince-Édouard?", newfoundland_labrador: "Depuis combien de temps vous / les membres admissibles résidez à Terre-Neuve-et-Labrador?", yukon: "Depuis combien de temps vous / les membres admissibles résidez au Yukon?", northwest_territories: "Depuis combien de temps vous / les membres admissibles résidez aux Territoires du Nord-Ouest?", nunavut: "Depuis combien de temps vous / les membres admissibles résidez au Nunavut?" },
+    legalStatusesUs: { unsure: "Je ne sais pas / à vérifier", citizen: "Citoyenneté américaine", permanent: "Résidence permanente (Green Card)", protected: "Statut de réfugié, d’asile ou autre protection", permanent_pending: "Demande de résidence permanente en cours", temporary_work: "Statut temporaire avec autorisation de travail", temporary_no_work: "Statut temporaire sans autorisation de travail" },
+    provinceHistory: { quebec: "Depuis combien de temps vous / les membres admissibles résidez au Québec?", ontario: "Depuis combien de temps vous / les membres admissibles résidez en Ontario?", british_columbia: "Depuis combien de temps vous / les membres admissibles résidez en Colombie-Britannique?", alberta: "Depuis combien de temps vous / les membres admissibles résidez en Alberta?", saskatchewan: "Depuis combien de temps vous / les membres admissibles résidez en Saskatchewan?", manitoba: "Depuis combien de temps vous / les membres admissibles résidez au Manitoba?", new_brunswick: "Depuis combien de temps vous / les membres admissibles résidez au Nouveau-Brunswick?", nova_scotia: "Depuis combien de temps vous / les membres admissibles résidez en Nouvelle-Écosse?", prince_edward_island: "Depuis combien de temps vous / les membres admissibles résidez à l’Île-du-Prince-Édouard?", newfoundland_labrador: "Depuis combien de temps vous / les membres admissibles résidez à Terre-Neuve-et-Labrador?", yukon: "Depuis combien de temps vous / les membres admissibles résidez au Yukon?", northwest_territories: "Depuis combien de temps vous / les membres admissibles résidez aux Territoires du Nord-Ouest?", nunavut: "Depuis combien de temps vous / les membres admissibles résidez au Nunavut?", new_york: "Depuis combien de temps résidez-vous dans l’État de New York?", vermont: "Depuis combien de temps résidez-vous au Vermont?", maine: "Depuis combien de temps résidez-vous dans le Maine?", new_hampshire: "Depuis combien de temps résidez-vous au New Hampshire?", massachusetts: "Depuis combien de temps résidez-vous au Massachusetts?", us_new_england_other: "Depuis combien de temps résidez-vous dans cet État?", us_mid_atlantic_other: "Depuis combien de temps résidez-vous dans cet État ou territoire?", us_midwest: "Depuis combien de temps résidez-vous dans cet État?", us_mid_america: "Depuis combien de temps résidez-vous dans cet État?", us_south: "Depuis combien de temps résidez-vous dans cet État ou territoire?", us_west: "Depuis combien de temps résidez-vous dans cet État ou territoire?" },
     provinceHistories: { unsure: "Je ne sais pas / à vérifier", twelve_plus: "12 mois ou plus", six_to_eleven: "De 6 à moins de 12 mois", under_six: "Moins de 6 mois" },
     torontoHistory: "Résidence dans la ville de Toronto pendant au moins un an",
     torontoHistories: { unsure: "Je ne sais pas / à vérifier", meets: "Oui", does_not: "Non" },
@@ -428,6 +454,9 @@ const copy = {
     collectiveCompositionNote: "Pour le Conseil des arts du Canada, les deux membres d’un duo doivent être admissibles.",
     organizationRegistration: "Statut juridique de l’organisme",
     organizationRegistrations: { unsure: "Je ne sais pas / à vérifier", yes: "Constitué ou enregistré au Canada", no: "Non constitué ou non enregistré au Canada" },
+    organizationRegistrationsUs: { unsure: "Je ne sais pas / à vérifier", yes: "Entité américaine admissible (organisme, gouvernement ou tribu)", no: "Aucune entité américaine admissible" },
+    fiscalSponsor: "Avez-vous un fiscal sponsor américain admissible?",
+    fiscalSponsorNote: "Certains programmes l’exigent, d’autres l’interdisent. MESURE traite chaque règle séparément.",
     privacyNotice: {
       label: "Confidentialité",
       text: "Vos réponses restent dans cette page pendant votre visite. MESURE ne les enregistre pas et ne les transmet pas. Le formulaire de commentaires Google est un service distinct.",
@@ -536,8 +565,8 @@ const copy = {
     chosen: "Occasion choisie",
     officialCall: "Voir l’appel officiel ↗",
     decisionGuideHeading: "Décider avant de budgéter",
-    decisionLabels: { access: "Accès à la candidature", applicantCost: "À votre charge", organizerSupport: "Pris en charge par l’organisateur", quebec: "Lecture depuis le Québec" },
-    practicality: { supported: "Soutien logistique notable", conditional: "Décider après vérification", self_funded: "Budget autonome à construire", verify: "Contacter d’abord l’organisateur", not_direct: "Pas une voie directe depuis le Québec" },
+    decisionLabels: { access: "Accès à la candidature", applicantCost: "À votre charge", organizerSupport: "Pris en charge par l’organisateur", quebec: "Lecture depuis votre base" },
+    practicality: { supported: "Soutien logistique notable", conditional: "Décider après vérification", self_funded: "Budget autonome à construire", verify: "Contacter d’abord l’organisateur", not_direct: "Pas une voie directe depuis votre base" },
     decisionGuideNote: "Lecture MESURE fondée sur les conditions publiées; elle ne mesure ni la probabilité de sélection ni la qualité artistique.",
     fundingFor: "Aides directement associées",
     noFunding: "Aucune aide n’est reliée directement à cet appel. Les programmes de votre base restent visibles ci-dessous, sans créer de faux match.",
@@ -547,11 +576,11 @@ const copy = {
     eligibilityHeading: "Contrôle d’admissibilité",
     eligibilitySource: "Vérifier les critères officiels ↗",
     eligibilityReasons: {
-      statusUnknown: "Le statut au Canada doit être confirmé.",
+      statusUnknown: "Le statut de séjour doit être confirmé.",
       statusNotAccepted: "Le statut sélectionné n’est pas accepté par ce programme.",
       statusConditional: "Ce statut peut être considéré, sous réserve d’une autorisation valide et de la capacité du programme.",
       statusVerification: "La page officielle ne tranche pas ce statut; contactez le programme.",
-      provinceHistoryUnknown: "La durée de résidence dans la province doit être confirmée.",
+      provinceHistoryUnknown: "La durée de résidence dans l’État, la province ou le territoire doit être confirmée.",
       provinceHistoryTooShort: "La durée de résidence est inférieure au minimum exigé par ce programme.",
       torontoHistoryUnknown: "La durée de résidence dans la ville de Toronto doit être confirmée.",
       torontoHistoryTooShort: "Ce programme exige au moins un an de résidence dans la ville de Toronto.",
@@ -560,7 +589,11 @@ const copy = {
       groupSizeUnknown: "Le nombre de membres principaux doit être confirmé.",
       organizationUnknown: "La constitution ou l’enregistrement canadien doit être confirmé.",
       organizationNotEligible: "Un organisme constitué ou enregistré au Canada est requis.",
-      organizationProgramCheck: "Les conditions ontariennes propres aux organismes doivent être vérifiées dans le guide.",
+      usOrganizationUnknown: "Le statut de l’entité américaine doit être confirmé.",
+      usOrganizationNotEligible: "Une entité américaine admissible est requise.",
+      fiscalSponsorUnknown: "La disponibilité d’un fiscal sponsor doit être confirmée.",
+      fiscalSponsorMissing: "Ce programme exige un fiscal sponsor admissible.",
+      organizationProgramCheck: "Les conditions propres à l’organisme doivent être vérifiées dans le guide.",
       sinUnknown: "La possession d’un NAS doit être confirmée.",
       sinMissing: "Un NAS valide est requis pour ce programme.",
       arrivalUnknown: "La date d’arrivée au Canada doit être confirmée.",
@@ -586,13 +619,13 @@ const copy = {
     rulesKicker: "Règles de confiance",
     rulesTitle: "Pas de “match parfait” inventé.",
     rules: ["Le lieu de résidence et le statut d’immigration sont deux questions distinctes.", "Une omission dans un guide municipal devient « à confirmer », pas une acceptation inventée.", "Chaque règle sensible renvoie vers une source officielle et une date de vérification."],
-    footer: "MESURE — Canada · MVP de validation",
+    footer: "MESURE — Canada + États-Unis · bêta",
     footerNote: "Échantillon limité. Aucun résultat ne garantit l’admissibilité ni l’obtention d’une aide.",
     status: { open: "Ouvert", rolling: "En continu", upcoming: "Bientôt", closed: "Fermé" },
   },
   en: {
-    edition: "Canada edition · 10 provinces + 3 territories",
-    ledgerEdition: "Canada · Monitoring ledger",
+    edition: "Canada + U.S. · beta",
+    ledgerEdition: "Canada + U.S. · Monitoring ledger",
     radarLink: "Open the monitoring ledger",
     backToSearch: "Back to opportunity search",
     sourceNotice: {
@@ -605,26 +638,32 @@ const copy = {
       link: "the feedback form",
       after: ".",
     },
-    eyebrow: "From Canada to festivals, stages and residencies worldwide",
+    eyebrow: "From Canada and the U.S. to festivals, stages and residencies worldwide",
     headline: "Find where your art could go next.",
     intro: "Explore verified calls across circus, street arts, Fringe, performance, film, showcases and residencies. Funding appears as the next layer only when a connection can be supported by official criteria.",
-    stamp: `${festivalRadar.length} Canadian + international call routes · ${opportunities.length} calls with funding reviewed · ${fundingPrograms.length} support programs · checked July 23, 2026`,
+    stamp: `${festivalRadar.length} Canada, U.S. + international call routes · ${opportunities.length} calls with funding reviewed · ${fundingPrograms.length} support programs · checked July 23, 2026`,
     baseKicker: "Zero point on the ruler",
     baseHeading: "Where do you currently live?",
-    baseNote: "City and province change the programs shown; nationality is checked separately.",
+    baseNote: "Country, state or province changes the programs shown; nationality is checked separately.",
+    countryLabel: "Country of residence",
+    countries: { canada: "Canada", united_states: "United States" },
+    usPriorityRegions: "First-phase priority states",
+    usOtherRegions: "Other U.S. regions",
+    usBetaNote: "The U.S. beta starts with nationwide programs, all six regional arts organizations and the Northeast. States not listed yet use their regional route.",
     regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut" },
     otherRegions: "Other provinces and territories",
-    residences: { montreal: "Island of Montréal", quebec_city: "City of Québec", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut" },
+    residences: { montreal: "Island of Montréal", quebec_city: "City of Québec", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut", new_york: "New York State", vermont: "Vermont", maine: "Maine", new_hampshire: "New Hampshire", massachusetts: "Massachusetts", us_new_england_other: "Other New England state", us_mid_atlantic_other: "Other Mid-Atlantic state or territory", us_midwest: "Arts Midwest region", us_mid_america: "Mid-America region", us_south: "Southern U.S. region", us_west: "Western U.S. region" },
     steps: ["Your situation", "A concrete opportunity", "Possible funding"],
     profileHeading: "Your situation",
     profile: "You are applying as…",
     discipline: "Your discipline",
     profiles: { artist: "Individual artist", collective: "Unincorporated collective", organization: "Organization / company" },
     disciplines: { all: "All", circus: "Circus / juggling", theatre: "Theatre", dance: "Dance", music: "Music", media: "Media arts / arts education" },
-    legalStatusArtist: "Your status in Canada",
+    legalStatusArtist: "Your immigration or residency status",
     legalStatusCollective: "Status of the application representative",
     legalStatuses: { unsure: "Not sure / needs checking", citizen: "Canadian citizen", permanent: "Permanent resident", protected: "Protected Person", permanent_pending: "Permanent residence application pending", temporary_work: "Temporary status with valid work authorization", temporary_no_work: "Temporary status without work authorization" },
-    provinceHistory: { quebec: "How long have you / qualifying members lived in Québec?", ontario: "How long have you / qualifying members lived in Ontario?", british_columbia: "How long have you / qualifying members lived in British Columbia?", alberta: "How long have you / qualifying members lived in Alberta?", saskatchewan: "How long have you / qualifying members lived in Saskatchewan?", manitoba: "How long have you / qualifying members lived in Manitoba?", new_brunswick: "How long have you / qualifying members lived in New Brunswick?", nova_scotia: "How long have you / qualifying members lived in Nova Scotia?", prince_edward_island: "How long have you / qualifying members lived in Prince Edward Island?", newfoundland_labrador: "How long have you / qualifying members lived in Newfoundland and Labrador?", yukon: "How long have you / qualifying members lived in Yukon?", northwest_territories: "How long have you / qualifying members lived in the Northwest Territories?", nunavut: "How long have you / qualifying members lived in Nunavut?" },
+    legalStatusesUs: { unsure: "Not sure / needs checking", citizen: "U.S. citizen", permanent: "Lawful permanent resident (Green Card)", protected: "Refugee, asylee or other protected status", permanent_pending: "Permanent residence application pending", temporary_work: "Temporary status with work authorization", temporary_no_work: "Temporary status without work authorization" },
+    provinceHistory: { quebec: "How long have you / qualifying members lived in Québec?", ontario: "How long have you / qualifying members lived in Ontario?", british_columbia: "How long have you / qualifying members lived in British Columbia?", alberta: "How long have you / qualifying members lived in Alberta?", saskatchewan: "How long have you / qualifying members lived in Saskatchewan?", manitoba: "How long have you / qualifying members lived in Manitoba?", new_brunswick: "How long have you / qualifying members lived in New Brunswick?", nova_scotia: "How long have you / qualifying members lived in Nova Scotia?", prince_edward_island: "How long have you / qualifying members lived in Prince Edward Island?", newfoundland_labrador: "How long have you / qualifying members lived in Newfoundland and Labrador?", yukon: "How long have you / qualifying members lived in Yukon?", northwest_territories: "How long have you / qualifying members lived in the Northwest Territories?", nunavut: "How long have you / qualifying members lived in Nunavut?", new_york: "How long have you lived in New York State?", vermont: "How long have you lived in Vermont?", maine: "How long have you lived in Maine?", new_hampshire: "How long have you lived in New Hampshire?", massachusetts: "How long have you lived in Massachusetts?", us_new_england_other: "How long have you lived in this state?", us_mid_atlantic_other: "How long have you lived in this state or territory?", us_midwest: "How long have you lived in this state?", us_mid_america: "How long have you lived in this state?", us_south: "How long have you lived in this state or territory?", us_west: "How long have you lived in this state or territory?" },
     provinceHistories: { unsure: "Not sure / needs checking", twelve_plus: "12 months or more", six_to_eleven: "6 to under 12 months", under_six: "Under 6 months" },
     torontoHistory: "At least one year living in the City of Toronto",
     torontoHistories: { unsure: "Not sure / needs checking", meets: "Yes", does_not: "No" },
@@ -641,6 +680,9 @@ const copy = {
     collectiveCompositionNote: "For Canada Council, both members of a duo must qualify.",
     organizationRegistration: "Organization’s legal status",
     organizationRegistrations: { unsure: "Not sure / needs checking", yes: "Incorporated or registered in Canada", no: "Not incorporated or registered in Canada" },
+    organizationRegistrationsUs: { unsure: "Not sure / needs checking", yes: "Eligible U.S. nonprofit, government or tribal entity", no: "No eligible U.S. entity" },
+    fiscalSponsor: "Do you have an eligible U.S. fiscal sponsor?",
+    fiscalSponsorNote: "Some programs require one and others prohibit one. MESURE evaluates each rule separately.",
     privacyNotice: {
       label: "Privacy",
       text: "Your answers stay in this page during your visit. MESURE does not store or transmit them. The Google feedback form is a separate service.",
@@ -749,8 +791,8 @@ const copy = {
     chosen: "Selected opportunity",
     officialCall: "Open official call ↗",
     decisionGuideHeading: "Decide before you budget",
-    decisionLabels: { access: "Application access", applicantCost: "Costs you carry", organizerSupport: "Organizer support", quebec: "Québec-based reading" },
-    practicality: { supported: "Notable logistical support", conditional: "Decide after checking", self_funded: "Build a self-funded budget", verify: "Contact the organizer first", not_direct: "Not a direct route from Québec" },
+    decisionLabels: { access: "Application access", applicantCost: "Costs you carry", organizerSupport: "Organizer support", quebec: "Reading from your home base" },
+    practicality: { supported: "Notable logistical support", conditional: "Decide after checking", self_funded: "Build a self-funded budget", verify: "Contact the organizer first", not_direct: "Not a direct route from your home base" },
     decisionGuideNote: "MESURE reading based on published terms; it does not score selection odds or artistic quality.",
     fundingFor: "Programs linked directly",
     noFunding: "No program is directly linked to this call. Home-base programs remain visible below without creating a false match.",
@@ -760,7 +802,7 @@ const copy = {
     eligibilityHeading: "Eligibility checkpoint",
     eligibilitySource: "Check official eligibility rules ↗",
     eligibilityReasons: {
-      statusUnknown: "Status in Canada still needs confirmation.", statusNotAccepted: "The selected status is not accepted by this program.", statusConditional: "This status may be considered, subject to valid authorization and program capacity.", statusVerification: "The official page does not resolve this status; contact the program.", provinceHistoryUnknown: "Length of residence in the province still needs confirmation.", provinceHistoryTooShort: "The residence period is shorter than this program’s minimum.", torontoHistoryUnknown: "Length of residence in the City of Toronto still needs confirmation.", torontoHistoryTooShort: "This program requires at least one year in the City of Toronto.", groupUnknown: "The collective’s composition still needs confirmation.", groupNotEnough: "The collective does not meet the qualifying-member threshold.", groupSizeUnknown: "The number of core members still needs confirmation.", organizationUnknown: "Canadian incorporation or registration still needs confirmation.", organizationNotEligible: "A Canadian-incorporated or registered organization is required.", organizationProgramCheck: "Ontario-specific organization conditions must be checked in the guide.", sinUnknown: "SIN status still needs confirmation.", sinMissing: "A valid SIN is required for this program.", arrivalUnknown: "Arrival date in Canada still needs confirmation.", arrivalTooEarly: "The arrival date does not fit this newcomer cohort.", ageUnknown: "Age still needs confirmation.", ageOutOfRange: "The selected age range does not fit the program.", professionalPracticeCheck: "Professional standing, peer recognition and income evidence still need checking."
+      statusUnknown: "Immigration status still needs confirmation.", statusNotAccepted: "The selected status is not accepted by this program.", statusConditional: "This status may be considered, subject to valid authorization and program capacity.", statusVerification: "The official page does not resolve this status; contact the program.", provinceHistoryUnknown: "Length of residence in the state, province or territory still needs confirmation.", provinceHistoryTooShort: "The residence period is shorter than this program’s minimum.", torontoHistoryUnknown: "Length of residence in the City of Toronto still needs confirmation.", torontoHistoryTooShort: "This program requires at least one year in the City of Toronto.", groupUnknown: "The collective’s composition still needs confirmation.", groupNotEnough: "The collective does not meet the qualifying-member threshold.", groupSizeUnknown: "The number of core members still needs confirmation.", organizationUnknown: "Canadian incorporation or registration still needs confirmation.", organizationNotEligible: "A Canadian-incorporated or registered organization is required.", usOrganizationUnknown: "Eligible U.S. entity status still needs confirmation.", usOrganizationNotEligible: "An eligible U.S. entity is required.", fiscalSponsorUnknown: "Fiscal sponsor availability still needs confirmation.", fiscalSponsorMissing: "This program requires an eligible fiscal sponsor.", organizationProgramCheck: "Program-specific organization conditions must be checked in the guide.", sinUnknown: "SIN status still needs confirmation.", sinMissing: "A valid SIN is required for this program.", arrivalUnknown: "Arrival date in Canada still needs confirmation.", arrivalTooEarly: "The arrival date does not fit this newcomer cohort.", ageUnknown: "Age still needs confirmation.", ageOutOfRange: "The selected age range does not fit the program.", professionalPracticeCheck: "Professional standing, peer recognition and income evidence still need checking."
     },
     states: { possible: "Published criteria appear met", conditional: "Possible with conditions", verify: "Needs confirmation", ineligible: "Not eligible from these answers" },
     purposes: { mobility_export: "Mobility / export", home_base_creation: "Local creation", career_support: "Career / mentorship" },
@@ -779,13 +821,13 @@ const copy = {
     rulesKicker: "Trust rules",
     rulesTitle: "No invented “perfect match.”",
     rules: ["Residence and immigration status are separate questions.", "An omission in municipal guidelines becomes “needs confirmation,” not an invented approval.", "Every sensitive rule links to an official source and verification date."],
-    footer: "MESURE — Canada · Validation MVP",
+    footer: "MESURE — Canada + U.S. · beta",
     footerNote: "Limited sample. No result guarantees eligibility or funding.",
     status: { open: "Open", rolling: "Rolling", upcoming: "Upcoming", closed: "Closed" },
   },
   ja: {
-    edition: "カナダ版 · 全10州＋3準州",
-    ledgerEdition: "カナダ版 · 監視台帳",
+    edition: "カナダ＋米国版 · ベータ",
+    ledgerEdition: "カナダ＋米国版 · 監視台帳",
     radarLink: "監視台帳を見る",
     backToSearch: "公募検索へ戻る",
     sourceNotice: {
@@ -798,26 +840,32 @@ const copy = {
       link: "フォーム",
       after: "よりご連絡いただけると幸いです。",
     },
-    eyebrow: "カナダから、世界のフェスティバル・出演公募・滞在制作へ",
+    eyebrow: "カナダと米国から、世界のフェスティバル・出演公募・滞在制作へ",
     headline: "次に作品を持っていける場所を、見つける。",
     intro: "サーカス、大道芸、フリンジ、舞台、映画、ショーケース、滞在制作の公募を、公式情報をもとに横断して探せます。助成制度は、応募先との対応を確認できた場合に限って、次の手段として表示します。",
-    stamp: `${festivalRadar.length}件の国内外公募・監視ルート · ${opportunities.length}件の助成照合済み公募 · ${fundingPrograms.length}件の支援制度 · 2026年7月23日確認`,
+    stamp: `${festivalRadar.length}件のカナダ・米国・国際公募／監視ルート · ${opportunities.length}件の助成照合済み公募 · ${fundingPrograms.length}件の支援制度 · 2026年7月23日確認`,
     baseKicker: "物差しのゼロ地点",
     baseHeading: "現在どこに住んでいますか？",
-    baseNote: "市と州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
+    baseNote: "国・州・準州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
+    countryLabel: "居住国",
+    countries: { canada: "カナダ", united_states: "アメリカ合衆国" },
+    usPriorityRegions: "第1段階の優先州",
+    usOtherRegions: "その他の米国地域",
+    usBetaNote: "米国版は全米制度、6つの地域芸術機関、北東部から開始しています。未掲載州は当面、所属する地域で検索してください。",
     regions: { quebec: "ケベック州", ontario: "オンタリオ州", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州" },
     otherRegions: "その他の州・準州",
-    residences: { montreal: "モントリオール島内", quebec_city: "ケベック・シティ", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州" },
+    residences: { montreal: "モントリオール島内", quebec_city: "ケベック・シティ", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州", new_york: "ニューヨーク州", vermont: "バーモント州", maine: "メイン州", new_hampshire: "ニューハンプシャー州", massachusetts: "マサチューセッツ州", us_new_england_other: "ニューイングランドのその他の州", us_mid_atlantic_other: "中部大西洋岸のその他の州・地域", us_midwest: "Arts Midwest地域", us_mid_america: "Mid-America地域", us_south: "米国南部", us_west: "米国西部" },
     steps: ["申請者の状況", "具体的な公募", "利用可能性のある制度"],
     profileHeading: "申請者の状況",
     profile: "申請主体",
     discipline: "活動分野",
     profiles: { artist: "個人アーティスト", collective: "法人格のないコレクティブ", organization: "団体・カンパニー" },
     disciplines: { all: "すべて", circus: "サーカス・ジャグリング", theatre: "演劇", dance: "ダンス", music: "音楽", media: "メディア芸術・芸術教育" },
-    legalStatusArtist: "カナダでの在留資格",
+    legalStatusArtist: "国籍・在留資格",
     legalStatusCollective: "申請代表者の在留資格",
     legalStatuses: { unsure: "不明・要確認", citizen: "カナダ市民", permanent: "永住者", protected: "Protected Person（保護対象者）", permanent_pending: "永住権を申請中", temporary_work: "有効な就労許可がある一時滞在", temporary_no_work: "就労許可がない一時滞在" },
-    provinceHistory: { quebec: "本人／対象メンバーのケベック州居住期間", ontario: "本人／対象メンバーのオンタリオ州居住期間", british_columbia: "本人／対象メンバーのブリティッシュ・コロンビア州居住期間", alberta: "本人／対象メンバーのアルバータ州居住期間", saskatchewan: "本人／対象メンバーのサスカチュワン州居住期間", manitoba: "本人／対象メンバーのマニトバ州居住期間", new_brunswick: "本人／対象メンバーのニューブランズウィック州居住期間", nova_scotia: "本人／対象メンバーのノバスコシア州居住期間", prince_edward_island: "本人／対象メンバーのPEI居住期間", newfoundland_labrador: "本人／対象メンバーのニューファンドランド・ラブラドール州居住期間", yukon: "本人／対象メンバーのユーコン準州居住期間", northwest_territories: "本人／対象メンバーのノースウエスト準州居住期間", nunavut: "本人／対象メンバーのヌナブト準州居住期間" },
+    legalStatusesUs: { unsure: "不明・要確認", citizen: "米国市民", permanent: "米国永住者（Green Card）", protected: "難民・亡命認定などの保護資格", permanent_pending: "永住権を申請中", temporary_work: "就労許可がある一時滞在", temporary_no_work: "就労許可がない一時滞在" },
+    provinceHistory: { quebec: "本人／対象メンバーのケベック州居住期間", ontario: "本人／対象メンバーのオンタリオ州居住期間", british_columbia: "本人／対象メンバーのブリティッシュ・コロンビア州居住期間", alberta: "本人／対象メンバーのアルバータ州居住期間", saskatchewan: "本人／対象メンバーのサスカチュワン州居住期間", manitoba: "本人／対象メンバーのマニトバ州居住期間", new_brunswick: "本人／対象メンバーのニューブランズウィック州居住期間", nova_scotia: "本人／対象メンバーのノバスコシア州居住期間", prince_edward_island: "本人／対象メンバーのPEI居住期間", newfoundland_labrador: "本人／対象メンバーのニューファンドランド・ラブラドール州居住期間", yukon: "本人／対象メンバーのユーコン準州居住期間", northwest_territories: "本人／対象メンバーのノースウエスト準州居住期間", nunavut: "本人／対象メンバーのヌナブト準州居住期間", new_york: "ニューヨーク州の居住期間", vermont: "バーモント州の居住期間", maine: "メイン州の居住期間", new_hampshire: "ニューハンプシャー州の居住期間", massachusetts: "マサチューセッツ州の居住期間", us_new_england_other: "現在の州での居住期間", us_mid_atlantic_other: "現在の州・地域での居住期間", us_midwest: "現在の州での居住期間", us_mid_america: "現在の州での居住期間", us_south: "現在の州・地域での居住期間", us_west: "現在の州・地域での居住期間" },
     provinceHistories: { unsure: "不明・要確認", twelve_plus: "12か月以上", six_to_eleven: "6か月以上12か月未満", under_six: "6か月未満" },
     torontoHistory: "トロント市内での居住が1年以上",
     torontoHistories: { unsure: "不明・要確認", meets: "はい", does_not: "いいえ" },
@@ -834,6 +882,9 @@ const copy = {
     collectiveCompositionNote: "Canada Councilでは、2人組の場合は2人とも対象資格を満たす必要があります。",
     organizationRegistration: "団体の法的登録状況",
     organizationRegistrations: { unsure: "不明・要確認", yes: "カナダで法人化・登録済み", no: "カナダで法人化・登録されていない" },
+    organizationRegistrationsUs: { unsure: "不明・要確認", yes: "米国の対象非営利団体・政府・部族組織", no: "対象となる米国組織がない" },
+    fiscalSponsor: "対象となる米国Fiscal Sponsorがありますか？",
+    fiscalSponsorNote: "必須の制度と利用不可の制度があります。MESUREでは制度ごとに分けて判定します。",
     privacyNotice: {
       label: "プライバシー",
       text: "このページで選んだ回答は、閲覧中のブラウザ内だけで使われます。MESUREは保存・送信しません。Googleのフィードバックフォームは別サービスです。",
@@ -942,8 +993,8 @@ const copy = {
     chosen: "選択中の公募",
     officialCall: "公募の公式情報を確認 ↗",
     decisionGuideHeading: "応募前の現実性チェック",
-    decisionLabels: { access: "応募できる可能性", applicantCost: "本人が負担するもの", organizerSupport: "主催者の支援", quebec: "ケベックからの進めやすさ" },
-    practicality: { supported: "条件を満たせば支援が厚い", conditional: "条件確認後に判断", self_funded: "自己資金の設計が先", verify: "まず主催者へ確認", not_direct: "ケベックからの直接応募対象外" },
+    decisionLabels: { access: "応募できる可能性", applicantCost: "本人が負担するもの", organizerSupport: "主催者の支援", quebec: "現在の拠点からの進めやすさ" },
+    practicality: { supported: "条件を満たせば支援が厚い", conditional: "条件確認後に判断", self_funded: "自己資金の設計が先", verify: "まず主催者へ確認", not_direct: "現在の拠点からの直接応募対象外" },
     decisionGuideNote: "公開条件に基づくMESUREの整理です。採択可能性や芸術的評価を点数化するものではありません。",
     fundingFor: "この公募に直接関連する制度",
     noFunding: "この公募へ直接結びつけた制度はありません。誤った対応関係を作らず、居住地で使えるその他の制度を下に分けて表示します。",
@@ -953,7 +1004,7 @@ const copy = {
     eligibilityHeading: "申請資格の確認",
     eligibilitySource: "申請資格の公式条件を確認 ↗",
     eligibilityReasons: {
-      statusUnknown: "カナダでの在留資格を確認してください。", statusNotAccepted: "選択した在留資格は、この制度で認められていません。", statusConditional: "有効な許可と受入枠を条件に検討対象となる可能性があります。", statusVerification: "公式ページだけではこの在留資格を判定できません。制度担当へ確認してください。", provinceHistoryUnknown: "州・準州内の居住期間を確認してください。", provinceHistoryTooShort: "居住期間がこの制度の最低条件を満たしていません。", torontoHistoryUnknown: "トロント市内の居住期間を確認してください。", torontoHistoryTooShort: "この制度はトロント市内で1年以上の居住を必要とします。", groupUnknown: "コレクティブの構成を確認してください。", groupNotEnough: "対象条件を満たす主要メンバーの割合が基準に達していません。", groupSizeUnknown: "主要メンバー数を確認してください。", organizationUnknown: "カナダでの法人化・登録状況を確認してください。", organizationNotEligible: "カナダで法人化または登録された団体である必要があります。", organizationProgramCheck: "オンタリオ州の団体固有条件を公式要項で追加確認してください。", sinUnknown: "SINの有無を確認してください。", sinMissing: "この制度には有効なSINが必要です。", arrivalUnknown: "カナダへの到着時期を確認してください。", arrivalTooEarly: "到着時期が新人向けプログラムの対象期間外です。", ageUnknown: "年齢を確認してください。", ageOutOfRange: "選択した年齢区分は制度の対象外です。", professionalPracticeCheck: "プロとしての活動実績、同業者からの評価、収入証明を確認してください。"
+      statusUnknown: "在留資格を確認してください。", statusNotAccepted: "選択した在留資格は、この制度で認められていません。", statusConditional: "有効な許可と受入枠を条件に検討対象となる可能性があります。", statusVerification: "公式ページだけではこの在留資格を判定できません。制度担当へ確認してください。", provinceHistoryUnknown: "州・準州・地域内の居住期間を確認してください。", provinceHistoryTooShort: "居住期間がこの制度の最低条件を満たしていません。", torontoHistoryUnknown: "トロント市内の居住期間を確認してください。", torontoHistoryTooShort: "この制度はトロント市内で1年以上の居住を必要とします。", groupUnknown: "コレクティブの構成を確認してください。", groupNotEnough: "対象条件を満たす主要メンバーの割合が基準に達していません。", groupSizeUnknown: "主要メンバー数を確認してください。", organizationUnknown: "カナダでの法人化・登録状況を確認してください。", organizationNotEligible: "カナダで法人化または登録された団体である必要があります。", usOrganizationUnknown: "米国で対象となる団体資格を確認してください。", usOrganizationNotEligible: "対象となる米国の団体資格が必要です。", fiscalSponsorUnknown: "Fiscal Sponsorの有無を確認してください。", fiscalSponsorMissing: "この制度には対象となるFiscal Sponsorが必要です。", organizationProgramCheck: "団体固有の条件を公式要項で追加確認してください。", sinUnknown: "SINの有無を確認してください。", sinMissing: "この制度には有効なSINが必要です。", arrivalUnknown: "カナダへの到着時期を確認してください。", arrivalTooEarly: "到着時期が新人向けプログラムの対象期間外です。", ageUnknown: "年齢を確認してください。", ageOutOfRange: "選択した年齢区分は制度の対象外です。", professionalPracticeCheck: "プロとしての活動実績、同業者からの評価、収入証明を確認してください。"
     },
     states: { possible: "公表条件には適合", conditional: "条件を満たせば可能性あり", verify: "個別確認が必要", ineligible: "入力条件では対象外" },
     purposes: { mobility_export: "渡航・国外展開", home_base_creation: "居住地での創作", career_support: "キャリア・メンタリング" },
@@ -972,7 +1023,7 @@ const copy = {
     rulesKicker: "信頼性のルール",
     rulesTitle: "根拠のない「最適な助成」は表示しません。",
     rules: ["居住地と在留資格を別々の質問として扱います。", "市の要項に記載がない条件は、勝手に利用可とせず「要確認」にします。", "判定に影響する情報には、公式情報へのリンクと確認日を付けます。"],
-    footer: "MESURE — Canada · 検証用MVP",
+    footer: "MESURE — カナダ＋米国 · ベータ",
     footerNote: "限定的なサンプルデータです。表示結果は申請資格や採択を保証しません。",
     status: { open: "募集中", rolling: "随時受付", upcoming: "近日開始", closed: "募集終了" },
   },
@@ -987,7 +1038,8 @@ const placeNames: Record<Language, Record<string, string>> = {
 };
 
 const profileOptions: Profile[] = ["artist", "collective", "organization"];
-const residenceGroups: Record<ProvinceKey, Residence[]> = {
+const countryOptions: Country[] = ["canada", "united_states"];
+const canadaResidenceGroups: Record<ProvinceKey, Residence[]> = {
   quebec: ["montreal", "quebec_city", "quebec", "gatineau"],
   ontario: ["toronto", "gta", "ottawa"],
   british_columbia: ["british_columbia"],
@@ -1002,10 +1054,12 @@ const residenceGroups: Record<ProvinceKey, Residence[]> = {
   northwest_territories: ["northwest_territories"],
   nunavut: ["nunavut"],
 };
-const primaryResidenceRegions: ProvinceKey[] = ["quebec", "ontario"];
-const otherResidenceRegions: ProvinceKey[] = (Object.keys(residenceGroups) as ProvinceKey[])
-  .filter((region) => !primaryResidenceRegions.includes(region));
-const provinceByResidence: Record<Residence, ProvinceKey> = {
+const primaryCanadaResidenceRegions: ProvinceKey[] = ["quebec", "ontario"];
+const otherCanadaResidenceRegions: ProvinceKey[] = (Object.keys(canadaResidenceGroups) as ProvinceKey[])
+  .filter((region) => !primaryCanadaResidenceRegions.includes(region));
+const usPriorityResidenceRegions: UsRegionKey[] = ["new_york", "vermont", "maine", "new_hampshire", "massachusetts"];
+const usOtherResidenceRegions: UsRegionKey[] = ["us_new_england_other", "us_mid_atlantic_other", "us_midwest", "us_mid_america", "us_south", "us_west"];
+const regionByResidence: Record<Residence, RegionKey> = {
   montreal: "quebec",
   quebec_city: "quebec",
   quebec: "quebec",
@@ -1024,6 +1078,17 @@ const provinceByResidence: Record<Residence, ProvinceKey> = {
   yukon: "yukon",
   northwest_territories: "northwest_territories",
   nunavut: "nunavut",
+  new_york: "new_york",
+  vermont: "vermont",
+  maine: "maine",
+  new_hampshire: "new_hampshire",
+  massachusetts: "massachusetts",
+  us_new_england_other: "us_new_england_other",
+  us_mid_atlantic_other: "us_mid_atlantic_other",
+  us_midwest: "us_midwest",
+  us_mid_america: "us_mid_america",
+  us_south: "us_south",
+  us_west: "us_west",
 };
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
 const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film", "showcase"];
@@ -1187,14 +1252,14 @@ function DeadlineTimeZoneNote({ timeZone, language }: { timeZone?: string; langu
   return <span className={`deadline-timezone ${timeZone ? "known" : "unknown"}`}><b>{t.deadlineTimeZone.label}:</b>{timeZone ?? t.deadlineTimeZone.unknown}</span>;
 }
 
-function TerminologyGlossary({ language }: { language: Language }) {
+function TerminologyGlossary({ language, country }: { language: Language; country: Country }) {
   const t = copy[language];
   return (
     <details className="term-glossary">
       <summary>{t.glossary.heading}</summary>
       <p>{t.glossary.intro}</p>
       <dl>
-        <div><dt>{t.glossary.protected.term}</dt><dd>{t.glossary.protected.definition} <a href={protectedPersonGlossaryUrl} target="_blank" rel="noreferrer">{t.glossary.officialDefinition} ↗</a></dd></div>
+        {country === "canada" ? <div><dt>{t.glossary.protected.term}</dt><dd>{t.glossary.protected.definition} <a href={protectedPersonGlossaryUrl} target="_blank" rel="noreferrer">{t.glossary.officialDefinition} ↗</a></dd></div> : null}
         <div><dt>{t.glossary.collective.term}</dt><dd>{t.glossary.collective.definition}</dd></div>
         <div><dt>{t.glossary.showcase.term}</dt><dd>{t.glossary.showcase.definition}</dd></div>
       </dl>
@@ -1228,6 +1293,7 @@ export function OpportunityWorkbench() {
   const [language, setLanguage] = usePersistentLanguage();
   const [savedCandidateIds, setSavedCandidateIds] = useSavedCandidateIds();
   const [profile, setProfile] = useState<Profile>("artist");
+  const [country, setCountry] = useState<Country>("canada");
   const [residence, setResidence] = useState<Residence>("montreal");
   const [discipline, setDiscipline] = useState<Discipline>("all");
   const [candidateStatusFilter, setCandidateStatusFilter] = useState<CandidateStatusFilter>("all");
@@ -1241,6 +1307,7 @@ export function OpportunityWorkbench() {
   const [collectiveComposition, setCollectiveComposition] = useState<CollectiveComposition>("unsure");
   const [collectiveSize, setCollectiveSize] = useState<CollectiveSize>("unsure");
   const [organizationRegistration, setOrganizationRegistration] = useState<OrganizationRegistration>("unsure");
+  const [fiscalSponsorStatus, setFiscalSponsorStatus] = useState<YesNoUnsure>("unsure");
   const [sinStatus, setSinStatus] = useState<YesNoUnsure>("unsure");
   const [canadaArrival, setCanadaArrival] = useState<CanadaArrival>("unsure");
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
@@ -1252,7 +1319,7 @@ export function OpportunityWorkbench() {
     counts: Partial<Record<FundingSection, number>>;
   } | null>(null);
   const t = copy[language];
-  const provinceKey = provinceByResidence[residence];
+  const regionKey = regionByResidence[residence];
   const showTorontoQuestions = profile === "artist" && (residence === "toronto" || residence === "gta");
   const showAgeQuestion = profile === "artist" && fundingPrograms.some((funding) =>
     funding.profiles.includes("artist") && supportsResidence(funding, residence) && funding.eligibility.ageRange
@@ -1365,8 +1432,8 @@ export function OpportunityWorkbench() {
 
   const answers = useMemo(() => ({
     profile, legalStatus, provinceHistory, torontoHistory, collectiveComposition, collectiveSize,
-    organizationRegistration, sinStatus, canadaArrival, ageBand,
-  }), [ageBand, canadaArrival, collectiveComposition, collectiveSize, legalStatus, organizationRegistration, profile, provinceHistory, sinStatus, torontoHistory]);
+    organizationRegistration, fiscalSponsorStatus, sinStatus, canadaArrival, ageBand,
+  }), [ageBand, canadaArrival, collectiveComposition, collectiveSize, fiscalSponsorStatus, legalStatus, organizationRegistration, profile, provinceHistory, sinStatus, torontoHistory]);
 
   const matches = useMemo(() => {
     if (!selectedOpportunity) return [];
@@ -1415,6 +1482,7 @@ export function OpportunityWorkbench() {
     collectiveComposition,
     collectiveSize,
     organizationRegistration,
+    fiscalSponsorStatus,
     sinStatus,
     canadaArrival,
     ageBand,
@@ -1568,20 +1636,15 @@ export function OpportunityWorkbench() {
       <section className="base-ruler" aria-labelledby="base-heading">
         <div className="base-copy"><span className="section-kicker">{t.baseKicker}</span><h3 id="base-heading">{t.baseHeading}</h3><p>{t.baseNote}</p></div>
         <div className="base-groups">
-          {primaryResidenceRegions.map((region) => (
-            <fieldset className="base-group" key={region}>
-              <legend>{t.regions[region]}</legend>
-              <div>
-                {residenceGroups[region].map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}
-              </div>
-            </fieldset>
-          ))}
-          <fieldset className="base-group base-group-other">
-            <legend>{t.otherRegions}</legend>
-            <div>
-              {otherResidenceRegions.flatMap((region) => residenceGroups[region]).map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}
-            </div>
-          </fieldset>
+          <fieldset className="base-group base-country"><legend>{t.countryLabel}</legend><div>{countryOptions.map((item) => <button type="button" key={item} aria-pressed={country === item} onClick={() => { setCountry(item); setResidence(item === "canada" ? "montreal" : "new_york"); setLegalStatus("unsure"); setOrganizationRegistration("unsure"); setFiscalSponsorStatus("unsure"); }}><span aria-hidden="true">{country === item ? "◆" : "◇"}</span>{t.countries[item]}</button>)}</div></fieldset>
+          {country === "canada" ? <>
+            {primaryCanadaResidenceRegions.map((region) => <fieldset className="base-group" key={region}><legend>{t.regions[region]}</legend><div>{canadaResidenceGroups[region].map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>)}
+            <fieldset className="base-group base-group-other"><legend>{t.otherRegions}</legend><div>{otherCanadaResidenceRegions.flatMap((region) => canadaResidenceGroups[region]).map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
+          </> : <>
+            <fieldset className="base-group base-group-other"><legend>{t.usPriorityRegions}</legend><div>{usPriorityResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
+            <fieldset className="base-group base-group-other"><legend>{t.usOtherRegions}</legend><div>{usOtherResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
+            <p className="us-beta-note">{t.usBetaNote}</p>
+          </>}
         </div>
       </section>
 
@@ -1601,9 +1664,9 @@ export function OpportunityWorkbench() {
             {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => { setProfile(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span className="choice-copy"><span>{t.profiles[item]}</span>{item === "collective" ? <small>{t.glossary.collective.short}</small> : null}</span></button>)}
           </div></fieldset>
 
-          {profile !== "organization" ? <fieldset className="field-group"><legend>{profile === "collective" ? t.legalStatusCollective : t.legalStatusArtist}</legend><select className="field-select" value={legalStatus} onChange={(event) => setLegalStatus(event.target.value as LegalStatus)}>{legalStatusOptions.map((item) => <option key={item} value={item}>{t.legalStatuses[item]}</option>)}</select>{legalStatus === "protected" ? <p className="field-term-note"><strong>{t.glossary.protected.term}</strong>{t.glossary.protected.short} <a href={protectedPersonGlossaryUrl} target="_blank" rel="noreferrer">{t.glossary.officialDefinition} ↗</a></p> : null}</fieldset> : null}
+          {profile !== "organization" ? <fieldset className="field-group"><legend>{profile === "collective" ? t.legalStatusCollective : t.legalStatusArtist}</legend><select className="field-select" value={legalStatus} onChange={(event) => setLegalStatus(event.target.value as LegalStatus)}>{legalStatusOptions.map((item) => <option key={item} value={item}>{(country === "canada" ? t.legalStatuses : t.legalStatusesUs)[item]}</option>)}</select>{country === "canada" && legalStatus === "protected" ? <p className="field-term-note"><strong>{t.glossary.protected.term}</strong>{t.glossary.protected.short} <a href={protectedPersonGlossaryUrl} target="_blank" rel="noreferrer">{t.glossary.officialDefinition} ↗</a></p> : null}</fieldset> : null}
 
-          {profile !== "organization" ? <fieldset className="field-group"><legend>{t.provinceHistory[provinceKey]}</legend><select className="field-select" value={provinceHistory} onChange={(event) => setProvinceHistory(event.target.value as ProvinceHistory)}>{provinceHistoryOptions.map((item) => <option key={item} value={item}>{t.provinceHistories[item]}</option>)}</select></fieldset> : null}
+          {profile !== "organization" ? <fieldset className="field-group"><legend>{t.provinceHistory[regionKey]}</legend><select className="field-select" value={provinceHistory} onChange={(event) => setProvinceHistory(event.target.value as ProvinceHistory)}>{provinceHistoryOptions.map((item) => <option key={item} value={item}>{t.provinceHistories[item]}</option>)}</select></fieldset> : null}
 
           {profile === "artist" && residence === "toronto" ? <fieldset className="field-group"><legend>{t.torontoHistory}</legend><select className="field-select" value={torontoHistory} onChange={(event) => setTorontoHistory(event.target.value as TorontoHistory)}>{torontoHistoryOptions.map((item) => <option key={item} value={item}>{t.torontoHistories[item]}</option>)}</select></fieldset> : null}
 
@@ -1613,11 +1676,13 @@ export function OpportunityWorkbench() {
 
           {profile === "collective" ? <><fieldset className="field-group"><legend>{t.collectiveSize}</legend><select className="field-select" value={collectiveSize} onChange={(event) => setCollectiveSize(event.target.value as CollectiveSize)}>{collectiveSizeOptions.map((item) => <option key={item} value={item}>{t.collectiveSizes[item]}</option>)}</select></fieldset><fieldset className="field-group"><legend>{t.collectiveComposition}</legend><select className="field-select" value={collectiveComposition} onChange={(event) => setCollectiveComposition(event.target.value as CollectiveComposition)}>{collectiveCompositionOptions.map((item) => <option key={item} value={item}>{t.collectiveCompositions[item]}</option>)}</select><p className="field-note">{t.collectiveCompositionNote}</p></fieldset></> : null}
 
-          {profile === "organization" ? <fieldset className="field-group"><legend>{t.organizationRegistration}</legend><select className="field-select" value={organizationRegistration} onChange={(event) => setOrganizationRegistration(event.target.value as OrganizationRegistration)}>{organizationRegistrationOptions.map((item) => <option key={item} value={item}>{t.organizationRegistrations[item]}</option>)}</select></fieldset> : null}
+          {country === "united_states" && profile !== "organization" ? <fieldset className="field-group"><legend>{t.fiscalSponsor}</legend><select className="field-select" value={fiscalSponsorStatus} onChange={(event) => setFiscalSponsorStatus(event.target.value as YesNoUnsure)}>{yesNoUnsureOptions.map((item) => <option key={item} value={item}>{t.yesNoUnsure[item]}</option>)}</select><p className="field-note">{t.fiscalSponsorNote}</p></fieldset> : null}
+
+          {profile === "organization" ? <fieldset className="field-group"><legend>{t.organizationRegistration}</legend><select className="field-select" value={organizationRegistration} onChange={(event) => setOrganizationRegistration(event.target.value as OrganizationRegistration)}>{organizationRegistrationOptions.map((item) => <option key={item} value={item}>{(country === "canada" ? t.organizationRegistrations : t.organizationRegistrationsUs)[item]}</option>)}</select></fieldset> : null}
 
           <fieldset className="field-group"><legend>{t.discipline}</legend><div className="choice-stack">{disciplineOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={discipline === item} onClick={() => { setDiscipline(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{discipline === item ? "×" : ""}</span><span>{t.disciplines[item]}</span></button>)}</div></fieldset>
           <p className="profile-note">{t.profileNote}</p>
-          <TerminologyGlossary language={language} />
+          <TerminologyGlossary language={language} country={country} />
         </aside>
 
         <section className="panel panel-opportunities">
@@ -1736,7 +1801,7 @@ export function FestivalRadarLedger() {
           <div><span className="section-kicker">{t.radar.kicker}</span><h2 id="festival-radar-heading">{t.radar.heading}</h2></div>
           <div><p>{t.radar.intro}</p><span className="data-stamp">{festivalRadar.length} {t.radar.count} · {new Set(festivalRadar.map((record) => record.region)).size} {t.radar.regions}</span></div>
         </div>
-        <TerminologyGlossary language={language} />
+        <TerminologyGlossary language={language} country="canada" />
         <div className="radar-filter-group">
           <span className="radar-filter-label">{t.radar.familyFilter}</span>
           <div className="radar-filters" aria-label={t.radar.familyFilter}>
