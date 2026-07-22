@@ -408,6 +408,16 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "contact-ouest-repertoire-2027-28",
     "kyoto-art-center-performing-arts-2027-open",
     "smethwick-puppetry-2027-open",
+    "solostage-krakow-2026-open",
+    "cairo-film-2026",
+    "cubadupa-2027-open",
+    "cirko-w-coproduction-2028-regional",
+    "guadalajara-film-2027",
+    "bergen-fringe-2027",
+    "inaf-norway-2027-open",
+    "francofete-acadie-2027-28",
+    "unima-abidjan-practice-research-2026-open",
+    "ypam-fringe-2027",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
   for (const id of radarDecisionGuideIds) {
@@ -419,6 +429,19 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(festivalRadar.find((record) => record.id === "imaginarius-2027").decisionGuide.quebecAssessment.state, "supported");
   assert.equal(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.quebecAssessment.state, "self_funded");
   assert.match(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.applicantCost.ja, /475ユーロ/);
+  assert.equal(festivalRadar.find((record) => record.id === "solostage-krakow-2026-open").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "cairo-film-2026").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "cubadupa-2027-open").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "cirko-w-coproduction-2028-regional").decisionGuide.quebecAssessment.state, "not_direct");
+  assert.equal(festivalRadar.find((record) => record.id === "guadalajara-film-2027").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "bergen-fringe-2027").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "inaf-norway-2027-open").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "francofete-acadie-2027-28").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "unima-abidjan-practice-research-2026-open").decisionGuide.quebecAssessment.state, "conditional");
+  assert.equal(festivalRadar.find((record) => record.id === "ypam-fringe-2027").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.match(festivalRadar.find((record) => record.id === "ypam-fringe-2027").decisionGuide.applicantCost.ja, /18,700〜38,500円/);
+  assert.match(festivalRadar.find((record) => record.id === "guadalajara-film-2027").decisionGuide.applicantCost.ja, /応募は無料/);
+  assert.match(festivalRadar.find((record) => record.id === "francofete-acadie-2027-28").decisionGuide.applicantCost.ja, /100カナダドル/);
 
   const firstCircusFundingBatch = [
     "cirque-de-demain-2027",
