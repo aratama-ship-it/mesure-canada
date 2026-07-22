@@ -413,6 +413,14 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const iffr = festivalRadar.find((record) => record.id === "iffr-2027");
   assert.equal(iffr.status, "open");
   assert.equal(iffr.sourceUrl, "https://iffr.com/en/iffr-pro-submissions/film-entry");
+  assert.equal(iffr.networkSourceUrl, "https://iffr.com/en/frequently-asked-questions/professionals-faq/film-entry-submission-materials");
+  const carthageAccessFallback = festivalRadar.find((record) => record.id === "carthage-theatre-days-2026-open");
+  assert.equal(carthageAccessFallback.networkSourceUrl, "https://jtcarthage.tn/");
+  const faot = festivalRadar.find((record) => record.id === "faot-alamos-performing-arts-next-watch");
+  assert.equal(faot.networkSourceUrl, "https://isc.sonora.gob.mx/acciones/actividades/convoca-gobierno-de-sonora-a-artistas-para-formar-parte-del-faot-2027");
+  const uctLiveArt = festivalRadar.find((record) => record.id === "uct-ica-live-art-next-watch");
+  assert.equal(uctLiveArt.networkSourceUrl, "https://humanities.uct.ac.za/ica/projects/ica-live-art-festival");
+  assert.equal(uctLiveArt.verifiedAt, "2026-07-22");
 
   const repairedWatchSources = new Map([
     ["cinars-biennale-2026-official-watch", ["https://cinars.org/en/call-for-applications", "https://cinars.org/en/about-the-biennale"]],

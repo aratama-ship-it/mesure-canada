@@ -361,6 +361,7 @@
     },
     "nextCheckDate": "2026-08-08",
     "sourceUrl": "https://iffr.com/en/iffr-pro-submissions/film-entry",
+    "networkSourceUrl": "https://iffr.com/en/frequently-asked-questions/professionals-faq/film-entry-submission-materials",
     "verifiedAt": "2026-07-22"
   },
   {
@@ -2290,7 +2291,8 @@
     },
     "nextCheckDate": "2027-03-15",
     "sourceUrl": "https://humanities.uct.ac.za/ica/articles/2026-03-26-open-call-ica-live-art-festival-2026",
-    "verifiedAt": "2026-07-21"
+    "networkSourceUrl": "https://humanities.uct.ac.za/ica/projects/ica-live-art-festival",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "irish-aerial-wild-card-residency-open",
@@ -3526,6 +3528,7 @@
     },
     "nextCheckDate": "2027-03-01",
     "sourceUrl": "https://isc.sonora.gob.mx/anteriores/convocatoria-del-42-festival-alfonso-ortiz-tirado-alamos-2027",
+    "networkSourceUrl": "https://isc.sonora.gob.mx/acciones/actividades/convoca-gobierno-de-sonora-a-artistas-para-formar-parte-del-faot-2027",
     "verifiedAt": "2026-07-22"
   }
 ]
