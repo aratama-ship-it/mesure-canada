@@ -708,5 +708,300 @@
     },
     "sourceUrl": "https://enpiste.qc.ca/en/projet-recurrent/call-for-projects/",
     "verifiedAt": "2026-07-21"
+  },
+  {
+    "id": "bcac-circulation-touring-individuals-2026",
+    "name": "BC Arts Council — Arts Circulation and Touring (Individuals)",
+    "funder": "BC Arts Council",
+    "profiles": ["artist"],
+    "residencies": ["british_columbia"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "availability": "closed",
+    "deadline": {
+      "fr": "Prochaine période prévue à l’automne 2026; date exacte non annoncée",
+      "en": "Next intake expected in fall 2026; exact deadline not announced",
+      "ja": "次回は2026年秋の予定。正確な締切日は未発表"
+    },
+    "amount": {
+      "fr": "Jusqu’à 25 000 $ pour une tournée rémunérée; jusqu’à 15 000 $ pour les déplacements entrants ou sortants",
+      "en": "Up to $25,000 for compensated outbound touring; up to $15,000 for inbound or outbound travel",
+      "ja": "報酬付き州外ツアーは最大25,000カナダドル、州内外への移動は最大15,000カナダドル"
+    },
+    "coverage": ["travel", "stay", "touring", "fees", "transport"],
+    "cashflow": {
+      "fr": "Le premier cycle 2026 prévoyait les résultats au début d’août; le calendrier de paiement du prochain cycle doit être confirmé",
+      "en": "The first 2026 intake expected results in early August; confirm the next intake’s payment schedule",
+      "ja": "2026年第1期は8月上旬に結果予定。次回の支払時期は要確認"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Artiste professionnel·le établi·e, citoyen·ne ou résident·e permanent·e, résidant habituellement en C.-B. depuis 12 mois continus. Une invitation ou confirmation est requise; les activités sortantes doivent généralement se dérouler à au moins 80 km du domicile.",
+        "en": "Established professional artist who is a citizen or permanent resident and has ordinarily lived in B.C. for 12 continuous months. An invitation or confirmation is required; outbound activity generally must be at least 80 km from home base.",
+        "ja": "カナダ市民または永住者で、BC州に連続12か月通常居住する確立したプロアーティストが対象。招待・確認書が必要で、州外向け活動は原則として拠点から80km以上離れている必要があります。"
+      },
+      "sourceUrl": "https://www.bcartscouncil.ca/app/uploads/sites/508/2026/03/FY2026-27-ACT-Program_Guidelines_Individuals_Intake-1.pdf",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://www.bcartscouncil.ca/program/arts-circulation-and-touring/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "bcac-performing-artists-2026",
+    "name": "BC Arts Council — Individual Arts Grants: Performing Artists",
+    "funder": "BC Arts Council",
+    "profiles": ["artist"],
+    "residencies": ["british_columbia"],
+    "disciplines": ["circus", "theatre", "dance", "music"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "availability": "closed",
+    "deadline": {
+      "fr": "Le cycle du 27 mai 2026 est fermé; prochain cycle prévu au printemps 2027",
+      "en": "The May 27, 2026 intake is closed; next intake expected spring 2027",
+      "ja": "2026年5月27日締切分は終了。次回は2027年春の予定"
+    },
+    "amount": { "fr": "Jusqu’à 25 000 $", "en": "Up to $25,000", "ja": "最大25,000カナダドル" },
+    "coverage": ["research", "creation", "production", "fees", "touring"],
+    "cashflow": {
+      "fr": "Le cycle 2026 annonçait les résultats pour la dernière semaine de septembre 2026",
+      "en": "The 2026 intake expected results in the last week of September 2026",
+      "ja": "2026年期は9月最終週に結果予定"
+    },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Pour les artistes de la scène établi·es en C.-B.; le cirque, le clown, la comédie et les pratiques multidisciplinaires sont explicitement inclus. Citoyenneté ou résidence permanente et 12 mois continus en C.-B. sont requis.",
+        "en": "For established B.C.-based performing artists; circus, clown, comedy and multidisciplinary practices are explicitly included. Citizenship or permanent residence and 12 continuous months in B.C. are required.",
+        "ja": "BC州を拠点とする確立した舞台芸術家向けで、サーカス、クラウン、コメディ、複合領域が明記されています。市民または永住者で、BC州に連続12か月居住していることが必要です。"
+      },
+      "sourceUrl": "https://www.bcartscouncil.ca/app/uploads/sites/508/2026/05/FY2026-27-IAG_Performing-Artists_Program-Guidelines.pdf",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://www.bcartscouncil.ca/program/individual-arts-awards-performing-artists/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "afa-theatre-individual-project-2026",
+    "name": "Alberta Foundation for the Arts — Theatre Individual Project Funding",
+    "funder": "Alberta Foundation for the Arts",
+    "profiles": ["artist", "collective"],
+    "residencies": ["alberta"],
+    "disciplines": ["circus", "theatre"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "1er septembre 2026; puis 1er mars 2027", "en": "September 1, 2026; then March 1, 2027", "ja": "2026年9月1日、次回2027年3月1日" },
+    "amount": { "fr": "Jusqu’à 18 000 $, jusqu’à 100 % des dépenses admissibles", "en": "Up to $18,000 and up to 100% of eligible expenses", "ja": "最大18,000カナダドル。対象経費の100％まで" },
+    "coverage": ["research", "creation", "production", "promotion", "travel", "stay", "training", "fees"],
+    "cashflow": { "fr": "Décision généralement quatre à six mois après la date limite", "en": "Decision generally four to six months after the deadline", "ja": "通常、締切から4〜6か月後に結果通知" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected"],
+      "representativeStatuses": ["citizen", "permanent", "protected"],
+      "conditionalStatuses": ["protected"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "afa_all",
+      "note": {
+        "fr": "Résidence principale en Alberta depuis un an et présence habituelle au moins six mois par année. Les personnes protégées sont admissibles avec un permis de travail ou d’études ouvert délivré au Canada. Pour un collectif non incorporé, tous les copropriétaires du projet doivent être admissibles.",
+        "en": "Primary Alberta residence for one year and ordinary residence for at least six months each year. Protected Persons qualify with an open work or study permit issued from inside Canada. In an unincorporated group, every project co-owner must qualify.",
+        "ja": "アルバータ州を主たる住居として1年以上、かつ通常は年6か月以上居住すること。Protected Personはカナダ国内で発給されたオープン就労・就学許可が必要です。法人格のないグループでは、作品の共同所有者全員が条件を満たす必要があります。"
+      },
+      "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/theatre-individual-project-funding",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/theatre-individual-project-funding",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "afa-dance-individual-project-2026",
+    "name": "Alberta Foundation for the Arts — Dance Individual Project Funding",
+    "funder": "Alberta Foundation for the Arts",
+    "profiles": ["artist", "collective"],
+    "residencies": ["alberta"],
+    "disciplines": ["dance"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "1er septembre 2026; puis 1er mars 2027", "en": "September 1, 2026; then March 1, 2027", "ja": "2026年9月1日、次回2027年3月1日" },
+    "amount": { "fr": "Jusqu’à 18 000 $, jusqu’à 100 % des dépenses admissibles", "en": "Up to $18,000 and up to 100% of eligible expenses", "ja": "最大18,000カナダドル。対象経費の100％まで" },
+    "coverage": ["research", "creation", "production", "promotion", "travel", "stay", "training", "fees"],
+    "cashflow": { "fr": "Décision généralement quatre à six mois après la date limite", "en": "Decision generally four to six months after the deadline", "ja": "通常、締切から4〜6か月後に結果通知" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "protected"],
+      "representativeStatuses": ["citizen", "permanent", "protected"],
+      "conditionalStatuses": ["protected"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "afa_all",
+      "note": {
+        "fr": "Résidence principale en Alberta depuis un an et présence habituelle au moins six mois par année. Les personnes protégées sont admissibles avec un permis ouvert. Tous les copropriétaires d’un projet collectif doivent satisfaire les mêmes critères.",
+        "en": "Primary Alberta residence for one year and ordinary residence for at least six months each year. Protected Persons qualify with an open permit. Every co-owner of a collective project must meet the same criteria.",
+        "ja": "アルバータ州を主たる住居として1年以上、かつ通常は年6か月以上居住すること。Protected Personにはオープン許可が必要です。共同プロジェクトの所有者全員が同じ条件を満たす必要があります。"
+      },
+      "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/dance-individual-project-funding",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/dance-individual-project-funding",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "sk-arts-independent-artists-2026",
+    "name": "SK Arts — Independent Artists",
+    "funder": "SK Arts",
+    "profiles": ["artist", "collective"],
+    "residencies": ["saskatchewan"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "1er octobre 2026; puis 15 mars 2027", "en": "October 1, 2026; then March 15, 2027", "ja": "2026年10月1日、次回2027年3月15日" },
+    "amount": {
+      "fr": "Création: 7 500 $ émergent·e / 18 000 $ établi·e ou collectif; production-présentation: 18 000 $; développement-recherche: 5 000 $",
+      "en": "Creation: $7,500 emerging / $18,000 established or collective; production-presentation: $18,000; professional development-research: $5,000",
+      "ja": "創作：若手7,500／確立した作家・コレクティブ18,000カナダドル、制作・発表：18,000、研修・調査：5,000"
+    },
+    "coverage": ["research", "creation", "production", "touring", "travel", "stay", "training", "fees"],
+    "cashflow": { "fr": "Le calendrier public ne précise pas la date de versement; prévoir une marge de trésorerie", "en": "The public guide does not give a payment date; allow for cash-flow margin", "ja": "公開要項に支払日は明記されていないため、立替余力を見込む必要があります" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "representativeStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "collectiveRule": "sk_half",
+      "professionalPracticeVerificationRequired": true,
+      "note": {
+        "fr": "Artiste professionnel·le avec adresse physique permanente en Saskatchewan depuis au moins un an, y vivant au moins six mois par année et y pratiquant depuis un an. Pour un collectif, au moins 50 % des membres doivent être des artistes professionnel·les et au moins 50 % des résident·es admissibles de la Saskatchewan.",
+        "en": "Professional artist with a permanent Saskatchewan address for at least one year, living there at least six months per year and practising there for one year. For a collective, at least 50% of members must be professional artists and at least 50% eligible Saskatchewan residents.",
+        "ja": "サスカチュワン州に恒久的住所を1年以上置き、年6か月以上居住し、州内で1年以上活動するプロアーティストが対象。コレクティブはメンバーの50％以上がプロ、かつ50％以上が同州の対象居住者である必要があります。"
+      },
+      "sourceUrl": "https://www.sk-arts.ca/files/funding/packages/IA_Guidelines_-_2025-01.pdf",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://www.sk-arts.ca/grants/grants-by-type/artists/independent-artists.html",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "mac-create-2026",
+    "name": "Manitoba Arts Council — Create",
+    "funder": "Manitoba Arts Council",
+    "profiles": ["artist"],
+    "residencies": ["manitoba"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "10 octobre 2026; puis 20 mars 2027", "en": "October 10, 2026; then March 20, 2027", "ja": "2026年10月10日、次回2027年3月20日" },
+    "amount": { "fr": "Jusqu’à 7 500 $ (émergent), 10 000 $ (mi-carrière) ou 15 000 $ (établi)", "en": "Up to $7,500 emerging, $10,000 mid-career or $15,000 established", "ja": "若手最大7,500、中堅10,000、確立した作家15,000カナダドル" },
+    "coverage": ["research", "creation", "fees", "stay"],
+    "cashflow": { "fr": "Résultats normalement communiqués dans les 12 semaines suivant la date limite", "en": "Results are normally communicated within 12 weeks of the deadline", "ja": "通常、締切から12週間以内に結果通知" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": { "fr": "Artiste professionnel·le, citoyen·ne ou résident·e permanent·e, avec adresse physique au Manitoba et au moins une année complète de résidence.", "en": "Professional artist who is a citizen or permanent resident, with a physical Manitoba address and at least one full year of residence.", "ja": "カナダ市民または永住者のプロアーティストで、マニトバ州に住所を持ち、1年以上居住していることが必要です。" },
+      "sourceUrl": "https://artscouncil.mb.ca/grants/general-guidelines/",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://artscouncil.mb.ca/grants/create/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "mac-travel-professional-development-2026",
+    "name": "Manitoba Arts Council — Learn: Travel / Professional Development",
+    "funder": "Manitoba Arts Council",
+    "profiles": ["artist"],
+    "residencies": ["manitoba"],
+    "disciplines": ["all"],
+    "purpose": "career_support",
+    "kind": "grant",
+    "deadline": { "fr": "1er septembre 2026; puis 1er novembre 2026", "en": "September 1, 2026; then November 1, 2026", "ja": "2026年9月1日、次回11月1日" },
+    "amount": { "fr": "Jusqu’à 1 000 $", "en": "Up to $1,000", "ja": "最大1,000カナダドル" },
+    "coverage": ["travel", "stay", "training", "mentorship", "fees"],
+    "cashflow": { "fr": "Résultats normalement communiqués dans les 12 semaines; ne pas commencer avant la date limite", "en": "Results are normally communicated within 12 weeks; the activity must begin after the deadline", "ja": "通常12週間以内に結果通知。活動開始は締切後である必要があります" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": { "fr": "Pour les artistes professionnel·les et professionnel·les des arts citoyen·nes ou résident·es permanent·es, résidant au Manitoba depuis au moins un an. Soutient notamment ateliers, formation spécialisée, mentorat, lectures et présentations.", "en": "For professional artists and arts/cultural professionals who are citizens or permanent residents and have lived in Manitoba for at least one year. Supports workshops, specialized training, mentorships, readings and presentations.", "ja": "カナダ市民または永住者で、マニトバ州に1年以上居住するプロアーティスト／芸術文化専門職が対象。ワークショップ、専門研修、メンタリング、朗読・発表などを支援します。" },
+      "sourceUrl": "https://artscouncil.mb.ca/grants/general-guidelines/",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://artscouncil.mb.ca/grants/travel-professional-development/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "artsnb-creation-2026",
+    "name": "artsnb — Creation",
+    "funder": "New Brunswick Arts Board / artsnb",
+    "profiles": ["artist"],
+    "residencies": ["new_brunswick"],
+    "disciplines": ["all"],
+    "purpose": "home_base_creation",
+    "kind": "grant",
+    "deadline": { "fr": "1er octobre 2026; puis 1er avril 2027", "en": "October 1, 2026; then April 1, 2027", "ja": "2026年10月1日、次回2027年4月1日" },
+    "amount": { "fr": "Jusqu’à 20 000 $; 12 000 $ pour les artistes en début de carrière", "en": "Up to $20,000; $12,000 for early-career artists", "ja": "最大20,000カナダドル。若手区分は12,000カナダドル" },
+    "coverage": ["research", "creation", "production", "fees"],
+    "cashflow": { "fr": "Le calendrier public ne précise pas la date de versement; aucune dépense antérieure au dépôt n’est financée", "en": "The public guide does not state a payment date; pre-submission expenses are not funded", "ja": "公開要項に支払日は明記なし。申請前に実施した活動は対象外です" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "permanent_pending"],
+      "verificationStatuses": ["protected", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": { "fr": "Il faut résider au Nouveau-Brunswick depuis 12 mois et être citoyen·ne, résident·e permanent·e, avoir une demande de résidence permanente en cours, ou être affilié·e à une Première Nation de l’Île de la Tortue. La dernière possibilité exige une vérification directe si votre statut n’est pas autrement admissible.", "en": "Applicants must have lived in New Brunswick for 12 months and be a citizen, permanent resident, have a permanent-residence application in process, or have an affiliation with a First Nation on Turtle Island. The last route needs direct confirmation when immigration status does not otherwise qualify.", "ja": "ニューブランズウィック州に12か月居住し、市民、永住者、永住権申請中、またはタートル・アイランドのFirst Nationとの所属関係があること。最後の条件で申請する場合、在留資格だけでは判定できないため制度担当への確認が必要です。" },
+      "sourceUrl": "https://artsnb.ca/web/wp-content/uploads/2019/07/Creation-Guidelines_Lignes-directrices-Creation-2.pdf",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://artsnb.ca/web/programs/creation/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "artsnb-career-arts-by-invitation-2026",
+    "name": "artsnb — Career Development: Arts by Invitation",
+    "funder": "New Brunswick Arts Board / artsnb",
+    "profiles": ["artist"],
+    "residencies": ["new_brunswick"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "1er novembre 2026", "en": "November 1, 2026", "ja": "2026年11月1日" },
+    "amount": { "fr": "Jusqu’à 3 000 $", "en": "Up to $3,000", "ja": "最大3,000カナダドル" },
+    "coverage": ["travel", "stay", "fees"],
+    "cashflow": { "fr": "Le calendrier public ne précise pas la date de versement; le projet doit commencer après le dépôt", "en": "The public guide does not state a payment date; the project must start after submission", "ja": "公開要項に支払日は明記なし。プロジェクト開始は申請後である必要があります" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "permanent_pending"],
+      "verificationStatuses": ["protected", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": { "fr": "Artiste professionnel·le invité·e à présenter son œuvre dans un événement artistique établi à plus de 150 km du domicile. Les mêmes règles de citoyenneté, résidence permanente, demande en cours ou affiliation à une Première Nation s’appliquent.", "en": "Professional artist invited to present work at an established arts event more than 150 km from home. The same citizenship, permanent-residence, pending-application or First Nation affiliation rules apply.", "ja": "自宅から150kmを超える場所の確立した芸術イベントで作品を発表する正式な招待を受けたプロアーティスト向け。市民、永住者、永住権申請中、またはFirst Nation所属関係の条件が適用されます。" },
+      "sourceUrl": "https://artsnb.ca/web/wp-content/uploads/2019/07/CD-Arts-by-Invitation_2025_DC-Arts-sur-invitation-1.pdf",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://artsnb.ca/web/programs/career-development/",
+    "verifiedAt": "2026-07-22"
+  },
+  {
+    "id": "artsnb-artist-in-residence-2026",
+    "name": "artsnb — Artist in Residence (Artists)",
+    "funder": "New Brunswick Arts Board / artsnb",
+    "profiles": ["artist"],
+    "residencies": ["new_brunswick"],
+    "disciplines": ["all"],
+    "purpose": "mobility_export",
+    "kind": "grant",
+    "deadline": { "fr": "1er septembre 2026", "en": "September 1, 2026", "ja": "2026年9月1日" },
+    "amount": { "fr": "Jusqu’à 10 000 $", "en": "Up to $10,000", "ja": "最大10,000カナダドル" },
+    "coverage": ["travel", "stay", "research", "creation", "mentorship", "fees"],
+    "cashflow": { "fr": "Le calendrier public ne précise pas la date de versement; la résidence doit commencer après le dépôt", "en": "The public guide does not state a payment date; the residency must start after submission", "ja": "公開要項に支払日は明記なし。レジデンス開始は申請後である必要があります" },
+    "eligibility": {
+      "individualStatuses": ["citizen", "permanent", "permanent_pending"],
+      "verificationStatuses": ["protected", "temporary_work", "temporary_no_work"],
+      "minimumProvinceMonths": 12,
+      "professionalPracticeVerificationRequired": true,
+      "note": { "fr": "Artiste professionnel·le du Nouveau-Brunswick accepté·e par un organisme hôte pour une résidence pouvant aller jusqu’à 12 mois, dans la province, ailleurs ou en ligne. Les mêmes voies de statut, y compris la demande de résidence permanente en cours et l’affiliation à une Première Nation, s’appliquent.", "en": "Professional New Brunswick artist accepted by a host organization for a residency of up to 12 months in the province, elsewhere or virtually. The same status routes apply, including a pending permanent-residence application and First Nation affiliation.", "ja": "ニューブランズウィック州のプロアーティストが、州内・州外・オンラインで最長12か月のレジデンスに受入決定されていること。永住権申請中やFirst Nation所属関係を含む同州の資格条件が適用されます。" },
+      "sourceUrl": "https://artsnb.ca/web/wp-content/uploads/2019/07/AIR-Artists-Guidelines_2025_Lignes-directrices-AER-Artistes-4.pdf",
+      "verifiedAt": "2026-07-22"
+    },
+    "sourceUrl": "https://artsnb.ca/web/programs/artist-in-residence/",
+    "verifiedAt": "2026-07-22"
   }
 ]

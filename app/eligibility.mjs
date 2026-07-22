@@ -4,6 +4,8 @@ const qualifyingCollectiveShares = {
   oac_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
   tac_majority: new Set(["all", "two_thirds", "majority_qualified"]),
   ottawa_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
+  afa_all: new Set(["all"]),
+  sk_half: new Set(["all", "two_thirds", "majority_qualified", "half_qualified"]),
 };
 
 const statePriority = {
@@ -183,6 +185,11 @@ const residenceScopes = {
   toronto: new Set(["canada", "ontario", "gta", "toronto"]),
   gta: new Set(["canada", "ontario", "gta"]),
   ottawa: new Set(["canada", "ontario", "ottawa"]),
+  british_columbia: new Set(["canada", "british_columbia"]),
+  alberta: new Set(["canada", "alberta"]),
+  saskatchewan: new Set(["canada", "saskatchewan"]),
+  manitoba: new Set(["canada", "manitoba"]),
+  new_brunswick: new Set(["canada", "new_brunswick"]),
 };
 
 export function supportsResidence(funding, residence) {

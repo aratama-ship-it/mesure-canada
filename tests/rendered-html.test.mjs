@@ -46,6 +46,11 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Ville d’Ottawa/);
   assert.match(html, /Ville de Québec/);
   assert.match(html, /Gatineau/);
+  assert.match(html, /Colombie-Britannique/);
+  assert.match(html, /Alberta/);
+  assert.match(html, /Saskatchewan/);
+  assert.match(html, /Manitoba/);
+  assert.match(html, /Nouveau-Brunswick/);
   assert.doesNotMatch(html, /Festival Mondial du Cirque de Demain/);
   assert.match(html, /Choisissez un appel pour ouvrir sa fiche/);
   assert.doesNotMatch(html, /class="selected-opportunity/);
@@ -139,10 +144,15 @@ test("opportunity and funding records preserve evidence fields", async () => {
   const fundingNames = new Set(funding.map((record) => record.name));
 
   assert.ok(opportunities.length >= 6);
-  assert.ok(funding.length >= 21);
+  assert.ok(funding.length >= 31);
   assert.ok(fundingNames.has("En Piste — Remboursement des dépenses d’entraînement"));
   assert.ok(fundingNames.has("En Piste — Formation individualisée / sur mesure"));
   assert.ok(fundingNames.has("En Piste — Mon premier RIDEAU"));
+  assert.ok(fundingNames.has("BC Arts Council — Arts Circulation and Touring (Individuals)"));
+  assert.ok(fundingNames.has("Alberta Foundation for the Arts — Theatre Individual Project Funding"));
+  assert.ok(fundingNames.has("SK Arts — Independent Artists"));
+  assert.ok(fundingNames.has("Manitoba Arts Council — Create"));
+  assert.ok(fundingNames.has("artsnb — Artist in Residence (Artists)"));
   assert.equal(new Set(opportunities.map((record) => record.id)).size, opportunities.length, "Duplicate opportunity id");
   assert.equal(new Set(funding.map((record) => record.id)).size, funding.length, "Duplicate funding id");
   for (const record of opportunities) {
@@ -223,7 +233,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
-      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa"].includes(scope)
+      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick"].includes(scope)
     ));
     assert.ok(["mobility_export", "home_base_creation", "career_support"].includes(record.purpose));
     assert.ok(["grant", "paid_program"].includes(record.kind));

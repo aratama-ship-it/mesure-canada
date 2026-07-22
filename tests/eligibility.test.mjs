@@ -183,6 +183,58 @@ test("residence scopes distinguish cities, metro areas, provinces and Canada", (
   assert.equal(supportsResidence({ residencies: ["gta"] }, "toronto"), true);
   assert.equal(supportsResidence({ residencies: ["toronto"] }, "gta"), false);
   assert.equal(supportsResidence({ residencies: ["ottawa"] }, "ottawa"), true);
+  assert.equal(supportsResidence({ residencies: ["british_columbia"] }, "british_columbia"), true);
+  assert.equal(supportsResidence({ residencies: ["alberta"] }, "saskatchewan"), false);
+  assert.equal(supportsResidence({ residencies: ["canada"] }, "new_brunswick"), true);
+});
+
+test("Alberta includes Protected Persons conditionally and requires every project co-owner", () => {
+  const eligibility = {
+    representativeStatuses: ["citizen", "permanent", "protected"],
+    conditionalStatuses: ["protected"],
+    minimumProvinceMonths: 12,
+    collectiveRule: "afa_all",
+  };
+  assert.equal(
+    evaluate("collective", eligibility, {
+      legalStatus: "protected",
+      provinceHistory: "twelve_plus",
+      collectiveSize: "three_plus",
+      collectiveComposition: "all",
+    }).state,
+    "conditional",
+  );
+  assert.equal(
+    evaluate("collective", eligibility, {
+      legalStatus: "permanent",
+      provinceHistory: "twelve_plus",
+      collectiveSize: "three_plus",
+      collectiveComposition: "two_thirds",
+    }).state,
+    "ineligible",
+  );
+});
+
+test("New Brunswick keeps non-listed statuses in verification for the First Nation affiliation route", () => {
+  const eligibility = {
+    individualStatuses: ["citizen", "permanent", "permanent_pending"],
+    verificationStatuses: ["protected", "temporary_work", "temporary_no_work"],
+    minimumProvinceMonths: 12,
+  };
+  assert.equal(
+    evaluate("artist", eligibility, {
+      legalStatus: "permanent_pending",
+      provinceHistory: "twelve_plus",
+    }).state,
+    "possible",
+  );
+  assert.equal(
+    evaluate("artist", eligibility, {
+      legalStatus: "temporary_work",
+      provinceHistory: "twelve_plus",
+    }).state,
+    "verify",
+  );
 });
 
 test("professional-practice evidence keeps a municipal artist grant in verification", () => {
