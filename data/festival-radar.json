@@ -2511,7 +2511,36 @@
     },
     "nextCheckDate": "2026-08-26",
     "sourceUrl": "https://www.assitej.no/inaf27/open-call",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "suggested",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "INAF accepte les artistes et compagnies du monde entier et vise à couvrir voyage, hébergement et cachet des spectacles retenus. Cette prise en charge dépend toutefois du financement final du festival. Les pistes ci-dessous ne deviennent pertinentes qu’après sélection et confirmation écrite des coûts réellement laissés à la compagnie.",
+        "en": "INAF accepts artists and companies worldwide and aims to cover travel, accommodation and an artistic fee for selected performances. That support remains subject to the festival’s final funding. The leads below become relevant only after selection and written confirmation of costs left to the company.",
+        "ja": "INAFは世界中の個人・団体を受け付け、採択公演の渡航・宿泊・出演料を負担する方針ですが、フェスティバル側の最終的な資金状況に左右されます。下記候補は採択後、団体に残る負担費目を書面で確認してから検討します。"
+      },
+      "fundingMatches": [
+        {
+          "fundingId": "calq-circulation",
+          "state": "conditional",
+          "note": {
+            "fr": "Une représentation publique à INAF correspond au volet Circulation hors Québec. Après sélection, obtenez une lettre précisant dates, cachet et conditions d’accueil, puis déposez au moins quatre semaines avant le projet. Excluez tout voyage ou séjour finalement payé par INAF.",
+            "en": "A public performance at INAF aligns with Circulation outside Quebec. After selection, obtain a letter stating dates, fee and hosting conditions, then apply at least four weeks before the project. Exclude any travel or lodging ultimately paid by INAF.",
+            "ja": "INAFでの公開上演はCALQの州外作品巡回制度に対応します。採択後、日程・出演料・受入条件を記した書面を取得し、開始4週間以上前までに申請します。INAFが最終的に負担する渡航・滞在費は除外してください。"
+          }
+        },
+        {
+          "fundingId": "cca-microgrants",
+          "state": "conditional",
+          "note": {
+            "fr": "Les Micro-subventions admettent notamment les occasions de présentation. Après sélection, joignez la confirmation d’INAF, déclarez toute prise en charge du festival et ne demandez que les frais non couverts, avant le début de l’activité ou le départ.",
+            "en": "Micro-grants include presentation opportunities. After selection, include INAF’s confirmation, disclose all festival support and request only uncovered costs before the activity or departure begins.",
+            "ja": "Micro-grantsは発表機会への参加を対象に含みます。採択後、INAFの確認書を添え、主催者支援をすべて申告し、活動開始または出発前に未負担分だけを申請候補としてください。"
+          }
+        }
+      ]
+    }
   },
   {
     "id": "art-explora-paris-2027-upcoming",
@@ -3063,16 +3092,26 @@
     "region": "Global",
     "family": "showcase",
     "participation": "regional_conditions",
-    "status": "open",
-    "deadlineDate": "2026-08-04",
+    "status": "watch",
+    "deadlineDate": null,
     "deadlineLabel": {
-      "fr": "Voie encore praticable pour PRELET en République tchèque, du 4 au 8 novembre 2026: déposer au moins trois mois avant, donc au plus tard le 4 août, et le plus tôt possible. Jeunes marionnettistes ou étudiants membres de l’UNIMA, avec attestation du centre national; attribution selon l’ordre d’arrivée. Hébergement et billets gratuits; voyage, repas et visa à la charge du bénéficiaire.",
-      "en": "A viable current route remains for PRELET in the Czech Republic, November 4–8, 2026: apply at least three months ahead, therefore by August 4, and as early as possible. Young puppeteers or students who are UNIMA members need a national-centre confirmation; places are first come, first served. Free lodging and festival tickets; recipient pays travel, meals, and visa.",
-      "ja": "2026年11月4〜8日のチェコPRELET枠は現在検討可能です。開始3か月前まで、つまり8月4日までに早めの申請が必要。UNIMA会員の若手人形劇人または学生が対象で、国内センターの会員証明を添付し先着順。宿泊と公演チケットは無料、渡航・食事・ビザは本人負担です。"
+      "fr": "La liste officielle mise en cache en mars incluait PRELET en novembre 2026, mais cette option n’apparaît plus sur la page officielle actuellement publiée. Comme les PASSPORTS sont attribués selon l’ordre d’arrivée, ne pas considérer la voie ouverte sans confirmation directe de festivals@unima.org. Surveiller les prochains ajouts.",
+      "en": "The official list cached in March included PRELET in November 2026, but that option no longer appears on the currently published official page. Because PASSPORTS are first come, first served, do not treat the route as open without direct confirmation from festivals@unima.org. Watch for new additions.",
+      "ja": "3月時点の公式検索記録には2026年11月のPRELET枠がありましたが、現在公開されている公式ページからは消えています。PASSPORTは先着順のため、festivals@unima.orgから直接確認を得るまでは募集中と扱わず、次の追加枠を監視します。"
     },
-    "nextCheckDate": "2026-08-05",
+    "nextCheckDate": "2026-07-24",
     "sourceUrl": "https://www.unima.org/en/useful-information/unima-grants/passport-program/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "Le programme offre normalement l’hébergement et les billets, tandis que voyage, repas et visa restent à la charge du bénéficiaire. Mais aucune place PRELET active n’est confirmée sur la page actuelle; aucun financement externe n’est donc relié avant confirmation d’une place réelle.",
+        "en": "The program normally provides lodging and festival tickets while recipients pay travel, food and visa costs. However, no active PRELET place is confirmed on the current page, so no external funding is linked until a real place is confirmed.",
+        "ja": "通常は宿泊と公演チケットが提供され、渡航・食事・ビザは本人負担です。ただし現在の公式ページではPRELETの有効枠を確認できないため、実在する枠が確認されるまで外部助成を結びません。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "fiams-saguenay-2027-open",
@@ -3110,7 +3149,17 @@
     },
     "nextCheckDate": "2026-08-01",
     "sourceUrl": "https://www.bctouring.org.uk/puppet",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-07-22",
+    "fundingReview": {
+      "status": "pending_terms",
+      "verifiedAt": "2026-07-22",
+      "note": {
+        "fr": "La page officielle confirme les trois voies et l’échéance, mais ne précise ni si les artistes établis hors du Royaume-Uni sont admissibles, ni cachet, voyage, hébergement ou soutien de production. Sans réponse écrite sur ces conditions, il serait prématuré de relier une aide québécoise ou canadienne.",
+        "en": "The official page confirms the three routes and deadline but does not state whether artists based outside the United Kingdom are eligible, nor any fee, travel, lodging or production support. Without written answers on these conditions, linking Quebec or Canadian funding would be premature.",
+        "ja": "公式ページは3つの応募枠と締切を確認できますが、英国外アーティストの応募可否、出演料、渡航、宿泊、制作支援を明記していません。これらの条件を書面で確認できるまでは、ケベック／カナダの助成候補を結ぶのは時期尚早です。"
+      },
+      "fundingMatches": []
+    }
   },
   {
     "id": "jskd-cankarjeva-puppetry-2026-open",

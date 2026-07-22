@@ -437,6 +437,24 @@ test("opportunity and funding records preserve evidence fields", async () => {
     ["cca-residencies"],
   );
 
+  const fifthFundingBatch = new Map([
+    ["inaf-norway-2027-open", ["suggested", 2]],
+    ["unima-passport-prelet-2026-open", ["pending_terms", 0]],
+    ["smethwick-puppetry-2027-open", ["pending_terms", 0]],
+  ]);
+  for (const [id, [expectedStatus, expectedMatches]] of fifthFundingBatch) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.fundingReview.status, expectedStatus, `${id} funding review status`);
+    assert.equal(record.fundingReview.fundingMatches.length, expectedMatches, `${id} reviewed lead count`);
+  }
+  const unimaPassport = festivalRadar.find((record) => record.id === "unima-passport-prelet-2026-open");
+  assert.equal(unimaPassport.status, "watch");
+  assert.equal(unimaPassport.deadlineDate, null);
+  assert.deepEqual(
+    festivalRadar.find((record) => record.id === "inaf-norway-2027-open").fundingReview.fundingMatches.map((match) => match.fundingId),
+    ["calq-circulation", "cca-microgrants"],
+  );
+
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,
     0,
