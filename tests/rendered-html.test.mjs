@@ -38,6 +38,10 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Ville de Québec/);
   assert.match(html, /Gatineau/);
   assert.match(html, /Festival Mondial du Cirque de Demain/);
+  assert.match(html, /data-candidate-kind="call"/);
+  assert.match(html, /data-candidate-kind="radar"/);
+  assert.match(html, /data-radar-candidate-id="brooklyn-film-2027"/);
+  assert.match(html, /Route active du radar/);
   assert.match(html, /CALQ — Déplacement/);
   assert.match(html, /Canada Council — Arts Abroad: Travel/);
   assert.match(html, /Votre statut au Canada/);

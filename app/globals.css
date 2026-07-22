@@ -527,6 +527,32 @@ a {
   margin-bottom: 7px;
 }
 
+.candidate-identifiers,
+.selected-radar-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+.candidate-source,
+.candidate-participation,
+.selected-radar-flags span:not(.status-tag) {
+  border: 1px solid var(--blue-dark);
+  background: #d8e2ff;
+  color: var(--blue-dark);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+
+.candidate-source,
+.selected-radar-flags span:not(.status-tag) {
+  padding: 3px 5px;
+}
+
 .deadline {
   font-size: 0.64rem;
   font-weight: 850;
@@ -553,11 +579,21 @@ a {
   line-height: 1.25;
 }
 
+.radar-candidate {
+  border-left: 4px solid var(--blue);
+}
+
 .row-meta {
   margin: 0;
   color: var(--muted);
   font-size: 0.74rem;
   line-height: 1.4;
+}
+
+.candidate-participation {
+  display: inline-block;
+  margin: 9px 0 0;
+  padding: 3px 5px;
 }
 
 .no-results {
@@ -584,6 +620,31 @@ a {
   margin: 0 0 13px;
   color: #3e3d37;
   font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.selected-radar-flags {
+  margin: 0 0 13px;
+}
+
+.radar-funding-notice {
+  margin: 0;
+  padding: 15px;
+  border: 1px solid var(--ink);
+  border-left: 5px solid var(--coral);
+  background: #f8e9df;
+}
+
+.radar-funding-notice strong {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 0.84rem;
+}
+
+.radar-funding-notice p {
+  margin: 0;
+  color: #3e3d37;
+  font-size: 0.84rem;
   line-height: 1.55;
 }
 

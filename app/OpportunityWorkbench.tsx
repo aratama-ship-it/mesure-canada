@@ -123,6 +123,21 @@ type Opportunity = {
   fundingMatches: FundingMatch[];
 };
 
+type CandidateStatus = "open" | "rolling" | "upcoming";
+type CandidateRoute =
+  | {
+    candidateId: string;
+    source: "call";
+    status: CandidateStatus;
+    opportunity: Opportunity;
+  }
+  | {
+    candidateId: string;
+    source: "radar";
+    status: Exclude<RadarStatus, "watch">;
+    radar: FestivalRadar;
+  };
+
 type Funding = {
   id: string;
   name: string;
@@ -270,6 +285,10 @@ const copy = {
       nextCheck: "Prochaine vérification",
       verified: "Vérifié le",
       note: "Le registre n’affirme jamais qu’un appel est ouvert au-delà de la date vérifiée. Ouvrez la source avant de préparer un dossier.",
+      candidateSource: "Route active du radar",
+      candidateChosen: "Route sélectionnée dans le radar",
+      fundingCheck: "Aide à vérifier séparément",
+      fundingCheckNote: "Cette route est active ou annoncée, mais ses conditions et ses dépenses ne sont pas assez structurées pour relier une aide automatiquement. Vérifiez l’appel officiel, puis le programme de financement.",
     },
     noResults: "Aucun appel de l’échantillon ne correspond à ce profil. Essayez une autre discipline.",
     fundingHeading: "Plan de financement",
@@ -405,6 +424,10 @@ const copy = {
       nextCheck: "Next check",
       verified: "Verified",
       note: "This register never treats an old deadline as live. Open the official source before preparing a submission.",
+      candidateSource: "Active route from the radar",
+      candidateChosen: "Selected radar route",
+      fundingCheck: "Funding requires a separate check",
+      fundingCheckNote: "This route is open or announced, but its conditions and expenses are not structured enough to link funding automatically. Check the official call first, then the funding program.",
     },
     noResults: "No call in this sample matches the profile. Try another discipline.",
     fundingHeading: "Funding plan",
@@ -520,6 +543,10 @@ const copy = {
       nextCheck: "次回確認日",
       verified: "公式情報の確認日",
       note: "古い締切を「募集中」とは扱いません。応募準備の前に必ず公式情報を開いてください。",
+      candidateSource: "監視台帳の現在の案件",
+      candidateChosen: "監視台帳から選択した案件",
+      fundingCheck: "助成金は個別確認",
+      fundingCheckNote: "このルートは募集中または開始予定ですが、活動内容・費目の情報が助成金を自動照合できるほど構造化されていません。まず公式要項を確認し、その後に助成制度を個別に確認してください。",
     },
     noResults: "このサンプル内に条件と一致する公募がありません。別の活動分野を選んでください。",
     fundingHeading: "資金計画",
@@ -574,6 +601,13 @@ const residenceGroups: Record<"quebec" | "ontario", Residence[]> = {
 const disciplineOptions: Discipline[] = ["all", "circus", "theatre", "dance", "music", "media"];
 const radarFamilyOptions: RadarFamily[] = ["all", "circus", "street", "fringe", "film", "showcase"];
 const radarSearchTagOptions: RadarSearchTag[] = ["all", "regional_festival", "event_performance", "choreographer_development", "residency"];
+const radarFamilyDisciplines: Record<Exclude<RadarFamily, "all">, Exclude<Discipline, "all">[]> = {
+  circus: ["circus"],
+  street: ["circus", "theatre", "dance", "music"],
+  fringe: ["circus", "theatre", "dance", "music"],
+  film: ["media"],
+  showcase: ["circus", "theatre", "dance", "music", "media"],
+};
 const legalStatusOptions: LegalStatus[] = ["unsure", "citizen", "permanent", "protected", "permanent_pending", "temporary_work", "temporary_no_work"];
 const provinceHistoryOptions: ProvinceHistory[] = ["unsure", "twelve_plus", "under_twelve"];
 const torontoHistoryOptions: TorontoHistory[] = ["unsure", "meets", "does_not"];
@@ -596,10 +630,14 @@ function normalizedStatus(opportunity: Opportunity) {
   return opportunity.status;
 }
 
-function isUrgent(opportunity: Opportunity) {
-  if (!opportunity.deadlineDate) return false;
-  const remainingDays = (new Date(`${opportunity.deadlineDate}T23:59:59`).getTime() - Date.now()) / 86_400_000;
+function isUrgentDeadline(deadlineDate: string | null) {
+  if (!deadlineDate) return false;
+  const remainingDays = (new Date(`${deadlineDate}T23:59:59`).getTime() - Date.now()) / 86_400_000;
   return remainingDays >= 0 && remainingDays <= 21;
+}
+
+function isUrgent(opportunity: Opportunity) {
+  return isUrgentDeadline(opportunity.deadlineDate);
 }
 
 function normalizedRadarStatus(record: FestivalRadar) {
@@ -611,6 +649,11 @@ function normalizedRadarStatus(record: FestivalRadar) {
 }
 
 const radarStatusOrder: Record<RadarStatus, number> = { open: 0, upcoming: 1, watch: 2 };
+const candidateStatusOrder: Record<CandidateStatus, number> = { open: 0, rolling: 0, upcoming: 1 };
+
+function radarMatchesDiscipline(record: FestivalRadar, discipline: Discipline) {
+  return discipline === "all" || radarFamilyDisciplines[record.family].includes(discipline);
+}
 
 // Search tags are derived only from existing titles and families. They never infer eligibility.
 const radarSearchTagMatchers: Record<RadarSearchTagKey, (record: FestivalRadar) => boolean> = {
@@ -644,7 +687,7 @@ export function OpportunityWorkbench() {
   const [sinStatus, setSinStatus] = useState<YesNoUnsure>("unsure");
   const [canadaArrival, setCanadaArrival] = useState<CanadaArrival>("unsure");
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
-  const [selectedId, setSelectedId] = useState(opportunities[0]?.id ?? "");
+  const [selectedCandidateId, setSelectedCandidateId] = useState(() => opportunities[0] ? `call:${opportunities[0].id}` : "");
   const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
   const [radarSearchTag, setRadarSearchTag] = useState<RadarSearchTag>("all");
   const t = copy[language];
@@ -669,7 +712,48 @@ export function OpportunityWorkbench() {
     [discipline, profile],
   );
 
-  const selectedOpportunity = filteredOpportunities.find((opportunity) => opportunity.id === selectedId) ?? filteredOpportunities[0];
+  const activeRadarCandidates = useMemo(
+    () => festivalRadar
+      .map((radar) => ({ radar, status: normalizedRadarStatus(radar) }))
+      .filter(({ status }) => status !== "watch")
+      .filter(({ radar }) => radarMatchesDiscipline(radar, discipline))
+      .map(({ radar, status }) => ({
+        candidateId: `radar:${radar.id}`,
+        source: "radar" as const,
+        status: status as Exclude<RadarStatus, "watch">,
+        radar,
+      })),
+    [discipline],
+  );
+
+  const candidateRoutes = useMemo(
+    () => [
+      ...filteredOpportunities.map((opportunity) => ({
+        candidateId: `call:${opportunity.id}`,
+        source: "call" as const,
+        status: normalizedStatus(opportunity) as CandidateStatus,
+        opportunity,
+      })),
+      ...activeRadarCandidates,
+    ].sort((left, right) => {
+      const statusDifference = candidateStatusOrder[left.status] - candidateStatusOrder[right.status];
+      if (statusDifference) return statusDifference;
+      const leftDeadline = left.source === "call" ? left.opportunity.deadlineDate : left.radar.deadlineDate;
+      const rightDeadline = right.source === "call" ? right.opportunity.deadlineDate : right.radar.deadlineDate;
+      if (!leftDeadline && !rightDeadline) {
+        const leftTitle = left.source === "call" ? left.opportunity.title : left.radar.title;
+        const rightTitle = right.source === "call" ? right.opportunity.title : right.radar.title;
+        return leftTitle.localeCompare(rightTitle);
+      }
+      if (!leftDeadline) return 1;
+      if (!rightDeadline) return -1;
+      return leftDeadline.localeCompare(rightDeadline);
+    }) as CandidateRoute[],
+    [activeRadarCandidates, filteredOpportunities],
+  );
+
+  const selectedCandidate = candidateRoutes.find((candidate) => candidate.candidateId === selectedCandidateId) ?? candidateRoutes[0];
+  const selectedOpportunity = selectedCandidate?.source === "call" ? selectedCandidate.opportunity : undefined;
 
   const filteredRadar = useMemo(
     () => festivalRadar
@@ -703,6 +787,7 @@ export function OpportunityWorkbench() {
   }, [answers, profile, residence, selectedOpportunity]);
 
   const regionalPrograms = useMemo(() => {
+    if (!selectedOpportunity) return [];
     const directIds = new Set(selectedOpportunity?.fundingMatches.map((match) => match.fundingId) ?? []);
     return fundingPrograms
       .filter((funding) => !directIds.has(funding.id))
@@ -816,25 +901,32 @@ export function OpportunityWorkbench() {
         </aside>
 
         <section className="panel panel-opportunities">
-          <div className="panel-heading"><span className="section-kicker">02</span><h3>{t.callsHeading}</h3><span className="data-stamp">{filteredOpportunities.length} {t.callsCount}</span></div>
+          <div className="panel-heading"><span className="section-kicker">02</span><h3>{t.callsHeading}</h3><span className="data-stamp">{candidateRoutes.length} {t.callsCount}</span></div>
           <div className="opportunity-list">
-            {filteredOpportunities.length ? filteredOpportunities.map((opportunity) => {
-              const status = normalizedStatus(opportunity);
-              return <button className="opportunity-row" type="button" key={opportunity.id} aria-current={selectedOpportunity?.id === opportunity.id} onClick={() => setSelectedId(opportunity.id)}><span className="row-topline"><span className={`status-tag ${status}`}>{t.status[status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p></button>;
+            {candidateRoutes.length ? candidateRoutes.map((candidate) => {
+              if (candidate.source === "radar") {
+                const { radar } = candidate;
+                return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}</p></button>;
+              }
+              const { opportunity } = candidate;
+              return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p></button>;
             }) : <p className="no-results">{t.noResults}</p>}
           </div>
         </section>
 
         <section className="panel panel-funding" id="funding-panel">
           <div className="panel-heading"><span className="section-kicker">03</span><h3>{t.fundingHeading}</h3></div>
-          {selectedOpportunity ? <>
+          {selectedCandidate ? selectedCandidate.source === "radar" ? <>
+            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
+            <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>
+          </> : selectedOpportunity ? <>
             <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p><ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
             {matches.length ? <div className="funding-list">{matches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div> : <p className="no-results">{t.noFunding}</p>}
 
             {regionalPrograms.length ? <details className="regional-programs" open><summary><span>{t.regionalHeading} — {t.residences[residence]}</span><span className="matches-count">{regionalPrograms.length}</span></summary><div className="regional-list">{regionalPrograms.map(({ funding, assessment }) => renderFundingCard(funding, assessment, t.regionalNote, true))}</div></details> : null}
             <p className="honesty-note">{t.sourceNote}</p>
-          </> : <p className="no-results">{t.noResults}</p>}
+          </> : <p className="no-results">{t.noResults}</p> : <p className="no-results">{t.noResults}</p>}
         </section>
       </section>
 
