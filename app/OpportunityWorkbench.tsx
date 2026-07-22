@@ -188,6 +188,7 @@ type Assessment = { state: MatchState; reasonKeys: EligibilityReasonKey[] };
 const opportunities = opportunityData as Opportunity[];
 const fundingPrograms = fundingData as Funding[];
 const festivalRadar = festivalRadarData as FestivalRadar[];
+const candidatePageSize = 8;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
 
 const copy = {
@@ -265,6 +266,7 @@ const copy = {
     profileNote: "La présélection est volontairement prudente. Une réponse inconnue produit « à confirmer », jamais une admissibilité positive.",
     callsHeading: "Appels pertinents",
     callsCount: "résultats",
+    showMoreCalls: (count: number, remaining: number) => `Voir ${count} pistes de plus · ${remaining} restantes`,
     radar: {
       kicker: "Radar international",
       heading: "Festivals et marchés à suivre, sans mélanger les appels fermés aux accès actifs.",
@@ -414,6 +416,7 @@ const copy = {
     profileNote: "The pre-screen is deliberately conservative. An unknown answer becomes “needs confirmation,” never a positive eligibility result.",
     callsHeading: "Relevant calls",
     callsCount: "results",
+    showMoreCalls: (count: number, remaining: number) => `Show ${count} more · ${remaining} remaining`,
     radar: {
       kicker: "International radar",
       heading: "Festivals and markets to follow—without mixing closed cycles into live access.",
@@ -543,6 +546,7 @@ const copy = {
     profileNote: "判定は意図的に慎重です。不明な回答は「利用可能」とせず、必ず「要確認」にします。",
     callsHeading: "該当する公募",
     callsCount: "件",
+    showMoreCalls: (count: number, remaining: number) => `続きを${count}件見る（残り${remaining}件）`,
     radar: {
       kicker: "国際公募・ショーケース レーダー",
       heading: "終了した募集を「募集中」に見せず、フェスと市場の次の入口を追えるようにする。",
@@ -727,6 +731,7 @@ export function OpportunityWorkbench() {
   const [canadaArrival, setCanadaArrival] = useState<CanadaArrival>("unsure");
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
   const [selectedCandidateId, setSelectedCandidateId] = useState(() => opportunities[0] ? `call:${opportunities[0].id}` : "");
+  const [visibleCandidateCount, setVisibleCandidateCount] = useState(candidatePageSize);
   const [radarFamily, setRadarFamily] = useState<RadarFamily>("all");
   const [radarSearchTag, setRadarSearchTag] = useState<RadarSearchTag>("all");
   const t = copy[language];
@@ -794,6 +799,9 @@ export function OpportunityWorkbench() {
 
   const selectedCandidate = candidateRoutes.find((candidate) => candidate.candidateId === selectedCandidateId) ?? candidateRoutes[0];
   const selectedOpportunity = selectedCandidate?.source === "call" ? selectedCandidate.opportunity : undefined;
+  const visibleCandidateRoutes = candidateRoutes.slice(0, visibleCandidateCount);
+  const remainingCandidateCount = Math.max(0, candidateRoutes.length - visibleCandidateRoutes.length);
+  const nextCandidateBatchSize = Math.min(candidatePageSize, remainingCandidateCount);
 
   const filteredRadar = useMemo(
     () => festivalRadar
@@ -931,7 +939,7 @@ export function OpportunityWorkbench() {
           <div className="panel-heading"><span className="section-kicker">01</span><h3>{t.profileHeading}</h3></div>
 
           <fieldset className="field-group"><legend>{t.profile}</legend><div className="choice-stack">
-            {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => setProfile(item)}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span>{t.profiles[item]}</span></button>)}
+            {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => { setProfile(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span>{t.profiles[item]}</span></button>)}
           </div></fieldset>
 
           {profile !== "organization" ? <fieldset className="field-group"><legend>{profile === "collective" ? t.legalStatusCollective : t.legalStatusArtist}</legend><select className="field-select" value={legalStatus} onChange={(event) => setLegalStatus(event.target.value as LegalStatus)}>{legalStatusOptions.map((item) => <option key={item} value={item}>{t.legalStatuses[item]}</option>)}</select></fieldset> : null}
@@ -948,14 +956,14 @@ export function OpportunityWorkbench() {
 
           {profile === "organization" ? <fieldset className="field-group"><legend>{t.organizationRegistration}</legend><select className="field-select" value={organizationRegistration} onChange={(event) => setOrganizationRegistration(event.target.value as OrganizationRegistration)}>{organizationRegistrationOptions.map((item) => <option key={item} value={item}>{t.organizationRegistrations[item]}</option>)}</select></fieldset> : null}
 
-          <fieldset className="field-group"><legend>{t.discipline}</legend><div className="choice-stack">{disciplineOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={discipline === item} onClick={() => setDiscipline(item)}><span className="choice-mark" aria-hidden="true">{discipline === item ? "×" : ""}</span><span>{t.disciplines[item]}</span></button>)}</div></fieldset>
+          <fieldset className="field-group"><legend>{t.discipline}</legend><div className="choice-stack">{disciplineOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={discipline === item} onClick={() => { setDiscipline(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{discipline === item ? "×" : ""}</span><span>{t.disciplines[item]}</span></button>)}</div></fieldset>
           <p className="profile-note">{t.profileNote}</p>
         </aside>
 
         <section className="panel panel-opportunities">
           <div className="panel-heading"><span className="section-kicker">02</span><h3>{t.callsHeading}</h3><span className="data-stamp">{candidateRoutes.length} {t.callsCount}</span></div>
-          <div className="opportunity-list">
-            {candidateRoutes.length ? candidateRoutes.map((candidate) => {
+          <div className="opportunity-list" id="candidate-opportunity-list">
+            {candidateRoutes.length ? visibleCandidateRoutes.map((candidate) => {
               if (candidate.source === "radar") {
                 const { radar } = candidate;
                 return <button className="opportunity-row radar-candidate" type="button" key={candidate.candidateId} data-candidate-kind="radar" data-radar-candidate-id={radar.id} aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className="candidate-identifiers"><span className={`status-tag ${candidate.status}`}>{t.radar.status[candidate.status]}</span><span className="candidate-source">{t.radar.candidateSource}</span></span><span className={`deadline ${isUrgentDeadline(radar.deadlineDate) ? "urgent" : ""}`}>{radar.deadlineLabel[language]}</span></span><h4>{radar.title}</h4><p className="row-meta">{placeNames[language][radar.city] ?? radar.city} · {placeNames[language][radar.country] ?? radar.country} · {t.radar.families[radar.family]}</p><p className="candidate-participation">{t.radar.participation[radar.participation]}{radar.fundingReview ? ` · ${t.radar.fundingReviewStatus[radar.fundingReview.status]}` : ""}</p></button>;
@@ -963,6 +971,7 @@ export function OpportunityWorkbench() {
               const { opportunity } = candidate;
               return <button className="opportunity-row" type="button" key={candidate.candidateId} data-candidate-kind="call" aria-current={selectedCandidate?.candidateId === candidate.candidateId} onClick={() => setSelectedCandidateId(candidate.candidateId)}><span className="row-topline"><span className={`status-tag ${candidate.status}`}>{t.status[candidate.status]}</span><span className={`deadline ${isUrgent(opportunity) ? "urgent" : ""}`}>{opportunity.deadlineLabel[language]}</span></span><h4>{opportunity.title}</h4><p className="row-meta">{placeNames[language][opportunity.city] ?? opportunity.city} · {placeNames[language][opportunity.country] ?? opportunity.country} · {opportunity.organizer}</p></button>;
             }) : <p className="no-results">{t.noResults}</p>}
+            {remainingCandidateCount ? <button className="show-more-opportunities" type="button" aria-controls="candidate-opportunity-list" onClick={() => setVisibleCandidateCount((count) => count + candidatePageSize)}>{t.showMoreCalls(nextCandidateBatchSize, remainingCandidateCount)}</button> : null}
           </div>
         </section>
 

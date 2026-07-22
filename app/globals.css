@@ -518,6 +518,26 @@ a {
   box-shadow: 3px 3px 0 var(--blue);
 }
 
+.show-more-opportunities {
+  min-height: 44px;
+  margin-top: 3px;
+  padding: 10px 14px;
+  border: 2px solid var(--ink);
+  background: var(--paper-bright);
+  color: var(--ink);
+  font-weight: 850;
+  text-align: center;
+  cursor: pointer;
+}
+
+.show-more-opportunities:hover,
+.show-more-opportunities:focus-visible {
+  background: var(--yellow);
+  box-shadow: 3px 3px 0 var(--blue);
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
 .row-topline {
   display: flex;
   flex-wrap: wrap;

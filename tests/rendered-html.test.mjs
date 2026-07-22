@@ -46,7 +46,10 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Festival Mondial du Cirque de Demain/);
   assert.match(html, /data-candidate-kind="call"/);
   assert.match(html, /data-candidate-kind="radar"/);
-  assert.match(html, /data-radar-candidate-id="brooklyn-film-2027"/);
+  assert.match(html, /data-radar-candidate-id="idfa-forum-2026"/);
+  assert.equal([...html.matchAll(/data-candidate-kind=/g)].length, 8);
+  assert.match(html, /Voir 8 pistes de plus/);
+  assert.match(html, /candidate-opportunity-list/);
   assert.match(html, /Route active du radar/);
   assert.match(html, /Pistes fondées sur les critères officiels/);
   assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
