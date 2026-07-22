@@ -414,6 +414,20 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(iffr.status, "open");
   assert.equal(iffr.sourceUrl, "https://iffr.com/en/iffr-pro-submissions/film-entry");
 
+  const repairedWatchSources = new Map([
+    ["cinars-biennale-2026-official-watch", ["https://cinars.org/en/call-for-applications", "https://cinars.org/en/about-the-biennale"]],
+    ["en-piste-mentorat-pancanadien-2026-watch", ["https://enpiste.qc.ca/appel-de-candidature-projet-de-mentorat-pancanadien/", undefined]],
+    ["chalon-dans-la-rue-off-next-watch", ["https://www.chalondanslarue.com/uploads/documents/Documents%20Compagnies/2026_Cahier_des_charges_SO.pdf", "https://www.chalondanslarue.com/"]],
+    ["subotica-childrens-theatre-next-watch", ["https://lutfestsubotica.net/uploads/documents/20251110/document_571264669.doc", "https://www.lutfestsubotica.net/"]],
+  ]);
+  for (const [id, [sourceUrl, networkSourceUrl]] of repairedWatchSources) {
+    const record = festivalRadar.find((item) => item.id === id);
+    assert.equal(record.status, "watch", `${id} remains a monitoring record`);
+    assert.equal(record.sourceUrl, sourceUrl, `${id} primary source`);
+    assert.equal(record.networkSourceUrl, networkSourceUrl, `${id} official fallback`);
+    assert.equal(record.verifiedAt, "2026-07-22", `${id} verification date`);
+  }
+
   assert.equal(
     festivalRadar.filter((record) => record.participation === "eligibility_check").length,
     0,

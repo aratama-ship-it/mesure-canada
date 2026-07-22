@@ -752,8 +752,9 @@
       "ja": "2026年公式プログラムの公募は終了。確認済みの回は全ての国のアーティストを対象としていたため、次回ビエンナーレを監視。"
     },
     "nextCheckDate": "2027-09-01",
-    "sourceUrl": "https://cinars.org/en/biennale/registration-and-rates?section=call-for-applications",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://cinars.org/en/call-for-applications",
+    "networkSourceUrl": "https://cinars.org/en/about-the-biennale",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "cinars-off-2026",
@@ -923,8 +924,8 @@
       "ja": "2026年の締切は5月29日。ケベック州外のカナダ各地のアーティスト向けで、トロントを含む回が案内されていました。この回ではケベック在住者向けではありません。"
     },
     "nextCheckDate": "2027-03-01",
-    "sourceUrl": "https://enpiste.qc.ca/appel-candidature-mentorat-pancanadien/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://enpiste.qc.ca/appel-de-candidature-projet-de-mentorat-pancanadien/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "en-piste-prix-propulsion-2026-watch",
@@ -2692,8 +2693,9 @@
       "ja": "2026年募集は終了。直近は12月1日〜1月8日募集。公共空間向けの近作を持つフランス国内外の団体から約150〜180組を選び、1,000人超の業界関係者に届く機会です。OFFは自己制作型で、公開要項に出演料・渡航・宿泊の保証はありません。"
     },
     "nextCheckDate": "2026-12-01",
-    "sourceUrl": "https://www.chalondanslarue.com/fr/nos-activites/le-festival/edition-annuelle-english",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.chalondanslarue.com/uploads/documents/Documents%20Compagnies/2026_Cahier_des_charges_SO.pdf",
+    "networkSourceUrl": "https://www.chalondanslarue.com/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "villa-albertine-performing-street-next-watch",
@@ -2920,8 +2922,9 @@
       "ja": "2026年枠は終了。地域制限の記載がないプロの人形劇・児童劇団が対象で、人形劇表現を優先。現地交通、全食付きホテル、全イベント入場、技術支援を主催者が提供し、Suboticaまでの往復渡航は団体負担です。"
     },
     "nextCheckDate": "2027-01-15",
-    "sourceUrl": "https://www.lutfestsubotica.net/en/main-programme",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://lutfestsubotica.net/uploads/documents/20251110/document_571264669.doc",
+    "networkSourceUrl": "https://www.lutfestsubotica.net/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "flum-mostar-puppetry-next-watch",
