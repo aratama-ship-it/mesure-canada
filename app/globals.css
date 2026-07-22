@@ -697,6 +697,92 @@ a {
   line-height: 1.55;
 }
 
+.decision-guide {
+  margin: 18px 0;
+  padding: 12px 0 10px;
+  border-top: 3px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+
+.decision-guide-heading {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.decision-guide-heading strong {
+  font-size: 0.86rem;
+  letter-spacing: -0.015em;
+}
+
+.practicality-tag {
+  padding: 4px 7px;
+  border: 1px solid var(--ink);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.practicality-tag.supported {
+  background: #dce9d4;
+}
+
+.practicality-tag.conditional,
+.practicality-tag.verify {
+  background: var(--yellow);
+}
+
+.practicality-tag.self_funded {
+  background: #f5cec7;
+}
+
+.decision-guide dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 0;
+  border: 1px solid var(--rule);
+  background: var(--rule);
+}
+
+.decision-guide dl > div {
+  min-width: 0;
+  padding: 10px;
+  background: var(--paper-bright);
+}
+
+.decision-guide dl > .quebec-reading {
+  background: #e8eef4;
+}
+
+.decision-guide dt {
+  margin-bottom: 5px;
+  color: var(--blue-dark);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.decision-guide dd {
+  margin: 0;
+  color: #33322d;
+  font-size: 0.72rem;
+  line-height: 1.48;
+}
+
+.selected-opportunity .decision-guide-note {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.64rem;
+  line-height: 1.45;
+}
+
 .selected-radar-flags {
   margin: 0 0 13px;
 }
@@ -1463,6 +1549,10 @@ a {
   }
 
   .funding-list {
+    grid-template-columns: 1fr;
+  }
+
+  .decision-guide dl {
     grid-template-columns: 1fr;
   }
 

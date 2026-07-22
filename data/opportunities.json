@@ -24,6 +24,31 @@
       "en": ["Age 16–30; parental authorization is required from 16 to 18", "Act of no more than six minutes and a YouTube or Vimeo video link", "Prior participation in another circus festival can lead to rejection; returning Festival artists must present another discipline or notable artistic development"],
       "ja": ["16〜30歳。16〜18歳は保護者の同意が必要", "6分以内の演目とYouTubeまたはVimeoの動画リンク", "他のサーカス・フェスティバルへの参加歴は不採択理由になり得ます。再応募者は別分野または明確な芸術的発展が必要"]
     },
+    "decisionGuide": {
+      "access": {
+        "fr": "La page ne publie pas de restriction de nationalité; l’âge, le numéro et les participations antérieures sont les principaux filtres visibles.",
+        "en": "The page publishes no nationality restriction; age, the act, and prior festival participation are the main visible gates.",
+        "ja": "公式応募ページには国籍制限の記載がありません。年齢、演目、過去のフェス参加歴が主な確認条件です。"
+      },
+      "applicantCost": {
+        "fr": "Fret et accompagnant·es à votre charge. La page de candidature ne précise pas le voyage ni l’hébergement de l’artiste sélectionné·e.",
+        "en": "You cover freight and accompanying people. The application page does not specify selected-artist travel or accommodation.",
+        "ja": "機材輸送と同行者は自己負担です。選出者本人の渡航・宿泊条件は応募ページに明記されていません。"
+      },
+      "organizerSupport": {
+        "fr": "Une assistance peut être accordée à la discrétion de l’organisation; aucune prise en charge précise du voyage ou du séjour n’est publiée sur cette page.",
+        "en": "Assistant support may be granted at the organizer’s discretion; this page publishes no precise travel or stay commitment.",
+        "ja": "アシスタント支援は主催者判断です。渡航・滞在についての具体的な負担範囲はこのページでは未公表です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "La candidature peut être envisagée, mais demandez une confirmation écrite du voyage, du séjour et de l’aide technique avant de fermer le budget depuis le Québec.",
+          "en": "The application is worth considering, but obtain written confirmation of travel, accommodation, and technical support before finalizing a Québec-based budget.",
+          "ja": "応募候補にはなりますが、ケベックからの予算確定前に渡航・宿泊・技術支援を主催者へ書面で確認してください。"
+        }
+      }
+    },
     "applicationLanguages": ["fr", "en"],
     "sourceUrl": "https://www.cirquededemain.paris/en/applications",
     "verifiedAt": "2026-07-22",
@@ -72,6 +97,31 @@
       "fr": ["Ouvert aux artistes du monde entier", "Inscription dans le portail AVR et connexion avec un lieu; un accord écrit est recommandé", "Prévoir les frais de billetterie et, dans certains lieux gérés par ARTRAGE, 32 % de frais de gestion après billetterie et coûts additionnels"],
       "en": ["Open to artists worldwide", "Register through AVR and connect with a venue; a written venue agreement is recommended", "Budget for ticket handling and, at some ARTRAGE-managed venues, a 32% management fee after ticket handling and additional costs"],
       "ja": ["世界各地のアーティストが応募可能", "AVRで登録し会場と接続。会場との書面合意が推奨されます", "発券手数料に加え、ARTRAGE運営会場の一部では発券・追加費用控除後に32％の運営手数料があります"]
+    },
+    "decisionGuide": {
+      "access": {
+        "fr": "Accès libre aux artistes du monde entier, sous réserve de l’inscription AVR et d’un accord avec un lieu.",
+        "en": "Open access for artists worldwide, subject to AVR registration and securing a venue.",
+        "ja": "世界中のアーティストが参加できますが、AVR登録と会場の確保が必要です。"
+      },
+      "applicantCost": {
+        "fr": "175 à 335 AUD non remboursables, puis billetterie, lieu, voyage, séjour et production; certains lieux ARTRAGE prélèvent aussi 32 %.",
+        "en": "AUD 175–335 non-refundable, plus ticketing, venue, travel, accommodation, and production; some ARTRAGE venues also charge 32%.",
+        "ja": "返金不可の登録料175〜335豪ドルに加え、発券、会場、渡航、宿泊、制作費が必要です。一部会場では32％の運営手数料もあります。"
+      },
+      "organizerSupport": {
+        "fr": "Portail AVR, présence dans le programme et billetterie; aucun financement automatique du voyage ou du séjour n’est annoncé.",
+        "en": "AVR platform, program listing, and ticketing; no automatic travel or accommodation funding is announced.",
+        "ja": "AVR、公式プログラム掲載、発券機能があります。渡航・宿泊費の自動支給は公表されていません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie réellement ouverte, mais à traiter comme une autoproduction internationale: sécurisez d’abord le lieu, le budget et une stratégie de recettes.",
+          "en": "A genuinely open route, but treat it as an international self-production: secure the venue, budget, and revenue plan first.",
+          "ja": "入口は明確ですが、海外自主公演として考える案件です。会場、総予算、売上計画を先に固める必要があります。"
+        }
+      }
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://fringeworld.com.au/as-an-artist",
@@ -140,6 +190,31 @@
       "en": ["No nationality restriction, but the work must be created in Chinese", "Director aged 35 or younger, unless this is their first publicly presented stage directing work", "Entire team limited to five people, performance limited to 30 minutes, and all three 2026 elements required: gliding, fox, and radio"],
       "ja": ["国籍不問。ただし作品は中国語で制作", "演出家は原則35歳以下。35歳超でも公に発表する初の舞台演出作品なら応募可能", "全スタッフ・出演者は合計5人以内、30分以内。2026年の3要素「滑る・狐・ラジオ」をすべて使用"]
     },
+    "decisionGuide": {
+      "access": {
+        "fr": "Sans restriction de nationalité, mais la création doit être en chinois et respecter l’âge de la mise en scène, la taille d’équipe et les éléments imposés.",
+        "en": "No nationality restriction, but the work must be in Chinese and meet the director-age, team-size, and required-element rules.",
+        "ja": "国籍不問ですが、中国語作品、演出家年齢、5人以内のチーム、指定要素という明確な条件があります。"
+      },
+      "applicantCost": {
+        "fr": "Candidature gratuite. Budgétez tout dépassement des plafonds de transport et les dépenses personnelles non annoncées.",
+        "en": "Application is free. Budget any travel amount above the caps and personal expenses not listed by the organizer.",
+        "ja": "応募は無料です。交通費の上限超過分と、主催者負担として明記されていない個人経費は予算化が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Pour les 18 projets retenus: 3 000 RMB de création, repas et hébergement pour cinq, transport et soutien technique.",
+        "en": "For 18 selected works: RMB 3,000 creation support, meals and accommodation for five, travel, and technical support.",
+        "ja": "選出18作品に制作費3,000元、最大5人分の食事・宿泊、交通、技術支援があります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Si l’équipe peut créer en chinois et satisfaire les contraintes, c’est la logistique la plus soutenue des six appels étudiés; cela ne préjuge pas de la sélection.",
+          "en": "If the team can create in Chinese and meet the constraints, this has the strongest published logistics of the six reviewed calls; that says nothing about selection odds.",
+          "ja": "中国語制作などの条件を満たせるなら、今回の6件では主催者支援が最も具体的です。ただし採択されやすさを意味しません。"
+        }
+      }
+    },
     "applicationLanguages": ["zh"],
     "sourceUrl": "https://www.wuzhenfestival.com/youthCompeti",
     "verifiedAt": "2026-07-22",
@@ -188,6 +263,31 @@
       "fr": ["Inscription à la convention requise pour concourir", "Adhésion WJF requise pour les compétiteur·rices", "Vérifier directement les modalités WJF 23 propres à chaque épreuve"],
       "en": ["Convention registration is required to compete", "Competitors must be current WJF members", "Confirm the WJF 23 requirements for each event directly"],
       "ja": ["競技参加にはコンベンション登録が必要", "競技参加者は有効なWJF会員であること", "WJF 23の種目別条件を公式サイトで直接確認"]
+    },
+    "decisionGuide": {
+      "access": {
+        "fr": "La page de l’événement ne publie pas de restriction de nationalité, mais exige inscription complète, adhésion WJF et vérification de chaque épreuve.",
+        "en": "The event page publishes no nationality restriction, but requires full registration, current WJF membership, and event-by-event confirmation.",
+        "ja": "イベントページには国籍制限の記載がありませんが、通し登録、WJF会員資格、種目別条件の確認が必要です。"
+      },
+      "applicantCost": {
+        "fr": "250, 300 ou 500 USD selon la date, plus adhésion, voyage et séjour à Seattle.",
+        "en": "US$250, $300, or $500 depending on timing, plus membership, travel, and accommodation in Seattle.",
+        "ja": "時期により250・300・500米ドルの登録料に加え、会費、シアトルへの渡航・滞在費が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Accès spectateur gratuit; aucune aide au voyage ou au séjour des compétiteur·rices n’est publiée sur la page WJF 23.",
+        "en": "Spectator access is free; the WJF 23 page publishes no competitor travel or accommodation support.",
+        "ja": "見学は無料です。WJF 23ページには競技参加者の渡航・宿泊支援の記載がありません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Pertinent pour un objectif de compétition précis, mais le budget personnel et les modalités de l’épreuve doivent être réglés avant le départ.",
+          "en": "Relevant for a specific competition goal, but settle the personal budget and event rules before travel.",
+          "ja": "競技目的が明確な人向けです。渡航前に自己負担予算と種目別条件を確定させる必要があります。"
+        }
+      }
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://www.thewjf.com/wjf23/",
@@ -238,6 +338,31 @@
       "en": ["Born between September 19, 1991 and March 30, 2007; previous first-prize winners are ineligible", "Valid passport and ability to travel and attend every stage", "20–25 minute preselection recording with continuous unedited audio and simultaneous fixed-camera video"],
       "ja": ["1991年9月19日〜2007年3月30日生まれ。過去の第1位受賞者は対象外", "有効なパスポートを持ち、全日程への渡航・参加が可能", "20〜25分の予備審査録音。無編集の連続音声と固定カメラによる同時撮影動画"]
     },
+    "decisionGuide": {
+      "access": {
+        "fr": "Toutes nationalités, avec plage de naissance, disponibilité complète et dossier vidéo stricts.",
+        "en": "All nationalities, with strict birth-date, full-availability, and recording requirements.",
+        "ja": "国籍不問ですが、生年月日、全日程参加、録音・撮影方式に厳格な条件があります。"
+      },
+      "applicantCost": {
+        "fr": "Frais exacts à vérifier dans Acceptd. Voyage, séjour, repas et visa du premier tour sont à votre charge.",
+        "en": "Exact fee must be checked in Acceptd. You cover First Round travel, accommodation, subsistence, and visa.",
+        "ja": "応募料はAcceptdで要確認です。第1ラウンドの渡航、宿泊、食費、ビザは自己負担です。"
+      },
+      "organizerSupport": {
+        "fr": "À Leeds: hébergement, repas, transport local et contribution plafonnée au voyage; plafond encore non publié, aide financière discrétionnaire possible.",
+        "en": "In Leeds: accommodation, meals, local transport, and a capped travel contribution; the cap is unpublished, and discretionary assistance may be available.",
+        "ja": "リーズ開催段階では宿泊、食事、現地交通と上限付き渡航費補助があります。上限は未公表で、裁量による追加支援の可能性があります。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Voie internationale crédible pour le bon profil, mais le coût du premier tour, les frais Acceptd et le plafond de voyage doivent être chiffrés avant décision.",
+          "en": "A credible international route for the right profile, but price the First Round, Acceptd fee, and travel cap before deciding.",
+          "ja": "条件に合うピアニストには現実的な国際ルートですが、第1ラウンド費用、応募料、渡航費補助上限の確認後に判断すべきです。"
+        }
+      }
+    },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://www.leedspiano.com/2027-competition/",
     "verifiedAt": "2026-07-22",
@@ -287,6 +412,31 @@
       "fr": ["Toutes nationalités; né entre le 25 avril 1996 et le 24 avril 2009", "Les finalistes d’une précédente édition piano ne sont pas admissibles", "Disponible à Montréal du 23 avril au 5 mai 2027; dossier comprenant notamment quatre vidéos d’audition et deux références"],
       "en": ["All nationalities; born between April 25, 1996 and April 24, 2009", "Finalists from a previous piano edition are ineligible", "Available in Montréal from April 23 to May 5, 2027; application includes four audition videos and two references"],
       "ja": ["国籍不問。1996年4月25日〜2009年4月24日生まれ", "過去のピアノ部門ファイナリストは対象外", "2027年4月23日〜5月5日にモントリオールで参加可能。応募には審査動画4本と推薦者2人などが必要"]
+    },
+    "decisionGuide": {
+      "access": {
+        "fr": "Toutes nationalités, avec âge, antécédents de finale et disponibilité à Montréal comme filtres.",
+        "en": "All nationalities, with age, previous-finalist status, and Montréal availability as gates.",
+        "ja": "国籍不問。年齢、過去のファイナリスト歴、モントリオール全日程への参加可否が条件です。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature de 200 CAD non remboursables. Les autres dépenses personnelles non décrites doivent être confirmées.",
+        "en": "CAD 200 non-refundable application fee. Confirm any other personal expenses not described in the rules.",
+        "ja": "返金不可の応募料200カナダドル。規定に記載のない個人経費は別途確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Pour 25 personnes sélectionnées: aller-retour économique ou transport équivalent vers Montréal et hébergement gratuit en famille d’accueil.",
+        "en": "For 25 selected competitors: round-trip economy airfare or equivalent transport to Montréal, plus free host-family accommodation.",
+        "ja": "選出25人に、モントリオールまでの往復エコノミー航空券または同等交通と、ホストファミリーによる無料宿泊があります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Très praticable depuis le Québec si le profil artistique et l’âge conviennent; demandez comment le transport « équivalent » s’applique à une personne déjà sur place.",
+          "en": "Highly practical from Québec for the right artistic and age profile; ask how “equivalent” transport applies to someone already local.",
+          "ja": "芸術・年齢条件に合えばケベックから進めやすい案件です。州内在住者への「同等交通」の扱いだけは主催者へ確認してください。"
+        }
+      }
     },
     "applicationLanguages": ["fr", "en"],
     "sourceUrl": "https://www.concoursmontreal.ca/en/piano-2027/rules/",

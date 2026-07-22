@@ -47,6 +47,10 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Ville de Québec/);
   assert.match(html, /Gatineau/);
   assert.match(html, /Festival Mondial du Cirque de Demain/);
+  assert.match(html, /Décider avant de budgéter/);
+  assert.match(html, /Accès à la candidature/);
+  assert.match(html, /Lecture depuis le Québec/);
+  assert.match(html, /elle ne mesure ni la probabilité de sélection ni la qualité artistique/);
   assert.match(html, /data-candidate-kind="call"/);
   assert.match(html, /data-candidate-kind="radar"/);
   assert.match(html, /data-radar-candidate-id="idfa-forum-2026"/);
@@ -118,6 +122,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.deadlineLabel.ja);
     assert.ok(record.summary.ja);
     assert.ok(record.requirements.ja.length > 0);
+    assert.ok(["supported", "conditional", "self_funded", "verify"].includes(record.decisionGuide.quebecAssessment.state));
+    for (const language of ["fr", "en", "ja"]) {
+      assert.ok(record.decisionGuide.access[language], `${record.id}.decisionGuide.access.${language}`);
+      assert.ok(record.decisionGuide.applicantCost[language], `${record.id}.decisionGuide.applicantCost.${language}`);
+      assert.ok(record.decisionGuide.organizerSupport[language], `${record.id}.decisionGuide.organizerSupport.${language}`);
+      assert.ok(record.decisionGuide.quebecAssessment.note[language], `${record.id}.decisionGuide.quebecAssessment.note.${language}`);
+    }
     for (const match of record.fundingMatches) {
       assert.ok(fundingIds.has(match.fundingId), `Missing funding record: ${match.fundingId}`);
       assert.ok(["possible", "conditional", "verify"].includes(match.state));
@@ -148,21 +159,27 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(fringeWorld.deadlineDate, "2026-10-07");
   assert.match(fringeWorld.summary.ja, /175豪ドル/);
   assert.match(fringeWorld.requirements.ja.join(" "), /32％/);
+  assert.equal(fringeWorld.decisionGuide.quebecAssessment.state, "self_funded");
 
   const wuzhen = opportunityById.get("wuzhen-emerging-2026");
   assert.match(wuzhen.summary.ja, /応募無料/);
   assert.match(wuzhen.summary.ja, /片道あたり4,000元/);
   assert.match(wuzhen.requirements.ja.join(" "), /国籍不問/);
+  assert.equal(wuzhen.decisionGuide.quebecAssessment.state, "supported");
+  assert.match(wuzhen.decisionGuide.organizerSupport.ja, /最大5人分/);
 
   const leeds = opportunityById.get("leeds-piano-2027");
   assert.match(leeds.deadlineLabel.ja, /11月7日/);
   assert.doesNotMatch(leeds.deadlineLabel.ja, /9月30日/);
   assert.match(leeds.summary.ja, /第1ラウンド.*自己負担/);
+  assert.equal(leeds.decisionGuide.quebecAssessment.state, "conditional");
 
   const cmim = opportunityById.get("cmim-piano-2027");
   assert.match(cmim.summary.ja, /200カナダドル/);
   assert.match(cmim.summary.ja, /往復エコノミー航空券または同等の交通手段/);
   assert.match(cmim.summary.ja, /無料宿泊/);
+  assert.equal(cmim.decisionGuide.quebecAssessment.state, "supported");
+  assert.match(cmim.decisionGuide.quebecAssessment.note.ja, /同等交通/);
 
   for (const record of funding) {
     assert.ok(/^https?:\/\//.test(record.sourceUrl));

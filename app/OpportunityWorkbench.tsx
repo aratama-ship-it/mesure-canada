@@ -113,6 +113,18 @@ type FestivalRadar = {
   fundingReview?: RadarFundingReview;
 };
 
+type OpportunityPracticality = "supported" | "conditional" | "self_funded" | "verify";
+
+type OpportunityDecisionGuide = {
+  access: Localized;
+  applicantCost: Localized;
+  organizerSupport: Localized;
+  quebecAssessment: {
+    state: OpportunityPracticality;
+    note: Localized;
+  };
+};
+
 type Opportunity = {
   id: string;
   title: string;
@@ -127,6 +139,7 @@ type Opportunity = {
   disciplines: Exclude<Discipline, "all">[];
   summary: Localized;
   requirements: Record<Language, string[]>;
+  decisionGuide: OpportunityDecisionGuide;
   applicationLanguages: string[];
   sourceUrl: string;
   verifiedAt: string;
@@ -327,6 +340,10 @@ const copy = {
     fundingHeading: "Plan de financement",
     chosen: "Occasion choisie",
     officialCall: "Voir l’appel officiel ↗",
+    decisionGuideHeading: "Décider avant de budgéter",
+    decisionLabels: { access: "Accès à la candidature", applicantCost: "À votre charge", organizerSupport: "Pris en charge par l’organisateur", quebec: "Lecture depuis le Québec" },
+    practicality: { supported: "Soutien logistique notable", conditional: "Décider après vérification", self_funded: "Budget autonome à construire", verify: "Contacter d’abord l’organisateur" },
+    decisionGuideNote: "Lecture MESURE fondée sur les conditions publiées; elle ne mesure ni la probabilité de sélection ni la qualité artistique.",
     fundingFor: "Aides directement associées",
     noFunding: "Aucune aide n’est reliée directement à cet appel. Les programmes de votre base restent visibles ci-dessous, sans créer de faux match.",
     regionalHeading: "Autres programmes de votre base",
@@ -486,6 +503,10 @@ const copy = {
     fundingHeading: "Funding plan",
     chosen: "Selected opportunity",
     officialCall: "Open official call ↗",
+    decisionGuideHeading: "Decide before you budget",
+    decisionLabels: { access: "Application access", applicantCost: "Costs you carry", organizerSupport: "Organizer support", quebec: "Québec-based reading" },
+    practicality: { supported: "Notable logistical support", conditional: "Decide after checking", self_funded: "Build a self-funded budget", verify: "Contact the organizer first" },
+    decisionGuideNote: "MESURE reading based on published terms; it does not score selection odds or artistic quality.",
     fundingFor: "Programs linked directly",
     noFunding: "No program is directly linked to this call. Home-base programs remain visible below without creating a false match.",
     regionalHeading: "Other programs from your home base",
@@ -625,6 +646,10 @@ const copy = {
     fundingHeading: "資金計画",
     chosen: "選択中の公募",
     officialCall: "公募の公式情報を確認 ↗",
+    decisionGuideHeading: "応募前の現実性チェック",
+    decisionLabels: { access: "応募できる可能性", applicantCost: "本人が負担するもの", organizerSupport: "主催者の支援", quebec: "ケベックからの進めやすさ" },
+    practicality: { supported: "条件を満たせば支援が厚い", conditional: "条件確認後に判断", self_funded: "自己資金の設計が先", verify: "まず主催者へ確認" },
+    decisionGuideNote: "公開条件に基づくMESUREの整理です。採択可能性や芸術的評価を点数化するものではありません。",
     fundingFor: "この公募に直接関連する制度",
     noFunding: "この公募へ直接結びつけた制度はありません。誤った対応関係を作らず、居住地で使えるその他の制度を下に分けて表示します。",
     regionalHeading: "居住地から探せるその他の制度",
@@ -1048,7 +1073,7 @@ export function OpportunityWorkbench() {
               {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <><div className="funding-list" id="radar-funding-list" data-visible-count={visibleRadarMatches.length} data-total-count={radarMatches.length}>{visibleRadarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingRadarMatchCount ? <button className="show-more-funding" type="button" aria-controls="radar-funding-list" onClick={() => revealMoreFunding("radar", radarMatches.length)}>{t.showMoreFunding(nextRadarMatchBatchSize, remainingRadarMatchCount)}</button> : null}</> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
             </> : <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>}
           </> : selectedOpportunity ? <>
-            <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p><ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
+            <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p><div className="decision-guide"><div className="decision-guide-heading"><strong>{t.decisionGuideHeading}</strong><span className={`practicality-tag ${selectedOpportunity.decisionGuide.quebecAssessment.state}`}>{t.practicality[selectedOpportunity.decisionGuide.quebecAssessment.state]}</span></div><dl><div><dt>{t.decisionLabels.access}</dt><dd>{selectedOpportunity.decisionGuide.access[language]}</dd></div><div><dt>{t.decisionLabels.applicantCost}</dt><dd>{selectedOpportunity.decisionGuide.applicantCost[language]}</dd></div><div><dt>{t.decisionLabels.organizerSupport}</dt><dd>{selectedOpportunity.decisionGuide.organizerSupport[language]}</dd></div><div className="quebec-reading"><dt>{t.decisionLabels.quebec}</dt><dd>{selectedOpportunity.decisionGuide.quebecAssessment.note[language]}</dd></div></dl><p className="decision-guide-note">{t.decisionGuideNote}</p></div><ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
             {matches.length ? <><div className="funding-list" id="direct-funding-list" data-visible-count={visibleMatches.length} data-total-count={matches.length}>{visibleMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingMatchCount ? <button className="show-more-funding" type="button" aria-controls="direct-funding-list" onClick={() => revealMoreFunding("direct", matches.length)}>{t.showMoreFunding(nextMatchBatchSize, remainingMatchCount)}</button> : null}</> : <p className="no-results">{t.noFunding}</p>}
 
