@@ -425,6 +425,25 @@ a {
   letter-spacing: -0.025em;
 }
 
+.privacy-note {
+  display: grid;
+  gap: 5px;
+  margin: -4px 0 22px;
+  padding: 11px 12px;
+  border-left: 4px solid var(--blue);
+  background: rgba(255, 255, 255, 0.56);
+  color: var(--muted);
+  font-size: 0.7rem;
+  line-height: 1.5;
+}
+
+.privacy-note strong {
+  color: var(--ink);
+  font-size: 0.63rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 .section-kicker {
   color: var(--blue);
   font-size: 0.64rem;

@@ -269,6 +269,10 @@ const copy = {
     collectiveCompositionNote: "Pour le Conseil des arts du Canada, les deux membres d’un duo doivent être admissibles.",
     organizationRegistration: "Statut juridique de l’organisme",
     organizationRegistrations: { unsure: "Je ne sais pas / à vérifier", yes: "Constitué ou enregistré au Canada", no: "Non constitué ou non enregistré au Canada" },
+    privacyNotice: {
+      label: "Confidentialité",
+      text: "Vos réponses restent dans cette page pendant votre visite. MESURE ne les enregistre pas et ne les transmet pas. Le formulaire de commentaires Google est un service distinct.",
+    },
     profileNote: "La présélection est volontairement prudente. Une réponse inconnue produit « à confirmer », jamais une admissibilité positive.",
     callsHeading: "Appels pertinents",
     callsCount: "résultats",
@@ -424,6 +428,10 @@ const copy = {
     collectiveCompositionNote: "For Canada Council, both members of a duo must qualify.",
     organizationRegistration: "Organization’s legal status",
     organizationRegistrations: { unsure: "Not sure / needs checking", yes: "Incorporated or registered in Canada", no: "Not incorporated or registered in Canada" },
+    privacyNotice: {
+      label: "Privacy",
+      text: "Your answers stay in this page during your visit. MESURE does not store or transmit them. The Google feedback form is a separate service.",
+    },
     profileNote: "The pre-screen is deliberately conservative. An unknown answer becomes “needs confirmation,” never a positive eligibility result.",
     callsHeading: "Relevant calls",
     callsCount: "results",
@@ -559,6 +567,10 @@ const copy = {
     collectiveCompositionNote: "Canada Councilでは、2人組の場合は2人とも対象資格を満たす必要があります。",
     organizationRegistration: "団体の法的登録状況",
     organizationRegistrations: { unsure: "不明・要確認", yes: "カナダで法人化・登録済み", no: "カナダで法人化・登録されていない" },
+    privacyNotice: {
+      label: "プライバシー",
+      text: "このページで選んだ回答は、閲覧中のブラウザ内だけで使われます。MESUREは保存・送信しません。Googleのフィードバックフォームは別サービスです。",
+    },
     profileNote: "判定は意図的に慎重です。不明な回答は「利用可能」とせず、必ず「要確認」にします。",
     callsHeading: "該当する公募",
     callsCount: "件",
@@ -985,6 +997,10 @@ export function OpportunityWorkbench() {
       <section className="workbench" aria-label={t.matcherLabel}>
         <aside className="panel panel-profile">
           <div className="panel-heading"><span className="section-kicker">01</span><h3>{t.profileHeading}</h3></div>
+          <aside className="privacy-note" aria-label={t.privacyNotice.label}>
+            <strong>{t.privacyNotice.label}</strong>
+            <span>{t.privacyNotice.text}</span>
+          </aside>
 
           <fieldset className="field-group"><legend>{t.profile}</legend><div className="choice-stack">
             {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => { setProfile(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span>{t.profiles[item]}</span></button>)}

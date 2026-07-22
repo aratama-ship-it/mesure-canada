@@ -39,6 +39,9 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /À propos des informations/);
   assert.match(html, /Ce site est actuellement en version bêta/);
   assert.match(html, /docs\.google\.com\/forms/);
+  assert.match(html, /MESURE ne les enregistre pas et ne les transmet pas/);
+  assert.match(workbenchSource, /MESURE does not store or transmit them/);
+  assert.match(workbenchSource, /MESUREは保存・送信しません/);
   assert.match(html, /Ville de Toronto/);
   assert.match(html, /Ville d’Ottawa/);
   assert.match(html, /Ville de Québec/);
