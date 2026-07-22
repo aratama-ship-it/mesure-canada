@@ -121,7 +121,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Lìzé Puppet Art Colony/);
   assert.match(html, /Pôle International de la Marionnette — Creation Residency/);
   assert.match(html, /TITIRIMADROÑO/);
-  assert.match(html, /Beverley Puppet Festival/);
+  assert.doesNotMatch(html, /Beverley Puppet Festival/);
   assert.match(html, /Arab Theatre Festival 17/);
   assert.match(html, /Practice as Research Residency, Abidjan/);
   assert.match(html, /PESTA BONEKA #10/);
@@ -196,7 +196,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.ok(festivalRadar.length >= 168);
+  assert.ok(festivalRadar.length >= 166);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");
   const normalizeRouteKey = (value) => value
     .normalize("NFKC")
@@ -320,7 +320,8 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "lize-puppet-residency-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "pole-marionnette-creation-residency-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "titirimadrono-next-watch"));
-  assert.ok(festivalRadar.some((record) => record.id === "beverley-puppet-next-watch"));
+  assert.ok(!festivalRadar.some((record) => record.id === "beverley-puppet-next-watch"));
+  assert.ok(!festivalRadar.some((record) => record.id === "fort-mcmurray-fringe-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "arab-theatre-festival-2027-open"));
   assert.ok(festivalRadar.some((record) => record.id === "unima-abidjan-practice-research-2026-open"));
   assert.ok(festivalRadar.some((record) => record.id === "pesta-boneka-puppet-camp-2026-open"));
@@ -349,6 +350,20 @@ test("opportunity and funding records preserve evidence fields", async () => {
       assert.ok(record.deadlineLabel[language], `${record.id}.deadlineLabel.${language}`);
     }
   }
+
+  assert.equal(
+    festivalRadar.filter((record) => record.participation === "eligibility_check").length,
+    0,
+    "every retained radar entry must be classified from its primary-source evidence",
+  );
+  assert.equal(
+    festivalRadar.find((record) => record.id === "fringemtl-2027-watch")?.sourceUrl,
+    "https://www.montrealfringe.ca/",
+  );
+  assert.equal(
+    festivalRadar.find((record) => record.id === "halifax-fringe-2027-watch")?.sourceUrl,
+    "https://halifaxfringe.ca/",
+  );
 
   const representation = funding.find((record) => record.id === "cca-representation");
   assert.ok(representation);

@@ -692,7 +692,7 @@
     "city": "Montréal",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -711,7 +711,7 @@
     "city": "Québec",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -768,7 +768,7 @@
     "city": "Montréal",
     "region": "North America",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -806,13 +806,13 @@
     "city": "Montréal",
     "region": "North America",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "regional_conditions",
     "status": "watch",
     "deadlineDate": "2026-04-10",
     "deadlineLabel": {
-      "fr": "Appel 2026 fermé le 10 avril. Résidence de recherche et création; l’édition vérifiée exigeait notamment citoyenneté canadienne ou résidence permanente et résidence sur l’île de Montréal.",
-      "en": "The 2026 call closed April 10. It is a research-and-creation residency; the verified edition required, among other conditions, Canadian citizenship or permanent residence and residence on the Island of Montréal.",
-      "ja": "2026年の締切は4月10日。リサーチ／創作レジデンスで、確認済みの回は少なくともカナダ市民または永住者、かつモントリオール島内居住を求めていました。"
+      "fr": "Appel 2026 fermé le 10 avril. Résidence de recherche et création: pour une candidature individuelle, citoyenneté canadienne ou résidence permanente et domicile sur l’île de Montréal étaient requis. Les collectifs devaient aussi satisfaire des proportions précises de citoyen·nes ou résident·es permanent·es.",
+      "en": "The 2026 call closed April 10. For an individual applicant, this research-and-creation residency required Canadian citizenship or permanent residence and residence on the Island of Montréal. Collectives also had to meet specified Canadian-citizen/permanent-resident proportions.",
+      "ja": "2026年の締切は4月10日。個人申請では、カナダ市民または永住者でモントリオール島内に居住していることが必要でした。コレクティブにも、カナダ市民／永住者の構成比に関する要件があります。"
     },
     "nextCheckDate": "2027-02-01",
     "sourceUrl": "https://enpiste.qc.ca/trajectoire-cirque-seance-dinformation-sur-la-3e-edition/",
@@ -825,13 +825,13 @@
     "city": "Montréal",
     "region": "North America",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "regional_conditions",
     "status": "watch",
     "deadlineDate": "2026-05-11",
     "deadlineLabel": {
-      "fr": "Appel 2026 fermé le 11 mai. Première participation au Rendez-vous annuel MICC pour des professionnel·les du cirque et des arts de la scène au Canada; vérifier les modalités de la prochaine édition.",
-      "en": "The 2026 call closed May 11. It supported a first MICC Annual Market participation for circus and performing-arts professionals in Canada; verify next-edition terms.",
-      "ja": "2026年の締切は5月11日。カナダのサーカス／舞台芸術のプロによるMICC初参加を対象とした枠。次回の細則を確認。"
+      "fr": "Appel 2026 fermé le 11 mai. Première participation au Rendez-vous annuel MICC pour des professionnel·les du cirque et des arts de la scène au Canada. L’aide LOJIQ avait ses propres conditions (notamment citoyenneté ou résidence permanente), mais une participation sans cette aide demeurait possible; vérifier l’édition suivante.",
+      "en": "The 2026 call closed May 11. It supported a first MICC Annual Market participation for circus and performing-arts professionals in Canada. LOJIQ funding had its own citizenship/permanent-residence conditions, while participation without that funding remained possible; recheck the next edition.",
+      "ja": "2026年の締切は5月11日。カナダのサーカス／舞台芸術のプロによるMICC初参加枠です。LOJIQの資金支援には市民権・永住資格など固有の条件がありましたが、同支援なしでの参加は可能と案内されていました。次回要項を確認してください。"
     },
     "nextCheckDate": "2027-03-01",
     "sourceUrl": "https://enpiste.qc.ca/appel-de-candidatures-mon-premier-micc/",
@@ -882,7 +882,7 @@
     "city": "Montréal",
     "region": "North America",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -901,7 +901,7 @@
     "city": "Salaberry-de-Valleyfield",
     "region": "North America",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-01-16",
     "deadlineLabel": {
@@ -958,7 +958,7 @@
     "city": "Ottawa",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -977,7 +977,7 @@
     "city": "Edmonton",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "upcoming",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -996,7 +996,7 @@
     "city": "Vancouver",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "upcoming",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1015,7 +1015,7 @@
     "city": "Winnipeg",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "upcoming",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1053,7 +1053,7 @@
     "city": "Tampa",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "upcoming",
     "deadlineDate": "2027-01-10",
     "deadlineLabel": {
@@ -1129,7 +1129,7 @@
     "city": "Montréal",
     "region": "North America",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "regional_conditions",
     "status": "watch",
     "deadlineDate": "2026-05-15",
     "deadlineLabel": {
@@ -1148,7 +1148,7 @@
     "city": "Sherbrooke",
     "region": "North America",
     "family": "street",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-01-08",
     "deadlineLabel": {
@@ -1205,7 +1205,7 @@
     "city": "Fort Saskatchewan",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-04-01",
     "deadlineLabel": {
@@ -1224,7 +1224,7 @@
     "city": "Saskatchewan",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "upcoming",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1243,7 +1243,7 @@
     "city": "Saint John",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2025-10-26",
     "deadlineLabel": {
@@ -1262,7 +1262,7 @@
     "city": "Nanaimo",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-03-06",
     "deadlineLabel": {
@@ -1281,7 +1281,7 @@
     "city": "Brandon",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "regional_conditions",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1300,7 +1300,7 @@
     "city": "Montréal",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1309,8 +1309,9 @@
       "ja": "2026年開催は終了。抽選と先着枠があり、直近実績は109団体・アーティスト還元161,000カナダドル。2027年日程は未発表です。"
     },
     "nextCheckDate": "2026-08-17",
-    "sourceUrl": "https://fringefestivals.com/festivals/fringemtl/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.montrealfringe.ca/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/fringemtl/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "halifax-fringe-2027-watch",
@@ -1319,7 +1320,7 @@
     "city": "Halifax",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1328,8 +1329,9 @@
       "ja": "2026年は9月3〜13日開催。次回応募は未発表。抽選・先着方式で、興行収入の100％をアーティストへ還元します。"
     },
     "nextCheckDate": "2027-03-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/halifax-fringe-festival/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://halifaxfringe.ca/",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/halifax-fringe-festival/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "saskatoon-fringe-2027-watch",
@@ -1436,7 +1438,7 @@
     "city": "Great Yarmouth",
     "region": "Europe",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1455,7 +1457,7 @@
     "city": "Guelph",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-02-22",
     "deadlineLabel": {
@@ -1475,7 +1477,7 @@
     "city": "North Bay",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
     "deadlineDate": "2026-01-15",
     "deadlineLabel": {
@@ -1495,7 +1497,7 @@
     "city": "Nanaimo",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1514,7 +1516,7 @@
     "city": "Windsor",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1523,8 +1525,9 @@
       "ja": "2026年は7月23〜26日開催。次回抽選は未発表です。現行ページは応募15＋登録400カナダドル、4〜5公演、最長60分と掲載しています。"
     },
     "nextCheckDate": "2026-12-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/windsor-fringe/",
-    "verifiedAt": "2026-07-21"
+    "sourceUrl": "https://www.fringewindsor.com/2026-festival",
+    "networkSourceUrl": "https://fringefestivals.com/festivals/windsor-fringe/",
+    "verifiedAt": "2026-07-22"
   },
   {
     "id": "fundy-fringe-next-watch",
@@ -1552,7 +1555,7 @@
     "city": "Charlottetown",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1591,7 +1594,7 @@
     "city": "Regina",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1624,25 +1627,6 @@
     "verifiedAt": "2026-07-22"
   },
   {
-    "id": "fort-mcmurray-fringe-next-watch",
-    "title": "Fort McMurray Fringe Festival — CAFF Listing",
-    "country": "Canada",
-    "city": "Fort McMurray",
-    "region": "North America",
-    "family": "fringe",
-    "participation": "eligibility_check",
-    "status": "watch",
-    "deadlineDate": null,
-    "deadlineLabel": {
-      "fr": "Le répertoire officiel CAFF inscrit le festival les 29–30 août 2026, mais la fiche détaillée et les modalités de candidature ne sont pas accessibles. Ne pas considérer l’appel comme ouvert sans confirmation directe.",
-      "en": "The official CAFF directory lists the festival for August 29–30, 2026, but the detailed page and application terms are unavailable. Do not treat the call as open without direct confirmation.",
-      "ja": "CAFF公式一覧には2026年8月29〜30日開催とありますが、個別ページと応募条件は取得できません。直接確認するまで募集開始とは扱いません。"
-    },
-    "nextCheckDate": "2026-11-01",
-    "sourceUrl": "https://fringefestivals.com/festivals/",
-    "verifiedAt": "2026-07-21"
-  },
-  {
     "id": "nogojiwanong-indigenous-fringe-watch",
     "title": "Nogojiwanong Indigenous Fringe Festival — Future Artist Call",
     "country": "Canada",
@@ -1668,7 +1652,7 @@
     "city": "Igualada",
     "region": "Europe",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-07-05",
     "deadlineLabel": {
@@ -1725,7 +1709,7 @@
     "city": "Elgin",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-03-01",
     "deadlineLabel": {
@@ -1745,7 +1729,7 @@
     "city": "New York City",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "upcoming",
     "deadlineDate": "2026-10-31",
     "deadlineLabel": {
@@ -1785,7 +1769,7 @@
     "city": "San Diego",
     "region": "North America",
     "family": "fringe",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1823,7 +1807,7 @@
     "city": "Christchurch",
     "region": "Oceania",
     "family": "street",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1861,7 +1845,7 @@
     "city": "Neuchâtel",
     "region": "Europe",
     "family": "street",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "upcoming",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -1975,7 +1959,7 @@
     "city": "Busan",
     "region": "Asia",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-04-30",
     "deadlineLabel": {
@@ -2146,7 +2130,7 @@
     "city": "Cape Town",
     "region": "Africa",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-04-30",
     "deadlineLabel": {
@@ -2241,7 +2225,7 @@
     "city": "Kyoto",
     "region": "Asia",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": "2026-07-31",
     "deadlineLabel": {
@@ -2355,7 +2339,7 @@
     "city": "Dornbirn",
     "region": "Europe",
     "family": "circus",
-    "participation": "eligibility_check",
+    "participation": "international",
     "status": "watch",
     "deadlineDate": "2026-01-05",
     "deadlineLabel": {
@@ -2488,7 +2472,7 @@
     "city": "Toyooka",
     "region": "Asia",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "watch",
     "deadlineDate": "2026-06-27",
     "deadlineLabel": {
@@ -2811,7 +2795,7 @@
     "city": "Saguenay",
     "region": "North America",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -2830,7 +2814,7 @@
     "city": "Smethwick",
     "region": "Europe",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": "2026-07-31",
     "deadlineLabel": {
@@ -2849,7 +2833,7 @@
     "city": "Ljubljana",
     "region": "Europe",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": "2026-07-24",
     "deadlineLabel": {
@@ -2887,7 +2871,7 @@
     "city": "Charleville-Mézières",
     "region": "Europe",
     "family": "showcase",
-    "participation": "eligibility_check",
+    "participation": "selection",
     "status": "open",
     "deadlineDate": null,
     "deadlineLabel": {
@@ -3011,25 +2995,6 @@
     },
     "nextCheckDate": "2027-03-15",
     "sourceUrl": "https://titirimadrono.com/open-call-2026/",
-    "verifiedAt": "2026-07-22"
-  },
-  {
-    "id": "beverley-puppet-next-watch",
-    "title": "Beverley Puppet Festival — Biennial Artist Call",
-    "country": "United Kingdom",
-    "city": "Beverley",
-    "region": "Europe",
-    "family": "showcase",
-    "participation": "eligibility_check",
-    "status": "watch",
-    "deadlineDate": "2025-09-30",
-    "deadlineLabel": {
-      "fr": "Le cycle 2026 est terminé. Appel ouvert une fois tous les deux ans; le précédent s’est déroulé du 1er au 30 septembre 2025. Le festival dit accueillir toutes les candidatures et encourage les artistes sous-représentés, mais ne publie pas de critères géographiques, cachet, voyage ou logement. Surveiller l’infolettre et confirmer les conditions internationales au prochain cycle.",
-      "en": "The 2026 cycle is closed. The artist call runs once every two years; the last was September 1–30, 2025. The festival says it welcomes all applications and encourages underrepresented artists, but publishes no geographic eligibility, fee, travel, or lodging terms. Watch the mailing list and confirm international conditions next cycle.",
-      "ja": "2026年枠は終了。アーティスト公募は2年に1度で、前回は2025年9月1〜30日でした。全応募を歓迎し、過小評価されているアーティストを奨励していますが、地域条件・出演料・渡航・宿泊は未公表。次周期はメーリングリストを監視し、国外条件を確認します。"
-    },
-    "nextCheckDate": "2027-08-01",
-    "sourceUrl": "https://www.beverleypuppetfestival.com/artist-opportunities",
     "verifiedAt": "2026-07-22"
   },
   {
