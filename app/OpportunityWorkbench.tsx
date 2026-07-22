@@ -105,6 +105,7 @@ type FestivalRadar = {
   status: RadarStatus;
   deadlineDate: string | null;
   deadlineLabel: Localized;
+  deadlineTimeZone?: string;
   nextCheckDate: string;
   sourceUrl: string;
   networkSourceUrl?: string;
@@ -136,6 +137,7 @@ type Opportunity = {
   openDate?: string;
   deadlineDate: string | null;
   deadlineLabel: Localized;
+  deadlineTimeZone?: string;
   profiles: Profile[];
   disciplines: Exclude<Discipline, "all">[];
   summary: Localized;
@@ -212,6 +214,7 @@ const festivalRadar = festivalRadarData as FestivalRadar[];
 const candidatePageSize = 8;
 const fundingPageSize = 3;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
+const protectedPersonGlossaryUrl = "https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#protected_person";
 const languageStorageKey = "mesure-canada-language";
 const languageChangeEvent = "mesure-canada-language-change";
 const savedCandidatesStorageKey = "mesure-canada-saved-candidates-v1";
@@ -431,6 +434,15 @@ const copy = {
     },
     selectPrompt: { heading: "Choisissez un appel pour ouvrir sa fiche", body: "La réalité de l’accès, les coûts à votre charge, le soutien de l’organisateur et les aides reliées apparaîtront ici." },
     candidateCard: { caution: "Point décisif", pending: "Les coûts et conditions d’accueil n’ont pas encore été examinés en détail." },
+    deadlineTimeZone: { label: "Fuseau horaire", unknown: "Heure locale à confirmer", noDate: "Échéance non publiée" },
+    glossary: {
+      heading: "Termes utilisés sur MESURE",
+      intro: "Trois mots qui changent souvent l’admissibilité ou la nature d’une occasion.",
+      officialDefinition: "Définition officielle d’IRCC",
+      protected: { term: "Personne protégée", short: "Statut officiel distinct d’une demande d’asile en attente.", definition: "Statut déterminé par la CISR ou IRCC après une décision favorable de protection. Vérifiez le document officiel qui confirme votre statut." },
+      collective: { term: "Collectif non incorporé", short: "Groupe d’artistes sans personne morale distincte.", definition: "Des artistes qui travaillent et déposent ensemble sans organisme incorporé distinct. Chaque bailleur peut appliquer sa propre définition." },
+      showcase: { term: "Vitrine professionnelle", short: "Présentation courte destinée aux diffuseurs et programmateurs.", definition: "Présentation conçue pour obtenir une programmation, une tournée ou des rencontres professionnelles; ce n’est pas nécessairement un engagement public ordinaire." },
+    },
     shortlist: {
       heading: "Candidatures à garder",
       count: (count: number) => `${count} / ${savedCandidateLimit}`,
@@ -634,6 +646,15 @@ const copy = {
     },
     selectPrompt: { heading: "Choose a call to open its practical brief", body: "Application access, costs you carry, organizer support, and any linked funding will appear here." },
     candidateCard: { caution: "Deciding factor", pending: "Costs and hosting conditions have not yet been reviewed in detail." },
+    deadlineTimeZone: { label: "Time zone", unknown: "Local cutoff time to confirm", noDate: "Deadline not published" },
+    glossary: {
+      heading: "Terms used on MESURE",
+      intro: "Three terms that often change eligibility or the nature of an opportunity.",
+      officialDefinition: "Official IRCC definition",
+      protected: { term: "Protected Person", short: "An official status, not a refugee claim awaiting a decision.", definition: "A status determined by the IRB or IRCC after a positive protection decision. Check the official document that confirms your status." },
+      collective: { term: "Unincorporated collective", short: "Artists working together without a separate legal entity.", definition: "Artists who work and apply together without a separately incorporated organization. Each funder may use its own definition." },
+      showcase: { term: "Showcase", short: "A short professional presentation for presenters and programmers.", definition: "A presentation intended to lead to programming, touring, or professional meetings; it is not necessarily a standard public booking." },
+    },
     shortlist: {
       heading: "Saved candidates",
       count: (count: number) => `${count} / ${savedCandidateLimit}`,
@@ -817,6 +838,15 @@ const copy = {
     },
     selectPrompt: { heading: "公募を選ぶと、現実性チェックを表示します", body: "応募可能性、自己負担、主催者支援、直接関連する助成候補をここで確認できます。" },
     candidateCard: { caution: "最大の注意点", pending: "費用・受入条件はまだ詳細確認できていません。" },
+    deadlineTimeZone: { label: "タイムゾーン", unknown: "締切時刻は要確認", noDate: "締切日未公表" },
+    glossary: {
+      heading: "MESUREで使う用語",
+      intro: "応募資格や公募の性質を左右しやすい3つの言葉です。",
+      officialDefinition: "IRCCの公式定義",
+      protected: { term: "Protected Person（保護対象者）", short: "難民申請の審査中とは異なる、正式に認定された在留資格です。", definition: "IRBまたはIRCCによる保護の肯定判断を経て認定される資格です。自分の資格は、認定を示す公式書類で確認してください。" },
+      collective: { term: "法人格のないコレクティブ", short: "別法人を設立せず共同で活動するアーティスト集団です。", definition: "独立した法人を持たず、共同で制作・申請するアーティストの集まりです。制度ごとに定義が異なる場合があります。" },
+      showcase: { term: "ショーケース", short: "劇場担当者やプログラマー向けの短い作品紹介です。", definition: "上演契約、ツアー、商談につなげるためのプロ向け発表です。通常の一般公演と同じとは限りません。" },
+    },
     shortlist: {
       heading: "候補に保存",
       count: (count: number) => `${count} / ${savedCandidateLimit}`,
@@ -1072,6 +1102,13 @@ function candidateDeadlineLabel(candidate: CandidateRoute, language: Language) {
   return candidate.source === "call" ? candidate.opportunity.deadlineLabel[language] : candidate.radar.deadlineLabel[language];
 }
 
+function candidateDeadlineSummary(candidate: CandidateRoute, language: Language) {
+  const deadlineDate = candidateDeadline(candidate);
+  if (!deadlineDate) return copy[language].deadlineTimeZone.noDate;
+  const locale = language === "fr" ? "fr-CA" : language === "en" ? "en-CA" : "ja-JP";
+  return new Intl.DateTimeFormat(locale, { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" }).format(new Date(`${deadlineDate}T00:00:00Z`));
+}
+
 function candidatePlace(candidate: CandidateRoute, language: Language) {
   const city = candidate.source === "call" ? candidate.opportunity.city : candidate.radar.city;
   const country = candidate.source === "call" ? candidate.opportunity.country : candidate.radar.country;
@@ -1086,6 +1123,30 @@ function candidateFundingIds(candidate: CandidateRoute) {
   if (candidate.source === "call") return candidate.opportunity.fundingMatches.map((match) => match.fundingId);
   if (candidate.radar.fundingReview?.status !== "suggested") return [];
   return candidate.radar.fundingReview.fundingMatches.map((match) => match.fundingId);
+}
+
+function candidateDeadlineTimeZone(candidate: CandidateRoute) {
+  return candidate.source === "call" ? candidate.opportunity.deadlineTimeZone : candidate.radar.deadlineTimeZone;
+}
+
+function DeadlineTimeZoneNote({ timeZone, language }: { timeZone?: string; language: Language }) {
+  const t = copy[language];
+  return <span className={`deadline-timezone ${timeZone ? "known" : "unknown"}`}><b>{t.deadlineTimeZone.label}:</b>{timeZone ?? t.deadlineTimeZone.unknown}</span>;
+}
+
+function TerminologyGlossary({ language }: { language: Language }) {
+  const t = copy[language];
+  return (
+    <details className="term-glossary">
+      <summary>{t.glossary.heading}</summary>
+      <p>{t.glossary.intro}</p>
+      <dl>
+        <div><dt>{t.glossary.protected.term}</dt><dd>{t.glossary.protected.definition} <a href={protectedPersonGlossaryUrl} target="_blank" rel="noreferrer">{t.glossary.officialDefinition} ↗</a></dd></div>
+        <div><dt>{t.glossary.collective.term}</dt><dd>{t.glossary.collective.definition}</dd></div>
+        <div><dt>{t.glossary.showcase.term}</dt><dd>{t.glossary.showcase.definition}</dd></div>
+      </dl>
+    </details>
+  );
 }
 
 function radarMatchesDiscipline(record: FestivalRadar, discipline: Discipline) {
@@ -1388,7 +1449,7 @@ export function OpportunityWorkbench() {
           aria-current={selectedCandidate?.candidateId === candidate.candidateId}
           onClick={() => selectCandidate(candidate.candidateId)}
         >
-          <span className="row-topline"><span className={`status-tag ${candidate.status}`}>{statusLabel}</span><span className={`deadline ${urgent ? "urgent" : ""}`}>{candidateDeadlineLabel(candidate, language)}</span></span>
+          <span className="row-topline"><span className={`status-tag ${candidate.status}`}>{statusLabel}</span><span className="deadline-stack"><span className={`deadline ${urgent ? "urgent" : ""}`}>{candidateDeadlineSummary(candidate, language)}</span>{candidateDeadline(candidate) ? <DeadlineTimeZoneNote timeZone={candidateDeadlineTimeZone(candidate)} language={language} /> : null}</span></span>
           <h4>{candidateTitle(candidate)}</h4>
           <p className="row-meta">{candidatePlace(candidate, language)}</p>
           <span className={`practicality-tag row-practicality ${guide?.quebecAssessment.state ?? "verify"}`}>{guide ? t.practicality[guide.quebecAssessment.state] : t.shortlist.practicalReviewPending}</span>
@@ -1476,10 +1537,10 @@ export function OpportunityWorkbench() {
           </aside>
 
           <fieldset className="field-group"><legend>{t.profile}</legend><div className="choice-stack">
-            {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => { setProfile(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span>{t.profiles[item]}</span></button>)}
+            {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => { setProfile(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span className="choice-copy"><span>{t.profiles[item]}</span>{item === "collective" ? <small>{t.glossary.collective.short}</small> : null}</span></button>)}
           </div></fieldset>
 
-          {profile !== "organization" ? <fieldset className="field-group"><legend>{profile === "collective" ? t.legalStatusCollective : t.legalStatusArtist}</legend><select className="field-select" value={legalStatus} onChange={(event) => setLegalStatus(event.target.value as LegalStatus)}>{legalStatusOptions.map((item) => <option key={item} value={item}>{t.legalStatuses[item]}</option>)}</select></fieldset> : null}
+          {profile !== "organization" ? <fieldset className="field-group"><legend>{profile === "collective" ? t.legalStatusCollective : t.legalStatusArtist}</legend><select className="field-select" value={legalStatus} onChange={(event) => setLegalStatus(event.target.value as LegalStatus)}>{legalStatusOptions.map((item) => <option key={item} value={item}>{t.legalStatuses[item]}</option>)}</select>{legalStatus === "protected" ? <p className="field-term-note"><strong>{t.glossary.protected.term}</strong>{t.glossary.protected.short} <a href={protectedPersonGlossaryUrl} target="_blank" rel="noreferrer">{t.glossary.officialDefinition} ↗</a></p> : null}</fieldset> : null}
 
           {profile !== "organization" ? <fieldset className="field-group"><legend>{t.provinceHistory[provinceKey]}</legend><select className="field-select" value={provinceHistory} onChange={(event) => setProvinceHistory(event.target.value as ProvinceHistory)}>{provinceHistoryOptions.map((item) => <option key={item} value={item}>{t.provinceHistories[item]}</option>)}</select></fieldset> : null}
 
@@ -1495,6 +1556,7 @@ export function OpportunityWorkbench() {
 
           <fieldset className="field-group"><legend>{t.discipline}</legend><div className="choice-stack">{disciplineOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={discipline === item} onClick={() => { setDiscipline(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{discipline === item ? "×" : ""}</span><span>{t.disciplines[item]}</span></button>)}</div></fieldset>
           <p className="profile-note">{t.profileNote}</p>
+          <TerminologyGlossary language={language} />
         </aside>
 
         <section className="panel panel-opportunities">
@@ -1511,7 +1573,7 @@ export function OpportunityWorkbench() {
             <div className="shortlist-heading"><div><span className="section-kicker">SHORTLIST</span><h4 id="candidate-shortlist-heading">{t.shortlist.heading}</h4></div><strong>{t.shortlist.count(savedCandidates.length)}</strong></div>
             {savedCandidates.length ? <>
               <div className="saved-candidate-strip">
-                {savedCandidates.map((candidate) => <article key={candidate.candidateId}><button type="button" onClick={() => selectCandidate(candidate.candidateId)}><span>{candidateTitle(candidate)}</span><small>{candidateDeadlineLabel(candidate, language)}</small></button><button type="button" aria-label={`${t.shortlist.remove}: ${candidateTitle(candidate)}`} onClick={() => toggleSavedCandidate(candidate.candidateId)}>×</button></article>)}
+                {savedCandidates.map((candidate) => <article key={candidate.candidateId}><button type="button" onClick={() => selectCandidate(candidate.candidateId)}><span>{candidateTitle(candidate)}</span><small>{candidateDeadlineSummary(candidate, language)}</small></button><button type="button" aria-label={`${t.shortlist.remove}: ${candidateTitle(candidate)}`} onClick={() => toggleSavedCandidate(candidate.candidateId)}>×</button></article>)}
               </div>
               <details className="candidate-comparison">
                 <summary>{t.shortlist.compare}</summary>
@@ -1519,7 +1581,7 @@ export function OpportunityWorkbench() {
                   <table>
                     <thead><tr><th scope="col" aria-label={t.shortlist.compare}></th>{savedCandidates.map((candidate) => <th scope="col" key={candidate.candidateId}>{candidateTitle(candidate)}</th>)}</tr></thead>
                     <tbody>
-                      <tr><th scope="row">{t.shortlist.fields.deadline}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDeadlineLabel(candidate, language)}</td>)}</tr>
+                      <tr><th scope="row">{t.shortlist.fields.deadline}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDeadlineLabel(candidate, language)}{candidateDeadline(candidate) ? <DeadlineTimeZoneNote timeZone={candidateDeadlineTimeZone(candidate)} language={language} /> : null}</td>)}</tr>
                       <tr><th scope="row">{t.shortlist.fields.access}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDecisionGuide(candidate)?.access[language] ?? t.shortlist.practicalReviewPending}</td>)}</tr>
                       <tr><th scope="row">{t.shortlist.fields.applicantCost}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDecisionGuide(candidate)?.applicantCost[language] ?? t.shortlist.practicalReviewPending}</td>)}</tr>
                       <tr><th scope="row">{t.shortlist.fields.organizerSupport}</th>{savedCandidates.map((candidate) => <td key={candidate.candidateId}>{candidateDecisionGuide(candidate)?.organizerSupport[language] ?? t.shortlist.practicalReviewPending}</td>)}</tr>
@@ -1541,14 +1603,14 @@ export function OpportunityWorkbench() {
         <section className="panel panel-funding" id="funding-panel" ref={fundingPanelRef} tabIndex={-1} aria-labelledby="funding-panel-heading">
           <div className="panel-heading"><span className="section-kicker">03</span><h3 id="funding-panel-heading">{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
-            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><p>{selectedCandidate.radar.deadlineLabel[language]}</p>{selectedCandidate.radar.decisionGuide ? renderDecisionGuide(selectedCandidate.radar.decisionGuide) : null}<div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
+            <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><div className="selected-deadline"><p>{selectedCandidate.radar.deadlineLabel[language]}</p>{selectedCandidate.radar.deadlineDate ? <DeadlineTimeZoneNote timeZone={selectedCandidate.radar.deadlineTimeZone} language={language} /> : null}</div>{selectedCandidate.radar.decisionGuide ? renderDecisionGuide(selectedCandidate.radar.decisionGuide) : null}<div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>
             {renderActionChecklist(selectedCandidate)}
             {selectedCandidate.radar.fundingReview ? <>
               <aside className={`radar-funding-notice ${selectedCandidate.radar.fundingReview.status}`}><span className="section-kicker">{t.radar.fundingReviewHeading}</span><strong>{t.radar.fundingReviewStatus[selectedCandidate.radar.fundingReview.status]}</strong><p>{selectedCandidate.radar.fundingReview.note[language]}</p><span className="verified-date">{t.radar.fundingReviewed}: {selectedCandidate.radar.fundingReview.verifiedAt}</span></aside>
               {selectedCandidate.radar.fundingReview.status === "suggested" ? <><div className="matches-title radar-matches-title"><strong>{t.radar.fundingSuggested}</strong><span className="matches-count">{radarMatches.length}</span></div>{radarMatches.length ? <><div className="funding-list" id="radar-funding-list" data-visible-count={visibleRadarMatches.length} data-total-count={radarMatches.length}>{visibleRadarMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingRadarMatchCount ? <button className="show-more-funding" type="button" aria-controls="radar-funding-list" onClick={() => revealMoreFunding("radar", radarMatches.length)}>{t.showMoreFunding(nextRadarMatchBatchSize, remainingRadarMatchCount)}</button> : null}</> : <p className="no-results">{t.radar.fundingSuggestedForProfile}</p>}</> : null}
             </> : <aside className="radar-funding-notice"><strong>{t.radar.fundingCheck}</strong><p>{t.radar.fundingCheckNote}</p></aside>}
           </> : selectedOpportunity ? <>
-            <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><p>{selectedOpportunity.summary[language]}</p>{renderDecisionGuide(selectedOpportunity.decisionGuide)}<ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
+            <article className="selected-opportunity"><span className="section-kicker">{t.chosen}</span><h4>{selectedOpportunity.title}</h4><div className="selected-deadline"><p>{selectedOpportunity.deadlineLabel[language]}</p>{selectedOpportunity.deadlineDate ? <DeadlineTimeZoneNote timeZone={selectedOpportunity.deadlineTimeZone} language={language} /> : null}</div><p>{selectedOpportunity.summary[language]}</p>{renderDecisionGuide(selectedOpportunity.decisionGuide)}<ul className="requirement-list">{selectedOpportunity.requirements[language].map((requirement) => <li key={requirement}>{requirement}</li>)}</ul><a className="source-link" href={selectedOpportunity.sourceUrl} target="_blank" rel="noreferrer">{t.officialCall}</a><span className="verified-date">{t.verified}: {selectedOpportunity.verifiedAt}</span></article>
             {renderActionChecklist(selectedCandidate)}
             <div className="matches-title"><strong>{t.fundingFor}</strong><span className="matches-count">{matches.length}</span></div>
             {matches.length ? <><div className="funding-list" id="direct-funding-list" data-visible-count={visibleMatches.length} data-total-count={matches.length}>{visibleMatches.map(({ funding, match, assessment }) => renderFundingCard(funding, assessment, match.note[language]))}</div>{remainingMatchCount ? <button className="show-more-funding" type="button" aria-controls="direct-funding-list" onClick={() => revealMoreFunding("direct", matches.length)}>{t.showMoreFunding(nextMatchBatchSize, remainingMatchCount)}</button> : null}</> : <p className="no-results">{t.noFunding}</p>}
@@ -1613,10 +1675,11 @@ export function FestivalRadarLedger() {
           <div><span className="section-kicker">{t.radar.kicker}</span><h2 id="festival-radar-heading">{t.radar.heading}</h2></div>
           <div><p>{t.radar.intro}</p><span className="data-stamp">{festivalRadar.length} {t.radar.count} · {new Set(festivalRadar.map((record) => record.region)).size} {t.radar.regions}</span></div>
         </div>
+        <TerminologyGlossary language={language} />
         <div className="radar-filter-group">
           <span className="radar-filter-label">{t.radar.familyFilter}</span>
           <div className="radar-filters" aria-label={t.radar.familyFilter}>
-            {radarFamilyOptions.map((family) => <button type="button" key={family} aria-pressed={radarFamily === family} onClick={() => setRadarFamily(family)}>{family === "all" ? t.radar.all : t.radar.families[family]}</button>)}
+            {radarFamilyOptions.map((family) => <button type="button" key={family} aria-pressed={radarFamily === family} title={family === "showcase" ? t.glossary.showcase.definition : undefined} onClick={() => setRadarFamily(family)}>{family === "all" ? t.radar.all : t.radar.families[family]}</button>)}
           </div>
         </div>
         <div className="radar-filter-group radar-format-group">
@@ -1639,6 +1702,7 @@ export function FestivalRadarLedger() {
               <p className="row-meta">{placeNames[language][record.city] ?? record.city} · {placeNames[language][record.country] ?? record.country}</p>
               {searchTags.length ? <div className="radar-search-tags">{searchTags.map((tag) => <span key={tag}>{t.radar.searchTags[tag]}</span>)}</div> : null}
               <p className="radar-deadline">{record.deadlineLabel[language]}</p>
+              {record.deadlineDate ? <DeadlineTimeZoneNote timeZone={record.deadlineTimeZone} language={language} /> : null}
               <div className="radar-bottom"><span>{t.radar.participation[record.participation]}</span><span>{t.radar.nextCheck}: {record.nextCheckDate}</span></div>
               {record.linkedOpportunityId ? <span className="radar-funding-state linked">{t.radar.fundingLinked}</span> : record.fundingReview ? <span className={`radar-funding-state ${record.fundingReview.status}`}>{t.radar.fundingReviewStatus[record.fundingReview.status]}</span> : null}
               <div className="radar-source-links">

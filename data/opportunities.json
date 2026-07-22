@@ -401,6 +401,7 @@
       "en": "Opens September 3 — closes October 31, 2026 at 11:59 p.m. Montréal time",
       "ja": "2026年9月3日受付開始・10月31日23:59（モントリオール時間）締切"
     },
+    "deadlineTimeZone": "EDT (Montréal)",
     "profiles": ["artist"],
     "disciplines": ["music"],
     "summary": {

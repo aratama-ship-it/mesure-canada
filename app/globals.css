@@ -493,6 +493,22 @@ a {
   color: var(--white);
 }
 
+.choice-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.choice-copy small {
+  color: var(--muted);
+  font-size: 0.6rem;
+  font-weight: 560;
+  line-height: 1.35;
+}
+
+.choice-button[aria-pressed="true"] .choice-copy small {
+  color: #e5ebff;
+}
+
 .field-select {
   width: 100%;
   min-height: 44px;
@@ -516,6 +532,26 @@ a {
   line-height: 1.45;
 }
 
+.field-term-note {
+  margin: 8px 0 0;
+  padding: 8px;
+  border-left: 4px solid var(--blue);
+  background: #e8eef4;
+  color: #3d3c37;
+  font-size: 0.66rem;
+  line-height: 1.48;
+}
+
+.field-term-note strong {
+  display: block;
+  margin-bottom: 2px;
+}
+
+.field-term-note a {
+  color: var(--blue-dark);
+  font-weight: 800;
+}
+
 .choice-mark {
   display: grid;
   width: 18px;
@@ -533,6 +569,66 @@ a {
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.55;
+}
+
+.term-glossary {
+  margin-top: 16px;
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: #f3efe5;
+}
+
+.term-glossary > summary {
+  padding: 11px 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 850;
+}
+
+.term-glossary > summary:hover,
+.term-glossary > summary:focus-visible {
+  color: var(--blue-dark);
+  outline: 3px solid var(--yellow);
+  outline-offset: 2px;
+}
+
+.term-glossary > p {
+  margin: 0;
+  padding: 0 8px 10px;
+  color: var(--muted);
+  font-size: 0.66rem;
+  line-height: 1.45;
+}
+
+.term-glossary dl {
+  display: grid;
+  gap: 1px;
+  margin: 0;
+  background: var(--rule);
+}
+
+.term-glossary dl > div {
+  padding: 10px;
+  background: var(--paper-bright);
+}
+
+.term-glossary dt {
+  margin-bottom: 4px;
+  color: var(--blue-dark);
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+.term-glossary dd {
+  margin: 0;
+  color: #3d3c37;
+  font-size: 0.67rem;
+  line-height: 1.48;
+}
+
+.term-glossary dd a {
+  color: var(--blue-dark);
+  font-weight: 800;
 }
 
 .candidate-toolbar {
@@ -923,6 +1019,38 @@ a {
   font-weight: 850;
 }
 
+.deadline-stack {
+  display: grid;
+  max-width: 58%;
+  gap: 5px;
+  justify-items: end;
+  text-align: right;
+}
+
+.deadline-timezone {
+  display: inline-flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 3px 5px;
+  border: 1px solid var(--rule);
+  background: #eee8dc;
+  color: #4a4841;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.55rem;
+  line-height: 1.25;
+}
+
+.deadline-timezone b {
+  color: var(--blue-dark);
+  font-weight: 900;
+}
+
+.deadline-timezone.unknown {
+  border-style: dashed;
+  background: #f5e8c1;
+}
+
 .deadline.urgent {
   color: #aa281b;
 }
@@ -1040,6 +1168,21 @@ a {
   color: #3e3d37;
   font-size: 0.88rem;
   line-height: 1.55;
+}
+
+.selected-deadline {
+  display: grid;
+  gap: 4px;
+  margin: 0 0 14px;
+  padding: 9px;
+  border-left: 5px solid var(--yellow);
+  background: #f3efe5;
+}
+
+.selected-opportunity .selected-deadline p {
+  margin: 0;
+  font-size: 0.76rem;
+  font-weight: 800;
 }
 
 .decision-guide {

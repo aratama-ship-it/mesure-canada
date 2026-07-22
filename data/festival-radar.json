@@ -2948,6 +2948,7 @@
       "en": "August 10, 2026 at 10:00 EEST. Contemporary circus project with 4–8 weeks of European residencies in 2027–2028 and €15,000–20,000 in direct support. The applicant company must be registered in Finland, though artists may be based abroad. This is a partner route, not a direct Quebec application.",
       "ja": "2026年8月10日10:00 EEST締切。2027〜2028年に欧州で4〜8週間のレジデンスと15,000〜20,000ユーロの直接支援。申請団体はフィンランド登記が必須ですが、国外アーティストの参加は可能です。ケベックからの直接申請ではなく現地パートナー経由のルートです。"
     },
+    "deadlineTimeZone": "EEST (UTC+3)",
     "nextCheckDate": "2026-08-10",
     "sourceUrl": "https://cirko.fi/w-co-production-application-criteria/",
     "verifiedAt": "2026-07-22",
@@ -3149,6 +3150,7 @@
       "en": "July 31, 2026 at 18:00 JST. Emerging performing artists or researchers who can work in English or Japanese and deliver a public exchange project. Up to three months with lodging, studio, round-trip airfare, and JPY 200,000 per production. The page states no nationality restriction, but confirm Quebec eligibility; food, artist fees, and living costs are not covered.",
       "ja": "2026年7月31日18:00（日本時間）締切。英語または日本語で活動し、市民交流企画を実施できる舞台芸術の若手アーティスト／研究者が対象。最長3か月の宿泊・スタジオ・往復航空券と1制作20万円を提供。公開要項に国籍制限はありませんがケベックからの応募可否は確認推奨。食費・出演料・生活費は対象外です。"
     },
+    "deadlineTimeZone": "JST",
     "nextCheckDate": "2026-07-31",
     "sourceUrl": "https://www.kac.or.jp/en/news/20260615/",
     "verifiedAt": "2026-07-22",

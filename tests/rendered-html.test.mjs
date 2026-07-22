@@ -77,6 +77,13 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(workbenchSource, /className="action-checklist"/);
   assert.match(workbenchSource, /<details className="regional-programs">/);
   assert.doesNotMatch(workbenchSource, /<details className="regional-programs" open>/);
+  assert.match(html, /Termes utilisés sur MESURE/);
+  assert.match(html, /Personne protégée/);
+  assert.match(html, /Groupe d’artistes sans personne morale distincte/);
+  assert.match(html, /Présentation conçue pour obtenir une programmation, une tournée ou des rencontres professionnelles/);
+  assert.match(html, /canada\.ca\/en\/services\/immigration-citizenship\/helpcentre\/glossary\.html/);
+  assert.match(html, /Heure locale à confirmer/);
+  assert.match(workbenchSource, /DeadlineTimeZoneNote/);
   assert.match(html, /Votre statut au Canada/);
   assert.match(html, /href="\/radar"/);
   assert.match(html, /Consulter le registre de veille/);
@@ -109,6 +116,10 @@ test("server-renders the monitoring ledger on its own route", async () => {
   assert.match(html, /Pistes fondées sur les critères officiels/);
   assert.match(html, /Vérifié : aucun lien prudent pour l’instant/);
   assert.match(html, /En attente de modalités suffisantes/);
+  assert.match(html, /Termes utilisés sur MESURE/);
+  assert.match(html, /EEST \(UTC\+3\)/);
+  assert.match(html, />JST</);
+  assert.match(html, /Heure locale à confirmer/);
   assert.equal([...html.matchAll(/class="radar-row"/g)].length, 166);
   assert.match(html, /Retour à la recherche d’occasions/);
   assert.doesNotMatch(html, /class="workbench"/);
@@ -140,6 +151,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.verifiedAt, `${record.id}.verifiedAt`);
     assert.ok(!String(record.country).includes("海外"));
     assert.ok(record.deadlineLabel.ja);
+    if (record.deadlineTimeZone) {
+      assert.ok(record.deadlineDate, `${record.id}.deadlineTimeZone requires deadlineDate`);
+      assert.ok(typeof record.deadlineTimeZone === "string", `${record.id}.deadlineTimeZone`);
+    }
     assert.ok(record.summary.ja);
     assert.ok(record.requirements.ja.length > 0);
     assert.ok(["supported", "conditional", "self_funded", "verify", "not_direct"].includes(record.decisionGuide.quebecAssessment.state));
@@ -200,6 +215,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.match(cmim.summary.ja, /無料宿泊/);
   assert.equal(cmim.decisionGuide.quebecAssessment.state, "supported");
   assert.match(cmim.decisionGuide.quebecAssessment.note.ja, /同等交通/);
+  assert.equal(cmim.deadlineTimeZone, "EDT (Montréal)");
 
   for (const record of funding) {
     assert.ok(/^https?:\/\//.test(record.sourceUrl));
@@ -374,6 +390,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
         assert.ok(record.deadlineDate >= new Date().toISOString().slice(0, 10), `${record.id} is marked open after its deadline`);
       }
     }
+    if (record.deadlineTimeZone) {
+      assert.ok(record.deadlineDate, `${record.id}.deadlineTimeZone requires deadlineDate`);
+      assert.ok(typeof record.deadlineTimeZone === "string", `${record.id}.deadlineTimeZone`);
+    }
     if (["open", "upcoming"].includes(record.status) && record.deadlineDate && record.nextCheckDate) {
       assert.ok(record.nextCheckDate <= record.deadlineDate, `${record.id}.nextCheckDate must not fall after its deadline`);
     }
@@ -413,6 +433,10 @@ test("opportunity and funding records preserve evidence fields", async () => {
       }
     }
   }
+
+  const festivalRadarById = new Map(festivalRadar.map((record) => [record.id, record]));
+  assert.equal(festivalRadarById.get("cirko-w-coproduction-2028-regional")?.deadlineTimeZone, "EEST (UTC+3)");
+  assert.equal(festivalRadarById.get("kyoto-art-center-performing-arts-2027-open")?.deadlineTimeZone, "JST");
 
   const radarDecisionGuideIds = [
     "idfa-forum-2026",
