@@ -12,6 +12,7 @@ const baseAnswers = {
   organizationRegistration: "unsure",
   fiscalSponsorStatus: "unsure",
   sinStatus: "unsure",
+  usPaymentStatus: "unsure",
   canadaArrival: "unsure",
   ageBand: "unsure",
 };
@@ -197,8 +198,42 @@ test("residence scopes distinguish cities, metro areas, provinces and Canada", (
   assert.equal(supportsResidence({ residencies: ["us_mid_atlantic"] }, "new_york"), true);
   assert.equal(supportsResidence({ residencies: ["us_new_england"] }, "vermont"), true);
   assert.equal(supportsResidence({ residencies: ["massachusetts"] }, "vermont"), false);
+  assert.equal(supportsResidence({ residencies: ["california"] }, "california"), true);
+  assert.equal(supportsResidence({ residencies: ["illinois_non_chicago"] }, "chicago_metro"), false);
+  assert.equal(supportsResidence({ residencies: ["illinois"] }, "chicago_metro"), true);
+  assert.equal(supportsResidence({ residencies: ["texas"] }, "houston_city"), true);
+  assert.equal(supportsResidence({ residencies: ["austin_msa"] }, "texas_other"), false);
+  assert.equal(supportsResidence({ residencies: ["houston_city"] }, "houston_city"), true);
   assert.equal(supportsResidence({ residencies: ["us_midwest"] }, "us_midwest"), true);
   assert.equal(supportsResidence({ residencies: ["us_west"] }, "us_south"), false);
+});
+
+test("Houston non-citizen route requires its published U.S. payment conditions", () => {
+  const eligibility = {
+    individualStatuses: ["citizen", "permanent", "temporary_work"],
+    conditionalStatuses: ["temporary_work"],
+    usPaymentEligibilityRequired: true,
+  };
+  const missing = evaluate("artist", eligibility, {
+    legalStatus: "temporary_work",
+    usPaymentStatus: "no",
+  });
+  assert.equal(missing.state, "ineligible");
+  assert.ok(missing.reasonKeys.includes("usPaymentMissing"));
+  assert.equal(
+    evaluate("artist", eligibility, {
+      legalStatus: "temporary_work",
+      usPaymentStatus: "yes",
+    }).state,
+    "conditional",
+  );
+  assert.equal(
+    evaluate("artist", eligibility, {
+      legalStatus: "citizen",
+      usPaymentStatus: "no",
+    }).state,
+    "possible",
+  );
 });
 
 test("US fiscal sponsorship and organization registration are separate gates", () => {

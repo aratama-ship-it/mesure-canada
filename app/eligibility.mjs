@@ -39,6 +39,7 @@ export function evaluateFundingEligibility({
   organizationRegistration,
   fiscalSponsorStatus,
   sinStatus,
+  usPaymentStatus,
   canadaArrival,
   ageBand,
 }) {
@@ -178,6 +179,20 @@ export function evaluateFundingEligibility({
     }
   }
 
+  if (
+    profile !== "organization" &&
+    rules.usPaymentEligibilityRequired &&
+    rules.conditionalStatuses?.includes(legalStatus)
+  ) {
+    if (usPaymentStatus === "unsure") {
+      state = raiseState(state, "verify");
+      addReason("usPaymentUnknown");
+    } else if (usPaymentStatus === "no") {
+      state = "ineligible";
+      addReason("usPaymentMissing");
+    }
+  }
+
   if (profile === "artist" && rules.arrivalOnOrAfter === "2019-01-01") {
     if (canadaArrival === "unsure") {
       state = raiseState(state, "verify");
@@ -233,6 +248,12 @@ const residenceScopes = {
   maine: new Set(["united_states", "us_new_england", "maine"]),
   new_hampshire: new Set(["united_states", "us_new_england", "new_hampshire"]),
   massachusetts: new Set(["united_states", "us_new_england", "massachusetts"]),
+  california: new Set(["united_states", "us_west", "california"]),
+  chicago_metro: new Set(["united_states", "us_midwest", "illinois", "chicago_metro"]),
+  illinois_non_chicago: new Set(["united_states", "us_midwest", "illinois", "illinois_non_chicago"]),
+  austin_msa: new Set(["united_states", "us_mid_america", "texas", "austin_msa"]),
+  houston_city: new Set(["united_states", "us_mid_america", "texas", "houston_city"]),
+  texas_other: new Set(["united_states", "us_mid_america", "texas"]),
   us_new_england_other: new Set(["united_states", "us_new_england"]),
   us_mid_atlantic_other: new Set(["united_states", "us_mid_atlantic"]),
   us_midwest: new Set(["united_states", "us_midwest"]),

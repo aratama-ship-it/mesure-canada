@@ -257,7 +257,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
-      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick", "nova_scotia", "prince_edward_island", "newfoundland_labrador", "yukon", "northwest_territories", "nunavut", "united_states", "us_new_england", "us_mid_atlantic", "us_midwest", "us_mid_america", "us_south", "us_west", "new_york", "vermont", "maine", "new_hampshire", "massachusetts"].includes(scope)
+      ["canada", "quebec", "quebec_city", "montreal", "ontario", "gta", "toronto", "ottawa", "british_columbia", "alberta", "saskatchewan", "manitoba", "new_brunswick", "nova_scotia", "prince_edward_island", "newfoundland_labrador", "yukon", "northwest_territories", "nunavut", "united_states", "us_new_england", "us_mid_atlantic", "us_midwest", "us_mid_america", "us_south", "us_west", "new_york", "vermont", "maine", "new_hampshire", "massachusetts", "california", "illinois", "illinois_non_chicago", "chicago_metro", "texas", "austin_msa", "houston_city"].includes(scope)
     ));
     assert.ok(["mobility_export", "home_base_creation", "career_support"].includes(record.purpose));
     assert.ok(["grant", "paid_program"].includes(record.kind));
@@ -281,9 +281,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
     assertISODate(record.eligibility.verifiedAt, `${record.id}.eligibility.verifiedAt`);
   }
 
-  assert.equal(funding.length, 63);
-  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 42);
-  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 21);
+  assert.equal(funding.length, 75);
+  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 50);
+  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 25);
   assert.equal(fundingById.get("cca-touring").deadlineDate, "2026-10-07");
   assert.equal(fundingById.get("calq-travel").deadlineDate, null);
   assert.equal(fundingById.get("bcac-performing-artists-2026").deadlineDate, "2026-05-27");
@@ -294,6 +294,9 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(fundingById.get("nefa-nest-fy27").deadlineDate, "2026-08-03");
   assert.equal(fundingById.get("nysca-support-for-artists-fy27").eligibility.fiscalSponsorRequired, true);
   assert.equal(fundingById.get("usartists-international-2026").eligibility.collectiveRule, "usai_half");
+  assert.equal(fundingById.get("haa-saci-2027").eligibility.usPaymentEligibilityRequired, true);
+  assert.deepEqual(fundingById.get("iac-creative-projects-fy27").residencies, ["illinois_non_chicago"]);
+  assert.deepEqual(fundingById.get("austin-elevate-fy27").residencies, ["austin_msa"]);
 
   assert.ok(festivalRadar.length >= 166);
   assert.equal(new Set(festivalRadar.map((record) => record.id)).size, festivalRadar.length, "Duplicate festival radar id");
