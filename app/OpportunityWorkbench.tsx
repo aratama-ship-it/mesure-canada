@@ -633,6 +633,7 @@ const copy = {
     workflowLabel: "Parcours de vérification",
     matcherLabel: "Correspondance entre appels et financement",
     eligibleCostsLabel: "Types de dépenses admissibles",
+    aboutSummary: "À propos de MESURE et règles de confiance",
     whyKicker: "Pourquoi MESURE",
     whyTitle: "Une liste dit ce qui existe. Une mesure dit ce qui manque.",
     whyBody: "Les sites officiels restent la source de vérité. MESURE relie une occasion réelle aux aides accessibles selon le lieu de résidence, le statut, l’historique local et le moment du projet.",
@@ -844,6 +845,7 @@ const copy = {
     workflowLabel: "Matching workflow",
     matcherLabel: "Opportunity and funding matcher",
     eligibleCostsLabel: "Eligible cost types",
+    aboutSummary: "About MESURE and its trust rules",
     whyKicker: "Why MESURE",
     whyTitle: "A list tells you what exists. A measure tells you what is missing.",
     whyBody: "Official websites remain the source of truth. MESURE connects a real opportunity with programs based on residence, status, local history and timing.",
@@ -1055,6 +1057,7 @@ const copy = {
     workflowLabel: "照合の手順",
     matcherLabel: "公募と助成制度の照合",
     eligibleCostsLabel: "対象となる経費",
+    aboutSummary: "MESUREについて・信頼性のルール",
     whyKicker: "MESUREの目的",
     whyTitle: "一覧は「何があるか」を示す。物差しは「何が足りないか」を示す。",
     whyBody: "最終的な根拠は各機関の公式サイトです。MESUREは居住地、在留資格、地域での居住歴、申請時期をもとに、実在する公募と制度を結びつけます。",
@@ -1856,7 +1859,10 @@ export function OpportunityWorkbench() {
         </section>
       </section>
 
-      <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
+      <details className="about-disclosure">
+        <summary><span className="section-kicker">ABOUT</span><strong>{t.aboutSummary}</strong></summary>
+        <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
+      </details>
       <footer className="footer"><div><strong>{t.footer}</strong><span>{t.footerNote}</span></div><Link className="footer-ledger-link" href="/radar">{t.radarLink} →</Link></footer>
     </main>
   );

@@ -87,6 +87,8 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(workbenchSource, /className="action-checklist"/);
   assert.match(workbenchSource, /<details className="regional-programs">/);
   assert.doesNotMatch(workbenchSource, /<details className="regional-programs" open>/);
+  assert.match(workbenchSource, /<details className="about-disclosure">/);
+  assert.doesNotMatch(workbenchSource, /<details className="about-disclosure" open>/);
   assert.match(html, /Termes utilisés sur MESURE/);
   assert.match(html, /Personne protégée/);
   assert.match(html, /Groupe d’artistes sans personne morale distincte/);
