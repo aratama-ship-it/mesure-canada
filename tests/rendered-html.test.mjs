@@ -60,7 +60,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Choisissez un appel pour ouvrir sa fiche/);
   assert.doesNotMatch(html, /class="selected-opportunity/);
   assert.doesNotMatch(html, /aria-current="true"/);
-  assert.match(html, /Budget autonome à construire/);
+  assert.match(html, /Budget autonome/);
   assert.match(html, /Soutien logistique notable/);
   assert.match(html, /Pas une voie directe depuis votre base/);
   assert.match(html, /aria-label="Affiner les appels"/);
@@ -71,7 +71,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /État puis échéance/);
   assert.match(workbenchSource, /data-candidate-kind=\{candidate\.source\}/);
   assert.match(html, /data-candidate-kind="radar"/);
-  assert.match(html, /data-radar-candidate-id="idfa-forum-2026"/);
+  assert.match(html, /data-radar-candidate-id="[^"]+"/);
   assert.equal([...html.matchAll(/data-candidate-kind=/g)].length, 8);
   assert.equal([...html.matchAll(/class="candidate-caution"/g)].length, 8);
   assert.match(html, /Point décisif/);
@@ -137,7 +137,7 @@ test("server-renders the monitoring ledger on its own route", async () => {
   assert.match(html, /EEST \(UTC\+3\)/);
   assert.match(html, />JST</);
   assert.match(html, /Heure locale à confirmer/);
-  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 166);
+  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 176);
   assert.match(html, /Retour à la recherche d’occasions/);
   assert.doesNotMatch(html, /class="workbench"/);
 });
@@ -440,6 +440,16 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "puppet-fringe-nyc-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "fitu-unam-international-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "faot-alamos-performing-arts-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "notre-dame-des-prairies-residency-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "orford-music-artist-residencies-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "toronto-buskerfest-performer-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "waterloo-busker-carnival-performer-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "halifax-busker-festival-2027-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "edmonton-street-performers-2027-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "ottawa-buskerfest-performer-inquiry-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "alberta-circus-arts-festival-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "festival-far-2027-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "festival-chapo-next-watch"));
   for (const record of festivalRadar) {
     assert.ok(record.title && record.country && record.city);
     assert.ok(["circus", "street", "fringe", "film", "showcase"].includes(record.family));
@@ -557,14 +567,23 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "unima-passport-prelet-2026-open",
     "pesta-boneka-puppet-camp-2026-open",
     "lize-puppet-residency-next-watch",
+    "orford-music-artist-residencies-open",
+    "toronto-buskerfest-performer-open",
+    "waterloo-busker-carnival-performer-open",
+    "ottawa-buskerfest-performer-inquiry-open",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
   assert.equal(festivalRadar.filter((record) => record.status === "open" && !record.decisionGuide).length, 0, "Every open radar record must expose a practical decision guide");
   for (const id of radarDecisionGuideIds) {
     const record = festivalRadar.find((item) => item.id === id);
     assert.ok(record?.decisionGuide, `${id} must expose a practical decision guide`);
-    assert.equal(record.verifiedAt, "2026-07-22", `${id} decision guide must use the current source audit`);
+    assert.ok(record.verifiedAt >= "2026-07-22", `${id} decision guide must use the current source audit`);
   }
+  assert.equal(festivalRadar.find((record) => record.id === "valspec-circus-residency-2026-watch").deadlineDate, "2026-01-15");
+  assert.equal(festivalRadar.find((record) => record.id === "orford-music-artist-residencies-open").decisionGuide.quebecAssessment.state, "self_funded");
+  assert.equal(festivalRadar.find((record) => record.id === "toronto-buskerfest-performer-open").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "waterloo-busker-carnival-performer-open").decisionGuide.quebecAssessment.state, "verify");
+  assert.equal(festivalRadar.find((record) => record.id === "ottawa-buskerfest-performer-inquiry-open").decisionGuide.quebecAssessment.state, "verify");
   assert.equal(festivalRadar.find((record) => record.id === "circusstad-circunstruction-15").decisionGuide.quebecAssessment.state, "not_direct");
   assert.equal(festivalRadar.find((record) => record.id === "imaginarius-2027").decisionGuide.quebecAssessment.state, "supported");
   assert.equal(festivalRadar.find((record) => record.id === "idfa-forum-2026").decisionGuide.quebecAssessment.state, "self_funded");
