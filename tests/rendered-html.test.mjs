@@ -99,7 +99,12 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(html, /Consulter le registre de veille/);
   assert.doesNotMatch(html, /id="festival-radar-heading"/);
   assert.match(html, /id="funding-panel" tabindex="-1"/);
-  assert.match(workbenchSource, /scrollIntoView\(\{ behavior: reduceMotion \? "auto" : "smooth", block: "start" \}\)/);
+  assert.doesNotMatch(workbenchSource, /scrollIntoView/);
+  assert.match(workbenchSource, /setMobileDetailOpen\(true\)/);
+  assert.match(workbenchSource, /className="mobile-detail-bar"/);
+  assert.match(workbenchSource, /document\.body\.classList\.add\("mobile-detail-open"\)/);
+  assert.match(workbenchSource, /aria-expanded=\{profileExpanded\}/);
+  assert.match(workbenchSource, /aria-expanded=\{baseExpanded\}/);
   assert.equal([...workbenchSource.matchAll(/const \[language, setLanguage\] = usePersistentLanguage\(\);/g)].length, 2);
   assert.match(workbenchSource, /mesure-canada-language/);
   assert.match(workbenchSource, /window\.localStorage\.setItem/);

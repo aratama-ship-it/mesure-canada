@@ -376,6 +376,14 @@ const copy = {
     baseKicker: "Point zéro de la règle",
     baseHeading: "Où résidez-vous actuellement?",
     baseNote: "Le pays, l’État ou la province changent les programmes visibles; la nationalité est vérifiée séparément.",
+    mobileUi: {
+      currentBase: "Lieu actuel",
+      currentProfile: "Profil actuel",
+      change: "Modifier",
+      collapse: "Réduire",
+      detail: "Fiche pratique",
+      closeDetail: "Fermer",
+    },
     countryLabel: "Pays de résidence",
     countries: { canada: "Canada", united_states: "États-Unis" },
     usPriorityRegions: "États et zones urbaines prioritaires",
@@ -657,6 +665,14 @@ const copy = {
     baseKicker: "Zero point on the ruler",
     baseHeading: "Where do you currently live?",
     baseNote: "Country, state or province changes the programs shown; nationality is checked separately.",
+    mobileUi: {
+      currentBase: "Current base",
+      currentProfile: "Current profile",
+      change: "Change",
+      collapse: "Collapse",
+      detail: "Practical brief",
+      closeDetail: "Close",
+    },
     countryLabel: "Country of residence",
     countries: { canada: "Canada", united_states: "United States" },
     usPriorityRegions: "Priority states and city areas",
@@ -860,6 +876,14 @@ const copy = {
     baseKicker: "物差しのゼロ地点",
     baseHeading: "現在どこに住んでいますか？",
     baseNote: "国・州・準州で表示制度が変わります。国籍・在留資格は次の質問で別に確認します。",
+    mobileUi: {
+      currentBase: "現在の拠点",
+      currentProfile: "現在の条件",
+      change: "変更",
+      collapse: "小さくする",
+      detail: "選んだ公募の詳細",
+      closeDetail: "閉じる",
+    },
     countryLabel: "居住国",
     countries: { canada: "カナダ", united_states: "アメリカ合衆国" },
     usPriorityRegions: "重点州・都市圏",
@@ -1333,8 +1357,12 @@ export function OpportunityWorkbench() {
   const [canadaArrival, setCanadaArrival] = useState<CanadaArrival>("unsure");
   const [ageBand, setAgeBand] = useState<AgeBand>("unsure");
   const [selectedCandidateId, setSelectedCandidateId] = useState("");
+  const [baseExpanded, setBaseExpanded] = useState(false);
+  const [profileExpanded, setProfileExpanded] = useState(false);
+  const [mobileDetailOpen, setMobileDetailOpen] = useState(false);
   const [visibleCandidateCount, setVisibleCandidateCount] = useState(candidatePageSize);
   const fundingPanelRef = useRef<HTMLElement>(null);
+  const mobileDetailCloseRef = useRef<HTMLButtonElement>(null);
   const [fundingPagination, setFundingPagination] = useState<{
     contextKey: string;
     counts: Partial<Record<FundingSection, number>>;
@@ -1346,6 +1374,53 @@ export function OpportunityWorkbench() {
   const showAgeQuestion = profile === "artist" && fundingPrograms.some((funding) =>
     funding.profiles.includes("artist") && supportsResidence(funding, residence) && funding.eligibility.ageRange
   );
+
+  useEffect(() => {
+    if (!mobileDetailOpen || typeof window === "undefined") return;
+    const previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null;
+    const panel = fundingPanelRef.current;
+    document.body.classList.add("mobile-detail-open");
+    panel?.scrollTo({ top: 0 });
+    mobileDetailCloseRef.current?.focus();
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setMobileDetailOpen(false);
+        return;
+      }
+      if (event.key !== "Tab" || !panel) return;
+      const focusable = Array.from(panel.querySelectorAll<HTMLElement>(
+        'button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])',
+      )).filter((element) => !element.hasAttribute("hidden"));
+      const first = focusable[0];
+      const last = focusable.at(-1);
+      if (!first || !last) return;
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.classList.remove("mobile-detail-open");
+      document.removeEventListener("keydown", handleKeyDown);
+      previousFocus?.focus();
+    };
+  }, [mobileDetailOpen]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const mobileQuery = window.matchMedia("(max-width: 760px)");
+    const closeWhenDesktop = () => {
+      if (!mobileQuery.matches) setMobileDetailOpen(false);
+    };
+    mobileQuery.addEventListener("change", closeWhenDesktop);
+    return () => mobileQuery.removeEventListener("change", closeWhenDesktop);
+  }, []);
 
   const filteredOpportunities = useMemo(
     () => opportunities
@@ -1442,13 +1517,7 @@ export function OpportunityWorkbench() {
   const selectCandidate = (candidateId: string) => {
     setSelectedCandidateId(candidateId);
     if (typeof window !== "undefined" && window.matchMedia("(max-width: 760px)").matches) {
-      window.requestAnimationFrame(() => {
-        const panel = fundingPanelRef.current;
-        if (!panel) return;
-        const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        panel.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "start" });
-        panel.focus({ preventScroll: true });
-      });
+      setMobileDetailOpen(true);
     }
   };
 
@@ -1590,6 +1659,7 @@ export function OpportunityWorkbench() {
         <button
           className={`opportunity-row ${candidate.source === "radar" ? "radar-candidate" : ""}`}
           type="button"
+          data-candidate-id={candidate.candidateId}
           data-candidate-kind={candidate.source}
           data-radar-candidate-id={candidate.source === "radar" ? candidate.radar.id : undefined}
           aria-current={selectedCandidate?.candidateId === candidate.candidateId}
@@ -1658,14 +1728,18 @@ export function OpportunityWorkbench() {
 
       <section className="base-ruler" aria-labelledby="base-heading">
         <div className="base-copy"><span className="section-kicker">{t.baseKicker}</span><h3 id="base-heading">{t.baseHeading}</h3><p>{t.baseNote}</p></div>
-        <div className="base-groups">
+        <button className="base-mobile-summary" type="button" aria-expanded={baseExpanded} aria-controls="base-options" onClick={() => setBaseExpanded((expanded) => !expanded)}>
+          <span><small>{t.mobileUi.currentBase}</small><strong>{t.countries[country]} · {t.residences[residence]}</strong></span>
+          <b>{baseExpanded ? t.mobileUi.collapse : t.mobileUi.change}</b>
+        </button>
+        <div className={`base-groups ${baseExpanded ? "is-open" : ""}`} id="base-options">
           <fieldset className="base-group base-country"><legend>{t.countryLabel}</legend><div>{countryOptions.map((item) => <button type="button" key={item} aria-pressed={country === item} onClick={() => { setCountry(item); setResidence(item === "canada" ? "montreal" : "new_york"); setLegalStatus("unsure"); setOrganizationRegistration("unsure"); setFiscalSponsorStatus("unsure"); setUsPaymentStatus("unsure"); }}><span aria-hidden="true">{country === item ? "◆" : "◇"}</span>{t.countries[item]}</button>)}</div></fieldset>
           {country === "canada" ? <>
-            {primaryCanadaResidenceRegions.map((region) => <fieldset className="base-group" key={region}><legend>{t.regions[region]}</legend><div>{canadaResidenceGroups[region].map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>)}
-            <fieldset className="base-group base-group-other"><legend>{t.otherRegions}</legend><div>{otherCanadaResidenceRegions.flatMap((region) => canadaResidenceGroups[region]).map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
+            {primaryCanadaResidenceRegions.map((region) => <fieldset className="base-group" key={region}><legend>{t.regions[region]}</legend><div>{canadaResidenceGroups[region].map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => { setResidence(item); setBaseExpanded(false); }}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>)}
+            <fieldset className="base-group base-group-other"><legend>{t.otherRegions}</legend><div>{otherCanadaResidenceRegions.flatMap((region) => canadaResidenceGroups[region]).map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => { setResidence(item); setBaseExpanded(false); }}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
           </> : <>
-            <fieldset className="base-group base-group-other"><legend>{t.usPriorityRegions}</legend><div>{usPriorityResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
-            <fieldset className="base-group base-group-other"><legend>{t.usOtherRegions}</legend><div>{usOtherResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => setResidence(item)}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
+            <fieldset className="base-group base-group-other"><legend>{t.usPriorityRegions}</legend><div>{usPriorityResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => { setResidence(item); setBaseExpanded(false); }}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
+            <fieldset className="base-group base-group-other"><legend>{t.usOtherRegions}</legend><div>{usOtherResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => { setResidence(item); setBaseExpanded(false); }}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
             <p className="us-beta-note">{t.usBetaNote}</p>
           </>}
         </div>
@@ -1678,6 +1752,11 @@ export function OpportunityWorkbench() {
       <section className="workbench" aria-label={t.matcherLabel}>
         <aside className="panel panel-profile">
           <div className="panel-heading"><span className="section-kicker">01</span><h3>{t.profileHeading}</h3></div>
+          <button className="profile-mobile-summary" type="button" aria-expanded={profileExpanded} aria-controls="profile-fields" onClick={() => setProfileExpanded((expanded) => !expanded)}>
+            <span><small>{t.mobileUi.currentProfile}</small><strong>{t.profiles[profile]} · {t.disciplines[discipline]}</strong></span>
+            <b>{profileExpanded ? t.mobileUi.collapse : t.mobileUi.change}</b>
+          </button>
+          <div className={`profile-fields ${profileExpanded ? "is-open" : ""}`} id="profile-fields">
           <aside className="privacy-note" aria-label={t.privacyNotice.label}>
             <strong>{t.privacyNotice.label}</strong>
             <span>{t.privacyNotice.text}</span>
@@ -1708,6 +1787,7 @@ export function OpportunityWorkbench() {
           <fieldset className="field-group"><legend>{t.discipline}</legend><div className="choice-stack">{disciplineOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={discipline === item} onClick={() => { setDiscipline(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{discipline === item ? "×" : ""}</span><span>{t.disciplines[item]}</span></button>)}</div></fieldset>
           <p className="profile-note">{t.profileNote}</p>
           <TerminologyGlossary language={language} country={country} />
+          </div>
         </aside>
 
         <section className="panel panel-opportunities">
@@ -1751,7 +1831,11 @@ export function OpportunityWorkbench() {
           </div>
         </section>
 
-        <section className="panel panel-funding" id="funding-panel" ref={fundingPanelRef} tabIndex={-1} aria-labelledby="funding-panel-heading">
+        <section className={`panel panel-funding ${mobileDetailOpen ? "is-mobile-open" : ""}`} id="funding-panel" ref={fundingPanelRef} tabIndex={-1} role={mobileDetailOpen ? "dialog" : undefined} aria-modal={mobileDetailOpen || undefined} aria-labelledby={mobileDetailOpen ? "mobile-detail-title" : "funding-panel-heading"}>
+          <div className="mobile-detail-bar">
+            <span><small>{t.mobileUi.detail}</small><strong id="mobile-detail-title">{selectedCandidate ? candidateTitle(selectedCandidate) : t.fundingHeading}</strong></span>
+            <button ref={mobileDetailCloseRef} type="button" onClick={() => setMobileDetailOpen(false)} aria-label={t.mobileUi.closeDetail}><span aria-hidden="true">×</span>{t.mobileUi.closeDetail}</button>
+          </div>
           <div className="panel-heading"><span className="section-kicker">03</span><h3 id="funding-panel-heading">{t.fundingHeading}</h3></div>
           {selectedCandidate ? selectedCandidate.source === "radar" ? <>
             <article className="selected-opportunity radar-selected-opportunity"><span className="section-kicker">{t.radar.candidateChosen}</span><h4>{selectedCandidate.radar.title}</h4><p>{placeNames[language][selectedCandidate.radar.city] ?? selectedCandidate.radar.city} · {placeNames[language][selectedCandidate.radar.country] ?? selectedCandidate.radar.country} · {t.radar.families[selectedCandidate.radar.family]}</p><div className="selected-radar-flags"><span className={`status-tag ${selectedCandidate.status}`}>{t.radar.status[selectedCandidate.status]}</span><span>{t.radar.participation[selectedCandidate.radar.participation]}</span></div><div className="selected-deadline"><p>{selectedCandidate.radar.deadlineLabel[language]}</p>{selectedCandidate.radar.deadlineDate ? <DeadlineTimeZoneNote timeZone={selectedCandidate.radar.deadlineTimeZone} language={language} /> : null}</div>{selectedCandidate.radar.decisionGuide ? renderDecisionGuide(selectedCandidate.radar.decisionGuide) : null}<div className="radar-source-links"><a className="source-link" href={selectedCandidate.radar.sourceUrl} target="_blank" rel="noreferrer">{t.radar.official}</a>{selectedCandidate.radar.networkSourceUrl ? <a className="source-link secondary-source-link" href={selectedCandidate.radar.networkSourceUrl} target="_blank" rel="noreferrer">{t.radar.network}</a> : null}</div><span className="verified-date">{t.radar.verified}: {selectedCandidate.radar.verifiedAt}</span></article>

@@ -301,6 +301,12 @@ a {
   gap: 12px;
 }
 
+.base-mobile-summary,
+.profile-mobile-summary,
+.mobile-detail-bar {
+  display: none;
+}
+
 .base-group {
   min-width: 0;
   margin: 0;
@@ -2138,11 +2144,67 @@ a {
 
   .base-ruler {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .base-mobile-summary,
+  .profile-mobile-summary {
+    display: flex;
+    width: 100%;
+    min-height: 58px;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    border: 2px solid var(--ink);
+    background: var(--paper-bright);
+    color: var(--ink);
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .base-mobile-summary > span,
+  .profile-mobile-summary > span {
+    display: grid;
+    min-width: 0;
+    gap: 3px;
+  }
+
+  .base-mobile-summary small,
+  .profile-mobile-summary small,
+  .mobile-detail-bar small {
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.58rem;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .base-mobile-summary strong,
+  .profile-mobile-summary strong {
+    overflow: hidden;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+  }
+
+  .base-mobile-summary b,
+  .profile-mobile-summary b {
+    flex: 0 0 auto;
+    padding: 7px 8px;
+    background: var(--blue);
+    color: var(--white);
+    font-size: 0.66rem;
   }
 
   .base-groups {
+    display: none;
     grid-template-columns: 1fr;
+  }
+
+  .base-groups.is-open {
+    display: grid;
   }
 
   .base-group-other {
@@ -2154,16 +2216,27 @@ a {
   }
 
   .steps {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .step {
+    display: grid;
+    min-height: 58px;
+    gap: 4px;
+    align-content: center;
+    padding: 7px 8px;
     border-right: 0;
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 0;
+    text-align: center;
   }
 
-  .step:last-child {
-    border-bottom: 0;
+  .step:not(:last-child) {
+    border-right: 1px solid var(--ink);
+  }
+
+  .step strong {
+    font-size: 0.66rem;
+    line-height: 1.25;
   }
 
   .workbench {
@@ -2174,6 +2247,102 @@ a {
   .panel {
     border-right: 0;
     border-bottom: 2px solid var(--ink);
+  }
+
+  .panel-profile {
+    padding: 16px;
+  }
+
+  .panel-profile .panel-heading {
+    margin-bottom: 10px;
+  }
+
+  .profile-fields {
+    display: none;
+    padding-top: 18px;
+  }
+
+  .profile-fields.is-open {
+    display: block;
+  }
+
+  body.mobile-detail-open {
+    overflow: hidden;
+  }
+
+  .panel-funding {
+    display: none;
+  }
+
+  .panel-funding.is-mobile-open {
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 0 16px calc(36px + env(safe-area-inset-bottom));
+    border: 0;
+    background: #f9f4e9;
+    box-shadow: none;
+  }
+
+  .panel-funding.is-mobile-open > .panel-heading {
+    display: none;
+  }
+
+  .mobile-detail-bar {
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    display: flex;
+    min-height: 72px;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -16px 18px;
+    padding: calc(10px + env(safe-area-inset-top)) 14px 10px;
+    border-bottom: 3px solid var(--ink);
+    border-left: 8px solid var(--blue);
+    background: var(--yellow);
+  }
+
+  .mobile-detail-bar > span {
+    display: grid;
+    min-width: 0;
+    gap: 3px;
+  }
+
+  .mobile-detail-bar strong {
+    display: -webkit-box;
+    overflow: hidden;
+    font-size: 0.78rem;
+    line-height: 1.3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .mobile-detail-bar button {
+    display: inline-flex;
+    flex: 0 0 auto;
+    min-height: 44px;
+    gap: 5px;
+    align-items: center;
+    padding: 8px 10px;
+    border: 2px solid var(--ink);
+    background: var(--paper-bright);
+    color: var(--ink);
+    cursor: pointer;
+    font-size: 0.68rem;
+    font-weight: 900;
+  }
+
+  .mobile-detail-bar button span {
+    font-size: 1.25rem;
+    line-height: 0.8;
   }
 
   .panel:last-child {
