@@ -267,6 +267,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
         assert.ok(record.nextCheckDate <= record.deadlineDate, `${record.id}.nextCheckDate must not fall after an active deadline`);
       }
     }
+    if (record.deadlineTimeZone) {
+      assert.ok(record.deadlineDate, `${record.id}.deadlineTimeZone requires deadlineDate`);
+      assert.doesNotThrow(
+        () => new Intl.DateTimeFormat("en", { timeZone: record.deadlineTimeZone }).format(),
+        `${record.id}.deadlineTimeZone must be an IANA time zone`,
+      );
+    }
     assert.ok(record.profiles.length > 0);
     assert.ok(record.residencies.length > 0);
     assert.ok(record.residencies.every((scope) =>
@@ -308,6 +315,8 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.equal(fundingById.get("nysca-support-for-artists-fy27").eligibility.fiscalSponsorRequired, true);
   assert.equal(fundingById.get("usartists-international-2026").eligibility.collectiveRule, "usai_half");
   assert.equal(fundingById.get("haa-saci-2027").eligibility.usPaymentEligibilityRequired, true);
+  assert.equal(fundingById.get("haa-saci-2027").deadlineTimeZone, "America/Chicago");
+  assert.equal(fundingById.get("haa-festival-grant-2027").deadlineTimeZone, "America/Chicago");
   assert.deepEqual(fundingById.get("iac-creative-projects-fy27").residencies, ["illinois_non_chicago"]);
   assert.deepEqual(fundingById.get("austin-elevate-fy27").residencies, ["austin_msa"]);
 

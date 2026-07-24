@@ -2355,6 +2355,7 @@
   {
     "id": "haa-saci-2027",
     "deadlineDate": "2026-07-24",
+    "deadlineTimeZone": "America/Chicago",
     "nextCheckDate": "2026-07-24",
     "name": "Houston Arts Alliance — Support for Artists and Creative Individuals 2027",
     "funder": "Houston Arts Alliance / City of Houston",
@@ -2375,14 +2376,15 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Adresse physique dans la ville de Houston et présentation publique requises. Les non-citoyens américains sont explicitement admis avec compte chèque américain, SSN actif et capacité de recevoir directement les fonds.", "en": "Requires a physical City of Houston address and public presentation. Non-U.S. citizens are explicitly allowed with a domestic U.S. checking account, active SSN and ability to accept the grant directly.", "ja": "ヒューストン市内の実住所と一般公開が必要です。非米国市民も、米国内の当座預金口座、有効なSSN、助成金を直接受領できることの3条件で明示的に申請可能です。" },
       "sourceUrl": "https://files.haatx.com/grants/2027_Annual_Grants_Guidelines.pdf",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-07-24"
     },
     "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-07-24"
   },
   {
     "id": "haa-festival-grant-2027",
     "deadlineDate": "2026-07-24",
+    "deadlineTimeZone": "America/Chicago",
     "nextCheckDate": "2026-07-24",
     "name": "Houston Arts Alliance — Festival Grant 2027",
     "funder": "Houston Arts Alliance / City of Houston",
@@ -2403,10 +2405,10 @@
       "organizationVerificationRequired": true,
       "note": { "fr": "Ouvert aux individus, organismes 501(c)(3), projets parrainés fiscalement et collectifs admissibles ayant une adresse physique dans Houston. Les candidats individuels non-citoyens suivent les conditions bancaires et SSN du guide annuel.", "en": "Open to eligible individuals, 501(c)(3) organizations, fiscally sponsored projects and collectives with a physical Houston address. Non-citizen individual applicants follow the annual guide’s banking and SSN conditions.", "ja": "ヒューストン市内に実住所を持つ個人、501(c)(3)、Fiscal Sponsor経由のプロジェクト、コレクティブが対象です。非米国市民の個人申請には年次要項の口座・SSN条件が適用されます。" },
       "sourceUrl": "https://files.haatx.com/grants/2027_Annual_Grants_Guidelines.pdf",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-07-24"
     },
     "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-07-24"
   },
   {
     "id": "haa-let-creativity-happen-round3-2026",
