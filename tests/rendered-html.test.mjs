@@ -37,6 +37,12 @@ test("server-renders the MESURE product surface", async () => {
   assert.doesNotMatch(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Où résidez-vous actuellement/);
   assert.match(html, /À propos des informations/);
+  assert.match(html, /href="#about-mesure"/);
+  assert.match(html, /aria-controls="about-mesure"/);
+  assert.match(html, /id="about-mesure"/);
+  assert.match(workbenchSource, /aboutDisclosureRef\.current\.open = true/);
+  assert.match(workbenchSource, /aboutNav: "About MESURE"/);
+  assert.match(workbenchSource, /aboutNav: "MESUREについて"/);
   assert.match(html, /Ce site est actuellement en version bêta/);
   assert.match(html, /docs\.google\.com\/forms/);
   assert.match(html, /MESURE ne les enregistre pas et ne les transmet pas/);
@@ -87,8 +93,8 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(workbenchSource, /className="action-checklist"/);
   assert.match(workbenchSource, /<details className="regional-programs">/);
   assert.doesNotMatch(workbenchSource, /<details className="regional-programs" open>/);
-  assert.match(workbenchSource, /<details className="about-disclosure">/);
-  assert.doesNotMatch(workbenchSource, /<details className="about-disclosure" open>/);
+  assert.match(workbenchSource, /<details className="about-disclosure" id="about-mesure" ref=\{aboutDisclosureRef\}>/);
+  assert.doesNotMatch(workbenchSource, /<details className="about-disclosure"[^>]*\sopen[=>]/);
   assert.match(html, /Termes utilisés sur MESURE/);
   assert.match(html, /Personne protégée/);
   assert.match(html, /Groupe d’artistes sans personne morale distincte/);
@@ -655,11 +661,12 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "imaginarius-2027",
     "fifdh-2027",
     "cairo-film-2026",
-    "idfa-forum-2026",
     "feten-gijon-2027-open",
   ]) {
     assert.equal(festivalRadar.find((record) => record.id === id).verifiedAt, "2026-07-22", `${id} should retain the deadline audit date`);
   }
+  assert.equal(festivalRadar.find((record) => record.id === "idfa-forum-2026").status, "watch");
+  assert.equal(festivalRadar.find((record) => record.id === "idfa-forum-2026").verifiedAt, "2026-07-24");
   const wjf = opportunities.find((record) => record.id === "wjf-23-seattle");
   assert.equal(wjf.verifiedAt, "2026-07-22");
   assert.match(wjf.deadlineLabel.ja, /250米ドルの登録期間最終日/);

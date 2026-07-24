@@ -358,6 +358,7 @@ const copy = {
     ledgerEdition: "Canada + États-Unis · Registre de veille",
     radarLink: "Consulter le registre de veille",
     backToSearch: "Retour à la recherche d’occasions",
+    aboutNav: "À propos de MESURE",
     sourceNotice: {
       label: "À propos des informations",
       text: "Les informations sont recueillies et organisées à partir des sources primaires des organisateurs. Elles peuvent différer des informations les plus récentes en raison du délai de mise à jour. Vérifiez toujours les détails sur chaque site officiel.",
@@ -649,6 +650,7 @@ const copy = {
     ledgerEdition: "Canada + U.S. · Monitoring ledger",
     radarLink: "Open the monitoring ledger",
     backToSearch: "Back to opportunity search",
+    aboutNav: "About MESURE",
     sourceNotice: {
       label: "About the listings",
       text: "Listings are collected and organized from organizers’ primary sources. Because updates take time, displayed details may differ from the latest information. Always confirm details on each official website.",
@@ -861,6 +863,7 @@ const copy = {
     ledgerEdition: "カナダ＋米国版 · 監視台帳",
     radarLink: "監視台帳を見る",
     backToSearch: "公募検索へ戻る",
+    aboutNav: "MESUREについて",
     sourceNotice: {
       label: "掲載情報について",
       text: "掲載情報は、主催者等の一次情報をもとに収集・整理しています。更新のタイミングにより、最新の情報と異なる場合があります。詳細・最新情報は、必ず各公式サイトでご確認ください。",
@@ -1366,6 +1369,7 @@ export function OpportunityWorkbench() {
   const [visibleCandidateCount, setVisibleCandidateCount] = useState(candidatePageSize);
   const fundingPanelRef = useRef<HTMLElement>(null);
   const mobileDetailCloseRef = useRef<HTMLButtonElement>(null);
+  const aboutDisclosureRef = useRef<HTMLDetailsElement>(null);
   const [fundingPagination, setFundingPagination] = useState<{
     contextKey: string;
     counts: Partial<Record<FundingSection, number>>;
@@ -1708,8 +1712,20 @@ export function OpportunityWorkbench() {
     <main className="site-shell">
       <header className="masthead">
         <div className="brandline"><h1 className="brand">MESURE</h1><span className="edition">{t.edition}</span></div>
-        <div className="language-switch" aria-label={t.languageLabel}>
-          {(["fr", "en", "ja"] as Language[]).map((item) => <button key={item} type="button" aria-pressed={language === item} onClick={() => setLanguage(item)}>{item.toUpperCase()}</button>)}
+        <div className="header-actions">
+          <a
+            className="header-about-link"
+            href="#about-mesure"
+            aria-controls="about-mesure"
+            onClick={() => {
+              if (aboutDisclosureRef.current) aboutDisclosureRef.current.open = true;
+            }}
+          >
+            {t.aboutNav}
+          </a>
+          <div className="language-switch" aria-label={t.languageLabel}>
+            {(["fr", "en", "ja"] as Language[]).map((item) => <button key={item} type="button" aria-pressed={language === item} onClick={() => setLanguage(item)}>{item.toUpperCase()}</button>)}
+          </div>
         </div>
       </header>
 
@@ -1859,7 +1875,7 @@ export function OpportunityWorkbench() {
         </section>
       </section>
 
-      <details className="about-disclosure">
+      <details className="about-disclosure" id="about-mesure" ref={aboutDisclosureRef}>
         <summary><span className="section-kicker">ABOUT</span><strong>{t.aboutSummary}</strong></summary>
         <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
       </details>

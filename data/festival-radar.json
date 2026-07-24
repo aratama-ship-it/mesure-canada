@@ -1098,16 +1098,16 @@
     "region": "Europe",
     "family": "film",
     "participation": "selection",
-    "status": "open",
+    "status": "watch",
     "deadlineDate": "2026-07-23",
     "deadlineLabel": {
-      "fr": "23 juillet 2026",
-      "en": "July 23, 2026",
-      "ja": "2026年7月23日"
+      "fr": "Appel 2026 fermé le 23 juillet. Le site officiel confirme que les candidatures IDFA Forum 2026 sont terminées; surveiller le prochain cycle.",
+      "en": "The 2026 call closed July 23. The official site confirms that IDFA Forum 2026 entries are closed; watch the next cycle.",
+      "ja": "2026年募集は7月23日に終了。公式サイトでもIDFA Forum 2026の応募終了を確認済みです。次回募集を監視。"
     },
-    "nextCheckDate": "2026-07-23",
+    "nextCheckDate": "2027-05-15",
     "sourceUrl": "https://professionals.idfa.nl/markets/co-producing-co-financing/enter-your-project/",
-    "verifiedAt": "2026-07-22",
+    "verifiedAt": "2026-07-24",
     "decisionGuide": {
       "access": {
         "fr": "Sociétés de production indépendantes et producteur·rices du monde entier; documentaire créatif ou projet immersif, selon son stade, avec présentation physique à Amsterdam.",
@@ -1135,7 +1135,7 @@
     },
     "fundingReview": {
       "status": "pending_terms",
-      "verifiedAt": "2026-07-22",
+      "verifiedAt": "2026-07-24",
       "note": {
         "fr": "IDFA Forum exige une présentation physique et, si le projet est retenu, 475 € hors TVA; la page n’annonce aucune aide au voyage ni au séjour. Une micro-subvention peut en principe viser le développement de marché, mais son délai habituel d’environ quatre mois risque d’être incompatible avec une sélection tardive pour novembre. Revoir dès réception de la décision d’IDFA, avant tout engagement de dépense.",
         "en": "IDFA Forum requires an in-person presentation and, if selected, a €475 fee excluding VAT; the page announces no travel or lodging support. A micro-grant may in principle cover market development, but its usual roughly four-month decision time may not fit a late selection for November. Reassess immediately upon IDFA’s decision and before committing costs.",
