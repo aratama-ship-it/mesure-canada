@@ -9888,5 +9888,137 @@
         }
       }
     }
+  },
+  {
+    "id": "oolite-home-away-johannesburg-2027-watch",
+    "title": "Oolite Arts Home + Away — Bag Factory Johannesburg 2027",
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-07-31",
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 a clos le 31 juillet 2026; suivre le prochain appel.",
+      "en": "The 2027 cycle closed July 31, 2026; follow the next call.",
+      "ja": "2027年枠は2026年7月31日に終了。次回募集を監視します。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://oolitearts.org/homeandaway/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel exigeait d’avoir 21 ans ou plus, de résider dans les comtés de Miami-Dade, Broward, Palm Beach ou Monroe, et de fournir une pièce d’identité de Floride avec justificatif. La résidence internationale exigeait aussi résidence permanente américaine et passeport valide.",
+        "en": "The last call required applicants to be 21 or older, reside in Miami-Dade, Broward, Palm Beach, or Monroe counties, and provide Florida ID plus proof of residence. The international residency also required U.S. permanent residence and a valid passport.",
+        "ja": "前回は21歳以上で、Miami-Dade、Broward、Palm Beach、Monroe各郡の居住者であり、フロリダ州IDと住所証明が必要でした。国際滞在には米国永住資格と有効なパスポートも必要です。"
+      },
+      "applicantCost": {
+        "fr": "La résidence de Bag Factory prévoyait voyage et hébergement, une bourse de 6 000 USD et assurance voyage jusqu’à 500 USD. Visa, assurance santé, fiscalité, matériel, fret et dépenses hors plafond restent à confirmer et à budgéter.",
+        "en": "The Bag Factory residency provided travel and accommodation, a USD 6,000 stipend, and travel insurance up to USD 500. Visa, health insurance, tax, materials, freight, and costs beyond caps still need confirmation and budgeting.",
+        "ja": "Bag Factory滞在では渡航・宿泊、6,000米ドルの手当、最大500米ドルの旅行保険が案内されました。ビザ、健康保険、税務、材料、貨物、上限超過分は確認・予算化が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence payée de trois mois à Bag Factory, à Newtown Johannesburg, avec espace de studio, visites de professionnel·les et programmation; voyage, hébergement, bourse de 6 000 USD et assurance voyage plafonnée sont annoncés.",
+        "en": "A paid three-month Bag Factory residency in Newtown, Johannesburg, with studio space, professional visits, and programming; travel, accommodation, a USD 6,000 stipend, and capped travel insurance are announced.",
+        "ja": "ヨハネスブルグ・NewtownのBag Factoryで3か月の有給滞在。スタジオ、専門家訪問、プログラムに加え、渡航・宿泊、6,000米ドルの手当、上限付き旅行保険が案内されています。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne établie uniquement au Québec ne satisfait ni la résidence du sud de la Floride ni la résidence permanente américaine. Ne pas constituer de dossier sans ces conditions réelles; suivre plutôt Bag Factory pour ses appels qui pourraient être ouverts directement à l’international.",
+          "en": "Someone based only in Quebec meets neither the South Florida residence nor U.S. permanent-residence rule. Do not prepare a file without those genuine conditions; instead monitor Bag Factory for calls open directly internationally.",
+          "ja": "ケベックのみを拠点とする人は南フロリダ居住・米国永住資格のいずれも満たしません。実在する資格がない限り応募準備をせず、Bag Factoryが直接国際募集を出す場合を監視してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "sacatar-africa-bahia-mundo-next-watch",
+    "title": "Instituto Sacatar — Bahia Mundo Open Call for African Artists",
+    "country": "Brazil",
+    "city": "Itaparica",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2025-07-04",
+    "deadlineLabel": {
+      "fr": "Le cycle Bahia Mundo pour artistes résidant en Afrique a clos le 4 juillet 2025; suivre une éventuelle nouvelle édition.",
+      "en": "The Bahia Mundo cycle for artists residing in Africa closed July 4, 2025; follow any future edition.",
+      "ja": "アフリカ居住アーティスト向けBahia Mundo枠は2025年7月4日に終了。次回があれば監視します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://sacatar.org/wp-content/uploads/2025/06/Africa-Open-Call-Edital-ENG.pdf",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel sélectionnait deux personnes de plus de 18 ans, de toute nationalité mais résidant dans un pays africain, pour toute discipline artistique. Les propositions de groupe ou collectif n’étaient pas admises.",
+        "en": "The last call selected two people aged 18 or older, of any nationality but residing in an African country, across all artistic disciplines. Group or collective proposals were not accepted.",
+        "ja": "前回は、国籍を問わずアフリカの国に居住する18歳以上の個人を、全芸術分野から2名選びました。グループ・コレクティブ提案は不可でした。"
+      },
+      "applicantCost": {
+        "fr": "Candidature gratuite. L’hôte couvrait un aller-retour en classe économique dans la limite du budget, mais visa, exigences de voyage, dépenses personnelles, repas hors site, transport local, matériel et fournitures restaient à la charge de la personne sélectionnée.",
+        "en": "Application was free. The host covered a return economy airfare within budget, but visa, travel requirements, personal spending, meals off site, local transport, materials, and supplies remained with the selected person.",
+        "ja": "応募は無料でした。主催者は予算上限内で往復エコノミー航空券を負担しましたが、ビザ・渡航要件、個人支出、敷地外の食事、現地交通、材料・消耗品は採択者負担でした。"
+      },
+      "organizerSupport": {
+        "fr": "Séjour de sept ou neuf semaines avec suite privée et studio individuel, repas préparés sur place sauf jours spécifiés, aller-retour économique sous plafond et bourse de 3 000 BRL pour développement technique, artistique ou de recherche.",
+        "en": "A seven- or nine-week stay with private suite and individual studio, on-site meals except specified days, capped return economy airfare, and BRL 3,000 for technical, artistic, or research development.",
+        "ja": "7週または9週間の滞在で、個室スイート、個人スタジオ、指定日を除く敷地内の食事、上限付き往復エコノミー航空券、技術・芸術・リサーチ開発向け3,000ブラジルレアルがあります。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne établie uniquement au Québec ne remplit pas la résidence africaine. Ne pas déposer sans base africaine réelle; suivre ce modèle pour ses partenariats Bahia-Afrique et consulter séparément l’appel général international de Sacatar.",
+          "en": "Someone based only in Quebec does not meet the African-residence rule. Do not apply without a genuine African base; monitor this Bahia-Africa partnership model and consult Sacatar’s separate general international call.",
+          "ja": "ケベックのみを拠点とする人はアフリカ居住条件を満たしません。実在するアフリカ拠点がない限り応募せず、このBahia–Africa連携を監視し、Sacatarの別の一般国際募集も確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "grotta-air-spain-2027-open",
+    "title": "GROTTA AIR — International Open Call 2027",
+    "country": "Spain",
+    "city": "Aracena",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures reçues toute l’année pour printemps/été 2027; choisir les sessions mars–mai ou juin–juillet.",
+      "en": "Applications are received year-round for spring/summer 2027; choose March–May or June–July sessions.",
+      "ja": "2027年春夏枠は通年応募受付。3〜5月または6〜7月のセッションを選択します。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.grottaair.com/open-calls",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Appel international sur CV, adéquation et intentions artistiques. Candidature individuelle ou Artist+1 avec artiste, curateur·rice, chercheur·euse, famille ou ami·e; portfolio et brève description de projet requis.",
+        "en": "An international call assessed on CV, fit, and artistic intentions. Applicants may apply individually or as Artist+1 with an artist, curator, researcher, family member, or friend; portfolio and short project description are required.",
+        "ja": "CV、適合性、芸術的意図で選ぶ国際募集です。個人またはアーティスト、キュレーター、研究者、家族、友人とのArtist+1で応募でき、ポートフォリオと短い企画説明が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Programme auto-financé: 850 € pour deux semaines en individuel ou 1 050 € pour Artist+1, avec dépôt remboursable de 200 € après acceptation. Voyage, visa, assurance, repas et matériel non inclus ne sont pas annoncés comme couverts.",
+        "en": "Self-funded programme: €850 for two weeks individually or €1,050 for Artist+1, with a refundable €200 deposit after acceptance. Travel, visa, insurance, meals, and any materials not included are not announced as covered.",
+        "ja": "自己資金型で、2週間の個人参加は850ユーロ、Artist+1は1,050ユーロ、受諾後に200ユーロの返金可能なデポジットがあります。渡航、ビザ、保険、食事、含まれない材料費は対象と案内されていません。"
+      },
+      "organizerSupport": {
+        "fr": "Chambre simple ou double selon disponibilité, bureau et espace de travail, accès 24 h/24 au grand studio de 200 m² et matériel listé par GROTTA AIR; sessions de deux semaines au printemps ou en été.",
+        "en": "A single or double room depending on availability, desk and workspace, 24-hour access to a 200m² large studio, and listed GROTTA AIR materials; two-week spring or summer sessions.",
+        "ja": "空き状況に応じたシングルまたはダブルルーム、机と作業空間、200㎡の大型スタジオへの24時間アクセス、GROTTA AIRが一覧化した材料があり、春夏の2週間セッションです。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie internationale directe, mais auto-financée. Avant versement, demander les conditions détaillées, les matériaux réellement disponibles, les coûts de séjour et la politique d’annulation, puis budgéter voyage, visa, assurance et production séparément.",
+          "en": "A direct international route, but self-funded. Before paying, request detailed terms, actual material availability, stay costs, and cancellation policy, then budget travel, visa, insurance, and production separately.",
+          "ja": "国際直接応募はできますが自己資金型です。支払い前に詳細条件、実際に使える材料、滞在費、キャンセル規定を確認し、渡航、ビザ、保険、制作は別途予算化してください。"
+        }
+      }
+    }
   }
 ]
