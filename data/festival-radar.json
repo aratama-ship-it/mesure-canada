@@ -9397,5 +9397,273 @@
         }
       }
     }
+  },
+  {
+    "id": "platform-dali-2027-open",
+    "title": "Platform Dalí — Residencies 2027: What is real?",
+    "country": "Spain",
+    "city": "Barcelona",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-07",
+    "deadlineTimeZone": "CET (as published)",
+    "deadlineLabel": {
+      "fr": "7 septembre 2026, 23 h 59 (CET, tel que publié)",
+      "en": "September 7, 2026, 23:59 (CET, as published)",
+      "ja": "2026年9月7日 23:59（公表表記CET）"
+    },
+    "nextCheckDate": "2026-09-07",
+    "sourceUrl": "https://platformdali.org/en/call/open-call-for-residencies-2027-what-is-real/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Ouvert à toute nationalité et discipline, pour artistes ayant au moins huit ans d’expérience professionnelle. Candidature individuelle ou collective; deux personnes au plus peuvent voyager pour un collectif.",
+        "en": "Open to all nationalities and disciplines for artists with at least eight years of professional experience. Individuals and collectives may apply; no more than two people may travel for a collective.",
+        "ja": "国籍・分野を問わず、8年以上の専門経験を持つアーティストが対象です。個人・コレクティブで応募でき、コレクティブの渡航者は最大2名です。"
+      },
+      "applicantCost": {
+        "fr": "Pour les personnes hors de Barcelone, voyage, hébergement, subsistance et assurance voyage sont couverts dans un budget défini. Confirmer les plafonds, visa, fiscalité, fret et toute dépense hors budget.",
+        "en": "For participants based outside Barcelona, travel, accommodation, subsistence, and travel insurance are covered within a defined budget. Confirm caps, visa, tax, freight, and any expense outside that budget.",
+        "ja": "バルセロナ外の参加者は、定められた予算内で渡航・宿泊・滞在費・旅行保険が対象です。上限、ビザ、税務、貨物、予算外費用は確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Programme de douze mois avec séjour sur site jusqu’à 45 jours, honoraires de 7 500 €, budget de production jusqu’à 25 000 € et accompagnement curatorial; voyage, séjour et assurance sont prévus hors Barcelone selon budget.",
+        "en": "A twelve-month programme with up to 45 days on site, a €7,500 fee, up to €25,000 production budget, and curatorial support; travel, stay, and insurance are included for those outside Barcelona within budget.",
+        "ja": "最長45日の現地滞在を含む12か月プログラムで、7,500ユーロの謝金、最大25,000ユーロの制作費、キュラトリアル支援があります。バルセロナ外は予算内で渡航・滞在・保険も対象です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Candidature directe bien soutenue pour une pratique confirmée. Vérifier avec l’hôte le calendrier exact, les limites de voyage et de production, les exigences scientifiques et les conditions de contrat avant engagement.",
+          "en": "A well-supported direct route for an established practice. Before committing, confirm the exact calendar, travel and production limits, scientific-partner requirements, and contract terms with the host.",
+          "ja": "実績のある実践者には支援の厚い直接応募先です。確約前に、日程、渡航・制作費上限、科学パートナーの要件、契約条件を主催者に確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "otte1-scholarships-2027-open",
+    "title": "Otte1 — Scholarships 2027",
+    "country": "Germany",
+    "city": "Eckernförde",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-31",
+    "deadlineLabel": {
+      "fr": "31 août 2026; les candidatures sont ouvertes du 1er juillet au 31 août",
+      "en": "August 31, 2026; applications are open July 1–August 31",
+      "ja": "2026年8月31日（応募期間：7月1日〜8月31日）"
+    },
+    "nextCheckDate": "2026-08-31",
+    "sourceUrl": "https://www.otte1.org/en/application/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Pour artistes visuel·les, compositeur·rices de musique contemporaine et auteur·rices écrivant en allemand. Individus et collectifs sont admis; les collectifs partagent studio et bourse. Inscription universitaire impossible pendant la résidence.",
+        "en": "For visual artists, contemporary-music composers, and writers working in German. Individuals and collectives may apply; collectives share the studio and stipend. University enrolment is not allowed during the residency.",
+        "ja": "視覚芸術家、現代音楽作曲家、ドイツ語で執筆する作家が対象です。個人・コレクティブで応募でき、コレクティブはスタジオと奨学金を共有します。滞在中の大学在籍は不可です。"
+      },
+      "applicantCost": {
+        "fr": "La page annonce une bourse et des studios meublés, mais ne précise ni montant, ni voyage, ni assurance, ni visa, ni matériaux. Demander ces conditions par écrit avant dépôt ou acceptation.",
+        "en": "The page announces a stipend and furnished studios but does not state the amount, travel, insurance, visa, or materials terms. Request those conditions in writing before applying or accepting.",
+        "ja": "奨学金と家具付きスタジオは案内されていますが、金額、渡航、保険、ビザ、材料費は未記載です。応募・受諾前に書面で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Bourse et l’un des quatre studios meublés; résidence trimestrielle avec présence d’au moins 20 heures par semaine et participation attendue à des ateliers, événements et atelier ouvert.",
+        "en": "A stipend and one of four furnished studios; quarterly residencies require at least 20 hours per week and expected participation in workshops, events, and an open studio.",
+        "ja": "奨学金と4室の家具付きスタジオのいずれかを提供。3か月滞在で週20時間以上の活動、およびワークショップ・イベント・オープンスタジオへの参加が求められます。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Voie directe plausible si la discipline et, pour l’écriture, la langue correspondent. La bourse est publiée sans montant ni modalités de voyage: vérifier faisabilité financière, visa et exigences de présence avant de mobiliser un budget québécois.",
+          "en": "A plausible direct route when discipline—and, for writing, language—fit. The stipend is published without amount or travel terms: verify financial feasibility, visa, and attendance requirements before committing Quebec resources.",
+          "ja": "分野（執筆は言語条件）が合えば直接応募の候補です。奨学金額・渡航条件が未公表のため、ケベック側の費用を動かす前に、資金計画、ビザ、出席要件を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "cusp-reykjavik-2027-open",
+    "title": "CUSP Artist Residency 2027 — National Gallery of Iceland",
+    "country": "Iceland",
+    "city": "Reykjavík",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-09-03",
+    "deadlineTimeZone": "GMT",
+    "deadlineLabel": {
+      "fr": "3 septembre 2026, 23 h 59 GMT",
+      "en": "September 3, 2026, 23:59 GMT",
+      "ja": "2026年9月3日 23:59 GMT"
+    },
+    "nextCheckDate": "2026-09-03",
+    "sourceUrl": "https://www.listasafn.is/en/art/news-vasulka-stofa/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Résidence jusqu’à quatre semaines, destinée aux artistes internationaux travaillant avec médias complexes ou émergents. L’appel limite l’admissibilité aux résidents des 27 États de l’UE et de pays européens associés listés.",
+        "en": "A residency of up to four weeks for international artists working with complex or emerging media. The call limits eligibility to residents of the EU-27 and listed associated European countries.",
+        "ja": "複雑・新興メディアを扱う国際アーティスト向けで、滞在は最長4週間です。ただし応募資格はEU27か、指定された欧州の関連国居住者に限られます。"
+      },
+      "applicantCost": {
+        "fr": "L’appel annonce logement/espace de travail, indemnité voyage et subsistance, honoraires et aide matérielle ou logicielle possible. Visa, assurance, impôts et dépenses hors allocations ne sont pas détaillés.",
+        "en": "The call announces accommodation/workspace, a travel and subsistence stipend, an artist fee, and possible hardware or software support. Visa, insurance, tax, and costs beyond allowances are not detailed.",
+        "ja": "宿泊・作業空間、渡航・滞在給付、アーティスト謝金、必要に応じたハード／ソフト支援が案内されています。ビザ、保険、税務、給付超過分は未記載です。"
+      },
+      "organizerSupport": {
+        "fr": "Jusqu’à quatre semaines à Reykjavík avec logement et espace de travail, indemnité voyage et subsistance, honoraires et, selon besoin, accès à du matériel ou des logiciels.",
+        "en": "Up to four weeks in Reykjavík with accommodation and workspace, travel and subsistence stipend, artist fee, and, where needed, access to hardware or software.",
+        "ja": "レイキャビクで最長4週間。宿泊・作業空間、渡航・滞在給付、謝金、必要に応じたハードウェアまたはソフトウェア支援があります。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne établie uniquement au Québec ne satisfait pas la résidence européenne exigée. Ne poursuivre que si une résidence admissible réelle peut être documentée; sinon, suivre ce modèle de soutien sans préparer de candidature.",
+          "en": "Someone based only in Quebec does not meet the required European residence rule. Proceed only with a genuine documentable eligible residence; otherwise, follow the support model without preparing an application.",
+          "ja": "ケベックのみを拠点とする人は欧州居住条件を満たしません。実在し文書化できる対象居住資格がある場合のみ進め、それ以外は応募準備をせず支援モデルの参考として監視してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "piar-kumasi-2027-next-watch",
+    "title": "pIAR — perfocraZe International Artist Residency 2027",
+    "country": "Ghana",
+    "city": "Kumasi",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-01",
+    "deadlineTimeZone": "GMT",
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 a clos le 1er juillet 2026 à 23 h 59 GMT; calendrier suivant non publié.",
+      "en": "The 2027 cycle closed July 1, 2026 at 23:59 GMT; the next calendar is not published.",
+      "ja": "2027年枠は2026年7月1日23:59 GMTに終了。次回日程は未公表です。"
+    },
+    "nextCheckDate": "2026-12-01",
+    "sourceUrl": "https://www.crazinistartist.com/2026/05/01/open-call-piar-2027-a-new-chapter/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes, curateur·rices, chercheur·euses, auteur·rices et praticien·nes culturel·les internationaux peuvent demander une résidence de quatre semaines à six mois; la pratique peut inclure performance, artivisme, film ou vidéo.",
+        "en": "International artists, curators, researchers, writers, and cultural practitioners may apply for four weeks to six months; practice may include performance, artivism, film, or video.",
+        "ja": "国際的なアーティスト、キュレーター、研究者、作家、文化実践者が4週間〜6か月で応募できます。パフォーマンス、アートビズム、映画・映像等を含みます。"
+      },
+      "applicantCost": {
+        "fr": "Programme auto-financé: pour quatre semaines, chambre individuelle 950 €, chambre partagée à quatre 500 € par personne, partagée à deux 650 € par personne; repas, courses, wifi, transport, production et fournitures sont exclus.",
+        "en": "Self-funded programme: for four weeks, a single room is €950, a four-bed shared room €500 per person, and a two-bed shared room €650 per person; meals, groceries, wifi, transport, production, and supplies are excluded.",
+        "ja": "自己資金型です。4週間で個室950ユーロ、4人相部屋は1人500ユーロ、2人相部屋は1人650ユーロ。食事、食料品、Wi-Fi、交通、制作、消耗品は含まれません。"
+      },
+      "organizerSupport": {
+        "fr": "Le tarif comprend logement en dortoir et services de base; accès à un studio ou espace de travail de base, cuisine et espaces communs, orientation et soutien d’accès. Pas de bourse, repas ni équipe de facilitation annoncés.",
+        "en": "The fee includes dorm accommodation and core utilities; access to a studio or basic workspace, kitchen and shared areas, orientation, and access support. No stipend, meals, or facilitation team is announced.",
+        "ja": "料金にはドミトリー宿泊と基本光熱費が含まれます。スタジオまたは基本作業空間、共用キッチン・生活空間、オリエンテーションとアクセス支援があります。助成、食事、運営チームは案内されていません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Accès international direct, mais sans financement de séjour. Budgéter en entier voyage, visa, assurance, logement, nourriture, production et sécurité locale; ne réserver qu’après confirmation écrite des dates, de l’espace et des coûts.",
+          "en": "Direct international access, but without residency funding. Budget travel, visa, insurance, lodging, food, production, and local safety in full; reserve only after written confirmation of dates, space, and charges.",
+          "ja": "国際直接応募は可能ですが滞在資金はありません。渡航、ビザ、保険、宿泊、食事、制作、現地安全対策を全額見積もり、日程・空間・費用を書面確認してから予約してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "onassis-air-2026-27-next-watch",
+    "title": "Onassis AiR 2026/27 — Next Open Call",
+    "country": "Greece",
+    "city": "Athens",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-03-03",
+    "deadlineTimeZone": "UTC+2",
+    "deadlineLabel": {
+      "fr": "L’appel 2026/27 a clos le 3 mars 2026 à midi UTC+2; suivre la prochaine ouverture.",
+      "en": "The 2026/27 call closed March 3, 2026 at 12:00 noon UTC+2; follow the next opening.",
+      "ja": "2026/27募集は2026年3月3日12:00 UTC+2に終了。次回募集を監視します。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://www.onassis.org/open-calls-past/onassis-air-open-call-202627",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Ouvert à toute personne, partout dans le monde, sans limite d’âge ni diplôme requis. La dernière saison proposait dix semaines pour arts visuels, cinéma, arts appliqués, son, commissariat, écriture, théâtre, danse et pratiques hybrides.",
+        "en": "Open to everyone worldwide, with no age limit or degree requirement. The last season offered ten weeks for visual arts, filmmaking, applied arts, sound, curating, writing, theatre, dance, and hybrid practices.",
+        "ja": "年齢・学位を問わず世界中から応募可能です。前回は視覚芸術、映画、応用芸術、音、キュレーション、執筆、演劇、ダンス、横断的実践の10週間滞在でした。"
+      },
+      "applicantCost": {
+        "fr": "Pour les personnes hors Athènes, voyage aller-retour est couvert jusqu’à 500 € en Europe et 1 000 € hors Europe, avec chambre en appartement partagé. Confirmer visa, assurance, fiscalité et tout coût au-delà des plafonds.",
+        "en": "For participants outside Athens, return travel is covered up to €500 within Europe and €1,000 overseas, with a private room in shared accommodation. Confirm visa, insurance, tax, and any costs above the caps.",
+        "ja": "アテネ外の参加者は、欧州内最大500ユーロ、欧州外最大1,000ユーロの往復渡航費と、シェア住居の個室が対象です。ビザ、保険、税務、上限超過分は確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Honoraires de 3 500 €; budget recherche/production de 1 500 € pour certaines filières et jusqu’à 3 000 € pour AiR/ONX; voyage plafonné, logement partagé, mentorat, ateliers, réseau et espaces de travail/répétition.",
+        "en": "A €3,500 artist fee; €1,500 research/production budget for specified strands and up to €3,000 for AiR/ONX; capped travel, shared accommodation, mentoring, workshops, network access, and work/rehearsal spaces.",
+        "ja": "3,500ユーロの謝金、指定枠に1,500ユーロの研究・制作費、AiR/ONXに最大3,000ユーロ、上限付き渡航費、シェア住居、メンタリング、ワークショップ、ネットワーク、作業・リハーサル空間があります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Veille directe très soutenue pour le Québec. À l’ouverture, choisir la bonne filière, vérifier si le plafond de 1 000 € couvre le trajet réel, et confirmer les droits, visa et dépenses de production avant de finaliser un budget.",
+          "en": "A strongly supported direct watch item for Quebec. At opening, choose the right strand, verify whether the €1,000 cap covers the actual trip, and confirm rights, visa, and production expenses before finalizing a budget.",
+          "ja": "ケベックから有力な直接監視先です。募集開始時に適切な枠を選び、1,000ユーロの上限で実際の渡航費を賄えるか、権利・ビザ・制作費を予算確定前に確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "drift-choreography-2027-open",
+    "title": "DRIFT — International Choreographer Programme 2027",
+    "country": "Germany",
+    "city": "Berlin",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-31",
+    "deadlineLabel": {
+      "fr": "31 août 2026",
+      "en": "August 31, 2026",
+      "ja": "2026年8月31日"
+    },
+    "nextCheckDate": "2026-08-31",
+    "sourceUrl": "https://www.onassis.org/open-calls-past/drift-open-call",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Programme international pour chorégraphes de mi-carrière, centré sur recherche, expérimentation et développement professionnel. Le dossier demande CV, proposition de recherche, portfolio et deux à trois liens vidéo.",
+        "en": "An international programme for mid-career choreographers, focused on research, experimentation, and professional development. The application requires a CV, research proposal, portfolio, and two to three video links.",
+        "ja": "中堅振付家向けの国際プログラムで、リサーチ、実験、専門能力開発が中心です。CV、研究提案、ポートフォリオ、動画リンク2〜3本が必要です。"
+      },
+      "applicantCost": {
+        "fr": "L’appel consulté ne publie ni frais de candidature, ni budget de voyage, logement, visa, assurance ou cachet. Ne pas supposer une prise en charge pour Berlin, Tunis ou Lyon; demander le cadre financier au programme.",
+        "en": "The call reviewed does not publish an application fee, travel budget, accommodation, visa, insurance, or artist fee. Do not assume coverage for Berlin, Tunis, or Lyon; request the financial framework from the programme.",
+        "ja": "確認した募集には応募料、渡航費、宿泊、ビザ、保険、謝金の記載がありません。ベルリン・チュニス・リヨンの費用を主催者負担とみなさず、財務条件を問い合わせてください。"
+      },
+      "organizerSupport": {
+        "fr": "Temps, espace et accompagnement annoncés pour la recherche, l’expérimentation et le développement professionnel, avec rencontre à Berlin, laboratoire à Tunis et présentation à Lyon; les montants et prestations ne sont pas publiés.",
+        "en": "The programme announces time, space, and support for research, experimentation, and professional development, with a Berlin meeting, Tunis lab, and Lyon showcase; amounts and covered services are not published.",
+        "ja": "リサーチ・実験・専門能力開発のための時間、空間、支援を掲げ、ベルリンでのキックオフ、チュニスでのラボ、リヨンでのショーケースがあります。金額・対象経費は未公表です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Candidature internationale directe possible pour une pratique de mi-carrière, mais les coûts multi-villes ne sont pas documentés. Vérifier par écrit voyage, logement, cachet, visa et assurance avant de promettre toute présence.",
+          "en": "Direct international application is possible for a mid-career practice, but multi-city costs are undocumented. Confirm travel, accommodation, fee, visa, and insurance in writing before promising any attendance.",
+          "ja": "中堅の実践者なら国際直接応募が可能ですが、複数都市での費用は未公表です。参加を確約する前に、渡航、宿泊、謝金、ビザ、保険を文書で確認してください。"
+        }
+      }
+    }
   }
 ]
