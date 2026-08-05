@@ -28,6 +28,11 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<title>MESURE — Canada/);
+  assert.equal([...html.matchAll(/static\.cloudflareinsights\.com\/beacon\.min\.js/g)].length, 1);
+  assert.match(html, /a9e4947d29da412f924d67897808da7a/);
+  const layoutSource = await readFile(new URL("../app/layout.tsx", import.meta.url), "utf8");
+  assert.match(layoutSource, /NEXT_PUBLIC_CLOUDFLARE_WEB_ANALYTICS_TOKEN/);
+  assert.match(layoutSource, /static\.cloudflareinsights\.com\/beacon\.min\.js/);
   assert.match(html, /Découvrez où votre art pourrait vous mener/);
   assert.match(html, /possibilités au Canada, aux États-Unis et à l’international/);
   assert.match(html, /Des possibilités de financement sont ensuite proposées/);
