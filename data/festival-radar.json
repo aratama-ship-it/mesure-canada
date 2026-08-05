@@ -11040,5 +11040,139 @@
         }
       }
     }
+  },
+  {
+    "id": "ubuntu-art-residency-2027-next-watch",
+    "title": "Ubuntu Art Residency — Global Launch 2027",
+    "country": "Uganda",
+    "city": "Masindi",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "La résidence annonce un lancement mondial en 2027; s’inscrire à la liste pour recevoir les futures lignes directrices de l’appel ouvert.",
+      "en": "The residency announces a global 2027 launch; join the list to receive forthcoming open-call guidelines.",
+      "ja": "レジデンスは2027年のグローバル開始を案内しています。今後の公募ガイドラインは登録リストで受け取れます。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.ubuntuartresidency.com/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Ubuntu Art Residency prépare son lancement mondial 2027 à Masindi. Le site décrit une pratique multidisciplinaire liée aux paysages, histoires et savoirs de Bunyoro-Kitara, et cite artistes visuel·les, commissaires, écrivain·es et créateur·rices; les modalités d’admissibilité de l’appel 2027 ne sont pas encore publiées.",
+        "en": "Ubuntu Art Residency is preparing a 2027 global launch in Masindi. Its site describes multidisciplinary practice connected with Bunyoro-Kitara landscapes, histories, and knowledge, and names visual artists, curators, writers, and creators; 2027 open-call eligibility terms are not yet published.",
+        "ja": "Ubuntu Art Residencyはマシンディで2027年のグローバル開始を準備しています。サイトはBunyoro-Kitaraの景観、歴史、知識と結びつく学際的実践を掲げ、ビジュアルアーティスト、キュレーター、作家、クリエイターを挙げています。2027年公募の資格条件はまだ未公表です。"
+      },
+      "applicantCost": {
+        "fr": "Le site accueille actuellement des demandes pour des résidences pilotes 2026 autofinancées et collaborations institutionnelles, mais ne publie aucun tarif, durée, voyage, hébergement, repas, visa, assurance, matériel ou droits pour l’appel mondial 2027. Demander un budget et des conditions écrites avant toute réservation.",
+        "en": "The site currently welcomes inquiries for self-funded 2026 pilot residencies and institutional collaborations, but publishes no fee, duration, travel, housing, meals, visa, insurance, materials, or rights terms for the 2027 global call. Request a budget and written terms before booking anything.",
+        "ja": "サイトは現在、自己負担の2026年パイロット滞在と機関連携の問い合わせを受け付けていますが、2027年グローバル公募について料金、期間、渡航、宿泊、食事、ビザ、保険、材料、権利は未公表です。予約前に予算と条件を書面で求めてください。"
+      },
+      "organizerSupport": {
+        "fr": "Le projet se présente comme un espace pluridisciplinaire d’enquête et création, privilégiant l’échange respectueux et non extractif avec la région de Bunyoro-Kitara. Le soutien concret de l’appel 2027 reste à préciser; la liste d’information est la voie officielle publiée.",
+        "en": "The project presents itself as a multidisciplinary space for inquiry and creation, prioritizing respectful, non-extractive exchange with the Bunyoro-Kitara region. Concrete 2027 support remains to be specified; the information list is the published official route.",
+        "ja": "このプロジェクトは、Bunyoro-Kitara地域との敬意ある非収奪的な交流を重視する、学際的な探究と創作の場として説明されています。2027年の具体的支援は未定で、公開されている公式ルートは情報登録です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste africaine à surveiller pour un futur appel mondial, mais pas encore une candidature finançable. S’inscrire aux informations, puis confirmer par écrit admissibilité québécoise, calendrier, sécurité, hébergement, coûts, visa et cadre de collaboration avant toute dépense.",
+          "en": "An African route to watch for a future global call, but not yet an application that can be budgeted. Join the updates, then obtain written confirmation of Quebec eligibility, schedule, safety, housing, cost, visa, and collaboration framework before spending.",
+          "ja": "将来の世界公募に向けて監視すべきアフリカの候補ですが、現時点では予算化できる応募ではありません。情報登録後、支出前にケベックからの適格性、日程、安全、宿泊、費用、ビザ、協働の枠組みを書面で確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "tainan-tsung-yeh-air-2027-open",
+    "title": "AIR in Tainan 2027 — Tsung-yeh Arts and Cultural Center",
+    "country": "Taiwan",
+    "city": "Tainan",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-08-31",
+    "deadlineTimeZone": "CST (Taiwan)",
+    "deadlineLabel": {
+      "fr": "L’appel AIR in Tainan 2027 pour Tsung-yeh expire le 31 août 2026 à 23 h 59, selon le portail officiel municipal.",
+      "en": "The AIR in Tainan 2027 call for Tsung-yeh expires August 31, 2026 at 23:59, according to the official municipal portal.",
+      "ja": "Tsung-yeh向けAIR in Tainan 2027は、市の公式ポータルによると2026年8月31日23:59に締切です。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://air-culture.tainan.gov.tw/index.php?did=7&id=9&inter=news",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le portail du Bureau des affaires culturelles de Tainan publie un appel AIR 2027 distinct pour Tsung-yeh. La fiche consultée confirme titre, lieu et échéance, mais n’affiche pas les critères détaillés dans le contenu accessible; ne pas supposer nationalité, médium, expérience ou langue sans les instructions de candidature.",
+        "en": "Tainan’s Cultural Affairs Bureau portal publishes a separate 2027 AIR call for Tsung-yeh. The reviewed listing confirms title, venue, and deadline, but does not expose detailed criteria in accessible content; do not assume nationality, medium, experience, or language rules without the application instructions.",
+        "ja": "台南市文化局のポータルはTsung-yeh向けの独立した2027年AIR公募を掲載しています。確認した一覧ではタイトル、会場、締切を確認できますが、閲覧可能な内容には詳細基準が表示されません。応募要項なしに国籍、媒体、経験、言語要件を想定しないでください。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature, voyage, visa, assurance, hébergement, vie courante, matériel, fiscalité, droits et éventuelle contribution ne sont pas publiés dans la fiche officielle accessible. Demander le règlement complet et un budget écrit avant de préparer œuvre, déplacement ou paiement.",
+        "en": "Application fee, travel, visa, insurance, housing, living costs, materials, tax, rights, and any contribution are not published in the accessible official listing. Request the full regulations and a written budget before preparing work, travel, or payment.",
+        "ja": "確認可能な公式一覧には、応募料、渡航、ビザ、保険、宿泊、生活費、材料、税、権利、負担金は掲載されていません。作品、渡航、支払いの準備前に、完全な規則と書面の予算を求めてください。"
+      },
+      "organizerSupport": {
+        "fr": "AIR in Tainan est une plateforme de création du Bureau des affaires culturelles de Tainan City Government pour artistes professionnel·les, orientée vers ateliers, expositions et performances en interaction avec les résident·es. Le soutien propre à Tsung-yeh 2027 doit être confirmé dans le règlement détaillé.",
+        "en": "AIR in Tainan is a creative platform of Tainan City Government’s Cultural Affairs Bureau for professional artists, oriented toward workshops, exhibitions, and performances with resident interaction. Support specific to Tsung-yeh 2027 must be confirmed in the detailed regulations.",
+        "ja": "AIR in Tainanは台南市政府文化局がプロのアーティスト向けに設ける創作プラットフォームで、住民との交流を伴うワークショップ、展覧会、パフォーマンスを志向します。Tsung-yeh 2027固有の支援は詳細規則で確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Échéance officielle à surveiller, mais accessibilité depuis le Québec et budget restent non publiés dans la fiche consultée. Obtenir le dossier complet directement du programme avant dépôt; vérifier langue, visa, coût, obligations publiques et droits sur les résultats.",
+          "en": "An official deadline worth monitoring, but Quebec access and budget remain unpublished in the reviewed listing. Obtain the full package directly from the program before submitting; verify language, visa, cost, public obligations, and rights in outcomes.",
+          "ja": "公式締切として監視価値がありますが、確認した一覧にはケベックからのアクセスと予算が未掲載です。提出前にプログラムから完全な資料を得て、言語、ビザ、費用、公開義務、成果の権利を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "tainan-soulangh-air-2027-open",
+    "title": "AIR in Tainan 2027 — Soulangh Cultural Park",
+    "country": "Taiwan",
+    "city": "Tainan",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-08-31",
+    "deadlineTimeZone": "CST (Taiwan)",
+    "deadlineLabel": {
+      "fr": "L’appel AIR in Tainan 2027 pour Soulangh expire le 31 août 2026 à 23 h 59, selon le portail officiel municipal.",
+      "en": "The AIR in Tainan 2027 call for Soulangh expires August 31, 2026 at 23:59, according to the official municipal portal.",
+      "ja": "Soulangh向けAIR in Tainan 2027は、市の公式ポータルによると2026年8月31日23:59に締切です。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://air-culture.tainan.gov.tw/index.php?did=9&id=9&inter=news",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le portail du Bureau des affaires culturelles de Tainan publie un appel AIR 2027 distinct pour Soulangh Cultural Park. La fiche consultée confirme titre, lieu et échéance, mais pas les critères détaillés accessibles; ne pas supposer nationalité, disciplines, expérience, langue ni possibilités de groupe sans règlement complet.",
+        "en": "Tainan’s Cultural Affairs Bureau portal publishes a separate 2027 AIR call for Soulangh Cultural Park. The reviewed listing confirms title, venue, and deadline, but not accessible detailed criteria; do not assume nationality, disciplines, experience, language, or group options without full regulations.",
+        "ja": "台南市文化局のポータルはSoulangh Cultural Park向けの独立した2027年AIR公募を掲載しています。確認した一覧ではタイトル、会場、締切を確認できますが、詳細基準は閲覧できません。完全な規則なしに国籍、分野、経験、言語、グループ応募可否を想定しないでください。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature, voyage, visa, assurance, hébergement, vie courante, matériel, fiscalité, droits et éventuelle contribution ne sont pas publiés dans la fiche officielle accessible. Demander le règlement complet et un budget écrit avant de préparer œuvre, déplacement ou paiement.",
+        "en": "Application fee, travel, visa, insurance, housing, living costs, materials, tax, rights, and any contribution are not published in the accessible official listing. Request the full regulations and a written budget before preparing work, travel, or payment.",
+        "ja": "確認可能な公式一覧には、応募料、渡航、ビザ、保険、宿泊、生活費、材料、税、権利、負担金は掲載されていません。作品、渡航、支払いの準備前に、完全な規則と書面の予算を求めてください。"
+      },
+      "organizerSupport": {
+        "fr": "AIR in Tainan est une plateforme de création du Bureau des affaires culturelles de Tainan City Government pour artistes professionnel·les, orientée vers ateliers, expositions et performances en interaction avec les résident·es. Le soutien propre à Soulangh 2027 doit être confirmé dans le règlement détaillé.",
+        "en": "AIR in Tainan is a creative platform of Tainan City Government’s Cultural Affairs Bureau for professional artists, oriented toward workshops, exhibitions, and performances with resident interaction. Support specific to Soulangh 2027 must be confirmed in the detailed regulations.",
+        "ja": "AIR in Tainanは台南市政府文化局がプロのアーティスト向けに設ける創作プラットフォームで、住民との交流を伴うワークショップ、展覧会、パフォーマンスを志向します。Soulangh 2027固有の支援は詳細規則で確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Échéance officielle à surveiller, mais accessibilité depuis le Québec et budget restent non publiés dans la fiche consultée. Obtenir le dossier complet directement du programme avant dépôt; vérifier langue, visa, coût, obligations publiques et droits sur les résultats.",
+          "en": "An official deadline worth monitoring, but Quebec access and budget remain unpublished in the reviewed listing. Obtain the full package directly from the program before submitting; verify language, visa, cost, public obligations, and rights in outcomes.",
+          "ja": "公式締切として監視価値がありますが、確認した一覧にはケベックからのアクセスと予算が未掲載です。提出前にプログラムから完全な資料を得て、言語、ビザ、費用、公開義務、成果の権利を確認してください。"
+        }
+      }
+    }
   }
 ]
