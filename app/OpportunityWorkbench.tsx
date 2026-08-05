@@ -1779,10 +1779,10 @@ export function OpportunityWorkbench() {
             <b>{profileExpanded ? t.mobileUi.collapse : t.mobileUi.change}</b>
           </button>
           <div className={`profile-fields ${profileExpanded ? "is-open" : ""}`} id="profile-fields">
-          <aside className="privacy-note" aria-label={t.privacyNotice.label}>
-            <strong>{t.privacyNotice.label}</strong>
-            <span>{t.privacyNotice.text}</span>
-          </aside>
+          <details className="privacy-note">
+            <summary>{t.privacyNotice.label}</summary>
+            <p>{t.privacyNotice.text}</p>
+          </details>
 
           <fieldset className="field-group"><legend>{t.profile}</legend><div className="choice-stack">
             {profileOptions.map((item) => <button className="choice-button" key={item} type="button" aria-pressed={profile === item} onClick={() => { setProfile(item); setVisibleCandidateCount(candidatePageSize); }}><span className="choice-mark" aria-hidden="true">{profile === item ? "×" : ""}</span><span className="choice-copy"><span>{t.profiles[item]}</span>{item === "collective" ? <small>{t.glossary.collective.short}</small> : null}</span></button>)}

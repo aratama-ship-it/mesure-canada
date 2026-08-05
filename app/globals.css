@@ -540,10 +540,7 @@ a {
 }
 
 .privacy-note {
-  display: grid;
-  gap: 5px;
-  margin: -4px 0 22px;
-  padding: 11px 12px;
+  margin: -4px 0 16px;
   border-left: 4px solid var(--blue);
   background: rgba(255, 255, 255, 0.56);
   color: var(--muted);
@@ -551,11 +548,46 @@ a {
   line-height: 1.5;
 }
 
-.privacy-note strong {
+.privacy-note summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
   color: var(--ink);
+  cursor: pointer;
   font-size: 0.63rem;
+  font-weight: 800;
   letter-spacing: 0.06em;
+  list-style: none;
   text-transform: uppercase;
+}
+
+.privacy-note summary::-webkit-details-marker {
+  display: none;
+}
+
+.privacy-note summary::after {
+  content: "+";
+  color: var(--blue);
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.privacy-note[open] summary::after {
+  content: "−";
+}
+
+.privacy-note summary:hover,
+.privacy-note summary:focus-visible {
+  background: rgba(255, 255, 255, 0.72);
+  outline: 2px solid var(--blue);
+  outline-offset: 1px;
+}
+
+.privacy-note p {
+  margin: 0;
+  padding: 0 10px 10px;
 }
 
 .section-kicker {
