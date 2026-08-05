@@ -174,7 +174,7 @@
         "state": "supported",
         "note": {
           "fr": "Une des voies les plus concrètes depuis le Québec pour les arts de la rue, à condition de pouvoir avancer les coûts et de confirmer par écrit les dépenses couvertes.",
-          "en": "One of the more concrete routes from Québec for street arts, provided the team can front costs and confirms covered expenses in writing.",
+          "en": "One of the more concrete opportunities for Québec street-arts teams, provided they can cover costs up front and obtain written confirmation of the expenses included.",
           "ja": "大道芸・公共空間作品ではケベックから比較的進めやすい案件です。ただし立替能力と主催者負担範囲の書面確認が必要です。"
         }
       }
@@ -285,7 +285,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Voie internationale réelle mais entièrement entrepreneuriale. Ne vous engagez qu’après contrat de lieu et budget complet incluant logement d’août, marketing et risque de billetterie.",
-          "en": "A real international route but fully entrepreneurial. Commit only after a venue contract and a full budget covering August lodging, marketing and box-office risk.",
+          "en": "A genuine international opportunity, but one that is entirely entrepreneurial. Commit only after securing a venue contract and a full budget covering August lodging, marketing and box-office risk.",
           "ja": "国外参加できる一方、全面的な自主興行です。会場契約を取り、8月の宿泊、広報、チケット収入リスクまで含む予算を作ってから進める案件です。"
         }
       }
@@ -330,7 +330,7 @@
         "state": "self_funded",
         "note": {
           "fr": "N’inscrivez pas le spectacle avant d’avoir un lieu et un budget complet. Le Fringe Fund est une piste distincte et compétitive, pas une prise en charge automatique de l’inscription.",
-          "en": "Do not register until a venue and full budget are in place. The Fringe Fund is a separate competitive route, not automatic coverage attached to registration.",
+          "en": "Do not register until a venue and full budget are in place. The Fringe Fund is a separate competitive program, not automatic support attached to registration.",
           "ja": "会場と全体予算が固まるまで登録を確定しないでください。Fringe Fundは別途審査のある制度で、登録に自動付帯する支援ではありません。"
         }
       }
@@ -394,7 +394,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Accès national direct et encadrement de production solide, mais le spectacle reste entièrement autoproduit. Attendre les frais 2027, choisir la catégorie selon le lieu et budgéter sans garantie de billetterie.",
-          "en": "A direct National route with strong producing infrastructure, but the show remains fully self-produced. Wait for 2027 fees, choose the category by venue needs, and budget without guaranteed ticket income.",
+          "en": "A direct application in the National category with strong producing infrastructure, although the show remains fully self-produced. Wait for the 2027 fees, choose the category according to venue needs and budget without assuming ticket income.",
           "ja": "National枠で直接応募でき制作基盤も充実していますが、作品は完全な自主制作です。2027年費用を待ち、会場要件に合う区分を選び、売上保証なしで予算化します。"
         }
       }
@@ -708,7 +708,7 @@
         "state": "conditional",
         "note": {
           "fr": "Impact Spotlight est la voie la mieux soutenue depuis le Québec. Pour Impact Lab, prévoir voyage et accréditations, puis demander une aide externe seulement après sélection et confirmation écrite des dépenses couvertes.",
-          "en": "Impact Spotlight is the best-supported route from Québec. For Impact Lab, budget travel and accreditations, then seek external funding only after selection and written confirmation of covered costs.",
+          "en": "Impact Spotlight offers the strongest support for applicants from Québec. For Impact Lab, budget for travel and accreditation, then seek external funding only after selection and written confirmation of covered costs.",
           "ja": "ケベックからはImpact Spotlightが最も支援の厚いルートです。Impact Labは渡航費と登録料を見込み、採択後に主催者負担を書面確認してから外部助成を検討します。"
         }
       }
@@ -767,7 +767,7 @@
       },
       "organizerSupport": {
         "fr": "Sélection dans un grand festival international; aucune prise en charge financière, de déplacement ou d’hébergement n’est confirmée dans l’annonce actuelle.",
-        "en": "Selection into a major international festival; the current announcement confirms no financial, travel or accommodation coverage.",
+        "en": "Selection into a major international festival; the current announcement does not confirm any financial, travel or accommodation support.",
         "ja": "国際映画祭への選出機会ですが、現行告知では金銭、渡航、宿泊の支援は確認できません。"
       },
       "quebecAssessment": {
@@ -1021,7 +1021,7 @@
         "state": "conditional",
         "note": {
           "fr": "Une voie nationale réelle pour une œuvre québécoise à forte dimension visuelle et de site public. Attendre le prochain appel avant de budgéter déplacement ou équipe, puis aligner la proposition sur le thème et la faisabilité municipale.",
-          "en": "A real national route for a Quebec work with strong visual and public-site dimensions. Wait for the next call before budgeting travel or crew, then align the proposal with the theme and municipal feasibility.",
+          "en": "A genuine national opportunity for a Québec work with strong visual and public-space dimensions. Wait for the next call before budgeting for travel or crew, then align the proposal with the theme and municipal requirements.",
           "ja": "視覚性と公共空間性の強いケベック作品には実際の全国ルートです。移動・スタッフ費は次回要項まで予算化せず、テーマと市の実現可能性に沿って企画を組みます。"
         }
       }
@@ -1065,7 +1065,7 @@
         "state": "conditional",
         "note": {
           "fr": "Bonne voie de mutualisation d’une tournée pour une compagnie québécoise ayant déjà joué dans un Fringe. Attendre le cycle suivant et comparer séparément frais, dates, recettes, voyage et hébergement de chaque arrêt avant de déposer.",
-          "en": "A useful multi-stop route for a Quebec company with prior Fringe experience. Wait for the next cycle and compare each stop’s fees, dates, revenue, travel, and lodging before applying.",
+          "en": "A useful multi-stop opportunity for a Québec company with prior Fringe experience. Wait for the next cycle and compare each stop’s fees, dates, revenue, travel and lodging before applying.",
           "ja": "Fringe参加歴のあるケベック団体には複数都市ツアーを組む有用な経路です。次回募集を待ち、各開催地の費用、日程、収入、渡航・宿泊を個別比較して応募します。"
         }
       }
@@ -1109,7 +1109,7 @@
       "quebecAssessment": {
         "state": "conditional",
         "note": {
-          "fr": "国外・州外から検討できる可能性はあるが、会場運営、技術、渡航、滞在を自己負担で見積もる前提。次回のAMV規則、収益条件、税務を文書で確認してから進める。",
+          "fr": "Une candidature depuis l’extérieur de l’Alberta semble possible, mais il faut prévoir d’assumer les coûts liés au lieu, à la technique, au déplacement et à l’hébergement. Avant d’aller plus loin, faites confirmer par écrit les prochaines règles de l’AMV, les conditions de partage des recettes et les exigences fiscales.",
           "en": "Potentially accessible from outside Alberta, but plan on pricing venue management, technical, travel and lodging yourself. Confirm next AMV rules, revenue terms and tax requirements in writing before proceeding.",
           "ja": "州外からも検討できる可能性がありますが、会場運営、技術、移動、滞在の自己負担を前提にします。次回のAMV規則、収益条件、税務を文書で確認してから進めてください。"
         }
@@ -1155,7 +1155,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Une voie accessible depuis le Québec mais éloignée et techniquement légère. Ne demander le billet qu’après tirage, chiffrer vol, hébergement, marketing et 250 CAD, et vérifier que le spectacle peut fonctionner avec une technique minimale.",
-          "en": "An accessible but distant, technically light route from Quebec. Seek billeting only after selection, price flight, lodging, marketing and CAD 250, and verify the work functions with minimal technical support.",
+          "en": "Accessible from Québec but geographically distant and technically limited. Seek billeting only after selection, budget for airfare, lodging, marketing and the CAD 250 fee, and confirm that the work can be presented with minimal technical support.",
           "ja": "ケベックから応募可能ですが遠隔地で技術条件は軽めです。抽選後にホームステイを依頼し、航空券・宿泊・広報・250カナダドルを積算し、最小限の技術環境で成立するか確認してください。"
         }
       }
@@ -1256,7 +1256,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Route de marché solide pour un projet documentaire prêt à chercher des partenaires, mais chiffrez les frais de sélection, deux personnes à Amsterdam et leur séjour avant de déposer.",
-          "en": "A strong market route for a documentary ready to seek partners, but budget the selection fee and two people’s Amsterdam travel and stay before entry.",
+          "en": "A strong market opportunity for a documentary ready to seek partners, but budget for the selection fee and travel and accommodation in Amsterdam for two people before applying.",
           "ja": "国際共同製作先を探す段階のドキュメンタリーには有力ですが、応募前に選出料と2人分のアムステルダム渡航・滞在費を見積もる必要があります。"
         }
       }
@@ -1347,7 +1347,7 @@
       },
       "organizerSupport": {
         "fr": "Vitrine de 20 minutes devant des diffuseurs, inscription automatique de l’offre au répertoire numérique et coordination technique si retenue. Aucun cachet de vitrine ni remboursement de voyage n’est confirmé sur la page.",
-        "en": "A 20-minute showcase before presenters, automatic listing in the digital performance directory, and technical coordination if selected. The page confirms no showcase fee or travel reimbursement.",
+        "en": "A 20-minute showcase before presenters, automatic listing in the digital performance directory, and technical coordination if selected. The page does not confirm a showcase fee or travel reimbursement.",
         "ja": "プレゼンター向け20分ショーケース、デジタル作品カタログへの自動掲載、採択後の技術調整があります。ショーケース出演料や渡航費返金は確認できません。"
       },
       "quebecAssessment": {
@@ -1399,7 +1399,7 @@
         "state": "verify",
         "note": {
           "fr": "Piste montréalaise pertinente, mais attendre le prochain règlement officiel avant de vérifier admissibilité, format et budget; ne pas utiliser les conditions d’un autre volet.",
-          "en": "A relevant Montréal route, but wait for the next official rules before assessing eligibility, format and budget; do not use terms from another stream.",
+          "en": "A relevant Montréal opportunity, but wait for the next official rules before assessing eligibility, format and budget; do not rely on terms from another program stream.",
           "ja": "モントリオールの有力候補ですが、次回公式要項が出るまで資格、形式、予算を確定せず、別部門の条件も転用しないでください。"
         }
       }
@@ -1525,7 +1525,7 @@
     "decisionGuide": {
       "access": {
         "fr": "La Rencontre 2026 se tient du 13 au 16 octobre. L’inscription agent·e, producteur·trice ou artiste en autoproduction est affichée complète; aucun nouvel accès artiste n’est confirmé sur la page principale.",
-        "en": "The 2026 Rencontre runs October 13–16. Agent, producer and self-produced artist registration is marked full; the main page confirms no new artist access.",
+        "en": "The 2026 Rencontre runs October 13–16. Registration for agents, producers and self-produced artists is marked full; the main page does not confirm any additional artist access.",
         "ja": "2026年のRencontreは10月13〜16日開催です。代理人、プロデューサー、自主制作アーティストの登録枠は満席表示で、新たなアーティスト参加経路は確認できません。"
       },
       "applicantCost": {
@@ -1542,7 +1542,7 @@
         "state": "verify",
         "note": {
           "fr": "Ne pas tenter l’inscription complète 2026 comme voie de remplacement. Surveiller le prochain appel de vitrines et chiffrer seulement à partir de ses règles et du profil d’inscription pertinent.",
-          "en": "Do not treat the full 2026 registration as a substitute route. Watch the next showcase call and budget only from its rules and the relevant registration profile.",
+          "en": "Do not treat full registration for 2026 as a substitute for the showcase application. Watch for the next showcase call and budget only from its rules and the relevant registration category.",
           "ja": "満席の2026年登録を代替経路にせず、次回ショーケース公募を待ち、その要項と該当登録区分からのみ予算化してください。"
         }
       }
@@ -1586,7 +1586,7 @@
         "state": "conditional",
         "note": {
           "fr": "Bonne voie locale, y compris potentiellement sans citoyenneté canadienne, mais préparez Scène Pro au moins cinq jours ouvrables avant l’échéance et attendez trois intérêts ainsi qu’un contrat avant de budgéter la tournée.",
-          "en": "A strong local route, potentially including non-Canadian residents, but prepare Scène Pro at least five business days before the deadline and wait for three interests plus a contract before budgeting a tour.",
+          "en": "A strong local opportunity that may include residents who are not Canadian citizens. Prepare the Scène Pro listing at least five business days before the deadline, and wait for three expressions of interest and a contract before budgeting a tour.",
           "ja": "非カナダ人の州内在住者も利用できる可能性がある有力な地域ルートです。ただし締切の5営業日以上前にScène Proを準備し、3者以上の関心と契約が出るまでは巡回を確定しないでください。"
         }
       }
@@ -1640,7 +1640,7 @@
         "state": "conditional",
         "note": {
           "fr": "Bonne voie pour un spectacle complet de cirque déjà en tournée. Au prochain appel, vérifier adhésion et frais du Rendez-vous, puis obtenir par écrit toute aide avant de budgéter.",
-          "en": "A good route for a full-length circus production with touring history. At the next call, verify membership and Meeting fees, then obtain any support in writing before budgeting.",
+          "en": "A good opportunity for a full-length circus production with touring experience. At the next call, verify membership and Meeting fees, then obtain written confirmation of any support before budgeting.",
           "ja": "巡演実績のある全編サーカス作品には有力です。次回は会員費と会合登録料を確認し、支援内容を書面で得てから予算化します。"
         }
       }
@@ -1684,7 +1684,7 @@
         "state": "conditional",
         "note": {
           "fr": "Piste forte pour une relève établie au Québec; la page exige une proportion de résidence, pas une citoyenneté. Au prochain cycle, confirmer contrat, cachets et prise en charge de chaque date avant engagement.",
-          "en": "A strong route for Quebec-based emerging practice; the page states a residency ratio, not citizenship. At the next cycle, confirm contract, fees and coverage for each date before committing.",
+          "en": "A strong opportunity for emerging artists based in Québec; the page states a residency ratio, not a citizenship requirement. At the next cycle, confirm the contract, fees and support for each date before committing.",
           "ja": "ケベック拠点の若手には有力で、ページの条件は国籍ではなく居住者比率です。次回は契約、出演料、各日程の負担範囲を確認してから参加を確定します。"
         }
       }
@@ -1904,7 +1904,7 @@
         "state": "verify",
         "note": {
           "fr": "Piste locale très pertinente pour le cirque montréalais, mais ne pas considérer l’appel comme ouvert tant que la TOHU n’a pas publié ou confirmé le cycle 2026–2027.",
-          "en": "A highly relevant local route for Montreal circus, but do not treat the call as open until TOHU publishes or confirms the 2026–27 cycle.",
+          "en": "A highly relevant local opportunity for Montréal circus artists, but do not treat the call as open until TOHU publishes or confirms the 2026–27 cycle.",
           "ja": "モントリオールのサーカスには有力な地元候補ですが、TOHUが2026〜27年サイクルを公開・確認するまでは受付中と扱いません。"
         }
       }
@@ -1949,7 +1949,7 @@
         "state": "conditional",
         "note": {
           "fr": "Bonne piste locale pour peaufiner une œuvre existante techniquement légère. Avant d’accepter, obtenir par écrit cachet, voyage, hébergement, horaires techniques et coûts dépassant l’enveloppe fournie.",
-          "en": "A strong local route for refining an existing technically light work. Before accepting, obtain written artist-fee, travel, lodging, technical schedule and overage terms.",
+          "en": "A strong local opportunity for refining an existing work with modest technical needs. Before accepting, obtain written terms covering the artist fee, travel, lodging, technical schedule and any additional costs.",
           "ja": "技術負荷の軽い既存作品を磨く地域候補です。受入前に出演料、移動、宿泊、技術日程、提供範囲超過費用を書面で確認してください。"
         }
       }
@@ -2091,7 +2091,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Accès national direct et option particulièrement lisible pour une œuvre francophone, mais les recettes ne sont pas garanties. Attendre les règles 2027 et budgéter sans compter sur la billetterie.",
-          "en": "A direct National route with a particularly legible option for Francophone work, but revenue is not guaranteed. Wait for 2027 rules and budget without relying on box office.",
+          "en": "A direct application in the National category, with a particularly clear option for Francophone work, but revenue is not guaranteed. Wait for the 2027 rules and budget without relying on box-office income.",
           "ja": "National枠で直接応募でき、フランス語作品にも分かりやすい経路ですが、売上保証はありません。2027年要項を待ち、興行収入を前提にしない予算を作ります。"
         }
       }
@@ -2216,7 +2216,7 @@
       },
       "organizerSupport": {
         "fr": "Pathways offre dix ateliers gratuits sur l’écriture, création collaborative, conception, technique et subventions. La page ne confirme aucun soutien aux compagnies tirées au sort en 2027.",
-        "en": "Pathways provides ten free workshops on writing, collaborative creation, design, technical work and grants. The page confirms no support for companies drawn in 2027.",
+        "en": "Pathways provides ten free workshops on writing, collaborative creation, design, technical work and grants. The page does not confirm what support, if any, will be available to companies selected in the 2027 draw.",
         "ja": "Pathwaysは執筆、共同創作、デザイン、技術、助成申請の無料ワークショップ10回を提供しますが、2027年抽選採択団体への支援はこのページで確認できません。"
       },
       "quebecAssessment": {
@@ -2360,7 +2360,7 @@
         "state": "conditional",
         "note": {
           "fr": "Voie internationale crédible, mais la faisabilité dépend entièrement de l’offre négociée. Exigez dates, cachet, voyage, logement, fret et technique par écrit.",
-          "en": "A credible international route, but feasibility depends entirely on the negotiated offer. Get dates, fee, travel, lodging, freight and technical terms in writing.",
+          "en": "A credible international opportunity whose feasibility depends entirely on the negotiated offer. Obtain written terms covering dates, fees, travel, lodging, freight and technical requirements.",
           "ja": "国外向けの現実的な入口ですが、成立性は交渉条件次第です。日程、出演料、渡航、宿泊、貨物、技術条件を書面で確認してください。"
         }
       }
@@ -2799,7 +2799,7 @@
         "state": "conditional",
         "note": {
           "fr": "Une piste de marché hors Québec, à préparer seulement si une tournée en C.-B. est réaliste. À l’ouverture suivante, vérifier admissibilité territoriale, frais, sélection, rémunération et budget de déplacement avant de déposer.",
-          "en": "A market route outside Quebec, worth preparing only if a B.C. tour is realistic. At the next opening, verify territorial eligibility, fees, selection, pay, and travel budget before applying.",
+          "en": "A market opportunity outside Québec, worth preparing for only if a B.C. tour is realistic. At the next opening, verify territorial eligibility, fees, selection, compensation and the travel budget before applying.",
           "ja": "BC州ツアーが現実的な場合に準備する、ケベック外の市場経路です。次回開始時に地域要件、費用、選考、報酬、移動予算を確認してから応募してください。"
         }
       }
@@ -2889,7 +2889,7 @@
         "state": "conditional",
         "note": {
           "fr": "Route locale concrète pour une compagnie québécoise. Préparer Eventotron avant le 13 août et ne payer qu’après avoir vérifié le montant, les conditions de remboursement, le lieu, le nombre de représentations et les besoins techniques.",
-          "en": "A concrete local route for a Quebec company. Prepare Eventotron before August 13 and pay only after checking the amount, refund terms, venue, performance count, and technical needs.",
+          "en": "A concrete local opportunity for a Québec company. Prepare Eventotron before August 13 and pay only after checking the amount, refund terms, venue, number of performances and technical requirements.",
           "ja": "ケベック団体にとって具体的な地元経路です。8月13日前にEventotronを準備し、金額、返金条件、会場、公演数、技術条件を確認してから支払います。"
         }
       }
@@ -2934,7 +2934,7 @@
         "state": "verify",
         "note": {
           "fr": "Une piste à surveiller pour le Canada atlantique, mais pas encore un dossier budgétisable. À la publication du prochain appel, vérifier le mode d’accès, les frais, la billetterie, les lieux et tout coût de voyage depuis le Québec.",
-          "en": "A route to watch for Atlantic Canada, but not yet one to budget. When the next call appears, verify access method, fees, box office, venues, and all Quebec travel costs.",
+          "en": "An opportunity to watch in Atlantic Canada, but not yet one to include in a budget. When the next call appears, verify the application process, fees, box-office terms, venues and all travel costs from Québec.",
           "ja": "大西洋岸カナダ向けに監視する候補ですが、まだ予算化できる段階ではありません。次回公募時に参加方式、費用、チケット収入、会場、ケベックからの移動費を確認してください。"
         }
       }
@@ -2979,7 +2979,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Une voie internationale claire dans le dernier cycle, mais éloignée depuis le Québec. Au prochain appel, vérifier que la catégorie internationale et la grille de frais subsistent, demander le logement tôt après sélection, et budgéter déplacement, coûts du spectacle et environ 734 CAD si les frais 2026 se répètent.",
-          "en": "A clear international route in the last cycle, but distant from Quebec. At the next call, verify that the international category and fee schedule remain, request billeting early after selection, and budget travel, show costs, and about CAD 734 only if the 2026 fees repeat.",
+          "en": "The previous cycle offered a clear international application option, but the destination is far from Québec. At the next call, verify that the international category and fee schedule remain, request billeting soon after selection and use the approximately CAD 734 total only if the 2026 fees still apply.",
           "ja": "直近サイクルでは明確な国際ルートでしたが、ケベックからは遠隔地です。次回に国際区分と料金表が継続するか確認し、採択後すぐホームステイを申請し、2026年料金が同じ場合に限り約734カナダドルに移動・作品費を加えて予算化してください。"
         }
       }
@@ -3024,7 +3024,7 @@
         "state": "self_funded",
         "note": {
           "fr": "La catégorie National est la voie à surveiller depuis le Québec. À l’ouverture 2027, confirmer catégorie, calendrier, frais, contrat, nombre de représentations et recettes; budgéter ensuite déplacement et séjour sans présumer d’aide locale.",
-          "en": "The National category is the route to watch from Quebec. At the 2027 opening, confirm category, dates, fees, contract, performance count, and revenue; then budget travel and stay without assuming local support.",
+          "en": "The National category is the option to watch from Québec. When applications open in 2027, confirm the category, dates, fees, contract, number of performances and revenue, then budget for travel and accommodation without assuming local support.",
           "ja": "ケベックからはNational区分が監視対象です。2027年の開始時に区分、日程、費用、契約、公演数、収入を確認し、地元支援を前提にせず移動・滞在を予算化してください。"
         }
       }
@@ -3069,7 +3069,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Voie nationale ouverte aux compagnies québécoises, mais le document actuel concerne 2026. Attendre l’appel 2027 et confirmer frais, recettes, voyage, séjour, nombre de représentations et technique avant de déposer.",
-          "en": "A National route open to Quebec companies, but the current document covers 2026. Wait for the 2027 call and confirm fees, revenue, travel, lodging, performance count, and technical terms before applying.",
+          "en": "A national opportunity open to Quebec companies, but the current document covers 2026. Wait for the 2027 call and confirm fees, revenue, travel, lodging, performance count and technical terms before applying.",
           "ja": "ケベック団体がNational枠で応募できる経路ですが、現行資料は2026年版です。2027年募集を待ち、費用、収入、渡航、宿泊、公演数、技術条件を確認して応募します。"
         }
       }
@@ -3151,7 +3151,7 @@
         "state": "verify",
         "note": {
           "fr": "Envoyez d’abord une demande courte. Ne considérez la piste active qu’après réponse écrite sur accès international, coût, contrepartie, invitation et hébergement.",
-          "en": "Send a short enquiry first. Treat the route as active only after written confirmation of international access, cost, exchange obligation, invitation and lodging.",
+          "en": "Send a short enquiry first. Treat the opportunity as active only after receiving written confirmation of international eligibility, costs, exchange obligations, the invitation and lodging.",
           "ja": "まず短い問い合わせを送り、国外受入、費用、交換条件、招待状、宿泊への書面回答を得てから有効な案件として扱ってください。"
         }
       }
@@ -3206,7 +3206,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Une petite voie de loterie à coût initial limité, mais à financer depuis le Québec. Préparer un seul dossier; après l’appel suivant, vérifier frais, conditions de billetterie, lieu et besoins techniques avant de payer.",
-          "en": "A small lottery route with limited initial cost, but one to self-fund from Quebec. Prepare one submission; after the next call, verify fees, box-office terms, venue, and technical needs before paying.",
+          "en": "A small lottery-based opportunity with a limited initial cost, but one that applicants from Québec should expect to self-fund. Prepare one submission; after the next call, verify fees, box-office terms, the venue and technical requirements before paying.",
           "ja": "初期費用が小さい抽選経路ですが、ケベックからは自費前提です。1件の応募を準備し、次回公募後に費用、チケット収入条件、会場、技術要件を確認してから支払ってください。"
         }
       }
@@ -3817,7 +3817,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Bonne piste ouverte, mais pas encore une candidature 2027 active. Attendre le calendrier, les tarifs, le lieu et les règles de visa 2027 avant tout budget ou dépôt.",
-          "en": "A useful open route, but not yet an active 2027 registration. Wait for the 2027 calendar, prices, venue and visa rules before budgeting or submitting.",
+          "en": "A useful open-access opportunity, but registration for 2027 is not yet active. Wait for the 2027 calendar, prices, venue information and visa rules before budgeting or applying.",
           "ja": "有用なオープン枠ですが、2027年登録はまだ始まっていません。日程、料金、会場、査証条件が出るまで予算化・登録を行いません。"
         }
       }
@@ -4263,7 +4263,7 @@
         "state": "conditional",
         "note": {
           "fr": "Voie internationale réelle pour une compagnie professionnelle, à condition de présenter dès le dépôt un prix couvrant honnêtement toute la tournée.",
-          "en": "A real international route for a professional company, provided the submitted price honestly covers the entire trip.",
+          "en": "A genuine international opportunity for a professional company, provided the proposed fee realistically covers the full cost of the trip.",
           "ja": "プロ団体には現実的な国際ルートですが、応募段階から全渡航経費を含む妥当な金額を提示できることが条件です。"
         }
       }
@@ -4475,7 +4475,7 @@
         "state": "conditional",
         "note": {
           "fr": "Très bonne piste pour une œuvre jeune public conforme au thème. Après sélection, obtenir une lettre détaillant toutes les prises en charge avant de confirmer ou de demander une aide complémentaire.",
-          "en": "A strong route for theme-aligned work for young audiences. After selection, obtain a letter detailing all coverage before confirming or seeking gap funding.",
+          "en": "A strong opportunity for work for young audiences that aligns with the theme. After selection, obtain a letter detailing all support before confirming participation or seeking gap funding.",
           "ja": "テーマに合う児童・青少年向け作品には有力です。採択後、全支援費目を記した書面を取得してから、参加確定や不足分の助成申請へ進んでください。"
         }
       }
@@ -4720,7 +4720,7 @@
         "state": "conditional",
         "note": {
           "fr": "Bonne piste de réseau si une recommandation ASSITEJ est possible. Budgétez d’abord le voyage et demandez, si nécessaire, le montant disponible du fonds limité.",
-          "en": "A strong networking route when an ASSITEJ recommendation is possible. Budget travel first and, if needed, ask how much the limited fund can contribute.",
+          "en": "A strong networking opportunity when an ASSITEJ recommendation is available. Budget for travel first and, if needed, ask how much the limited fund could contribute.",
           "ja": "ASSITEJ関係者から推薦を得られるなら有力な交流機会です。まず渡航費を見積もり、必要なら限定的な補助枠で賄える金額を確認してください。"
         }
       }
@@ -5168,7 +5168,7 @@
         "state": "not_direct",
         "note": {
           "fr": "Aucune démarche active n’est possible tant qu’une nouvelle place n’est pas publiée. Réévaluer alors l’éligibilité, les dates et le budget de voyage.",
-          "en": "No active route exists until a new place is published. Reassess eligibility, dates, and the travel budget when that happens.",
+          "en": "There is no active opportunity until a new placement is published. Reassess eligibility, dates and the travel budget when that happens.",
           "ja": "新しい枠が掲載されるまでは応募できません。掲載時に対象資格、日程、渡航予算を再評価します。"
         }
       }
@@ -5223,7 +5223,7 @@
         "state": "conditional",
         "note": {
           "fr": "Voie directe et rémunérée depuis le Québec, avec hébergement possible. Le cachet et la prise en charge ne sont toutefois pas garantis avant sélection; obtenir un contrat séparant cachet, déplacement, fret, repas, logement et technique.",
-          "en": "A direct, paid route from Quebec with possible accommodation. Fee and coverage are not guaranteed before selection; obtain a contract separating fee, travel, freight, meals, lodging and technical costs.",
+          "en": "A direct, paid opportunity for applicants from Québec, with possible accommodation. Fees and support are not guaranteed before selection; obtain a contract that separates the artist fee from travel, freight, meals, lodging and technical costs.",
           "ja": "ケベックから直接応募でき、出演料と宿泊支援の可能性があります。ただし採択前は保証されないため、出演料、移動、貨物、食事、宿泊、技術費を分けた契約を取得します。"
         }
       }
@@ -5439,7 +5439,7 @@
         "state": "conditional",
         "note": {
           "fr": "Option légère et pertinente pour une recherche ciblée si le voyage peut être financé autrement. Avant de réserver, faire confirmer par écrit l'accueil depuis le Québec, les dates, l'hébergement exact, les repas, l'accès linguistique et les éventuels frais.",
-          "en": "A useful low-cost route for focused research if travel can be funded elsewhere. Before booking, obtain written confirmation of Quebec-based eligibility, dates, exact lodging, meals, language access, and any fees.",
+          "en": "A useful low-cost option for focused research if travel can be funded elsewhere. Before booking, obtain written confirmation of eligibility from Québec, dates, exact lodging, meals, language access and any fees.",
           "ja": "渡航費を別途確保でき、目的が明確な資料調査なら有力です。予約前に、ケベック拠点からの受入可否、日程、宿泊内容、食事、利用言語、追加費用を書面で確認してください。"
         }
       }
@@ -5632,7 +5632,7 @@
         "state": "supported",
         "note": {
           "fr": "La prise en charge directe est forte si la langue et l'un des parcours correspondent. Avant de candidater, obtenir une confirmation écrite du parcours admissible depuis le Québec, de la composition de l'équipe, du fret, du visa, de l'assurance et de l'absence de cachet.",
-          "en": "Direct support is strong if the language and one route fit. Before applying, get written confirmation of the Quebec-eligible route, team composition, freight, visa, insurance, and the absence of a performance fee.",
+          "en": "Direct support is strong if the language requirements and one program stream fit the project. Before applying, obtain written confirmation of the stream available to Québec applicants, team composition, freight, visa, insurance and whether a performance fee is provided.",
           "ja": "言語条件といずれかの応募経路に合えば、直接支援は強力です。応募前に、ケベック拠点から使える経路、団体構成、貨物、査証、保険、出演料がないことを書面で確認してください。"
         }
       }
@@ -5890,7 +5890,7 @@
         "state": "conditional",
         "note": {
           "fr": "Piste provinciale intéressante, mais l’absence de condition territoriale publiée ne prouve pas l’admissibilité de tout statut. Au prochain cycle, confirmer statut, cachet, repas, voyage et capacité technique avant de déposer.",
-          "en": "A useful provincial route, but no published territorial rule does not prove every status is eligible. At the next cycle, confirm status, artist fee, meals, travel and technical capacity before applying.",
+          "en": "A useful provincial opportunity, but the absence of a published territorial rule does not mean that every status is eligible. At the next cycle, confirm status requirements, the artist fee, meals, travel and technical capacity before applying.",
           "ja": "州内の有力候補ですが、地域条件の記載がないことは全在留資格の適格性を保証しません。次回に資格、報酬、食事、移動、技術対応範囲を確認してから応募します。"
         }
       }
@@ -5934,7 +5934,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Voie active et multidisciplinaire, mais payante même après la bourse. Demandez d’abord une confirmation écrite de l’espace, des équipements de cirque et du montant net, puis cherchez seulement le solde admissible.",
-          "en": "An active multidisciplinary route, but still participant-paid after scholarship. First obtain written confirmation of space, circus equipment, and net cost, then seek support only for eligible uncovered costs.",
+          "en": "An active multidisciplinary opportunity, but participants still pay after the scholarship is applied. First obtain written confirmation of the space, circus equipment and net cost, then seek support only for eligible uncovered expenses.",
           "ja": "現在応募できる学際的ルートですが、奨学金後も自己負担型です。先に空間・サーカス設備・最終負担額を書面で確認し、未負担の対象費目だけを助成申請してください。"
         }
       }
@@ -5989,7 +5989,7 @@
         "state": "verify",
         "note": {
           "fr": "Candidature directe pertinente pour un numéro de rue solide. Avant d’accepter, obtenez par écrit cachet, règles de chapeau, voyage, logement, repas, nombre de passages et conditions techniques.",
-          "en": "A relevant direct route for a strong street act. Before accepting, obtain written terms for fee, hat rules, travel, lodging, meals, number of sets, and technical conditions.",
+          "en": "A relevant direct opportunity for a strong street act. Before accepting, obtain written terms covering the fee, pass-the-hat rules, travel, lodging, meals, number of sets and technical conditions.",
           "ja": "完成度の高い大道芸作品には直接応募できる有力候補です。受諾前に出演料、投げ銭規則、渡航、宿泊、食事、公演回数、技術条件を書面で確認してください。"
         }
       }
@@ -6043,7 +6043,7 @@
         "state": "verify",
         "note": {
           "fr": "Bonne piste ontarienne pour un numéro de rue éprouvé. Confirmez par écrit le partage des recettes au chapeau, le nombre de passages, le voyage, le séjour et les besoins techniques avant de vous engager.",
-          "en": "A useful Ontario route for a proven street act. Confirm hat-income rules, number of sets, travel, stay, and technical needs in writing before committing.",
+          "en": "A useful Ontario opportunity for a proven street act. Before committing, obtain written confirmation of pass-the-hat income rules, the number of sets, travel, accommodation and technical requirements.",
           "ja": "実績ある大道芸作品にとって有用なオンタリオ州候補です。投げ銭の扱い、公演回数、渡航、滞在、技術条件を書面で確認してから確定してください。"
         }
       }
@@ -6090,14 +6090,14 @@
       },
       "organizerSupport": {
         "fr": "Sélection à un festival de six jours et visibilité publique; aucun cachet, voyage, logement, repas ni minimum de représentations n’est confirmé sur la page de candidature actuelle.",
-        "en": "Selection to a six-day public festival and audience exposure; the current application page confirms no fee, travel, lodging, meals, or minimum performance count.",
+        "en": "Selection for a six-day public festival and audience exposure; the current application page does not confirm a fee, travel, lodging, meals or a minimum number of performances.",
         "ja": "6日間の公開フェスへの選出と観客への露出がありますが、現行応募ページでは出演料、渡航、宿泊、食事、最低公演数を確認できません。"
       },
       "quebecAssessment": {
         "state": "verify",
         "note": {
           "fr": "Piste canadienne pertinente pour un numéro de rue solide, mais les conditions économiques sont entièrement inconnues. Préparer les médias et attendre une offre écrite complète avant tout engagement de voyage.",
-          "en": "A relevant Canadian route for a strong street act, but economic terms are entirely unknown. Prepare media and wait for a complete written offer before committing to travel.",
+          "en": "A relevant Canadian opportunity for a strong street act, but the financial terms are entirely unknown. Prepare promotional materials and wait for a complete written offer before committing to travel.",
           "ja": "完成度の高い大道芸には有力な国内候補ですが、金銭条件は全面的に不明です。素材を準備し、完全な書面条件を得るまで移動を確定しません。"
         }
       }
@@ -6392,7 +6392,7 @@
         "state": "verify",
         "note": {
           "fr": "Piste internationale très pertinente pour le cirque et la rue. Préparer vidéo intégrale, fiche technique et argumentaire de diffusion, mais attendre le règlement 2027 avant de déposer ou d’engager des frais.",
-          "en": "A highly relevant international route for circus and street work. Prepare a full video, technical rider and touring pitch, but wait for the 2027 rules before applying or incurring costs.",
+          "en": "A highly relevant international opportunity for circus and street performance. Prepare a full video, technical rider and touring pitch, but wait for the 2027 rules before applying or incurring costs.",
           "ja": "サーカス・大道芸には非常に相性の良い国際ルートです。全編動画、テクニカルライダー、ツアー提案資料を準備しつつ、応募や出費は2027年要項公開後に判断します。"
         }
       }
@@ -6481,7 +6481,7 @@
         "state": "not_direct",
         "note": {
           "fr": "Une production uniquement québécoise n’est pas admissible. À conserver comme voie de coproduction avec une compagnie néo-zélandaise réelle, qui doit rester productrice principale et employer majoritairement des artistes locaux.",
-          "en": "A Quebec-only production is not eligible. Keep this as a genuine New Zealand co-production route, where the New Zealand company remains the producer and predominantly engages local artists.",
+          "en": "A production based only in Québec is not eligible. Consider this only as a genuine New Zealand co-production in which the New Zealand company remains the producer and predominantly engages local artists.",
           "ja": "ケベックだけの制作体制では応募できません。ニュージーランドの団体が実質的な制作主体となり、主に現地アーティストを起用する共同制作ルートとしてのみ検討します。"
         }
       }
@@ -6525,7 +6525,7 @@
         "state": "not_direct",
         "note": {
           "fr": "Pas de candidature directe pour une équipe uniquement établie au Québec. À surveiller seulement si un véritable partenaire principal britannique porte la production; ne pas créer un partenariat de façade pour satisfaire le critère.",
-          "en": "Not a direct route for a Quebec-only team. Monitor only where a genuine UK lead partner produces the work; do not create a nominal partnership to satisfy eligibility.",
+          "en": "A Québec-only team cannot apply directly. Monitor this only if a genuine UK lead partner will produce the work; do not create a nominal partnership solely to satisfy eligibility.",
           "ja": "ケベックのみを拠点とするチームの直接応募ルートではありません。実質的な英国主幹パートナーが制作を担う場合のみ監視し、資格要件を満たすためだけの名目的提携は避けます。"
         }
       }
@@ -6659,7 +6659,7 @@
         "state": "conditional",
         "note": {
           "fr": "Voie internationale directe à surveiller au prochain cycle. Le cachet doit être calculé pour couvrir le coût réel depuis le Québec; ne pas accepter avant d’avoir montant total, engagements, fiscalité, visa, assurance et hébergement par écrit.",
-          "en": "A direct international route to monitor next cycle. Price the delivered fee against the true cost from Quebec; do not accept before the total fee, duties, tax, visa, insurance and lodging are in writing.",
+          "en": "A direct international opportunity to monitor next cycle. Compare the proposed fee with the full cost of travelling from Québec, and do not accept until the total fee, duties, tax, visa, insurance and lodging terms are in writing.",
           "ja": "次回監視価値のある直接国際ルートです。ケベックからの実費を基に包括出演料を計算し、総額、出演義務、税、ビザ、保険、宿泊を書面確認してから受諾してください。"
         }
       }
@@ -6704,7 +6704,7 @@
         "state": "conditional",
         "note": {
           "fr": "Voie internationale directe à surveiller pour le prochain cycle. Avant de candidater depuis le Québec, chiffrer voyage, fret et séjour de l’équipe au-delà de deux personnes, puis vérifier fiscalité, visa, assurance et calendrier.",
-          "en": "A direct international route to monitor for the next cycle. Before applying from Quebec, price travel, freight and accommodation beyond two people, then verify tax, visa, insurance and schedule terms.",
+          "en": "A direct international opportunity to monitor for the next cycle. Before applying from Québec, budget for travel, freight and accommodation beyond the two people covered, then verify tax, visa, insurance and scheduling terms.",
           "ja": "次回監視価値のある直接国際ルートです。ケベックから応募する前に、渡航・貨物・3人目以降の滞在費を見積もり、税、ビザ、保険、日程条件を確認してください。"
         }
       }
@@ -6794,7 +6794,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Accès international direct, mais modèle d’auto-production à risque financier élevé depuis le Québec. Ne finaliser qu’après budget pessimiste, accord de lieu, visa, fiscalité, assurance, fret, logement et seuil de rentabilité.",
-          "en": "A direct international route, but a financially exposed self-produced model from Quebec. Finalize only after a conservative budget, venue agreement, visa, tax, insurance, freight, lodging and break-even calculation.",
+          "en": "A direct international opportunity, but a financially exposed self-produced model for applicants from Québec. Proceed only after preparing a conservative budget, venue agreement, visa, tax, insurance, freight, lodging and break-even calculation.",
           "ja": "直接参加できる国際ルートですが、ケベックからは自己制作費のリスクが大きい案件です。悲観的な収支、会場契約、ビザ、税、保険、貨物、宿泊、損益分岐点を確認してから登録してください。"
         }
       }
@@ -6840,7 +6840,7 @@
         "state": "conditional",
         "note": {
           "fr": "Voie internationale directe et forte si le projet est réellement prêt pour une tournée américaine avec cachet, fiche technique et calendrier chiffrés. Avant de déposer, vérifier capacité de visa et de tournée, représentation en anglais et budget de présence à New York.",
-          "en": "A strong direct international route if the project is genuinely U.S.-tour-ready with priced fees, technical specifications and schedule. Before applying, verify visa and touring capacity, English-language representation and the New York attendance budget.",
+          "en": "A strong direct international opportunity if the project is genuinely ready for a U.S. tour, with fees, technical specifications and scheduling fully costed. Before applying, verify visa and touring capacity, English-language representation and the budget for attending in New York.",
           "ja": "出演料、技術仕様、日程を提示できる米国ツアー準備済み作品には強い直接国際ルートです。応募前に、ビザ・巡演体制、英語での商談、ニューヨーク滞在予算を確認してください。"
         }
       }
@@ -6885,7 +6885,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Voie ontarienne directe et légère si un déplacement à Toronto est déjà prévu. Ne voyagez pas uniquement pour ce permis sans confirmer assurance, créneaux disponibles, règles d’accessoires et amplification, puis établir un budget fondé uniquement sur les dons.",
-          "en": "A direct, lightweight Ontario route if a Toronto trip is already planned. Do not travel solely for this permit without confirming insurance, available slots, prop and amplification rules, and budgeting on donations only.",
+          "en": "A direct, low-barrier Ontario opportunity if a trip to Toronto is already planned. Do not travel solely for this permit without confirming insurance, available slots, prop and amplification rules, and preparing a budget based only on donations.",
           "ja": "トロント滞在予定がある場合に使いやすいオンタリオ州の直接ルートです。この許可だけを目的に移動せず、保険、空き枠、道具・音響規則を確認し、収入は投げ銭のみとして予算を組んでください。"
         }
       }
@@ -7698,7 +7698,7 @@
         "state": "conditional",
         "note": {
           "fr": "Une personne établie au Québec ne dispose pas d’une voie générale directe. Elle ne devrait envisager ce dépôt que si elle peut démontrer un rattachement admissible à la Suède, au Danemark ou à la Finlande selon les règles publiées le 17 août. Vérifier aussi format pitch ou preview, anglais, technique et gréage, droits vidéo, frais, voyage et droit de travail. Sinon, suivre l’événement comme marché plutôt que comme appel ouvert.",
-          "en": "A Quebec-based person does not have a general direct route. Apply only if the artist can demonstrate an eligible connection to Sweden, Denmark or Finland under the rules published August 17. Also verify pitch or preview format, English-language requirements, technical and rigging conditions, video rights, fees, travel and work authorization. Otherwise, track it as a marketplace rather than an open call.",
+          "en": "A person based in Québec cannot apply through the general process. Apply only if the artist can demonstrate an eligible connection to Sweden, Denmark or Finland under the rules published August 17. Also verify the pitch or preview format, English-language requirements, technical and rigging conditions, video rights, fees, travel and work authorization. Otherwise, track it as a marketplace rather than an open call.",
           "ja": "ケベック在住者向けの一般的な直接応募ではありません。8月17日公開の要項に基づき、スウェーデン、デンマーク、フィンランドとの対象となる所属を証明できる場合だけ検討してください。ピッチ／プレビュー形式、英語、技術・リギング、動画権利、費用、渡航、就労資格も確認し、それ以外は公募ではなく市場情報として追跡します。"
         }
       }
@@ -7742,7 +7742,7 @@
         "state": "self_funded",
         "note": {
           "fr": "Une personne émergente établie au Québec, y compris sans citoyenneté canadienne, correspondait à la voie internationale 2026–27 et devrait surveiller l’ouverture dès minuit le 1er juin 2027, compte tenu du plafond de dossiers. Avant de déposer, vérifier les nouvelles règles, la compatibilité d’un projet circassien ou physique, le budget complet, le visa, l’assurance, le logement et tout besoin d’agrès ou de gréage. C’est un accès studio international, pas une résidence financée.",
-          "en": "An emerging Quebec-based person, including someone without Canadian citizenship, fit the 2026–27 international route and should monitor the June 1, 2027 midnight opening because of the application cap. Before applying, verify the new rules, fit for circus or physical work, full budget, visa, insurance, lodging and any apparatus or rigging needs. This is international studio access, not a funded residency.",
+          "en": "An emerging artist based in Québec, including someone without Canadian citizenship, met the criteria for the 2026–27 international program and should monitor the opening at midnight on June 1, 2027 because applications are capped. Before applying, verify the new rules, suitability for circus or physical work, the full budget, visa, insurance, lodging and any apparatus or rigging requirements. This provides international studio access, not a funded residency.",
           "ja": "カナダ国籍がない人を含むケベック在住の若手アーティストは2026–27年版の国際枠に該当していたため、応募上限を踏まえ2027年6月1日0:00の公開直後を監視する価値があります。応募前に、新要項、サーカス・身体表現との適合、総予算、ビザ、保険、宿泊、器具・リギング条件を確認してください。これは国際的なスタジオ提供であり、資金付き滞在ではありません。"
         }
       }
@@ -8012,7 +8012,7 @@
         "state": "not_direct",
         "note": {
           "fr": "Une compagnie établie uniquement au Québec sans membre suisse ni lieu de travail actuel en Suisse ne répond pas au critère publié et ne doit pas déposer directement. Une collaboration réelle comprenant un membre suisse ou un travail actuellement basé en Suisse peut ouvrir la voie, mais il faut confirmer que le lien satisfait le réseau, puis convenir par écrit de la gouvernance, du partage de la contribution, des cachets, voyage, visa, assurance, fiscalité, propriété intellectuelle, agrès et sécurité.",
-          "en": "A Quebec-only company with no Swiss member and no current place of work in Switzerland does not meet the published criterion and should not apply directly. A genuine collaboration including a Swiss member or work currently based in Switzerland may create a route, but first confirm that the connection satisfies the network, then document governance, contribution sharing, fees, travel, visa, insurance, tax, intellectual property, apparatus and safety.",
+          "en": "A company based only in Québec, with no Swiss member and no current place of work in Switzerland, does not meet the published criterion and should not apply directly. A genuine collaboration involving a Swiss member or work currently based in Switzerland may qualify, but first confirm that the connection satisfies the network, then document governance, contribution sharing, fees, travel, visa, insurance, tax, intellectual property, apparatus and safety.",
           "ja": "スイス人メンバーもスイスの現在の活動拠点もないケベック単独のカンパニーは公開条件を満たさず、直接応募すべきではありません。スイス人メンバーまたはスイス拠点の活動を含む実質的な共同制作なら経路になり得ますが、まず関係性が要件を満たすか確認し、運営責任、支援金配分、出演料、渡航、ビザ、保険、税務、知財、器具、安全を契約で定めてください。"
         }
       }
@@ -8280,7 +8280,7 @@
         "state": "conditional",
         "note": {
           "fr": "Millay Arts affirme servir une communauté internationale et les critères publics n’affichent pas de restriction de citoyenneté ou de résidence; toutefois, faire confirmer par écrit l’admissibilité d’une personne établie au Québec sans citoyenneté canadienne avant de payer. Pour le cirque, la voie la mieux étayée est le duo collaboratif ouvert à toutes disciplines. Confirmer le classement du projet, puis le sol, les dimensions, la hauteur, les accroches et charges, les agrès, tapis, montage, sécurité, assurance et accompagnement technique, ainsi que les exigences d’entrée américaines propres à la citoyenneté.",
-          "en": "Millay Arts says it serves an international community and its public criteria show no citizenship or residence restriction; however, obtain written confirmation that a Quebec-based person without Canadian citizenship is eligible before paying. For circus, the best-supported route is the all-disciplines two-person collaboration. Confirm project classification, then floor, dimensions, height, rigging points and loads, apparatus, mats, setup, safety, insurance and technical support, as well as citizenship-specific U.S. entry requirements.",
+          "en": "Millay Arts says it serves an international community and its public criteria show no citizenship or residence restriction; however, obtain written confirmation that a person based in Québec without Canadian citizenship is eligible before paying. For circus, the all-disciplines two-person collaboration offers the strongest support. Confirm project classification, then the floor, dimensions, height, rigging points and loads, apparatus, mats, setup, safety, insurance and technical support, as well as U.S. entry requirements specific to the applicant’s citizenship.",
           "ja": "Millay Artsは国際的な創作者コミュニティを掲げ、公開条件に国籍・居住地制限は見当たりませんが、カナダ国籍がないケベック在住者は支払前に応募資格を書面で確認してください。サーカスで公式根拠が最も強いのは、全分野対象の2人組Collaborative枠です。企画の分類に加え、床、広さ、天井高、吊り点・荷重、器具、マット、設営、安全、保険、技術支援と、国籍別の米国入国条件を確認する必要があります。"
         }
       }
