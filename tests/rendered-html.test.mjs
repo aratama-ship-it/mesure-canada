@@ -28,6 +28,9 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
   const html = await response.text();
   assert.match(html, /<title>MESURE — Canada/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/mesure\.art-monosashi\.com\/"/);
+  assert.match(html, /<meta property="og:url" content="https:\/\/mesure\.art-monosashi\.com\/"/);
+  assert.match(html, /<meta property="og:image" content="https:\/\/mesure\.art-monosashi\.com\/og-opportunities\.png"/);
   assert.equal([...html.matchAll(/static\.cloudflareinsights\.com\/beacon\.min\.js/g)].length, 1);
   assert.match(html, /a9e4947d29da412f924d67897808da7a/);
   const layoutSource = await readFile(new URL("../app/layout.tsx", import.meta.url), "utf8");
@@ -154,6 +157,21 @@ test("server-renders the monitoring ledger on its own route", async () => {
   assert.equal([...html.matchAll(/class="radar-row"/g)].length, 221);
   assert.match(html, /Retour à la recherche d’occasions/);
   assert.doesNotMatch(html, /class="workbench"/);
+});
+
+test("serves search discovery metadata from the custom domain", async () => {
+  const robotsResponse = await render("/robots.txt");
+  assert.equal(robotsResponse.status, 200);
+  const robots = await robotsResponse.text();
+  assert.match(robots, /User-Agent: \*/i);
+  assert.match(robots, /Allow: \//i);
+  assert.match(robots, /Sitemap: https:\/\/mesure\.art-monosashi\.com\/sitemap\.xml/i);
+
+  const sitemapResponse = await render("/sitemap.xml");
+  assert.equal(sitemapResponse.status, 200);
+  const sitemap = await sitemapResponse.text();
+  assert.match(sitemap, /<loc>https:\/\/mesure\.art-monosashi\.com<\/loc>/);
+  assert.match(sitemap, /<loc>https:\/\/mesure\.art-monosashi\.com\/radar<\/loc>/);
 });
 
 test("opportunity and funding records preserve evidence fields", async () => {
