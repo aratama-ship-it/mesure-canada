@@ -10552,5 +10552,137 @@
         }
       }
     }
+  },
+  {
+    "id": "mora-monterrey-2026-next-watch",
+    "title": "MORA Monterrey Artist Residencies 2026",
+    "country": "Mexico",
+    "city": "Monterrey",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-02-28",
+    "deadlineLabel": {
+      "fr": "L’appel MORA 2026 pour les résidences d’été et d’automne a clos le 28 février; suivre le prochain cycle.",
+      "en": "The MORA 2026 summer and autumn residency call closed February 28; follow the next cycle.",
+      "ja": "MORAの2026年夏・秋レジデンス募集は2月28日に終了。次回サイクルを監視します。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.moraresidency.com/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "MORA accueille des artistes émergent·es du monde entier pour ses cycles à Monterrey et décrit la résidence comme un pont entre pratiques internationales et scène créative mexicaine. Le prochain appel doit confirmer durée, nombre de places, critères et calendrier; la page consultée ne publie pas de restriction de nationalité ou résidence.",
+        "en": "MORA welcomes emerging artists from around the world for cycles in Monterrey and describes the residency as a bridge between international practices and Mexico’s creative scene. The next call must confirm duration, places, criteria, and calendar; the page reviewed publishes no nationality or residence restriction.",
+        "ja": "MORAはモンテレイのサイクルに世界中の新進アーティストを迎え、国際的な実践とメキシコの創造的シーンをつなぐ場と説明しています。次回募集で期間、枠数、基準、日程を確認してください。確認したページに国籍・居住地制限はありません。"
+      },
+      "applicantCost": {
+        "fr": "La page annonce studio, matériaux, mentorat et échanges avec la communauté artistique de Monterrey, mais ni frais de programme, ni logement, ni voyage, visa, assurance, fiscalité ou budget de production ne sont détaillés. Demander un devis et les conditions avant candidature ou déplacement.",
+        "en": "The page announces studio, materials, mentoring, and engagement with Monterrey’s art community, but does not detail programme fee, accommodation, travel, visa, insurance, tax, or production budget. Request a quote and terms before applying or travelling.",
+        "ja": "スタジオ、材料、メンタリング、モンテレイのアートコミュニティとの交流は案内されていますが、プログラム費、宿泊、渡航、ビザ、保険、税務、制作予算は未詳です。応募・渡航前に見積りと条件を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Studio, matériaux, mentorat et échanges avec la communauté artistique de Monterrey; le programme est fondé par le sculpteur Andrés Anza et la designer Daniela Estrada pour créer dialogue, expérimentation et collaborations entre scènes locales et internationales.",
+        "en": "Studio, materials, mentoring, and exchanges with Monterrey’s art community; the programme was founded by sculptor Andrés Anza and designer Daniela Estrada to create dialogue, experimentation, and collaboration between local and international scenes.",
+        "ja": "スタジオ、材料、メンタリング、モンテレイのアートコミュニティとの交流があり、彫刻家Andrés AnzaとデザイナーDaniela Estradaが、地域と国際シーンの対話・実験・協働を作るために設立したプログラムです。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste internationale possible pour un·e artiste émergent·e, mais conditions financières et calendrier ne sont pas assez publiés. À l’ouverture, confirmer frais, logement, voyage, visa, assurance, matériaux inclus et présentation/exposition éventuelle.",
+          "en": "A possible international route for an emerging artist, but financial terms and calendar are insufficiently published. At opening, confirm fee, accommodation, travel, visa, insurance, included materials, and any presentation/exhibition.",
+          "ja": "新進アーティストには国際応募候補ですが、費用条件と日程の公開が不十分です。次回は料金、宿泊、渡航、ビザ、保険、含まれる材料、発表・展覧会の有無を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "bestiario-oaxaca-2026-next-watch",
+    "title": "Bestiario Oaxaca Artist Residency 2026",
+    "country": "Mexico",
+    "city": "Oaxaca de Juárez",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-28",
+    "deadlineLabel": {
+      "fr": "L’appel Bestiario 2026 avait pour prochaine échéance le 28 avril; suivre le prochain créneau flexible.",
+      "en": "The Bestiario 2026 call had an April 28 next deadline; follow the next flexible slot.",
+      "ja": "Bestiarioの2026年募集は次の締切が4月28日でした。次回の柔軟な滞在枠を監視します。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://bestiariooax.com/en/open-call/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Bestiario proposait un appel 2026 aux artistes cherchant création, dialogue et échange à Oaxaca. Sessions de 10 ou 35 jours, format flexible, deux résident·es à la fois, et travail en espagnol ou anglais; la page décrit des liens avec artistes, artisan·es et communauté internationale d’Oaxaca mais ne publie pas de règle de nationalité.",
+        "en": "Bestiario offered a 2026 call to artists seeking creation, dialogue, and exchange in Oaxaca. Sessions are 10 or 35 days in a flexible format, for two residents at a time, in Spanish or English; the page describes links with artists, artisans, and Oaxaca’s international community but publishes no nationality rule.",
+        "ja": "Bestiarioはオアハカでの制作、対話、交流を求めるアーティスト向けに2026年募集を出しました。10日または35日、柔軟な形式、同時2人、スペイン語または英語で実施し、アーティスト、職人、オアハカの国際コミュニティとのつながりを掲げますが、国籍規定は公開していません。"
+      },
+      "applicantCost": {
+        "fr": "Coût annoncé à partir de 8 000 MXN / 455 USD. Il comprend espace de travail partagé équipé et hébergement dans un environnement d’échange, mais la page ne précise voyage, visa, assurance, repas, matériaux, fiscalité, annulation ni ce qui fait varier le prix; les confirmer avant paiement.",
+        "en": "Announced cost starts at MXN 8,000 / USD 455. It includes equipped shared workspace and accommodation in an exchange-oriented environment, but the page does not specify travel, visa, insurance, meals, materials, tax, cancellation, or what changes the price; confirm before paying.",
+        "ja": "案内された費用は8,000メキシコペソ／455米ドルからです。設備を備えた共有作業空間と交流を促す宿泊環境を含みますが、渡航、ビザ、保険、食事、材料、税務、キャンセル、価格変動要因は未詳です。支払い前に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence de 10 ou 35 jours avec espace de travail partagé équipé et hébergement, axée sur développement professionnel, projet individuel ou collectif, connexions avec artistes et artisan·es, et possibilité d’exposition à Oaxaca.",
+        "en": "A 10- or 35-day residency with equipped shared workspace and accommodation, focused on professional development, individual or collaborative project work, connections with artists and artisans, and a possible exhibition in Oaxaca.",
+        "ja": "10日または35日の滞在で、設備付き共有作業空間と宿泊を提供し、専門性の発展、個人・協働企画、アーティスト・職人との接点、オアハカでの展覧会の可能性に焦点を当てます。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie internationale possible mais payante. Avant versement, demander dates disponibles, prix total, chambre, repas, visa, assurance, conditions d’exposition et politique d’annulation; budgéter séparément le voyage international et la production.",
+          "en": "A possible but paid international route. Before paying, ask for available dates, total price, room, meals, visa, insurance, exhibition terms, and cancellation policy; budget international travel and production separately.",
+          "ja": "国際応募は可能性があるものの有料です。支払い前に空き日程、総額、部屋、食事、ビザ、保険、展覧会条件、キャンセル規定を確認し、国際渡航と制作は別途予算化してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "padimai-oops-onchain-residency-2026-open",
+    "title": "Padimai OOPS Onchain Artist Residency 2026",
+    "country": "Singapore",
+    "city": "Singapore",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "open_access",
+    "status": "open",
+    "deadlineDate": "2026-08-15",
+    "deadlineLabel": {
+      "fr": "Candidatures à OOPS ouvertes jusqu’au 15 août 2026; résidence à distance du 20 septembre au 20 décembre.",
+      "en": "OOPS applications are open until August 15, 2026; the remote residency runs September 20–December 20.",
+      "ja": "OOPSの応募は2026年8月15日まで受付中。リモート滞在は9月20日〜12月20日です。"
+    },
+    "nextCheckDate": "2026-08-10",
+    "sourceUrl": "https://www.padimai.net/feed/open-call-oops-origin-of-primary-source-padimai-art-tech-studio-invites-applicat",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Padimai invite les praticien·nes artistiques à postuler à une résidence à distance de trois mois sur art contemporain, blockchain, archives et production de connaissances créatives. Cinq praticien·nes seront sélectionné·es; la page consultée ne publie pas de restriction territoriale ou de médium, mais vérifier ces points dans le dossier de candidature.",
+        "en": "Padimai invites art practitioners to apply to a three-month remote residency on contemporary art, blockchain, archives, and creative knowledge production. Five practitioners will be selected; the page reviewed publishes no territorial or medium restriction, but verify these points in the application materials.",
+        "ja": "Padimaiは、現代アート、ブロックチェーン、アーカイブ、創造的知識生産を扱う3か月のリモート滞在にアート実践者を招待しています。5人を選出し、確認したページに地域・媒体制限はありませんが、応募資料で確認してください。"
+      },
+      "applicantCost": {
+        "fr": "La page de l’organisateur ne publie ni frais de candidature, ni honoraires, ni budget de production, équipement, fiscalité ou droits sur NFT. Comme la résidence est à distance, demander aussi exigences de connexion, logiciels, portefeuille/chaîne, droits d’auteur et confidentialité avant candidature.",
+        "en": "The organizer’s page publishes no application fee, honorarium, production budget, equipment, tax, or NFT-rights terms. Because the residency is remote, also ask about connectivity, software, wallet/chain, copyright, and confidentiality before applying.",
+        "ja": "主催者ページに応募料、謝金、制作予算、機材、税務、NFT権利の記載はありません。リモート滞在のため、応募前に接続環境、ソフトウェア、ウォレット／チェーン、著作権、守秘についても確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence à distance du 20 septembre au 20 décembre 2026 pour cinq praticien·nes. Elle offre un cadre pour aborder les NFT de manière critique et créative comme registres artistiques et systèmes de documentation, d’accès et d’échange, à partir de principes de programmation orientée objet.",
+        "en": "A remote residency September 20–December 20, 2026 for five practitioners. It offers a setting to critically and creatively engage with NFTs as artistic registers and systems of documentation, access, and exchange, drawing on object-oriented-programming principles.",
+        "ja": "2026年9月20日〜12月20日の5人向けリモート滞在です。オブジェクト指向プログラミングの原則を手がかりに、NFTを芸術的記録、文書化、アクセス、交換のシステムとして批評的・創造的に扱う場です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste à distance potentiellement accessible depuis le Québec, mais règles territoriales, rémunération, droits numériques et exigences techniques ne sont pas publiés sur la page consultée. Les obtenir par écrit avant de soumettre des œuvres ou ouvrir un portefeuille.",
+          "en": "A remote route potentially accessible from Quebec, but territorial rules, compensation, digital rights, and technical requirements are not published on the reviewed page. Obtain them in writing before submitting work or opening a wallet.",
+          "ja": "ケベックから参加できる可能性があるリモート候補ですが、地域要件、報酬、デジタル権利、技術要件は確認ページに未掲載です。作品提出やウォレット作成前に書面で確認してください。"
+        }
+      }
+    }
   }
 ]
