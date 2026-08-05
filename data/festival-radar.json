@@ -8820,5 +8820,582 @@
         }
       }
     }
+  },
+  {
+    "id": "bayimba-future-imaginations-2026-open",
+    "title": "Future Imaginations Festival 2026",
+    "country": "Uganda",
+    "city": "Lunkulu Island",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-31",
+    "deadlineLabel": {
+      "fr": "31 août 2026; l’heure et le fuseau de clôture ne sont pas publiés.",
+      "en": "August 31, 2026; the closing time and time zone are not published.",
+      "ja": "2026年8月31日。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-08-31",
+    "sourceUrl": "https://bayimba.org/call-for-artists-future-imaginations-festival/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Appel mondial pour projets solo ou collectifs en performance, installation, exposition, arts numériques, nouveaux médias, laser et pratiques multidisciplinaires liant art et technologie. Festival du 31 décembre 2026 au 2 janvier 2027.",
+        "en": "A worldwide call for solo or collaborative performance, installation, exhibition, digital art, new media, laser and multidisciplinary projects linking art and technology. The festival runs December 31, 2026–January 2, 2027.",
+        "ja": "世界各地の個人・共同企画が対象で、パフォーマンス、インスタレーション、展示、デジタル／ニューメディア、レーザー、芸術と技術を結ぶ学際作品を募集します。会期は2026年12月31日〜2027年1月2日です。"
+      },
+      "applicantCost": {
+        "fr": "Le voyage aller-retour jusqu’à Lunkulu reste à la charge de l’artiste. Aucun frais de candidature n’est publié; prévoir visa, assurance, fret, repas non couverts et dépenses personnelles.",
+        "en": "Artists must pay their own roundtrip travel to Lunkulu. No application fee is published; budget visa, insurance, freight, uncovered meals and personal expenses.",
+        "ja": "Lunkuluまでの往復渡航費は自己負担です。応募料の記載はなく、ビザ、保険、機材輸送、対象外の食事、個人費用を見積もる必要があります。"
+      },
+      "organizerSupport": {
+        "fr": "Le festival annonce l’hébergement, des ressources techniques et de production, ainsi qu’un cachet de 500 USD pour les artistes sélectionnés.",
+        "en": "The festival states that selected artists receive accommodation, technical and production resources, and a USD 500 performance fee.",
+        "ja": "選出者には宿泊、技術・制作リソース、500米ドルの出演料が提供されます。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Candidature directe possible depuis le Québec. Avant d’accepter, obtenir par écrit durée d’hébergement, repas, visa, paiement et fiscalité; pour le cirque, confirmer sol, hauteur, accroches, agrès, tapis, sécurité et assurance.",
+          "en": "A direct application from Quebec is possible. Before accepting, get lodging duration, meals, visa, payment and tax terms in writing; for circus, confirm floor, height, rigging, apparatus, mats, safety and insurance.",
+          "ja": "ケベックから直接応募できます。受諾前に宿泊日数、食事、ビザ、支払い、税務を書面で確認し、サーカスの場合は床、天井高、吊り、器具、マット、安全、保険も確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "sacatar-2027-open",
+    "title": "Instituto Sacatar — 2027 Open Call",
+    "country": "Brazil",
+    "city": "Itaparica, Bahia",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-28",
+    "deadlineLabel": {
+      "fr": "28 août 2026; l’heure et le fuseau de clôture ne sont pas publiés.",
+      "en": "August 28, 2026; the closing time and time zone are not published.",
+      "ja": "2026年8月28日。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-08-28",
+    "sourceUrl": "https://sacatar.org/en/fellowships/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes individuels de toute nationalité et de toute discipline; les arts du cirque sont explicitement cités. Les ancien·nes Fellows et les propositions de groupe ne sont pas admissibles. Les sessions durent environ huit semaines.",
+        "en": "Individual artists of any nationality and discipline may apply, with circus arts explicitly included. Former Fellows and group proposals are not eligible. Sessions last about eight weeks.",
+        "ja": "国籍・分野を問わない個人アーティストが対象で、サーカス芸術も明記されています。過去のFellowとグループ企画は対象外です。滞在は約8週間です。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature de 25 USD. Le voyage jusqu’à Salvador, le matériel, les déplacements locaux hors transferts prévus et les dépenses personnelles sont à la charge de l’artiste; aucune allocation n’est versée.",
+        "en": "The application fee is USD 25. Artists cover travel to Salvador, materials, local transport outside scheduled transfers and personal expenses; no stipend is paid.",
+        "ja": "応募料は25米ドルです。Salvadorまでの渡航、材料、所定送迎以外の現地移動、個人費用は自己負担で、給付金はありません。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence sans frais avec chambre privée, trois repas par jour sauf certaines journées, studio individuel, blanchisserie, soutien logistique, connexions culturelles et transferts aéroport aux dates prévues. Le studio danse/théâtre/performance dispose d’un plancher bois amorti de 5 × 12 m.",
+        "en": "The free residency provides a private room, three daily meals except on specified days, individual studio, laundry, logistical and cultural connections, and scheduled airport transfers. The dance/theatre/performance studio has a 5 × 12 m sprung wooden floor.",
+        "ja": "無料の滞在には個室、指定日を除く1日3食、個別スタジオ、洗濯、運営・文化交流支援、所定日の空港送迎が含まれます。ダンス／演劇／パフォーマンス用スタジオには5×12mのスプラング木床があります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Très bonne piste directe pour un projet québécois autonome, y compris cirque au sol. Budgéter le vol et les matériaux; pour aérien ou grand appareil, confirmer hauteur, accroches, charge, agrès, tapis, montage, assurance et secours avant de déposer.",
+          "en": "A strong direct route for a self-directed Quebec project, including floor-based circus. Budget airfare and materials; for aerial or large apparatus work, confirm height, rigging, loads, apparatus, mats, installation, insurance and rescue before applying.",
+          "ja": "床上サーカスを含む、ケベックの自立型企画に有力な直接応募先です。航空券と材料費を見積もり、空中・大型器具の場合は高さ、吊り荷重、器具、マット、設営、保険、救助体制を応募前に確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "artudio-nepal-2026-27-open",
+    "title": "Artudio International Artists Residency Nepal 2026/27",
+    "country": "Nepal",
+    "city": "Kathmandu / Patan",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Appel 2026/27 en cours; aucune date limite n’est publiée. Les dates souhaitées doivent être proposées dans la candidature.",
+      "en": "The 2026/27 call is ongoing with no published deadline. Applicants propose their preferred dates in the application.",
+      "ja": "2026/27枠は募集中で、締切日は公表されていません。応募時に希望滞在日を提案します。"
+    },
+    "nextCheckDate": "2026-11-01",
+    "sourceUrl": "https://artudio.net/open-call-for-2026-27-artudio-international-artists-residency-in-nepal/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes, auteur·rices, chercheur·euses, commissaires, performeur·euses et autres praticien·nes créatif·ves internationaux; performance et interdisciplinarité sont explicitement admises. Durée d’un à six mois, avec échanges locaux attendus.",
+        "en": "International artists, writers, researchers, curators, performers and other creative practitioners may apply; performance and interdisciplinary practice are explicit. Residencies last one to six months and expect local exchange.",
+        "ja": "世界のアーティスト、作家、研究者、キュレーター、パフォーマー等が対象で、パフォーマンスと学際実践も明記されています。期間は1〜6か月で、地域との交流が期待されます。"
+      },
+      "applicantCost": {
+        "fr": "Programme autofinancé: 750 USD pour un mois, 1 400 pour deux, 2 200 pour trois, jusqu’à 4 000 pour six mois. Voyage, visa, assurance, repas, matériaux et dépenses personnelles restent à budgéter.",
+        "en": "This is self-funded: USD 750 for one month, 1,400 for two, 2,200 for three, up to 4,000 for six months. Also budget travel, visa, insurance, meals, materials and personal costs.",
+        "ja": "自己資金型で、1か月750米ドル、2か月1,400、3か月2,200、6か月4,000米ドルです。渡航、ビザ、保険、食事、材料、個人費用も必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Chambre ou studio-appartement, espace de travail, internet, ménage bimensuel, transferts aéroport, visites ciblées et possibilités d’exposition, d’atelier ouvert, de présentation ou de collaboration locale.",
+        "en": "The fee includes a room or studio apartment, workspace, internet, twice-monthly housekeeping, airport transfers, tailored visits, and possible exhibitions, open studios, presentations or local collaborations.",
+        "ja": "料金には個室またはスタジオ住居、制作場所、インターネット、月2回の清掃、空港送迎、関心に合わせた訪問、展示・オープンスタジオ・発表・地域協働の機会が含まれます。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Candidature directe possible, mais seulement si le budget total et l’intérêt d’un ancrage communautaire au Népal sont justifiés. Pour une pratique corporelle ou circassienne, confirmer dimensions, sol, hauteur, accroches, sécurité, assurance et matériel avant tout paiement.",
+          "en": "Direct application is possible, but only if the full budget and value of community engagement in Nepal are justified. For physical or circus practice, confirm dimensions, floor, height, rigging, safety, insurance and equipment before paying.",
+          "ja": "直接応募できますが、総費用とネパールで地域交流する意義を説明できる場合に限り有力です。身体・サーカス実践では、支払い前に寸法、床、高さ、吊り、安全、保険、機材を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "hayama-artist-residency-2027-open",
+    "title": "Hayama Artist Residency 2027",
+    "country": "Japan",
+    "city": "Hayama, Kanagawa",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-30",
+    "deadlineTimeZone": "ET",
+    "deadlineLabel": {
+      "fr": "30 septembre 2026 à 23 h 59, heure de l’Est.",
+      "en": "September 30, 2026 at 11:59 PM Eastern Time.",
+      "ja": "2026年9月30日23:59（米国東部時間）。"
+    },
+    "nextCheckDate": "2026-09-30",
+    "sourceUrl": "https://www.hayamaresidency.com/faqs",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes visuel·les individuel·les de 21 ans ou plus, tout médium et tout pays. Candidature en anglais; résidence du 1er au 30 juin 2027, orientée vers repos, recherche et réflexion sans obligation de produire.",
+        "en": "Individual visual artists aged 21+ in any medium and based anywhere may apply in English. The June 1–30, 2027 residency supports rest, research and reflection with no production requirement.",
+        "ja": "21歳以上で世界各地の個人の視覚芸術家が、媒体を問わず英語で応募できます。2027年6月1〜30日の滞在で、制作義務はなく休息・調査・内省に使えます。"
+      },
+      "applicantCost": {
+        "fr": "95 USD pour une première candidature; frais supprimés à la deuxième tentative. Visa, passeport, matériel, électronique et dépenses dépassant l’allocation restent à la charge de l’artiste.",
+        "en": "First-time applicants pay USD 95; the second application fee is waived. Visa, passport, materials, electronics and costs beyond the allowance remain the artist’s responsibility.",
+        "ja": "初回応募料は95米ドルで、2回目は免除されます。ビザ、旅券、材料、電子機器、給付額を超える費用は本人負担です。"
+      },
+      "organizerSupport": {
+        "fr": "Vol aller-retour vers Narita ou Haneda, transfert aéroport, chambre privée dans un logement partagé pendant quatre semaines et 800 USD pour repas et transports locaux.",
+        "en": "Support includes a roundtrip flight to Narita or Haneda, airport transfer, a private bedroom in shared lodging for four weeks, and USD 800 for meals and local transport.",
+        "ja": "成田または羽田への往復航空券、空港送迎、4週間の共同住居内個室、食事・現地交通用800米ドルが提供されます。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Bonne piste directe pour une pratique visuelle québécoise, mais les arts de la scène ou le cirque ne sont pas automatiquement admissibles. Ne déposer qu’avec un dossier de pratique visuelle clair et confirmer toute utilisation d’espace ou d’équipement.",
+          "en": "A strong direct route for a Quebec visual practice, but performing arts or circus are not automatically eligible. Apply only with a clear visual-practice portfolio and confirm any space or equipment use.",
+          "ja": "ケベックの視覚芸術実践には有力な直接応募先ですが、舞台芸術・サーカスが自動的に対象とは限りません。明確な視覚芸術ポートフォリオで応募し、空間・設備利用は確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "berlinale-talents-2027-open",
+    "title": "Berlinale Talents 2027",
+    "country": "Germany",
+    "city": "Berlin",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-02",
+    "deadlineLabel": {
+      "fr": "2 septembre 2026; tarif anticipé jusqu’au 19 août. L’heure et le fuseau de clôture ne sont pas publiés.",
+      "en": "September 2, 2026; Early Bird rate through August 19. The closing time and time zone are not published.",
+      "ja": "2026年9月2日。早期料金は8月19日までです。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-09-02",
+    "sourceUrl": "https://pro.berlinale.de/bt/page/c/apply",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Professionnel·les du cinéma et de la télévision avec parcours établi, dans plus de quinze métiers. Il faut en principe avoir réalisé ou contribué à au moins un long métrage, deux courts métrages, ou une série/téléfilm de qualité diffusé en festival ou largement en ligne.",
+        "en": "Film and television professionals with an established track record may apply across more than fifteen disciplines. Applicants generally need at least one feature, two shorts, or a high-quality series/TV film screened at festivals or widely streamed.",
+        "ja": "15以上の映画・テレビ職種で、一定の実績を持つ専門家が対象です。原則として長編1本、短編2本、または映画祭上映・広範配信された質の高いシリーズ／テレビ映画の実績が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Frais de service de 10 EUR avant le 19 août, puis 15 EUR; contribution facultative de 5 EUR. Si sélectionné·e, l’hébergement, le voyage et les dépenses quotidiennes à Berlin sont à votre charge.",
+        "en": "The service fee is EUR 10 through August 19, then EUR 15, with an optional EUR 5 contribution. Selected participants cover accommodation, travel and daily expenses in Berlin.",
+        "ja": "サービス料は8月19日まで10ユーロ、その後15ユーロで、任意の5ユーロ寄付があります。選出後のベルリンでの宿泊、渡航、日々の費用は自己負担です。"
+      },
+      "organizerSupport": {
+        "fr": "Six jours de sommet sur place du 12 au 17 février 2027, ateliers, discussions, mentorat et réseautage; aucun frais de participation au programme. Les Lab et Talent Project Market ont des conditions d’accès distinctes.",
+        "en": "The program provides a six-day onsite Summit on February 12–17, 2027, with workshops, discussions, mentoring and networking, and no participation fee. The Lab and Talent Project Market have separate eligibility rules.",
+        "ja": "2027年2月12〜17日の6日間の現地サミット、ワークショップ、対話、メンタリング、ネットワーク機会があり、参加料はありません。LabとTalent Project Marketは別条件です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Voie internationale directe pour un·e professionnel·le du Québec répondant au seuil d’expérience. Le principal risque est le coût du séjour; vérifier en parallèle les aides de déplacement du CALQ, du Conseil des arts du Canada ou de l’institut professionnel pertinent.",
+          "en": "A direct international route for a Quebec professional who meets the experience threshold. The main risk is the cost of attendance; concurrently check travel support from CALQ, Canada Council or the relevant professional institute.",
+          "ja": "経験条件を満たすケベックの専門家が直接応募できる国際枠です。主なリスクは滞在費なので、CALQ、Canada Council、関連専門機関の渡航支援も並行して確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "rondo-mexico-2027-upcoming",
+    "title": "RONDO Residency — Spring Semester 2027",
+    "country": "Mexico",
+    "city": "Mexico City",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Ouverture annoncée en août 2026; la date limite n’est pas encore publiée.",
+      "en": "Opening is announced for August 2026; the deadline is not yet published.",
+      "ja": "2026年8月に募集開始予定ですが、締切日はまだ公表されていません。"
+    },
+    "nextCheckDate": "2026-08-15",
+    "sourceUrl": "https://rondoresidency.com/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Résidence internationale de quatre ou six semaines, en anglais ou espagnol, pour arts visuels, sculpture, arts de la scène, textile, nouveaux médias, commissariat et photographie. Deux formules: vivre-travailler sur place ou studio seul.",
+        "en": "An international four- or six-week residency in English or Spanish for visual art, sculpture, performing arts, textiles, new media, curatorial practice and photography. It offers live-work or studio-only modes.",
+        "ja": "英語またはスペイン語で行う4週間／6週間の国際レジデンスで、視覚芸術、彫刻、舞台芸術、テキスタイル、ニューメディア、キュレーション、写真が対象です。住居＋制作またはスタジオのみを選べます。"
+      },
+      "applicantCost": {
+        "fr": "Tarif actuel de référence pour quatre semaines: 2 000 USD avec studio et logement, ou 1 400 USD pour le studio seul; supplément proportionnel pour six semaines. Voyage, visa, assurance, repas, matériaux et dépenses personnelles sont en plus. Revalider au lancement 2027.",
+        "en": "Current reference pricing for four weeks is USD 2,000 with studio and lodging or USD 1,400 studio-only, with a proportional increase for six weeks. Travel, visa, insurance, meals, materials and personal costs are extra. Recheck when the 2027 call opens.",
+        "ja": "現行の4週間参考料金は、スタジオ＋宿泊2,000米ドル、スタジオのみ1,400米ドルで、6週間は比例増です。渡航、ビザ、保険、食事、材料、個人費用は別途です。2027募集開始時に再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Studio privé, grand espace commun, atelier bois, machine à coudre industrielle, cabine de pulvérisation, bibliothèque, outils, internet et vélos; la formule résidentielle comprend chambre privée et espaces communs. Programme hebdomadaire autour de la production, théorie, marché et relations publiques.",
+        "en": "Facilities include private studios, a large shared workspace, woodshop, industrial sewing machine, spray booth, library, tools, internet and bicycles; live-work includes a private room and shared amenities. Weekly programming covers production, theory, art market and public relations.",
+        "ja": "個別スタジオ、大型共同制作室、木工設備、工業用ミシン、塗装室、図書、工具、インターネット、自転車があり、住居型は個室と共用設備を含みます。制作、理論、市場、広報の週間プログラムがあります。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Candidature directe probable, à revalider dès l’ouverture. Option pertinente seulement avec budget ou financement externe et objectif clair à Mexico; pour performance/cirque, confirmer dimensions, sol, hauteur, accroches, sécurité, assurance et accessibilité.",
+          "en": "Direct application is likely, to be reconfirmed when the call opens. It is worthwhile only with funding and a clear Mexico City objective; for performance/circus, confirm dimensions, floor, height, rigging, safety, insurance and accessibility.",
+          "ja": "直接応募可能と見込まれますが、募集開始時に再確認が必要です。資金とメキシコシティでの明確な目的がある場合に限り有力です。パフォーマンス／サーカスでは寸法、床、高さ、吊り、安全、保険、アクセシビリティを確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "bundanon-air-2028-watch",
+    "title": "Bundanon Artists in Residence — 2028 Cycle",
+    "country": "Australia",
+    "city": "Illaroo, New South Wales",
+    "region": "Oceania",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-09",
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 est clos depuis le 9 juin 2026 à 17 h. Le cycle 2028 ouvrira au début de 2027; fuseau à revalider.",
+      "en": "The 2027 cycle closed June 9, 2026 at 5 PM. The 2028 cycle will open in early 2027; recheck the time zone.",
+      "ja": "2027年枠は2026年6月9日17:00に終了しました。2028年枠は2027年初頭に開始予定で、タイムゾーンは再確認が必要です。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://www.bundanon.com.au/residencies/apply/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes et chercheur·euses professionnel·les de 18 ans ou plus, toutes disciplines et tous stades de carrière, en Australie ou à l’international; candidatures individuelles, collectives ou de sociétés constituées. Les personnes résidentes à Bundanon dans les cinq dernières années étaient exclues du cycle 2027.",
+        "en": "Professional artists and researchers aged 18+ across all disciplines and career stages, domestic or international, may apply individually, collaboratively or as incorporated companies. Anyone resident at Bundanon in the previous five years was excluded in 2027.",
+        "ja": "18歳以上の専門アーティスト・研究者が、分野・キャリア段階・国内外を問わず、個人、共同体、法人で応募できます。2027枠では過去5年以内の滞在者は対象外でした。"
+      },
+      "applicantCost": {
+        "fr": "En 2027, candidature et résidence gratuites, mais voyage, repas, équipement et matériaux à la charge des artistes; caution remboursable de 250 AUD après sélection. Revalider tous les montants au prochain appel.",
+        "en": "In 2027, application and residency were free, but artists covered travel, catering, equipment and materials, plus a refundable AUD 250 bond after selection. Recheck all amounts next cycle.",
+        "ja": "2027枠は応募・滞在無料でしたが、渡航、食事、機材、材料は自己負担で、選出後に返金可能な250豪ドルの保証金が必要でした。次回募集で全額を再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidences autonomes d’une à trois semaines dans un site artistique majeur; lettre de soutien possible pour chercher un financement externe, ainsi que des bourses et prix distincts. Les prestations exactes du cycle 2028 ne sont pas publiées.",
+        "en": "Self-directed residencies of one to three weeks at a major arts site; Bundanon can issue support letters for external funding, with separate fellowships and awards also available. Exact 2028 provisions are not published.",
+        "ja": "主要な芸術拠点で1〜3週間の自立型滞在です。外部助成用の支援書を発行でき、別枠のFellowshipやAwardもあります。2028枠の正確な支援内容は未公表です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Bonne veille internationale pour le Québec, mais le voyage et la vie sur un site isolé rendent le budget décisif. Revalider l’admissibilité internationale, l’hébergement, l’accès, le transport local et les installations techniques dès l’ouverture 2028.",
+          "en": "A strong international watch item for Quebec, but airfare and an independent stay at a remote site make budget decisive. Recheck international eligibility, lodging, access, local transport and technical facilities when 2028 opens.",
+          "ja": "ケベックから注視する価値の高い国際枠ですが、航空券と遠隔地での自立滞在の費用が重要です。2028募集開始時に国際応募、宿泊、アクセス、現地移動、技術設備を再確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "bayimba-festival-next-watch",
+    "title": "Bayimba International Festival of the Arts — Next Call",
+    "country": "Uganda",
+    "city": "Lunkulu Island",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-15",
+    "deadlineTimeZone": "EAT",
+    "deadlineLabel": {
+      "fr": "L’appel 2026 est clos depuis le 15 juillet 2026 à 23 h 59 EAT. Le prochain calendrier n’est pas publié.",
+      "en": "The 2026 call closed July 15, 2026 at 11:59 PM EAT. The next schedule is not published.",
+      "ja": "2026年枠は2026年7月15日23:59 EATに終了しました。次回日程は未公表です。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://bayimba.org/call-for-artists-bayimba-festival-2026/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle 2026 accueillait des artistes du monde entier en musique, danse, film, mode, photographie, conte, théâtre et arts visuels, avec préférence pour une production prête, présentable en direct, et pour les femmes et jeunes talents.",
+        "en": "The 2026 cycle welcomed artists worldwide in music, dance, film, fashion, photography, storytelling, theatre and visual arts, preferring ready live work and women-led or emerging talent.",
+        "ja": "2026年枠は世界の音楽、ダンス、映画、ファッション、写真、語り、演劇、視覚芸術を対象とし、上演可能な完成作品、女性主導、若手を優先していました。"
+      },
+      "applicantCost": {
+        "fr": "Les artistes hors Ouganda devaient confirmer un sponsor de voyage; le vol international n’était pas couvert. Revalider candidature, fret, assurance, matériel et conditions de camping au prochain appel.",
+        "en": "Artists outside Uganda had to confirm a travel sponsor; international airfare was not covered. Recheck application, freight, insurance, equipment and camping conditions next cycle.",
+        "ja": "ウガンダ国外のアーティストは渡航スポンサーの確認が必要で、国際航空券は対象外でした。次回募集で応募料、輸送、保険、機材、キャンプ条件を再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "En 2026: cachet modeste, indemnités journalières, camping sur l’île, transports locaux liés au spectacle, visa ougandais, pass et visibilité, pour l’artiste et une personne d’équipe.",
+        "en": "In 2026, the artist plus one crew member received a modest fee, per diems, island camping, performance-related local transport, Uganda visa costs, passes and promotion.",
+        "ja": "2026年はアーティストとスタッフ1名に、少額の出演料、日当、島内キャンプ宿泊、上演関連の現地移動、ウガンダビザ費、パス、広報が提供されました。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Piste directe seulement avec financement confirmé du vol depuis le Québec. Préparer deux vidéos live, images, plan de scène et fiche technique; pour le cirque, faire valider sécurité, agrès, sol, hauteur, accroches et plan pluie.",
+          "en": "A direct route only with confirmed flight funding from Quebec. Prepare two live videos, images, stage plan and technical rider; for circus, validate safety, apparatus, floor, height, rigging and rain plan.",
+          "ja": "ケベックからの航空券資金を確保できる場合のみ直接候補です。ライブ動画2本、写真、舞台図、テクニカルライダーを準備し、サーカスでは安全、器具、床、高さ、吊り、雨天計画を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "jomba-open-horizons-next-watch",
+    "title": "JOMBA! OPEN HORIZONS — Next Call",
+    "country": "South Africa",
+    "city": "Durban",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-20",
+    "deadlineLabel": {
+      "fr": "Les appels 2026 sont clos: Live le 29 juin et Digital le 20 juillet. Le prochain calendrier n’est pas publié; heures et fuseaux n’étaient pas indiqués.",
+      "en": "The 2026 calls are closed: Live on June 29 and Digital on July 20. The next schedule is not published; closing times and zones were not stated.",
+      "ja": "2026年枠はLiveが6月29日、Digitalが7月20日に終了しました。次回日程は未公表で、締切時刻・タイムゾーンも記載されていませんでした。"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://jomba.ukzn.ac.za/applications-now-open-for-the-2026-jomba-open-horizons-platforms-live-and-digital/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "La plateforme Live 2026 visait des œuvres chorégraphiques courtes de 6 à 8 minutes; Digital acceptait des films de danse de 5 à 10 minutes de chorégraphes locaux, africains et internationaux. Sélection compétitive et nombre de places limité.",
+        "en": "The 2026 Live platform sought 6–8 minute short-form choreography; Digital accepted 5–10 minute screen-dance from local, African and international choreographers. Selection was competitive with limited slots.",
+        "ja": "2026年Live枠は6〜8分の短編振付、Digital枠は地域・アフリカ・海外の振付家による5〜10分のスクリーンダンスが対象でした。枠数限定の選考制です。"
+      },
+      "applicantCost": {
+        "fr": "Les deux plateformes n’étaient pas financées: aucun voyage ni hébergement. Pour Digital, éviter ces coûts; pour Live, prévoir vol, visa, assurance, séjour, fret et technique. Revalider les conditions au prochain appel.",
+        "en": "Neither platform was funded, with no travel or accommodation support. Digital avoids those costs; Live requires airfare, visa, insurance, stay, freight and technical budgeting. Recheck next cycle.",
+        "ja": "両枠とも助成なしで、渡航・宿泊支援はありませんでした。Digitalならその費用を避けられますが、Liveは航空券、ビザ、保険、滞在、輸送、技術費が必要です。次回条件を再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Plateforme professionnelle et environnement de festival; un prix du jury de 2 500 ZAR était attribué à une œuvre choisie sur chaque plateforme, sans garantie pour les autres sélectionné·es.",
+        "en": "The call offered a professional festival platform; a ZAR 2,500 jury award went to one selected work on each platform, with no guaranteed payment for other selections.",
+        "ja": "専門的なフェスティバル発表機会があり、各プラットフォームの審査員選出1作品に2,500南アフリカランドの賞がありました。他の選出作への支払い保証はありません。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Digital est la voie la plus réaliste depuis le Québec. Live n’est pertinent qu’avec financement externe et fiche technique légère; ne pas confondre visibilité professionnelle et cachet garanti.",
+          "en": "Digital is the most realistic Quebec route. Live is worthwhile only with external funding and a light technical rider; do not confuse professional visibility with a guaranteed fee.",
+          "ja": "ケベックからはDigitalが最も現実的です。Liveは外部資金と軽量なテクニカルライダーがある場合に限り有力で、専門的露出を出演料保証と混同しないでください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "biennale-college-cinema-next-watch",
+    "title": "Biennale College Cinema — International Call, Next Cycle",
+    "country": "Italy",
+    "city": "Venice",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-06",
+    "deadlineLabel": {
+      "fr": "L’appel BCC 15 s’est déroulé du 12 mai au 6 juillet 2026. Le prochain calendrier et le fuseau de clôture restent à confirmer.",
+      "en": "BCC 15 ran May 12–July 6, 2026. The next schedule and closing time zone remain to be confirmed.",
+      "ja": "BCC 15は2026年5月12日〜7月6日に実施されました。次回日程と締切タイムゾーンは再確認が必要です。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://www.labiennale.org/en/cinema/2026/bcc-15-international-call",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Équipes internationales obligatoirement formées d’un·e réalisateur·rice à son premier ou deuxième long projet et d’un·e producteur·rice ayant au moins trois productions. Projet audiovisuel de plus de 60 minutes, tous genres, budget maximal de 200 000 EUR, dossier en anglais.",
+        "en": "International teams must pair a director making a first or second feature with a producer who has at least three productions. Projects must exceed 60 minutes, may be any genre, have a maximum EUR 200,000 budget, and apply in English.",
+        "ja": "初・第2長編の監督と、少なくとも3作品の制作実績があるプロデューサーの国際チームが対象です。60分超、ジャンル不問、予算上限20万ユーロで、英語応募です。"
+      },
+      "applicantCost": {
+        "fr": "Aucun frais de participation ni d’inscription en 2026. Les équipes payaient le voyage d’octobre; hébergement fourni. Le voyage de décembre était couvert pour les équipes finalistes. Les coûts d’un collaborateur supplémentaire restaient entièrement à l’équipe.",
+        "en": "There was no participation or registration fee in 2026. Teams paid October travel while lodging was provided; December travel was covered for finalist teams. Any extra collaborator was entirely self-funded.",
+        "ja": "2026年は参加・登録料なしでした。10月の渡航はチーム負担、宿泊は提供され、最終選考チームの12月渡航は主催者負担でした。追加スタッフの費用は全額チーム負担です。"
+      },
+      "organizerSupport": {
+        "fr": "Jusqu’à neuf équipes entraient en atelier de développement avec hébergement; jusqu’à quatre projets poursuivaient, et les projets approuvés recevaient une subvention de production de 200 000 EUR puis une présentation à la Mostra de Venise.",
+        "en": "Up to nine teams entered a hosted development workshop; up to four continued, and approved projects received a EUR 200,000 production grant followed by presentation at the Venice Film Festival.",
+        "ja": "最大9チームが宿泊付き開発ワークショップに進み、最大4企画が継続し、承認企画には20万ユーロの制作助成とヴェネツィア映画祭での発表機会がありました。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Très forte piste pour une équipe Québec répondant exactement aux seuils réalisateur-producteur et capable de produire en microbudget. Préparer droits, société de production, traitement, budget, calendrier et vidéo commune bien avant l’ouverture suivante.",
+          "en": "A strong route for a Quebec team that precisely meets the director-producer thresholds and can deliver a microbudget feature. Prepare rights, production-company profile, treatment, budget, schedule and joint video well before the next call.",
+          "ja": "監督・プロデューサー条件を正確に満たし、低予算長編を完遂できるケベックのチームに非常に有力です。次回前に権利、制作会社資料、トリートメント、予算、工程、共同動画を準備してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "air-taipei-general-next-watch",
+    "title": "AIR Taipei International Residency — Next General Call",
+    "country": "Taiwan",
+    "city": "Taipei",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-30",
+    "deadlineTimeZone": "Taipei time (as published)",
+    "deadlineLabel": {
+      "fr": "L’appel 2027 est clos depuis le 30 juin 2026 à 11 h 59 min 59 s, heure de Taipei. Le prochain calendrier n’est pas publié.",
+      "en": "The 2027 call closed June 30, 2026 at 11:59:59 AM Taipei time. The next schedule is not published.",
+      "ja": "2027年枠は2026年6月30日11:59:59（台北時間）に終了しました。次回日程は未公表です。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://www.artistvillage.org/news-detail.php?p=5074",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "La voie internationale accueillait artistes et travailleur·euses culturel·les étrangers pour trois mois à Treasure Hill Artist Village, avec création, échanges et présentation finale en dialogue avec Taipei. Elle est distincte du projet spécialisé en arts de la marionnette.",
+        "en": "The international route accepted overseas artists and cultural workers for a three-month Treasure Hill residency with creation, exchange and final presentation responding to Taipei. It is distinct from the specialized puppetry track.",
+        "ja": "国際来訪枠は海外のアーティスト・文化従事者を対象に、Treasure Hillで3か月の制作、交流、台北に応答する成果発表を行うもので、別の人形劇専門枠とは異なります。"
+      },
+      "applicantCost": {
+        "fr": "Les frais de candidature, voyage, visa, assurance, repas, matériaux, fret et dépenses locales ne sont pas détaillés sur l’avis général archivé. Les lignes budgétaires doivent être reprises dans les prochaines directives officielles avant décision.",
+        "en": "The archived general notice does not detail application, travel, visa, insurance, meals, materials, freight or local costs. Recheck every budget line in the next official guidelines before deciding.",
+        "ja": "保存された一般告知には応募、渡航、ビザ、保険、食事、材料、輸送、現地費用の詳細がありません。判断前に次回の公式要項で全費目を再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence et plateforme d’échange au Treasure Hill Artist Village, avec activités publiques et présentation; le montant de l’allocation, le logement, le studio et les transports du prochain cycle restent à confirmer.",
+        "en": "The program provides a Treasure Hill residency and exchange platform with public activities and presentation; next-cycle stipend, lodging, studio and transport terms remain to be confirmed.",
+        "ja": "Treasure Hillでの滞在・交流基盤と公開活動・成果発表があります。次回の給付額、宿泊、スタジオ、交通条件は再確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Candidature internationale directe plausible depuis le Québec, mais ne pas engager de dossier avant publication des prestations. Pour performance ou cirque, confirmer discipline, espace, sol, hauteur, accroches, agrès, tapis, sécurité, assurance et attentes de présentation.",
+          "en": "A direct international application from Quebec is plausible, but do not commit before provisions are published. For performance or circus, confirm discipline, space, floor, height, rigging, apparatus, mats, safety, insurance and presentation expectations.",
+          "ja": "ケベックから直接国際応募できる可能性がありますが、支援条件公表前に応募確定しないでください。パフォーマンス／サーカスでは分野、空間、床、高さ、吊り、器具、マット、安全、保険、発表要件を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "sharjah-foundation-residency-next-watch",
+    "title": "Sharjah Art Foundation Residency Programme — Next Call",
+    "country": "United Arab Emirates",
+    "city": "Sharjah / Kalba",
+    "region": "Middle East",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-08-30",
+    "deadlineTimeZone": "GST (UTC+4)",
+    "deadlineLabel": {
+      "fr": "Le cycle 2025–2026 est clos depuis le 30 août 2025 à 23 h 59, heure des Émirats (UTC+4). Le prochain calendrier n’est pas publié.",
+      "en": "The 2025–2026 cycle closed August 30, 2025 at 11:59 PM UAE time (UTC+4). The next schedule is not published.",
+      "ja": "2025–2026枠は2025年8月30日23:59（UAE時間、UTC+4）に終了しました。次回日程は未公表です。"
+    },
+    "nextCheckDate": "2026-08-15",
+    "sourceUrl": "https://www.sharjahart.org/en/open-calls/details/open-call-for-sharjah-art-foundation-residency-programme-2025-2026",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel visait artistes visuel·les, auteur·rices, poètes, chercheur·euses, musicien·nes, artistes de performance, cinéastes et autres créatif·ves développant une pratique expérimentale et interdisciplinaire.",
+        "en": "The last call welcomed visual artists, writers, poets, researchers, musicians, performance artists, filmmakers and other creatives developing experimental and interdisciplinary practice.",
+        "ja": "前回募集は視覚芸術家、作家、詩人、研究者、音楽家、パフォーマンスアーティスト、映画制作者など、実験的・学際的実践を行う人が対象でした。"
+      },
+      "applicantCost": {
+        "fr": "Voyage, transport vers Sharjah, logement et allocation mensuelle étaient couverts. Frais de candidature, visa, assurance, matériel, fiscalité et limites des billets n’étaient pas détaillés sur la page; revalider au prochain appel.",
+        "en": "Travel and transport to Sharjah, lodging and a monthly stipend were covered. The page did not detail application fee, visa, insurance, materials, tax or ticket limits; recheck next call.",
+        "ja": "Sharjahまでの渡航・交通、宿泊、月額給付は対象でした。応募料、ビザ、保険、材料、税務、航空券上限はページに詳細がなく、次回再確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Vols et transport, hébergement, allocation mensuelle et accès aux réseaux et ressources institutionnels de la Fondation; espaces de studio et d’exposition à Sharjah ou Kalba selon la session.",
+        "en": "Support included flights and transport, accommodation, a monthly stipend and access to the Foundation’s institutional networks and resources, with studio and exhibition sites in Sharjah or Kalba depending on the session.",
+        "ja": "航空券・交通、宿泊、月額給付、財団の機関ネットワーク・資源へのアクセスがあり、期によりSharjahまたはKalbaのスタジオ・展示空間を利用しました。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Piste de veille très soutenue pour le Québec si l’ouverture internationale est reconduite. Pour cirque ou performance technique, confirmer en amont hauteur, sol, accroches, charge, agrès, sécurité, assurance, importation et cadre juridique local.",
+          "en": "A strongly supported watch item for Quebec if international access returns. For circus or technical performance, confirm height, floor, rigging, load, apparatus, safety, insurance, import rules and local legal context in advance.",
+          "ja": "国際応募が継続されればケベックから非常に有力な監視先です。サーカス・技術的パフォーマンスでは高さ、床、吊り荷重、器具、安全、保険、輸入、現地法制度を事前確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "sharjah-film-platform-grant-next-watch",
+    "title": "Sharjah Film Platform Short Film Production Grant — Next Cycle",
+    "country": "United Arab Emirates",
+    "city": "Sharjah",
+    "region": "Middle East",
+    "family": "film",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-05-28",
+    "deadlineTimeZone": "GST (UTC+4)",
+    "deadlineLabel": {
+      "fr": "Le neuvième cycle est clos depuis le 28 mai 2026 à 23 h 59, heure des Émirats (UTC+4). Le prochain calendrier n’est pas publié.",
+      "en": "The ninth cycle closed May 28, 2026 at 11:59 PM UAE time (UTC+4). The next schedule is not published.",
+      "ja": "第9回は2026年5月28日23:59（UAE時間、UTC+4）に終了しました。次回日程は未公表です。"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://www.sharjahart.org/en/press/details/sharjah-art-foundation-announces-an-open-call-for-the-sharjah-film-platform-9-short-film-production-grant",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cinéastes de tout âge, origine et région, sans restriction de genre, pour un court métrage de 50 minutes maximum. Le dernier dossier exigeait pitch vidéo de trois minutes, scénario, budget et calendrier de production.",
+        "en": "Filmmakers of all ages, backgrounds and regions, with no genre restriction, could apply with a short film of up to 50 minutes. The last application required a three-minute recorded pitch, script, budget and production schedule.",
+        "ja": "年齢、背景、地域、ジャンルを問わない映画制作者が、50分以内の短編で応募できました。前回は3分の録画ピッチ、脚本、予算、制作工程が必要でした。"
+      },
+      "applicantCost": {
+        "fr": "Aucun frais de candidature n’était publié. La subvention porte sur la production; voyage, séjour, visa, assurance, fiscalité, livraison et coûts de première n’étaient pas annoncés comme couverts et doivent être budgétés séparément.",
+        "en": "No application fee was published. The grant supports production; travel, stay, visa, insurance, tax, delivery and premiere costs were not stated as covered and require separate budgeting.",
+        "ja": "応募料の記載はありませんでした。助成は制作向けで、渡航、滞在、ビザ、保険、税務、納品、プレミア費用は対象と明記されず、別途見積もりが必要です。"
+      },
+      "organizerSupport": {
+        "fr": "En 2026, enveloppe totale de 120 000 AED répartie entre les projets retenus selon leurs besoins, avec possibilité d’être considéré pour une première lors d’une future Sharjah Film Platform.",
+        "en": "In 2026, a total AED 120,000 was divided among selected projects according to need, with possible consideration for a premiere at a future Sharjah Film Platform.",
+        "ja": "2026年は総額120,000 UAEディルハムを企画ごとの必要性に応じて配分し、将来のSharjah Film Platformでのプレミア候補となる可能性がありました。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Excellente veille directe pour un court québécois international ou expérimental. Préparer un budget réaliste et les droits; ne pas présumer que la sélection finance tout le coût ni garantit une première avant réception d’un accord écrit.",
+          "en": "A strong direct watch item for a Quebec international or experimental short. Prepare a realistic budget and rights package; do not assume selection covers the full cost or guarantees a premiere without a written agreement.",
+          "ja": "ケベックの国際的・実験的短編に有力な直接監視先です。現実的な予算と権利資料を準備し、書面契約前に全額助成やプレミア保証とみなさないでください。"
+        }
+      }
+    }
   }
 ]
