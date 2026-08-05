@@ -9665,5 +9665,228 @@
         }
       }
     }
+  },
+  {
+    "id": "playful-obscura-accra-next-watch",
+    "title": "PLAYFUL OBSCURA — Arthouse Games Residency Africa",
+    "country": "Ghana",
+    "city": "Accra",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-03-13",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 a clos le 13 mars; suivre la prochaine édition.",
+      "en": "The 2026 cycle closed March 13; follow the next edition.",
+      "ja": "2026年枠は3月13日に終了。次回を監視します。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.goethe.de/ins/za/en/kul/mut/plo.html",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel s’adressait aux artistes basé·es en Afrique travaillant en médias ludiques et jeux d’art, notamment game design, art numérique et installations interactives. Deux artistes sont accueilli·es.",
+        "en": "The last call was for artists based in Africa working in playful media and arthouse games, including game design, digital art, and interactive installations. Two artists are hosted.",
+        "ja": "前回は、ゲームデザイン、デジタルアート、インタラクティブ・インスタレーション等の遊戯メディア／アートゲームを扱うアフリカ拠点のアーティストが対象で、2名を受け入れました。"
+      },
+      "applicantCost": {
+        "fr": "Logement, espace de travail partagé, coût de production jusqu’à 1 000 € et bourse de 300 € étaient annoncés; voyage, visa, assurance, fret du matériel et dépassements de budget n’étaient pas publiés. Les confirmer au prochain appel.",
+        "en": "Living space, shared workspace, up to €1,000 production support, and a €300 stipend were announced, but travel, visa, insurance, equipment shipping, and overruns were not stated. Confirm them in the next call.",
+        "ja": "居住空間、共有作業空間、最大1,000ユーロの制作費、300ユーロの手当は案内されましたが、渡航、ビザ、保険、機材輸送、超過費用は未記載です。次回募集で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Trois semaines à Accra avec logement et espace de travail partagé, jusqu’à 1 000 € de production sur preuve de concept approuvée, 300 € de bourse personnelle et possibilités d’échange entre pairs, ateliers ou visites d’atelier.",
+        "en": "Three weeks in Accra with living space and shared workspace, up to €1,000 production support on an approved proof of concept, a €300 personal stipend, and possible peer exchange, workshops, or open-studio visits.",
+        "ja": "アクラで3週間。居住空間と共有作業空間、承認されたプロトタイプに対して最大1,000ユーロの制作費、300ユーロの手当、ピア交流・ワークショップ・オープンスタジオの機会があります。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne basée uniquement au Québec ne respecte pas la condition africaine. Ne préparer un dossier que si une base africaine réelle et vérifiable existe; sinon surveiller le format et les partenaires pour de futurs appels internationaux.",
+          "en": "Someone based only in Quebec does not meet the Africa-based condition. Apply only with a genuine verifiable African base; otherwise, monitor the format and partners for future international calls.",
+          "ja": "ケベックのみを拠点とする人はアフリカ拠点条件を満たしません。実在し確認可能なアフリカ拠点がある場合のみ応募し、それ以外は将来の国際募集に備えて形式・協力団体を監視してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "saw-singapore-2027-next-watch",
+    "title": "Singapore Art Week 2027 — Open Call for Proposals",
+    "country": "Singapore",
+    "city": "Singapore",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-05-20",
+    "deadlineTimeZone": "SGT",
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 a clos le 20 mai 2026 à 18 h SGT; suivre la prochaine édition.",
+      "en": "The 2027 cycle closed May 20, 2026 at 18:00 SGT; follow the next edition.",
+      "ja": "2027年枠は2026年5月20日18:00 SGTに終了。次回を監視します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://www.nac.gov.sg/singapore-arts-scene/art-forms/visual-arts/saw-2027-open-call",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel visait artistes, commissaires, producteur·rices, collectifs, institutions et organisations basés à Singapour. Avec des non-Singapourien·nes, les responsables doivent être citoyen·nes ou résident·es permanent·es basé·es à Singapour et au moins la moitié de l’équipe artistique doit l’être.",
+        "en": "The last call was for Singapore-based artists, curators, producers, collectives, institutions, and organisations. With non-Singaporeans involved, lead applicants must be Singapore citizens or permanent residents based there and at least half the artistic team must be Singapore citizens or permanent residents.",
+        "ja": "前回はシンガポール拠点のアーティスト、キュレーター、プロデューサー、コレクティブ、機関・団体が対象でした。外国人が関わる場合も、責任者は同国拠点の市民または永住者、芸術チームの少なくとも半数も市民または永住者である必要があります。"
+      },
+      "applicantCost": {
+        "fr": "Les candidat·es doivent sécuriser leur lieu de présentation; le soutien varie selon type et évaluation. Les frais de voyage, visa, assurance, transport et toute dépense non couverte ne sont pas garantis et doivent être confirmés.",
+        "en": "Applicants must secure their presentation venue; support varies by project type and assessment. Travel, visa, insurance, transport, and any uncovered cost are not guaranteed and need confirmation.",
+        "ja": "応募者が発表会場を確保する必要があり、支援額は企画種別・審査により変動します。渡航、ビザ、保険、輸送、未対象費用は保証されず確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Plateforme de janvier 2027 pour expositions, performances, projections, installations, visites, conférences et ateliers. Les projets retenus antérieurs recevaient typiquement 15 000 à 50 000 SGD, selon évaluation.",
+        "en": "A January 2027 platform for exhibitions, performances, screenings, installations, tours, talks, and workshops. Previously successful projects typically received SGD 15,000–50,000, depending on assessment.",
+        "ja": "2027年1月の展示、パフォーマンス、上映、インスタレーション、ツアー、トーク、ワークショップのプラットフォームです。過去の採択企画は審査に応じ通常15,000〜50,000シンガポールドルを受けました。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Un·e artiste québécois·e seul·e ne peut pas porter cette candidature. Une collaboration réelle avec un responsable singapourien admissible est indispensable; convenir dès le départ des rôles, budget, droits et lieu.",
+          "en": "A Quebec artist alone cannot lead this application. A genuine collaboration with an eligible Singapore-based lead is essential; agree early on roles, budget, rights, and venue.",
+          "ja": "ケベックのアーティスト単独では主担当応募できません。資格のあるシンガポール拠点の主担当との実質的な協働が必須で、役割、予算、権利、会場を早めに合意してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "file-not-found-global-archives-next-watch",
+    "title": "FILE NOT FOUND — Artistic Research Residencies",
+    "country": "Germany",
+    "city": "Cottbus",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-07",
+    "deadlineTimeZone": "GMT+1",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 a clos le 7 juin à midi GMT+1; suivre une éventuelle nouvelle édition.",
+      "en": "The 2026 cycle closed June 7 at 12:00 noon GMT+1; follow any future edition.",
+      "ja": "2026年枠は6月7日12:00 GMT+1に終了。次回があれば監視します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://www.goethe.de/prj/fnf/en/oca.html",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel était ouvert aux artistes du monde entier, toutes disciplines; dix personnes réalisaient une résidence de deux semaines à deux mois auprès d’archives partenaires dans dix villes, avec anglais comme langue de travail.",
+        "en": "The last call was open to artists worldwide in all disciplines; ten practitioners undertook two weeks to two months with archive partners in ten cities, with English as the working language.",
+        "ja": "前回は全分野の世界中のアーティストが対象で、10名が10都市のアーカイブ協力先で2週間〜2か月滞在しました。作業言語は英語です。"
+      },
+      "applicantCost": {
+        "fr": "Voyage et hébergement étaient couverts jusqu’à 2 000 € pour une personne. Confirmer les plafonds réels, visa, assurance santé, fiscalité, matériaux et dépenses locales qui dépasseraient les budgets.",
+        "en": "Travel and accommodation were covered up to €2,000 for one person. Confirm actual caps, visa, health insurance, tax, materials, and local expenses beyond the budgets.",
+        "ja": "1名について渡航・宿泊が最大2,000ユーロまで対象でした。実際の上限、ビザ、健康保険、税務、材料費、予算を超える現地費用を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Honoraires totaux de 4 000 €: 2 000 € pour l’artiste et 2 000 € de production, plus voyage et hébergement jusqu’à 2 000 €; résidence sur site et exposition collective annoncée à Cottbus à l’automne 2027.",
+        "en": "A total €4,000 fee: €2,000 artist fee plus €2,000 production budget, alongside travel and accommodation up to €2,000; on-site residency and a collective Cottbus exhibition were announced for autumn 2027.",
+        "ja": "総額4,000ユーロ（アーティスト謝金2,000ユーロ＋制作費2,000ユーロ）に加え、最大2,000ユーロの渡航・宿泊支援があります。現地滞在と2027年秋のコットブスでの合同展が案内されました。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Très bonne veille internationale directe pour recherche, archivage ou performance liée à la mémoire. À la prochaine ouverture, choisir l’archive pertinente puis confirmer le plafond de voyage, l’assurance, les droits d’archive et le calendrier d’exposition.",
+          "en": "A strong direct international watch item for research, archives, or memory-related performance. At the next opening, choose the relevant archive and confirm travel cap, insurance, archive rights, and exhibition schedule.",
+          "ja": "リサーチ、アーカイブ、記憶に関わるパフォーマンスに有力な国際直接監視先です。次回は適切なアーカイブを選び、渡航上限、保険、アーカイブ利用権、展示日程を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "tabakalera-asts-2026-next-watch",
+    "title": "Tabakalera — Art, Science, Technology and Society Residency",
+    "country": "Spain",
+    "city": "San Sebastián",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-02-09",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 a clos le 9 février; suivre le prochain appel ASTS.",
+      "en": "The 2026 cycle closed February 9; follow the next ASTS call.",
+      "ja": "2026年枠は2月9日に終了。次回ASTS募集を監視します。"
+    },
+    "nextCheckDate": "2026-12-01",
+    "sourceUrl": "https://www.goethe.de/en/m/kul/foe/tab.html",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel ASTS visait des artistes, créateur·rices et agent·es culturel·les développant des projets art-science-technologie-société. Il acceptait les travailleur·euses culturel·les internationaux résidant en Espagne ou Allemagne, ainsi que les citoyen·nes espagnol·es et allemand·es.",
+        "en": "The last ASTS call was for artists, creators, and cultural agents developing art-science-technology-society projects. It accepted international cultural workers living in Spain or Germany, as well as Spanish and German citizens.",
+        "ja": "前回ASTS募集は、アート・科学・技術・社会に関する企画を行うアーティスト、クリエイター、文化実践者向けでした。スペインまたはドイツ在住の国際文化従事者、ならびにスペイン・ドイツ国籍者が対象でした。"
+      },
+      "applicantCost": {
+        "fr": "Le programme annonçait un billet aller-retour à discrétion du ou de la lauréat·e. Les montants, logement, visa, assurance, matériaux et dépenses de recherche ne sont pas détaillés sur la page consultée; les vérifier au prochain appel.",
+        "en": "The programme announced a return ticket at the successful applicant’s discretion. Amounts, accommodation, visa, insurance, materials, and research expenses are not detailed on the page reviewed; verify them at the next call.",
+        "ja": "採択者の判断で往復航空券が案内されました。金額、宿泊、ビザ、保険、材料費、研究費は確認したページに詳細がなく、次回募集で確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence de huit semaines à San Sebastián, du 4 mai au 5 juillet 2026, avec billet aller-retour annoncé. Le programme est mené par Tabakalera avec le Goethe-Institut Madrid.",
+        "en": "An eight-week residency in San Sebastián, May 4–July 5, 2026, with a return ticket announced. The programme is run by Tabakalera with Goethe-Institut Madrid.",
+        "ja": "2026年5月4日〜7月5日のサン・セバスティアンでの8週間滞在で、往復航空券が案内されました。TabakaleraとGoethe-Institut Madridのプログラムです。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une base québécoise seule ne répond pas à la condition de résidence ou nationalité publiée. Ne candidater que via un lien admissible réel en Espagne ou Allemagne; sinon utiliser ce repère pour surveiller les futurs partenariats internationaux.",
+          "en": "A Quebec-only base does not meet the published residence or nationality requirement. Apply only through a genuine eligible Spain or Germany link; otherwise use this as a watch point for future international partnerships.",
+          "ja": "ケベックのみの拠点では、公表された居住・国籍条件を満たしません。スペインまたはドイツとの実在する資格上のつながりがある場合のみ応募し、それ以外は将来の国際連携を監視する指標として扱ってください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "creative-nz-berlin-visual-arts-2027-watch",
+    "title": "Creative New Zealand — Berlin Visual Arts Residency 2027",
+    "country": "Germany",
+    "city": "Berlin",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-03-02",
+    "deadlineTimeZone": "NZT",
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 a clos le 2 mars 2026 à 13 h, heure de Nouvelle-Zélande; suivre le prochain cycle.",
+      "en": "The 2027 cycle closed March 2, 2026 at 13:00 New Zealand time; follow the next cycle.",
+      "ja": "2027年枠は2026年3月2日13:00（ニュージーランド時間）に終了。次回を監視します。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://creativenz.govt.nz/funding-and-support/all-opportunities/berlin-visual-arts-residency",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Réservé à un·e artiste visuel·le citoyen·ne ou résident·e permanent·e de Nouvelle-Zélande, avec solide réputation nationale et disponibilité à Berlin du 15 janvier au 15 décembre 2027.",
+        "en": "Restricted to a New Zealand citizen or permanent-resident visual artist with a strong national reputation and availability in Berlin January 15–December 15, 2027.",
+        "ja": "ニュージーランド市民または永住者で、国内で確かな評価を持つ視覚芸術家が対象です。2027年1月15日〜12月15日にベルリンを拠点にできる必要があります。"
+      },
+      "applicantCost": {
+        "fr": "La bourse de 45 000 NZD couvre vie, nouvelle production, voyage à Berlin et assurance voyage. Le ou la bénéficiaire doit toutefois financer assurance santé et toute dépense additionnelle.",
+        "en": "The NZD 45,000 stipend covers living costs, new work, travel to Berlin, and travel insurance. The recipient must still fund health insurance and any additional expenses.",
+        "ja": "45,000ニュージーランドドルの給付は生活費、新作費、ベルリンへの渡航、旅行保険を対象とします。ただし健康保険と追加費用は受給者負担です。"
+      },
+      "organizerSupport": {
+        "fr": "45 000 NZD, appartement d’une chambre, studio et frais administratifs au Künstlerhaus Bethanien; accompagnement curatorial, ateliers, infrastructure technique, exposition, open studio, publication et réseau professionnel international.",
+        "en": "NZD 45,000, a one-bedroom apartment, studio, and administration fee at Künstlerhaus Bethanien; curatorial support, workshops, technical infrastructure, exhibition, open studio, publishing, and international professional network.",
+        "ja": "45,000ニュージーランドドル、1ベッドルームのアパート、Künstlerhaus Bethanienのスタジオ・運営費、キュラトリアル支援、ワークショップ、技術設備、展覧会、オープンスタジオ、出版、国際的専門ネットワークがあります。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne établie uniquement au Québec n’est pas admissible. Ne préparer aucun dossier sans citoyenneté ou résidence permanente néo-zélandaise réelle; ce record sert à distinguer un soutien très complet d’une voie non accessible directement.",
+          "en": "Someone based only in Quebec is not eligible. Do not prepare an application without genuine New Zealand citizenship or permanent residence; this record distinguishes very complete support from a route not directly accessible.",
+          "ja": "ケベックのみを拠点とする人は対象外です。実在するニュージーランド国籍または永住資格がない限り応募準備をせず、充実した支援内容と直接アクセス不可の経路を区別するための記録として扱います。"
+        }
+      }
+    }
   }
 ]
