@@ -228,7 +228,7 @@ type Assessment = { state: MatchState; reasonKeys: EligibilityReasonKey[] };
 const opportunities = opportunityData as Opportunity[];
 const fundingPrograms = fundingData as Funding[];
 const festivalRadar = festivalRadarData as FestivalRadar[];
-const candidatePageSize = 8;
+const candidatePageSize = 5;
 const fundingPageSize = 3;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
 const protectedPersonGlossaryUrl = "https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#protected_person";
@@ -430,7 +430,6 @@ const copy = {
       us_south: "Sud des États-Unis",
       us_west: "Ouest des États-Unis",
     },
-    steps: ["Votre situation", "Une occasion concrète", "Le financement possible"],
     profileHeading: "Votre situation",
     profile: "Vous présentez une demande à titre de…",
     discipline: "Votre discipline",
@@ -632,7 +631,6 @@ const copy = {
     sourceNote: "Outil de présélection seulement. Avant toute décision, consultez la page officielle, sa date de vérification et les pièces justificatives demandées.",
     verified: "Information officielle vérifiée le",
     languageLabel: "Langue d’affichage",
-    workflowLabel: "Parcours de vérification",
     matcherLabel: "Correspondance entre appels et financement",
     eligibleCostsLabel: "Types de dépenses admissibles",
     aboutSummary: "À propos de MESURE et règles de confiance",
@@ -685,7 +683,6 @@ const copy = {
     regions: { quebec: "Québec", ontario: "Ontario", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut" },
     otherRegions: "Other provinces and territories",
     residences: { montreal: "Island of Montréal", quebec_city: "City of Québec", quebec: "Elsewhere in Québec", gatineau: "Gatineau", toronto: "City of Toronto", gta: "GTA outside Toronto", ottawa: "City of Ottawa", british_columbia: "British Columbia", alberta: "Alberta", saskatchewan: "Saskatchewan", manitoba: "Manitoba", new_brunswick: "New Brunswick", nova_scotia: "Nova Scotia", prince_edward_island: "Prince Edward Island", newfoundland_labrador: "Newfoundland and Labrador", yukon: "Yukon", northwest_territories: "Northwest Territories", nunavut: "Nunavut", new_york: "New York State", vermont: "Vermont", maine: "Maine", new_hampshire: "New Hampshire", massachusetts: "Massachusetts", california: "California", chicago_metro: "Chicago Metro", illinois_non_chicago: "Illinois outside Chicago Metro", austin_msa: "Austin metropolitan area", houston_city: "City of Houston", texas_other: "Texas outside Austin / Houston", us_new_england_other: "Other New England state", us_mid_atlantic_other: "Other Mid-Atlantic state or territory", us_midwest: "Arts Midwest region", us_mid_america: "Mid-America region", us_south: "Southern U.S. region", us_west: "Western U.S. region" },
-    steps: ["Your situation", "A concrete opportunity", "Possible funding"],
     profileHeading: "Your situation",
     profile: "You are applying as…",
     discipline: "Your discipline",
@@ -845,7 +842,6 @@ const copy = {
     sourceNote: "Pre-screening only. Before making a decision, review the official page, its verification date and the required supporting documents.",
     verified: "Official information checked",
     languageLabel: "Display language",
-    workflowLabel: "How matching works",
     matcherLabel: "Opportunity and funding search",
     eligibleCostsLabel: "Eligible cost types",
     aboutSummary: "About MESURE and its trust rules",
@@ -898,7 +894,6 @@ const copy = {
     regions: { quebec: "ケベック州", ontario: "オンタリオ州", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州" },
     otherRegions: "その他の州・準州",
     residences: { montreal: "モントリオール島内", quebec_city: "ケベック・シティ", quebec: "ケベック州内（その他）", gatineau: "ガティノー", toronto: "トロント市", gta: "GTA（トロント市外）", ottawa: "オタワ市", british_columbia: "ブリティッシュ・コロンビア州", alberta: "アルバータ州", saskatchewan: "サスカチュワン州", manitoba: "マニトバ州", new_brunswick: "ニューブランズウィック州", nova_scotia: "ノバスコシア州", prince_edward_island: "プリンスエドワードアイランド州", newfoundland_labrador: "ニューファンドランド・ラブラドール州", yukon: "ユーコン準州", northwest_territories: "ノースウエスト準州", nunavut: "ヌナブト準州", new_york: "ニューヨーク州", vermont: "バーモント州", maine: "メイン州", new_hampshire: "ニューハンプシャー州", massachusetts: "マサチューセッツ州", california: "カリフォルニア州", chicago_metro: "シカゴ都市圏", illinois_non_chicago: "シカゴ都市圏外のイリノイ州", austin_msa: "オースティン都市圏", houston_city: "ヒューストン市", texas_other: "オースティン／ヒューストン以外のテキサス州", us_new_england_other: "ニューイングランドのその他の州", us_mid_atlantic_other: "中部大西洋岸のその他の州・地域", us_midwest: "Arts Midwest地域", us_mid_america: "Mid-America地域", us_south: "米国南部", us_west: "米国西部" },
-    steps: ["申請者の状況", "具体的な公募", "利用可能性のある制度"],
     profileHeading: "申請者の状況",
     profile: "申請主体",
     discipline: "活動分野",
@@ -1058,7 +1053,6 @@ const copy = {
     sourceNote: "これは事前確認用です。申請を決める前に、公式ページ、情報の確認日、必要書類を必ず確認してください。",
     verified: "公式情報の確認日",
     languageLabel: "表示言語",
-    workflowLabel: "照合の手順",
     matcherLabel: "公募と助成制度の照合",
     eligibleCostsLabel: "対象となる経費",
     aboutSummary: "MESUREについて・信頼性のルール",
@@ -1766,10 +1760,6 @@ export function OpportunityWorkbench() {
           </div>
         </div>
       </section>
-
-      <nav className="steps" aria-label={t.workflowLabel}>
-        {t.steps.map((label: string, index: number) => <div className="step" key={label}><span className="step-number">0{index + 1}</span><strong>{label}</strong></div>)}
-      </nav>
 
       <section className="workbench" aria-label={t.matcherLabel}>
         <aside className="panel panel-profile">

@@ -241,7 +241,6 @@ a {
 
 .eyebrow,
 .section-kicker,
-.step-number,
 .data-stamp,
 .status-tag,
 .match-state,
@@ -462,39 +461,6 @@ a {
 .base-group button[aria-pressed="true"] {
   background: var(--ink);
   color: var(--paper-bright);
-}
-
-.steps {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-bottom: 16px;
-  border: 2px solid var(--ink);
-  background: var(--paper-bright);
-}
-
-.step {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 12px;
-  align-items: center;
-  min-height: 64px;
-  padding: 10px 14px;
-  border-right: 2px solid var(--ink);
-}
-
-.step:last-child {
-  border-right: 0;
-}
-
-.step-number {
-  color: var(--blue);
-  font-size: 0.72rem;
-  font-weight: 900;
-}
-
-.step strong {
-  font-size: 0.86rem;
-  line-height: 1.2;
 }
 
 .workbench {
@@ -2398,30 +2364,6 @@ a {
 
   .base-group-other > div {
     grid-template-columns: 1fr;
-  }
-
-  .steps {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .step {
-    display: grid;
-    min-height: 58px;
-    gap: 4px;
-    align-content: center;
-    padding: 7px 8px;
-    border-right: 0;
-    border-bottom: 0;
-    text-align: center;
-  }
-
-  .step:not(:last-child) {
-    border-right: 1px solid var(--ink);
-  }
-
-  .step strong {
-    font-size: 0.66rem;
-    line-height: 1.25;
   }
 
   .workbench {
