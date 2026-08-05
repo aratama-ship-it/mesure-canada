@@ -1747,12 +1747,13 @@ export function OpportunityWorkbench() {
       </section>
 
       <section className="base-ruler" aria-labelledby="base-heading">
-        <div className="base-copy"><span className="section-kicker">{t.baseKicker}</span><h3 id="base-heading">{t.baseHeading}</h3><p>{t.baseNote}</p></div>
         <button className="base-mobile-summary" type="button" aria-expanded={baseExpanded} aria-controls="base-options" onClick={() => setBaseExpanded((expanded) => !expanded)}>
           <span><small>{t.mobileUi.currentBase}</small><strong>{t.countries[country]} · {t.residences[residence]}</strong></span>
           <b>{baseExpanded ? t.mobileUi.collapse : t.mobileUi.change}</b>
         </button>
-        <div className={`base-groups ${baseExpanded ? "is-open" : ""}`} id="base-options">
+        <div className="base-disclosure" id="base-options" hidden={!baseExpanded}>
+          <div className="base-copy"><span className="section-kicker">{t.baseKicker}</span><h3 id="base-heading">{t.baseHeading}</h3><p>{t.baseNote}</p></div>
+          <div className={`base-groups ${baseExpanded ? "is-open" : ""}`}>
           <fieldset className="base-group base-country"><legend>{t.countryLabel}</legend><div>{countryOptions.map((item) => <button type="button" key={item} aria-pressed={country === item} onClick={() => { setCountry(item); setResidence(item === "canada" ? "montreal" : "new_york"); setLegalStatus("unsure"); setOrganizationRegistration("unsure"); setFiscalSponsorStatus("unsure"); setUsPaymentStatus("unsure"); }}><span aria-hidden="true">{country === item ? "◆" : "◇"}</span>{t.countries[item]}</button>)}</div></fieldset>
           {country === "canada" ? <>
             {primaryCanadaResidenceRegions.map((region) => <fieldset className="base-group" key={region}><legend>{t.regions[region]}</legend><div>{canadaResidenceGroups[region].map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => { setResidence(item); setBaseExpanded(false); }}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>)}
@@ -1762,6 +1763,7 @@ export function OpportunityWorkbench() {
             <fieldset className="base-group base-group-other"><legend>{t.usOtherRegions}</legend><div>{usOtherResidenceRegions.map((item) => <button type="button" key={item} aria-pressed={residence === item} onClick={() => { setResidence(item); setBaseExpanded(false); }}><span aria-hidden="true">{residence === item ? "◆" : "◇"}</span>{t.residences[item]}</button>)}</div></fieldset>
             <p className="us-beta-note">{t.usBetaNote}</p>
           </>}
+          </div>
         </div>
       </section>
 

@@ -113,6 +113,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.match(workbenchSource, /document\.body\.classList\.add\("mobile-detail-open"\)/);
   assert.match(workbenchSource, /aria-expanded=\{profileExpanded\}/);
   assert.match(workbenchSource, /aria-expanded=\{baseExpanded\}/);
+  assert.match(workbenchSource, /className="base-disclosure" id="base-options" hidden=\{!baseExpanded\}/);
   assert.equal([...workbenchSource.matchAll(/const \[language, setLanguage\] = usePersistentLanguage\(\);/g)].length, 2);
   assert.match(workbenchSource, /mesure-canada-language/);
   assert.match(workbenchSource, /window\.localStorage\.setItem/);
