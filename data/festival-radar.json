@@ -10020,5 +10020,138 @@
         }
       }
     }
+  },
+  {
+    "id": "acc-creators-gwangju-2026-next-watch",
+    "title": "ACC CREATORS Residency 2026 — Next Open Call",
+    "country": "South Korea",
+    "city": "Gwangju",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-03-01",
+    "deadlineLabel": {
+      "fr": "Le cycle ACC CREATORS 2026 a clos le 1er mars; suivre le prochain appel.",
+      "en": "The ACC CREATORS 2026 cycle closed March 1; follow the next call.",
+      "ja": "ACC CREATORS 2026は3月1日に終了。次回募集を監視します。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.acc.go.kr/en/board/board.do?PID=1002&action=Read&boardID=REFERECEROOM&idx=1743&pageIndex=1&searchType=all",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "L’appel 2026 acceptait des candidatures mondiales de créateur·rices, artistes, professionnel·les ou ingénieur·es dont le projet art-technologie correspondait au thème « Speculative Communities ». Huit équipes ou personnes étaient sélectionnées dans les catégories art-technologie, audiovisuel et son immersif.",
+        "en": "The 2026 call accepted global applications from creators, artists, professionals, or engineers whose art-and-technology project fit “Speculative Communities.” Eight teams or individuals were selected across Art & Technology, Audiovisual, and Immersive Sound.",
+        "ja": "2026年募集は「Speculative Communities」に合うアート＆テクノロジー企画を持つ世界中のクリエイター、アーティスト、専門職、エンジニアが対象でした。アート＆テクノロジー、映像、イマーシブサウンドで計8チームまたは個人を選出しました。"
+      },
+      "applicantCost": {
+        "fr": "Le soutien de projet était de 20 à 30 millions KRW selon la catégorie. La page ne précise pas voyage international, hébergement, visa, assurance, fiscalité ou frais excédant le budget; les demander avant tout engagement.",
+        "en": "Project support was KRW 20–30 million by category. The page does not state international travel, accommodation, visa, insurance, tax, or costs beyond the budget; request them before committing.",
+        "ja": "カテゴリーごとに2,000万〜3,000万ウォンの企画支援がありました。国際渡航、宿泊、ビザ、保険、税務、予算超過分はページに記載がなく、確約前に確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Programme de cinq mois à partir de juillet, avec séminaires thématiques, ateliers de création, consultations d’expert·es et financement de 20 à 30 millions KRW. ACC ACT Studio offre prototypage rapide, fabrication, impression/scan 3D et systèmes audiovisuels, stéréoscopiques et son immersif; résultats partagés au public.",
+        "en": "A five-month programme from July with thematic seminars, creation workshops, expert consultations, and KRW 20–30 million funding. ACC ACT Studio provides rapid prototyping, fabrication, 3D printing/scanning, and audiovisual, stereoscopic, and immersive-sound systems; outcomes are shared publicly.",
+        "ja": "7月からの5か月プログラムで、テーマ別セミナー、制作ワークショップ、専門家相談、2,000万〜3,000万ウォンの支援があります。ACC ACT Studioではラピッドプロトタイピング、工作、3Dプリント・スキャン、映像・立体映像・イマーシブサウンド設備を利用し、成果を一般公開します。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Veille internationale directe solide pour un projet art-technologie. À l’ouverture, valider l’adéquation au thème, la faisabilité à Gwangju et les postes réellement couverts, notamment voyage, logement, visa et importation de matériel.",
+          "en": "A strong direct international watch item for an art-and-technology project. At opening, validate thematic fit, Gwangju feasibility, and what is actually covered, especially travel, lodging, visa, and equipment import.",
+          "ja": "アート＆テクノロジー企画に有力な国際直接監視先です。次回開始時にテーマ適合、光州での実現可能性、渡航・宿泊・ビザ・機材輸入を含む対象経費を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "khoj-international-residency-2026-next-watch",
+    "title": "Khoj International Residency 2026 — Mental Health and Distress",
+    "country": "India",
+    "city": "New Delhi",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-07",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 a clos le 7 juin; suivre le prochain appel international de Khoj.",
+      "en": "The 2026 cycle closed June 7; follow Khoj’s next international call.",
+      "ja": "2026年枠は6月7日に終了。Khojの次回国際募集を監視します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://khojstudios.org/opportunity/khoj-international-residency/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Ouvert aux artistes indiens et internationaux, dans tout médium, pour explorer santé mentale, détresse, douleur physique/psychologique/historique et systèmes de connaissance liés à ces expériences. La collaboration 2026 réunissait artistes et chercheur·euses d’Inde et du Royaume-Uni.",
+        "en": "Open to Indian and international artists working in any medium to explore mental health, distress, physical/psychological/historical pain, and knowledge systems around those experiences. The 2026 collaboration brought together artists and scholars from India and the UK.",
+        "ja": "全メディアのインドおよび国際アーティストが対象で、メンタルヘルス、苦痛、身体的・心理的・歴史的な痛み、それらに関する知識体系を扱います。2026年の連携ではインドと英国のアーティスト・研究者が集まりました。"
+      },
+      "applicantCost": {
+        "fr": "La page indique voyage aller-retour Delhi, per diem et budget de production pour les artistes sélectionné·es, mais ne détaille visa, assurance, plafonds de voyage, hébergement, fiscalité ou dépenses hors budget. Les confirmer lors du prochain appel.",
+        "en": "The page states return travel to and from Delhi, per diem, and production budget for selected artists, but does not detail visa, insurance, travel caps, accommodation, tax, or costs beyond budget. Confirm them at the next call.",
+        "ja": "採択者にはデリーまでの往復渡航、日当、制作費が案内されていますが、ビザ、保険、渡航上限、宿泊、税務、予算外費用は未詳です。次回募集で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence sur site de six semaines à Khoj Studios, avec voyage aller-retour Delhi, per diem et budget de production pour les personnes sélectionnées; collaboration avec le Center for Anthropology and Mental Health Research in Action de SOAS.",
+        "en": "A six-week on-site residency at Khoj Studios with return travel to and from Delhi, per diem, and production budget for selected people; collaboration with SOAS’s Center for Anthropology and Mental Health Research in Action.",
+        "ja": "Khoj Studiosでの6週間の現地滞在で、採択者にデリーまでの往復渡航、日当、制作費があります。SOASのCenter for Anthropology and Mental Health Research in Actionとの連携です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Voie internationale directe pour une proposition réellement ancrée dans le thème. À la prochaine ouverture, demander par écrit logement, visa, assurance, plafonds de voyage et compatibilité avec les exigences de recherche du partenariat.",
+          "en": "A direct international route for a proposal genuinely grounded in the theme. At the next opening, obtain written terms for accommodation, visa, insurance, travel caps, and fit with the partnership’s research requirements.",
+          "ja": "テーマに実質的に根ざした企画には国際直接応募の候補です。次回は宿泊、ビザ、保険、渡航上限、連携先の研究要件との適合を文書で確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "pivo-salvador-2026-next-watch",
+    "title": "Pivô Salvador Artistic Residencies 2026",
+    "country": "Brazil",
+    "city": "Salvador",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-11-27",
+    "deadlineTimeZone": "BRT",
+    "deadlineLabel": {
+      "fr": "Le cycle 2026 a clos le 27 novembre 2025 à 23 h 59; suivre la prochaine résidence Pivô Salvador.",
+      "en": "The 2026 cycle closed November 27, 2025 at 23:59; follow the next Pivô Salvador residency.",
+      "ja": "2026年枠は2025年11月27日23:59に終了。Pivô Salvadorの次回滞在を監視します。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://pivo.org.br/pt/noticias/pivo-salvador-lanca-chamada-aberta-para-residencia-artistica-em-2026/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le dernier appel visait artistes et autres agent·es artistiques et culturels de plus de 18 ans — commissaires, chercheur·euses, éducateur·rices, critiques et auteur·rices compris — ayant expérience en recherche ou production et un projet à développer. La page ne publie pas de restriction de nationalité ou résidence; la revalider au prochain cycle.",
+        "en": "The last call was for artists and other cultural agents over 18—including curators, researchers, educators, critics, and writers—with research or production experience and a project to develop. The page publishes no nationality or residence restriction; revalidate that at the next cycle.",
+        "ja": "前回は18歳以上で、リサーチまたは制作経験と発展させる企画を持つアーティスト、キュレーター、研究者、教育者、批評家、作家などが対象でした。国籍・居住地制限はページに記載がなく、次回再確認が必要です。"
+      },
+      "applicantCost": {
+        "fr": "La résidence annonçait bourse de recherche et hébergement, mais la page consultée ne précise ni montant, ni voyage, ni visa, ni assurance, ni matériel ni fiscalité. Demander les conditions complètes avant de déposer ou accepter.",
+        "en": "The residency announced a research stipend and accommodation, but the page reviewed does not state amount, travel, visa, insurance, materials, or tax. Request complete terms before applying or accepting.",
+        "ja": "リサーチ給付と宿泊は案内されましたが、確認したページには金額、渡航、ビザ、保険、材料、税務の記載がありません。応募・受諾前に完全な条件を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Deux modalités, Imersão et Conexão, avec bourse de recherche, hébergement, accompagnement curatorial et programme public. La modalité Conexão 2026 était menée avec CAMPO Arte Contemporânea à Teresina, élargissant l’échange institutionnel au Brésil.",
+        "en": "Two tracks, Imersão and Conexão, with research stipend, accommodation, curatorial follow-up, and a public programme. The 2026 Conexão track worked with CAMPO Arte Contemporânea in Teresina, expanding institutional exchange in Brazil.",
+        "ja": "ImersãoとConexãoの2方式で、リサーチ給付、宿泊、キュラトリアル伴走、公開プログラムがあります。2026年のConexãoはテレジーナのCAMPO Arte Contemporâneaと連携し、ブラジル国内の機関連携を広げました。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "La dernière page ne publie pas d’exclusion territoriale, ce qui en fait une piste internationale possible mais non confirmée. Avant de mobiliser un budget québécois, demander admissibilité d’un·e résident·e du Québec, montant, voyage, visa, assurance et dates.",
+          "en": "The last page publishes no territorial exclusion, making this a possible but unconfirmed international route. Before committing Quebec funds, ask about Quebec-resident eligibility, amount, travel, visa, insurance, and dates.",
+          "ja": "前回ページに地域除外はなく、国際応募候補ではあるものの未確定です。ケベック側の予算を動かす前に、ケベック居住者の資格、金額、渡航、ビザ、保険、日程を確認してください。"
+        }
+      }
+    }
   }
 ]
