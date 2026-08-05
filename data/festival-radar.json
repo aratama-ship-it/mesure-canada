@@ -10153,5 +10153,139 @@
         }
       }
     }
+  },
+  {
+    "id": "arcus-ibaraki-2026-next-watch",
+    "title": "ARCUS Project 2026 Ibaraki Artist-in-Residence",
+    "country": "Japan",
+    "city": "Moriya",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-03-19",
+    "deadlineTimeZone": "JST",
+    "deadlineLabel": {
+      "fr": "L’appel ARCUS Project 2026 a clos le 19 mars à 23 h 59 min 59 s JST; suivre le prochain cycle international.",
+      "en": "The ARCUS Project 2026 call closed March 19 at 23:59:59 JST; follow the next international cycle.",
+      "ja": "ARCUS Project 2026は3月19日23:59:59 JSTに終了。次回の国際募集を監視します。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://www.arcus-project.com/en/news/open-call-2026/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "L’appel 2026 s’adressait aux artistes menant une activité créative dans le monde entier. La résidence privilégie travail de terrain, recherche et projets en dialogue avec les personnes, le territoire et la culture locale; revalider le critère exact lors du prochain appel.",
+        "en": "The 2026 call was for artists engaged in creative activity worldwide. The residency emphasizes fieldwork, research, and projects in dialogue with local people, land, and culture; recheck the exact criterion at the next call.",
+        "ja": "2026年募集は世界で創作活動を行うアーティストが対象でした。現地調査、リサーチ、地域の人・土地・文化との対話を重視する滞在で、次回は正確な資格要件を再確認してください。"
+      },
+      "applicantCost": {
+        "fr": "L’annonce indiquait que studio, logement, billet aller-retour et 540 000 JPY de frais de vie et de travail étaient fournis. Elle ne détaille pas visa, assurance, fiscalité, excédents de production ou accompagnant·es; les clarifier avant dépôt.",
+        "en": "The notice stated that studio, accommodation, round-trip airfare, and JPY 540,000 for living and work expenses were provided. It does not detail visa, insurance, tax, production overages, or companions; clarify these before applying.",
+        "ja": "スタジオ、宿泊、往復航空券、生活・制作費54万円が提供されると案内されています。ビザ、保険、税務、制作費超過、同行者は詳しくないため、応募前に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence de 90 jours, du 11 septembre au 9 décembre 2026, entièrement financée: 540 000 JPY pour vie et travail, studio, logement, aller-retour, équipe de coordination et tutorats réguliers avec un·e commissaire.",
+        "en": "A fully funded 90-day residency, September 11–December 9, 2026: JPY 540,000 for living and work, studio, accommodation, round-trip travel, coordinating staff, and regular curator tutorials.",
+        "ja": "2026年9月11日〜12月9日の90日間、生活・制作費54万円、スタジオ、宿泊、往復渡航、運営スタッフ、キュレーターによる定期チュートリアルを含む全額支援型です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Piste internationale directe et fortement financée. Lors de la prochaine ouverture, vérifier l’adéquation recherche-territoire, les livrables, les conditions de visa et la couverture effective du voyage depuis le Québec.",
+          "en": "A direct, strongly funded international route. At the next opening, verify research/place fit, deliverables, visa conditions, and actual coverage for travel from Quebec.",
+          "ja": "国際直接応募で支援も厚い候補です。次回はリサーチと地域の適合、成果要件、ビザ条件、ケベックからの渡航が実際に対象かを確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "acac-aomori-eat-2026-next-watch",
+    "title": "ACAC Artist in Residence 2026 “EAT”",
+    "country": "Japan",
+    "city": "Aomori",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-10",
+    "deadlineTimeZone": "JST",
+    "deadlineLabel": {
+      "fr": "L’appel ACAC 2026 « EAT » a clos le 10 avril à 17 h JST; suivre le prochain AIR international.",
+      "en": "The ACAC 2026 “EAT” call closed April 10 at 17:00 JST; follow the next international AIR.",
+      "ja": "ACAC 2026「EAT」は4月10日17:00 JSTに終了。次回の国際AIRを監視します。"
+    },
+    "nextCheckDate": "2027-02-01",
+    "sourceUrl": "https://acac-aomori.jp/public/application-guideline-artist-in-residence-program-2026-eat/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle 2026 réservait un à deux postes de création aux personnes résidant hors du Japon et un poste de médiation aux personnes résidant au Japon ou ailleurs. Il acceptait individus ou groupes d’artistes, commissaires, producteur·rices, chercheur·euses, auteur·rices, universitaires ou designers, sans distinction de parcours ou genre, avec anglais ou japonais requis.",
+        "en": "The 2026 cycle reserved one to two creator places for people residing outside Japan and one mediator place for people residing in or outside Japan. It accepted individuals or groups including artists, curators, producers, researchers, writers, academics, and designers regardless of background or genre, with English or Japanese required.",
+        "ja": "2026年枠は国外居住者向けにクリエイター1〜2枠、日本国内外居住者向けにメディエーター1枠を設けました。経歴・ジャンルを問わず、アーティスト、キュレーター、プロデューサー、研究者、作家、大学教員、デザイナー等の個人・グループが対象で、英語または日本語での意思疎通が必要です。"
+      },
+      "applicantCost": {
+        "fr": "L’organisateur prenait en charge voyage, production/activité, sous-programme et allocation d’hébergement pour une personne par candidature retenue. Accompagnant·es, visa, assurance, coûts au-delà des plafonds et personne supplémentaire du groupe ne sont pas automatiquement couverts; les confirmer à l’ouverture.",
+        "en": "The organizer covered travel, production/activity, sub-programme, and accommodation allowance for one person per successful application. Companions, visa, insurance, costs beyond caps, and additional group members are not automatically covered; confirm at opening.",
+        "ja": "主催者は採択1件につき1人分の渡航、制作・活動、サブプログラム、宿泊手当を負担します。同行者、ビザ、保険、上限超過、グループの追加人数は自動的には対象外なので、次回開始時に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence de 62 à 92 nuits entre le 15 septembre et le 15 décembre 2026, avec accompagnement continu du personnel ACAC. Pour le long séjour créateur depuis l’étranger, les barèmes publiés indiquaient voyage jusqu’à 300 000 JPY, allocation d’hébergement 218 400 JPY, production 300 000 JPY et honoraires de sous-programme 50 000 JPY, selon le cadre choisi.",
+        "en": "A 62- to 92-night residency between September 15 and December 15, 2026, with ongoing ACAC staff support. For the long creator stay from abroad, published rates stated travel up to JPY 300,000, JPY 218,400 accommodation allowance, JPY 300,000 production, and JPY 50,000 sub-programme honorarium, depending on the selected framework.",
+        "ja": "2026年9月15日〜12月15日の62〜92泊の滞在で、ACACスタッフが継続支援します。国外からの長期クリエイター枠では、選択枠により、渡航上限30万円、宿泊手当21万8,400円、制作費30万円、サブプログラム謝金5万円が公開されていました。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Voie directe pour une personne résidant au Québec, avec un nombre limité de places hors Japon. À la prochaine ouverture, confirmer le cadre retenu, le plafond de voyage, visa/assurance et la faisabilité d’une présentation ou recherche locale autour du thème annuel.",
+          "en": "A direct route for a Quebec resident, with a limited number of outside-Japan places. At the next opening, confirm the chosen framework, travel cap, visa/insurance, and feasibility of a local presentation or research around the annual theme.",
+          "ja": "日本国外枠が少数ながら、ケベック居住者が直接応募できる候補です。次回は応募枠、渡航上限、ビザ・保険、年テーマに沿う現地発表またはリサーチの実現性を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "arts-house-warehouse-residency-2026-27-next-watch",
+    "title": "Arts House The Warehouse Residency 2026–27",
+    "country": "Australia",
+    "city": "Melbourne",
+    "region": "Oceania",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Les EOI 2026–27 sont fermées; suivre le prochain appel Warehouse Residency.",
+      "en": "The 2026–27 EOIs are closed; follow the next Warehouse Residency call.",
+      "ja": "2026〜27年EOIは終了。Warehouse Residencyの次回募集を監視します。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://www.artshouse.com.au/artist-opportunities/the-warehouse-residency/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le programme 2026–27 était destiné aux interprètes, artistes, commissaires, collectifs et collaborateur·rices basé·es en Australie, avec un projet mené par des personnes sourdes ou en situation de handicap. Il n’est donc pas une candidature directe depuis le Québec sans base australienne publiée.",
+        "en": "The 2026–27 programme was for Australian-based performers, artists, curators, collectives, and collaborators with a Deaf- and Disability-led project. It is therefore not a direct application route from Quebec without a published Australian base.",
+        "ja": "2026〜27年は、ろう者・障害者主導の企画を持つオーストラリア拠点のパフォーマー、アーティスト、キュレーター、コレクティブ、協働者が対象でした。公開されたオーストラリア拠点なしにケベックから直接応募するルートではありません。"
+      },
+      "applicantCost": {
+        "fr": "La commission annoncée pouvait atteindre 48 000 AUD, mais la page ne détaille pas voyage international, visa, assurance, fiscalité, logement hors résidence ou dépenses dépassant les postes indiqués. Ne pas supposer leur prise en charge.",
+        "en": "The announced commission could reach AUD 48,000, but the page does not detail international travel, visa, insurance, tax, accommodation outside the residency, or costs beyond listed items. Do not assume these are covered.",
+        "ja": "委嘱額は最大4万8,000豪ドルですが、国際渡航、ビザ、保険、税務、滞在外の宿泊、記載項目を超える費用はページに詳しくありません。対象と推定しないでください。"
+      },
+      "organizerSupport": {
+        "fr": "Deux projets étaient commandés en résidence accompagnée entre 2026 et 2027: jusqu’à 30 000 AUD de résidence et honoraires créatifs, 10 000 AUD de production, 6 000 AUD d’accessibilité et 2 000 AUD de soutien entre pair·es, plus développement professionnel sur l’accès créatif et le numérique.",
+        "en": "Two projects were commissioned in a supported residency between 2026 and 2027: up to AUD 30,000 for residency and creative fees, AUD 10,000 production, AUD 6,000 access budget, and AUD 2,000 peer support, plus professional development on creative access and digital capacity.",
+        "ja": "2026〜27年に2企画を支援付きレジデンスで委嘱し、レジデンス・創作謝金最大3万豪ドル、制作費1万豪ドル、アクセシビリティ予算6,000豪ドル、ピア支援2,000豪ドルに加え、クリエイティブ・アクセスとデジタル能力の個別専門開発を提供しました。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "À surveiller pour les collaborations ou une future règle d’accès modifiée, mais la règle publiée « basé·e en Australie » exclut une candidature québécoise autonome. Toute piste nécessite d’abord une base et un rôle australiens explicitement admissibles.",
+          "en": "Worth watching for collaborations or a future access-rule change, but the published “Australian-based” rule excludes a standalone Quebec application. Any route first needs an explicitly eligible Australian base and role.",
+          "ja": "連携や今後の資格変更の監視先にはなりますが、公開された「オーストラリア拠点」条件により、ケベック単独応募は対象外です。検討するなら、まず明示的に資格があるオーストラリア拠点と役割が必要です。"
+        }
+      }
+    }
   }
 ]
