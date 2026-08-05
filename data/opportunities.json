@@ -246,11 +246,11 @@
     "country": "United States",
     "city": "Seattle",
     "status": "open",
-    "deadlineDate": "2026-07-31",
+    "deadlineDate": "2026-10-31",
     "deadlineLabel": {
-      "fr": "31 juillet 2026 : fin du tarif à 250 $ US; les inscriptions continuent ensuite à un tarif plus élevé",
-      "en": "July 31, 2026: last day of the US$250 tier; registration continues afterward at a higher price",
-      "ja": "2026年7月31日：250米ドルの登録期間最終日。以後も値上げ後の料金で登録可能"
+      "fr": "31 octobre 2026 : fin du tarif à 300 $ US; à partir du 1er novembre et sur place, le tarif publié est de 500 $ US",
+      "en": "October 31, 2026: last day of the US$300 tier; from November 1 and at the door, the published price is US$500",
+      "ja": "2026年10月31日：300米ドルの登録期間最終日。11月1日以降と当日受付は500米ドルです。"
     },
     "profiles": ["artist"],
     "disciplines": ["circus"],
@@ -291,7 +291,7 @@
     },
     "applicationLanguages": ["en"],
     "sourceUrl": "https://www.thewjf.com/wjf23/",
-    "verifiedAt": "2026-07-22",
+    "verifiedAt": "2026-08-05",
     "fundingMatches": [
       {
         "fundingId": "calq-travel",

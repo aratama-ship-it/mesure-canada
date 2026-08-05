@@ -384,7 +384,7 @@
   {
     "id": "tac-music",
     "deadlineDate": "2026-09-03",
-    "nextCheckDate": "2026-08-04",
+    "nextCheckDate": "2026-08-27",
     "name": "Toronto Arts Council — Music Creation & Audio Recording",
     "funder": "Toronto Arts Council",
     "profiles": ["artist"],
@@ -407,10 +407,10 @@
         "ja": "18歳以上の個人アーティストで、トロント市に現在居住し、1年以上の居住歴とSINが必要です。制度ページでは市民、永住者、永住申請中が対象です。"
       },
       "sourceUrl": "https://torontoartscouncil.org/grants/music-creation-and-recording/",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://torontoartscouncil.org/grants/music-creation-and-recording/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "tac-newcomer-mentorship",
@@ -836,7 +836,7 @@
   {
     "id": "afa-theatre-individual-project-2026",
     "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-02",
+    "nextCheckDate": "2026-08-25",
     "name": "Alberta Foundation for the Arts — Theatre Individual Project Funding",
     "funder": "Alberta Foundation for the Arts",
     "profiles": ["artist", "collective"],
@@ -860,15 +860,15 @@
         "ja": "アルバータ州を主たる住居として1年以上、かつ通常は年6か月以上居住すること。Protected Personはカナダ国内で発給されたオープン就労・就学許可が必要です。法人格のないグループでは、作品の共同所有者全員が条件を満たす必要があります。"
       },
       "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/theatre-individual-project-funding",
-      "verifiedAt": "2026-07-22"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/theatre-individual-project-funding",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "afa-dance-individual-project-2026",
     "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-02",
+    "nextCheckDate": "2026-08-25",
     "name": "Alberta Foundation for the Arts — Dance Individual Project Funding",
     "funder": "Alberta Foundation for the Arts",
     "profiles": ["artist", "collective"],
@@ -892,10 +892,10 @@
         "ja": "アルバータ州を主たる住居として1年以上、かつ通常は年6か月以上居住すること。Protected Personにはオープン許可が必要です。共同プロジェクトの所有者全員が同じ条件を満たす必要があります。"
       },
       "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/dance-individual-project-funding",
-      "verifiedAt": "2026-07-22"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://www.affta.ab.ca/funding/find-funding/dance-individual-project-funding",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "sk-arts-independent-artists-2026",
@@ -962,7 +962,7 @@
   {
     "id": "mac-travel-professional-development-2026",
     "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-02",
+    "nextCheckDate": "2026-08-25",
     "name": "Manitoba Arts Council — Learn: Travel / Professional Development",
     "funder": "Manitoba Arts Council",
     "profiles": ["artist"],
@@ -983,7 +983,7 @@
       "verifiedAt": "2026-07-22"
     },
     "sourceUrl": "https://artscouncil.mb.ca/grants/travel-professional-development/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "artsnb-creation-2026",
@@ -1042,7 +1042,7 @@
   {
     "id": "artsnb-artist-in-residence-2026",
     "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-02",
+    "nextCheckDate": "2026-08-25",
     "name": "artsnb — Artist in Residence (Artists)",
     "funder": "New Brunswick Arts Board / artsnb",
     "profiles": ["artist"],
@@ -1064,7 +1064,7 @@
       "verifiedAt": "2026-07-22"
     },
     "sourceUrl": "https://artsnb.ca/web/programs/artist-in-residence/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "artsns-grants-individuals-2026",
@@ -1804,8 +1804,8 @@
   },
   {
     "id": "nefa-nest-fy27",
-    "deadlineDate": "2026-08-03",
-    "nextCheckDate": "2026-07-30",
+    "deadlineDate": "2026-12-01",
+    "nextCheckDate": "2026-11-24",
     "name": "NEFA — New England States Touring (NEST)",
     "funder": "New England Foundation for the Arts",
     "profiles": ["organization"],
@@ -1813,7 +1813,7 @@
     "disciplines": ["all"],
     "purpose": "mobility_export",
     "kind": "grant",
-    "deadline": { "fr": "Prochaine échéance : 3 août 2026; puis 1er décembre 2026", "en": "Next deadline: August 3, 2026; then December 1, 2026", "ja": "次回締切：2026年8月3日。その次は12月1日" },
+    "deadline": { "fr": "Prochaine échéance : 1er décembre 2026, premier jour ouvrable de décembre", "en": "Next deadline: December 1, 2026, the first business day of December", "ja": "次回締切：2026年12月1日（12月の最初の営業日）" },
     "amount": { "fr": "500 $ à 5 000 $; jusqu’à 60 % des honoraires artistiques", "en": "$500–$5,000; up to 60% of the artist fee", "ja": "500〜5,000米ドル。アーティスト料の最大60％" },
     "coverage": ["fees", "travel", "stay", "touring"],
     "cashflow": { "fr": "L’artiste doit être marqué NEST-Eligible dans CreativeGround; les projets publics doivent avoir lieu en Nouvelle-Angleterre", "en": "The artist must be marked NEST-Eligible in CreativeGround and the public project must occur in New England", "ja": "アーティストはCreativeGroundでNEST対象登録が必要。一般公開企画をニューイングランド内で実施" },
@@ -1821,10 +1821,10 @@
       "organizationRegisteredInUs": true,
       "note": { "fr": "Le diffuseur doit être un organisme 501(c)(3), une école, un gouvernement tribal reconnu ou une administration, basé en Nouvelle-Angleterre. Les fiscal agents ne sont pas admissibles.", "en": "The presenter must be a New England-based 501(c)(3), school, federally recognized tribal government, or government unit. Fiscal agents are not eligible.", "ja": "ニューイングランド拠点の501(c)(3)、学校、連邦承認部族政府、州・地方政府が対象。Fiscal Agent経由は不可です。" },
       "sourceUrl": "https://www.nefa.org/NEST",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://www.nefa.org/NEST",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "nefa-new-england-presenter-travel",
@@ -1927,7 +1927,7 @@
   {
     "id": "arts-midwest-gig-fund-next-watch",
     "deadlineDate": "2025-09-29",
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-09-01",
     "name": "Arts Midwest — GIG Fund",
     "funder": "Arts Midwest",
     "profiles": ["organization"],
@@ -1944,15 +1944,15 @@
       "organizationRegisteredInUs": true,
       "note": { "fr": "Le dernier cycle visait les organismes 501(c)(3) et tribaux de la région, avec un UEI et un budget annuel généralement inférieur à 2 M$. Vérifier le prochain guide.", "en": "The latest cycle served regional 501(c)(3) and tribal organizations with a UEI and generally under $2 million in annual expenses. Recheck the next guidelines.", "ja": "直近募集は、UEIを持ち、原則年間経費200万ドル以下の地域内501(c)(3)・部族組織が対象でした。次回要項を再確認してください。" },
       "sourceUrl": "https://artsmidwest.org/get-support/gig-fund/applying/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://artsmidwest.org/get-support/gig-fund/applying/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "maaa-artistic-innovations-next-cycle",
     "deadlineDate": null,
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-08-12",
     "name": "Mid-America Arts Alliance — Artistic Innovations",
     "funder": "Mid-America Arts Alliance",
     "profiles": ["artist", "organization"],
@@ -2004,7 +2004,7 @@
   {
     "id": "jazz-road-tours-next-watch",
     "deadlineDate": "2025-10-15",
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-09-01",
     "name": "South Arts — Jazz Road Tours",
     "funder": "South Arts with the six U.S. regional arts organizations",
     "profiles": ["artist", "collective"],
@@ -2023,10 +2023,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "L’artiste principal doit être un jazzman professionnel de 18 ans ou plus, basé aux États-Unis ou dans leurs territoires, et citoyen ou résident permanent.", "en": "The lead applicant must be a professional jazz artist age 18 or older, based in the U.S. or its territories, and a U.S. citizen or permanent resident.", "ja": "代表申請者は18歳以上のプロのジャズアーティストで、米国・米領を拠点とする米国市民または永住者である必要があります。" },
       "sourceUrl": "https://www.southarts.org/grants-opportunities/jazz-road-tours-old",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://www.southarts.org/grants-opportunities/jazz-road-tours-old",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "creative-west-artist-fund-next-watch",
@@ -2168,7 +2168,7 @@
   {
     "id": "cci-quick-grant-august-2026",
     "deadlineDate": "2026-08-15",
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-08-12",
     "name": "Center for Cultural Innovation — Quick Grant",
     "funder": "Center for Cultural Innovation",
     "profiles": ["artist"],
@@ -2189,7 +2189,7 @@
       "verifiedAt": "2026-07-23"
     },
     "sourceUrl": "https://cciarts.org/quick-grant/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "cac-individual-artists-fellowship-next-watch",
@@ -2274,7 +2274,7 @@
   {
     "id": "austin-elevate-fy27",
     "deadlineDate": "2026-08-18",
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-08-12",
     "name": "City of Austin — Elevate FY27",
     "funder": "Austin Arts, Culture, Music and Entertainment",
     "profiles": ["artist", "collective", "organization"],
@@ -2294,10 +2294,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Siège dans la région métropolitaine d’Austin, au moins deux ans de production locale et plus de la moitié de la production dans la ville ou son ETJ. La page publique ne précise pas les catégories d’immigration.", "en": "Requires Austin MSA headquarters, at least two years of local creative production and more than half of production in the city or its ETJ. The public page does not specify immigration categories.", "ja": "オースティン都市圏に拠点があり、当地で2年以上の制作実績があり、制作の過半が市内またはETJ内で行われる必要があります。在留資格区分は公式ページに明記されていません。" },
       "sourceUrl": "https://www.austintexas.gov/arts-culture/elevate",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://www.austintexas.gov/arts-culture/elevate",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "austin-nexus-fall-2026",
@@ -2329,7 +2329,7 @@
   {
     "id": "austin-live-music-fund-fy27",
     "deadlineDate": "2026-08-18",
-    "nextCheckDate": "2026-08-01",
+    "nextCheckDate": "2026-08-12",
     "name": "City of Austin — Austin Live Music Fund FY27",
     "funder": "Austin Arts, Culture, Music and Entertainment",
     "profiles": ["artist"],
@@ -2347,16 +2347,16 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Les musiciens professionnels et promoteurs doivent documenter au moins deux ans d’activité. Les règles communes d’Austin et les catégories d’immigration doivent être confirmées dans le guide FY27.", "en": "Professional musicians and independent promoters must document at least two years of activity. Confirm Austin-wide requirements and immigration categories in the FY27 guide.", "ja": "プロの音楽家・独立プロモーターは2年以上の活動証明が必要です。オースティン共通条件と在留資格区分はFY27要項で確認してください。" },
       "sourceUrl": "https://www.austintexas.gov/arts-culture/austin-live-music-fund",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-05"
     },
     "sourceUrl": "https://www.austintexas.gov/arts-culture/austin-live-music-fund",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-05"
   },
   {
     "id": "haa-saci-2027",
     "deadlineDate": "2026-07-24",
     "deadlineTimeZone": "America/Chicago",
-    "nextCheckDate": "2026-07-24",
+    "nextCheckDate": "2027-05-15",
     "name": "Houston Arts Alliance — Support for Artists and Creative Individuals 2027",
     "funder": "Houston Arts Alliance / City of Houston",
     "profiles": ["artist"],
@@ -2364,7 +2364,8 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "24 juillet 2026 à 23 h 59 HAC", "en": "July 24, 2026 at 11:59 p.m. CDT", "ja": "2026年7月24日23:59（米国中部夏時間）" },
+    "availability": "closed",
+    "deadline": { "fr": "Cycle 2027 fermé le 24 juillet 2026 à 23 h 59 HAC; prochain cycle à surveiller", "en": "2027 cycle closed July 24, 2026 at 11:59 p.m. CDT; monitor the next cycle", "ja": "2027年度募集は2026年7月24日23:59（米国中部夏時間）に終了。次回を監視" },
     "amount": { "fr": "Jusqu’à 15 000 $", "en": "Up to $15,000", "ja": "最大15,000米ドル" },
     "coverage": ["creation", "production", "fees", "promotion"],
     "cashflow": { "fr": "Création et présentation publique à Houston par un artiste individuel", "en": "Creation and public presentation in Houston by an individual artist", "ja": "個人アーティストによるヒューストンでの創作・一般公開" },
@@ -2376,16 +2377,16 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Adresse physique dans la ville de Houston et présentation publique requises. Les non-citoyens américains sont explicitement admis avec compte chèque américain, SSN actif et capacité de recevoir directement les fonds.", "en": "Requires a physical City of Houston address and public presentation. Non-U.S. citizens are explicitly allowed with a domestic U.S. checking account, active SSN and ability to accept the grant directly.", "ja": "ヒューストン市内の実住所と一般公開が必要です。非米国市民も、米国内の当座預金口座、有効なSSN、助成金を直接受領できることの3条件で明示的に申請可能です。" },
       "sourceUrl": "https://files.haatx.com/grants/2027_Annual_Grants_Guidelines.pdf",
-      "verifiedAt": "2026-07-24"
+      "verifiedAt": "2026-07-30"
     },
     "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-    "verifiedAt": "2026-07-24"
+    "verifiedAt": "2026-07-30"
   },
   {
     "id": "haa-festival-grant-2027",
     "deadlineDate": "2026-07-24",
     "deadlineTimeZone": "America/Chicago",
-    "nextCheckDate": "2026-07-24",
+    "nextCheckDate": "2027-05-15",
     "name": "Houston Arts Alliance — Festival Grant 2027",
     "funder": "Houston Arts Alliance / City of Houston",
     "profiles": ["artist", "collective", "organization"],
@@ -2393,7 +2394,8 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "24 juillet 2026 à 23 h 59 HAC", "en": "July 24, 2026 at 11:59 p.m. CDT", "ja": "2026年7月24日23:59（米国中部夏時間）" },
+    "availability": "closed",
+    "deadline": { "fr": "Cycle 2027 fermé le 24 juillet 2026 à 23 h 59 HAC; prochain cycle à surveiller", "en": "2027 cycle closed July 24, 2026 at 11:59 p.m. CDT; monitor the next cycle", "ja": "2027年度募集は2026年7月24日23:59（米国中部夏時間）に終了。次回を監視" },
     "amount": { "fr": "Jusqu’à 10 000 $", "en": "Up to $10,000", "ja": "最大10,000米ドル" },
     "coverage": ["production", "fees", "promotion"],
     "cashflow": { "fr": "Production d’un festival public dans la ville de Houston", "en": "Production of a public festival in the City of Houston", "ja": "ヒューストン市内で一般公開するフェスティバルの制作支援" },
@@ -2405,10 +2407,10 @@
       "organizationVerificationRequired": true,
       "note": { "fr": "Ouvert aux individus, organismes 501(c)(3), projets parrainés fiscalement et collectifs admissibles ayant une adresse physique dans Houston. Les candidats individuels non-citoyens suivent les conditions bancaires et SSN du guide annuel.", "en": "Open to eligible individuals, 501(c)(3) organizations, fiscally sponsored projects and collectives with a physical Houston address. Non-citizen individual applicants follow the annual guide’s banking and SSN conditions.", "ja": "ヒューストン市内に実住所を持つ個人、501(c)(3)、Fiscal Sponsor経由のプロジェクト、コレクティブが対象です。非米国市民の個人申請には年次要項の口座・SSN条件が適用されます。" },
       "sourceUrl": "https://files.haatx.com/grants/2027_Annual_Grants_Guidelines.pdf",
-      "verifiedAt": "2026-07-24"
+      "verifiedAt": "2026-07-30"
     },
     "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-    "verifiedAt": "2026-07-24"
+    "verifiedAt": "2026-07-30"
   },
   {
     "id": "haa-let-creativity-happen-round3-2026",
