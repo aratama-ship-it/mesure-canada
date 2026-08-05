@@ -11395,5 +11395,226 @@
         }
       }
     }
+  },
+  {
+    "id": "nawat-fes-2027-28-next-watch",
+    "title": "Nawat Fes Artist Residency 2027–2028 — Next Call",
+    "country": "Morocco",
+    "city": "Fes",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Le formulaire ouvrira en décembre 2026 pour une échéance annoncée en janvier 2027; les résidences se dérouleront d’octobre 2027 à juillet 2028.",
+      "en": "The form will open in December 2026 for an announced January 2027 deadline; residencies run October 2027–July 2028.",
+      "ja": "応募フォームは2026年12月に開き、締切は2027年1月予定です。滞在は2027年10月〜2028年7月に実施されます。"
+    },
+    "nextCheckDate": "2026-12-01",
+    "sourceUrl": "https://nawatfes.org/applications.html",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Nawat Fes accepte écrivain·es, artistes visuel·les, performeur·euses, artistes multidisciplinaires et musicien·nes. La page de résidence impose un passeport dispensé de visa ou d’e-visa marocain pour au moins 60 jours: une personne québécoise doit confirmer son passeport et la règle en vigueur avant candidature.",
+        "en": "Nawat Fes accepts writers, visual, performance, multidisciplinary artists, and musicians. Its residency page requires a passport exempt from a Moroccan visa or e-visa for at least 60 days: a Quebec applicant must confirm their passport and the current rule before applying.",
+        "ja": "Nawat Fesは作家、ビジュアル、パフォーマンス、学際的アーティスト、音楽家を受け付けます。レジデンスページは少なくとも60日間モロッコのビザまたは電子ビザが不要なパスポートを条件としているため、ケベックの応募者は応募前に自身のパスポートと現行規則を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Le prochain appel n’a pas encore publié ses frais, voyage, assurance, matériel, fiscalité ou conditions de visa. Ne réserver ni vol ni logement avant les instructions 2027 et une confirmation écrite de l’admissibilité du passeport.",
+        "en": "The next call has not yet published fees, travel, insurance, materials, tax, or visa terms. Do not book flights or lodging before the 2027 instructions and written passport-eligibility confirmation.",
+        "ja": "次回公募は料金、渡航、保険、材料、税、ビザ条件をまだ公開していません。2027年の要項とパスポート適格性の書面確認前に、航空券や宿泊を予約しないでください。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme annonce une résidence annuelle à Fès et invite à s’inscrire à la liste d’information; les prestations concrètes du cycle 2027–2028 devront être lues dans l’appel publié.",
+        "en": "The program announces an annual Fes residency and invites sign-up for updates; concrete 2027–2028 provisions must be read in the published call.",
+        "ja": "プログラムはフェスでの年次レジデンスを案内し、情報登録を受け付けています。2027〜2028年の具体的な支援は公開される公募要項で確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste à surveiller, mais l’exigence de passeport peut exclure certaines personnes au Québec. Confirmer droit d’entrée, durée autorisée, assurance, sûreté, hébergement, budget, droits et deux activités communautaires attendues avant toute dépense.",
+          "en": "A route to watch, but the passport requirement may exclude some people in Quebec. Confirm entry permission, permitted stay, insurance, safety, lodging, budget, rights, and the expected two community activities before spending.",
+          "ja": "注視すべき候補ですが、パスポート条件によりケベックの一部応募者は対象外になる可能性があります。支出前に入国許可、許可滞在期間、保険、安全、宿泊、予算、権利、期待される2つの地域活動を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "greenhills-wa-residency-2026-open",
+    "title": "Greenhills Art Centre — Western Australia Residency",
+    "country": "Australia",
+    "city": "Greenhills, Western Australia",
+    "region": "Oceania",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidature pour la prochaine résidence; les semaines actuellement affichées sont du 24 août au 13 septembre 2026.",
+      "en": "Apply for the next residency; currently listed weeks are August 24–September 13, 2026.",
+      "ja": "次回レジデンスへの応募を受け付けており、現在表示されている週は2026年8月24日〜9月13日です。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://www.greenhillsartcentre.com/open-call",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Greenhills propose un séjour autonome d’une semaine ou plus dans la campagne d’Australie-Occidentale; la page accueille aussi les visiteurs internationaux et ne publie pas de règle de nationalité. Confirmer disponibilité, visa et discipline avec le Centre.",
+        "en": "Greenhills offers a self-directed stay of one week or more in rural Western Australia; its site also welcomes international visitors and publishes no nationality rule. Confirm availability, visa, and discipline with the Centre.",
+        "ja": "Greenhillsは西オーストラリアの田園地帯で1週間以上の自主滞在を提供し、サイトは国際訪問者にも言及していて国籍条件は掲載していません。空き、ビザ、分野をセンターへ確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Trois options publiées: 1 960 AUD/semaine avec chambre patrimoniale et repas, 1 240 AUD/semaine sans logement, ou 950 AUD/semaine studio avec collation et déjeuner. Vol, visa, assurance, transfert, matériel, taxes et annulation ne sont pas détaillés.",
+        "en": "Three published options: AUD 1,960/week with heritage bedroom and meals, AUD 1,240/week without lodging, or AUD 950/week studio with morning tea and lunch. Flights, visa, insurance, transfer, materials, tax, and cancellation are not detailed.",
+        "ja": "公開されている3プランは、歴史的な寝室と食事付き週1,960豪ドル、宿泊なし週1,240豪ドル、軽食と昼食付きスタジオ週950豪ドルです。航空券、ビザ、保険、送迎、材料、税、取消は未詳です。"
+      },
+      "organizerSupport": {
+        "fr": "Toutes les options incluent accès illimité au studio; selon le niveau, repas, communauté, Wi-Fi et blanchisserie. Le studio de 250 m² est éclairé, accessible tard et favorise pratique autonome et réseau local.",
+        "en": "All options include unlimited studio access; depending on tier, meals, community, Wi-Fi, and laundry. The 250-square-meter lit studio has late access and supports self-directed practice and local networking.",
+        "ja": "全プランに無制限のスタジオ利用があり、プランにより食事、コミュニティ、Wi-Fi、洗濯を含みます。250平方メートルの明るいスタジオは遅い時間まで使え、自主制作と地域での交流を支えます。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Option internationale directement possible mais clairement payante. Calculer séjour, vol, visa australien, assurance, transfert et matériel; obtenir contrat, conditions d’atelier et disponibilité avant paiement non remboursable.",
+          "en": "A directly possible international option, but clearly paid. Budget the stay, flight, Australian visa, insurance, transfer, and materials; obtain contract, studio terms, and availability before a non-refundable payment.",
+          "ja": "直接利用可能な国際候補ですが、明確に有料です。滞在、航空券、オーストラリアのビザ、保険、送迎、材料を予算化し、返金不可の支払い前に契約、スタジオ条件、空きを得てください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "proyecto-ace-international-residency-2026-27-open",
+    "title": "Proyecto´ace PIRAR — International Residencies 2026–2027",
+    "country": "Argentina",
+    "city": "Buenos Aires",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Les séjours du second semestre 2026 au premier semestre 2027 sont ouverts jusqu’au remplissage des places; demandes spéciales possibles à tout moment.",
+      "en": "Second-half 2026 to first-half 2027 stays are open until places fill; special-date requests may be made at any time.",
+      "ja": "2026年後半〜2027年前半の滞在は空きが埋まるまで受付中で、特別日程の相談は随時可能です。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://www.proyectoace.org/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Proyecto´ace se présente comme programme international de résidences artistiques à Buenos Aires et demande pays de résidence, langue et discipline dans son contact de candidature. La page n’expose pas de restriction de nationalité; confirmer discipline, visa et places directement.",
+        "en": "Proyecto´ace presents itself as an international artist-residency program in Buenos Aires and asks for country of residence, language, and discipline in its application contact. The page exposes no nationality restriction; confirm discipline, visa, and places directly.",
+        "ja": "Proyecto´aceはブエノスアイレスの国際アーティスト・レジデンスとして紹介され、応募連絡では居住国、言語、分野を求めます。ページに国籍条件はないため、分野、ビザ、空きを直接確認してください。"
+      },
+      "applicantCost": {
+        "fr": "La page accessible ne publie pas frais, voyage, logement, assurance, visa, matériel, fret, fiscalité ou annulation; l’information complète est transmise après contact. Obtenir prix et contrat écrits avant paiement ou préparation du voyage.",
+        "en": "The accessible page does not publish fee, travel, lodging, insurance, visa, materials, freight, tax, or cancellation terms; full information is sent after contact. Obtain written price and contract before payment or travel preparation.",
+        "ja": "閲覧可能なページには、料金、渡航、宿泊、保険、ビザ、材料、輸送、税、取消条件がなく、完全な情報は連絡後に送られます。支払いや渡航準備前に書面の価格と契約を得てください。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme annonce résidences, activités, liens au quartier Colegiales et consultation pour besoins particuliers; l’étendue de studio, production, accompagnement et exposition varie selon le format et doit être confirmée dans le dossier reçu.",
+        "en": "The program announces residencies, activities, Colegiales-neighborhood links, and consideration of special needs; studio, production, guidance, and exhibition scope varies by format and must be confirmed in the received package.",
+        "ja": "プログラムは滞在、活動、Colegiales地区との接点、特別な要望への対応を案内しています。スタジオ、制作、伴走、展示の範囲は形式によって異なるため、受け取る資料で確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste internationale active, mais aucun budget n’est publiquement lisible. Demander calendrier, sélection, devis, logement, visa argentin, assurance, sécurité, accès technique, droits et restitution avant de soumettre dossier ou acompte.",
+          "en": "An active international route, but no budget is publicly readable. Request schedule, selection, quote, lodging, Argentine visa, insurance, safety, technical access, rights, and output terms before submitting an application or deposit.",
+          "ja": "有効な国際候補ですが、予算は公開ページで読めません。応募や申込金の前に、日程、選考、見積、宿泊、アルゼンチンのビザ、保険、安全、技術アクセス、権利、成果条件を求めてください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "salamanaca-artists-cottage-2028-next-watch",
+    "title": "Salamanca Arts Centre — Artists’ Cottage Next Call",
+    "country": "Australia",
+    "city": "Hobart, Tasmania",
+    "region": "Oceania",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2025-11-24",
+    "deadlineTimeZone": "AEST",
+    "deadlineLabel": {
+      "fr": "Le programme 2027 est fermé depuis le 24 novembre 2025 à 17 h, heure de l’Est australien. S’inscrire aux alertes pour le prochain appel, les rounds rapides ou les dates à partir de 2028.",
+      "en": "The 2027 program closed November 24, 2025 at 5 PM Australian Eastern Standard Time. Sign up for alerts for the next call, quick-response rounds, or dates from 2028.",
+      "ja": "2027年プログラムは2025年11月24日17時（オーストラリア東部標準時）に終了しました。次回公募、キャンセル時の迅速枠、2028年以降の日程はアラートに登録して監視します。"
+    },
+    "nextCheckDate": "2026-10-01",
+    "sourceUrl": "https://www.sac.org.au/venue/the-artists-cottage/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle 2027 acceptait artistes de toutes disciplines, en solo ou collectif, basé·es en Tasmanie, ailleurs en Australie ou à l’international. Les dates annoncées allaient de février à décembre 2027; vérifier les règles du prochain cycle.",
+        "en": "The 2027 cycle accepted artists of all disciplines, solo or collaborative, based in Tasmania, elsewhere in Australia, or internationally. Dates ran February–December 2027; verify next-cycle rules.",
+        "ja": "2027年枠は全分野のアーティストを単独または共同で受け入れ、タスマニア、オーストラリア各地、国際からの応募を対象としていました。日程は2027年2〜12月で、次回規則を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Le tarif 2027 était 131 AUD/nuit ou 917 AUD/semaine, GST inclus. Voyage, visa, assurance, repas, matériel, fret et dépenses locales ne sont pas indiqués dans la fiche; budgeter ces postes au prochain appel.",
+        "en": "The 2027 fee was AUD 131/night or AUD 917/week, GST included. Travel, visa, insurance, meals, materials, freight, and local costs are not stated on the page; budget them at the next call.",
+        "ja": "2027年の料金はGST込みで1泊131豪ドルまたは週917豪ドルでした。渡航、ビザ、保険、食事、材料、輸送、現地費はページにないため、次回公募で予算化してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le cottage autonome propose deux ou trois chambres, studio de travail et coin d’écriture. Jusqu’à douze résidences par an sont prévues; les inclusions précises et obligations figurent dans le kit officiel à relire au prochain appel.",
+        "en": "The self-contained cottage provides two or three bedrooms, a working studio, and writers’ nook. Up to twelve residencies a year are planned; exact inclusions and obligations appear in the official kit and must be reread at the next call.",
+        "ja": "自炊可能なコテージには2〜3寝室、作業スタジオ、執筆コーナーがあります。年最大12件の滞在を予定し、具体的な含まれる内容と義務は公式キットを次回公募で再確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie internationale claire mais payante, à surveiller pour 2028. À l’ouverture, vérifier dates, contrat, visa, assurance, sécurité, capacité réelle, technique, cuisine, accessibilité et coût total avant d’engager des frais.",
+          "en": "A clear but paid international route to watch for 2028. At opening, verify dates, contract, visa, insurance, safety, actual capacity, technical needs, kitchen, accessibility, and total cost before spending.",
+          "ja": "明確ですが有料の国際ルートで、2028年向けに監視します。開始時に日程、契約、ビザ、保険、安全、実際の定員、技術、キッチン、アクセシビリティ、総費用を確認してから支出してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "casa-belgrado-collective-2026-open",
+    "title": "Casa Belgrado — Collective Residency 2026",
+    "country": "Argentina",
+    "city": "Buenos Aires",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Programme 2026 ouvert aux artistes, chercheur·euses et commissaires de toute nationalité; séjours de un à trois mois, selon disponibilité.",
+      "en": "The 2026 program is open to artists, researchers, and curators of any nationality; stays run one to three months, subject to availability.",
+      "ja": "2026年プログラムは国籍を問わずアーティスト、研究者、キュレーターを対象とし、空き状況に応じて1〜3か月滞在できます。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://casabelgrado.org/es-ar/colectiva/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Casa Belgrado accepte artistes, chercheur·euses et commissaires de tout âge et nationalité, pour arts visuels, scène, son, recherche artistique et projets interdisciplinaires. Trois personnes partagent la maison; séjour minimum un mois et maximum trois.",
+        "en": "Casa Belgrado accepts artists, researchers, and curators of any age and nationality in visual, performing, sound, artistic-research, and interdisciplinary fields. Three people share the house; stays are one to three months.",
+        "ja": "Casa Belgradoは年齢・国籍を問わず、視覚芸術、舞台、音、芸術研究、学際企画のアーティスト、研究者、キュレーターを受け付けます。3名が家を共有し、滞在は最短1か月、最長3か月です。"
+      },
+      "applicantCost": {
+        "fr": "La résidence est payante mensuellement, mais le montant n’est pas affiché sur la page consultée. Assurance médicale obligatoire à contracter dans le pays d’origine; demander aussi voyage, visa, matériaux, repas, fret, taxe, annulation et coûts de production.",
+        "en": "The residency charges a monthly fee, but the amount is not displayed on the reviewed page. Medical insurance must be bought in the home country; also ask about travel, visa, materials, meals, freight, tax, cancellation, and production costs.",
+        "ja": "滞在には月額費がかかりますが、確認したページには金額がありません。医療保険は出身国で加入することが必須で、渡航、ビザ、材料、食事、輸送、税、取消、制作費も確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "L’offre comprend chambre individuelle, espaces de travail, tutorat, programme d’activités, visites, studio ouvert, diffusion, documentation photo et accès aux outils multimédias disponibles; lettres d’invitation et documents pour chercher des aides sont possibles.",
+        "en": "The offer includes an individual room, workspaces, tutoring, activity program, visits, open studio, promotion, photo documentation, and access to available multimedia tools; invitation letters and funding-support documents may be available.",
+        "ja": "個室、作業空間、チューター、活動プログラム、訪問、オープンスタジオ、広報、写真記録、利用可能なマルチメディア機器へのアクセスがあり、助成申請用の招待状・書類を出せる場合があります。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie internationale directe avec accompagnement, mais payante et sans assurance incluse. Obtenir tarif, dates, contrat, visa argentin, logement exact, règles de partage, sécurité, assurance, production et droits avant acompte.",
+          "en": "A direct international route with guidance, but paid and without insurance included. Obtain fee, dates, contract, Argentine visa, exact lodging, sharing rules, safety, insurance, production, and rights before a deposit.",
+          "ja": "伴走のある直接国際ルートですが、有料で保険は含まれません。申込金の前に料金、日程、契約、アルゼンチンのビザ、正確な宿泊、共同生活規則、安全、保険、制作、権利を得てください。"
+        }
+      }
+    }
   }
 ]
