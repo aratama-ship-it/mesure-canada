@@ -10419,5 +10419,138 @@
         }
       }
     }
+  },
+  {
+    "id": "sam-residencies-cycle-4-2027-28-open",
+    "title": "Singapore Art Museum Residencies Cycle 4 (2027–28)",
+    "country": "Singapore",
+    "city": "Singapore",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-30",
+    "deadlineTimeZone": "GMT+8",
+    "deadlineLabel": {
+      "fr": "Candidatures internationales ouvertes jusqu’au 30 septembre 2026, 23 h 59 GMT+8.",
+      "en": "International applications are open until September 30, 2026, 23:59 GMT+8.",
+      "ja": "国際応募は2026年9月30日23:59 GMT+8まで受付中です。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://samresidencies.smapply.org/prog/cycle4/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "SAM accepte personnes, duos et collectifs du monde entier, tous médiums et disciplines: artistes, praticien·nes communautaires/éducation et commissaires/chercheur·euses. Les résidences internationales durent un à trois mois entre juin 2027 et décembre 2028; CV, portfolio, lettre d’intérêt de 500–1 000 mots et recommandation sont requis.",
+        "en": "SAM accepts individuals, duos, and collectives from across the globe in all media and disciplines: artists, community/education practitioners, and curators/researchers. International residencies run one to three months between June 2027 and December 2028; CV, portfolio, a 500–1,000-word statement of interest, and recommendation are required.",
+        "ja": "SAMは世界中の個人、デュオ、コレクティブを全メディア・分野で受け入れ、アーティスト、コミュニティ／教育実践者、キュレーター／研究者が対象です。国際滞在は2027年6月〜2028年12月の1〜3か月で、CV、ポートフォリオ、500〜1,000語の志望書、推薦状が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Pour les personnes internationales sélectionnées, SAM annonce 1 500 SGD par mois, billet aller-retour en classe économique, logement organisé et aide aux formalités de visa. La page ne précise assurance, fiscalité, repas, production, accompagnant·es ou dépenses hors bourse; les confirmer avant acceptation.",
+        "en": "For selected international residents, SAM announces SGD 1,500 per month, round-trip economy airfare, housing arrangement, and visa-formality help. The page does not specify insurance, tax, meals, production, companions, or costs beyond the stipend; confirm before accepting.",
+        "ja": "採択された国際滞在者には月額1,500シンガポールドル、往復エコノミー航空券、住居手配、ビザ手続き支援があります。保険、税務、食事、制作、同行者、給付を超える費用は未詳のため、受諾前に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Cycle 4 (juin 2027–décembre 2028) propose studio partagé ou espace de coworking, ressources et expertise du musée et de la Residencies Team, réseau, possibilités d’engagement public et cadre d’échange. Les trois axes sont Listening/Attuning, Making/Material Cultures et Beyond Human/Interdependence.",
+        "en": "Cycle 4 (June 2027–December 2028) provides shared studio or co-working space, museum and Residencies Team resources and expertise, network building, public-engagement opportunities, and a framework for exchange. Its three strands are Listening/Attuning, Making/Material Cultures, and Beyond Human/Interdependence.",
+        "ja": "Cycle 4（2027年6月〜2028年12月）は、共有スタジオまたはコワーキング、美術館とResidencies Teamのリソース・専門性、ネットワーク形成、公共参加の機会、交流の枠組みを提供します。軸はListening/Attuning、Making/Material Cultures、Beyond Human/Interdependenceです。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Voie internationale directe, avec allocation, voyage, logement et aide au visa publiés. Préparer tôt la recommandation et une proposition reliée à un axe; avant engagement, demander assurance, fiscalité, budget de production et dates exactes.",
+          "en": "A direct international route with published stipend, travel, housing, and visa help. Prepare the recommendation and a strand-linked proposal early; before committing, ask about insurance, tax, production budget, and exact dates.",
+          "ja": "給付、渡航、住居、ビザ支援が公開された国際直接応募先です。推薦状とテーマ軸に結びつく企画を早めに準備し、確約前に保険、税務、制作予算、正確な日程を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "casa-wabi-artreview-prize-2027-next-watch",
+    "title": "Fundación Casa Wabi × ArtReview Residency Prize 2027",
+    "country": "Mexico",
+    "city": "Puerto Escondido",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-14",
+    "deadlineLabel": {
+      "fr": "Le prix Casa Wabi × ArtReview 2027 a clos le 14 juin; suivre l’appel de printemps suivant.",
+      "en": "The Casa Wabi × ArtReview 2027 prize closed June 14; follow the next spring call.",
+      "ja": "Casa Wabi × ArtReview 2027賞は6月14日に終了。次回春の募集を監視します。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://casawabi.org/en/events/fundacion-casa-wabi-artreview-prize-2026/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Ouvert à tout·e artiste, toute discipline, tout parcours, âge, nationalité ou stade de carrière. Les collaborations de deux personnes maximum sont admises si leur pratique collaborative est établie. La proposition, en anglais ou espagnol, doit être un projet réciproque pour une communauté voisine de Casa Wabi; PDF unique de moins de 25 MB, cinq images/liens maximum et CV de deux pages.",
+        "en": "Open to every artist in any discipline, regardless of background, age, nationality, or career stage. Collaborations of up to two people are accepted when their collaborative practice is established. The proposal, in English or Spanish, must be a reciprocal project for a community near Casa Wabi; one PDF under 25 MB, up to five images/links, and a two-page CV are required.",
+        "ja": "分野、経歴、年齢、国籍、キャリア段階を問わず全アーティストが対象です。協働実践が確立していれば最大2人の共同応募も可能です。英語またはスペイン語でCasa Wabi周辺コミュニティのための相互的な企画を示し、25MB未満の単一PDF、最大5点の画像／リンク、2ページのCVが必要です。"
+      },
+      "applicantCost": {
+        "fr": "Le prix couvre le vol intérieur Mexico–Puerto Escondido, bungalow privé avec salle de bain, studio et trois repas par jour, ainsi qu’un soutien au projet communautaire après approbation. Les personnes résidentes paient transport international ou jusqu’à Mexico et matériaux de leur propre œuvre; visa, assurance et fiscalité ne sont pas détaillés.",
+        "en": "The prize covers the domestic Mexico City–Puerto Escondido flight, private en-suite bungalow, studio, and three meals daily, plus approved community-project support. Residents pay international travel or other transport to Mexico City and materials for their own work; visa, insurance, and tax are not detailed.",
+        "ja": "メキシコシティ〜プエルト・エスコンディード国内便、専用バンガロー（バスルーム付）、スタジオ、1日3食、承認済みコミュニティ企画支援が含まれます。国際渡航またはメキシコシティまでの移動、自作品の材料費は滞在者負担で、ビザ、保険、税務は未詳です。"
+      },
+      "organizerSupport": {
+        "fr": "Trois artistes ou collectifs de deux personnes maximum sont sélectionnés pour un séjour d’environ cinq à six semaines en 2027. Le programme apporte dialogue créatif avec la communauté, studio, logement, repas, déplacement intérieur et soutien au projet; les personnes résidentes laissent un « Log/Bitácora » reflétant leur séjour pour les archives Casa Wabi.",
+        "en": "Three artists or collectives of up to two people are selected for an approximately five-to-six-week stay in 2027. It provides creative dialogue with the community, studio, accommodation, meals, domestic transfer, and project support; residents leave a “Log/Bitácora” reflecting their stay for the Casa Wabi archive.",
+        "ja": "最大2人のコレクティブを含む3組が、2027年に約5〜6週間滞在します。コミュニティとの創造的対話、スタジオ、宿泊、食事、国内移動、企画支援があり、滞在を反映した「Log／Bitácora」をCasa Wabiアーカイブに残します。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Très bonne voie internationale directe si le projet communautaire est réellement réciproque. Budgéter séparément arrivée à Mexico, visa, assurance et matériaux de l’œuvre; présenter la proposition en anglais ou espagnol et confirmer le prochain calendrier au printemps.",
+          "en": "A strong direct international route when the community project is genuinely reciprocal. Budget travel to Mexico City, visa, insurance, and own-work materials separately; submit in English or Spanish and confirm the next spring calendar.",
+          "ja": "コミュニティ企画が実質的に相互的であれば有力な国際直接応募先です。メキシコシティまでの移動、ビザ、保険、自作品材料は別途予算化し、英語またはスペイン語で提出して、次回春のスケジュールを確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "421-arts-campus-residency-2026-next-watch",
+    "title": "421 Arts Campus Artist Residency 2026",
+    "country": "United Arab Emirates",
+    "city": "Abu Dhabi",
+    "region": "Middle East",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-14",
+    "deadlineLabel": {
+      "fr": "L’appel 421 2026 a clos le 14 janvier; suivre le prochain cycle MENASA.",
+      "en": "The 421 2026 call closed January 14; follow the next MENASA cycle.",
+      "ja": "421の2026年募集は1月14日に終了。次回MENASAサイクルを監視します。"
+    },
+    "nextCheckDate": "2027-01-01",
+    "sourceUrl": "https://www.421.online/opportunities/residency-program-2026/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Programme de cinq mois pour praticien·nes créatif·ves de plus de 21 ans, tous domaines, provenant de, basé·es dans ou travaillant sur des projets pertinents pour le Moyen-Orient, Afrique du Nord et Asie du Sud (MENASA). Un·e artiste seulement basé·e au Québec ne satisfait pas la règle régionale publiée sans rattachement MENASA pertinent.",
+        "en": "A five-month programme for creative practitioners over 21 in all fields who are from, based in, or working on projects relevant to the Middle East, North Africa, and South Asia (MENASA). An artist based only in Quebec does not meet the published regional rule without a relevant MENASA connection.",
+        "ja": "21歳以上で全分野のクリエイティブ実践者を対象とする5か月プログラムですが、中東・北アフリカ・南アジア（MENASA）出身、拠点、または同地域に関係する企画が必要です。MENASAとの有資格な関係なしにケベックのみを拠点とする応募者は、公開された地域要件を満たしません。"
+      },
+      "applicantCost": {
+        "fr": "Les personnes sélectionnées reçoivent studio privé, logement pour celles qui ne sont pas basées à Abu Dhabi, voyage aller-retour, frais de voyage, allocation/per diem et budget de production, mais les montants, visa international, assurance, fiscalité, accompagnant·es et coûts dépassant les plafonds ne sont pas publiés. En cas d’admissibilité, les confirmer par écrit.",
+        "en": "Selected residents are offered private studio, living space for those not based in Abu Dhabi, round-trip travel, travel expenses, stipend/per diem, and production budget, but amounts, international visa, insurance, tax, companions, and costs beyond caps are not stated. If eligible, confirm in writing.",
+        "ja": "採択者には専用スタジオ、アブダビ外拠点者向けの居住空間、往復渡航、旅費、日当、制作費が案内されていますが、金額、国際ビザ、保険、税務、同行者、上限超過分は未詳です。資格がある場合は書面で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Deux cohortes de trois personnes passent chacune cinq mois dans les studios 421 à MiZa, Abu Dhabi. Le programme propose studio privé, soutien au logement et au voyage, allocation/per diem et budget de production, en privilégiant expérimentation, processus et usage du studio plutôt que pression d’un résultat final.",
+        "en": "Two cohorts of three residents each spend five months in 421’s artist studios at MiZa, Abu Dhabi. The programme offers private studio, living and travel support, stipend/per diem, and production budget, emphasizing experimentation, process, and studio use rather than pressure for a final outcome.",
+        "ja": "各3人の2コホートが、アブダビMiZaの421アーティストスタジオで5か月を過ごします。専用スタジオ、居住・渡航支援、日当、制作予算を提供し、最終成果への圧力より実験、プロセス、スタジオ利用を重視します。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "À surveiller pour une collaboration MENASA réelle, mais la règle régionale publiée exclut une candidature québécoise autonome. Ne poursuivre qu’avec rattachement MENASA démontrable et confirmation écrite du programme.",
+          "en": "Worth watching for a genuine MENASA collaboration, but the published regional rule excludes a standalone Quebec application. Pursue only with a demonstrable MENASA connection and written programme confirmation.",
+          "ja": "実質的なMENASA連携がある場合の監視先ですが、公開された地域要件によりケベック単独応募は対象外です。証明できるMENASAとの関係とプログラムの書面確認がある場合のみ進めてください。"
+        }
+      }
+    }
   }
 ]
