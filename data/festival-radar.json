@@ -10684,5 +10684,138 @@
         }
       }
     }
+  },
+  {
+    "id": "cpr-north-africa-curatorial-research-2026-next-watch",
+    "title": "CPR Curatorial Research — (Self)Organization in North Africa 2026",
+    "country": "Algeria",
+    "city": "Algiers, Marrakech and Tunis",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Le programme CPR 2026 en Afrique du Nord était annoncé par appel ouvert; suivre le prochain appel curatorial entièrement financé.",
+      "en": "The CPR 2026 North Africa programme was announced through an open call; follow the next fully funded curatorial call.",
+      "ja": "CPRの2026年北アフリカプログラムは公募で案内されました。次回の全額支援キュレーター募集を監視します。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.curatorialprogram.org/core-program-2",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "CPR sélectionne par appel ouvert six à huit commissaires en résidence. Le cycle 2026 réunissait jusqu’à huit commissaires internationaux·ales en Algérie, Maroc et Tunisie pour une recherche intensive de trois semaines sur les formes d’auto-organisation des écologies artistiques nord-africaines.",
+        "en": "CPR selects six to eight curators-in-residence through an open call. The 2026 cycle brought up to eight international curators to Algeria, Morocco, and Tunisia for three weeks of intensive research into self-organization in North African arts ecologies.",
+        "ja": "CPRは公募で6〜8人の滞在キュレーターを選びます。2026年サイクルは最大8人の国際キュレーターをアルジェリア、モロッコ、チュニジアに招き、北アフリカのアート生態系における自己組織化を3週間集中研究しました。"
+      },
+      "applicantCost": {
+        "fr": "Les bourses annoncées étaient entièrement financées et couvraient vols internationaux, transports locaux, hébergement et une partie des repas. Les conditions de visa, assurance, fiscalité, éventuels frais de candidature et repas non inclus ne sont pas détaillées; les confirmer à l’ouverture.",
+        "en": "The announced fellowships were fully funded and covered international flights, local transport, accommodation, and some meals. Visa, insurance, tax, possible application fee, and uncovered meals are not detailed; confirm at opening.",
+        "ja": "案内されたフェローシップは全額支援で、国際航空券、現地交通、宿泊、一部の食事を含みます。ビザ、保険、税務、応募料の有無、対象外の食事は未詳で、次回開始時に確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Programme de lecture et cours sur histoire, arts et culture locales, visites d’ateliers et institutions, spécialiste·s locaux·ales, recherche sur place et réseau de pairs. CPR annonce que les bourses entièrement financées visent un accès indépendant de la capacité financière.",
+        "en": "A programme of readings and classes on local history, arts, and culture; studio and institutional visits; local specialists; on-site research; and peer network. CPR states that fully funded fellowships aim for access independent of financial means.",
+        "ja": "地域の歴史・芸術・文化に関する読書と授業、アトリエ・機関訪問、現地専門家、現地リサーチ、ピアネットワークを提供します。CPRは、全額支援フェローシップを経済力に左右されないアクセスのためと説明しています。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Voie internationale directe pour un·e commissaire-chercheur·euse. Au prochain appel, vérifier expérience professionnelle admissible, thème, dates, visa, assurance et frais, puis décrire une recherche dialogique concrète en Afrique du Nord.",
+          "en": "A direct international route for a curator-researcher. At the next call, verify eligible professional experience, theme, dates, visa, insurance, and fee, and articulate a concrete dialogic research approach in North Africa.",
+          "ja": "キュレーター／研究者に直接開かれた国際ルートです。次回は対象となる実務経験、テーマ、日程、ビザ、保険、応募料を確認し、北アフリカでの対話型リサーチを具体的に示してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "nesr-luanda-2026-next-watch",
+    "title": "NESR Art Foundation Luanda Residency 2026",
+    "country": "Angola",
+    "city": "Luanda",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Les candidatures NESR sont fermées; suivre le prochain appel pour artistes des pays lusophones d’Afrique indiqués.",
+      "en": "NESR applications are closed; follow the next call for artists from the stated Lusophone African countries.",
+      "ja": "NESRの応募は終了。明記されたアフリカ・ポルトガル語圏各国のアーティスト向け次回募集を監視します。"
+    },
+    "nextCheckDate": "2027-01-15",
+    "sourceUrl": "https://www.nesrartfoundation.com/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "NESR est ouvert aux artistes émergent·es d’Angola, Cap-Vert, Guinée-Bissau, Mozambique et São Tomé-et-Príncipe. Un·e artiste basé·e seulement au Québec ne remplit pas la liste territoriale publiée, sauf double rattachement réellement admissible confirmé par NESR.",
+        "en": "NESR is open to emerging artists from Angola, Cape Verde, Guinea-Bissau, Mozambique, and São Tomé and Príncipe. An artist based only in Quebec does not meet the published territorial list, unless a genuinely eligible dual connection is confirmed by NESR.",
+        "ja": "NESRはアンゴラ、カーボベルデ、ギニアビサウ、モザンビーク、サントメ・プリンシペ出身の新進アーティストが対象です。ケベックのみを拠点とする応募者は、NESRが有資格と確認する実質的な二重の関係がない限り、公開された地域一覧を満たしません。"
+      },
+      "applicantCost": {
+        "fr": "Les résident·es reçoivent studio meublé, espace de vie, allocation et subvention de production. Les montants, voyage, visa, assurance, fiscalité, repas, accompagnant·es et frais éventuels ne sont pas publiés; les confirmer si une admissibilité régionale existe.",
+        "en": "Residents receive furnished studio, living space, stipend, and production grant. Amounts, travel, visa, insurance, tax, meals, companions, and any fees are not published; confirm if regional eligibility exists.",
+        "ja": "滞在者には家具付きスタジオ、生活空間、給付、制作助成があります。金額、渡航、ビザ、保険、税務、食事、同行者、費用の有無は未公表で、地域資格がある場合に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "NESR accueille six artistes par an en trois sessions de dix semaines, deux à la fois. Il fournit studio meublé et espace de vie, allocation, subvention de production, mentorat curatorial et liens avec la scène socioculturelle angolaise et les professionnel·les internationaux·ales des arts.",
+        "en": "NESR hosts six artists annually in three 10-week sessions of two. It provides furnished studio/living space, stipend, production grant, curator mentorship, and connections to Angola’s social-cultural scene and international arts professionals.",
+        "ja": "NESRは年6人を、2人ずつ10週間の3セッションで受け入れます。家具付きスタジオ・生活空間、給付、制作助成、キュレーターとのメンタリング、アンゴラの社会文化シーンと国際アート専門職との接点を提供します。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Programme régional précieux, mais non accessible directement depuis le Québec selon la liste publiée. Ne le considérer qu’avec rattachement réel à un pays admissible et confirmation écrite des conditions et coûts.",
+          "en": "A valuable regional programme, but not directly accessible from Quebec under the published list. Consider it only with a real connection to an eligible country and written confirmation of terms and costs.",
+          "ja": "公開された一覧ではケベックから直接アクセスできない、価値のある地域プログラムです。有資格国との実質的な関係があり、条件・費用を書面確認できる場合のみ検討してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "oceania-pacific-arts-residency-2026-next-watch",
+    "title": "Oceania Pacific Arts Residency 2026",
+    "country": "Fiji",
+    "city": "Suva",
+    "region": "Oceania",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-06-04",
+    "deadlineTimeZone": "AEST",
+    "deadlineLabel": {
+      "fr": "L’appel Oceania Pacific Arts 2026 a clos le 4 juin à 11 h AEST; suivre une éventuelle nouvelle édition pilote.",
+      "en": "The Oceania Pacific Arts 2026 call closed June 4 at 11:00 AEST; follow any future pilot edition.",
+      "ja": "Oceania Pacific Arts 2026は6月4日11:00 AESTに終了。今後のパイロット実施を監視します。"
+    },
+    "nextCheckDate": "2027-03-01",
+    "sourceUrl": "https://creative.gov.au/investments-opportunities/oceania-pacific-arts-residency",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Partenariat Creative New Zealand, Creative Australia et Oceania Centre qui sélectionne un·e artiste de Nouvelle-Zélande, Australie et Fidji. La voie australienne exige citoyenneté ou résidence permanente australienne, pratique établie, engagement durable avec le Pacifique et projet climat; une candidature québécoise autonome n’est pas admissible.",
+        "en": "A Creative New Zealand, Creative Australia, and Oceania Centre partnership selecting one artist from New Zealand, Australia, and Fiji. The Australian route requires Australian citizenship or permanent residence, established practice, long-term Pacific engagement, and a climate project; a standalone Quebec application is not eligible.",
+        "ja": "Creative New Zealand、Creative Australia、Oceania Centreの連携で、ニュージーランド、オーストラリア、フィジーから各1人を選びます。オーストラリア枠は市民権または永住権、確立した実践、太平洋への長期的関与、気候テーマ企画が必要で、ケベック単独応募は有資格ではありません。"
+      },
+      "applicantCost": {
+        "fr": "Les personnes retenues reçoivent 9 000 NZD d’honoraires, aller-retour depuis Nouvelle-Zélande ou Australie, logement, per diem et 4 000 NZD de projet. Assurance est budgétable, mais extension de séjour, perte de revenus ou loyer du domicile restent à la charge de l’artiste; la subvention est imposable selon le pays concerné.",
+        "en": "Selected artists receive NZD 9,000 fee, return travel from New Zealand or Australia, accommodation, per diems, and NZD 4,000 project costs. Insurance can be budgeted, but extended stay, lost income, or home rent remain the artist’s responsibility; the grant is taxable according to the relevant country.",
+        "ja": "採択者には9,000ニュージーランドドルのアーティスト費、ニュージーランドまたはオーストラリアからの往復渡航、宿泊、日当、4,000ニュージーランドドルの企画費があります。保険は予算化できますが、滞在延長、逸失収入、自宅家賃は本人負担で、助成は該当国で課税対象です。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence de six semaines, du 1er octobre au 12 novembre 2026 au Oceania Centre de l’Université du Pacifique Sud, autour du climat: honoraires, voyage, logement, per diem, projet, réseau et possibilités d’engagement. Ressources de l’université peuvent être accessibles selon disponibilité.",
+        "en": "A six-week residency, October 1–November 12, 2026 at the Oceania Centre, University of the South Pacific, around climate: fee, travel, housing, per diem, project support, network, and engagement opportunities. University resources may be available subject to availability.",
+        "ja": "2026年10月1日〜11月12日、南太平洋大学Oceania Centreで行う気候テーマの6週間滞在です。アーティスト費、渡航、宿泊、日当、企画支援、ネットワーク、交流機会があり、大学リソースは空き状況により利用できる場合があります。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "À suivre pour partenariats transpacifiques, mais les trois routes nationales publiées excluent une candidature québécoise autonome. Ne pas engager de budget sans rattachement admissible, projet climat pertinent et confirmation par l’organisateur.",
+          "en": "Worth watching for trans-Pacific partnerships, but the three published national routes exclude a standalone Quebec application. Do not commit budget without an eligible connection, relevant climate project, and organizer confirmation.",
+          "ja": "環太平洋の連携候補としては監視価値がありますが、公開された3つの国別ルートはケベック単独応募を対象外とします。有資格な関係、関連する気候企画、主催者確認なしに予算を動かさないでください。"
+        }
+      }
+    }
   }
 ]
