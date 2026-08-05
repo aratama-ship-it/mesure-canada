@@ -10951,5 +10951,94 @@
         }
       }
     }
+  },
+  {
+    "id": "aiav-fellowship-2026-next-watch",
+    "title": "Akiyoshidai International Art Village — AIAV Fellowship 2026",
+    "country": "Japan",
+    "city": "Mine, Yamaguchi",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-31",
+    "deadlineTimeZone": "JST",
+    "deadlineLabel": {
+      "fr": "Le Fellowship AIAV 2026 est fermé depuis le 31 janvier; surveiller le prochain cycle et ses voies d’admissibilité conditionnelles.",
+      "en": "The AIAV Fellowship 2026 closed January 31; monitor the next cycle and its conditional eligibility routes.",
+      "ja": "AIAV Fellowship 2026は1月31日に終了しました。次回サイクルと条件付きの応募資格ルートを監視します。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://aiav.jp/en/11171/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "AIAV présente ce Fellowship comme ouvert aux artistes japonais et internationaux de divers domaines, mais exige aussi au moins une voie précise: financement d’une fondation ou organisation, ancien séjour AIAV, lettre de référence d’une fondation gouvernementale, éducative ou d’échange culturel, ou lettre de ses comités. Une personne basée au Québec doit donc d’abord confirmer qu’elle remplit une voie documentable.",
+        "en": "AIAV presents this Fellowship as open to domestic and international artists across creative fields, but also requires at least one specific route: funding from a foundation or organization, prior AIAV selection or stay, a reference from a government, educational, or cultural-exchange foundation, or a letter from its committees. Someone based in Quebec must first confirm a documentable route.",
+        "ja": "AIAVは、このFellowshipを多様な創作分野の国内外アーティストに開いていますが、少なくとも一つの具体的な条件も必要です。財団・団体からの資金、AIAVでの過去の採択・滞在、政府・教育・文化交流財団からの推薦、またはAIAV委員会からの推薦です。ケベック拠点の応募者は、証明可能なルートをまず確認してください。"
+      },
+      "applicantCost": {
+        "fr": "AIAV couvre chambre privée, studio et installations, ainsi que les dépenses du programme d’échange dans son budget. L’artiste prend en charge production, voyage, vie courante et repas; cuisine partagée autorisée. Les frais de candidature, visa, assurance, fiscalité, accompagnant·es et montants de transport local ne sont pas détaillés; les demander au prochain appel.",
+        "en": "AIAV covers a private room, studio, facilities, and exchange-program expenses within its budget. The artist covers production, travel, living costs, and meals; a shared kitchen is allowed. Application fee, visa, insurance, tax, companions, and local-transport amounts are not detailed; request them at the next call.",
+        "ja": "AIAVは個室、スタジオ、施設、予算内の交流プログラム費を負担します。制作費、渡航費、生活費、食費はアーティスト負担で、共用キッチンは利用できます。応募料、ビザ、保険、税、同行者、現地交通費の金額は未詳のため、次回募集時に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Séjour d’environ un mois avec chambre privée, studios de différents types, accès aux installations et programme d’échange local dans le budget. Les personnes sélectionnées doivent échanger avec les communautés de Yamaguchi par ateliers, conférences, visites scolaires, expositions ou activités connexes.",
+        "en": "The program offers an approximately one-month stay with a private room, varied studios, facility access, and a locally oriented exchange program within budget. Selected artists are expected to engage Yamaguchi communities through workshops, lectures, school visits, exhibitions, or related activities.",
+        "ja": "約1か月の滞在で、個室、多様なスタジオ、施設利用、予算内の地域交流プログラムを提供します。採択者はワークショップ、講義、学校訪問、展示などを通じて山口の地域と交流することが期待されます。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Une voie internationale possible, mais pas automatique: la condition de financement ou de recommandation doit être satisfaite et documentée. Avant d’investir dans dossier, traduction ou voyage, demander à AIAV quelle voie accepte un·e candidat·e québécois·e et confirmer les coûts non couverts.",
+          "en": "A potentially international route, but not automatic: the funding or reference condition must be met and documented. Before investing in an application, translation, or travel, ask AIAV which route accepts a Quebec applicant and confirm uncovered costs.",
+          "ja": "国際的に利用できる可能性はありますが、自動的に対象となるわけではありません。資金または推薦の条件を満たし、証明する必要があります。応募、翻訳、渡航に投資する前に、ケベックの応募者に使えるルートと対象外費用をAIAVへ確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "air-3331-tokyo-open",
+    "title": "AIR 3331 — Tokyo Open Call Residency",
+    "country": "Japan",
+    "city": "Tokyo",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures reçues au fil de l’eau, jusqu’au remplissage des places disponibles.",
+      "en": "Applications are accepted on an ongoing basis, until available places are filled.",
+      "ja": "空き枠が埋まるまで随時応募を受け付けています。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://residence.3331.jp/en/plan/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "AIR 3331 accepte des candidatures en continu pour séjours commençant à partir du 1er avril 2023. Le programme long d’un à trois mois vise recherche, terrain, production, expositions ou ateliers à Tokyo; l’option courte et Quick Use servent de base de travail. La page ne publie pas de restriction de nationalité ou résidence, mais confirmer visa et disponibilité avant de payer.",
+        "en": "AIR 3331 accepts applications on an ongoing basis for programs beginning April 1, 2023 onward. Its one- to three-month full-term program supports research, fieldwork, production, exhibitions, or workshops in Tokyo; short-term and Quick Use options provide a working base. The page publishes no nationality or residence restriction, but confirm visa and availability before paying.",
+        "ja": "AIR 3331は2023年4月1日以降に始まるプログラムを随時受け付けています。1〜3か月の長期プログラムは、東京でのリサーチ、フィールドワーク、制作、展覧会、ワークショップを対象にし、短期・Quick Useも活動拠点になります。ページに国籍・居住地制限はありませんが、支払い前にビザと空き状況を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Le programme long coûte environ 225 000 à 280 000 JPY par mois; le court séjour environ 71 400 à 116 000 JPY par semaine. Aucune aide financière n’est annoncée. Demander aussi frais de dossier, paiement, annulation, taxe, visa, assurance, nourriture, transport, matériel et supplément de coordination avant de s’engager.",
+        "en": "The full-term program costs about JPY 225,000–280,000 per month; short-term is about JPY 71,400–116,000 per week. No financial aid is announced. Also ask about application, payment, cancellation, tax, visa, insurance, food, transport, materials, and additional coordination fees before committing.",
+        "ja": "長期プログラムは月額約22万5千〜28万円、短期は週額約7万1,400〜11万6千円です。資金支援は案内されていません。申込、支払い、取消、税、ビザ、保険、食事、交通、材料、追加コーディネート費についても、確約前に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme long comprend espace de vie commun, chambre privée et studio privé ou partagé, avec soutien de base d’un·e coordinateur·rice. Il met en avant liens avec artistes résident·es, galeries, espaces créatifs et communautés locales; le soutien additionnel peut être facturé.",
+        "en": "The full-term program includes shared living space, private bedroom, and private or shared studio, with basic coordinator support. It highlights links with resident artists, galleries, creative spaces, and local communities; additional support may carry a fee.",
+        "ja": "長期プログラムには共用生活空間、個室、個人または共用スタジオ、基本的なコーディネーター支援があります。滞在アーティスト、ギャラリー、創造拠点、地域との接点を掲げ、追加支援は有料の場合があります。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Piste internationale potentiellement directe, mais nettement autofinancée et sans date garantie. Évaluer coût réel, contenu du soutien, calendrier des échanges et visa japonais; obtenir disponibilité et conditions écrites avant tout paiement non remboursable.",
+          "en": "A potentially direct international route, but clearly self-funded and without a guaranteed date. Assess the real cost, support scope, exchange timing, and Japanese visa; obtain availability and written terms before any non-refundable payment.",
+          "ja": "直接利用できる可能性のある国際ルートですが、明確に自己負担型で、日程も確約されません。実費、支援範囲、交流のタイミング、日本のビザを見極め、返金不可の支払い前に空き状況と条件を書面で得てください。"
+        }
+      }
+    }
   }
 ]
