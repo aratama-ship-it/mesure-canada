@@ -11174,5 +11174,226 @@
         }
       }
     }
+  },
+  {
+    "id": "spier-light-art-2027-next-watch",
+    "title": "Spier Light Art 2027 — Next Open Call",
+    "country": "South Africa",
+    "city": "Stellenbosch",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-21",
+    "deadlineTimeZone": "SAST",
+    "deadlineLabel": {
+      "fr": "L’appel Spier Light Art 2027 était annoncé jusqu’au 21 juillet 2026. La page reste en ligne mais sa date est passée; surveiller le prochain appel officiel.",
+      "en": "The Spier Light Art 2027 call was announced through July 21, 2026. The page remains online but its date has passed; monitor the next official call.",
+      "ja": "Spier Light Art 2027の公募は2026年7月21日締切として案内されました。ページは残っていますが日付を過ぎているため、次回の公式公募を監視します。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://www.spierlightart.co.za/artists",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle vérifiable invitait artistes, designers, professionnel·les, étudiant·es et institutions, avec une œuvre dont la lumière est l’élément central; le site ne publie aucune restriction territoriale. Vérifier la prochaine édition avant dépôt depuis le Québec.",
+        "en": "The verifiable cycle invited artists, designers, professionals, students, and institutions with work centered on light; the site publishes no territorial restriction. Verify the next edition before applying from Quebec.",
+        "ja": "確認できる回は、光を中心要素とする作品について、アーティスト、デザイナー、専門家、学生、機関を招いており、サイトに地域制限はありません。ケベックから応募する際は次回要項を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Les frais d’inscription, voyage international, visa, assurance, fret, hébergement, installation et fiscalité ne sont pas précisés. Le dossier demandait un budget provisoire réaliste; ne pas présumer que les dépenses hors production soient couvertes.",
+        "en": "Application, international travel, visa, insurance, freight, accommodation, installation, and tax costs are not specified. The proposal required a realistic provisional budget; do not assume non-production costs are covered.",
+        "ja": "応募料、国際渡航、ビザ、保険、輸送、宿泊、設営、税は明記されていません。企画書には現実的な暫定予算が求められたため、制作以外の費用が補填されるとは想定しないでください。"
+      },
+      "organizerSupport": {
+        "fr": "Les œuvres retenues recevaient des honoraires normalisés; les budgets de production variaient selon l’échelle et pouvaient être financés entièrement ou partiellement. Les détails étaient discutés lors des séances d’information.",
+        "en": "Selected works received a standardized artist fee; production budgets varied by scale and could be fully or partially funded. Details were discussed during briefing sessions.",
+        "ja": "選定作品には標準化されたアーティスト費があり、制作予算は規模により異なり、全額または一部が支援される場合があります。詳細は説明会で協議されました。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste sud-africaine intéressante si le prochain appel garde une ouverture sans territoire, mais les déplacements et l’installation ne sont pas budgétés publiquement. Préparer concept lumineux, budget, montage, sécurité, alimentation, fret et droits; demander par écrit l’admissibilité et les coûts internationaux.",
+          "en": "A promising South African route if the next call retains non-territorial access, but travel and installation are not publicly budgeted. Prepare a light-based concept, budget, installation, safety, power, freight, and rights plan; obtain written confirmation of eligibility and international costs.",
+          "ja": "次回も地域制限のない募集であれば有望な南アフリカの候補ですが、渡航と設営は公開予算に含まれません。光を使う構想、予算、設営、安全、電源、輸送、権利を準備し、適格性と国際費用を文書で確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "casa-na-ilha-multidisciplinary-2027-open",
+    "title": "Casa Na Ilha — Multidisciplinary Residency 2027",
+    "country": "Brazil",
+    "city": "Ilhabela, São Paulo",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures 2026–2027 reçues pour des séjours de deux à quatre semaines; confirmer les places et conditions directement avec Casa Na Ilha.",
+      "en": "Applications are being received for 2026–2027 stays of two to four weeks; confirm availability and terms directly with Casa Na Ilha.",
+      "ja": "2〜4週間の2026〜2027年滞在への応募を受け付けています。空き状況と条件はCasa Na Ilhaへ直接確認が必要です。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://www.casanailha.org/the-multidisciplinary-residency-program/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Casa Na Ilha accepte des pratiques professionnelles ou émergentes en écriture, arts visuels, film, recherche, danse, son, musique, design, architecture, textile et philosophie. Les séjours 2027 annoncés durent deux à quatre semaines, avec extension possible selon le projet; aucune condition nationale n’est publiée.",
+        "en": "Casa Na Ilha accepts professional or promising emerging practices in writing, visual arts, film, research, dance, sound, music, design, architecture, textiles, and philosophy. Published 2027 stays run two to four weeks, with possible extensions by project; no nationality condition is published.",
+        "ja": "Casa Na Ilhaは、執筆、美術、映画、リサーチ、ダンス、音、音楽、デザイン、建築、テキスタイル、哲学の専門的または有望な新人の実践を受け付けます。公開された2027年滞在は2〜4週間で、企画により延長可能です。国籍条件は未公表です。"
+      },
+      "applicantCost": {
+        "fr": "La page du programme ne publie ni tarifs ni frais de candidature, voyage, visa, assurance, repas, matériel, fret, taxe ou annulation. La page officielle comporte une rubrique distincte « Cost and Fees »: obtenir son montant et toutes les conditions écrites avant réservation.",
+        "en": "The program page does not publish fees for application, travel, visa, insurance, meals, materials, freight, tax, or cancellation. The official site has a separate Cost and Fees section: obtain its amount and all terms in writing before booking.",
+        "ja": "プログラムページには、応募料、渡航、ビザ、保険、食事、材料、輸送、税、取消の費用が掲載されていません。公式サイトには別に「Cost and Fees」ページがあるため、予約前に金額と全条件を書面で得てください。"
+      },
+      "organizerSupport": {
+        "fr": "La résidence offre un temps de travail autonome, échanges entre deux à sept artistes, tutorat sur demande, conseils, contacts locaux et aide aux arrangements nécessaires au projet. Aucun financement ni prise en charge matérielle précise n’est annoncé sur cette page.",
+        "en": "The residency offers self-directed work time, exchange among two to seven artists, on-request tutoring, guidance, local contacts, and help arranging project needs. No precise funding or material coverage is announced on this page.",
+        "ja": "滞在では、自主的な制作時間、2〜7人のアーティスト間の交流、希望時のチューター、助言、現地との接点、企画に必要な調整支援があります。このページには具体的な資金または物的負担は公表されていません。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Option brésilienne directement envisageable, mais budget réel et conditions d’entrée restent à obtenir. Avant engagement, demander places 2027, tarif, logement, repas, atelier, transfert, visa, assurance, santé, sécurité, production et droits; pour une pratique scénique, vérifier sol, hauteur et technique.",
+          "en": "A Brazilian option that appears directly plausible, but real budget and entry terms must be obtained. Before committing, ask about 2027 availability, fee, lodging, meals, workspace, transfer, visa, insurance, health, safety, production, and rights; for performance work, verify floor, height, and technical conditions.",
+          "ja": "直接利用できそうなブラジルの候補ですが、実予算と入国条件を得る必要があります。確約前に2027年の空き、料金、宿泊、食事、作業場所、送迎、ビザ、保険、健康、安全、制作、権利を確認し、舞台作品は床、高さ、技術条件も確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "art-junction-udaipur-2026-27-open",
+    "title": "Art Junction Residency — Udaipur 2026–2027",
+    "country": "India",
+    "city": "Badanga, Udaipur",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Candidatures acceptées en continu, selon motivation, échantillons et disponibilité, pour des sessions allant jusqu’à mars 2027.",
+      "en": "Applications are accepted on an ongoing basis, subject to motivation, work samples, and availability, for sessions through March 2027.",
+      "ja": "動機、作品資料、空き状況に応じて随時応募を受け付けており、2027年3月までのセッションが案内されています。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://artjunctionudr.wordpress.com/artist-residency/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Art Junction accueille artistes internationaux et indiens, individuellement ou en groupe, pour au moins deux semaines et jusqu’à trois mois. Domaines annoncés: arts visuels, danse, sculpture, installation, performance, nouveaux médias, commissariat, recherche, écriture et musique; langues de travail anglais et hindi.",
+        "en": "Art Junction accepts international and Indian artists, individually or in groups, for at least two weeks and up to three months. Published fields include visual art, dance, sculpture, installation, performance, new media, curating, research, writing, and music; working languages are English and Hindi.",
+        "ja": "Art Junctionは国際・インドのアーティストを個人またはグループで受け付け、最短2週間から最長3か月の滞在です。美術、ダンス、彫刻、インスタレーション、パフォーマンス、新媒体、キュレーション、リサーチ、執筆、音楽が対象で、使用言語は英語とヒンディー語です。"
+      },
+      "applicantCost": {
+        "fr": "L’artiste paie voyage et frais de résidence, dont le montant doit être demandé. Matériel, visa, assurance, dépenses hors trois repas annoncés, dépenses locales, accompagnant·e, fret, fiscalité et annulation ne sont pas détaillés; une lettre de sélection peut aider à demander un financement externe.",
+        "en": "The artist pays travel and a residency fee, whose amount must be requested. Materials, visa, insurance, costs beyond the listed three meals, local expenses, companion, freight, tax, and cancellation are not detailed; a selection letter may help seek external funding.",
+        "ja": "アーティストは渡航費と、金額を問い合わせる必要がある滞在費を負担します。材料、ビザ、保険、案内された3食以外の費用、現地費、同行者、輸送、税、取消は未詳です。選考通知書は外部資金申請に使える場合があります。"
+      },
+      "organizerSupport": {
+        "fr": "La résidence annonce cottage privé, trois repas végétariens, espaces de studio partagés intérieurs et extérieurs, espace d’exposition, internet, imprimante, nettoyage, outils de base et possibilité d’exposition, conférence ou lecture dans des institutions locales.",
+        "en": "The residency lists a private cottage, three vegetarian meals, shared indoor and outdoor studios, exhibition space, internet, printer, cleaning, basic tools, and possible exhibition, lecture, or reading at local institutions.",
+        "ja": "滞在は個室コテージ、1日3回のベジタリアン食、屋内外の共用スタジオ、展示空間、インターネット、プリンター、清掃、基本工具、地域機関での展示・講演・朗読の可能性を案内しています。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie internationale directe mais autofinancée. Demander un devis complet, dates, visa, contrat, responsabilités sanitaires et sécurité avant toute réservation; budgéter vol, frais, matériaux, assurance, transport, nourriture non incluse et fret. Vérifier aussi équipement, sol, hauteur et autorisations pour performance ou cirque.",
+          "en": "A direct international route, but self-funded. Request a complete quote, dates, visa guidance, contract, health responsibilities, and safety terms before booking; budget flight, fee, materials, insurance, transport, food not included, and freight. Also verify equipment, floor, height, and permissions for performance or circus.",
+          "ja": "直接応募できる国際ルートですが自己負担です。予約前に完全な見積、日程、ビザ案内、契約、健康上の責任、安全条件を求め、航空券、料金、材料、保険、交通、対象外の食事、輸送を予算化してください。パフォーマンス／サーカスは器具、床、高さ、許可も確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "guyan-painting-village-2026-next-watch",
+    "title": "Guyan Painting Village — International Artist Residency Next Call",
+    "country": "China",
+    "city": "Lishui, Zhejiang",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-04-19",
+    "deadlineLabel": {
+      "fr": "L’appel international 2026 de 30 jours à Lishui a fermé le 19 avril 2026. Le calendrier suivant n’est pas encore publié.",
+      "en": "The 2026 international 30-day Lishui call closed April 19, 2026. The next schedule is not yet published.",
+      "ja": "麗水での30日間の2026年国際公募は2026年4月19日に終了しました。次回日程は未公表です。"
+    },
+    "nextCheckDate": "2027-02-15",
+    "sourceUrl": "https://www.guyanpaintingvillageresidency.org/introductionen",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle vérifiable invitait des artistes internationaux pour 30 jours au Guyan Huaxiang Art Center, avec attention à peinture, photographie et céramique mais ouverture annoncée aux pratiques artistiques et artisanales. Les critères du prochain cycle restent à confirmer.",
+        "en": "The verifiable cycle invited international artists for 30 days at Guyan Huaxiang Art Center, with attention to painting, photography, and ceramics but stated openness to artistic and craft practices. Next-cycle criteria remain to be confirmed.",
+        "ja": "確認できる回はGuyan Huaxiang Art Centerでの30日間の国際アーティスト対象で、絵画、写真、陶芸を特に挙げつつ、芸術・工芸の実践に開かれていました。次回の資格条件は確認が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Le cycle clos incluait vol aller-retour international, transports en Chine, hébergement, atelier et trois repas par jour. Frais de candidature, visa, assurance, fiscalité, matériel, fret, accompagnant·es et coûts hors liste ne sont pas détaillés; les reconfirmer avant candidature.",
+        "en": "The closed cycle included round-trip international airfare, China transport, lodging, studio, and three meals daily. Application, visa, insurance, tax, materials, freight, companions, and unlisted costs are not detailed; reconfirm them before applying.",
+        "ja": "終了した回には国際往復航空券、中国国内の移動、宿泊、スタジオ、1日3食が含まれていました。応募料、ビザ、保険、税、材料、輸送、同行者、未記載費は詳しくないため、次回応募前に再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le cycle 2026 était annoncé comme entièrement financé: vols, transport en Chine, logement individuel, atelier, repas, coordinateur·rice, traducteur·rice, direction artistique, rencontres, visites et exposition finale.",
+        "en": "The 2026 cycle was presented as fully funded: flights, China transport, individual lodging, studio, meals, coordinator, translator, artistic direction, meetings, visits, and a final exhibition.",
+        "ja": "2026年枠は全額支援として案内され、航空券、中国国内の移動、個室、スタジオ、食事、コーディネーター、通訳、芸術監督、交流、見学、最終展が含まれていました。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "À surveiller comme piste internationale très soutenue pour peinture, photographie, céramique ou pratique voisine. Au prochain appel, vérifier dates, visa chinois, assurance, droits, matériel, fret, fiscalité et obligations d’exposition avant engagement.",
+          "en": "Watch this as a strongly supported international route for painting, photography, ceramics, or adjacent practice. At the next call, verify dates, Chinese visa, insurance, rights, materials, freight, tax, and exhibition obligations before committing.",
+          "ja": "絵画、写真、陶芸または周辺実践に対する強い支援の国際候補として監視します。次回公募時に、確約前に日程、中国ビザ、保険、権利、材料、輸送、税、展示義務を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "green-olive-arts-2027-open",
+    "title": "Green Olive Arts — Morocco Residency Seasons 2027",
+    "country": "Morocco",
+    "city": "Tetouan",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Green Olive Arts reçoit actuellement des candidatures pour les saisons printemps, été et automne 2027; confirmer les places et la date propre à chaque saison.",
+      "en": "Green Olive Arts is currently taking applications for spring, summer, and fall 2027 seasons; confirm availability and the date for each season.",
+      "ja": "Green Olive Artsは2027年春・夏・秋シーズンの応募を受け付けています。各シーズンの空きと締切を確認してください。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://www.greenolivearts.com/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Green Olive Arts se présente comme résidence et espace collaboratif accueillant des créateur·rices du monde: arts visuels, écriture, film, musique et photographie. Les saisons 2027 de trois ou six semaines sont affichées; aucune condition territoriale n’est publiée sur la page consultée.",
+        "en": "Green Olive Arts presents itself as a residency and collaborative space welcoming creatives from around the world: visual art, writing, film, music, and photography. Three- or six-week 2027 seasons are listed; no territorial condition is published on the reviewed page.",
+        "ja": "Green Olive Artsは世界中のクリエイターを受け入れるレジデンス／協働スペースとして、美術、執筆、映画、音楽、写真を掲げています。3または6週間の2027年シーズンが掲載され、確認したページに地域条件はありません。"
+      },
+      "applicantCost": {
+        "fr": "La page d’accueil ne publie ni frais de candidature, tarif de résidence, voyage, logement, repas, visa, assurance, matériel, fret, fiscalité ou annulation. Les bourses séparées sont réservées aux artistes marocain·es émergent·es: demander le coût international complet.",
+        "en": "The home page does not publish application fee, residency fee, travel, housing, meals, visa, insurance, materials, freight, tax, or cancellation terms. Separate grants are reserved for emerging Moroccan artists: request the complete international cost.",
+        "ja": "ホームページには応募料、滞在費、渡航、宿泊、食事、ビザ、保険、材料、輸送、税、取消条件が掲載されていません。別の助成はモロッコの新進アーティスト向けなので、国際参加の全費用を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le site présente un espace de résidence et de collaboration à Tetouan, avec ateliers, rencontres et lien au contexte local. Studio, logement, accompagnement, production et financement pour artistes internationaux doivent être confirmés avec le programme.",
+        "en": "The site presents a residency and collaborative space in Tetouan, with workshops, gatherings, and local connection. Studio, lodging, guidance, production, and funding terms for international artists must be confirmed with the program.",
+        "ja": "サイトはTetouanのレジデンス／協働スペースとして、ワークショップ、交流、地域との接点を案内しています。国際アーティスト向けのスタジオ、宿泊、伴走、制作、資金の条件は主催者に確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste marocaine internationale à discuter directement: l’ouverture est utile, mais budget et accueil ne sont pas publiés. Avant paiement, demander admissibilité, devis, logement, repas, visa, assurance, sécurité, droits et restitution; ne pas compter sur la bourse réservée aux artistes marocain·es.",
+          "en": "An international Moroccan route to discuss directly: the opening is useful, but budget and hosting are not published. Before payment, request eligibility, quote, lodging, meals, visa, insurance, safety, rights, and return requirements; do not count on the grant reserved for Moroccan artists.",
+          "ja": "直接相談すべき国際的なモロッコ候補です。募集案内は有用ですが、予算と受け入れは未公表です。支払い前に適格性、見積、宿泊、食事、ビザ、保険、安全、権利、成果還元の要件を確認し、モロッコ人アーティスト向け助成を前提にしないでください。"
+        }
+      }
+    }
   }
 ]
