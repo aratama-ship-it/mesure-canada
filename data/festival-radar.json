@@ -10287,5 +10287,137 @@
         }
       }
     }
+  },
+  {
+    "id": "bodhi-khaya-artist-residency-2026-next-watch",
+    "title": "Bodhi Khaya Artist Residency 2026",
+    "country": "South Africa",
+    "city": "Gansbaai",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-15",
+    "deadlineLabel": {
+      "fr": "L’appel Bodhi Khaya 2026 a clos le 15 juin; suivre le prochain appel annuel d’octobre.",
+      "en": "The Bodhi Khaya 2026 call closed June 15; follow the next annual October residency call.",
+      "ja": "Bodhi Khaya 2026は6月15日に終了。次回の年次10月レジデンス募集を監視します。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://bodhikhayaresidency.co.za/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "L’appel 2026 annonçait une résidence annuelle financée de deux semaines, ouverte aux pratiques visuelles, performatives, sonores, de mouvement et d’installation. Les frais de candidature distinguaient les artistes internationaux·ales, ce qui confirme une voie internationale; vérifier la sélection et l’admissibilité exactes au prochain cycle.",
+        "en": "The 2026 call announced a funded annual two-week residency open to visual art, performance, sound, movement, and installation practices. Its application fee expressly distinguished international artists, confirming an international route; verify exact selection and eligibility at the next cycle.",
+        "ja": "2026年募集は、視覚芸術、パフォーマンス、音、ムーブメント、インスタレーションを対象とする年次の2週間支援付きレジデンスでした。応募料が国際アーティストを明記しており国際応募ルートは確認できますが、次回は選考・資格の詳細を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature: 25 EUR pour artistes internationaux·ales (250 ZAR pour artistes sud-africain·es ou africain·es). La page ne publie pas couverture du vol, visa, assurance, production, repas ou conditions d’annulation; les demander avant paiement ou déplacement.",
+        "en": "Application fee: EUR 25 for international artists (ZAR 250 for South African or African artists). The page does not publish coverage for airfare, visa, insurance, production, meals, or cancellation; request these before payment or travel.",
+        "ja": "応募料は国際アーティスト25ユーロ（南アフリカまたはアフリカのアーティストは250ランド）です。航空券、ビザ、保険、制作、食事、キャンセルの対象は公開されていないため、支払い・渡航前に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence financée de deux semaines, du 11 au 25 octobre 2026, dans un environnement de forêt, fynbos et terres en régénération. Le programme annonce accompagnement curatorial continu, expositions et orientation vers des résidences et plateformes internationales après le séjour, sans détailler ses postes budgétaires.",
+        "en": "A funded two-week residency, October 11–25, 2026, in a forest, fynbos, and regenerating-land environment. The programme announces ongoing curatorial support, exhibitions, and guidance toward international residencies and platforms after the stay, without itemizing its budget coverage.",
+        "ja": "2026年10月11日〜25日の2週間の支援付き滞在で、森林、フィンボス、再生途上の土地を制作環境とします。終了後も継続キュラトリアル支援、展覧会、国際レジデンス・プラットフォームへの案内を掲げますが、費目の内訳は未公表です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Piste internationale possible, avec faible frais de candidature mais budget de séjour non détaillé. À l’ouverture, demander en écrit ce que « financée » couvre, ainsi que voyage depuis le Québec, logement, visa, assurance, production et calendrier de sélection.",
+          "en": "A possible international route with a low application fee but unitemized residency budget. At opening, obtain written confirmation of what “funded” covers, plus travel from Quebec, lodging, visa, insurance, production, and selection timeline.",
+          "ja": "低額の応募料で国際応募の候補ですが、「支援付き」の内訳は未詳です。次回は、渡航・宿泊・ビザ・保険・制作と選考日程を含め、何が支援対象かを書面で確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "peru-bienal-integral-art-residence-2026-open",
+    "title": "Peru Bienal Integral Art Residence 2026",
+    "country": "Peru",
+    "city": "Lima",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Troisième appel international 2026 actuellement ouvert; demander les dates, frais et places disponibles avant de déposer.",
+      "en": "The third 2026 international call is currently open; request dates, fees, and available places before applying.",
+      "ja": "第3回2026国際募集は現在受付中。応募前に日程、費用、空き枠を確認してください。"
+    },
+    "nextCheckDate": "2026-09-15",
+    "sourceUrl": "https://perubienal.com/en/art-residencies/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Appel international ouvert aux artistes et agent·es culturel·les de toute nationalité: arts visuels, graphiques et vivants, gestion culturelle, commissariat et recherche/enseignement dans divers champs. Dossier: objectif de résidence, biographie et portfolio; aucune restriction de résidence n’est publiée.",
+        "en": "An international call open to artists and cultural agents of any nationality: visual, graphic, and performing arts, cultural management, curating, and arts scholars/academics across fields. The dossier asks for a residency goal, biography, and portfolio; no residence restriction is published.",
+        "ja": "国籍を問わず、視覚・グラフィック・舞台芸術、文化マネジメント、キュレーター、各分野の芸術研究者・教育者が対象の国際募集です。滞在目標、略歴、ポートフォリオを提出し、居住地制限は公開されていません。"
+      },
+      "applicantCost": {
+        "fr": "La page annonce hébergement, transferts aéroport et aller-retour pour les activités officielles, chambre privée, cuisine, petit-déjeuner, espace d’art et matériel multimédia, mais pas billet international, visa, assurance, frais de programme, matériel, fiscalité ou montant. Les demander avant tout engagement.",
+        "en": "The page announces accommodation, airport and official-activity transfers, private room, kitchen, breakfast, art space, and multimedia equipment, but not international airfare, visa, insurance, programme fee, materials, tax, or amount. Ask before committing.",
+        "ja": "宿泊、空港・公式活動の送迎、個室、キッチン、朝食、アートスペース、マルチメディア機材は案内されていますが、国際航空券、ビザ、保険、プログラム費、材料、税務、金額は未公表です。確約前に確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Séjours de 7, 15, 30 ou 45 jours et activités adaptées au projet: rencontres avec artistes locaux, ateliers/studios, foires et ventes aux enchères, présentations, expositions, conférences, musées, diffusion nationale et événements avec partenaires. La résidence annonce un hôte ou guide pour chaque personne résidente.",
+        "en": "Stays of 7, 15, 30, or 45 days and project-tailored activities: local-artist exchanges, studios/workshops, fairs and auctions, presentations, exhibitions, talks, museums, national diffusion, and partner events. The residency announces a host or guide for each resident.",
+        "ja": "7日、15日、30日、45日の滞在で、現地アーティスト交流、スタジオ・ワークショップ、フェア・オークション、発表、展覧会、トーク、博物館、国内発信、提携イベントを企画に合わせて実施します。各滞在者にホストまたはガイドが付くと案内されています。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Voie internationale directement accessible d’après la nationalité, mais modèle financier incomplet. Avant de mobiliser un budget québécois, obtenir montant, frais, voyage international, visa, assurance, droits d’exposition et confirmation écrite des dates et de l’hébergement.",
+          "en": "A directly accessible international route by nationality, but with an incomplete financial model. Before committing Quebec funds, obtain fee and amount, international travel, visa, insurance, exhibition rights, and written confirmation of dates and lodging.",
+          "ja": "国籍要件からは直接応募できる国際ルートですが、費用モデルが不完全です。ケベック側の予算を動かす前に、料金・支援額、国際渡航、ビザ、保険、展示権、日程と宿泊の書面確認を取得してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "cultural-foundation-abu-dhabi-art-residency-2026-next-watch",
+    "title": "Cultural Foundation Abu Dhabi Art Residency 2026–27",
+    "country": "United Arab Emirates",
+    "city": "Abu Dhabi",
+    "region": "Middle East",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-31",
+    "deadlineLabel": {
+      "fr": "L’appel de résidence 2026–27 a clos le 31 janvier; suivre la prochaine ouverture de Cultural Foundation.",
+      "en": "The 2026–27 residency call closed January 31; follow Cultural Foundation’s next opening.",
+      "ja": "2026〜27年レジデンス募集は1月31日に終了。Cultural Foundationの次回開始を監視します。"
+    },
+    "nextCheckDate": "2027-01-01",
+    "sourceUrl": "https://culturalfoundation.ae/en/ArtResidency",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle 2026 visait artistes professionnel·les, designers, architectes, auteur·rices, interprètes, chercheur·euses, cinéastes et autres praticien·nes culturels, avec diplôme pertinent, portfolio et CV. Pour les personnes non émiriennes, il demandait copie d’un visa de résidence et d’une Emirates ID: une personne résidant seulement au Québec n’avait pas de voie directe publiée.",
+        "en": "The 2026 cycle targeted professional artists, designers, architects, writers, performers, researchers, filmmakers, and other cultural practitioners, with a relevant degree, portfolio, and CV. For non-UAE nationals it required a residency-visa copy and Emirates ID, so a Quebec-only resident had no published direct route.",
+        "ja": "2026年枠は関連学位、ポートフォリオ、CVを持つプロのアーティスト、デザイナー、建築家、作家、出演者、研究者、映画制作者等が対象でした。UAE国籍以外には居住ビザとEmirates IDの写しが必要で、ケベック居住のみでは公開された直接ルートはありません。"
+      },
+      "applicantCost": {
+        "fr": "Le programme annonçait des ressources financières mais sans montant ni ventilation. La page ne détaille pas visa, assurance, voyage, logement, fiscalité, production ou frais dépassant le soutien; ne pas les présumer couverts.",
+        "en": "The programme announced financial resources but no amount or breakdown. The page does not detail visa, insurance, travel, housing, tax, production, or costs beyond support; do not presume they are covered.",
+        "ja": "財政的リソースは案内されていますが、金額・内訳はありません。ビザ、保険、渡航、住居、税務、制作、支援を超える費用はページに詳しくなく、対象と推定しないでください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence de six mois, avec deux créneaux du 25 mars au 20 septembre 2026 ou du 25 septembre 2026 au 20 mars 2027. Cultural Foundation annonçait studio dédié avec accès 24 h/24, soutien curatorial, accès aux installations et ressources financières, visites d’atelier et soirée open studio finale.",
+        "en": "A six-month residency, with terms March 25–September 20, 2026 or September 25, 2026–March 20, 2027. Cultural Foundation announced dedicated 24-hour studio access, curatorial support, facility access and financial resources, studio visits, and a final open-studio night.",
+        "ja": "2026年3月25日〜9月20日、または9月25日〜2027年3月20日の6か月滞在です。専用スタジオの24時間利用、キュラトリアル支援、施設利用、財政的リソース、スタジオ訪問、最終オープンスタジオを案内しています。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "La règle publiée de visa de résidence et Emirates ID exclut une candidature autonome depuis le Québec. À surveiller seulement si un futur appel modifie ce prérequis ou si une base de résidence UAE légalement admissible existe avant candidature.",
+          "en": "The published residency-visa and Emirates-ID rule excludes a standalone Quebec application. Watch only if a future call changes that prerequisite or if a legally eligible UAE residence base exists before applying.",
+          "ja": "公開された居住ビザとEmirates IDの条件により、ケベックからの単独応募は対象外です。今後の募集で条件が変わるか、応募前に法的に有資格なUAE居住基盤がある場合のみ検討してください。"
+        }
+      }
+    }
   }
 ]
