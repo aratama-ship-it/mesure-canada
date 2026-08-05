@@ -156,7 +156,7 @@ test("server-renders the monitoring ledger on its own route", async () => {
   assert.match(html, /EEST \(UTC\+3\)/);
   assert.match(html, />JST</);
   assert.match(html, /Heure locale à confirmer/);
-  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 221);
+  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 232);
   assert.match(html, /Retour à la recherche d’occasions/);
   assert.doesNotMatch(html, /class="workbench"/);
 });
@@ -496,6 +496,17 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.ok(festivalRadar.some((record) => record.id === "alberta-circus-arts-festival-next-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "festival-far-2027-watch"));
   assert.ok(festivalRadar.some((record) => record.id === "festival-chapo-next-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "cannes-residence-53-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "cannes-la-cinef-2027-upcoming"));
+  assert.ok(festivalRadar.some((record) => record.id === "cannes-sfc-rendezvous-2027-upcoming"));
+  assert.ok(festivalRadar.some((record) => record.id === "iffr-cinemart-2027-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "dok-leipzig-short-n-sweet-2026-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "teatri-riflessi-2027-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "siena-art-institute-2027-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "anderson-center-2027-residency-open"));
+  assert.ok(festivalRadar.some((record) => record.id === "art-omi-music-2027-upcoming"));
+  assert.ok(festivalRadar.some((record) => record.id === "art-omi-writers-2028-watch"));
+  assert.ok(festivalRadar.some((record) => record.id === "headlands-air-next-cycle-watch"));
   for (const record of festivalRadar) {
     assert.ok(record.title && record.country && record.city);
     assert.ok(["circus", "street", "fringe", "film", "showcase"].includes(record.family));
@@ -704,6 +715,17 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "macdowell-spring-summer-2027-upcoming",
     "millay-arts-core-residency-april-july-open",
     "ucross-fall-2027-residency-upcoming",
+    "cannes-residence-53-open",
+    "cannes-la-cinef-2027-upcoming",
+    "cannes-sfc-rendezvous-2027-upcoming",
+    "iffr-cinemart-2027-open",
+    "dok-leipzig-short-n-sweet-2026-open",
+    "teatri-riflessi-2027-open",
+    "siena-art-institute-2027-open",
+    "anderson-center-2027-residency-open",
+    "art-omi-music-2027-upcoming",
+    "art-omi-writers-2028-watch",
+    "headlands-air-next-cycle-watch",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
   assert.equal(festivalRadar.filter((record) => record.status === "open" && !record.decisionGuide).length, 0, "Every open radar record must expose a practical decision guide");

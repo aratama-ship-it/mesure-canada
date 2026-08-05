@@ -8331,5 +8331,494 @@
         }
       }
     }
+  },
+  {
+    "id": "cannes-residence-53-open",
+    "title": "Festival de Cannes — La Résidence, 53rd Session",
+    "country": "France",
+    "city": "Paris",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-30",
+    "deadlineLabel": {
+      "fr": "Candidatures ouvertes jusqu’au 30 septembre 2026; l’heure et le fuseau de clôture ne sont pas publiés. Session du 15 mars au 31 juillet 2027 à Paris.",
+      "en": "Applications are open through September 30, 2026; the closing time and time zone are not published. The Paris session runs March 15–July 31, 2027.",
+      "ja": "応募締切は2026年9月30日です。締切時刻とタイムゾーンは掲載されていません。パリでの滞在期間は2027年3月15日〜7月31日です。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://cinemadedemain.festival-cannes.com/en/take-part/register-to-the-residence/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Résidence d’écriture pour cinéastes de moins de 35 ans préparant un premier ou deuxième long métrage de fiction. Il faut ne pas être citoyen ni résident français, avoir réalisé des courts métrages ou au plus un long métrage, et avoir eu une œuvre sélectionnée dans un festival de catégorie A. Anglais ou français courant requis.",
+        "en": "A screenwriting residency for filmmakers under 35 developing a first or second fiction feature. Applicants must be neither French citizens nor residents, must have directed short films or no more than one feature, and must have had work selected at a Category A festival. Fluent English or French is required.",
+        "ja": "35歳未満で、フィクション長編第1作または第2作を開発する映画監督向けです。フランス国籍・居住者は対象外で、短編または長編1作までの監督経験と、カテゴリーA映画祭での過去作選出が必要です。英語またはフランス語の流暢さも求められます。"
+      },
+      "applicantCost": {
+        "fr": "La page d’inscription ne précise ni frais de candidature, ni prise en charge du voyage, du visa, de l’assurance ou des dépenses personnelles. Les candidats retenus doivent pouvoir séjourner à Paris pendant toute la session.",
+        "en": "The registration page does not state an application fee or coverage for travel, visa, insurance or personal expenses. Selected filmmakers must be able to remain in Paris for the full session.",
+        "ja": "公式応募ページには応募料、渡航、ビザ、保険、個人費用の負担範囲が記載されていません。採択者は全期間パリに滞在できる必要があります。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme offre une résidence d’écriture de quatre mois et demi à Paris. Les prestations financières et matérielles ne sont pas détaillées sur la page d’inscription; les confirmer avant d’accepter.",
+        "en": "The program offers a four-and-a-half-month screenwriting residency in Paris. Financial and in-kind provisions are not detailed on the registration page; confirm them before accepting.",
+        "ja": "パリで4か月半の脚本開発レジデンスが提供されます。金銭・現物支援の内訳は応募ページにないため、受諾前の確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Une personne établie au Québec peut être admissible si elle n’a ni citoyenneté ni résidence française et satisfait aux critères d’âge, de filmographie et de sélection en festival. Vérifier budget, statut d’entrée en France et couverture du séjour avant de déposer.",
+          "en": "A Quebec-based applicant may be eligible if they are neither a French citizen nor resident and meet the age, filmography and festival-selection criteria. Confirm budget, French entry status and residency coverage before applying.",
+          "ja": "ケベック在住者でも、フランス国籍・居住者でなく、年齢、監督歴、映画祭選出の条件を満たせば応募可能です。応募前に予算、フランス入国条件、滞在支援範囲を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "cannes-la-cinef-2027-upcoming",
+    "title": "Festival de Cannes — La Cinef 2027",
+    "country": "France",
+    "city": "Cannes",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": "2027-02-15",
+    "deadlineTimeZone": "French time (as published)",
+    "deadlineLabel": {
+      "fr": "Date limite le 15 février 2027 à minuit, heure française. Revalider l’ouverture effective du portail avant l’envoi.",
+      "en": "Deadline February 15, 2027 at midnight French time. Recheck that the portal is open before submission.",
+      "ja": "締切は2027年2月15日24:00（フランス時間）です。提出前にポータルの受付開始を再確認してください。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://www.festival-cannes.com/en/take-part/submit-a-film/la-cinef-rules-and-regulations/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Films de fiction ou d’animation réalisés par un étudiant dans le cadre d’une école de cinéma ou d’un département universitaire de cinéma. Durée maximale 60 minutes, réalisation dans les 18 mois précédant le Festival et absence de présentation dans un grand festival international. Les documentaires et les films de niveau collège ou lycée sont exclus.",
+        "en": "Fiction or animation films made by a student within a film-school or university film-department curriculum. Films must be no longer than 60 minutes, made within the 18 months before the Festival and not shown at a major international festival. Documentaries and junior/high-school films are ineligible.",
+        "ja": "映画学校または大学の映画課程で学生が制作したフィクション／アニメーション作品が対象です。60分以内、映画祭前18か月以内の制作、主要国際映画祭で未上映であることが条件です。ドキュメンタリーと中学・高校段階の作品は対象外です。"
+      },
+      "applicantCost": {
+        "fr": "Le règlement ne mentionne pas de frais d’inscription. Les coûts de sous-titrage, de préparation du DCP, de voyage et de présence à Cannes ne sont pas annoncés comme couverts par cette page.",
+        "en": "The rules do not state an entry fee. Subtitling, DCP preparation, travel and attendance costs are not stated as covered on this page.",
+        "ja": "規則には応募料の記載がありません。字幕、DCP準備、渡航、現地参加費用は、このページでは主催者負担とされていません。"
+      },
+      "organizerSupport": {
+        "fr": "La sélection met en valeur 15 à 20 films d’école. Trois prix sont dotés de 15 000 €, 11 000 € et 7 500 €; le Festival prend en charge le stockage et l’assurance du DCP dans l’enceinte du Palais.",
+        "en": "The selection highlights 15–20 school films. Three awards carry €15,000, €11,000 and €7,500; the Festival covers DCP storage and insurance within the Palais.",
+        "ja": "毎年15〜20本の学生映画が選出されます。賞金は1位15,000ユーロ、2位11,000ユーロ、3位7,500ユーロで、パレ内でのDCP保管・保険は映画祭が負担します。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Un film réalisé dans une école de cinéma ou un département universitaire du Québec peut être soumis, quelle que soit la nationalité de l’étudiant, si tous les critères de cursus, date, durée et historique de festival sont respectés. Confirmer avec l’établissement qui détient les droits et qui prend en charge les livrables.",
+          "en": "A film made within a Quebec film school or university film department may be submitted regardless of the student's nationality if all curriculum, date, duration and festival-history criteria are met. Confirm with the school who holds the rights and pays for deliverables.",
+          "ja": "ケベックの映画学校・大学映画課程で制作された作品は、学生の国籍を問わず、課程、制作時期、尺、上映歴の条件を満たせば応募できます。権利者と納品物費用の負担者を学校と確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "cannes-sfc-rendezvous-2027-upcoming",
+    "title": "Festival de Cannes — SFC | Rendez-vous Industry 2027",
+    "country": "France",
+    "city": "Cannes",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": "2027-03-01",
+    "deadlineLabel": {
+      "fr": "Ouverture annoncée à la mi-novembre 2026; date limite le 1er mars 2027. Heure et fuseau de clôture non publiés.",
+      "en": "Submissions are scheduled to open in mid-November 2026; deadline March 1, 2027. Closing time and time zone are not published.",
+      "ja": "2026年11月中旬に受付開始予定、締切は2027年3月1日です。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://cinemadedemain.festival-cannes.com/en/take-part/submit-a-film-to-the-sfc-rendez-vous-industry/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Forum professionnel non compétitif pour courts métrages produits après le 1er juin 2026, d’une durée maximale de 40 minutes, non diffusés sur Internet et présentés en anglais ou avec sous-titres anglais. La validation reste soumise à la curation du programme.",
+        "en": "A non-competitive professional forum for short films produced after June 1, 2026, no longer than 40 minutes, not broadcast online and presented in English or with English subtitles. Acceptance remains subject to program curation.",
+        "ja": "2026年6月1日以降に制作された40分以内の短編で、インターネット未公開、英語作品または英語字幕付きが対象の非コンペ型業界フォーラムです。登録は審査・キュレーション制です。"
+      },
+      "applicantCost": {
+        "fr": "Frais non remboursables de 60 € par film. Une projection professionnelle facultative est facturée séparément; voyage, hébergement, sous-titrage et livrables restent à budgéter.",
+        "en": "The nonrefundable fee is €60 per film. An optional industry screening costs extra; travel, lodging, subtitles and deliverables must be budgeted separately.",
+        "ja": "1作品60ユーロの返金不可の登録料が必要です。任意の業界向け上映は別料金で、渡航、宿泊、字幕、納品物も別途見積りが必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Un film validé est inscrit au catalogue professionnel et à la vidéothèque et reçoit deux accréditations SFC | Rendez-vous Industry. Le programme propose rencontres, ateliers et mise en relation avec des professionnels; il ne s’agit pas d’un financement.",
+        "en": "A validated film is listed in the Industry Catalogue and VideoLibrary and receives two SFC | Rendez-vous Industry accreditations. The program offers meetings, workshops and industry connections; it is not a funding scheme.",
+        "ja": "登録承認作品は業界カタログとビデオライブラリーに掲載され、SFC参加証が2名分提供されます。面談、ワークショップ、業界接点はありますが、助成制度ではありません。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Une production québécoise répondant aux critères peut déposer directement. Cette piste convient surtout à une stratégie de marché déjà budgétée; confirmer droits, sous-titres, frais de séjour et valeur des deux accréditations avant paiement.",
+          "en": "A Quebec production meeting the criteria may submit directly. This route is best for an already-budgeted market strategy; confirm rights, subtitles, attendance costs and the value of the two accreditations before paying.",
+          "ja": "条件を満たすケベック制作作品は直接応募できます。市場展開の予算が既にある企画向けで、支払前に権利、字幕、滞在費、2名分参加証の実用性を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "iffr-cinemart-2027-open",
+    "title": "IFFR CineMart 2027 — Project Entry",
+    "country": "Netherlands",
+    "city": "Rotterdam",
+    "region": "Europe",
+    "family": "film",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-01",
+    "deadlineLabel": {
+      "fr": "Date limite le 1er septembre 2026; l’heure et le fuseau de clôture ne sont pas publiés.",
+      "en": "Deadline September 1, 2026; the closing time and time zone are not published.",
+      "ja": "締切は2026年9月1日です。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://iffr.com/en/iffr-pro/cinemart/cinemart-faq",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "La candidature doit être portée par un producteur et un réalisateur doit être attaché au projet. Le projet doit être nouveau sur le marché international; une présentation antérieure dans plus d’un marché de coproduction, ou dans certains grands marchés comparables, entraîne l’inadmissibilité. Dossier et sous-titres en anglais.",
+        "en": "Applications must be producer-led and have a director attached. Projects must be new to the international market; prior presentation at more than one co-production market, or at certain comparable major markets, makes a project ineligible. Materials and subtitles must be in English.",
+        "ja": "プロデューサー主体で、監督が決まっている企画が対象です。国際市場に新規の企画である必要があり、複数の共同製作市場や指定された同等市場への過去参加は失格要因になります。資料と字幕は英語です。"
+      },
+      "applicantCost": {
+        "fr": "Des frais de soumission sont requis et ne sont pas remboursés si le projet est inadmissible; leur montant n’est pas affiché dans la FAQ consultée. Voyage, séjour et préparation du dossier ne sont pas annoncés comme couverts.",
+        "en": "A submission fee is required and is not refunded if the project is ineligible; the reviewed FAQ does not display the amount. Travel, lodging and dossier preparation are not stated as covered.",
+        "ja": "応募料が必要で、応募資格を満たさない場合も返金されません。確認したFAQには金額が表示されていません。渡航、宿泊、企画書準備の費用負担も明記されていません。"
+      },
+      "organizerSupport": {
+        "fr": "CineMart sélectionne environ 20 à 25 projets pour des rendez-vous individuels et des rencontres avec coproducteurs, fonds, vendeurs et distributeurs. CineMart n’est pas un fonds et ne finance pas directement les projets, bien que certains prix IFFR Pro existent.",
+        "en": "CineMart selects about 20–25 projects for one-to-one meetings and networking with co-producers, funds, sales agents and distributors. CineMart is not a fund and does not directly finance projects, though some IFFR Pro awards exist.",
+        "ja": "約20〜25企画が選ばれ、共同製作者、基金、セールス、配給との個別面談・交流に参加します。CineMart自体は基金ではなく直接融資は行いませんが、IFFR Proの賞があります。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Les projets québécois ne sont pas exclus, mais il faut une structure de production, un réalisateur attaché et une stratégie de coproduction internationale crédible. Vérifier l’historique des marchés et le montant des frais avant paiement.",
+          "en": "Quebec projects are not excluded, but need a production structure, an attached director and a credible international co-production strategy. Check prior market history and the fee amount before paying.",
+          "ja": "ケベック企画も対象外ではありませんが、制作体制、決定済みの監督、具体的な国際共同製作戦略が必要です。支払前に過去の市場参加歴と応募料金を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "dok-leipzig-short-n-sweet-2026-open",
+    "title": "DOK Leipzig — Short n’ Sweet 2026",
+    "country": "Germany",
+    "city": "Leipzig",
+    "region": "Europe",
+    "family": "film",
+    "participation": "selection",
+    "status": "open",
+    "deadlineDate": "2026-08-12",
+    "deadlineLabel": {
+      "fr": "Date limite le 12 août 2026; l’heure et le fuseau de clôture ne sont pas publiés.",
+      "en": "Deadline August 12, 2026; the closing time and time zone are not published.",
+      "ja": "締切は2026年8月12日です。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-08-10",
+    "sourceUrl": "https://www.dok-leipzig.de/en/submission",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Projets de court métrage jusqu’à 30 minutes, du développement à la postproduction: documentaire, documentaire animé, animation ou série. La page générale confirme les dates et formats, mais ne publie pas clairement une admissibilité mondiale; vérifier le règlement détaillé avant l’envoi.",
+        "en": "Short-film projects up to 30 minutes, from development through post-production: documentary, animated documentary, animation or series. The general call page confirms dates and formats but does not clearly state worldwide eligibility; check the detailed rules before submitting.",
+        "ja": "開発からポストプロダクションまでの30分以内の短編企画で、ドキュメンタリー、アニメーション・ドキュメンタリー、アニメーション、シリーズが対象です。総合ページで日程と形式は確認できますが、世界からの応募可否は明確でないため詳細規則の確認が必要です。"
+      },
+      "applicantCost": {
+        "fr": "Les frais de candidature, de voyage et de participation ne sont pas détaillés sur la page générale consultée. Ne pas engager de dépenses avant d’avoir vérifié le règlement et les conditions de présence.",
+        "en": "Application, travel and participation costs are not detailed on the reviewed general page. Do not incur costs before checking the rules and attendance conditions.",
+        "ja": "確認した総合ページには応募料、渡航費、参加費の詳細がありません。規則と現地参加条件を確認するまで費用を確定しないでください。"
+      },
+      "organizerSupport": {
+        "fr": "Short n’ Sweet est une piste de présentation professionnelle pour projets courts. La nature exacte des rencontres et les éventuels soutiens financiers doivent être confirmés dans l’appel détaillé.",
+        "en": "Short n’ Sweet is an industry presentation route for short projects. Confirm the exact meeting format and any financial support in the detailed call.",
+        "ja": "短編企画向けの業界プレゼンテーション機会です。面談形式や金銭支援の有無は詳細募集要項で確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Le format peut convenir à un projet québécois, mais l’admissibilité géographique n’est pas démontrée par la page générale. Contacter l’organisateur ou vérifier le formulaire détaillé avant de préparer un dossier urgent.",
+          "en": "The format may suit a Quebec project, but the general page does not establish geographic eligibility. Contact the organizer or inspect the detailed form before preparing an urgent submission.",
+          "ja": "形式上はケベック企画にも合い得ますが、総合ページだけでは地域応募資格を確認できません。短い締切に向けて準備する前に、主催者または詳細フォームで確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "teatri-riflessi-2027-open",
+    "title": "Teatri Riflessi 2027 — International Short Performance Competition",
+    "country": "Italy",
+    "city": "Zafferana Etnea, Sicily",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-10-15",
+    "deadlineTimeZone": "CET (as published)",
+    "deadlineLabel": {
+      "fr": "Date limite le 15 octobre 2026 à 17 h CET, selon la formulation de l’organisateur.",
+      "en": "Deadline October 15, 2026 at 5:00 PM CET, as stated by the organizer.",
+      "ja": "主催者表記では、締切は2026年10月15日17:00 CETです。"
+    },
+    "nextCheckDate": "2026-09-20",
+    "sourceUrl": "https://www.iterculture.eu/en/teatri-riflessi/tr2027/tr12/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Appel international pour œuvres scéniques en direct d’environ 15 minutes. Une captation intégrale est requise; les œuvres avec texte dans une autre langue sont acceptées et IterCulture prépare des surtitres italiens et anglais.",
+        "en": "An international call for live stage works of about 15 minutes. A full recording is required; works using other languages are accepted and IterCulture prepares Italian and English surtitles.",
+        "ja": "約15分のライブ舞台作品を対象とする国際公募です。全編記録映像が必要で、外国語テキストの作品も応募でき、主催者がイタリア語・英語字幕を用意します。"
+      },
+      "applicantCost": {
+        "fr": "Candidature gratuite. Seules les compagnies sélectionnées versent un dépôt de 50 €, entièrement remboursé après le festival. Les frais dépassant l’éventuelle contribution de voyage restent à la charge de l’équipe.",
+        "en": "Applications are free. Only selected companies pay a €50 deposit, fully refunded after the festival. Costs beyond any conditional travel contribution remain the team's responsibility.",
+        "ja": "応募は無料です。採択団体のみ50ユーロのデポジットを支払い、フェスティバル後に全額返金されます。条件付き渡航補助を超える費用は自己負担です。"
+      },
+      "organizerSupport": {
+        "fr": "Chaque œuvre sélectionnée reçoit 500 à 1 100 € brut selon le nombre d’interprètes, avec une contribution de voyage possible jusqu’à 250 € selon les fonds et conditions. Des prix en espèces, résidences et possibilités de tournée s’ajoutent au concours.",
+        "en": "Each selected work receives a gross €500–€1,100 fee based on cast size, plus possible travel support up to €250 subject to funding and conditions. Cash awards, residencies and touring opportunities are also offered.",
+        "ja": "採択作品には出演人数に応じて税込500〜1,100ユーロの上演料があり、資金・条件により最大250ユーロの渡航補助があります。賞金、レジデンス、ツアー機会も設けられています。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Piste directe et bien documentée pour une courte forme scénique québécoise, y compris sans texte italien. Avant de déposer, vérifier dimensions, sol, agrès, accroches, temps de montage, assurance et budget de voyage au-delà de 250 €.",
+          "en": "A direct, well-documented route for a Quebec short stage work, including work without Italian text. Before applying, verify dimensions, floor, apparatus, rigging, setup time, insurance and travel costs beyond €250.",
+          "ja": "イタリア語でない作品も含め、ケベックの短尺舞台作品にとって根拠が明確な直接応募先です。応募前に寸法、床、器具、吊り、設営時間、保険、250ユーロを超える渡航費を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "siena-art-institute-2027-open",
+    "title": "Siena Art Institute — Artist Residencies 2027",
+    "country": "Italy",
+    "city": "Siena",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-30",
+    "deadlineTimeZone": "Italy time (as published)",
+    "deadlineLabel": {
+      "fr": "Date limite le 30 septembre 2026 à minuit, heure italienne.",
+      "en": "Deadline September 30, 2026 at midnight Italian time.",
+      "ja": "締切は2026年9月30日24:00（イタリア時間）です。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://sienaart.org/call-for-applications-artist-residencies-2027/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes et écrivains du monde entier, toutes disciplines confondues, peuvent demander une ou plusieurs des trois catégories avec une seule candidature. Le programme attend une recherche ou production indépendante et invite les résidents à partager leur travail avec la communauté.",
+        "en": "Artists and writers worldwide, across all disciplines, may apply to one or more of three categories through one application. The program supports independent research or production and invites residents to share work with the community.",
+        "ja": "世界のあらゆる分野のアーティスト・作家が、1回の応募で3カテゴリーのうち複数を希望できます。自主的な研究・制作が中心で、地域との作品共有も期待されます。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature de 50 USD. Le Studio Residency ne comprend pas automatiquement le logement; voyage, séjour non inclus, visa, assurance, matériel et dépenses personnelles doivent être vérifiés selon la catégorie.",
+        "en": "The application fee is USD 50. The Studio Residency does not automatically include lodging; travel, any unincluded accommodation, visa, insurance, materials and personal costs must be checked by category.",
+        "ja": "応募料は50米ドルです。Studio Residencyには住居が自動で含まれないため、カテゴリー別に渡航、対象外の宿泊、ビザ、保険、材料、個人費用を確認する必要があります。"
+      },
+      "organizerSupport": {
+        "fr": "Toutes les catégories fournissent un studio privé. Studio/Casa comprend un appartement d’une chambre; Summer Residency comprend un appartement d’une chambre et une compensation de vol, dont les modalités doivent être confirmées.",
+        "en": "All categories provide a private studio. Studio/Casa includes a one-bedroom apartment; Summer Residency includes a one-bedroom apartment and flight compensation, whose terms should be confirmed.",
+        "ja": "全カテゴリーに専用スタジオがあります。Studio/Casaには1ベッドルーム住居、Summer Residencyには同住居と航空運賃補助が含まれますが、補助条件は確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Le Québec est admissible au titre de l’appel mondial. Comparer soigneusement les trois catégories avant de payer: le niveau de logement et la compensation de vol changent fortement le budget. Pour une pratique scénique, confirmer espace, sol, hauteur, agrès, technique et possibilité de performance.",
+          "en": "Quebec is eligible under the worldwide call. Compare the three categories carefully before paying because lodging and flight compensation materially change the budget. For performance work, confirm space, floor, height, apparatus, technical support and presentation options.",
+          "ja": "世界公募のためケベックから応募できます。住居と航空費補助の有無で予算が大きく変わるため、支払前に3カテゴリーを比較してください。舞台系は空間、床、天井高、器具、技術支援、発表可否の確認が必要です。"
+        }
+      }
+    }
+  },
+  {
+    "id": "anderson-center-2027-residency-open",
+    "title": "Anderson Center — 2027 Artist Residency Program",
+    "country": "United States",
+    "city": "Red Wing, Minnesota",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2027-01-12",
+    "deadlineTimeZone": "CST (as published)",
+    "deadlineLabel": {
+      "fr": "Candidatures ouvertes; date limite le 12 janvier 2027 à midi CST.",
+      "en": "Applications are open; deadline January 12, 2027 at 12:00 noon CST.",
+      "ja": "受付中。締切は2027年1月12日12:00（CST）です。"
+    },
+    "nextCheckDate": "2026-11-15",
+    "sourceUrl": "https://www.andersoncenter.org/residency-program/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Artistes émergents, à mi-carrière ou établis, de toutes disciplines et basés partout dans le monde. Le programme accueille notamment arts visuels, littérature, musique, performance et pratiques interdisciplinaires; les résidences durent de deux à quatre semaines.",
+        "en": "Early-career, mid-career and established artists across all disciplines and based anywhere in the world may apply. The program includes visual, literary, music, performance and interdisciplinary practices; residencies last two to four weeks.",
+        "ja": "世界各地の新進・中堅・実績あるアーティストが全分野から応募できます。視覚芸術、文学、音楽、パフォーマンス、学際分野などが対象で、期間は2〜4週間です。"
+      },
+      "applicantCost": {
+        "fr": "Aucun frais de résidence. Le voyage jusqu’au centre ou à Minneapolis–St. Paul/Red Wing reste à la charge du résident; le programme général n’offre pas de financement additionnel. Vérifier séparément frais de candidature, visa, assurance, matériel et fiscalité.",
+        "en": "There is no residency charge. Residents cover travel to the center or Minneapolis–St. Paul/Red Wing; the general program offers no additional funding. Check application fee, visa, insurance, materials and tax separately.",
+        "ja": "滞在費はありません。現地またはMinneapolis–St. Paul／Red Wingまでの渡航費は本人負担で、一般枠には追加給付がありません。応募料、ビザ、保険、材料、税務は別途確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme fournit chambre, espace de travail et nourriture; un chef prépare les dîners en semaine. Des espaces de pratique sont disponibles pour danse et chorégraphie, ainsi que des pianos pour musiciens. Le transport depuis l’aéroport ou la gare est assuré aux jours d’arrivée et de départ prévus.",
+        "en": "The program provides a room, workspace and food, with chef-prepared weekday dinners. Practice space is available for dance and choreography, and pianos for musicians. Airport or station transport is provided on scheduled arrival and departure days.",
+        "ja": "居室、制作場所、食事が提供され、平日はシェフの夕食があります。ダンス・振付の練習空間や音楽家向けピアノもあり、所定の到着・出発日には空港／駅送迎があります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Candidature directe possible depuis le Québec, indépendamment de la citoyenneté, sous réserve des conditions d’entrée américaines. Le cirque n’est pas nommé: confirmer la catégorie performance, le sol, la hauteur, les accroches, les agrès, les tapis, l’assurance et l’assistance technique avant de payer le voyage.",
+          "en": "A direct application from Quebec is possible regardless of citizenship, subject to U.S. entry requirements. Circus is not named, so confirm the performance category, floor, height, rigging, apparatus, mats, insurance and technical assistance before paying for travel.",
+          "ja": "米国入国条件を満たせば、国籍にかかわらずケベックから直接応募できます。サーカスは明記されていないため、渡航費を確定する前にPerformance枠、床、天井高、吊り、器具、マット、保険、技術支援を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "art-omi-music-2027-upcoming",
+    "title": "Art Omi: Music 2027",
+    "country": "United States",
+    "city": "Ghent, New York",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "upcoming",
+    "deadlineDate": "2026-10-01",
+    "deadlineLabel": {
+      "fr": "Ouverture le 14 août et clôture le 1er octobre 2026; l’heure et le fuseau de clôture ne sont pas publiés.",
+      "en": "Open August 14–October 1, 2026; the closing time and time zone are not published.",
+      "ja": "応募期間は2026年8月14日〜10月1日です。締切時刻とタイムゾーンは掲載されていません。"
+    },
+    "nextCheckDate": "2026-08-14",
+    "sourceUrl": "https://artomi.org/residencies/music/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Compositeurs, musiciens et créateurs sonores de tous genres, profils et pays. Seules les candidatures individuelles sont acceptées; le programme met l’accent sur la création collaborative pendant deux semaines et demie.",
+        "en": "Composers, musicians and sound-makers of all genres, backgrounds and countries may apply. Only individual applications are accepted; the two-and-a-half-week program emphasizes collaborative creation.",
+        "ja": "世界のあらゆるジャンル・背景の作曲家、音楽家、サウンド作家が対象です。個人応募のみで、2週間半の共同制作を重視します。"
+      },
+      "applicantCost": {
+        "fr": "Frais de candidature de 15 USD. Le voyage, le visa, l’assurance, les instruments ou leur transport et les dépenses personnelles ne sont pas annoncés comme couverts.",
+        "en": "The application fee is USD 15. Travel, visa, insurance, instruments or their freight, and personal costs are not stated as covered.",
+        "ja": "応募料は15米ドルです。渡航、ビザ、保険、楽器・輸送、個人費用は主催者負担と記載されていません。"
+      },
+      "organizerSupport": {
+        "fr": "Logement, repas et espace de studio sont fournis sans frais. Le site comprend des espaces de répétition et assure le transport depuis et vers la gare de Hudson, New York.",
+        "en": "Lodging, meals and studio space are provided at no cost. The campus includes rehearsal spaces and transport to and from Hudson, New York train station.",
+        "ja": "住居、食事、スタジオは無料で提供されます。練習空間があり、ニューヨーク州Hudson駅との送迎もあります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Piste internationale directe pour un artiste sonore ou musicien établi au Québec. Préparer une candidature individuelle et budgéter le trajet jusqu’à Hudson; pour une pratique avec performance physique ou dispositif important, confirmer espace, équipement et transport avant de déposer.",
+          "en": "A direct international route for a Quebec-based sound artist or musician. Apply as an individual and budget travel to Hudson; for physically performed or equipment-heavy work, confirm space, equipment and freight before applying.",
+          "ja": "ケベック在住の音楽家・サウンド作家が直接応募できる国際枠です。個人で応募し、Hudsonまでの移動費を見積もってください。身体表現や大型機材を伴う場合は空間・設備・輸送条件を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "art-omi-writers-2028-watch",
+    "title": "Art Omi: Writers and Translation Lab — Next Cycle",
+    "country": "United States",
+    "city": "Ghent, New York",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-07-01",
+    "deadlineTimeZone": "EST (as published)",
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 est clos depuis le 1er juillet 2026 à 23 h 59 EST. Le prochain calendrier n’est pas encore publié; surveiller à partir du printemps 2027.",
+      "en": "The 2027 cycle closed July 1, 2026 at 11:59 PM EST. The next schedule is not yet published; monitor from spring 2027.",
+      "ja": "2027年枠は2026年7月1日23:59 ESTに終了しました。次回日程は未発表のため、2027年春から監視します。"
+    },
+    "nextCheckDate": "2027-05-01",
+    "sourceUrl": "https://artomi.org/event/open-call-2027-writers/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Art Omi: Writers accueille des projets textuels de tous types, dont fiction, non-fiction, théâtre, cinéma et poésie, avec une forte orientation internationale. Translation Lab reçoit des binômes traducteur-auteur travaillant de toute langue vers l’anglais.",
+        "en": "Art Omi: Writers accepts all text-based projects, including fiction, nonfiction, theatre, film and poetry, with a strong international focus. Translation Lab accepts translator-writer teams working from any language into English.",
+        "ja": "フィクション、ノンフィクション、演劇、映画、詩など、あらゆるテキスト企画を国際的に受け入れます。Translation Labは任意言語から英語へ翻訳する翻訳者・作家ペアが対象です。"
+      },
+      "applicantCost": {
+        "fr": "Le cycle 2027 demandait 15 USD. La résidence est sans frais, sauf le voyage, qui reste à la charge du résident; revalider les frais et conditions au prochain appel.",
+        "en": "The 2027 cycle charged USD 15. The residency itself was free except for travel, which residents paid; recheck fees and terms for the next call.",
+        "ja": "2027年枠の応募料は15米ドルでした。滞在費は無料ですが渡航費は本人負担です。次回募集で料金と条件を再確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Logement, repas et espace de travail sont fournis; la résidence propose du temps de création et une communauté internationale. Les dates et prestations du prochain cycle restent à confirmer.",
+        "en": "Lodging, meals and workspace are provided, along with focused creative time and an international community. Dates and provisions for the next cycle remain to be confirmed.",
+        "ja": "住居、食事、制作場所と国際的な交流環境が提供されます。次回枠の日程・支援内容は再確認が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Bonne piste de veille pour auteur, dramaturge ou binôme de traduction établi au Québec. Le cycle est clos: préparer les textes et surveiller le prochain appel sans présenter l’admissibilité future comme acquise.",
+          "en": "A useful watch item for a Quebec-based writer, playwright or translation team. The cycle is closed, so prepare materials and monitor the next call without assuming future terms.",
+          "ja": "ケベック在住の作家、劇作家、翻訳ペアに有力な監視先です。現在は終了しているため、資料を整えつつ次回条件を決めつけずに再確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "headlands-air-next-cycle-watch",
+    "title": "Headlands Center for the Arts — Artist in Residence, Next Cycle",
+    "country": "United States",
+    "city": "Sausalito, California",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Les candidatures AIR 2027 sont closes. Le calendrier du prochain cycle n’est pas encore publié.",
+      "en": "2027 AIR applications are closed. The next cycle schedule is not yet published.",
+      "ja": "2027年AIR募集は終了しています。次回日程はまだ公表されていません。"
+    },
+    "nextCheckDate": "2027-04-01",
+    "sourceUrl": "https://www.headlands.org/programs/",
+    "verifiedAt": "2026-08-05",
+    "decisionGuide": {
+      "access": {
+        "fr": "Résidence destinée à environ 50 artistes locaux, nationaux et internationaux par an, à tous stades de carrière et dans toutes disciplines, dont film, nouveaux médias, écriture, danse, musique, interdisciplinarité et pratique sociale.",
+        "en": "The residency serves about 50 local, national and international artists each year, at all career stages and across all disciplines, including film, new media, writing, dance, music, interdisciplinary and social practice.",
+        "ja": "毎年約50名の地域・国内・海外アーティストを、キャリア段階を問わず全分野から受け入れます。映画、ニューメディア、執筆、ダンス、音楽、学際、ソーシャルプラクティスなどが対象です。"
+      },
+      "applicantCost": {
+        "fr": "Le programme est annoncé comme entièrement financé. Les frais de candidature, conditions fiscales, visa, assurance, matériel et limites du remboursement de voyage doivent être revérifiés au prochain appel.",
+        "en": "The program is described as fully sponsored. Application fee, tax, visa, insurance, materials and travel-reimbursement limits must be rechecked when the next call opens.",
+        "ja": "全額支援型と案内されています。応募料、税務、ビザ、保険、材料、渡航費支援の上限は次回募集時に再確認が必要です。"
+      },
+      "organizerSupport": {
+        "fr": "Résidences de quatre à dix semaines avec studio, repas préparés, logement, voyage et frais de subsistance. Les modalités exactes du prochain cycle ne sont pas encore publiées.",
+        "en": "Four-to-ten-week residencies include studio space, prepared meals, housing, travel and living expenses. Exact terms for the next cycle are not yet published.",
+        "ja": "4〜10週間の滞在で、スタジオ、調理済み食事、住居、渡航費、生活費が含まれます。次回枠の正確な条件は未公表です。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Piste de veille fortement soutenue pour artistes du Québec, sans restriction internationale publiée. Le cirque n’est pas nommé: au prochain appel, confirmer la catégorie, le sol, la hauteur, les accroches, les agrès, les tapis, la sécurité, l’assurance et le périmètre du voyage couvert.",
+          "en": "A strongly supported watch item for Quebec artists, with international participation explicitly included. Circus is not named, so at the next call confirm category, floor, height, rigging, apparatus, mats, safety, insurance and the scope of covered travel.",
+          "ja": "国際参加が明記された、ケベックのアーティスト向け高支援の監視先です。サーカスは明記されていないため、次回募集時に分野、床、天井高、吊り、器具、マット、安全、保険、渡航費支援範囲を確認してください。"
+        }
+      }
+    }
   }
 ]
