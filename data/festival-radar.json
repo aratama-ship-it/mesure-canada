@@ -10817,5 +10817,139 @@
         }
       }
     }
+  },
+  {
+    "id": "plexus-remote-residency-2026-open",
+    "title": "Plexus Projects — Remote Artist Residency 2026–27",
+    "country": "United States",
+    "city": "Remote",
+    "region": "Global",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-08-15",
+    "deadlineTimeZone": "EDT",
+    "deadlineLabel": {
+      "fr": "Candidatures internationales ouvertes jusqu’au 15 août 2026 à minuit; les sessions à distance vont d’août 2026 à juillet 2027.",
+      "en": "International applications are open until August 15, 2026 at midnight; remote sessions run August 2026–July 2027.",
+      "ja": "国際応募は2026年8月15日深夜まで受付中。リモートセッションは2026年8月〜2027年7月です。"
+    },
+    "nextCheckDate": "2026-08-12",
+    "sourceUrl": "https://www.plexusprojects.org/open-call-remote-artist-residency",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Plexus propose une résidence virtuelle interdisciplinaire mondiale, ouverte toute l’année aux artistes de tout médium. Les échanges se font en anglais sur Zoom, avec possibilité de chat Zoom via des outils de traduction; le choix d’un à six parcours mensuels structure le séjour.",
+        "en": "Plexus offers an interdisciplinary global virtual residency, year-round and open to artists in any medium. Communication is in English on Zoom, with Zoom chat available through translation tools; choosing one to six monthly tracks structures the stay.",
+        "ja": "Plexusは、あらゆる媒体のアーティストに通年で開かれた学際的な世界向けオンライン滞在を提供します。やり取りは英語とZoomで行い、翻訳ツールによるZoomチャットも利用可能です。1〜6本の月ごとのトラックを選んで滞在を組み立てます。"
+      },
+      "applicantCost": {
+        "fr": "La candidature est gratuite, mais chaque parcours mensuel coûte 600 USD. Des bourses partielles ne sont annoncées que pour des membres de la communauté Plexus et des ancien·nes participant·es; demander par écrit conversion, taxes, paiement, annulation et conditions d’aide avant de réserver plusieurs parcours.",
+        "en": "Applying is free, but each monthly track costs USD 600. Partial scholarships are announced only for Plexus community members and past Plexus residency or exhibition alumni; request written terms for currency conversion, tax, payment, cancellation, and aid before booking multiple tracks.",
+        "ja": "応募は無料ですが、各月トラックは600米ドルです。部分奨学金はPlexusコミュニティ会員と過去のPlexus滞在・展覧会参加者にのみ案内されています。複数トラックを申し込む前に、為替、税、支払い、取消、支援条件を書面で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Une à six mensualités comprenant rendez-vous hebdomadaires individuels, mentorat de pratique et conseil de projet, ressources et fiches de travail. Le parcours Project Advising peut inclure une exposition personnelle en ligne; les dossiers sont examinés périodiquement.",
+        "en": "One to six months with weekly one-to-one meetings, studio-practice mentorship and project advising, plus residency resources and worksheets. The Project Advising track can include an online solo exhibition; applications are reviewed periodically.",
+        "ja": "1〜6か月で、毎週の個別面談、制作実践のメンタリングと企画助言、滞在用リソースとワークシートがあります。Project Advisingトラックではオンライン個展の機会もあり、応募は定期的に審査されます。"
+      },
+      "quebecAssessment": {
+        "state": "self_funded",
+        "note": {
+          "fr": "Voie internationale directement accessible depuis le Québec, mais principalement autofinancée à 600 USD par parcours mensuel. Évaluer le bénéfice du mentorat à distance, le fuseau horaire et le coût total avant de déposer; ne présumer aucune bourse.",
+          "en": "A directly accessible international route from Quebec, but mainly self-funded at USD 600 per monthly track. Assess the value of remote mentorship, time zone, and total cost before applying; do not assume scholarship support.",
+          "ja": "ケベックから直接利用できる国際ルートですが、月ごとのトラック600米ドルが基本の自己負担です。応募前に遠隔メンタリングの価値、時差、総費用を見極め、奨学金が得られる前提にはしないでください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "tokyo-biennale-social-dive-2027-open",
+    "title": "Tokyo Biennale 2027 — SOCIAL DIVE Open Call",
+    "country": "Japan",
+    "city": "Tokyo",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "open",
+    "deadlineDate": "2026-09-30",
+    "deadlineTimeZone": "JST",
+    "deadlineLabel": {
+      "fr": "Propositions internationales ouvertes jusqu’au 30 septembre 2026 à 23 h 59 JST pour Tokyo Biennale 2027.",
+      "en": "International proposals are open until September 30, 2026 at 23:59 JST for Tokyo Biennale 2027.",
+      "ja": "東京ビエンナーレ2027の国際提案は2026年9月30日23:59 JSTまで受付中です。"
+    },
+    "nextCheckDate": "2026-09-15",
+    "sourceUrl": "https://socialdive.jp/en/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Ouvert aux artistes, commissaires, chercheur·euses, collectifs et praticien·nes connexes, au Japon comme à l’étranger, dès 18 ans, sans restriction de nationalité, résidence ou base. Il faut pouvoir mener recherche, production en résidence, collaboration locale et présentation publique à Tokyo; proposition individuelle ou de groupe, une seule par candidature.",
+        "en": "Open to artists, curators, researchers, collectives, and related practitioners in Japan and abroad, age 18 or over, with no nationality, residence, or base restriction. Applicants must be able to undertake research, residency-based production, local collaboration, and public presentation in Tokyo; individuals and groups may submit one proposal.",
+        "ja": "日本国内外のアーティスト、キュレーター、研究者、コレクティブ、関連実践者が対象で、18歳以上なら国籍・居住地・活動拠点の制限はありません。東京でのリサーチ、滞在制作、地域との協働、公開発表を行えることが必要です。個人・グループとも応募でき、1応募につき提案は1件です。"
+      },
+      "applicantCost": {
+        "fr": "Aucun frais de candidature n’est publié. Les documents doivent être en anglais ou japonais et l’envoi du formulaire exige un compte Google. Vérifier visa, assurance, fiscalité, dépenses au-delà des plafonds, matériel, accessibilité et éventuels coûts de collaboration avant de bâtir le budget.",
+        "en": "No application fee is published. Materials must be in English or Japanese and the form requires a Google account. Verify visa, insurance, tax, expenses above the caps, materials, accessibility, and any collaboration costs before building the budget.",
+        "ja": "応募料は公表されていません。書類は英語または日本語で、応募フォームの送信にはGoogleアカウントが必要です。予算を組む前に、ビザ、保険、税、上限を超える費用、材料、アクセシビリティ、協働に伴う費用を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Soutien annoncé: aller-retour jusqu’à 300 000 JPY pour une personne, hébergement à Tokyo, coordination de lieu, jusqu’à 200 000 JPY de développement, honoraires de 100 000 JPY, interprétation et traduction, et lettre d’invitation. Les lieux et la forme finale seront déterminés avec le secrétariat après sélection.",
+        "en": "Published support: return travel up to JPY 300,000 for one person, Tokyo accommodation, venue coordination, up to JPY 200,000 for project development, JPY 100,000 honorarium, interpretation and translation, and an invitation letter. Site and final format are determined with the secretariat after selection.",
+        "ja": "案内された支援は、1人分の往復渡航費最大30万円、東京での宿泊、会場調整、制作費最大20万円、謝金10万円、通訳・翻訳、招聘状です。会場と最終形式は採択後に事務局と調整して決まります。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Voie internationale fortement étayée pour une proposition ancrée dans les quartiers et partenaires de Tokyo. Construire un budget réaliste dans les plafonds, prévoir une présence durable et expliciter collaboration, sécurité, accessibilité, droits et documentation; confirmer visa et fiscalité canadienne et japonaise.",
+          "en": "A well-supported international route for a proposal grounded in Tokyo neighbourhoods and partners. Build a realistic budget within the caps, plan sustained presence, and address collaboration, safety, accessibility, rights, and documentation; confirm Canadian and Japanese visa and tax requirements.",
+          "ja": "東京の地域と協働相手に根差した提案に、支援の厚い国際ルートです。上限内で現実的な予算を組み、継続的な滞在を見込み、協働、安全、アクセシビリティ、権利、記録を明示してください。カナダと日本のビザ・税務要件も確認します。"
+        }
+      }
+    }
+  },
+  {
+    "id": "light-work-air-2028-next-watch",
+    "title": "Light Work Artist-in-Residence Program 2028",
+    "country": "United States",
+    "city": "Syracuse, New York",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": null,
+    "deadlineLabel": {
+      "fr": "Le cycle 2027 est fermé; Light Work annonce l’ouverture prochaine des candidatures 2028.",
+      "en": "The 2027 cycle is closed; Light Work says 2028 applications will open soon.",
+      "ja": "2027年サイクルは終了し、Light Workは2028年応募をまもなく開始すると案内しています。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.lightwork.org/air/",
+    "verifiedAt": "2026-08-06",
+    "decisionGuide": {
+      "access": {
+        "fr": "Programme international pour artistes de tout pays travaillant en photographie ou médias fondés sur l’image. Light Work accueille chaque année douze à quinze artistes à Syracuse pendant un mois; surveiller l’ouverture 2028 et les règles précises du formulaire avant de préparer un dossier.",
+        "en": "An international program for artists from any country working in photography or image-based media. Light Work hosts 12 to 15 artists in Syracuse for one month each year; monitor the 2028 opening and exact form rules before preparing a submission.",
+        "ja": "写真またはイメージベースのメディアで活動する、あらゆる国のアーティスト向け国際プログラムです。Light Workは毎年12〜15人をシラキュースに1か月招きます。応募準備前に2028年の開始とフォームの詳細条件を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "La page actuelle ne publie ni frais de candidature, ni voyage, visa, assurance, fiscalité, matériel, accompagnant·es ou autres coûts à la charge de l’artiste. Le programme annonce une allocation de 7 500 USD, mais confirmer tous les coûts non couverts et conditions de paiement lors de l’ouverture 2028.",
+        "en": "The current page publishes no application fee, travel, visa, insurance, tax, materials, companion, or other artist-borne cost terms. The program announces a USD 7,500 stipend, but confirm all uncovered costs and payment conditions when 2028 opens.",
+        "ja": "現在のページには、応募料、渡航、ビザ、保険、税、材料、同行者、その他本人負担に関する条件は掲載されていません。プログラムは7,500米ドルの給付を案内していますが、2028年開始時に対象外費用と支払い条件をすべて確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Résidence d’un mois avec allocation de 7 500 USD, appartement meublé, accès 24 h/24 aux installations, soutien généreux du personnel et publication du travail dans une édition spéciale de Contact Sheet: The Light Work Annual avec essai commandé.",
+        "en": "A one-month residency with a USD 7,500 stipend, furnished artist apartment, 24-hour facilities access, substantial staff support, and publication in a special edition of Contact Sheet: The Light Work Annual with a commissioned essay.",
+        "ja": "1か月の滞在で、7,500米ドルの給付、家具付きアーティスト用アパート、24時間の設備利用、手厚いスタッフ支援があり、作品は依頼エッセイ付きでContact Sheet: The Light Work Annualの特別版に掲載されます。"
+      },
+      "quebecAssessment": {
+        "state": "supported",
+        "note": {
+          "fr": "Piste internationale directe et matériellement soutenue pour une pratique photographique ou image. Attendre l’ouverture 2028, puis vérifier la date, le coût de candidature, le calendrier de résidence, voyage, visa et fiscalité avant de payer ou d’expédier des œuvres.",
+          "en": "A direct, materially supported international route for a photography or image-based practice. Await the 2028 opening, then verify deadline, application cost, residency schedule, travel, visa, and tax before paying or shipping work.",
+          "ja": "写真・イメージベースの実践に直接開かれ、物的支援のある国際候補です。2028年の開始を待ち、支払いや作品発送の前に締切、応募費用、滞在日程、渡航、ビザ、税務を確認してください。"
+        }
+      }
+    }
   }
 ]
