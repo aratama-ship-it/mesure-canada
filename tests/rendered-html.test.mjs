@@ -943,7 +943,7 @@ test("opportunity and funding records preserve evidence fields", async () => {
   assert.match(festivalRadar.find((record) => record.id === "nelson-fringe-2027-upcoming").decisionGuide.applicantCost.ja, /60％/);
   assert.match(festivalRadar.find((record) => record.id === "new-zealand-fringe-2027-watch").decisionGuide.applicantCost.ja, /2026年/);
   assert.match(festivalRadar.find((record) => record.id === "fiams-saguenay-2027-open").decisionGuide.organizerSupport.ja, /出演料交渉/);
-  assert.equal(festivalRadar.find((record) => record.id === "iffr-2027").nextCheckDate, "2026-08-07");
+  assert.equal(festivalRadar.find((record) => record.id === "iffr-2027").nextCheckDate, "2026-08-14");
   assert.equal(festivalRadar.find((record) => record.id === "ikf-freiburg-public-space-2027-open").deadlineDate, "2026-09-14");
   assert.equal(festivalRadar.find((record) => record.id === "ikf-freiburg-public-space-2027-open").decisionGuide.quebecAssessment.state, "self_funded");
   assert.match(festivalRadar.find((record) => record.id === "ikf-freiburg-public-space-2027-open").decisionGuide.applicantCost.ja, /400ユーロ/);
@@ -1071,9 +1071,11 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "aoca-africa-circus-partner-route-2027",
     "prague-fringe-2027",
   ]) {
-    const expectedVerifiedAt = ["cairo-film-2026", "cubadupa-2027-open", "imaginarius-2027", "sundance-film-2027"].includes(id)
-      ? "2026-08-05"
-      : "2026-07-30";
+    const expectedVerifiedAt = ["cubadupa-2027-open", "iffr-2027"].includes(id)
+      ? "2026-08-07"
+      : ["cairo-film-2026", "imaginarius-2027", "sundance-film-2027"].includes(id)
+        ? "2026-08-05"
+        : "2026-07-30";
     assert.equal(festivalRadar.find((record) => record.id === id).verifiedAt, expectedVerifiedAt, `${id} should use the current source audit`);
   }
   const directorsInTya = festivalRadar.find((record) => record.id === "directors-in-tya-2027-open");
