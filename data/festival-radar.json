@@ -6162,9 +6162,9 @@
       "en": "The 2026 page still accepts performer inquiries from busker, circus, and variety acts with no published deadline. It starts an inquiry rather than a booking. Since the 22-performer lineup is already published for the August 7–9 festival, first confirm whether any 2026 availability remains.",
       "ja": "2026年ページでは大道芸、サーカス、バラエティー演目の出演問い合わせを引き続き受け付け、締切日の記載はありません。ただし予約確定ではなく問い合わせ開始です。8月7〜9日の出演者22組は既に公開済みのため、2026年枠が残っているかを先に確認してください。"
     },
-    "nextCheckDate": "2026-08-06",
+    "nextCheckDate": "2026-08-10",
     "sourceUrl": "https://www.ottawabuskerfestival.com/get-involved/",
-    "verifiedAt": "2026-08-05",
+    "verifiedAt": "2026-08-06",
     "decisionGuide": {
       "access": {
         "fr": "La page invite les buskers et numéros de cirque ou de variété à envoyer une demande. Le bouton amorce une prise de contact; aucune admissibilité géographique détaillée n’est publiée.",
@@ -6192,7 +6192,7 @@
     },
     "fundingReview": {
       "status": "pending_terms",
-      "verifiedAt": "2026-08-05",
+      "verifiedAt": "2026-08-06",
       "note": {
         "fr": "La page ouvre une prise de contact mais ne publie aucune condition financière. Attendre une offre de programmation écrite avant de relier des frais admissibles à une aide.",
         "en": "The page opens an inquiry but publishes no financial terms. Wait for a written programming offer before linking eligible costs to funding.",

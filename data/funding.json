@@ -288,7 +288,7 @@
   {
     "id": "cam-collectives",
     "deadlineDate": "2026-08-19",
-    "nextCheckDate": "2026-08-05",
+    "nextCheckDate": "2026-08-19",
     "name": "CAM — Aide aux projets pour les collectifs d’artistes",
     "funder": "Conseil des arts de Montréal",
     "profiles": ["collective"],
@@ -296,7 +296,7 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "Prochaine échéance : 19 août 2026", "en": "Next deadline: August 19, 2026", "ja": "次回締切：2026年8月19日" },
+    "deadline": { "fr": "Prochaine échéance : 19 août 2026, 17 h", "en": "Next deadline: August 19, 2026, 5:00 p.m.", "ja": "次回締切：2026年8月19日17:00" },
     "amount": { "fr": "Montant selon le projet et le cadre du programme", "en": "Amount varies by project and program framework", "ja": "プロジェクト内容と制度の枠組みにより異なる" },
     "coverage": ["research", "creation", "production"],
     "cashflow": { "fr": "Modalités de versement décrites dans le programme", "en": "Payment terms are described in the program", "ja": "支給条件は制度要項に記載" },
@@ -309,10 +309,10 @@
         "ja": "申請代表者は市民または永住者でモントリオール島内居住が必要です。メンバーの3分の2以上も市民または永住者でなければなりません。"
       },
       "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-08-06"
     },
     "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-08-06"
   },
   {
     "id": "oac-touring",
