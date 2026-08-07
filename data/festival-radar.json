@@ -12328,5 +12328,137 @@
         }
       }
     }
+  },
+  {
+    "id": "ibermusicas-artist-researcher-residencies-2026-open",
+    "title": "Ibermúsicas — Support for Artists and Researchers in Residencies 2026",
+    "country": "Brazil",
+    "city": "Brasília",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-10-01",
+    "deadlineLabel": {
+      "fr": "Les candidatures Ibermúsicas ferment le 1er octobre 2026.",
+      "en": "Ibermúsicas applications close October 1, 2026.",
+      "ja": "Ibermúsicasの応募締切は2026年10月1日です。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-ibermusicas-convocatorias-2026/apoio-a-artistas-e-pesquisadores-para-residencias",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "L’appel vise compositeur·rices, groupes musicaux et chercheur·ses ibéro-américain·es, de nationalité ou résidence certifiée au Brésil, Chili, Colombie, Costa Rica, Cuba, Équateur, Espagne, Mexique, Panama, Paraguay, Pérou, Portugal, Uruguay ou Venezuela. La résidence de création ou recherche musicale peut se tenir dans tout pays, mais une personne résidant à l’étranger ne peut pas proposer son pays d’origine ou de résidence. Une lettre d’invitation de l’hôte est obligatoire.",
+        "en": "The call is for Ibero-American composers, music groups, and researchers with nationality or certified residence in Brazil, Chile, Colombia, Costa Rica, Cuba, Ecuador, Spain, Mexico, Panama, Paraguay, Peru, Portugal, Uruguay, or Venezuela. A music-creation or research residency may take place in any country, but a person living abroad cannot propose their country of origin or residence. A host invitation letter is required.",
+        "ja": "この公募は、ブラジル、チリ、コロンビア、コスタリカ、キューバ、エクアドル、スペイン、メキシコ、パナマ、パラグアイ、ペルー、ポルトガル、ウルグアイ、ベネズエラの国籍または証明可能な居住を持つイベロアメリカの作曲家、音楽グループ、研究者向けです。音楽の創作・研究レジデンスはどの国でも実施できますが、海外居住者は出身国または居住国を実施地として提案できません。受入機関の招待状が必須です。"
+      },
+      "applicantCost": {
+        "fr": "Le soutien est au maximum de 5 000 USD, ou 5 000 EUR pour des propositions d’Espagne ou du Portugal, et Ibermúsicas peut ne financer qu’une partie de la demande. La page ne détaille pas assurance, visa, fiscalité, dépenses de personne accompagnante, matériel, hébergement ou dépassement de budget; les confirmer dans le règlement et avec l’hôte.",
+        "en": "Support is up to USD 5,000, or EUR 5,000 for proposals from Spain or Portugal, and Ibermúsicas may fund only part of a request. The page does not detail insurance, visa, tax, companion, materials, accommodation, or budget-overrun costs; confirm them in the rules and with the host.",
+        "ja": "支援は最大5,000米ドルで、スペインまたはポルトガルからの提案は5,000ユーロです。Ibermúsicasは申請の一部のみを支援する場合があります。保険、ビザ、税、同行者、材料、宿泊、予算超過費はページに詳細がないため、規定と受入先で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme intergouvernemental Ibermúsicas est présidé par le Brésil via Funarte et le ministère de la Culture. Les résultats sont annoncés le 27 novembre 2026 sur le site Ibermúsicas. La résidence proposée doit porter sur création ou recherche musicale à l’international; vérifier modalités de versement, calendrier de réalisation et obligations de rapport dans le règlement complet.",
+        "en": "The intergovernmental Ibermúsicas programme is chaired by Brazil through Funarte and the Ministry of Culture. Results are announced November 27, 2026 on the Ibermúsicas site. The proposed residency must be international music creation or research; verify payment mechanics, delivery timing, and reporting duties in the full rules.",
+        "ja": "政府間プログラムIbermúsicasは、Funarteと文化省を通じてブラジルが議長国を務めています。結果は2026年11月27日にIbermúsicasサイトで発表されます。提案するレジデンスは国際的な音楽創作または研究である必要があり、支払い方法、実施時期、報告義務は完全な規定で確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une personne basée seulement au Québec n’a pas de voie directe, car Canada et Québec ne figurent pas parmi les nationalités ou résidences publiées. Pour un profil québécois ayant une nationalité ou résidence admissible, vérifier pays de réalisation, lettre d’invitation, financement partiel et règles complètes avant dépôt.",
+          "en": "A person based only in Quebec has no direct route because Canada and Quebec are not among the published nationalities or residences. For a Quebec profile with an eligible nationality or residence, verify the project country, invitation letter, partial funding, and full rules before applying.",
+          "ja": "カナダとケベックは公表された国籍・居住地に含まれないため、ケベックのみを拠点とする人に直接ルートはありません。適格な国籍または居住を持つケベックの人は、応募前に実施国、招待状、部分支援、完全な規定を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "iberescena-creation-residency-2026-next-watch",
+    "title": "Iberescena — Creation in Residency Support 2026–2027",
+    "country": "Brazil",
+    "city": "Brasília",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-07-23",
+    "deadlineLabel": {
+      "fr": "L’appel Iberescena 2026–2027 fermait le 23 juillet; surveiller la prochaine édition.",
+      "en": "The 2026–2027 Iberescena call closed July 23; monitor the next edition.",
+      "ja": "Iberescena 2026〜2027の応募は7月23日に終了しました。次回公募を確認してください。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://www.gov.br/funarte/pt-br/editais-1/2026/programa-ibercena-convocatoria-2026-2027/apoio-a-criacao-em-residencia",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cette ligne soutenait recherche dramaturgique, chorégraphique ou scénique mettant en dialogue des créateur·rices de différents pays ibéro-américains. Peuvent candidater compagnies, groupes, organisations et centres de création. La page publique liste 18 pays membres mais ne détaille pas dans cette synthèse les règles de nationalité, résidence, statut juridique, coproducteur ou partenaire d’accueil: les vérifier dans le règlement complet avant de supposer une voie québécoise.",
+        "en": "This line supported dramaturgical, choreographic, or stage research bringing creators from different Ibero-American countries into artistic dialogue. Companies, groups, organizations, and creation centers could apply. The public page lists 18 member countries but does not detail nationality, residence, legal-entity, co-producer, or host-partner rules in this summary: verify them in the full rules before assuming a Quebec route.",
+        "ja": "この枠は、異なるイベロアメリカ諸国の創作者を芸術的対話へつなぐ、劇作・振付・舞台のリサーチを支援していました。カンパニー、グループ、団体、創作センターが申請できました。公開ページは18の加盟国を挙げますが、この要約には国籍、居住、法人格、共同制作者、受入パートナーの規則が詳しくありません。ケベックからのルートを想定する前に完全な規定を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Le soutien publié est jusqu’à 10 000 EUR par projet et l’inscription était gratuite. La page ne précise pas ventilation des dépenses, assurance, visa, fiscalité, voyages, matériel, frais de partenaire ou dépenses excédentaires; les vérifier dans les bases de l’appel et les accords entre partenaires.",
+        "en": "Published support is up to EUR 10,000 per project and applications were free. The page does not specify expense allocation, insurance, visa, tax, travel, materials, partner fees, or overrun costs; verify them in the call rules and partner agreements.",
+        "ja": "公表された支援は1企画あたり最大1万ユーロで、申請は無料でした。費目配分、保険、ビザ、税、渡航、材料、パートナー費、超過費はページに明記されていないため、公募規定とパートナー間の合意で確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Iberescena est le fonds ibéro-américain d’appui aux arts de la scène, auquel Funarte représente le Brésil. Les projets sélectionnés devaient être annoncés en décembre 2026 et réalisés entre janvier et décembre 2027. Le programme réunit 18 pays membres; confirmer accompagnement de mobilité, sélection, versement et exigences de production auprès du prochain appel.",
+        "en": "Iberescena is the Ibero-American performing-arts support fund, with Funarte representing Brazil. Selected projects were to be announced in December 2026 and delivered from January through December 2027. The programme includes 18 member countries; confirm mobility support, selection, payment, and production requirements in the next call.",
+        "ja": "Iberescenaはイベロアメリカの舞台芸術支援基金で、ブラジルはFunarteが代表しています。採択企画は2026年12月に発表され、2027年1月〜12月に実施予定でした。プログラムには18の加盟国があり、移動支援、選考、支払い、制作要件は次回公募で確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Le financement peut être pertinent pour une collaboration ibéro-américaine, mais la page publique ne prouve pas une admissibilité autonome du Québec. Vérifier nationalité ou résidence, entité demandeuse, partenaire de pays membre, règles de co-création et budget avant toute dépense ou dépôt.",
+          "en": "Funding may be relevant to an Ibero-American collaboration, but the public page does not prove standalone Quebec eligibility. Verify nationality or residence, applicant entity, member-country partner, co-creation rules, and budget before spending or applying.",
+          "ja": "この資金はイベロアメリカとの協働に関連する可能性がありますが、公開ページはケベック単独での適格性を証明していません。費用をかけたり応募したりする前に、国籍・居住、申請主体、加盟国のパートナー、共同制作規則、予算を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "ramdam-extended-possibilities-2027-next-watch",
+    "title": "RAMDAM — Extended Possibilities Residency 2027",
+    "country": "France",
+    "city": "Sainte-Foy-lès-Lyon",
+    "region": "Europe",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-07-22",
+    "deadlineLabel": {
+      "fr": "L’appel Extended Possibilities 2027 fermait le 22 juillet; surveiller une prochaine édition.",
+      "en": "The 2027 Extended Possibilities call closed July 22; monitor a future edition.",
+      "ja": "Extended Possibilities 2027の応募は7月22日に終了しました。次回公募を確認してください。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://ramdamcda.org/actualite-ramdam/extended-possibilities-residency-call",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "L’appel accueillait une ou deux équipes, jusqu’à cinq artistes, pour création, recherche ou expérimentation dans toutes disciplines, avec disponibilité du 1er février au 15 mars 2027. Les personnes devaient résider dans les pays éligibles à Culture Moves Europe; France hexagonale est explicitement exclue. La liste complète de pays, et non une résidence québécoise seule, doit être vérifiée avant candidature.",
+        "en": "The call hosted one or two teams of up to five artists for creation, research, or experimentation in any discipline, available February 1–March 15, 2027. Participants had to reside in Culture Moves Europe eligible countries; mainland France was explicitly excluded. Verify the full country list rather than assuming a Quebec-only residence qualifies.",
+        "ja": "この公募は、全分野の創作・研究・実験に取り組む最大5名の1〜2チームを対象とし、2027年2月1日〜3月15日に参加可能であることを求めていました。参加者はCulture Moves Europeの対象国に居住している必要があり、フランス本土は明示的に除外されます。ケベックのみの居住が適格と想定せず、対象国の完全な一覧を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "Chaque résident·e reçoit 1 350 EUR de subsistance, plus 400 EUR de voyage sous 5 000 km ou 800 EUR à partir de 5 000 km; 400 EUR de mobilité verte, 120 EUR de visa, 175 EUR pour OCT/OR et 200 EUR par enfant peuvent s’ajouter selon conditions. L’équipe assume les aspects techniques de sa résidence. Confirmer matériel, assurance, hébergement familial, dépenses additionnelles et accessibilité du trajet.",
+        "en": "Each resident receives EUR 1,350 subsistence plus EUR 400 travel below 5,000 km or EUR 800 from 5,000 km; EUR 400 green-mobility, EUR 120 visa, EUR 175 OCT/OR, and EUR 200-per-child top-ups may apply. The team handles the technical aspects of its residency. Confirm materials, insurance, family housing, extra costs, and travel accessibility.",
+        "ja": "各滞在者には1,350ユーロの生活手当に加え、5,000km未満なら400ユーロ、5,000km以上なら800ユーロの渡航支援があります。条件により、グリーン移動400ユーロ、ビザ120ユーロ、OCT/OR175ユーロ、子ども1人あたり200ユーロの追加支援があります。チームはレジデンスの技術面を自身で担います。材料、保険、家族宿泊、追加費用、移動のアクセシビリティを確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "RAMDAM proposait 45 jours sur site, logement collectif, outils techniques, soutien technique et présentation publique du travail en cours. Les espaces de vie et travail sont accessibles en fauteuil, mais l’accès en transports publics peut être difficile pour certaines personnes handicapées; un soutien d’accessibilité Culture Moves Europe est prévu selon besoin. La résidence ne requiert pas une œuvre terminée.",
+        "en": "RAMDAM offered 45 days on site, collective housing, technical facilities, technical support, and a public presentation of work in progress. Living and working spaces are wheelchair accessible, but public-transport access can be difficult for some disabled people; Culture Moves Europe accessibility support is available by need. The residency does not require a finished work.",
+        "ja": "RAMDAMは45日間の現地滞在、共同宿泊、技術設備、技術支援、進行中の作品の公開発表を提供していました。居住・作業空間は車椅子で利用できますが、公共交通での到達は一部の障害のある人には難しい場合があります。必要に応じてCulture Moves Europeのアクセシビリティ支援があります。完成作品は必要ありません。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Soutien détaillé mais règle de résidence Culture Moves Europe fermée à une candidature autonome depuis le Québec. Pour une personne ayant une résidence légale dans un pays éligible, vérifier liste, distance, frais techniques, accessibilité, visa et prochaine ouverture avant candidature.",
+          "en": "Support is detailed, but the Culture Moves Europe residence rule is closed to an independent Quebec application. A person legally resident in an eligible country should verify the list, distance, technical costs, access, visa, and next opening before applying.",
+          "ja": "支援内容は詳細ですが、Culture Moves Europeの居住要件によりケベックからの単独応募には開かれていません。対象国に合法的に居住する人は、応募前に一覧、距離、技術費、アクセシビリティ、ビザ、次回公募を確認してください。"
+        }
+      }
+    }
   }
 ]
