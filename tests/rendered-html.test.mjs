@@ -156,7 +156,7 @@ test("server-renders the monitoring ledger on its own route", async () => {
   assert.match(html, /EEST \(UTC\+3\)/);
   assert.match(html, />JST</);
   assert.match(html, /Heure locale à confirmer/);
-  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 343);
+  assert.equal([...html.matchAll(/class="radar-row"/g)].length, 350);
   assert.match(html, /Retour à la recherche d’occasions/);
   assert.doesNotMatch(html, /class="workbench"/);
 });
@@ -837,6 +837,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "goethe-file-not-found-arsenal-berlin-2026-next-watch",
     "goethe-file-not-found-imagine-ic-amsterdam-2026-next-watch",
     "goethe-file-not-found-veha-podlasie-2026-next-watch",
+    "goethe-project-space-southern-africa-2026-next-watch",
+    "goethe-networks-of-belonging-east-africa-2026-next-watch",
+    "deniz-villalari-ecological-crossings-2026-next-watch",
+    "confluence-of-myths-tra-vinh-2026-open",
+    "every-body-in-motion-vietnam-2026-next-watch",
+    "truth-lab-southern-africa-2026-next-watch",
+    "goethe-gallery-johannesburg-2026-next-watch",
   ];
   assert.equal(festivalRadar.filter((record) => record.decisionGuide).length, radarDecisionGuideIds.length);
   assert.equal(festivalRadar.filter((record) => record.status === "open" && !record.decisionGuide).length, 0, "Every open radar record must expose a practical decision guide");
