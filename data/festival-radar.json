@@ -12196,5 +12196,137 @@
         }
       }
     }
+  },
+  {
+    "id": "gas-fellowship-nigerian-emerging-visual-2026-next-watch",
+    "title": "G.A.S. Foundation — Nigerian Emerging Visual Artists Fellowship 2026",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-18",
+    "deadlineLabel": {
+      "fr": "La candidature 2026 pour les artistes visuels émergents nigérians fermait le 18 janvier; surveiller le prochain appel G.A.S.",
+      "en": "The 2026 Nigerian emerging-artist application closed January 18; monitor G.A.S.’s next call.",
+      "ja": "ナイジェリアの新進ビジュアルアーティスト向け2026年応募は1月18日に終了しました。G.A.S.の次回公募を確認してください。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://www.guestartistsspace.com/Portals/1/Info%20Pack%202026_G.A.S.%20Fellowship%20Award%202026_V2.pdf#page=6",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cette catégorie exigeait nationalité nigériane et résidence actuelle au Nigeria, pratique professionnelle émergente des arts visuels depuis trois à six ans, anglais oral et écrit, référence d’un·e commissaire ou galeriste, et intérêt pour le contexte de Lagos. Les médiums publiés incluent peinture, dessin, sculpture, estampe, photographie, installation, performance, vidéo et nouveaux médias. Une base seulement québécoise n’est pas admissible directement.",
+        "en": "This category required Nigerian nationality and current residence in Nigeria, three to six years of emerging professional visual-art practice, spoken and written English, a curator or gallerist reference, and interest in the Lagos context. Published media include painting, drawing, sculpture, printmaking, photography, installation, performance, video, and new media. A Quebec-only base is not directly eligible.",
+        "ja": "このカテゴリーは、ナイジェリア国籍かつナイジェリア在住、3〜6年の新進の専門的ビジュアルアート実践、英語の読み書きと会話、キュレーターまたはギャラリストの推薦、ラゴスの文脈への関心を求めていました。公表された分野には絵画、ドローイング、彫刻、版画、写真、インスタレーション、パフォーマンス、映像、新しいメディアが含まれます。ケベックのみを拠点とする応募は直接の対象ではありません。"
+      },
+      "applicantCost": {
+        "fr": "L’aide publiée comprend 1 900 000 NGN pour allocation, voyage et matériel, ainsi que 760 000 NGN d’honoraires; elle contribue nourriture, vie courante, matériel et vol économique ou transport vers Lagos. Les excursions hors Lagos, sauf la Farm House G.A.S., restent à la charge du résident. Confirmer visa, assurance, fiscalité, accompagnant·e et matériaux spécialisés.",
+        "en": "Published support includes NGN 1,900,000 for stipend, travel, and materials plus a NGN 760,000 honorarium; it contributes to food, living costs, materials, and economy flights or transport to Lagos. Trips outside Lagos, except to the G.A.S. Farm House, remain the resident’s cost. Confirm visa, insurance, tax, companion, and specialist-material costs.",
+        "ja": "公表された支援には、手当・渡航・材料のための190万ナイラと、76万ナイラの謝礼が含まれ、食費、生活費、材料、ラゴスへのエコノミー航空券または交通を補助します。G.A.S. Farm Houseを除くラゴス外への旅行は滞在者負担です。ビザ、保険、税、同行者、専門材料の費用を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "G.A.S. accueille les fellows à Lagos pendant quatre semaines, avec chambre privée et salle de bain, espace atelier/événement partagé, cuisine, bibliothèque et archives, un repas cuisiné chaque jour ouvrable, équipe sur place, chauffeur, sécurité et soutien de production. La personne sélectionnée prépare aussi un événement d’engagement communautaire durant les dernières semaines.",
+        "en": "G.A.S. hosts fellows in Lagos for four weeks with a private ensuite bedroom, shared studio/event space, kitchen, library and archive, one cooked weekday meal, on-site staff, driver, security, and production support. The selected person also prepares a community-engagement event in the final weeks.",
+        "ja": "G.A.S.はラゴスで4週間、専用バスルーム付きの個室、共用スタジオ/イベント空間、キッチン、図書館・アーカイブ、平日1食の調理済み食事、現地スタッフ、運転手、警備、制作支援を提供します。採択者は最終週に地域交流イベントも準備します。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Soutien précis mais voie fermée à une candidature autonome depuis le Québec: nationalité nigériane et résidence actuelle au Nigeria sont simultanément requises. Une personne ayant les deux statuts doit confirmer retour de l’appel, périodes, visa et dépenses non couvertes avant candidature.",
+          "en": "Support is specific, but the route is closed to an independent Quebec application: Nigerian nationality and current Nigerian residence are both required. A person with both statuses should confirm the call’s return, periods, visa, and uncovered costs before applying.",
+          "ja": "支援内容は明確ですが、ナイジェリア国籍とナイジェリアでの現住所の両方が必要なため、ケベックからの単独応募には開かれていません。両方の条件を持つ人は、応募前に次回公募、日程、ビザ、対象外費を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "gas-fellowship-nigerian-arts-writer-2026-next-watch",
+    "title": "G.A.S. Foundation — Nigerian Mid-Career Arts Writer Fellowship 2026",
+    "country": "Nigeria",
+    "city": "Lagos",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-25",
+    "deadlineLabel": {
+      "fr": "La candidature 2026 pour les auteur·rices d’art nigérian·es fermait le 25 janvier; surveiller le prochain appel G.A.S.",
+      "en": "The 2026 Nigerian arts-writer application closed January 25; monitor G.A.S.’s next call.",
+      "ja": "ナイジェリアのアートライター向け2026年応募は1月25日に終了しました。G.A.S.の次回公募を確認してください。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://www.guestartistsspace.com/Portals/1/Info%20Pack%202026_G.A.S.%20Fellowship%20Award%202026_V2.pdf#page=9",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cette catégorie était réservée aux auteur·rices d’art de nationalité nigériane, vivant sur le continent ou à l’étranger, avec au moins sept ans de pratique active et un dossier public substantiel. La définition comprend critique, essai, entretien, projet éditorial, zine, publication et autres formes textuelles; anglais oral et écrit, référence professionnelle et projet ancré dans le contexte artistique de Lagos sont requis. Une personne basée au Québec peut y entrer seulement si elle satisfait la nationalité publiée.",
+        "en": "This category was reserved for Nigerian-national arts writers living on the continent or abroad, with at least seven years of active practice and a substantial public body of work. Its definition includes criticism, essays, interviews, editorial projects, zines, publishing, and other text forms; spoken and written English, a professional reference, and a Lagos-context project are required. A Quebec-based person may enter only if they meet the published nationality condition.",
+        "ja": "このカテゴリーは、アフリカ大陸内外に住むナイジェリア国籍のアートライターで、少なくとも7年の継続的実践と十分な公開実績を持つ人向けでした。批評、エッセイ、インタビュー、編集企画、ジン、出版、その他のテキスト形式が含まれます。英語の読み書きと会話、専門的な推薦、ラゴスのアート文脈に根ざした企画が必要です。ケベック在住者も公表された国籍条件を満たす場合にのみ対象になり得ます。"
+      },
+      "applicantCost": {
+        "fr": "L’aide publiée combine 1 900 000 NGN pour allocation, voyage et matériel et 760 000 NGN d’honoraires, avec financement supplémentaire G.A.S. pour la réalisation de l’atelier d’écriture. Elle contribue aux coûts courants, matériel et transport économique vers Lagos; les déplacements hors Lagos restent à la charge du résident et le pack encourage les auteur·rices de la diaspora à chercher une mobilité complémentaire. Confirmer visa, assurance, fiscalité et dépenses personnelles.",
+        "en": "Published support combines NGN 1,900,000 for stipend, travel, and materials with a NGN 760,000 honorarium, plus G.A.S. funding for delivering the writing workshop. It contributes to living costs, materials, and economy transport to Lagos; travel outside Lagos remains the resident’s cost, and the pack encourages diaspora writers to seek extra mobility funding. Confirm visa, insurance, tax, and personal costs.",
+        "ja": "公表された支援は、手当・渡航・材料の190万ナイラと76万ナイラの謝礼に加え、執筆ワークショップ実施のためのG.A.S.追加資金で構成されます。生活費、材料、ラゴスまでのエコノミー交通を補助しますが、ラゴス外への旅行は滞在者負担で、資料はディアスポラのライターに追加の移動資金を探すよう勧めています。ビザ、保険、税、個人負担を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "La résidence de quatre semaines se déroule à Lagos entre le 24 août et le 2 octobre 2026. G.A.S. offre chambre, espaces partagés, bibliothèque et archives, repas de semaine, équipe, chauffeur, sécurité et soutien à l’atelier, y compris espace événementiel, coordination logistique, documentation et communication. Le fellow développe et livre un atelier critique de trois jours durant la dernière semaine.",
+        "en": "The four-week residency ran in Lagos between August 24 and October 2, 2026. G.A.S. provides a room, shared spaces, library and archive, weekday meals, staff, driver, security, and workshop support including event space, logistical coordination, documentation, and communications. The fellow develops and delivers a three-day critical-writing workshop in the final week.",
+        "ja": "4週間のレジデンスは2026年8月24日〜10月2日の間にラゴスで行われます。G.A.S.は部屋、共用空間、図書館・アーカイブ、平日の食事、スタッフ、運転手、警備、イベント空間・物流調整・記録・広報を含むワークショップ支援を提供します。フェローは最終週に3日間の批評的執筆ワークショップを開発・実施します。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Une voie potentielle pour un·e auteur·rice d’art nigérian·e vivant au Québec, mais non pour un profil québécois sans cette nationalité. Avant toute démarche, confirmer la prochaine édition, définition de l’auteur·rice, admissibilité diaspora, visa et budget complémentaire.",
+          "en": "This may be a route for a Nigerian-national arts writer living in Quebec, but not for a Quebec profile without that nationality. Before acting, confirm the next edition, writer definition, diaspora eligibility, visa, and additional budget.",
+          "ja": "ケベック在住のナイジェリア国籍アートライターには候補となり得ますが、その国籍を持たないケベックの人向けではありません。行動前に、次回公募、ライターの定義、ディアスポラ適格性、ビザ、追加予算を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "gas-fellowship-us-based-farm-2026-next-watch",
+    "title": "G.A.S. Foundation — U.S.-Based Artists Farm Fellowship 2026",
+    "country": "Nigeria",
+    "city": "Ikise",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-25",
+    "deadlineLabel": {
+      "fr": "La candidature 2026 pour les artistes basé·es aux États-Unis fermait le 25 janvier; surveiller le prochain appel G.A.S.",
+      "en": "The 2026 U.S.-based-artist application closed January 25; monitor G.A.S.’s next call.",
+      "ja": "米国拠点アーティスト向け2026年応募は1月25日に終了しました。G.A.S.の次回公募を確認してください。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://www.guestartistsspace.com/Portals/1/Info%20Pack%202026_G.A.S.%20Fellowship%20Award%202026_V2.pdf#page=17",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cette catégorie était pour les praticien·nes des arts visuels basé·es aux États-Unis, de nationalité américaine ou résidant actuellement aux États-Unis, avec au moins cinq ans de pratique publique, anglais, référence professionnelle et intérêt démontré pour écologie, matérialité, agriculture ou environnement. La personne doit s’engager avec communautés et contextes naturels nigérians. Une base seulement québécoise n’est pas admissible directement.",
+        "en": "This category was for U.S.-based visual-arts practitioners who are U.S. nationals or current U.S. residents, with at least five years of public practice, English, a professional reference, and demonstrated interest in ecology, materiality, agriculture, or environment. The person must engage Nigerian communities and natural contexts. A Quebec-only base is not directly eligible.",
+        "ja": "このカテゴリーは、米国国籍または米国在住で、5年以上の公開実践、英語、専門的な推薦、生態学・素材性・農業・環境への明確な関心を持つ米国拠点の視覚芸術実践者向けでした。参加者はナイジェリアのコミュニティと自然環境に関わる必要があります。ケベックのみを拠点とする応募は直接の対象ではありません。"
+      },
+      "applicantCost": {
+        "fr": "La bourse publiée comprend 2 500 USD de voyage, couvrant vol économique ou transport vers Lagos, visas nécessaires, médicaments de voyage et assurance voyage, plus 3 900 USD d’honoraires et allocation pour vie courante et matériel. Les excursions hors Lagos restent à la charge du résident. Confirmer fiscalité, accompagnant·e, matériel spécialisé et dépenses personnelles.",
+        "en": "Published support includes a USD 2,500 travel allowance for economy flights or transport to Lagos, necessary visas, travel medication, and travel insurance, plus a USD 3,900 honorarium and stipend for living costs and materials. Trips outside Lagos remain the resident’s cost. Confirm tax, companion, specialist-material, and personal costs.",
+        "ja": "公表された支援には、エコノミー航空券またはラゴスへの交通、必要なビザ、渡航用医薬品、旅行保険のための2,500米ドルの渡航手当と、生活費・材料のための3,900米ドルの謝礼・手当が含まれます。ラゴス外への旅行は滞在者負担です。税、同行者、専門材料、個人費を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "G.A.S. accueille les fellows huit semaines à la Farm House d’Ikise, avec chambre, espaces de travail partagés, cuisine, produits saisonniers, gestionnaire, transferts aéroport, sécurité et soutien de production. La personne sélectionnée livre aussi un événement communautaire et un film ou texte réflexif; le transport hors ferme est limité.",
+        "en": "G.A.S. hosts fellows for eight weeks at the Farm House in Ikise, with a room, shared workspaces, kitchen, seasonal produce, a manager, airport transfers, security, and production support. The selected person also delivers a community event and a reflective film or text; transport off the farm is limited.",
+        "ja": "G.A.S.はIkiseのFarm Houseで8週間、部屋、共用制作空間、キッチン、季節の農産物、マネージャー、空港送迎、警備、制作支援を提供します。採択者は地域イベントと振り返りの映像または文章も提出します。農場外の交通は限られています。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Soutien substantiel, mais l’accès exige une nationalité américaine ou une résidence actuelle aux États-Unis, en plus de la pratique concernée. Une personne du Québec ne peut l’utiliser qu’avec cette base américaine et doit vérifier prochain appel, visa, période et frais hors ferme.",
+          "en": "Support is substantial, but access requires U.S. nationality or current U.S. residence as well as the relevant practice. A person from Quebec can use it only with that U.S. base and should verify the next call, visa, timing, and off-farm costs.",
+          "ja": "支援は手厚いですが、対象となる実践に加え、米国国籍または現在の米国居住が必要です。ケベックの人はこの米国基盤がある場合のみ利用でき、次回公募、ビザ、日程、農場外の費用を確認してください。"
+        }
+      }
+    }
   }
 ]
