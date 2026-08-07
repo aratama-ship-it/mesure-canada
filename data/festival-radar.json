@@ -12460,5 +12460,181 @@
         }
       }
     }
+  },
+  {
+    "id": "goethe-africa-europe-mobility-grants-2026-open",
+    "title": "Goethe-Institut — Africa–Europe Mobility Grants 2026",
+    "country": "Rwanda",
+    "city": "Kigali / regional programme",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-09-15",
+    "deadlineLabel": {
+      "fr": "La prochaine date limite trimestrielle est le 15 septembre 2026.",
+      "en": "The next quarterly cut-off is September 15, 2026.",
+      "ja": "次回の四半期締切は2026年9月15日です。"
+    },
+    "nextCheckDate": "2026-09-01",
+    "sourceUrl": "https://www.goethe.de/ins/rw/en/m/kul/rsd/mobilitaetszuschuesse.html",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Les bourses Afrique–Europe sont ouvertes aux artistes et professionnel·les de la culture d’Afrique subsaharienne et d’Europe, dans toutes disciplines. Elles couvrent notamment recherche, résidences, co-création, collaborations hybrides ou numériques, réseau, ateliers et expositions. Une base seulement québécoise ne figure pas dans les régions publiées; vérifier pays, résidence, projet partenaire et règles détaillées dans l’appel courant avant dépôt.",
+        "en": "The Africa–Europe grants are open to artists and cultural professionals from Sub-Saharan Africa and Europe, in every discipline. They cover research, residencies, co-creation, hybrid or digital collaboration, networking, workshops, and exhibitions. A Quebec-only base is not among the published regions; verify country, residence, partner project, and detailed current-call rules before applying.",
+        "ja": "アフリカ・欧州モビリティ助成は、サブサハラ・アフリカと欧州の全分野のアーティスト・文化専門職を対象としています。リサーチ、レジデンス、共同創作、ハイブリッドまたはデジタル協働、ネットワーク、ワークショップ、展覧会が対象です。ケベックのみの拠点は公表された地域に含まれないため、応募前に現行公募で国、居住、パートナー企画、詳細規則を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "La bourse peut atteindre 4 000 EUR et vise voyage, hébergement et indemnités journalières. La page ne publie pas ventilation, assurance, visa, fiscalité, accompagnant·e, frais de production ou dépenses supérieures au plafond; les confirmer avec l’appel courant et le portail GAP.",
+        "en": "The grant can be up to EUR 4,000 and supports travel, accommodation, and daily allowances. The page does not publish allocation, insurance, visa, tax, companion, production, or over-cap costs; confirm them with the current call and GAP portal.",
+        "ja": "助成は最大4,000ユーロで、渡航、宿泊、日当を支援します。費目配分、保険、ビザ、税、同行者、制作費、上限超過費はページに公表されていないため、現行公募とGAPポータルで確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le programme, administré par le bureau régional Goethe-Institut d’Afrique du Sud, prévoit 195 bourses jusqu’en octobre 2027 avec échéances trimestrielles. Il accorde une attention à diversité géographique, parité de genre, inclusion du handicap et diversité linguistique. Confirmer sélection, calendrier de voyage et obligations de documentation dans les documents de l’appel.",
+        "en": "The programme, administered by the Goethe-Institut regional office in South Africa, plans 195 grants through October 2027 with quarterly cut-offs. It prioritizes geographic diversity, gender balance, disability inclusion, and linguistic diversity. Confirm selection, travel timing, and documentation duties in the call materials.",
+        "ja": "このプログラムはGoethe-Institut南アフリカ地域事務所が運営し、2027年10月までに四半期締切で195件の助成を予定しています。地理的多様性、ジェンダーバランス、障害のある応募者の包摂、言語的多様性を重視します。選考、渡航時期、記録義務は公募資料で確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Une voie substantielle de mobilité, mais pas une voie autonome pour une personne basée seulement au Québec. Pour une personne ayant résidence admissible en Afrique subsaharienne ou Europe, vérifier mobilité bilatérale, pays partenaire, visa, budget et date trimestrielle avant candidature.",
+          "en": "This is substantial mobility support, but not an independent route for a person based only in Quebec. For a person with eligible Sub-Saharan African or European residence, verify bilateral mobility, partner country, visa, budget, and quarterly date before applying.",
+          "ja": "移動支援としては充実していますが、ケベックのみを拠点とする人の独立したルートではありません。サブサハラ・アフリカまたは欧州の適格な居住を持つ人は、応募前に双方向の移動、パートナー国、ビザ、予算、四半期締切を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "goethe-file-not-found-arquives-toronto-2026-next-watch",
+    "title": "Goethe-Institut FILE NOT FOUND — The ArQuives Residency 2026–2027",
+    "country": "Canada",
+    "city": "Toronto",
+    "region": "North America",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-07",
+    "deadlineLabel": {
+      "fr": "L’appel FILE NOT FOUND 2026 fermait le 7 juin; surveiller une prochaine édition.",
+      "en": "The 2026 FILE NOT FOUND call closed June 7; monitor a future edition.",
+      "ja": "FILE NOT FOUND 2026の応募は6月7日に終了しました。次回公募を確認してください。"
+    },
+    "nextCheckDate": "2027-04-15",
+    "sourceUrl": "https://www.goethe.de/prj/fnf/en/oca/arq.html",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "FILE NOT FOUND était ouvert aux artistes du monde entier, toutes disciplines, capables de travailler de façon autonome et en dialogue étroit avec une archive. Il fallait choisir une seule archive, travailler en anglais et proposer une recherche sur archives, mémoire, production de savoir ou critique institutionnelle. La personne basée au Québec avait une voie internationale directe, sous réserve de la prochaine édition et de l’adéquation avec The ArQuives.",
+        "en": "FILE NOT FOUND was open worldwide to artists in every discipline able to work independently and closely with an archive. Applicants had to choose one archive, work in English, and propose research on archives, memory, knowledge production, or institutional critique. A Quebec-based person had a direct international route, subject to the next edition and fit with The ArQuives.",
+        "ja": "FILE NOT FOUNDは、独立してアーカイブと密接に対話できる全分野の世界中のアーティストに開かれていました。応募者は1つのアーカイブを選び、英語で、アーカイブ、記憶、知識生産、制度批評に関する研究を提案する必要がありました。ケベック拠点の人には国際的な直接ルートがありましたが、次回公募とThe ArQuivesとの適合を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "L’offre comprenait 2 000 EUR de rémunération, 2 000 EUR de budget de production et voyage-hébergement couverts jusqu’à 2 000 EUR pour une personne. L’artiste reste responsable des obligations légales et fiscales de son pays de résidence; aucune aide supplémentaire n’est prévue, ni expédition au-delà du transport personnel. Confirmer visa, assurance, personne accompagnante et frais locaux.",
+        "en": "The offer included a EUR 2,000 artist fee, EUR 2,000 production budget, and travel/accommodation covered up to EUR 2,000 for one person. The artist remains responsible for legal and tax obligations in their residence country; no extra support or shipping beyond personal transport is available. Confirm visa, insurance, companion, and local costs.",
+        "ja": "支援には2,000ユーロのアーティスト費、2,000ユーロの制作予算、1名分最大2,000ユーロの渡航・宿泊が含まれていました。アーティストは居住国での法的・税務上の義務を負い、追加支援や個人輸送を超える発送支援はありません。ビザ、保険、同行者、現地費を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "The ArQuives offre accès aux archives, bases et catalogues, ressources numériques, scanners, soutien technique et de recherche, accompagnement curatorial et espace de lecture. La visite devait durer quatre à six semaines entre septembre 2026 et mai 2027. L’archive indique ascenseur et espaces calmes à faible stimulation, avec appui visuel ou auditif; confirmer les détails d’accès avant voyage.",
+        "en": "The ArQuives offers archive, database, catalogue, digital-resource, scanner, technical and research access, curatorial guidance, and a reading-room workspace. The visit was to last four to six weeks between September 2026 and May 2027. The archive notes elevator access and quiet low-sensory space, with visual or hearing-impaired support; confirm access details before travel.",
+        "ja": "The ArQuivesは、アーカイブ、データベース、カタログ、デジタル資料、スキャナー、技術・研究支援、キュラトリアル助言、閲覧室の作業空間を提供します。訪問は2026年9月〜2027年5月の間に4〜6週間行われる予定でした。エレベーター、静かで低刺激の空間、視覚・聴覚障害のある訪問者への支援が示されています。渡航前にアクセス詳細を確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Une voie mondiale financée avec un hôte au Canada, pertinente pour recherche archivistique et histoire 2SLGBTQIA+. Vérifier le prochain appel, calendrier, accès aux collections, fiscalité, format d’œuvre et exigences de rapport avant candidature.",
+          "en": "A funded worldwide route with a Canadian host, relevant to archival research and 2SLGBTQIA+ history. Verify the next call, timing, collection access, tax, artwork format, and reporting requirements before applying.",
+          "ja": "カナダの受入先を持つ、アーカイブ研究と2SLGBTQIA+の歴史に関連する世界向けの支援ルートです。応募前に次回公募、日程、コレクションへのアクセス、税、作品形式、報告要件を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "goethe-file-not-found-cmaa-beijing-2026-next-watch",
+    "title": "Goethe-Institut FILE NOT FOUND — China Modern Art Archive Residency 2026–2027",
+    "country": "China",
+    "city": "Beijing",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-07",
+    "deadlineLabel": {
+      "fr": "L’appel FILE NOT FOUND 2026 fermait le 7 juin; surveiller une prochaine édition.",
+      "en": "The 2026 FILE NOT FOUND call closed June 7; monitor a future edition.",
+      "ja": "FILE NOT FOUND 2026の応募は6月7日に終了しました。次回公募を確認してください。"
+    },
+    "nextCheckDate": "2027-04-15",
+    "sourceUrl": "https://www.goethe.de/prj/fnf/en/oca/cma.html",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "L’appel mondial FILE NOT FOUND demandait de choisir une seule archive, travailler en anglais et proposer une recherche artistique indépendante liée aux archives, mémoire, savoir ou critique institutionnelle. Pour le China Modern Art Archive, la maîtrise du chinois est fortement recommandée pour un accès complet aux documents. Une personne basée au Québec pouvait se porter candidate au cycle publié, sous réserve de la prochaine édition.",
+        "en": "The worldwide FILE NOT FOUND call required choosing one archive, working in English, and proposing independent artistic research connected to archives, memory, knowledge, or institutional critique. For the China Modern Art Archive, Chinese proficiency is strongly recommended for full document access. A Quebec-based person could apply to the published cycle, subject to the next edition.",
+        "ja": "世界向けのFILE NOT FOUND公募では、1つのアーカイブを選び、英語で、アーカイブ、記憶、知識、制度批評につながる独立した芸術研究を提案する必要がありました。China Modern Art Archiveでは資料への十分なアクセスのため中国語能力が強く推奨されます。ケベック拠点の人も公表された回に応募できましたが、次回公募を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "L’offre commune prévoyait 2 000 EUR de rémunération, 2 000 EUR de production et jusqu’à 2 000 EUR de voyage-hébergement pour une personne, sans autre aide ni expédition au-delà du transport personnel. L’artiste assume obligations légales et fiscales de son pays de résidence. Confirmer visa Chine, assurance, traduction, accompagnant·e et coûts de recherche hors cadre.",
+        "en": "The common offer provided a EUR 2,000 artist fee, EUR 2,000 production budget, and up to EUR 2,000 travel/accommodation for one person, with no extra support or shipping beyond personal transport. The artist assumes legal and tax obligations in their residence country. Confirm China visa, insurance, translation, companion, and out-of-scope research costs.",
+        "ja": "共通支援は2,000ユーロのアーティスト費、2,000ユーロの制作予算、1名分最大2,000ユーロの渡航・宿泊で、追加支援や個人輸送を超える発送支援はありません。アーティストは居住国での法的・税務上の義務を負います。中国ビザ、保険、翻訳、同行者、対象外の研究費を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Le China Modern Art Archive à Pékin proposait deux à trois semaines entre septembre 2026 et janvier 2027, accès aux matériaux, bases, catalogues et ressources numériques, soutien technique ou de recherche, accompagnement curatorial et espace partagé. Ses recherches portent sur art moderne et contemporain chinois, numérisation et systèmes d’archives publics. Un espace calme à faible stimulation est indiqué.",
+        "en": "The China Modern Art Archive in Beijing offered two to three weeks between September 2026 and January 2027, access to materials, databases, catalogues, and digital resources, technical or research support, curatorial guidance, and shared workspace. Its research covers Chinese modern and contemporary art, digitization, and public archive systems. A quiet low-sensory space is noted.",
+        "ja": "北京のChina Modern Art Archiveは、2026年9月〜2027年1月の間の2〜3週間、資料、データベース、カタログ、デジタル資料、技術・研究支援、キュラトリアル助言、共用作業空間を提供していました。研究対象は中国の近現代美術、デジタル化、公共アーカイブ・システムです。静かで低刺激の空間があると示されています。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Voie mondiale financée, mais le travail efficace avec cette archive exige souvent chinois et préparation de visa. Vérifier prochaine édition, accès linguistique, visa, calendrier, budget réel et exigences d’œuvre/rapport avant candidature.",
+          "en": "This is a funded worldwide route, but effective work with this archive often requires Chinese and visa preparation. Verify the next edition, language access, visa, timing, actual budget, and artwork/report requirements before applying.",
+          "ja": "世界向けの支援ルートですが、このアーカイブで効果的に活動するには中国語とビザ準備が必要になることが多いです。応募前に次回公募、言語アクセス、ビザ、日程、実際の予算、作品・報告要件を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "goethe-file-not-found-saha-johannesburg-2026-next-watch",
+    "title": "Goethe-Institut FILE NOT FOUND — South African History Archive Residency 2026–2027",
+    "country": "South Africa",
+    "city": "Johannesburg",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "international",
+    "status": "watch",
+    "deadlineDate": "2026-06-07",
+    "deadlineLabel": {
+      "fr": "L’appel FILE NOT FOUND 2026 fermait le 7 juin; surveiller une prochaine édition.",
+      "en": "The 2026 FILE NOT FOUND call closed June 7; monitor a future edition.",
+      "ja": "FILE NOT FOUND 2026の応募は6月7日に終了しました。次回公募を確認してください。"
+    },
+    "nextCheckDate": "2027-04-15",
+    "sourceUrl": "https://www.goethe.de/prj/fnf/en/oca/sah.html",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Le cycle FILE NOT FOUND était ouvert aux artistes du monde entier, toutes disciplines, qui choisissent une archive unique et travaillent en anglais sur archives, mémoire, savoir ou critique institutionnelle. Pour SAHA, l’adéquation doit porter sur histoire de libération sud-africaine, justice sociale, démocratie, responsabilité ou droits humains. Une personne basée au Québec avait une voie internationale directe au cycle publié, sous réserve de la prochaine édition.",
+        "en": "The FILE NOT FOUND cycle was open worldwide to artists in every discipline who choose one archive and work in English on archives, memory, knowledge, or institutional critique. For SAHA, fit should relate to South African liberation history, social justice, democracy, accountability, or human rights. A Quebec-based person had a direct international route in the published cycle, subject to the next edition.",
+        "ja": "FILE NOT FOUNDの回は、1つのアーカイブを選び、英語でアーカイブ、記憶、知識、制度批評に取り組む全分野の世界中のアーティストに開かれていました。SAHAでは、南アフリカの解放史、社会正義、民主主義、説明責任、人権との適合が必要です。ケベック拠点の人には公表された回で国際的な直接ルートがありましたが、次回公募を確認してください。"
+      },
+      "applicantCost": {
+        "fr": "L’offre prévoyait 2 000 EUR de rémunération, 2 000 EUR de production et jusqu’à 2 000 EUR de voyage-hébergement pour une personne, sans aide supplémentaire et sans expédition au-delà du transport personnel. L’artiste assume ses obligations légales et fiscales. Confirmer visa Afrique du Sud, assurance, sécurité, accompagnant·e, accessibilité et dépenses locales.",
+        "en": "The offer provided a EUR 2,000 artist fee, EUR 2,000 production budget, and up to EUR 2,000 travel/accommodation for one person, with no extra support and no shipping beyond personal transport. The artist assumes legal and tax obligations. Confirm South Africa visa, insurance, safety, companion, access, and local costs.",
+        "ja": "支援には2,000ユーロのアーティスト費、2,000ユーロの制作予算、1名分最大2,000ユーロの渡航・宿泊が含まれ、追加支援や個人輸送を超える発送支援はありません。アーティストは法的・税務上の義務を負います。南アフリカのビザ、保険、安全、同行者、アクセシビリティ、現地費を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "SAHA, à l’Université du Witwatersrand, proposait idéalement quatre semaines en septembre 2026, accès aux archives, bases, catalogues, ressources numériques, scanners, soutien technique et de recherche, accompagnement curatorial et bureau au History Workshop. L’archive signale certaines zones sans accès handicap; confirmer accès détaillé et collaboration possible avec School of Arts avant voyage.",
+        "en": "SAHA, at the University of the Witwatersrand, offered ideally four weeks in September 2026, archive, database, catalogue, digital-resource, scanner, technical and research access, curatorial guidance, and office space at the History Workshop. The archive notes some areas without disability access; confirm detailed access and possible School of Arts collaboration before travel.",
+        "ja": "ウィットウォーターズランド大学のSAHAは、2026年9月に理想的には4週間、アーカイブ、データベース、カタログ、デジタル資料、スキャナー、技術・研究支援、キュラトリアル助言、History Workshopのオフィス空間を提供していました。一部のエリアには障害者アクセスがないと示されているため、渡航前に詳細なアクセスとSchool of Artsとの協働可能性を確認してください。"
+      },
+      "quebecAssessment": {
+        "state": "verify",
+        "note": {
+          "fr": "Voie mondiale financée, particulièrement pertinente pour pratiques archivistiques et justice sociale. Vérifier le prochain appel, projet avec SAHA, sécurité, visa, accès, budget et exigences de rapport avant candidature.",
+          "en": "A funded worldwide route, especially relevant to archival practice and social justice. Verify the next call, SAHA project fit, safety, visa, access, budget, and reporting requirements before applying.",
+          "ja": "アーカイブ実践と社会正義に特に関連する世界向けの支援ルートです。応募前に、次回公募、SAHAとの企画適合、安全、ビザ、アクセス、予算、報告要件を確認してください。"
+        }
+      }
+    }
   }
 ]
