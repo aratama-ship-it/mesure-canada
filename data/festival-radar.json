@@ -12064,5 +12064,137 @@
     "sourceUrl": "https://www.artinlatam.com/p/open-call-espace-brownstone-art-in",
     "verifiedAt": "2026-08-08",
     "decisionGuide": {"access":{"fr":"L’appel est pour un·e artiste de toute discipline, tout âge et tout stade de carrière, venant d’Amérique latine ou des Caraïbes. Une personne basée seulement au Québec sans origine admissible n’a pas accès directement; ne pas confondre résidence au Québec et appartenance territoriale publiée.","en":"The call is for one artist in any discipline, at any age or career stage, from Latin America or the Caribbean. A person based only in Quebec without eligible origin has no direct access; do not confuse Quebec residence with the published territorial affiliation.","ja":"この公募は、ラテンアメリカまたはカリブ海地域出身の、全分野・全年齢・全キャリア段階のアーティスト1名向けです。適格な出身条件を持たずケベックのみを拠点とする人には直接アクセスがありません。ケベック居住と公表された地域的帰属を混同しないでください。"},"applicantCost":{"fr":"Le programme fournit logement complet, studio privé, soutien curatorial et aide aux démarches de visa. Il ne couvre ni vols, ni repas, transport local, assurance voyage, frais de visa ou autres frais consulaires; l’artiste dépose et paie sa demande de visa.","en":"The program provides full accommodation, a private studio, curatorial support, and visa-procedure assistance. It does not cover flights, meals, local transport, travel insurance, visa fees, or other consular costs; the artist files and pays for the visa application.","ja":"プログラムは全期間の宿泊、個別スタジオ、キュラトリアル支援、ビザ手続き支援を提供します。航空券、食費、現地交通、旅行保険、ビザ料金、その他領事費用は対象外で、ビザ申請と支払いはアーティストが行います。"},"organizerSupport":{"fr":"La résidence se tient du 15 janvier au 31 mars 2027 à Espace Brownstone, avec temps de recherche et production, lien avec communautés et institutions parisiennes, et jury professionnel commun Association Noemi–Espace Brownstone / Art in Latin America. Le ou la personne choisie est notifiée le 15 novembre 2026.","en":"The residency runs January 15–March 31, 2027 at Espace Brownstone, with research and production time, connections to Paris communities and institutions, and a joint professional jury of Association Noemi–Espace Brownstone and Art in Latin America. The selected artist is notified November 15, 2026.","ja":"レジデンスは2027年1月15日〜3月31日にEspace Brownstoneで行われ、リサーチ・制作時間、パリのコミュニティ・機関との接続、Association Noemi–Espace BrownstoneとArt in Latin Americaによる共同の専門審査があります。採択者は2026年11月15日に通知されます。"},"quebecAssessment":{"state":"not_direct","note":{"fr":"Programme clair et soutenu pour une personne d’origine latino-américaine ou caribéenne; pas une voie générale depuis le Québec. Pour un profil admissible installé au Québec, vérifier l’interprétation de « from » auprès des organisateurs avant les frais de visa ou de voyage.","en":"A clear, supported program for a Latin American or Caribbean-origin artist, not a general route from Quebec. For an eligible-origin profile living in Quebec, verify the organizers’ interpretation of “from” before visa or travel spending.","ja":"ラテンアメリカまたはカリブ海地域出身の人には条件が明確で支援のある制度ですが、ケベックからの一般ルートではありません。ケベック在住で出身条件を満たす場合も、ビザ・渡航費を使う前に「from」の解釈を主催者へ確認してください。"}}}
+  },
+  {
+    "id": "cite-arts-kota-indonesia-2026-open",
+    "title": "Cité internationale des arts × Institut français d’Indonésie — Kota 2026",
+    "country": "France",
+    "city": "Paris",
+    "region": "Asia",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "open",
+    "deadlineDate": "2026-08-30",
+    "deadlineLabel": {
+      "fr": "Les candidatures au programme Kota ferment le 30 août 2026.",
+      "en": "Applications for the Kota programme close August 30, 2026.",
+      "ja": "Kotaプログラムの応募締切は2026年8月30日です。"
+    },
+    "nextCheckDate": "2026-08-20",
+    "sourceUrl": "https://www.citeinternationaledesarts.fr/en/appels-a-candidature/49659/",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Kota est ouvert aux artistes et professionnel·les de la culture de toute nationalité qui vivent et travaillent en Indonésie depuis au moins sept ans, avec au moins cinq ans d’activité professionnelle, français ou anglais courant, dans les arts visuels, performance, son et musique, spectacle vivant, écriture, design ou architecture-urbanisme. Les duos et collectifs ne sont pas admissibles. Une base seulement québécoise ne suffit pas.",
+        "en": "Kota is open to artists and cultural practitioners of any nationality who have lived and worked in Indonesia for at least seven years, with at least five years of professional practice and fluent French or English, in visual arts, performance, sound and music, performing arts, writing, design, or architecture/urbanism. Duos and collectives are not eligible. A Quebec-only base does not qualify.",
+        "ja": "Kotaは、国籍を問わずインドネシアに7年以上居住・活動し、5年以上の専門的実践と流暢なフランス語または英語力を持つ、視覚芸術、パフォーマンス、音・音楽、舞台芸術、執筆、デザイン、建築・都市計画の実践者向けです。デュオやコレクティブは対象外で、ケベックのみを拠点とする応募は対象になりません。"
+      },
+      "applicantCost": {
+        "fr": "Le programme prend en charge le vol aller-retour Indonésie–Paris, l’assurance voyage et les frais de visa, avec une allocation mensuelle nette de 1 700 €. Le transport des œuvres ou matériaux expérimentaux n’est pas couvert. Confirmer fiscalité, repas, dépenses de production et coûts d’accompagnant·e; des frais supplémentaires s’appliquent pour les personnes accompagnantes.",
+        "en": "The programme covers return Indonesia–Paris airfare, travel insurance, and visa costs, with a net monthly EUR 1,700 stipend. Transporting artworks or experimental materials is not covered. Confirm tax, meals, production expenses, and companion costs; extra charges apply for accompanying people.",
+        "ja": "プログラムはインドネシア〜パリの往復航空券、旅行保険、ビザ費用を負担し、月額1,700ユーロ（税引後）の手当があります。作品や実験的素材の輸送は対象外です。税、食費、制作費、同行者費を確認してください。同行者には追加料金が発生します。"
+      },
+      "organizerSupport": {
+        "fr": "Deux personnes lauréates séjournent du 2 février au 27 avril 2027 dans un studio de vie et de travail de 20 à 35 m² au Marais, à Paris. IFI et la Cité proposent accompagnement professionnel, occasions de réseau et rencontres. Un rapport final est requis après la résidence.",
+        "en": "Two awardees stay February 2–April 27, 2027 in a 20–35 m² live/work studio in Paris’s Marais district. IFI and the Cité provide tailored professional support, networking opportunities, and meetings with relevant contacts. A final report is required after the residency.",
+        "ja": "採択者2名は2027年2月2日〜4月27日、パリ・マレ地区の20〜35㎡の居住兼制作スタジオに滞在します。IFIとCitéは個別の専門支援、ネットワーキング機会、関係者との出会いを提供します。滞在後には最終報告書が必要です。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Soutien matériel complet, mais accès fermé à une candidature autonome basée au Québec: il faut une résidence et une pratique en Indonésie depuis sept ans. Pour une personne québécoise ayant cette base, confirmer documents de résidence, visa et frais de production avant dépôt.",
+          "en": "Material support is comprehensive, but access is closed to an independent Quebec-based application: seven years of residence and practice in Indonesia are required. For a Quebec person with that base, confirm residence evidence, visa, and production costs before applying.",
+          "ja": "支援内容は充実していますが、ケベックからの単独応募には開かれておらず、インドネシアでの7年以上の居住・活動が必要です。その基盤を持つケベックの人は、応募前に居住証明、ビザ、制作費を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "cite-arts-andes-sena-chile-2026-next-watch",
+    "title": "Cité internationale des arts × Chile — Andes~Sena 2026",
+    "country": "France",
+    "city": "Paris",
+    "region": "Latin America",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-07-08",
+    "deadlineLabel": {
+      "fr": "L’appel Andes~Sena 2026 fermait le 8 juillet; surveiller la prochaine édition.",
+      "en": "The 2026 Andes~Sena call closed July 8; monitor the next edition.",
+      "ja": "Andes~Sena 2026の応募は7月8日に終了しました。次回公募を確認してください。"
+    },
+    "nextCheckDate": "2027-05-15",
+    "sourceUrl": "https://www.citeinternationaledesarts.fr/en/appels-a-candidature/residency-programme-andessena/",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Andes~Sena s’adresse aux artistes et commissaires de nationalité chilienne ou titulaires d’une résidence permanente au Chili, qui y vivent et travaillent. Il faut pouvoir s’exprimer en français ou anglais, être disponible pendant toute la résidence, et proposer un projet dans les arts visuels, audiovisuel et cinéma, scène, musique, écritures, métiers d’art, design, commissariat ou critique. Une base seulement québécoise n’est pas admissible directement.",
+        "en": "Andes~Sena is for artists and curators who are Chilean nationals or permanent residents of Chile and who live and work there. Applicants need French or English, full availability, and a project in visual arts, audiovisual and cinema, performing arts, music, writing, crafts, design, curating, or criticism. A Quebec-only base is not directly eligible.",
+        "ja": "Andes~Senaは、チリ国籍またはチリの永住許可を持ち、チリで居住・活動するアーティストとキュレーター向けです。フランス語または英語、全期間の参加可能性、視覚芸術・映像/映画・舞台芸術・音楽・執筆・工芸・デザイン・キュレーション・批評の企画が必要です。ケベックのみを拠点とする応募は直接の対象ではありません。"
+      },
+      "applicantCost": {
+        "fr": "Le programme publie une allocation mensuelle brute de 950 000 CLP et une subvention recherche-production brute de 950 000 CLP pour le séjour, en plus du transport aller-retour Chili–Paris et de l’assurance voyage. Les artistes sélectionné·es paient 44 000 CLP de matériel pédagogique pour les cours de français. Confirmer fiscalité, visa, accompagnant·e, matériel et frais hors cadre.",
+        "en": "The programme publishes a gross monthly CLP 950,000 living stipend and a gross CLP 950,000 research/production grant for the stay, plus Chile–Paris return travel and travel insurance. Selected artists pay CLP 44,000 for French-course learning materials. Confirm tax, visa, companion, materials, and out-of-scope costs.",
+        "ja": "プログラムは月額95万チリペソ（総額）の生活手当と、滞在全体に対する95万チリペソ（総額）のリサーチ・制作助成に加え、チリ〜パリの往復渡航と旅行保険を公表しています。採択者はフランス語講座の教材費4万4,000チリペソを負担します。税、ビザ、同行者、材料、対象外費を確認してください。"
+      },
+      "organizerSupport": {
+        "fr": "Deux résidences de trois mois, une recherche-création pour artiste et une pour commissaire, se tenaient du 3 novembre 2026 au 28 janvier 2027 au Marais. Elles proposent logement et espace de travail, accompagnement professionnel, réseau avec les 325 résident·es et professionnel·les externes, et possibilité de présenter le travail aux ateliers ouverts.",
+        "en": "Two three-month residencies, one research-creation place for an artist and one for a curator, ran November 3, 2026–January 28, 2027 at the Marais site. They provide living and working space, professional support, networking with 325 residents and external professionals, and an opportunity to show work in open studios.",
+        "ja": "3か月のレジデンス2枠（アーティストのリサーチ・クリエーション1枠、キュレーター1枠）は、2026年11月3日〜2027年1月28日にマレ地区で行われます。居住・制作空間、専門支援、325名の滞在者と外部専門家とのネットワーク、オープンスタジオで作品を紹介する機会が含まれます。"
+      },
+      "quebecAssessment": {
+        "state": "not_direct",
+        "note": {
+          "fr": "Mobilité très soutenue, mais explicitement réservée à la scène chilienne. Pour une personne du Québec ayant nationalité ou résidence permanente chilienne et une pratique effective au Chili, vérifier le retour du programme, la recevabilité du dossier et les conditions de visa avant de préparer les dépenses.",
+          "en": "This is strongly supported mobility but explicitly reserved for the Chilean scene. A Quebec person with Chilean nationality or permanent residence and active Chile practice should verify the programme’s return, application eligibility, and visa conditions before spending.",
+          "ja": "支援の手厚い移動制度ですが、チリのアートシーンに明示的に限定されています。チリ国籍または永住権を持ち、チリで活動するケベックの人は、費用をかける前に制度の再開、申請適格性、ビザ条件を確認してください。"
+        }
+      }
+    }
+  },
+  {
+    "id": "gas-fellowship-african-diaspora-farm-2026-next-watch",
+    "title": "G.A.S. Foundation — African & Diaspora Farm Fellowship 2026",
+    "country": "Nigeria",
+    "city": "Ikise",
+    "region": "Africa",
+    "family": "showcase",
+    "participation": "regional_conditions",
+    "status": "watch",
+    "deadlineDate": "2026-01-25",
+    "deadlineLabel": {
+      "fr": "La candidature 2026 pour la bourse ferme a fermé le 25 janvier; surveiller le prochain appel G.A.S.",
+      "en": "The 2026 farm-fellowship application closed January 25; monitor G.A.S.’s next call.",
+      "ja": "2026年のファーム・フェローシップ応募は1月25日に終了しました。G.A.S.の次回公募を確認してください。"
+    },
+    "nextCheckDate": "2026-12-15",
+    "sourceUrl": "https://www.guestartistsspace.com/Portals/1/Info%20Pack%202026_G.A.S.%20Fellowship%20Award%202026_V2.pdf#page=13",
+    "verifiedAt": "2026-08-08",
+    "decisionGuide": {
+      "access": {
+        "fr": "Cette édition visait les praticien·nes artistiques africain·es et de la diaspora dont le travail aborde durabilité sociale et environnementale, terre, matière ou communauté. Le pack ne donne pas de définition exhaustive de la diaspora ni de règle précise de résidence ou citoyenneté; une personne du Québec ne doit la considérer qu’avec un lien admissible à confirmer directement auprès de G.A.S.",
+        "en": "This edition targeted African and diaspora arts practitioners whose work engaged social and environmental sustainability, land, materiality, or community. The information pack does not define diaspora exhaustively or give a precise residence or citizenship rule; a Quebec person should consider it only with an eligible connection confirmed directly with G.A.S.",
+        "ja": "この回は、社会・環境の持続可能性、土地、素材、コミュニティに関わるアフリカおよびディアスポラのアート実践者を対象にしていました。資料はディアスポラの完全な定義や居住・国籍の厳密な条件を示していないため、ケベックの人はG.A.S.へ直接確認できる適格なつながりがある場合にのみ検討してください。"
+      },
+      "applicantCost": {
+        "fr": "La bourse de huit semaines comprend une allocation voyage et matériel de 3 800 000 NGN, destinée aux vols économiques ou transport requis, nourriture, vie courante et matériel. Les détails d’assurance, fiscalité, personne accompagnante, dépenses hors résidence et frais de visa doivent être confirmés; la page indique que G.A.S. fournit orientation visa et lettre d’invitation lorsque nécessaire.",
+        "en": "The eight-week award includes a NGN 3,800,000 travel and materials allowance intended for economy flights or required transport, food, living costs, and materials. Confirm insurance, tax, companion, out-of-residency, and visa costs; the page says G.A.S. provides visa guidance and an invitation letter when needed.",
+        "ja": "8週間の助成には、エコノミー航空券または必要な交通、食費、生活費、材料に充てる380万ナイラの渡航・材料手当が含まれます。保険、税、同行者、滞在外の費用、ビザ費を確認してください。必要に応じてG.A.S.がビザ案内と招待状を提供すると資料にあります。"
+      },
+      "organizerSupport": {
+        "fr": "G.A.S. héberge les fellows pendant huit semaines à la Farm House d’Ikise, avec logement, espaces de travail partagés, cuisine, produits saisonniers de la ferme, gestionnaire sur place, transferts aéroport, sécurité et soutien à la production d’événements. Les personnes sélectionnées contribuent un film ou texte réflexif. Les transports hors ferme sont limités.",
+        "en": "G.A.S. hosts fellows for eight weeks at the Farm House in Ikise, with accommodation, shared workspaces, a kitchen, seasonal farm produce, an on-site manager, airport transfers, security, and event-production support. Selected fellows contribute a reflective film or written piece. Transport options off the farm are limited.",
+        "ja": "G.A.S.はIkiseのFarm Houseで8週間、宿泊、共用の制作空間、キッチン、季節の農産物、現地マネージャー、空港送迎、警備、イベント制作支援を提供します。採択者は滞在体験を振り返る映像または文章を寄稿します。農場外の交通手段は限られています。"
+      },
+      "quebecAssessment": {
+        "state": "conditional",
+        "note": {
+          "fr": "Une personne basée au Québec peut avoir une voie seulement si elle satisfait la catégorie africaine ou diaspora telle que G.A.S. la confirme. Les critères détaillés, calendrier, sécurité sanitaire, visa, assurance et budget de la prochaine édition doivent être vérifiés avant candidature.",
+          "en": "A Quebec-based person may have a route only if they satisfy the African or diaspora category as confirmed by G.A.S. Verify the next edition’s detailed criteria, timing, health and safety, visa, insurance, and budget before applying.",
+          "ja": "ケベック在住者が利用できるのは、G.A.S.が確認するアフリカまたはディアスポラのカテゴリーを満たす場合のみです。応募前に、次回の詳細条件、日程、健康・安全、ビザ、保険、予算を確認してください。"
+        }
+      }
+    }
   }
 ]
