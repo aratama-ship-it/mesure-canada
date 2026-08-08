@@ -1,0 +1,18 @@
+# Official Source Checks
+
+Only current primary organizer or programme sources are used. Missing facts remain explicitly unconfirmed.
+
+| Wave | Record ID | Official source | Checked | Result |
+| --- | --- | --- | --- | --- |
+| 1 | `cinars-biennale-2026-official-watch` | https://cinars.org/en/call-for-applications | 2026-08-05 | Current page now presents other 2026 application routes; next official-program rules, costs, and support are not published. Guide marked `verify`. |
+| 1 | `roseq-rencontre-automne-2026-watch` | https://www.roseq.qc.ca/rencontre-automne | 2026-08-05 | 2026 event is October 13–16 and agent/producer/self-produced artist registration is marked full. Next showcase terms not published. |
+| 1 | `micc-tour-de-piste-2026-watch` | https://micc.tohu.ca/fr/appelaprojets | 2026-08-05 | Call closed; touring experience/full-length work and current membership required. Submission free; selected applicants pay an unpublished event-registration fee. |
+| 1 | `festival-far-2027-watch` | https://www.festivalfar.com/appelauxartistes | 2026-08-05 | #FAR2026 call closed; newsletter promoted for next call. Next eligibility, costs, and support not published. |
+| 2 | `en-piste-circulation-releve-2026-watch` | https://enpiste.qc.ca/circulation-de-la-releve-le-tremplin-de-demain-est-de-retour/ | 2026-08-05 | Five-year/new-to-Quebec-touring and 50% Quebec-resident team gates confirmed; five-venue tour and two-year guidance described, but travel/fee terms are not priced. |
+| 2 | `en-piste-trajectoire-cirque-2026-watch` | https://enpiste.qc.ca/trajectoire-cirque-seance-dinformation-sur-la-3e-edition/ and linked https://enpiste.qc.ca/projet-recurrent/trajectoire-cirque/ | 2026-08-05 | Citizenship/PR and Montréal gates confirmed, plus CAD 15,000, 120 creation-centre hours, guidance, insurance, and public-showing obligations. |
+| 2 | `en-piste-mon-premier-micc-2026-watch` | https://enpiste.qc.ca/appel-de-candidatures-mon-premier-micc/ | 2026-08-05 | First-time Canada-based professional route confirmed. LOJIQ status/age/distance gates and support are separate; participation without LOJIQ support is explicitly allowed. |
+| 2 | `en-piste-prix-propulsion-2026-watch` | https://enpiste.qc.ca/prix-propulsion-2026/ | 2026-08-05 | Individual, collective, and organization status/Montréal gates confirmed; one CAD 10,000 prize paid in one installment. |
+| 3 | `en-piste-mentorat-pancanadien-2026-watch` | https://enpiste.qc.ca/appel-de-candidature-projet-de-mentorat-pancanadien/ | 2026-08-05 | Current page shows July 3, not the stored May 29 date; record corrected. Outside-Quebec regional access, CAD 220/300 training cost, and 20-hour programme confirmed; no travel support stated. |
+| 3 | `valspec-circus-residency-2026-watch` | https://www.valspec.com/residence-en-arts-du-cirque-a-valspec-appel-de-projets/ | 2026-08-05 | En Piste membership, general-audience work, showing/discussion, five-day technical package, snacks, and CAD 50/hour extra-technician rate confirmed; travel/lodging/fee not stated. |
+| 3 | `garage-hochelaga-residency-watch` | https://enpiste.qc.ca/en/artistic-residency-hochelaga/ | 2026-08-05 | Free four-by-four-hour space route for Montréal performing arts confirmed, with 12-person/no-public-event limits, required visit, and seven-day rescheduling risk. |
+| 3 | `notre-dame-des-prairies-residency-next-watch` | https://www.notredamedesprairies.com/appel-de-dossiers-residences-expositions-2026-2027/ | 2026-08-05 | All-professional-disciplines wording, five-day venue, adjacent lodging, sound/basic light, technical/promotion, public showing and mediation confirmed; status, fee, travel and meals not stated. |

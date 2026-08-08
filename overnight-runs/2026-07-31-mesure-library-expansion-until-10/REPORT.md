@@ -1,0 +1,283 @@
+# MESURE Library Expansion Report — Until 10:00 JST
+
+## Outcome
+
+- Scheduled from 2026-07-31 through 2026-08-01 10:00 JST.
+- Automation: `mesure-10`, hourly bounded waves with a final verification-only occurrence at 10:00 JST.
+- Starting library count: 189.
+- Final library count: 221.
+- Net change: +32 records.
+- Status: COMPLETE at 2026-08-01 10:03 JST; local changes only, with no commit, push, deployment or publication.
+
+## Changes
+
+- New run ledger created.
+- Wave 1 added **Caledonia Fair 2026 — Entertainment Submission (Busker / Variety)** in Caledonia, Ontario.
+  - Official application: https://www.caledoniafair.ca/submit-entertainment
+  - Official event page: https://www.caledoniafair.ca/entertainment
+  - Verified 2026-07-31: the live form includes Busker and Variety/Novelty categories, requires a performance video and requested booking fee, and publishes no deadline, residence restriction or travel/support terms.
+- Wave 1 did not add Thunder Bay Buskers Festival, Coquitlam Music in the Streets or Cathedral Village Arts Festival because their official 2026 event or application dates had passed.
+- Wave 2 added **Banff Centre — Independent Residency: Theatre & Dance 2027–28** in Banff, Alberta.
+  - Official program: https://www.banffcentre.ca/programs/dance-independent-studios-leighton-artists-studios-opera-theatre/independent-residency
+  - Official residency overview: https://www.banffcentre.ca/independent-residencies
+  - Verified 2026-07-31: applications are opening soon with an October 14, 2026 deadline; domestic and international applicants aged 18+ may apply, and the program includes performance-based and interdisciplinary practices.
+  - Circus is not expressly named, production and technical support are unavailable, and studio height or equipment varies; the record therefore requires written suitability and rigging confirmation.
+- Wave 2 did not add Contact East 2026 because it had already occurred, or Sable Island Institute because its published residency route is limited to artists from the four Atlantic provinces.
+- Wave 3 added no duplicate record: Winnipeg, Edmonton, Toronto, Vancouver, Halifax, Saskatoon, Ottawa, Montréal and the CAFF touring route were already represented.
+- Fort McMurray Fringe was retained as an unverified candidate because official sources confirm the August 29–30, 2026 event but do not yet provide a complete 2027 artist application route.
+- Wave 4 added **Asheville Fringe Arts Festival 2027 — Artist Application** in Asheville, North Carolina.
+  - Official application: https://www.ashevillefringe.org/apply-2027
+  - Official artist guide: https://www.ashevillefringe.org/artist-guide-faq
+  - Verified 2026-07-31: applications are open through September 30, 2026 for live works of 5–55 minutes, installations and other discussed forms; selection is juried.
+  - No application fee; selected artists pay USD 45. Ticketed shows typically receive at least two performances, 50% of ticket sales, box-office, sound, lighting and promotion support.
+  - The route remains conditional for Quebec artists because U.S. entry/work authorization, tax, insurance, travel and lodging are not resolved by the festival page.
+- Wave 5 added **Tucson Fringe Festival 2027 — Performance Application** in Tucson, Arizona.
+  - Official performance application: https://www.tucsonfringe.org/performance-application/
+  - Verified 2026-07-31: applications are open July 1–September 1, 2026 for the January 28–31, 2027 festival; shows are selected by lottery rather than jury.
+  - The route includes 45–60-minute live shows, approximately 20-minute Fleeting Fringe works and pre-recorded options. Live registration is USD 250 after selection and includes two performances, one tech rehearsal, venue, tech, front of house and marketing; artists receive USD 16 per USD 20 ticket.
+  - The route remains conditional for Quebec artists because U.S. entry/work authorization, tax, insurance, travel and lodging must be resolved separately, and circus rigging or apparatus support is not published.
+- Wave 6 did not add Tampa Fringe 2027 because the route already exists as `tampa-fringe-2027`.
+- Wave 6 added **JOLT! Performing Arts Festival 2027 — Artist Application** in Columbia, South Carolina.
+  - Official application page: https://joltperformingartsfestival.org/
+  - Official mission and location: https://joltperformingartsfestival.org/about and https://joltperformingartsfestival.org/contact
+  - Verified 2026-07-31: applications are open June 1–August 31, 2026 for the January 22–24, 2027 festival; the USD 35 application is adjudicated for dance, performance theatre, live music and film.
+  - The organizer describes artists from around the United States but publishes no explicit residence or nationality rule. Quebec eligibility, compensation, covered costs, venue and technical support therefore remain for direct written confirmation before paying.
+- Wave 7 did not add Kyoto Art Center’s 2027 performing-arts residency because it already exists in the library.
+- Wave 7 added **SubScena 2027 — Performance & Residency Open Call** in Zagreb, Croatia.
+  - Official call: https://attack.hr/en/subscena-otvoreni-poziv-open-call-2027
+  - Verified 2026-07-31: the international call accepts experimental performance, dance, circus, theatre and hybrid work through separate performance and residency forms; the published deadline is August 20, 2026 at 00:00, with no time zone stated.
+  - Support includes accommodation, travel up to EUR 200 per artist or EUR 500 per group, rehearsal and performance space, stage management, lighting and sound personnel, technical education, documentation and promotion.
+  - The page’s selection-notification sentence retains an inconsistent 2025 year, so no notification date was recorded. Entry/work status, meals, insurance, tax and circus apparatus requirements remain for confirmation.
+- Wave 7 also changed **Imaginarius 2027** from `open` to `watch` because its official July 30, 2026 deadline had passed. The date-sensitive test caught this state transition.
+- Wave 8 added **International Visegrad Fund — Performing Artist Residency 2027** across the V4 countries.
+  - Official call: https://www.visegradfund.org/performing-artist-residency-apply
+  - Official residency overview: https://www.visegradfund.org/residencies
+  - Verified 2026-07-31: the call opens September 15 and closes October 15, 2026 at noon, with no time zone published. It supports one-month residencies in new circus, physical and visual theatre, contemporary dance, alternative theatre and performance art.
+  - Individuals receive EUR 2,500 and their host EUR 2,000; groups of at least three receive EUR 5,500 and the host EUR 3,500.
+  - This is not a general Quebec route: V4-country citizenship and an acceptance letter from a host in another V4 country are mandatory. Quebec-based holders of relevant citizenship must confirm eligibility.
+- Wave 9 added **Circo Fest Canada 2027 — Aerial Circus, Acrobatics & Dance Registration** in Calgary, Alberta.
+  - Official festival page: https://www.circofest.ca/
+  - Official 2027 handbook: https://www.circofest.ca/_files/ugd/26db12_edfc14cbbc7b410a84f26273bc5a6c68.pdf
+  - Verified 2026-07-31: independent and studio registration is open through January 31, 2027, with an October 31, 2026 deposit deadline for the 5% early-bird rate. Categories span age 3 through adult and novice through elite across aerial, acrobatics, wheel, contortion, hand balancing, manipulation and dance.
+  - Regular independent prices run from CAD 95 to CAD 270 per performer depending on entry type. The venue supplies professional adjudication, rigging points, mats, setup staff and a warm-up studio; independent entries have festival insurance.
+  - This is a self-funded competition and training/presentation opportunity, not a paid booking. Quebec applicants must cover Calgary travel and lodging and confirm apparatus, rigging and remaining capacity.
+- Wave 10 added **New England Folk Festival 2027 — Performer Applications** in Marlborough, Massachusetts.
+  - Official performer call: https://www.neffa.org/apply-as-a-festival-performer/
+  - Official festival FAQ: https://www.neffa.org/festival-faq/
+  - Verified 2026-07-31: general applications open September 15 and close October 15, 2026; dance performance closes January 5, 2027 and ritual dance January 15. The route covers folk music, song, storytelling, dance, creative drama and participatory family work, with no published residence or nationality restriction.
+  - Performer talent is supplied on a volunteer basis with no published artist fee. Accepted performers receive free all-festival admission; travel, lodging, immigration/work status, insurance and tax remain unresolved.
+  - Circus is not named. Quebec-based circus artists should first confirm discipline fit and all apparatus, rigging and safety needs, as well as eligibility to perform in the United States.
+- Wave 10 did not add ODUNDE because the current official open call found is for a visual-art exhibition rather than live performance programming.
+- Wave 11 added **Institut français × Cité internationale des arts — 2027 Residency** in Paris, France.
+  - Official residency call: https://www.citeinternationaledesarts.fr/appels-a-candidature/institutfrancaisxcite/
+  - Official Institut français program page: https://www.institutfrancais.com/fr/programme/residence-mobilite-professionnelle/residences-institut-francais-x-cite-internationale
+  - Verified 2026-07-31: applications are open through October 8, 2026 at 23:59 CET as published, for three-, six- or nine-month residencies between April 2027 and April 2028. Street arts, circus and puppetry are explicitly eligible, with no nationality or age restriction, provided the artist has lived outside France for at least five years.
+  - Direct artist applications are ineligible. An associated cultural partner must submit the file and guarantee at least EUR 1,100 per month, international travel, insurance and visa costs; Institut français covers the furnished live-work studio in Paris.
+  - Quebec-based non-Canadian artists can fit the published nationality and residence criteria, but must secure an eligible partner and confirm professional availability, immigration, tax and circus-facility needs before submission.
+- Wave 11 did not add the CCHAR 2027 public-space creation residency because its April 12, 2026 deadline had passed and eligibility was limited to Swiss artists or artists domiciled in Switzerland.
+- Wave 12 added **PERFORMNORD 2027 — Nordic Performance Art Platform** in Copenhagen, Denmark.
+  - Official open call: https://www.metropolis.dk/open-call-for-performnord-2027/
+  - Official application guidelines: https://www.metropolis.dk/application-guidelines-for-performnord/
+  - Verified 2026-07-31: applications are open through September 18, 2026 at midnight CET as published, for a professional platform on September 2–5, 2027 and possible public programming through September 12.
+  - The call covers live performance, studio presentation and dialogue formats for professional performance artists. Nordic and international professionals working in the Nordic countries can apply, as can Nordic professional artists living elsewhere.
+  - PERFORMNORD commits to cover selected artists’ travel, lodging, local logistics and a participation fee, subject to expected Nordic agency and foundation support; specific amounts are not published.
+  - A Quebec resident is eligible only through the published Nordic-artist-abroad route. Circus-derived work must be confirmed as performance art, and transatlantic travel, site, technical, apparatus and safety terms require written confirmation.
+- Wave 13 added **Cirque du Soleil — Circus Performer Casting** in Montréal / worldwide.
+  - Official circus-performer submission guide: https://casting.cirquedusoleil.com/apply/video-demo/circus-performers
+  - Official casting FAQ: https://casting.cirquedusoleil.com/faq
+  - Verified 2026-07-31: adults can submit directly for onstage circus and related roles through the official casting system, with no published deadline, residence or nationality restriction. No in-person audition or event is currently scheduled.
+  - A circus profile requires a résumé, headshot, full-body photo and a recent video of no more than 12 minutes covering presentation, flexibility, strength, the complete act and any second discipline.
+  - Passing an audition places the artist in the potential-casting database; it is not a contract offer. Pay, travel, lodging, immigration/work authorization, insurance and tax terms remain dependent on a later role and contract.
+  - Quebec-based non-Canadian artists can submit under the published criteria, but must verify the work and immigration conditions for each eventual show country before accepting an audition or role.
+- Wave 14 added **Les 7 Doigts — Artist Casting Profile** in Montréal / worldwide.
+  - Official casting page: https://7doigts.com/spectacles/casting
+  - Official casting-services page: https://blog.7doigts.com/en/2024/09/30/casting-services/
+  - Verified 2026-07-31: the Montréal collective continuously accepts profiles from multidisciplinary circus performers and adjacent artists for stage, film, television, multimedia, motion-capture, immersive and commercial projects. Artists can update video, photos, résumé and other information; each update notifies the casting team.
+  - No deadline, application fee, nationality or residence restriction is published. Profile registration is not a booking or contract, and all later pay, travel, lodging, immigration and insurance conditions require project-specific confirmation.
+- Wave 14 added **Machine de Cirque — Artist Casting** in Québec City / worldwide.
+  - Official casting page: https://www.machinedecirque.com/carriere
+  - Official English casting page: https://en.machinedecirque.com/carriere
+  - Verified 2026-07-31: circus artists can submit directly with a résumé, one YouTube/Vimeo link showing their range of skills, a separate link to their main performance, and recent photos.
+  - No deadline, application fee, nationality or residence restriction is published. The page does not promise a response, audition, database entry, pay, contract, travel, lodging or immigration support.
+  - Quebec-based non-Canadian artists can submit under the published page, but any follow-up must be assessed as a separate role and contract rather than an accepted booking.
+- Wave 15 added **Cirque Éloize — Artist Casting Profile** in Montréal / worldwide.
+  - Official careers and casting page: https://cirque-eloize.com/en/careers/
+  - Official contact page: https://cirque-eloize.com/contact/
+  - Verified 2026-07-31: the Casting section provides an official artist-profile route, distinct from the page’s general spontaneous job application. No deadline, production, audition period, age, discipline, professional level, nationality or residence criterion is published.
+  - Profile registration does not promise review, reply, audition, employment, contract, pay, travel, lodging, technical or immigration support. Quebec-based non-Canadian artists can submit through the public route but must assess each later contact separately.
+- Wave 15 added **Cirque Éloize — Artistic Residency** in Montréal.
+  - Official residency page: https://cirque-eloize.com/residence-artistique/
+  - Official contact page: https://cirque-eloize.com/contact/
+  - Verified 2026-07-31: professional circus artists and companies developing a new show, conducting research and development or preparing a tour are invited to discuss their specific needs directly by email or phone.
+  - The organizer describes a fully equipped environment but publishes no deadline, duration, selection criteria, price, included space, apparatus, rigging, technical labor, grant, fee, travel or lodging. The record therefore warns users not to treat the route as a free or funded residency without a written quote and support breakdown.
+- Wave 16 added **Lyra — Bright & Wild 2027 Performing Arts Commission** in Edinburgh.
+  - Official commission page: https://www.lyra.co.uk/workwithus
+  - Official pay-rate page: https://www.lyra.co.uk/pay-rates
+  - Verified 2026-07-31: experienced Lead Artists from circus and other live-performance practices can submit an expression of interest by September 1, 2026 at noon, with the time zone unpublished. The role requires 30 delivery days, including weekly Edinburgh sessions from October 2026 through June 2027.
+  - Support includes a GBP 6,750 artist fee, GBP 1,500 for materials and collaborators, free space, youth-work and facilitation staff, festival design, production, mentoring and dramaturgy. Travel, lodging, UK work authorization, insurance and tax are not stated as covered, so Quebec access remains conditional.
+- Wave 16 added **CirkusExpo 2027 — Pitch & Preview Applications** in Stockholm and Botkyrka.
+  - Official 2027 platform page: https://www.riksteatern.se/en/samtida-cirkus/cirkusexpo-2027/
+  - Official prior-format reference: https://www.riksteatern.se/en/samtida-cirkus/cirkusexpo-2026/Application-Artists-Circus-Expo-2026/
+  - Verified 2026-07-31: applications open August 17, 2026 for pitches and previews at the February 17–18, 2027 Nordic contemporary-circus marketplace, presented with FRESH CIRCUS #6.
+  - The 2027 page addresses Swedish, Danish and Finnish artists but does not yet define whether eligibility is based on citizenship, residence or company base. Deadline, selection size, technical format, fee and support are also pending; Quebec artists should apply only after the opening rules confirm an eligible affiliation.
+- Wave 17 added **Rosas — Artist Residency 2027–28** in Brussels.
+  - Official residency announcement and FAQ: https://www.rosas.be/en/news/1160-open-call-rosas-artist-residency-2026-27
+  - Verified 2026-07-31: the next call will be published June 1, 2027 at midnight Brussels time. The prior international call accepted emerging individuals and collectives of any nationality in dance, choreography, performance and related interdisciplinary practice, and closed once at least 50 complete applications had arrived.
+  - The prior edition provided two to six weeks of studios, administrative and artistic guidance, mentoring, professional sharing and artistic-network access, but no artist fee, per diem, production budget, travel or lodging. The record is therefore an early monitoring route and does not assume that 2027–28 criteria or support will remain unchanged.
+- Wave 17 did not add Beirut Choreography Encounters 2026 because its international deadline passed June 20, 2026, or the VERVE residency because it is limited to Global Majority artists based on the African continent.
+- Wave 18 added no record after reviewing North American fringe and busking candidates.
+  - Tampa Fringe 2027, Toronto Fringe 2027 and Asheville Fringe 2027 were already represented, so no duplicate was added.
+  - Scranton Fringe currently offers only a 2027 notification waitlist; Theatre Crude states only that 2027 applications will open in early 2027; Port Fairy offers only a subscription for future 2027 busking notifications. None publishes a current application period plus sufficient 2027 eligibility, cost and support terms.
+  - CresFest’s current 2027 EOI is for established folk and roots musicians. Its busking competition is announced for later, without current application terms, so it was not repurposed as a circus or street-performance call.
+- Wave 19 added **21st Tehran-Mobarak International Puppet Theatre Festival** in Tehran.
+  - Official current notice: https://assitej-international.org/2026/07/06/open-call-for-21st-tehran-mobarak-international-puppet-festival/
+  - Official linked call PDF: https://assitej-international.org/wp-content/uploads/2026/07/open-call-for-21st-tehran-mobarak.pdf
+  - Verified 2026-07-31: the non-competitive international festival takes place October 18–23, 2026 and accepts proposals across traditional and contemporary puppetry through August 1, 2026, with particular attention to technology, AI and multimedia.
+  - The official web notice publishes no citizenship or residence exclusion, but does not state the deadline time zone or spell out fee, travel, lodging, meals, freight, visa, technical or insurance support in machine-readable text. The record therefore requires the linked materials, organizer confirmation, current official travel advice and citizenship-specific entry/work checks before any booking.
+  - INAF27 was already present in the library and was not duplicated.
+- Wave 20 added **Perform Europe 2026–28 — Cross-Border Touring Open Call** across 41 Creative Europe countries.
+  - Official open call: https://performeurope.eu/open-call/
+  - Official FAQ: https://performeurope.eu/open-call/faq/
+  - Official guidelines: https://performeurope.eu/wp-content/uploads/2026/06/open-call-and-guidelines_pe3-.pdf
+  - Verified 2026-07-31: theatre, dance, performance, circus, outdoor arts and puppetry partnerships can apply through October 22, 2026 at 23:59 CEST. At least three partners legally based in three different Creative Europe countries must tour a finished work in at least three eligible countries between March 1, 2027 and January 31, 2028.
+  - At least 25 partnerships will receive EUR 15,000, EUR 25,000 or EUR 55,000, with up to EUR 5,000 in accessibility and sustainability top-ups. The FAQ says grants may cover 100% of implementation costs, while new-work creation is excluded and finished-work preparation is capped at 10% of the request.
+  - Quebec-only individuals and organisations cannot be official partners or direct applicants. The FAQ nevertheless explicitly allows work created outside the eligible countries and performers of any nationality, so an eligible three-country European partnership can include a Quebec-created finished work. External collaborator, fee, travel, freight, visa, insurance, tax, intellectual-property and payment terms must be written into the arrangement with the lead partner.
+- Wave 21 added **Internationales Straßenmusikfestival Ludwigsburg 2027 — Street Artists** in Germany.
+  - Official artist page: https://strassenmusikfestival.de/fuer-artistinnen/
+  - Official announcement of the separate street-artist route: https://strassenmusikfestival.de/update-zur-kuenstlerinnen-bewerbung/
+  - Verified 2026-07-31: the organizer invites artists, jugglers and clowns to apply for the 2027 festival and states that applications will begin at the end of 2026. The exact opening date, deadline and 2027 festival dates are not yet published.
+  - The page describes free admissions, a daily EUR 20 food voucher and hat collection for the 2026 edition only. These benefits, and all 2027 fee, travel, lodging, technical, safety, visa, tax and international-eligibility terms, remain recheck items rather than being carried into the new record.
+- Wave 22 added **Arteventura — 2027 Artist Residency** near Aracena, Spain.
+  - Official open call: https://arteventura.eu/artists-in-residence/open-call
+  - Official application form: https://arteventura.eu/applications
+  - Verified 2026-08-01: applications are open and reviewed on a rolling basis for 35 places in 2027. Professional artists across all contemporary disciplines can apply individually, as a duo or as a group for fixed stays of four to twelve weeks; the official pages publish no nationality or residence restriction.
+  - The route is self-funded. The application fee is EUR 20; four weeks costs EUR 1,440 plus 10% VAT for individual accommodation or EUR 1,260 plus VAT per artist for duo/shared accommodation, while six weeks costs EUR 2,160 or EUR 1,890 plus VAT. A 50% deposit, remaining balance and refundable EUR 120 security deposit follow the published schedule.
+  - The fee includes accommodation and a 300 m² shared indoor/outdoor studio, basic tools, practical studio-assistant help and access to the estate. The organizer can provide invitation letters for external grant applications but publishes no stipend or artist fee.
+  - Quebec-based applicants, including those without Canadian citizenship, can submit directly under the published criteria. Circus and physical-performance applicants must separately confirm floor, ceiling, rigging loads, mats, fire, sound, storage, insurance and technical help because broad disciplinary eligibility does not establish apparatus suitability.
+- Wave 23 confirmed that 6Fest Plovdiv and Évora 2027 were already represented, so neither was duplicated.
+- Wave 23 added **Embassy of Foreign Artists — Art & Stories Residency 2027** in Geneva, Switzerland.
+  - Official call and application: https://www.eofa.ch/en/apply/
+  - Verified 2026-08-01: applications close September 15, 2026 at 00:00 UTC+2 as published. The direct call is for professional performing, visual or applied artists over 28 who have a substantial body of professional work, are not currently enrolled in basic artistic training, speak French or English and propose an archive-connected project for Geneva.
+  - The three-month residency provides a private bedroom, CHF 1,400 per month, communication and artistic support, and links to relevant contacts in international-organisation archives. The artist pays travel and possible production costs; visa, insurance, meals, local transport, tax, equipment and freight remain confirmation items.
+  - The official criteria publish no citizenship or residence restriction and the form collects country of birth, nationality and address separately. Quebec-based applicants without Canadian citizenship are therefore not excluded, but circus applicants must first confirm thematic fit and all venue, rigging, insurance and technical requirements because circus is not explicitly listed.
+- Wave 24 added **Swiss Circus Arts Network — Residencies 2027–28** across Sion, Basel, Lucerne, Aarau, Zurich and Verscio.
+  - Official residency page: https://zirkusquartier.ch/en/residences/
+  - Verified 2026-08-01: professional contemporary-circus companies can apply through November 1, 2026 for three to six weeks of residency at a minimum of two network venues over two years. About five companies are selected each year and must attend the annual network meetings.
+  - The network provides accommodation and rehearsal space free of charge plus CHF 400 per week for a solo, CHF 750 for a duo, CHF 1,000 for a trio or CHF 1,200 for a group of four or more. Application fee, travel, meals, visa/work status, insurance, tax, freight, materials and added technical costs are not published.
+  - This is not a direct Quebec route: the company must include Swiss members and/or have a current place of work in Switzerland. A genuine Swiss collaboration may qualify only after the network confirms the relationship; governance, support sharing, fees, travel, immigration, insurance, tax, intellectual property, apparatus and safety should then be documented in writing.
+- Wave 25 confirmed that Cirque de Demain, Pflasterspektakel Linz and Halifax Busker Festival were already represented, so no duplicate records were added.
+- Wave 25 added **Klang Festival 2027 — MUSIC/MOVEMENT Open Call** in Copenhagen, Denmark.
+  - Official open call: https://www.klang.dk/open-calls/opencall2027
+  - Verified 2026-08-01: applications are open through September 1, 2026 for one to three adventurous experimental-music, sound and performance projects exploring MUSIC/MOVEMENT. Work must be finished, small-scale and capable of same-day setup and performance at Dansehallerne; provisional festival dates are June 15–18, 2027.
+  - Klang aims to cover production costs and performer fees. Travel and accommodation are negotiated case by case, while commission and work-in-progress development costs are excluded. The organizer warns that selection can still be postponed or cancelled according to the final festival budget.
+  - The page publishes no nationality or residence exclusion, so a Quebec-based non-Canadian artist can submit directly. Circus-derived work must first confirm fit with the music/sound/performance theme and then settle space, floor, height, rigging, same-day setup, fee, travel, lodging, work authorization, insurance, tax and cancellation terms in writing because circus is not named explicitly.
+- Wave 26 did not add AIR Taipei 2027 because its official application platform confirms the call is closed. IMMAGINA Rome, FMTM and FIAMS were already represented and were not duplicated.
+- Wave 26 added **Festival of Animated Objects — 2026–28 Incubator** in Calgary and surrounding Alberta communities.
+  - Official call: https://www.puppetfestival.ca/incubator-application
+  - Verified 2026-08-01: artists over 18 at any experience level can apply through August 2, 2026 to develop a new 30–50 minute puppet or mask performance over eighteen months. Applicants may be individuals, duos or collectives, but must live in Moh’kinstsis/Calgary or the surrounding area, not be full-time students and not develop the same project through another residency or institution between September 2026 and April 2027.
+  - First-year support includes a CAD 1,000 development fee, CAD 500 project budget, artistic and producing mentorship, and guidance on marketing, touring and grant applications. The second-year fee depends on future funding; no building workshop or housing is supplied.
+  - A Quebec-only resident is not eligible. Canadian citizenship is not listed, so a non-Canadian genuinely living in the Calgary area may apply subject to Canadian work and payment eligibility. The record flags the page’s internally conflicting 2027 schedule for written confirmation rather than choosing one version.
+- Wave 27 added **Yaddo — Performance Residency, November 2026–June 2027** in Saratoga Springs, New York.
+  - Official application page: https://yaddo.org/apply/
+  - Official performance work-sample page: https://yaddo.org/work-sample-requirements/
+  - Verified 2026-08-01: professional and promising emerging artists from all nations may apply individually through August 1, 2026 for residencies beginning between November 2026 and June 2027. The Performance panel covers choreography, performance art and multimedia work incorporating live performance; the official page does not publish a deadline time or time zone.
+  - Degree-program students are ineligible, applications are accepted only every other calendar year, and auxiliary artists such as dancers, musicians, technicians and designers cannot apply in that supporting role. The application fee is USD 35; artists pay their own travel and Yaddo does not assist with U.S. visa arrangements.
+  - Residencies run two weeks to two months and include a private bedroom, meals and a private studio, with choreography studios available. Invited artists may apply for modest access grants, but funding is not guaranteed.
+  - Quebec-based artists without Canadian citizenship are not excluded. Circus applicants should confirm that the proposal is an authorial choreography, performance-art or live-multimedia project rather than an auxiliary performer role, and obtain written answers about floor, dimensions, height, rigging loads, apparatus, setup, insurance and safety before paying. Travel, citizenship-specific visa requirements, tax and materials remain applicant-side planning items unless Yaddo confirms otherwise.
+- Wave 28 added **Bogliasco Center — Next Fellowship Application Cycle** in Bogliasco, Liguria, Italy.
+  - Official current status: https://bfny.org/
+  - Official requirements: https://www.bfny.org/en/apply/requirements/
+  - Official program overview: https://bfny.org/en/about/program-overview
+  - Official studios: https://www.bfny.org/en/apply/studios
+  - Verified 2026-08-01: the application portal is closed and the Foundation says it will reopen in the fall for the following academic year. The exact opening date and deadline are not yet published, so the record is `upcoming`, not `open`.
+  - Artists and scholars with significant achievement in Dance, Theater and other listed disciplines may apply without regard to nationality or age. Degree-program students are excluded, conversational English is required and two-person collaborations require separate applications.
+  - The 30- or 31-day Fellowship supplies living quarters, full board and workspace with no residency fee. The dance studio has a sprung Marley floor, sound system, workstation and optional mirrors. General Fellowships are not cash awards; selected Special Fellowships can add travel or stipends, but their availability and eligibility must be rechecked for the new cycle.
+  - The requirements page still lists a tiered USD 30/45 application fee and a USD 35 daily charge for an accompanying spouse or partner, but both must be reconfirmed when the portal reopens. Fellows pay travel, project materials and equipment, personal and medical expenses.
+  - Quebec-based applicants without Canadian citizenship are not excluded. Circus is not a listed discipline and a dance-ready floor does not establish rigging capacity, so applicants must confirm Dance/Theater fit, height, points and loads, apparatus, mats, setup, safety and insurance before paying, then assess citizenship-specific entry requirements, tax and applicant-side costs.
+- Wave 29 added **MacDowell — Spring/Summer 2027 Fellowship** in Peterborough, New Hampshire.
+  - Official application guidelines: https://www.macdowell.org/apply/application-guidelines
+  - Official work-sample requirements: https://www.macdowell.org/apply/work-sample-requirements
+  - Official financial assistance: https://www.macdowell.org/apply/financial-assistance
+  - Verified 2026-08-01: the Spring/Summer 2027 cycle opens August 17, 2026, closes September 10, 2026 and covers residencies from March 1 through August 31, 2027. No closing time or time zone is published, so the record does not invent one.
+  - Eligible disciplines include Theatre and Interdisciplinary Arts. Theatre work samples explicitly include performance, devised and generative theatre, while interdisciplinary samples can document movement or dance. Degree-program students during the residency season are excluded except doctoral candidates who have completed all coursework; one application is allowed every 24 months. Separate published routes cover two-person teams and collectives of 3–12.
+  - The USD 30 processing fee can be waived for significant financial hardship or government-imposed sanctions if requested within the application by three business days before the deadline. There is no residency fee; the Fellowship supplies exclusive studio use, accommodation and three meals daily for up to eight weeks.
+  - After selection, every discipline may apply for need-based support: up to USD 1,500 for rent, utilities, childcare, lost income or equipment, plus domestic or international travel reimbursement. Neither form of assistance is guaranteed before selection and demonstrated-need review.
+  - Published criteria impose no citizenship or residence-location rule and explicitly provide international travel support. Quebec-based applicants without Canadian citizenship may therefore prepare a direct application subject to their own U.S. entry requirements. Circus is not named, so applicants should confirm Theatre/Interdisciplinary fit, then document studio, floor, height, rigging, apparatus, mats, setup, safety, insurance and technical requirements before paying.
+- Wave 30 added **Millay Arts — Core Residency, April–July Session** in Austerlitz, New York.
+  - Official Core Residency page: https://www.millayarts.org/residencies/core-residency/
+  - Official live application portal: https://millayarts.submittable.com/submit
+  - Official international-community statement: https://www.millayarts.org/about/
+  - Verified 2026-08-01: the official portal is currently accepting Core applications for the April–July session. The regular deadline is October 1, 2026 and the late deadline is October 8 with a higher application fee. The program page and live portal conflict between “12pm midnight EST” and “12am midnight EST”, so the record preserves the ambiguity and recommends submitting by the preceding day.
+  - The fully subsidized residency lasts two weeks or one month and provides a private bedroom and studio, shared facilities, groceries and chef-prepared communal dinners. Transport to and from nearby train or bus stations is included, while staff assist with airport-transfer arrangements.
+  - Application fees are USD 45 normally and USD 60 after the regular deadline; invited residents pay a USD 100 nonrefundable deposit. Travel, entry requirements, insurance, tax, materials, apparatus freight and specialized technical costs are not stated as covered. Fellowship stipends are profile- and funding-dependent rather than guaranteed.
+  - The two-person collaborative route is explicitly open to all disciplines and accepts projects that create, revise or revive performances. The public individual forms remain divided among traditional disciplines, so a solo circus route is not treated as confirmed.
+  - Millay Arts states that it serves an international community and the public criteria show no citizenship or residence exclusion, but they do not explicitly spell out the eligibility of a Quebec resident without Canadian citizenship. The record therefore requires written eligibility confirmation before payment, plus circus-specific confirmation of project classification, floor, height, rigging loads, apparatus, mats, setup, safety, insurance and technical support.
+- Wave 31 added **Ucross — Fall 2027 Residency** in Ucross, Wyoming.
+  - Official residency page: https://www.ucrossfoundation.org/residency-program.html
+  - Official residency FAQ: https://www.ucrossfoundation.org/residency-program-faqs.html
+  - Official dance facility: https://www.ucrossfoundation.org/dance-studio.html
+  - Verified 2026-08-01: the Fall 2027 call opens November 1, 2026 and closes January 15, 2027 at 11:59 p.m. MT for residencies from August through early December 2027. The record is `upcoming`, not prematurely `open`.
+  - International artists are explicitly accepted. Eligible practices include choreography, dance, performance art and interdisciplinary work; collaborative groups of up to four may apply. Applicants must show professional standing, students are excluded and only one application is allowed per session.
+  - The nonrefundable application fee is USD 40 with no waiver, followed by a USD 50 refundable deposit if accepted. There is no residency charge. Ucross provides a two-, four- or six-week stay, housing, meals, private workspace, linens, weekly housekeeping and a USD 1,500 stipend; artists pay travel to Sheridan and working materials.
+  - The 2,200-square-foot performing-arts building has a sprung-floor dance studio opening to an outdoor patio, green room, private bathroom and observation room. Rigging points, loads, ceiling height, apparatus, mats, technical labour, insurance and circus safety are not documented and must be confirmed before payment.
+  - Quebec-based applicants without Canadian citizenship can apply directly under the explicit international rule, subject to their own U.S. entry requirements. Travel, materials, citizenship-specific visa needs and tax remain applicant-side planning items even with the stipend.
+- Wave 31 also cleared the July 31 status rollover exposed by the date-sensitive regression test.
+  - `circusstad-circunstruction-15`, `contact-ouest-repertoire-2027-28`, `carthage-theatre-days-2026-open`, `kyoto-art-center-performing-arts-2027-open`, `solostage-krakow-2026-open` and `smethwick-puppetry-2027-open` now use `watch`, not `open`.
+  - Their published deadlines remain intact and their next source review is September 1, 2026; no later cycle or reopening was invented.
+
+## Verification
+
+- Baseline Git state, count and hashes recorded.
+- Wave 1: JSON count 190, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 2: JSON count 191, duplicate and required-field checks passed. An initial taxonomy regression failed at 24/25 tests; after using the established `showcase` family, all 25 tests passed. Protected hashes remained unchanged and writable-path diff check passed.
+- Wave 3: count remained 191; JSON, unique ID, unique route tuple and protected-hash checks passed. No application regression test was required because the library data and test file were not changed in this wave.
+- Wave 4: JSON count 192, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 5: JSON count 193, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 6: JSON count 194, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 7: JSON count 195, duplicate and required-field checks passed. The initial date-sensitive test failed on the stale Imaginarius state; after the `open` to `watch` correction, all 25 tests passed. Protected hashes remained unchanged and writable-path diff check passed.
+- Wave 8: JSON count 196, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 9: JSON count 197, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 10: JSON count 198, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 11: JSON count 199, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 12: JSON count 200, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 13: JSON count 201, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 14: JSON count 203, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 15: JSON count 205, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 16: JSON count 207, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 17: JSON count 208, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 18: library count remained 208; JSON, duplicate, protected-hash and writable-path diff checks passed. No regression-test change was required.
+- Wave 19: JSON count 209, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 20: JSON count 210, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 21: JSON count 211, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 22: JSON count 212, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 23: JSON count 213, duplicate and required-field checks passed. The first test run exposed an unsupported temporary participation classification; after correcting it to the primary-source-supported international route, all 25 tests passed. Protected hashes stayed unchanged and the writable-path diff check passed.
+- Wave 24: JSON count 214, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 25: JSON count 215, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 26: JSON count 216, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 27: JSON count 217, duplicate and required-field checks passed. The first test run exposed the expected stale rendered-row count; after updating it to 217, all 25 tests passed. Protected hashes remained unchanged and writable-path diff check passed.
+- Wave 28: JSON count 218, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 29: JSON count 219, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 30: JSON count 220, duplicate and required-field checks passed, all 25 tests passed, protected hashes unchanged and writable-path diff check passed.
+- Wave 31: JSON count 221, duplicate and required-field checks passed. Two initial date-sensitive runs exposed the six stale July 31 `open` states; after the rollover corrections, all 25 tests passed. Protected hashes remained unchanged and writable-path diff check passed.
+- Final verification: `jq` array/count, unique ID, unique title/city/source tuple and stale-open checks all passed at 221 records. `npm test` passed 25/25; `npm run lint`, `npm run typecheck` and repository-wide `git diff --check` passed. The recorded `.gitignore` and `data/funding.json` hashes were unchanged.
+
+## Pre-existing State Preserved
+
+- `.gitignore` and `data/funding.json` are already modified and are outside this run’s writable scope.
+- The local 189-record `data/festival-radar.json` and its regression tests are the starting baseline and must not be rolled back.
+
+## Unverified States
+
+- No production deployment, GitHub Pages state, browser/device state or public availability was changed or claimed by this run.
+- Fort McMurray Fringe, Scranton Fringe, Theatre Crude and Port Fairy remain candidate-only because current official sources do not yet publish a complete next-cycle application route, deadline and support/eligibility set.
+- Circus suitability remains a written-confirmation item where a route names performance, dance, theatre or interdisciplinary practice but does not publish rigging, height, loads, apparatus, mats, insurance and technical support.
+- Immigration, work authorization and tax remain applicant-specific wherever official organizers do not resolve them; the records do not infer eligibility from Quebec residence alone.
+
+## Blockers
+
+- None.
+
+## Morning Decisions
+
+- Review the final local additions and decide separately whether to commit, push or publish.
+- Use `REPORT.md` as the source list for reviewing all 32 additions; use the local radar page for the user-facing display after starting the project locally.
