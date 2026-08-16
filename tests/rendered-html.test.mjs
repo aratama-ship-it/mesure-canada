@@ -1121,11 +1121,13 @@ test("opportunity and funding records preserve evidence fields", async () => {
     "aoca-africa-circus-partner-route-2027",
     "prague-fringe-2027",
   ]) {
-    const expectedVerifiedAt = ["cubadupa-2027-open", "iffr-2027"].includes(id)
-      ? "2026-08-07"
-      : ["cairo-film-2026", "imaginarius-2027", "sundance-film-2027"].includes(id)
-        ? "2026-08-05"
-        : "2026-07-30";
+    const expectedVerifiedAt = ["cubadupa-2027-open", "cirko-w-coproduction-2028-regional"].includes(id)
+      ? "2026-08-16"
+      : id === "iffr-2027"
+        ? "2026-08-07"
+        : ["cairo-film-2026", "imaginarius-2027", "sundance-film-2027"].includes(id)
+          ? "2026-08-05"
+          : "2026-07-30";
     assert.equal(festivalRadar.find((record) => record.id === id).verifiedAt, expectedVerifiedAt, `${id} should use the current source audit`);
   }
   const directorsInTya = festivalRadar.find((record) => record.id === "directors-in-tya-2027-open");

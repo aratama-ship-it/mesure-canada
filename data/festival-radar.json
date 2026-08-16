@@ -3439,16 +3439,16 @@
     "region": "Oceania",
     "family": "street",
     "participation": "regional_conditions",
-    "status": "open",
+    "status": "watch",
     "deadlineDate": "2026-08-07",
     "deadlineLabel": {
-      "fr": "Ouvert jusqu’au 7 août 2026 pour performances, projets spéciaux et installations, y compris commandes nouvelles. Priorités 2027: artistes de Wellington en début de carrière, œuvres conçues pour la rue et te reo Māori; cachet, voyage et admissibilité internationale non précisés.",
-      "en": "Open through August 7, 2026 for performances, special projects, and installations, including new commissions. 2027 priorities include early-career Wellington artists, street-ready theatre, and te reo Māori; fee, travel, and international eligibility are not stated.",
-      "ja": "2026年8月7日締切。公演、特別企画、インスタレーション、新規委嘱案を受付。2027年はウェリントンの若手、ストリート向け演劇、マオリ語表現を優先。出演料・渡航費・海外応募可否は未記載です。"
+      "fr": "Clos depuis le 7 août 2026. Les candidats seront avisés d’ici le 23 octobre 2026. Priorités 2027: artistes de Wellington en début de carrière, œuvres conçues pour la rue et te reo Māori; cachet, voyage et admissibilité internationale non précisés.",
+      "en": "Closed since August 7, 2026 (\"Now Closed!\"). Applicants will hear back by October 23, 2026. 2027 priorities included early-career Wellington artists, street-ready theatre, and te reo Māori; fee, travel, and international eligibility were not stated.",
+      "ja": "2026年8月7日で応募終了（公式ページ表記「Now Closed!」）。結果は2026年10月23日までに通知予定。2027年はウェリントンの若手、ストリート向け演劇、マオリ語表現を優先。出演料・渡航費・海外応募可否は未記載のままでした。"
     },
-    "nextCheckDate": "2026-08-07",
+    "nextCheckDate": "2027-06-01",
     "sourceUrl": "https://www.cubadupa.co.nz/cubadupa-2027-artist-eois-now-open/",
-    "verifiedAt": "2026-08-07",
+    "verifiedAt": "2026-08-16",
     "decisionGuide": {
       "access": {
         "fr": "Trois voies: performance, projet spécial, installation/décor/vidéo, avec option de nouvelle commande. La page ne confirme pas que les candidatures internationales sont admissibles et priorise plusieurs profils de Wellington.",
@@ -3476,11 +3476,11 @@
     },
     "fundingReview": {
       "status": "pending_terms",
-      "verifiedAt": "2026-08-07",
+      "verifiedAt": "2026-08-16",
       "note": {
-        "fr": "L’appel public décrit trois formats et ses priorités 2027, mais ne précise ni l’admissibilité des artistes internationaux, ni le cachet, le voyage, l’hébergement ou les conditions d’accueil. Il faut obtenir une réponse écrite sur ces points avant de candidater depuis le Canada et avant de relier une aide; la page sera revérifiée avant l’échéance.",
-        "en": "The public call describes three application formats and its 2027 priorities, but does not state international eligibility, fees, travel, lodging or hosting terms. Written confirmation is needed before applying from Canada and before funding can be linked; the page will be rechecked before the deadline.",
-        "ja": "公式募集は3つの応募形式と2027年の優先分野を示していますが、国外応募可否、出演料、渡航、宿泊、受入条件を記載していません。カナダから応募し助成を結ぶ前に書面確認が必要で、締切前に公式ページを再確認します。"
+        "fr": "L’appel est clos depuis le 7 août 2026; les résultats sont attendus d’ici le 23 octobre 2026. Le call décrivait trois formats et les priorités 2027, sans préciser l’admissibilité des artistes internationaux, le cachet, le voyage, l’hébergement ou les conditions d’accueil. Si un prochain cycle ouvre, obtenir une réponse écrite sur ces points avant de candidater depuis le Canada et avant de relier une aide.",
+        "en": "The call closed on August 7, 2026; results are expected by October 23, 2026. It described three application formats and 2027 priorities, without stating international eligibility, fees, travel, lodging, or hosting terms. If a future cycle opens, written confirmation on these points is needed before applying from Canada and before linking funding.",
+        "ja": "公式募集は2026年8月7日で終了し、結果は2026年10月23日までに通知予定です。募集時点では3つの応募形式と2027年の優先分野を示していましたが、国外応募可否、出演料、渡航、宿泊、受入条件は記載されていませんでした。次回募集が開く場合は、これらの書面確認をカナダからの応募・助成連携の前に行います。"
       },
       "fundingMatches": []
     }
@@ -4178,17 +4178,17 @@
     "region": "Europe",
     "family": "circus",
     "participation": "regional_conditions",
-    "status": "open",
+    "status": "watch",
     "deadlineDate": "2026-08-10",
     "deadlineLabel": {
-      "fr": "10 août 2026 à 10 h EEST. Projet de cirque contemporain avec 4–8 semaines de résidences européennes en 2027–2028 et 15 000–20 000 € de soutien direct. Dépôt uniquement par une compagnie enregistrée en Finlande; des artistes étrangers peuvent faire partie du projet. Voie partenaire, pas de dépôt direct depuis le Québec.",
-      "en": "August 10, 2026 at 10:00 EEST. Contemporary circus project with 4–8 weeks of European residencies in 2027–2028 and €15,000–20,000 in direct support. The applicant company must be registered in Finland, though artists may be based abroad. This is a partner route, not a direct Quebec application.",
-      "ja": "2026年8月10日10:00 EEST締切。2027〜2028年に欧州で4〜8週間のレジデンスと15,000〜20,000ユーロの直接支援。申請団体はフィンランド登記が必須ですが、国外アーティストの参加は可能です。ケベックからの直接申請ではなく現地パートナー経由のルートです。"
+      "fr": "Appel clos depuis le 10 août 2026, 10 h EEST (\"The Open Call has ended\"); résultats attendus le 3 novembre 2026. Projet de cirque contemporain avec 4–8 semaines de résidences européennes en 2027–2028 et 15 000–20 000 € de soutien direct. Dépôt uniquement par une compagnie enregistrée en Finlande; des artistes étrangers peuvent faire partie du projet. Voie partenaire, pas de dépôt direct depuis le Québec.",
+      "en": "The call closed August 10, 2026, 10:00 EEST (\"The Open Call has ended\"); results are expected November 3, 2026. Contemporary circus project with 4–8 weeks of European residencies in 2027–2028 and €15,000–20,000 in direct support. The applicant company must be registered in Finland, though artists may be based abroad. This is a partner route, not a direct Quebec application.",
+      "ja": "2026年8月10日10:00 EESTで応募終了（公式ページ表記「The Open Call has ended」）。結果は2026年11月3日発表予定。2027〜2028年に欧州で4〜8週間のレジデンスと15,000〜20,000ユーロの直接支援という内容でした。申請団体はフィンランド登記が必須ですが、国外アーティストの参加は可能です。ケベックからの直接申請ではなく現地パートナー経由のルートです。"
     },
     "deadlineTimeZone": "EEST (UTC+3)",
-    "nextCheckDate": "2026-08-10",
+    "nextCheckDate": "2027-06-01",
     "sourceUrl": "https://cirko.fi/w-co-production-application-criteria/",
-    "verifiedAt": "2026-07-30",
+    "verifiedAt": "2026-08-16",
     "decisionGuide": {
       "access": {
         "fr": "La compagnie déposante doit être enregistrée en Finlande. Des artistes étrangers peuvent faire partie du projet, mais une personne ou compagnie québécoise ne peut pas déposer directement.",
@@ -4216,7 +4216,7 @@
     },
     "fundingReview": {
       "status": "reviewed_no_match",
-      "verifiedAt": "2026-07-30",
+      "verifiedAt": "2026-08-16",
       "note": {
         "fr": "La compagnie qui dépose doit être enregistrée en Finlande. Des artistes québécois peuvent participer à un projet porté par un partenaire finlandais, mais ce n’est pas une candidature directe; aucune aide n’est donc reliée avant l’existence d’un partenariat et d’un rôle contractuel documentés.",
         "en": "The applying company must be registered in Finland. Quebec artists may join a project led by a Finnish partner, but this is not a direct application route, so no funding is linked until a partnership and documented contractual role exist.",
