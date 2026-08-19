@@ -2173,6 +2173,98 @@ a {
   align-self: start;
 }
 
+.series {
+  margin-top: 32px;
+  border: 3px solid var(--ink);
+  background: var(--paper-bright);
+  box-shadow: 5px 5px 0 var(--blue);
+}
+
+.series-in {
+  padding: 18px;
+}
+
+.series-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  align-items: baseline;
+  margin: 0 0 14px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--ink);
+}
+
+.series-title {
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.series-lede {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
+
+.series-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.series-card {
+  display: grid;
+  min-height: 78px;
+  height: 100%;
+  gap: 6px;
+  align-content: center;
+  padding: 12px;
+  border: 2px solid var(--ink);
+  background: var(--paper-bright);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.series-card small {
+  color: var(--muted);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+a.series-card:hover,
+a.series-card:focus-visible {
+  border-color: var(--blue);
+  color: var(--blue);
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.series-card.is-current {
+  border-color: var(--blue);
+  box-shadow: inset 7px 0 0 var(--blue);
+  color: var(--blue);
+}
+
+.series-abroad {
+  margin: 14px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.5;
+}
+
 @media (max-width: 1080px) {
   .workbench {
     grid-template-columns: minmax(220px, 0.65fr) minmax(360px, 1.1fr);
@@ -2197,6 +2289,14 @@ a {
 }
 
 @media (max-width: 760px) {
+  .series-list {
+    grid-template-columns: 1fr;
+  }
+
+  .series-in {
+    padding: 14px;
+  }
+
   .site-shell {
     padding: 14px 12px 36px;
   }

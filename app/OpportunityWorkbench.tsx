@@ -640,6 +640,9 @@ const copy = {
     rulesKicker: "Règles de confiance",
     rulesTitle: "Aucune « correspondance parfaite » inventée.",
     rules: ["Le lieu de résidence et le statut d’immigration sont deux questions distinctes.", "Si un guide municipal ne précise pas une condition, le résultat devient « à confirmer »; aucune admissibilité n’est supposée.", "Chaque règle déterminante renvoie vers une source officielle et une date de vérification."],
+    seriesTitle: "Collection Monosashi",
+    seriesLede: "Comparer par conditions et par sources, pas par réputation.",
+    seriesNote: "Sites en japonais, pour le Japon.",
     footer: "MESURE — Canada + États-Unis · bêta",
     footerNote: "Échantillon limité. Aucun résultat ne garantit l’admissibilité ni l’obtention d’une aide.",
     status: { open: "Ouvert", rolling: "En continu", upcoming: "Bientôt", closed: "Fermé" },
@@ -851,6 +854,9 @@ const copy = {
     rulesKicker: "Trust rules",
     rulesTitle: "No invented “perfect match.”",
     rules: ["Residence and immigration status are separate questions.", "If municipal guidelines do not address a condition, the result becomes “needs confirmation”; eligibility is never assumed.", "Every eligibility-sensitive rule links to an official source and verification date."],
+    seriesTitle: "Monosashi series",
+    seriesLede: "Compare by conditions and sources, not by reputation.",
+    seriesNote: "Japanese-language sites, for Japan.",
     footer: "MESURE — Canada + U.S. · beta",
     footerNote: "Limited sample. No result guarantees eligibility or funding.",
     status: { open: "Open", rolling: "Rolling", upcoming: "Upcoming", closed: "Closed" },
@@ -1062,6 +1068,9 @@ const copy = {
     rulesKicker: "信頼性のルール",
     rulesTitle: "根拠のない「最適な助成」は表示しません。",
     rules: ["居住地と在留資格を別々の質問として扱います。", "市の要項に記載がない条件は、勝手に利用可とせず「要確認」にします。", "判定に影響する情報には、公式情報へのリンクと確認日を付けます。"],
+    seriesTitle: "ものさしシリーズ",
+    seriesLede: "名前や印象ではなく、条件と根拠で比べる。",
+    seriesNote: "日本国内向けの日本語サイトです。",
     footer: "MESURE — カナダ＋米国 · ベータ",
     footerNote: "限定的なサンプルデータです。表示結果は申請資格や採択を保証しません。",
     status: { open: "募集中", rolling: "随時受付", upcoming: "近日開始", closed: "募集終了" },
@@ -1309,6 +1318,24 @@ function TerminologyGlossary({ language, country }: { language: Language; countr
         <div><dt>{t.glossary.showcase.term}</dt><dd>{t.glossary.showcase.definition}</dd></div>
       </dl>
     </details>
+  );
+}
+
+function SeriesNav({ language }: { language: Language }) {
+  const t = copy[language];
+  return (
+    <nav className="series" aria-label={t.seriesTitle}>
+      <div className="series-in">
+        <p className="series-head"><span className="series-title">{t.seriesTitle}</span><span className="series-lede">{t.seriesLede}</span></p>
+        <ul className="series-list">
+          <li><a className="series-card" href="https://koubo.art-monosashi.com/" target="_blank" rel="noreferrer"><span>身体芸術・公募ものさし</span><small>koubo.art-monosashi.com</small></a></li>
+          <li><a className="series-card" href="https://joseikin.art-monosashi.com/" target="_blank" rel="noreferrer"><span>助成ものさし</span><small>joseikin.art-monosashi.com</small></a></li>
+          <li><a className="series-card" href="https://venue.art-monosashi.com/" target="_blank" rel="noreferrer"><span>会場ものさし</span><small>venue.art-monosashi.com</small></a></li>
+          <li><span className="series-card is-current" aria-current="page"><span>MESURE</span></span></li>
+        </ul>
+        <p className="series-abroad">{t.seriesNote}</p>
+      </div>
+    </nav>
   );
 }
 
@@ -1872,6 +1899,7 @@ export function OpportunityWorkbench() {
         <summary><span className="section-kicker">ABOUT</span><strong>{t.aboutSummary}</strong></summary>
         <div className="below-fold"><section><span className="section-kicker">{t.whyKicker}</span><h3>{t.whyTitle}</h3><p>{t.whyBody}</p></section><section><span className="section-kicker">{t.rulesKicker}</span><h3>{t.rulesTitle}</h3><ol className="principles">{t.rules.map((rule: string) => <li key={rule}>{rule}</li>)}</ol></section></div>
       </details>
+      <SeriesNav language={language} />
       <footer className="footer"><div><strong>{t.footer}</strong><span>{t.footerNote}</span></div><Link className="footer-ledger-link" href="/radar">{t.radarLink} →</Link></footer>
     </main>
   );
@@ -1966,6 +1994,7 @@ export function FestivalRadarLedger() {
         <p className="radar-note">{t.radar.note}</p>
       </section>
 
+      <SeriesNav language={language} />
       <footer className="footer"><div><strong>{t.footer}</strong><span>{t.footerNote}</span></div><Link className="footer-ledger-link" href="/">← {t.backToSearch}</Link></footer>
     </main>
   );
