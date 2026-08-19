@@ -78,7 +78,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.doesNotMatch(html, /aria-current="true"/);
   assert.match(html, /Autofinancement à prévoir/);
   assert.match(html, /Soutien logistique important/);
-  assert.match(html, /Pas de candidature directe depuis votre lieu de résidence/);
+  assert.match(workbenchSource, /Pas de candidature directe depuis votre lieu de résidence/);
   assert.match(html, /aria-label="Filtrer les appels"/);
   assert.match(html, /Ouverts maintenant/);
   assert.match(html, /Toutes les régions/);
@@ -567,6 +567,12 @@ test("opportunity and funding records preserve evidence fields", async () => {
   }
 
   const festivalRadarById = new Map(festivalRadar.map((record) => [record.id, record]));
+  assert.equal(festivalRadarById.get("dok-leipzig-short-n-sweet-2026-open")?.status, "watch");
+  assert.equal(festivalRadarById.get("padimai-oops-onchain-residency-2026-open")?.status, "watch");
+  assert.equal(festivalRadarById.get("plexus-remote-residency-2026-open")?.deadlineDate, "2026-08-31");
+  assert.equal(festivalRadarById.get("confluence-of-myths-tra-vinh-2026-open")?.status, "watch");
+  assert.equal(festivalRadarById.get("airvine-kyoto-sea-creators-2026-open")?.status, "watch");
+  assert.equal(festivalRadarById.get("guadalajara-film-2027")?.deadlineDate, undefined);
   assert.equal(festivalRadarById.get("cirko-w-coproduction-2028-regional")?.deadlineTimeZone, "EEST (UTC+3)");
   assert.equal(festivalRadarById.get("kyoto-art-center-performing-arts-2027-open")?.deadlineTimeZone, "JST");
   assert.equal(festivalRadarById.get("fifdh-2027")?.deadlineTimeZone, "CET (as published)");

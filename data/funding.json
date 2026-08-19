@@ -582,7 +582,7 @@
   {
     "id": "oif-artist-mobility-2026",
     "deadlineDate": "2026-08-31",
-    "nextCheckDate": "2026-08-17",
+    "nextCheckDate": "2026-08-26",
     "name": "OIF — Soutien à la mobilité des artistes 2026",
     "funder": "Organisation internationale de la Francophonie",
     "profiles": ["artist", "collective"],
@@ -615,10 +615,10 @@
         "ja": "プロの個人または正式なコレクティブで、フランコフォニー圏との明確な関係、OIF加盟国・政府の出身かつ居住、2年以上の活動歴が必要です。Canada–Québecは加盟していますが、ケベック居住だけでは「出身」条件を満たすと断定できません。また舞台芸術の列挙にサーカスが明記されていないためOIFへの確認が必要です。"
       },
       "sourceUrl": "https://www.francophonie.org/sites/default/files/2026-02/AAP_Mobilite_artistes_2026.pdf",
-      "verifiedAt": "2026-07-21"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.francophonie.org/index.php/soutien-la-mobilite-des-artistes-et-circulation-des-biens-culturels-8385",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "en-piste-training-expense-reimbursement-2026",
@@ -1289,7 +1289,7 @@
   {
     "id": "artsnl-professional-projects-2026",
     "deadlineDate": null,
-    "nextCheckDate": "2026-08-15",
+    "nextCheckDate": "2026-09-15",
     "name": "ArtsNL — Professional Project Grants Program",
     "funder": "Newfoundland and Labrador Arts Council / ArtsNL",
     "profiles": ["artist"],
@@ -1323,10 +1323,10 @@
         "ja": "公式事業計画で制度と対象活動は確認できますが、在留資格、居住期間、上限額、正確な締切は確認できません。現行募集要項で4点すべての確認が必要です。"
       },
       "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "artsnl-professional-travel-2026",
@@ -1462,7 +1462,7 @@
   {
     "id": "yukon-touring-artist-fund-2026",
     "deadlineDate": "2026-09-15",
-    "nextCheckDate": "2026-08-16",
+    "nextCheckDate": "2026-09-08",
     "name": "Yukon — Touring Artist Fund",
     "funder": "Government of Yukon — Arts Section",
     "profiles": ["artist", "collective", "organization"],
@@ -1499,10 +1499,10 @@
         "ja": "ユーコンに連続1年間居住するプロのアーティスト、アンサンブル、カンパニー向け。専門的な選考を経た正式招待、2件以上の催事、公演の一般公開が必要です。在留資格は明記されていないため確認が必要です。"
       },
       "sourceUrl": "https://yukon.ca/en/touring-artist-fund",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://yukon.ca/en/touring-artist-fund",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "nwt-small-arts-project-fund-2026",
@@ -1901,7 +1901,7 @@
   {
     "id": "arts-midwest-culture-bearers-2026",
     "deadlineDate": "2026-08-18",
-    "nextCheckDate": "2026-08-10",
+    "nextCheckDate": "2026-10-01",
     "name": "Arts Midwest — Midwest Culture Bearers Award",
     "funder": "Arts Midwest",
     "profiles": ["artist"],
@@ -1909,6 +1909,7 @@
     "disciplines": ["all"],
     "purpose": "career_support",
     "kind": "grant",
+    "availability": "closed",
     "deadline": { "fr": "18 août 2026 à midi, heure du Centre", "en": "August 18, 2026 at noon Central", "ja": "2026年8月18日正午（米中部時間）" },
     "amount": { "fr": "5 000 $ sans restriction ni contrepartie", "en": "$5,000 unrestricted; no match required", "ja": "使途自由の5,000米ドル。マッチング資金不要" },
     "coverage": ["creation", "training", "promotion"],
@@ -1919,10 +1920,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Il faut être basé dans la région Arts Midwest. La page publique ne précise pas les catégories d’immigration; elles doivent être confirmées directement.", "en": "Applicants must be based in the Arts Midwest region. The public page does not specify immigration categories, so confirm directly.", "ja": "Arts Midwest地域を拠点とする個人が対象です。公式公開ページは在留資格区分を明記していないため直接確認が必要です。" },
       "sourceUrl": "https://artsmidwest.org/get-support/midwest-culture-bearers-award/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://artsmidwest.org/get-support/midwest-culture-bearers-award/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "arts-midwest-gig-fund-next-watch",
@@ -1952,7 +1953,7 @@
   {
     "id": "maaa-artistic-innovations-next-cycle",
     "deadlineDate": null,
-    "nextCheckDate": "2026-08-12",
+    "nextCheckDate": "2026-08-20",
     "name": "Mid-America Arts Alliance — Artistic Innovations",
     "funder": "Mid-America Arts Alliance",
     "profiles": ["artist", "organization"],
@@ -1961,7 +1962,7 @@
     "purpose": "home_base_creation",
     "kind": "grant",
     "availability": "closed",
-    "deadline": { "fr": "Prochain cycle annoncé pour août 2026; date exacte non publiée", "en": "Next cycle announced to open in August 2026; exact deadline not published", "ja": "次回募集は2026年8月開始予定。正確な締切は未公表" },
+    "deadline": { "fr": "Prochain cycle annoncé pour le 20 août 2026; date limite exacte non publiée", "en": "Next cycle announced to open August 20, 2026; exact deadline not published", "ja": "次回募集は2026年8月20日開始予定。正確な締切は未公表" },
     "amount": { "fr": "Jusqu’à 15 000 $; contrepartie de 1:1", "en": "Up to $15,000; 1:1 match required", "ja": "最大15,000米ドル。1対1のマッチング資金が必要" },
     "coverage": ["creation", "production", "fees", "promotion"],
     "cashflow": { "fr": "Pour créer et présenter une œuvre nouvelle, originale ou expérimentale dans la région de six États", "en": "For creating and presenting new, original or experimental work in the six-state region", "ja": "6州地域で新規・独創的・実験的な作品を制作し公開する企画向け" },
@@ -1972,10 +1973,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Pour les artistes individuels et organismes artistiques 501(c)(3) de l’Arkansas, du Kansas, du Missouri, du Nebraska, de l’Oklahoma ou du Texas. Les règles d’immigration du prochain cycle doivent être vérifiées.", "en": "For individual artists and 501(c)(3) arts organizations in Arkansas, Kansas, Missouri, Nebraska, Oklahoma or Texas. Immigration rules for the next cycle require verification.", "ja": "アーカンソー、カンザス、ミズーリ、ネブラスカ、オクラホマ、テキサスの個人アーティストおよび501(c)(3)芸術団体向け。次回の在留資格条件は要確認です。" },
       "sourceUrl": "https://www.maaa.org/programs-grants/artistic-innovations/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.maaa.org/programs-grants/artistic-innovations/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "maaa-regional-touring-2026-27",
@@ -2166,9 +2167,9 @@
     "verifiedAt": "2026-07-23"
   },
   {
-    "id": "cci-quick-grant-august-2026",
-    "deadlineDate": "2026-08-15",
-    "nextCheckDate": "2026-08-12",
+    "id": "cci-quick-grant-september-2026",
+    "deadlineDate": "2026-09-15",
+    "nextCheckDate": "2026-08-26",
     "name": "Center for Cultural Innovation — Quick Grant",
     "funder": "Center for Cultural Innovation",
     "profiles": ["artist"],
@@ -2176,7 +2177,7 @@
     "disciplines": ["all"],
     "purpose": "career_support",
     "kind": "grant",
-    "deadline": { "fr": "15 août 2026 à 11 h 59 HP; cycles mensuels", "en": "August 15, 2026 at 11:59 a.m. PT; monthly cycles", "ja": "2026年8月15日11:59（太平洋時間）。毎月募集" },
+    "deadline": { "fr": "15 septembre 2026 à 11 h 59 HP; cycles mensuels", "en": "September 15, 2026 at 11:59 a.m. PT; monthly cycles", "ja": "2026年9月15日11:59（太平洋時間）。毎月募集" },
     "amount": { "fr": "Jusqu’à 600 $", "en": "Up to $600", "ja": "最大600米ドル" },
     "coverage": ["training", "travel", "fees"],
     "cashflow": { "fr": "Petite aide pour développement professionnel, déplacement, frais d’inscription ou garde de personnes à charge", "en": "Small grant for professional development, travel, registration fees or dependent care", "ja": "専門能力開発、移動、参加費、扶養者のケア費用などを支援" },
@@ -2186,10 +2187,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Il faut résider à temps plein en Californie et exercer comme artiste, créatif·ve, praticien·ne ou producteur·rice. La page publique ne détaille pas les catégories d’immigration.", "en": "Applicants must currently live full-time in California and work as an artist, creative, practitioner or producer. The public page does not specify immigration categories.", "ja": "現在カリフォルニア州に常住し、アーティスト、クリエイター、実践者、プロデューサーとして活動していることが必要です。在留資格区分は公式ページに明記されていません。" },
       "sourceUrl": "https://cciarts.org/quick-grant/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://cciarts.org/quick-grant/",
-    "verifiedAt": "2026-08-05"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "cac-individual-artists-fellowship-next-watch",
@@ -2221,7 +2222,7 @@
   {
     "id": "iac-creative-projects-fy27",
     "deadlineDate": null,
-    "nextCheckDate": "2026-08-15",
+    "nextCheckDate": "2026-08-26",
     "name": "Illinois Arts Council — Creative Projects Grant",
     "funder": "Illinois Arts Council",
     "profiles": ["artist", "organization"],
@@ -2240,10 +2241,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Les artistes doivent avoir 21 ans ou plus, être citoyens américains ou résidents permanents et résider légalement en Illinois depuis au moins douze mois. La sélection hors Chicago évite d’afficher une enveloppe déjà épuisée.", "en": "Artists must be age 21 or older, be U.S. citizens or permanent resident aliens, and have legally lived in Illinois for at least 12 months. The non-Chicago route prevents showing a region whose funds are exhausted.", "ja": "個人は21歳以上の米国市民または永住者で、イリノイ州に法的に12か月以上居住している必要があります。シカゴ都市圏の終了枠を表示しないよう地域を分けています。" },
       "sourceUrl": "https://arts.illinois.gov/granting-opportunities/funding-programs/proof-of-eligibility.html",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://arts.illinois.gov/granting-opportunities/grants-programs/creative-projects-grant.html",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "iac-creative-accelerator-fy27",
@@ -2273,8 +2274,8 @@
   },
   {
     "id": "austin-elevate-fy27",
-    "deadlineDate": "2026-08-18",
-    "nextCheckDate": "2026-08-12",
+    "deadlineDate": "2026-08-19",
+    "nextCheckDate": "2026-08-19",
     "name": "City of Austin — Elevate FY27",
     "funder": "Austin Arts, Culture, Music and Entertainment",
     "profiles": ["artist", "collective", "organization"],
@@ -2282,7 +2283,7 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "18 août 2026 à 18 h 59", "en": "August 18, 2026 at 6:59 p.m.", "ja": "2026年8月18日18:59締切" },
+    "deadline": { "fr": "19 août 2026 à 18 h 59 (prolongation de 24 heures)", "en": "August 19, 2026 at 6:59 p.m. (24-hour extension)", "ja": "2026年8月19日18:59締切（24時間延長）" },
     "amount": { "fr": "15 000 $ ou 30 000 $ pour artistes individuels; jusqu’à 80 000 $ selon le type et le budget", "en": "$15,000 or $30,000 for individual artists; up to $80,000 by applicant type and budget", "ja": "個人は15,000または30,000米ドル。申請主体・予算規模により最大80,000米ドル" },
     "coverage": ["creation", "production", "fees", "promotion"],
     "cashflow": { "fr": "Production d’activités artistiques publiques à Austin; dépôt direct ou avec fiscal sponsor", "en": "Production of public arts activity in Austin; direct application or fiscal sponsorship", "ja": "オースティンで一般公開する芸術活動の制作。直接申請またはFiscal Sponsor経由" },
@@ -2294,10 +2295,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Siège dans la région métropolitaine d’Austin, au moins deux ans de production locale et plus de la moitié de la production dans la ville ou son ETJ. La page publique ne précise pas les catégories d’immigration.", "en": "Requires Austin MSA headquarters, at least two years of local creative production and more than half of production in the city or its ETJ. The public page does not specify immigration categories.", "ja": "オースティン都市圏に拠点があり、当地で2年以上の制作実績があり、制作の過半が市内またはETJ内で行われる必要があります。在留資格区分は公式ページに明記されていません。" },
       "sourceUrl": "https://www.austintexas.gov/arts-culture/elevate",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.austintexas.gov/arts-culture/elevate",
-    "verifiedAt": "2026-08-05"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "austin-nexus-fall-2026",
@@ -2328,8 +2329,8 @@
   },
   {
     "id": "austin-live-music-fund-fy27",
-    "deadlineDate": "2026-08-18",
-    "nextCheckDate": "2026-08-12",
+    "deadlineDate": "2026-08-19",
+    "nextCheckDate": "2026-08-19",
     "name": "City of Austin — Austin Live Music Fund FY27",
     "funder": "Austin Arts, Culture, Music and Entertainment",
     "profiles": ["artist"],
@@ -2337,7 +2338,7 @@
     "disciplines": ["music"],
     "purpose": "career_support",
     "kind": "grant",
-    "deadline": { "fr": "18 août 2026 à 18 h 59", "en": "August 18, 2026 at 6:59 p.m.", "ja": "2026年8月18日18:59締切" },
+    "deadline": { "fr": "19 août 2026 à 18 h 59 (prolongation de 24 heures)", "en": "August 19, 2026 at 6:59 p.m. (24-hour extension)", "ja": "2026年8月19日18:59締切（24時間延長）" },
     "amount": { "fr": "Montants FY27 selon la catégorie; enveloppe totale annoncée de 6 M$", "en": "FY27 award amounts vary by category; $6 million total funding announced", "ja": "FY27の金額は区分別。総額600万米ドルの予算を公表" },
     "coverage": ["production", "recording", "promotion", "touring", "fees"],
     "cashflow": { "fr": "Pour musiciens professionnels et promoteurs indépendants, incluant événements, production, tournée promotionnelle et marketing", "en": "For professional musicians and independent promoters, including events, production, promotional touring and marketing", "ja": "プロの音楽家・独立プロモーターによるイベント、制作、宣伝ツアー、マーケティング等を支援" },
@@ -2347,10 +2348,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Les musiciens professionnels et promoteurs doivent documenter au moins deux ans d’activité. Les règles communes d’Austin et les catégories d’immigration doivent être confirmées dans le guide FY27.", "en": "Professional musicians and independent promoters must document at least two years of activity. Confirm Austin-wide requirements and immigration categories in the FY27 guide.", "ja": "プロの音楽家・独立プロモーターは2年以上の活動証明が必要です。オースティン共通条件と在留資格区分はFY27要項で確認してください。" },
       "sourceUrl": "https://www.austintexas.gov/arts-culture/austin-live-music-fund",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.austintexas.gov/arts-culture/austin-live-music-fund",
-    "verifiedAt": "2026-08-05"
+    "verifiedAt": "2026-08-19"
   },
   {
     "id": "haa-saci-2027",
