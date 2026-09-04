@@ -44,7 +44,7 @@ test("server-renders the MESURE product surface", async () => {
   assert.doesNotMatch(workbenchSource, /Find where your work could go next/);
   assert.doesNotMatch(html, /Avant d’envoyer le dossier/);
   assert.match(html, /Où résidez-vous actuellement/);
-  assert.match(html, /À propos des informations/);
+  assert.match(html, /Informations collectées à partir des sources primaires des organisateurs/);
   assert.match(html, /href="#about-mesure"/);
   assert.match(html, /aria-controls="about-mesure"/);
   assert.match(html, /id="about-mesure"/);

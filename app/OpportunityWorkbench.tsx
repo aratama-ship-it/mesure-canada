@@ -231,6 +231,7 @@ const festivalRadar = festivalRadarData as FestivalRadar[];
 const candidatePageSize = 5;
 const fundingPageSize = 3;
 const feedbackFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSc1pPGdqvVjMyocYNT7q-4JcVkn-c7c__ef1cveCDZ1Jf6hAQ/viewform";
+const SITE_VERSION = `v${new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Tokyo" }).format(new Date())}`;
 const protectedPersonGlossaryUrl = "https://www.canada.ca/en/services/immigration-citizenship/helpcentre/glossary.html#protected_person";
 const languageStorageKey = "mesure-canada-language";
 const languageChangeEvent = "mesure-canada-language-change";
@@ -363,6 +364,10 @@ const copy = {
     sourceNotice: {
       label: "À propos des informations",
       text: "Les informations sont recueillies et organisées à partir des sources primaires des organisateurs. Elles peuvent différer des informations les plus récentes en raison du délai de mise à jour. Vérifiez toujours les détails sur chaque site officiel.",
+    },
+    siteNotice: {
+      label: "BÊTA",
+      text: "Informations collectées à partir des sources primaires des organisateurs.",
     },
     betaNotice: {
       label: "BÊTA",
@@ -657,6 +662,10 @@ const copy = {
       label: "About the listings",
       text: "Listings are collected and organized from organizers’ primary sources. Because updates take time, displayed details may differ from the latest information. Always confirm details on each official website.",
     },
+    siteNotice: {
+      label: "BETA",
+      text: "Listings are compiled from organizers’ primary sources.",
+    },
     betaNotice: {
       label: "BETA",
       before: "This website is currently in beta. To send a request, comment or correction, please use",
@@ -870,6 +879,10 @@ const copy = {
     sourceNotice: {
       label: "掲載情報について",
       text: "掲載情報は、主催者等の一次情報をもとに収集・整理しています。更新のタイミングにより、最新の情報と異なる場合があります。詳細・最新情報は、必ず各公式サイトでご確認ください。",
+    },
+    siteNotice: {
+      label: "BETA",
+      text: "掲載情報は主催者の一次情報をもとに収集した参考情報です。",
     },
     betaNotice: {
       label: "BETA",
@@ -1733,7 +1746,7 @@ export function OpportunityWorkbench() {
   return (
     <main className="site-shell">
       <header className="masthead">
-        <div className="brandline"><h1 className="brand">MESURE</h1><span className="edition">{t.edition}</span></div>
+        <div className="brandline"><h1 className="brand">MESURE</h1><span className="edition">{t.edition}</span><span className="site-version" aria-hidden="true">{SITE_VERSION}</span></div>
         <div className="header-actions">
           <a
             className="header-about-link"
@@ -1751,16 +1764,21 @@ export function OpportunityWorkbench() {
         </div>
       </header>
 
-      <div className="site-notices">
-        <aside className="source-notice" aria-label={t.sourceNotice.label}>
-          <strong>{t.sourceNotice.label}</strong>
-          <span>{t.sourceNotice.text}</span>
-        </aside>
-        <aside className="beta-notice" aria-label={t.betaNotice.label}>
-          <strong>{t.betaNotice.label}</strong>
-          <span>{t.betaNotice.before} <a href={feedbackFormUrl} target="_blank" rel="noreferrer">{t.betaNotice.link}</a>{t.betaNotice.after}</span>
-        </aside>
-      </div>
+      <aside className="site-notice" aria-label={t.siteNotice.label}>
+        <span className="site-notice__label">{t.siteNotice.label}</span>
+        <span>
+          {t.siteNotice.text} (
+          <a
+            href="#about-mesure"
+            onClick={() => {
+              if (aboutDisclosureRef.current) aboutDisclosureRef.current.open = true;
+            }}
+          >
+            {t.aboutNav}
+          </a>
+          ). {t.betaNotice.before} <a href={feedbackFormUrl} target="_blank" rel="noreferrer">{t.betaNotice.link}</a>{t.betaNotice.after}
+        </span>
+      </aside>
 
       <section className="intro" aria-labelledby="intro-title">
         <div><p className="eyebrow">{t.eyebrow}</p><h2 id="intro-title">{t.headline}</h2></div>
@@ -1928,7 +1946,7 @@ export function FestivalRadarLedger() {
   return (
     <main className="site-shell radar-page-shell">
       <header className="masthead">
-        <div className="brandline"><h1 className="brand">MESURE</h1><span className="edition">{t.ledgerEdition}</span></div>
+        <div className="brandline"><h1 className="brand">MESURE</h1><span className="edition">{t.ledgerEdition}</span><span className="site-version" aria-hidden="true">{SITE_VERSION}</span></div>
         <div className="header-actions">
           <Link className="page-return-link" href="/">← {t.backToSearch}</Link>
           <div className="language-switch" aria-label={t.languageLabel}>
@@ -1937,16 +1955,12 @@ export function FestivalRadarLedger() {
         </div>
       </header>
 
-      <div className="site-notices">
-        <aside className="source-notice" aria-label={t.sourceNotice.label}>
-          <strong>{t.sourceNotice.label}</strong>
-          <span>{t.sourceNotice.text}</span>
-        </aside>
-        <aside className="beta-notice" aria-label={t.betaNotice.label}>
-          <strong>{t.betaNotice.label}</strong>
-          <span>{t.betaNotice.before} <a href={feedbackFormUrl} target="_blank" rel="noreferrer">{t.betaNotice.link}</a>{t.betaNotice.after}</span>
-        </aside>
-      </div>
+      <aside className="site-notice" aria-label={t.siteNotice.label}>
+        <span className="site-notice__label">{t.siteNotice.label}</span>
+        <span>
+          {t.siteNotice.text} {t.betaNotice.before} <a href={feedbackFormUrl} target="_blank" rel="noreferrer">{t.betaNotice.link}</a>{t.betaNotice.after}
+        </span>
+      </aside>
 
       <section className="festival-radar" aria-labelledby="festival-radar-heading">
         <div className="radar-intro">
