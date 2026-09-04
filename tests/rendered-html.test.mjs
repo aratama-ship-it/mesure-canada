@@ -331,8 +331,8 @@ test("opportunity and funding records preserve evidence fields", async () => {
   }
 
   assert.equal(funding.length, 75);
-  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 50);
-  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 25);
+  assert.equal(funding.filter((record) => record.deadlineDate !== null).length, 53);
+  assert.equal(funding.filter((record) => record.deadlineDate === null).length, 22);
   assert.equal(fundingById.get("cca-touring").deadlineDate, "2026-10-07");
   assert.equal(fundingById.get("calq-travel").deadlineDate, null);
   assert.equal(fundingById.get("bcac-performing-artists-2026").deadlineDate, "2026-05-27");

@@ -2,7 +2,7 @@
   {
     "id": "calq-travel",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-11-15",
     "name": "CALQ — Déplacement",
     "funder": "Conseil des arts et des lettres du Québec",
     "profiles": ["artist"],
@@ -35,15 +35,15 @@
         "ja": "カナダ市民または永住者で、直近12か月にわたり通常ケベック州に居住していることが必要です。"
       },
       "sourceUrl": "https://www.calq.gouv.qc.ca/aides/deplacement/",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aides/deplacement",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "calq-circulation",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-11-15",
     "name": "CALQ — Circulation d’œuvres hors Québec",
     "funder": "Conseil des arts et des lettres du Québec",
     "profiles": ["artist"],
@@ -76,15 +76,15 @@
         "ja": "カナダ市民または永住者で、直近12か月にわたり通常ケベック州に居住していることが必要です。"
       },
       "sourceUrl": "https://www.calq.gouv.qc.ca/fileadmin/fichiers/Programmes_Aide_financiere/Circulation-au-Qc-et-HQ-Renseignements-personnels.pdf",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aides/circulation-hors-quebec/",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "calq-residencies",
     "deadlineDate": null,
-    "nextCheckDate": "2026-08-20",
+    "nextCheckDate": "2026-11-01",
     "name": "CALQ — Ateliers-résidences",
     "funder": "Conseil des arts et des lettres du Québec",
     "profiles": ["artist"],
@@ -113,10 +113,10 @@
         "ja": "CALQの一般条件では市民権または永住権と直近12か月のケベック居住が必要です。各レジデンス固有の条件も確認してください。"
       },
       "sourceUrl": "https://www.calq.gouv.qc.ca/aide-financiere/foire-aux-questions/bourses-aux-artistes",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.calq.gouv.qc.ca/aide-financiere/international",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "cca-microgrants",
@@ -351,7 +351,7 @@
   {
     "id": "oac-market-travel",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-10-15",
     "name": "Ontario Arts Council — Market Development Travel",
     "funder": "Ontario Arts Council",
     "profiles": ["artist", "collective", "organization"],
@@ -377,15 +377,15 @@
         "ja": "現在は募集終了です。オンタリオ州の個人・グループ・団体にOACのプロジェクト助成共通条件が適用されます。"
       },
       "sourceUrl": "https://www.arts.on.ca/grants/general-granting-information/guide-to-project-programs",
-      "verifiedAt": "2026-07-20"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.arts.on.ca/grants/market-development-travel",
-    "verifiedAt": "2026-07-20"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "tac-music",
     "deadlineDate": "2026-09-03",
-    "nextCheckDate": "2026-08-27",
+    "nextCheckDate": "2026-12-01",
     "name": "Toronto Arts Council — Music Creation & Audio Recording",
     "funder": "Toronto Arts Council",
     "profiles": ["artist"],
@@ -409,10 +409,10 @@
         "ja": "18歳以上の個人アーティストで、トロント市に現在居住し、1年以上の居住歴とSINが必要です。制度ページでは市民、永住者、永住申請中が対象です。"
       },
       "sourceUrl": "https://torontoartscouncil.org/grants/music-creation-and-recording/",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://torontoartscouncil.org/grants/music-creation-and-recording/",
-    "verifiedAt": "2026-08-05"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "tac-newcomer-mentorship",
@@ -625,7 +625,7 @@
   {
     "id": "en-piste-training-expense-reimbursement-2026",
     "deadlineDate": "2026-10-10",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-10-08",
     "name": "En Piste — Remboursement des dépenses d’entraînement",
     "funder": "En Piste",
     "profiles": ["artist"],
@@ -657,15 +657,15 @@
         "ja": "公式ページでは、対象区分のEn Piste有料会員であること、ケベック居住証明、入会後にケベック州内で発生した対象トレーニング費を求めています。市民権・永住権条件は公開されていないため一時滞在者を自動除外しませんが、プロ会員としての加入資格は確認が必要です。"
       },
       "sourceUrl": "https://enpiste.qc.ca/programme/remboursement-depenses/",
-      "verifiedAt": "2026-07-21"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://enpiste.qc.ca/programme/remboursement-depenses/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "en-piste-personalized-training-2026",
     "deadlineDate": "2026-07-12",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-10-01",
     "name": "En Piste — Formation individualisée / sur mesure",
     "funder": "En Piste",
     "profiles": ["artist", "collective"],
@@ -706,10 +706,10 @@
         "ja": "Compétences-Carrièresはサーカス業界のプロ、Soutien à l’entraînementはサーカスアーティスト向けです。2026年期はモントリオールまたはオンライン実施。En Pisteのプロ会員は就労許可保持者も加入できますが、制度ページに在留資格・居住条件の全要件がないため応募前確認が必要です。"
       },
       "sourceUrl": "https://enpiste.qc.ca/en/programme/personalized-training/",
-      "verifiedAt": "2026-07-21"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://enpiste.qc.ca/en/formation/personalized-training/",
-    "verifiedAt": "2026-07-21"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "en-piste-mon-premier-rideau",
@@ -755,8 +755,8 @@
   },
   {
     "id": "bcac-circulation-touring-individuals-2026",
-    "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "deadlineDate": "2026-09-23",
+    "nextCheckDate": "2026-09-17",
     "name": "BC Arts Council — Arts Circulation and Touring (Individuals)",
     "funder": "BC Arts Council",
     "profiles": ["artist"],
@@ -764,11 +764,10 @@
     "disciplines": ["all"],
     "purpose": "mobility_export",
     "kind": "grant",
-    "availability": "closed",
     "deadline": {
-      "fr": "Prochaine période prévue à l’automne 2026; date exacte non annoncée",
-      "en": "Next intake expected in fall 2026; exact deadline not announced",
-      "ja": "次回は2026年秋の予定。正確な締切日は未発表"
+      "fr": "Automne 2026 : demandes acceptées jusqu’au 23 septembre 2026 (traitement des inscriptions suspendu le 16 septembre 23 h 59)",
+      "en": "Fall 2026: applications accepted until September 23, 2026 (registration processing pauses September 16 at 11:59 p.m.)",
+      "ja": "2026年秋期：2026年9月23日まで受付（登録処理は9月16日23:59で一旦停止）"
     },
     "amount": {
       "fr": "Jusqu’à 25 000 $ pour une tournée rémunérée; jusqu’à 15 000 $ pour les déplacements entrants ou sortants",
@@ -791,10 +790,10 @@
         "ja": "カナダ市民または永住者で、BC州に連続12か月通常居住する確立したプロアーティストが対象。招待・確認書が必要で、州外向け活動は原則として拠点から80km以上離れている必要があります。"
       },
       "sourceUrl": "https://www.bcartscouncil.ca/app/uploads/sites/508/2026/03/FY2026-27-ACT-Program_Guidelines_Individuals_Intake-1.pdf",
-      "verifiedAt": "2026-07-22"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.bcartscouncil.ca/program/arts-circulation-and-touring/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "bcac-performing-artists-2026",
@@ -902,7 +901,7 @@
   {
     "id": "sk-arts-independent-artists-2026",
     "deadlineDate": "2026-10-01",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-09-28",
     "name": "SK Arts — Independent Artists",
     "funder": "SK Arts",
     "profiles": ["artist", "collective"],
@@ -930,10 +929,10 @@
         "ja": "サスカチュワン州に恒久的住所を1年以上置き、年6か月以上居住し、州内で1年以上活動するプロアーティストが対象。コレクティブはメンバーの50％以上がプロ、かつ50％以上が同州の対象居住者である必要があります。"
       },
       "sourceUrl": "https://www.sk-arts.ca/files/funding/packages/IA_Guidelines_-_2025-01.pdf",
-      "verifiedAt": "2026-07-22"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.sk-arts.ca/grants/grants-by-type/artists/independent-artists.html",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "mac-create-2026",
@@ -990,7 +989,7 @@
   {
     "id": "artsnb-creation-2026",
     "deadlineDate": "2026-10-01",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-09-25",
     "name": "artsnb — Creation",
     "funder": "New Brunswick Arts Board / artsnb",
     "profiles": ["artist"],
@@ -1009,10 +1008,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Il faut résider au Nouveau-Brunswick depuis 12 mois et être citoyen·ne, résident·e permanent·e, avoir une demande de résidence permanente en cours, ou être affilié·e à une Première Nation de l’Île de la Tortue. La dernière possibilité exige une vérification directe si votre statut n’est pas autrement admissible.", "en": "Applicants must have lived in New Brunswick for 12 months and be a citizen, permanent resident, have a permanent-residence application in process, or have an affiliation with a First Nation on Turtle Island. The last route needs direct confirmation when immigration status does not otherwise qualify.", "ja": "ニューブランズウィック州に12か月居住し、市民、永住者、永住権申請中、またはタートル・アイランドのFirst Nationとの所属関係があること。最後の条件で申請する場合、在留資格だけでは判定できないため制度担当への確認が必要です。" },
       "sourceUrl": "https://artsnb.ca/web/wp-content/uploads/2019/07/Creation-Guidelines_Lignes-directrices-Creation-2.pdf",
-      "verifiedAt": "2026-07-22"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://artsnb.ca/web/programs/creation/",
-    "verifiedAt": "2026-07-22"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "artsnb-career-arts-by-invitation-2026",
@@ -1044,7 +1043,7 @@
   {
     "id": "artsnb-artist-in-residence-2026",
     "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-25",
+    "nextCheckDate": "2026-11-01",
     "name": "artsnb — Artist in Residence (Artists)",
     "funder": "New Brunswick Arts Board / artsnb",
     "profiles": ["artist"],
@@ -1064,7 +1063,7 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Artiste professionnel·le du Nouveau-Brunswick accepté·e par un organisme hôte pour une résidence pouvant aller jusqu’à 12 mois, dans la province, ailleurs ou en ligne. Les mêmes voies de statut, y compris la demande de résidence permanente en cours et l’affiliation à une Première Nation, s’appliquent.", "en": "Professional New Brunswick artist accepted by a host organization for a residency of up to 12 months in the province, elsewhere or virtually. The same status routes apply, including a pending permanent-residence application and First Nation affiliation.", "ja": "ニューブランズウィック州のプロアーティストが、州内・州外・オンラインで最長12か月のレジデンスに受入決定されていること。永住権申請中やFirst Nation所属関係を含む同州の資格条件が適用されます。" },
       "sourceUrl": "https://artsnb.ca/web/wp-content/uploads/2019/07/AIR-Artists-Guidelines_2025_Lignes-directrices-AER-Artistes-4.pdf",
-      "verifiedAt": "2026-07-22"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://artsnb.ca/web/programs/artist-in-residence/",
     "verifiedAt": "2026-08-05"
@@ -1334,7 +1333,7 @@
   {
     "id": "artsnl-professional-travel-2026",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-12-01",
     "name": "ArtsNL — Professional Artists’ Travel Fund",
     "funder": "Newfoundland and Labrador Arts Council / ArtsNL",
     "profiles": ["artist", "collective"],
@@ -1343,14 +1342,14 @@
     "purpose": "mobility_export",
     "kind": "grant",
     "deadline": {
-      "fr": "En continu; confirmer le délai minimal avant le déplacement",
-      "en": "Open year-round; confirm the minimum lead time before travel",
-      "ja": "通年受付。渡航前に必要な申請期間は現行要項で要確認"
+      "fr": "En continu, premier arrivé premier servi; demande recommandée au moins 4 semaines avant le départ",
+      "en": "Rolling, first-come first-served; apply at least 4 weeks before departure",
+      "ja": "通年・先着順で受付。出発の最低4週間前の申請を推奨"
     },
     "amount": {
-      "fr": "Plafond non indiqué dans le plan officiel 2026–2029; confirmer le guide actuel",
-      "en": "Maximum not stated in the official 2026–2029 plan; confirm the current guide",
-      "ja": "公式2026–2029事業計画に上限額の記載なし。現行要項で要確認"
+      "fr": "Aucun plafond fixe publié; budget total 2025–26 de 190 000 $, les demandes supérieures à 4 000 $ font l’objet d’un examen plus approfondi",
+      "en": "No fixed per-applicant cap published; 2025–26 total program budget $190,000, requests above $4,000 face closer review",
+      "ja": "個別の上限額の明記なし。2025–26年度の総予算190,000カナダドル。申請額が4,000ドルを超えると審査が厳しくなる"
     },
     "coverage": ["travel", "stay"],
     "cashflow": {
@@ -1368,16 +1367,16 @@
         "en": "The official plan confirms year-round support for artists, collaborations and professional groups invited to an unexpected opportunity. Status, residence duration, maximum and application lead time remain to be confirmed.",
         "ja": "公式事業計画で、予期しなかった招待を受けたアーティスト、共同制作、プロ団体向けの通年支援を確認できます。在留資格、居住期間、上限額、申請期限は現行要項で要確認です。"
       },
-      "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
-      "verifiedAt": "2026-07-23"
+      "sourceUrl": "https://artsnl.ca/grants/professional-artists-travel-fund",
+      "verifiedAt": "2026-09-04"
     },
-    "sourceUrl": "https://www.gov.nl.ca/tcar/files/NewfoundlandandLabradorArtsCouncil2026-29BusinessPlan.pdf",
-    "verifiedAt": "2026-07-23"
+    "sourceUrl": "https://artsnl.ca/grants/professional-artists-travel-fund",
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "yukon-express-microgrant-2026",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-11-15",
     "name": "Yukon — Express Micro-grant",
     "funder": "Government of Yukon — Arts Section",
     "profiles": ["artist", "collective", "organization"],
@@ -1414,15 +1413,15 @@
         "ja": "個人は16歳以上のカナダ市民または永住者で、ユーコンに連続1年間居住していること。コレクティブは75％以上のメンバーが居住条件を満たすこと。団体・企業・政府には区分別の条件があります。"
       },
       "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-small-grant-funding-your-creative-or-cultural-project",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-small-grant-funding-your-creative-or-cultural-project",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "yukon-advanced-artist-award-2026",
     "deadlineDate": "2026-10-01",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-09-25",
     "name": "Yukon — Advanced Artist Award",
     "funder": "Government of Yukon — Arts Section",
     "profiles": ["artist"],
@@ -1457,10 +1456,10 @@
         "ja": "ユーコンに連続1年間居住し、高度な活動実績を持つ個人アーティストが対象。在留資格は公式ページに明記されていないため確認が必要です。"
       },
       "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-professional-artistic-development-funding",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://yukon.ca/en/arts-and-culture/programs-and-funding/apply-professional-artistic-development-funding",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "yukon-touring-artist-fund-2026",
@@ -1510,7 +1509,7 @@
   {
     "id": "nwt-small-arts-project-fund-2026",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-12-01",
     "name": "Northwest Territories — Small Arts Project Fund",
     "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
     "profiles": ["artist", "collective", "organization"],
@@ -1546,10 +1545,10 @@
         "ja": "個人は申請前にノースウエスト準州へ6か月以上居住し、申請時点でも居住していることが必要です。団体は同準州の法人登録と良好な登録状態が必要です。在留資格は明記されていないため確認が必要です。"
       },
       "sourceUrl": "https://www.iti.gov.nt.ca/en/services/small-arts-project-fund",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.iti.gov.nt.ca/en/services/small-arts-project-fund",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "nwt-medium-arts-project-grant-2026",
@@ -1598,7 +1597,7 @@
   {
     "id": "nwt-artist-travel-touring-fund-2026",
     "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-12-01",
     "name": "Northwest Territories — Artist Travel and Touring Fund",
     "funder": "Government of the Northwest Territories — Industry, Tourism and Investment",
     "profiles": ["artist", "collective"],
@@ -1633,10 +1632,10 @@
         "ja": "ノースウエスト準州に6か月以上居住し、申請時点でも居住する個人・グループが対象です。団体は対象外。在留資格は明記されていないため確認が必要です。"
       },
       "sourceUrl": "https://www.iti.gov.nt.ca/en/services/artist-travel-and-tour-fund",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.iti.gov.nt.ca/en/services/artist-travel-and-tour-fund",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "nunavut-commissioners-arts-award",
@@ -1931,7 +1930,7 @@
   {
     "id": "arts-midwest-gig-fund-next-watch",
     "deadlineDate": "2025-09-29",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-10-15",
     "name": "Arts Midwest — GIG Fund",
     "funder": "Arts Midwest",
     "profiles": ["organization"],
@@ -1948,15 +1947,15 @@
       "organizationRegisteredInUs": true,
       "note": { "fr": "Le dernier cycle visait les organismes 501(c)(3) et tribaux de la région, avec un UEI et un budget annuel généralement inférieur à 2 M$. Vérifier le prochain guide.", "en": "The latest cycle served regional 501(c)(3) and tribal organizations with a UEI and generally under $2 million in annual expenses. Recheck the next guidelines.", "ja": "直近募集は、UEIを持ち、原則年間経費200万ドル以下の地域内501(c)(3)・部族組織が対象でした。次回要項を再確認してください。" },
       "sourceUrl": "https://artsmidwest.org/get-support/gig-fund/applying/",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://artsmidwest.org/get-support/gig-fund/applying/",
-    "verifiedAt": "2026-08-05"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "maaa-artistic-innovations-next-cycle",
-    "deadlineDate": null,
-    "nextCheckDate": "2026-08-20",
+    "deadlineDate": "2026-09-24",
+    "nextCheckDate": "2026-09-18",
     "name": "Mid-America Arts Alliance — Artistic Innovations",
     "funder": "Mid-America Arts Alliance",
     "profiles": ["artist", "organization"],
@@ -1964,8 +1963,7 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "availability": "closed",
-    "deadline": { "fr": "Prochain cycle annoncé pour le 20 août 2026; date limite exacte non publiée", "en": "Next cycle announced to open August 20, 2026; exact deadline not published", "ja": "次回募集は2026年8月20日開始予定。正確な締切は未公表" },
+    "deadline": { "fr": "24 septembre 2026, 17 h (heure du Centre); période du projet du 1er janvier au 30 juin 2027", "en": "September 24, 2026, 5:00 p.m. Central Time; eligible project period January 1 – June 30, 2027", "ja": "2026年9月24日17:00（中部時間）締切。対象事業期間は2027年1月1日〜6月30日" },
     "amount": { "fr": "Jusqu’à 15 000 $; contrepartie de 1:1", "en": "Up to $15,000; 1:1 match required", "ja": "最大15,000米ドル。1対1のマッチング資金が必要" },
     "coverage": ["creation", "production", "fees", "promotion"],
     "cashflow": { "fr": "Pour créer et présenter une œuvre nouvelle, originale ou expérimentale dans la région de six États", "en": "For creating and presenting new, original or experimental work in the six-state region", "ja": "6州地域で新規・独創的・実験的な作品を制作し公開する企画向け" },
@@ -1976,10 +1974,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Pour les artistes individuels et organismes artistiques 501(c)(3) de l’Arkansas, du Kansas, du Missouri, du Nebraska, de l’Oklahoma ou du Texas. Les règles d’immigration du prochain cycle doivent être vérifiées.", "en": "For individual artists and 501(c)(3) arts organizations in Arkansas, Kansas, Missouri, Nebraska, Oklahoma or Texas. Immigration rules for the next cycle require verification.", "ja": "アーカンソー、カンザス、ミズーリ、ネブラスカ、オクラホマ、テキサスの個人アーティストおよび501(c)(3)芸術団体向け。次回の在留資格条件は要確認です。" },
       "sourceUrl": "https://www.maaa.org/programs-grants/artistic-innovations/",
-      "verifiedAt": "2026-08-19"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.maaa.org/programs-grants/artistic-innovations/",
-    "verifiedAt": "2026-08-19"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "maaa-regional-touring-2026-27",
@@ -2008,7 +2006,7 @@
   {
     "id": "jazz-road-tours-next-watch",
     "deadlineDate": "2025-10-15",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-10-01",
     "name": "South Arts — Jazz Road Tours",
     "funder": "South Arts with the six U.S. regional arts organizations",
     "profiles": ["artist", "collective"],
@@ -2027,10 +2025,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "L’artiste principal doit être un jazzman professionnel de 18 ans ou plus, basé aux États-Unis ou dans leurs territoires, et citoyen ou résident permanent.", "en": "The lead applicant must be a professional jazz artist age 18 or older, based in the U.S. or its territories, and a U.S. citizen or permanent resident.", "ja": "代表申請者は18歳以上のプロのジャズアーティストで、米国・米領を拠点とする米国市民または永住者である必要があります。" },
       "sourceUrl": "https://www.southarts.org/grants-opportunities/jazz-road-tours-old",
-      "verifiedAt": "2026-08-05"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.southarts.org/grants-opportunities/jazz-road-tours-old",
-    "verifiedAt": "2026-08-05"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "creative-west-artist-fund-next-watch",
@@ -2090,7 +2088,7 @@
   {
     "id": "vermont-artist-development-fy27",
     "deadlineDate": "2026-09-07",
-    "nextCheckDate": "2026-08-25",
+    "nextCheckDate": "2026-09-05",
     "name": "Vermont Arts Council — Artist Development Grant",
     "funder": "Vermont Arts Council",
     "profiles": ["artist", "collective"],
@@ -2110,15 +2108,15 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Le cycle précédent exigeait une résidence légale au Vermont depuis au moins un an; vérifiez les documents FY27 au dépôt. Les catégories d’immigration ne sont pas détaillées.", "en": "The prior-cycle application required legal Vermont residence for at least one year; verify the FY27 materials before submitting. Immigration categories are not detailed.", "ja": "前回申請書ではバーモント州に法的に1年以上居住していることが必要でした。FY27書類で再確認してください。在留資格区分は未詳です。" },
       "sourceUrl": "https://www.vermontartscouncil.org/grants/find-a-grant/artists/artist-development/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://www.vermontartscouncil.org/grants/find-a-grant/artists/artist-development/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "maine-artist-fellowship-2027",
-    "deadlineDate": "2026-09-30",
-    "nextCheckDate": "2026-09-01",
+    "deadlineDate": "2026-10-14",
+    "nextCheckDate": "2026-10-01",
     "name": "Maine Arts Commission — Artist Fellowship",
     "funder": "Maine Arts Commission",
     "profiles": ["artist"],
@@ -2126,7 +2124,7 @@
     "disciplines": ["all"],
     "purpose": "career_support",
     "kind": "grant",
-    "deadline": { "fr": "Ouverture le 1er septembre; échéance le 30 septembre 2026", "en": "Opens September 1; deadline September 30, 2026", "ja": "2026年9月1日開始、9月30日締切" },
+    "deadline": { "fr": "Ouverture le 1er septembre; échéance le 14 octobre 2026", "en": "Opens September 1; deadline October 14, 2026", "ja": "2026年9月1日開始、10月14日締切" },
     "amount": { "fr": "Montant 2027 non encore publié; le cycle précédent accordait 5 000 $", "en": "2027 amount not yet published; the prior cycle awarded $5,000", "ja": "2027年分の金額は未公表。前回は5,000米ドル" },
     "coverage": ["creation", "promotion"],
     "cashflow": { "fr": "Prix au mérite pour l’excellence artistique sur l’ensemble de la carrière", "en": "Merit-based recognition of artistic excellence across a Maine artist’s career", "ja": "メイン州アーティストのキャリア全体における芸術的卓越性を評価する賞" },
@@ -2136,15 +2134,15 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "L’appel 2027 est annoncé, mais ses lignes directrices détaillées ne sont pas encore publiées. La résidence au Maine, le montant et les règles d’immigration doivent être confirmés à l’ouverture.", "en": "The 2027 call is announced, but detailed guidelines are not yet published. Confirm Maine residency, amount and immigration rules when it opens.", "ja": "2027年募集は予告されていますが、詳細要項は未公開です。開始時にメイン州居住条件、金額、在留資格条件を確認してください。" },
       "sourceUrl": "https://mainearts.maine.gov/Pages/Funding/Grants-Help",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://mainearts.maine.gov/Pages/Funding/Grants-Help",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "massachusetts-creative-individuals-fy26",
     "deadlineDate": "2025-10-28",
-    "nextCheckDate": "2026-09-01",
+    "nextCheckDate": "2026-09-11",
     "name": "Mass Cultural Council — Grants for Creative Individuals",
     "funder": "Mass Cultural Council",
     "profiles": ["artist"],
@@ -2164,15 +2162,15 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Le cycle FY26 exigeait une résidence au Massachusetts pendant toute l’année 2025 et jusqu’en juin 2026. Les catégories d’immigration ne sont pas précisées; vérifier le prochain guide.", "en": "The FY26 cycle required full-year Massachusetts residence for 2025 continuing through June 2026. Immigration categories are not specified; recheck the next guidelines.", "ja": "FY26は2025年通年から2026年6月までマサチューセッツ州に居住していることが必要でした。在留資格区分は未記載のため次回要項で確認してください。" },
       "sourceUrl": "https://massculturalcouncil.org/artists-art/grants-for-creative-individuals/application-process/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://massculturalcouncil.org/artists-art/grants-for-creative-individuals/application-process/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "cci-quick-grant-september-2026",
     "deadlineDate": "2026-09-15",
-    "nextCheckDate": "2026-08-26",
+    "nextCheckDate": "2026-09-14",
     "name": "Center for Cultural Innovation — Quick Grant",
     "funder": "Center for Cultural Innovation",
     "profiles": ["artist"],
@@ -2190,10 +2188,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Il faut résider à temps plein en Californie et exercer comme artiste, créatif·ve, praticien·ne ou producteur·rice. La page publique ne détaille pas les catégories d’immigration.", "en": "Applicants must currently live full-time in California and work as an artist, creative, practitioner or producer. The public page does not specify immigration categories.", "ja": "現在カリフォルニア州に常住し、アーティスト、クリエイター、実践者、プロデューサーとして活動していることが必要です。在留資格区分は公式ページに明記されていません。" },
       "sourceUrl": "https://cciarts.org/quick-grant/",
-      "verifiedAt": "2026-08-19"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://cciarts.org/quick-grant/",
-    "verifiedAt": "2026-08-19"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "cac-individual-artists-fellowship-next-watch",
@@ -2225,7 +2223,8 @@
   {
     "id": "iac-creative-projects-fy27",
     "deadlineDate": null,
-    "nextCheckDate": "2026-08-26",
+    "nextCheckDate": "2026-11-01",
+    "availability": "closed",
     "name": "Illinois Arts Council — Creative Projects Grant",
     "funder": "Illinois Arts Council",
     "profiles": ["artist", "organization"],
@@ -2233,7 +2232,7 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "En continu jusqu’à épuisement des fonds; enveloppe du Grand Chicago épuisée au 15 juillet 2026", "en": "Rolling until regional funds are exhausted; Chicago Metro funds were exhausted as of July 15, 2026", "ja": "地域予算終了まで随時受付。シカゴ都市圏枠は2026年7月15日時点で終了" },
+    "deadline": { "fr": "Tous les fonds régionaux FY27 sont épuisés depuis le 7 août 2026; prochaine ouverture non annoncée", "en": "All FY27 regional funds exhausted as of August 7, 2026; next opening not yet announced", "ja": "FY27予算は全地域で2026年8月7日時点で終了。次回開始時期は未発表" },
     "amount": { "fr": "Jusqu’à 12 000 $", "en": "Up to $12,000", "ja": "最大12,000米ドル" },
     "coverage": ["creation", "production", "fees", "promotion"],
     "cashflow": { "fr": "Projets artistiques d’au moins huit semaines; les fonds restent annoncés dans cinq régions hors Grand Chicago", "en": "Arts projects lasting at least eight weeks; funds remain listed in five regions outside Chicago Metro", "ja": "8週間以上の芸術プロジェクト向け。シカゴ都市圏外の5地域では予算が残っていると公表されています" },
@@ -2244,15 +2243,15 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "Les artistes doivent avoir 21 ans ou plus, être citoyens américains ou résidents permanents et résider légalement en Illinois depuis au moins douze mois. La sélection hors Chicago évite d’afficher une enveloppe déjà épuisée.", "en": "Artists must be age 21 or older, be U.S. citizens or permanent resident aliens, and have legally lived in Illinois for at least 12 months. The non-Chicago route prevents showing a region whose funds are exhausted.", "ja": "個人は21歳以上の米国市民または永住者で、イリノイ州に法的に12か月以上居住している必要があります。シカゴ都市圏の終了枠を表示しないよう地域を分けています。" },
       "sourceUrl": "https://arts.illinois.gov/granting-opportunities/funding-programs/proof-of-eligibility.html",
-      "verifiedAt": "2026-08-19"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://arts.illinois.gov/granting-opportunities/grants-programs/creative-projects-grant.html",
-    "verifiedAt": "2026-08-19"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "iac-creative-accelerator-fy27",
-    "deadlineDate": null,
-    "nextCheckDate": "2026-09-01",
+    "deadlineDate": "2026-10-14",
+    "nextCheckDate": "2026-10-01",
     "name": "Illinois Arts Council — Creative Accelerator Fund",
     "funder": "Illinois Arts Council",
     "profiles": ["artist"],
@@ -2260,7 +2259,7 @@
     "disciplines": ["all"],
     "purpose": "career_support",
     "kind": "grant",
-    "deadline": { "fr": "Ouverture prévue en septembre 2026; échéance d’octobre non encore datée", "en": "Expected to open in September 2026; October deadline date not yet published", "ja": "2026年9月開始予定。10月締切の正確な日付は未公表" },
+    "deadline": { "fr": "23 h 59, le 14 octobre 2026", "en": "October 14, 2026, at 11:59 p.m.", "ja": "2026年10月14日23:59締切" },
     "amount": { "fr": "10 000 $ imposables et sans affectation", "en": "$10,000 taxable unrestricted award", "ja": "課税対象・使途自由の10,000米ドル" },
     "coverage": ["creation", "training", "promotion"],
     "cashflow": { "fr": "Soutien sans affectation pour une pratique artistique active et soutenue", "en": "Unrestricted support for an active and sustained artistic practice", "ja": "継続的に活動するアーティストへの使途自由な支援" },
@@ -2270,10 +2269,10 @@
       "professionalPracticeVerificationRequired": true,
       "note": { "fr": "La page du programme exige 21 ans ou plus, une résidence en Illinois établie avant le 14 octobre 2025 et une pratique soutenue. La présélection d’âge reste prudente; vérifiez l’âge exact dans le formulaire.", "en": "The program page requires age 21 or older, Illinois residency established before October 14, 2025, and a sustained practice. The age pre-screen is conservative; verify the exact age rule in the application.", "ja": "21歳以上、2025年10月14日以前からのイリノイ州居住、継続的な活動実績が必要です。画面の年齢判定は18歳以上までの粗い区分のため、21歳条件は申請時に確認してください。" },
       "sourceUrl": "https://arts.illinois.gov/granting-opportunities/grants-programs/creative-accelerator-fund.html",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://arts.illinois.gov/granting-opportunities/grants-programs/creative-accelerator-fund.html",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "austin-elevate-fy27",
@@ -2421,7 +2420,7 @@
   {
     "id": "haa-let-creativity-happen-round3-2026",
     "deadlineDate": "2026-09-26",
-    "nextCheckDate": "2026-08-28",
+    "nextCheckDate": "2026-09-24",
     "name": "Houston Arts Alliance — Let Creativity Happen! Round 3",
     "funder": "Houston Arts Alliance / City of Houston",
     "profiles": ["artist", "collective", "organization"],
@@ -2441,15 +2440,15 @@
       "organizationVerificationRequired": true,
       "note": { "fr": "La page 2026 annonce les individus, créatifs, organismes et projets parrainés fiscalement. Confirmez les documents de résidence et les conditions de paiement dans le guide du troisième tour à son ouverture.", "en": "The 2026 page lists individuals, creatives, organizations and fiscally sponsored projects. Confirm residence documents and payment conditions in the Round 3 guide when it opens.", "ja": "2026年ページでは個人、クリエイター、団体、Fiscal Sponsor経由のプロジェクトが対象です。第3ラウンド開始時に居住証明と受領条件を確認してください。" },
       "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "haa-citys-initiative-round3-2026",
     "deadlineDate": "2026-09-26",
-    "nextCheckDate": "2026-08-28",
+    "nextCheckDate": "2026-09-24",
     "name": "Houston Arts Alliance — City’s Initiative Round 3",
     "funder": "Houston Arts Alliance / City of Houston",
     "profiles": ["artist", "collective", "organization"],
@@ -2469,10 +2468,10 @@
       "organizationVerificationRequired": true,
       "note": { "fr": "Ouvert aux individus, organismes et projets parrainés fiscalement. Les priorités et preuves propres au troisième tour doivent être confirmées lors de l’ouverture.", "en": "Open to individuals, organizations and fiscally sponsored projects. Confirm Round 3 priorities and evidence requirements when applications open.", "ja": "個人、団体、Fiscal Sponsor経由のプロジェクトが対象です。第3ラウンド固有の重点分野と証明書類は募集開始時に確認してください。" },
       "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-      "verifiedAt": "2026-07-23"
+      "verifiedAt": "2026-09-04"
     },
     "sourceUrl": "https://houstonartsalliance.com/grant-opportunities-and-workshops/",
-    "verifiedAt": "2026-07-23"
+    "verifiedAt": "2026-09-04"
   },
   {
     "id": "tca-texas-touring-roster-next-watch",
