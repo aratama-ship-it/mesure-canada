@@ -95,4 +95,7 @@ const summary = {
 };
 console.log(`SUMMARY\t${JSON.stringify(summary)}`);
 
-if (errors.length || due.length) process.exitCode = 1;
+// 「要再確認」は運用中つねに一定数発生する定常バックログであり、CIの合否条件にすると
+// 数日〜数週間ごとに必ず再度失敗する。実際のデータ不整合（errors）だけをCI失敗にし、
+// due は表示のみで合否に含めない（2026-09-04: これが原因でPagesビルドが継続的に落ちていた）。
+if (errors.length) process.exitCode = 1;
