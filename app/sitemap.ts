@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
 import { siteUrl } from "./site-config";
 
-const latestContentUpdate = new Date("2026-08-05T00:00:00Z");
+// 静的書き出し（output: export）でビルド時に生成する。
+export const dynamic = "force-static";
+
+const latestContentUpdate = new Date("2026-09-04T00:00:00Z");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

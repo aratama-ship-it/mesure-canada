@@ -288,7 +288,7 @@
   {
     "id": "cam-collectives",
     "deadlineDate": "2026-08-19",
-    "nextCheckDate": "2026-08-19",
+    "nextCheckDate": "2026-11-01",
     "name": "CAM — Aide aux projets pour les collectifs d’artistes",
     "funder": "Conseil des arts de Montréal",
     "profiles": ["collective"],
@@ -296,7 +296,8 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "Prochaine échéance : 19 août 2026, 17 h", "en": "Next deadline: August 19, 2026, 5:00 p.m.", "ja": "次回締切：2026年8月19日17:00" },
+    "availability": "closed",
+    "deadline": { "fr": "Échéance 2026 : 19 août à 17 h (terminée)", "en": "2026 deadline: August 19 at 5:00 p.m. (closed)", "ja": "2026年8月19日17:00締切（受付終了）" },
     "amount": { "fr": "Montant selon le projet et le cadre du programme", "en": "Amount varies by project and program framework", "ja": "プロジェクト内容と制度の枠組みにより異なる" },
     "coverage": ["research", "creation", "production"],
     "cashflow": { "fr": "Modalités de versement décrites dans le programme", "en": "Payment terms are described in the program", "ja": "支給条件は制度要項に記載" },
@@ -312,7 +313,7 @@
       "verifiedAt": "2026-08-06"
     },
     "sourceUrl": "https://www.artsmontreal.org/aides/programmes/aide-projets-collectifs-artistes",
-    "verifiedAt": "2026-08-06"
+    "verifiedAt": "2026-08-24"
   },
   {
     "id": "oac-touring",
@@ -392,7 +393,8 @@
     "disciplines": ["music"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "3 septembre 2026", "en": "September 3, 2026", "ja": "2026年9月3日" },
+    "availability": "closed",
+    "deadline": { "fr": "3 septembre 2026 (terminée)", "en": "September 3, 2026 (closed)", "ja": "2026年9月3日締切（受付終了）" },
     "amount": { "fr": "Création 10 000 $; démo/EP 8 000 $; album 15 000 $", "en": "Creation $10,000; demo/EP $8,000; full-length $15,000", "ja": "創作1万、デモ／EP 8,000、フルアルバム1万5,000カナダドルまで" },
     "coverage": ["creation", "production", "recording", "fees"],
     "cashflow": { "fr": "Les tournées, voyages et dépenses hors Toronto ne sont pas admissibles", "en": "Touring, travel and expenses outside Toronto are ineligible", "ja": "ツアー、渡航、トロント市外の支出は対象外" },
@@ -581,8 +583,8 @@
   },
   {
     "id": "oif-artist-mobility-2026",
-    "deadlineDate": "2026-08-31",
-    "nextCheckDate": "2026-08-26",
+    "deadlineDate": "2026-09-14",
+    "nextCheckDate": "2026-09-07",
     "name": "OIF — Soutien à la mobilité des artistes 2026",
     "funder": "Organisation internationale de la Francophonie",
     "profiles": ["artist", "collective"],
@@ -835,8 +837,8 @@
   },
   {
     "id": "afa-theatre-individual-project-2026",
-    "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-25",
+    "deadlineDate": "2027-03-01",
+    "nextCheckDate": "2027-02-01",
     "name": "Alberta Foundation for the Arts — Theatre Individual Project Funding",
     "funder": "Alberta Foundation for the Arts",
     "profiles": ["artist", "collective"],
@@ -867,8 +869,8 @@
   },
   {
     "id": "afa-dance-individual-project-2026",
-    "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-25",
+    "deadlineDate": "2027-03-01",
+    "nextCheckDate": "2027-02-01",
     "name": "Alberta Foundation for the Arts — Dance Individual Project Funding",
     "funder": "Alberta Foundation for the Arts",
     "profiles": ["artist", "collective"],
@@ -961,8 +963,8 @@
   },
   {
     "id": "mac-travel-professional-development-2026",
-    "deadlineDate": "2026-09-01",
-    "nextCheckDate": "2026-08-25",
+    "deadlineDate": "2026-11-01",
+    "nextCheckDate": "2026-10-15",
     "name": "Manitoba Arts Council — Learn: Travel / Professional Development",
     "funder": "Manitoba Arts Council",
     "profiles": ["artist"],
@@ -1050,7 +1052,8 @@
     "disciplines": ["all"],
     "purpose": "mobility_export",
     "kind": "grant",
-    "deadline": { "fr": "1er septembre 2026", "en": "September 1, 2026", "ja": "2026年9月1日" },
+    "availability": "closed",
+    "deadline": { "fr": "1er septembre 2026 (terminée)", "en": "September 1, 2026 (closed)", "ja": "2026年9月1日締切（受付終了）" },
     "amount": { "fr": "Jusqu’à 10 000 $", "en": "Up to $10,000", "ja": "最大10,000カナダドル" },
     "coverage": ["travel", "stay", "research", "creation", "mentorship", "fees"],
     "cashflow": { "fr": "Le calendrier public ne précise pas la date de versement; la résidence doit commencer après le dépôt", "en": "The public guide does not state a payment date; the residency must start after submission", "ja": "公開要項に支払日は明記なし。レジデンス開始は申請後である必要があります" },
@@ -2274,8 +2277,8 @@
   },
   {
     "id": "austin-elevate-fy27",
-    "deadlineDate": "2026-08-19",
-    "nextCheckDate": "2026-08-19",
+    "deadlineDate": "2026-08-18",
+    "nextCheckDate": "2027-06-15",
     "name": "City of Austin — Elevate FY27",
     "funder": "Austin Arts, Culture, Music and Entertainment",
     "profiles": ["artist", "collective", "organization"],
@@ -2283,7 +2286,8 @@
     "disciplines": ["all"],
     "purpose": "home_base_creation",
     "kind": "grant",
-    "deadline": { "fr": "19 août 2026 à 18 h 59 (prolongation de 24 heures)", "en": "August 19, 2026 at 6:59 p.m. (24-hour extension)", "ja": "2026年8月19日18:59締切（24時間延長）" },
+    "availability": "closed",
+    "deadline": { "fr": "Échéance FY27 : 18 août 2026 (terminée)", "en": "FY27 deadline: August 18, 2026 (closed)", "ja": "FY27締切：2026年8月18日（受付終了）" },
     "amount": { "fr": "15 000 $ ou 30 000 $ pour artistes individuels; jusqu’à 80 000 $ selon le type et le budget", "en": "$15,000 or $30,000 for individual artists; up to $80,000 by applicant type and budget", "ja": "個人は15,000または30,000米ドル。申請主体・予算規模により最大80,000米ドル" },
     "coverage": ["creation", "production", "fees", "promotion"],
     "cashflow": { "fr": "Production d’activités artistiques publiques à Austin; dépôt direct ou avec fiscal sponsor", "en": "Production of public arts activity in Austin; direct application or fiscal sponsorship", "ja": "オースティンで一般公開する芸術活動の制作。直接申請またはFiscal Sponsor経由" },
@@ -2298,7 +2302,7 @@
       "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.austintexas.gov/arts-culture/elevate",
-    "verifiedAt": "2026-08-19"
+    "verifiedAt": "2026-08-24"
   },
   {
     "id": "austin-nexus-fall-2026",
@@ -2329,8 +2333,8 @@
   },
   {
     "id": "austin-live-music-fund-fy27",
-    "deadlineDate": "2026-08-19",
-    "nextCheckDate": "2026-08-19",
+    "deadlineDate": "2026-08-18",
+    "nextCheckDate": "2027-06-15",
     "name": "City of Austin — Austin Live Music Fund FY27",
     "funder": "Austin Arts, Culture, Music and Entertainment",
     "profiles": ["artist"],
@@ -2338,7 +2342,8 @@
     "disciplines": ["music"],
     "purpose": "career_support",
     "kind": "grant",
-    "deadline": { "fr": "19 août 2026 à 18 h 59 (prolongation de 24 heures)", "en": "August 19, 2026 at 6:59 p.m. (24-hour extension)", "ja": "2026年8月19日18:59締切（24時間延長）" },
+    "availability": "closed",
+    "deadline": { "fr": "Échéance FY27 : 18 août 2026 (terminée)", "en": "FY27 deadline: August 18, 2026 (closed)", "ja": "FY27締切：2026年8月18日（受付終了）" },
     "amount": { "fr": "Montants FY27 selon la catégorie; enveloppe totale annoncée de 6 M$", "en": "FY27 award amounts vary by category; $6 million total funding announced", "ja": "FY27の金額は区分別。総額600万米ドルの予算を公表" },
     "coverage": ["production", "recording", "promotion", "touring", "fees"],
     "cashflow": { "fr": "Pour musiciens professionnels et promoteurs indépendants, incluant événements, production, tournée promotionnelle et marketing", "en": "For professional musicians and independent promoters, including events, production, promotional touring and marketing", "ja": "プロの音楽家・独立プロモーターによるイベント、制作、宣伝ツアー、マーケティング等を支援" },
@@ -2351,7 +2356,7 @@
       "verifiedAt": "2026-08-19"
     },
     "sourceUrl": "https://www.austintexas.gov/arts-culture/austin-live-music-fund",
-    "verifiedAt": "2026-08-19"
+    "verifiedAt": "2026-08-24"
   },
   {
     "id": "haa-saci-2027",
